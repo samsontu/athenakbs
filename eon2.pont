@@ -1,454 +1,20 @@
-; Thu Jul 20 10:52:40 PDT 2017
+; Thu Jul 27 10:40:07 PDT 2017
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(multislot Drug_Partners_To_Avoid
-		(type SYMBOL)
-;+		(allowed-parents Therapeutic_Class)
-		(create-accessor read-write))
-	(single-slot title
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot prompt
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot drug_usages
-		(type INSTANCE)
-;+		(allowed-classes Drug_Usage)
-		(create-accessor read-write))
-	(multislot subsidiary_message
-		(type STRING)
-		(create-accessor read-write))
-	(multislot possible_values
-		(type INSTANCE)
-;+		(allowed-classes Physical_Quantity Numeric_Constant)
-		(create-accessor read-write))
-	(multislot test_or_procedure
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class Therapeutic_Procedure)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(multislot Relative_Indications
-;+		(comment "Relative indications to use of a drug from the Guideline (as opposed to other relative indications asstd with this drug in general)")
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
-	(multislot exception_handlers
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
-	(single-slot when_upper_bound_unit
-		(type SYMBOL)
-;+		(allowed-parents Time_Unit)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot compelling_indications
-		(type INSTANCE)
-;+		(allowed-classes Drug_Indication_Relation)
-		(create-accessor read-write))
-	(multislot drug_partners
-		(type INSTANCE)
-;+		(allowed-classes Drug_Drug_Interaction)
-		(create-accessor read-write))
-	(single-slot justification
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot exception
-		(type INSTANCE)
-;+		(allowed-classes)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot minimum_daily_dose
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot references
-;+		(comment "The set of supporting materials that document or amply this part of guideline.")
-		(type INSTANCE)
-;+		(allowed-classes Supporting_Material Drug_Relation)
-		(create-accessor read-write))
-	(single-slot abstract_value
-;+		(comment "The linguistic term used to represent the level of values (e.g., \"high\", \"medium\", or \"low\")")
-		(type SYMBOL)
-;+		(allowed-parents Drug_Dose_Level)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot display_location
-		(type SYMBOL)
-		(allowed-values Summary Detail DetailBullet)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Drug_Contraindication_Attribute
-		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot excluded_activities
-;+		(comment "Activities for which no increase in intensity is wanted")
-		(type SYMBOL)
-;+		(allowed-parents Therapeutic_Class)
-		(create-accessor read-write))
-	(single-slot daily_drug_frequency
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot followed_by
-		(type INSTANCE)
-;+		(allowed-classes Clinical_Algorithm_Entity)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot collateral_modify_actions
-		(type INSTANCE)
-;+		(allowed-classes Action_Specification)
-		(create-accessor read-write))
-	(single-slot abort_condition
-;+		(comment "Criteria that, if satisfied, indicates that an iteration should be aborted.")
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot absolute_contraindications
-		(type INSTANCE)
-;+		(allowed-classes Drug_Contraindication_Relation)
-		(create-accessor read-write))
-	(single-slot rule_in_rule
-		(type INSTANCE)
-;+		(allowed-classes PAL_Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Drug_Class_Name
-;+		(comment "medication")
-		(type SYMBOL)
-;+		(allowed-parents Medications_Class)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot when_lower_bound
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot therapeutic_goal
-		(type INSTANCE)
-;+		(allowed-classes Goal)
-		(create-accessor read-write))
-	(single-slot continuation
-		(type SYMBOL)
-		(allowed-values wait_for_all proceed_after_one)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot Drug_Partners
-		(type SYMBOL)
-;+		(allowed-parents Therapeutic_Class)
-		(create-accessor read-write))
-	(multislot candidates
-		(type INSTANCE)
-;+		(allowed-classes Activity_Specification)
-		(create-accessor read-write))
-	(multislot collateral_actions
-		(type INSTANCE)
-;+		(allowed-classes Collateral_Action)
-		(create-accessor read-write))
-	(multislot EPR_query
-		(type INSTANCE)
-;+		(allowed-classes EPR_Query)
-		(create-accessor read-write))
-	(single-slot x
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot y
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot selected_goal
-;+		(comment "Checks to see if the selected goal evaluates to true")
-		(type INSTANCE)
-;+		(allowed-classes Goal)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot prescribable_items
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
-	(single-slot MIME_type
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot new_encounter
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot when_lower_bound_unit
-		(type SYMBOL)
-;+		(allowed-parents Time_Unit)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot activity_to_modify
-		(type INSTANCE)
-;+		(allowed-classes PAL_Query Structured_Query)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot Side_Effects
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
-	(multislot focus
-		(type SYMBOL)
-;+		(allowed-parents Medical_Domain_Class)
-		(create-accessor read-write))
-	(single-slot DoseType
-		(type SYMBOL)
-		(allowed-values single_dose repeating_dose cumulative_dose)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot message
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot continuation_condition
-;+		(comment "This slot allows explicit specification of the steps that need to be completed before action can be continued")
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot UpperValidAgeLimit
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot activity_class
-		(type STRING)
-		(default "Medication")
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot activity_specification
-		(type SYMBOL)
-;+		(allowed-parents Activity_Specification)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot authors
-		(type STRING)
-		(create-accessor read-write))
-	(single-slot direction
-		(type SYMBOL)
-		(allowed-values up down)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot criterion_to_achieve
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot interval
-;+		(comment "interval by which the action should be repeated")
-		(type INSTANCE)
-;+		(allowed-classes Fuzzy_Duration)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot drug_administration
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot at_time
-;+		(comment "Compared to Asbru, we cannot specify temporal constraits of the time when action must be carried out (e.g., give insulin every morning). The attribute at_time is a string constraint for information purpose.")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot max_recommended_dose
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot guideline_entity
-		(type INSTANCE)
-;+		(allowed-classes Management_Guideline)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot activity_spec
-		(type SYMBOL)
-;+		(allowed-parents Activity_Specification)
-		(default Drug_Usage)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot activity_to_stop
-		(type INSTANCE)
-;+		(allowed-classes PAL_Query Structured_Query)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot increase_dose_ceiling
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot property
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot replacing_activity
-		(type INSTANCE)
-;+		(allowed-classes Activity_Specification)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot parameterized_message
-		(type INSTANCE)
-;+		(allowed-classes Parameterized_String)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot rule_in
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot candidate_generator
-		(type INSTANCE)
-;+		(allowed-classes PAL-QUERY)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot first_step
-		(type INSTANCE)
-;+		(allowed-classes Management_Algorithm_Entity)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot strict_rule_out_condition
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot guideline
-		(type INSTANCE)
-;+		(allowed-classes Guideline)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot choice_type
-		(type SYMBOL)
-		(allowed-values some_of one_of)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot generic_drug
-;+		(comment "This slot is meant to hold a reference to a generic drug, not a drug class (anything that can have a dose)")
-		(type SYMBOL)
-;+		(allowed-parents Medications_Class)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot replace_candidates_generator
-		(type INSTANCE)
-;+		(allowed-classes PAL-QUERY)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot iteration_spec
-		(type INSTANCE)
-;+		(allowed-classes Iteration_Specification)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot revision_actions
-		(type INSTANCE)
-;+		(allowed-classes Action_Specification)
-		(create-accessor read-write))
-	(single-slot lower_right_corner
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot choices_to_evaluate
-		(type INSTANCE)
-;+		(allowed-classes)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot allowed_terms
-		(type STRING)
-		(create-accessor read-write))
-	(single-slot quantity_per_prescription_unit
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot sensitive
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot completion_criteria
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot default_preference
-		(type SYMBOL)
-		(allowed-values neutral prefered ruled_out)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot goal_operator
-		(type SYMBOL)
-		(allowed-values achieve maintain avoid)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot minimum_effective_dose
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot guideline_drugs
-		(type INSTANCE)
-;+		(allowed-classes Guideline_Drug)
-		(create-accessor read-write))
-	(single-slot author
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot formulary_preferred_drug_in_class
-		(type INSTANCE)
-;+		(allowed-classes Guideline_Drug)
-		(create-accessor read-write))
-	(multislot Compelling_Indications
-;+		(comment "the compelling indications as listed in Table 9 and referred to in Fig 8 of JNC 6")
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
-	(multislot necessary_condition
-;+		(comment "Encoding variable dose levels\n\nThe one exception about PAL criteria/queries not evaluating other criteria is in checking whether a class is “derivable”. For example, we may write a PAL criteria that checks to see if there is any note entry whose domain term is “Diabetes Type 2”, but we can also check whether the class “Diabetes Type 2” is_derivable (i.e., whether “Diabetes Type 2” has a definition (being an instance of Diagnostic_Term_Metaclass)). \n\nWe can add a slot to Guideline_Drug (call it, say, necessary_condition) whose values are instances of Diagnostic_Term_Metaclass. Then, instead of\n\n              (exists ?guidelineDrug\n                       (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                            (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                       (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                       (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n\nin the current increase dose query/criteria, we can write\n\n              (exists ?guidelineDrug\n                       (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                              (=> (own-slot-not-null necessary_condition ?guidelineDrug)\n                                    (and (necessary_condition ?guidelineDrug ?condition)\n                                            (is_derivable ?condition)))\n                            (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                       (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                       (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n\n\nIn this scheme, you’ll have 3 guideline drug instances for, say, Lovastatin, where each instance has a “necessary condition” (essentially rule-in criterion, but not instances of Criterion) that says when the guideline drug instance applies.\n\nthere will be 3 instances of lovastatin Guideline_drug, each with different max dose (eg lovastatin A, B, C), with the same “generic drug” (lovastatin), but with different “necessary condition” where a necessary condition is a class (that is an instance of  Diagnostic_Term_Metclass) whose definition slot is the criterion Presence of verapamil (or amiodarone) etc")
-		(type INSTANCE)
-;+		(allowed-classes Diagnostic_Term_Metaclass)
-		(create-accessor read-write))
-	(multislot disjuctive_criteria_to_achieve
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-		(create-accessor read-write))
-	(single-slot LowerValidAgeLimit
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot additional_ADR_check
-;+		(comment "The list of drugs or drug classes whose prior adverse reactions should be displayed when recommending adding a drug (class)")
-		(type SYMBOL)
-;+		(allowed-parents Medications_Class)
-		(create-accessor read-write))
-	(multislot steps
-		(type INSTANCE)
-;+		(allowed-classes)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(multislot drug_partners_to_avoid
-		(type INSTANCE)
-;+		(allowed-classes Drug_Drug_Interaction)
-		(create-accessor read-write))
-	(single-slot main_message
-		(type INSTANCE)
-;+		(allowed-classes Message)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot condition
-		(type INSTANCE)
-;+		(allowed-classes Criterion)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot rule_in_condition
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Drug_Partners_To_Avoid
+		(type SYMBOL)
+;+		(allowed-parents Therapeutic_Class)
 		(create-accessor read-write))
 	(multislot selection_criterion
 		(type INSTANCE)
@@ -473,9 +39,24 @@
 		(type INSTANCE)
 ;+		(allowed-classes Guideline_Drug)
 		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot prompt
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot items
 		(type INSTANCE)
 ;+		(allowed-classes Prescribable_Item)
+		(create-accessor read-write))
+	(multislot drug_usages
+		(type INSTANCE)
+;+		(allowed-classes Drug_Usage)
+		(create-accessor read-write))
+	(multislot subsidiary_message
+		(type STRING)
 		(create-accessor read-write))
 	(single-slot drug_usage
 		(type INSTANCE)
@@ -487,9 +68,23 @@
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot possible_values
+		(type INSTANCE)
+;+		(allowed-classes Physical_Quantity Numeric_Constant)
+		(create-accessor read-write))
+	(multislot test_or_procedure
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class Therapeutic_Procedure)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
 	(multislot data_to_collect
 		(type INSTANCE)
 ;+		(allowed-classes Data_Entry)
+		(create-accessor read-write))
+	(multislot Relative_Indications
+;+		(comment "Relative indications to use of a drug from the Guideline (as opposed to other relative indications asstd with this drug in general)")
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(single-slot second_level
 ;+		(comment "The intention of the slot is to define a \"higher level\" action evaluation algorithm that deals situations not handled by clinical algorithm")
@@ -497,9 +92,39 @@
 ;+		(allowed-classes Management_Diagram)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot exception_handlers
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot when_upper_bound_unit
+		(type SYMBOL)
+;+		(allowed-parents Time_Unit)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot compelling_indications
+		(type INSTANCE)
+;+		(allowed-classes Drug_Indication_Relation)
+		(create-accessor read-write))
 	(single-slot rule_out
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_partners
+		(type INSTANCE)
+;+		(allowed-classes Drug_Drug_Interaction)
+		(create-accessor read-write))
+	(single-slot justification
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot exception
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minimum_daily_dose
+		(type FLOAT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot who_to
@@ -512,6 +137,22 @@
 ;+		(allowed-parents Units_Class)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot references
+;+		(comment "The set of supporting materials that document or amply this part of guideline.")
+		(type INSTANCE)
+;+		(allowed-classes Supporting_Material Drug_Relation)
+		(create-accessor read-write))
+	(single-slot abstract_value
+;+		(comment "The linguistic term used to represent the level of values (e.g., \"high\", \"medium\", or \"low\")")
+		(type SYMBOL)
+;+		(allowed-parents Drug_Dose_Level)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot display_location
+		(type SYMBOL)
+		(allowed-values Summary Detail DetailBullet)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot Drug_Indication_Class
 		(type SYMBOL)
 ;+		(allowed-parents Activity_Specification)
@@ -522,9 +163,28 @@
 		(type INSTANCE)
 ;+		(allowed-classes Diagnostic_Term_Metaclass Variable)
 		(create-accessor read-write))
+	(single-slot Drug_Contraindication_Attribute
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot excluded_activities
+;+		(comment "Activities for which no increase in intensity is wanted")
+		(type SYMBOL)
+;+		(allowed-parents Therapeutic_Class)
+		(create-accessor read-write))
+	(single-slot daily_drug_frequency
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot complication_factor
 		(type INSTANCE)
 ;+		(allowed-classes Drug_Complication_Relation)
+		(create-accessor read-write))
+	(single-slot followed_by
+		(type INSTANCE)
+;+		(allowed-classes Clinical_Algorithm_Entity)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot max_recommended_dose_level
 		(type SYMBOL)
@@ -536,6 +196,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 		(create-accessor read-write))
+	(multislot collateral_modify_actions
+		(type INSTANCE)
+;+		(allowed-classes Action_Specification)
+		(create-accessor read-write))
 	(single-slot activity
 		(type INSTANCE)
 ;+		(allowed-classes Activity_Specification)
@@ -545,6 +209,12 @@
 		(type INTEGER)
 ;+		(cardinality 0 1)
 ;+		(associated-facet Dharma_11861)
+		(create-accessor read-write))
+	(single-slot abort_condition
+;+		(comment "Criteria that, if satisfied, indicates that an iteration should be aborted.")
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot strict_rule_in_condition
 		(type INSTANCE)
@@ -556,6 +226,15 @@
 ;+		(allowed-classes)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot absolute_contraindications
+		(type INSTANCE)
+;+		(allowed-classes Drug_Contraindication_Relation)
+		(create-accessor read-write))
+	(single-slot rule_in_rule
+		(type INSTANCE)
+;+		(allowed-classes PAL_Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot scenario
 		(type INSTANCE)
 ;+		(allowed-classes Scenario)
@@ -565,9 +244,32 @@
 		(type FLOAT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot Drug_Class_Name
+;+		(comment "medication")
+		(type SYMBOL)
+;+		(allowed-parents Medications_Class)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot fine-grain_priority
 		(type INTEGER)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot therapeutic_goal
+		(type INSTANCE)
+;+		(allowed-classes Goal)
+		(create-accessor read-write))
+	(single-slot continuation
+		(type SYMBOL)
+		(allowed-values wait_for_all proceed_after_one)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Drug_Partners
+		(type SYMBOL)
+;+		(allowed-parents Therapeutic_Class)
 		(create-accessor read-write))
 	(single-slot location
 		(type STRING)
@@ -577,10 +279,22 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot candidates
+		(type INSTANCE)
+;+		(allowed-classes Activity_Specification)
+		(create-accessor read-write))
+	(multislot collateral_actions
+		(type INSTANCE)
+;+		(allowed-classes Collateral_Action)
+		(create-accessor read-write))
 	(single-slot activity_to_replace
 		(type INSTANCE)
 ;+		(allowed-classes Activity_Specification)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot EPR_query
+		(type INSTANCE)
+;+		(allowed-classes EPR_Query)
 		(create-accessor read-write))
 	(multislot constraint
 		(type INSTANCE)
@@ -589,6 +303,24 @@
 	(single-slot duration_constraint
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot x
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot y
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot selected_goal
+;+		(comment "Checks to see if the selected goal evaluates to true")
+		(type INSTANCE)
+;+		(allowed-classes Goal)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot prescribable_items
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot activity_operator
 		(type SYMBOL)
@@ -601,6 +333,16 @@
 		(default [eon2_Class80010])
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot MIME_type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot new_encounter
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot activities_to_modify
 		(type INSTANCE)
 ;+		(allowed-classes PAL_Query Structured_Query)
@@ -611,14 +353,41 @@
 		(type INSTANCE)
 ;+		(allowed-classes Scenario)
 		(create-accessor read-write))
+	(single-slot when_lower_bound_unit
+		(type SYMBOL)
+;+		(allowed-parents Time_Unit)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_to_modify
+		(type INSTANCE)
+;+		(allowed-classes PAL_Query Structured_Query)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot Side_Effects
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
 	(multislot alternatives
 		(type INSTANCE)
 ;+		(allowed-classes Activity_Specification)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
+	(multislot focus
+		(type SYMBOL)
+;+		(allowed-parents Medical_Domain_Class)
+		(create-accessor read-write))
 	(single-slot source
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot DoseType
+		(type SYMBOL)
+		(allowed-values single_dose repeating_dose cumulative_dose)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot message
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot consultation_template
 		(type INSTANCE)
@@ -638,6 +407,12 @@
 		(type INSTANCE)
 ;+		(allowed-classes Management_Guideline)
 		(create-accessor read-write))
+	(single-slot continuation_condition
+;+		(comment "This slot allows explicit specification of the steps that need to be completed before action can be continued")
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot ordered_attribute
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
@@ -649,6 +424,15 @@
 ;+		(allowed-parents Medications_Class)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot UpperValidAgeLimit
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_class
+		(type STRING)
+		(default "Medication")
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot destination
 		(type INSTANCE)
 ;+		(allowed-classes Clinical_Algorithm_Entity)
@@ -659,6 +443,19 @@
 ;+		(allowed-classes Management_Algorithm_Entity)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot activity_specification
+		(type SYMBOL)
+;+		(allowed-parents Activity_Specification)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot authors
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot direction
+		(type SYMBOL)
+		(allowed-values up down)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot relative_contraindications
 		(type INSTANCE)
 ;+		(allowed-classes Drug_Contraindication_Relation)
@@ -666,6 +463,17 @@
 	(multislot goal
 		(type INSTANCE)
 ;+		(allowed-classes Conditional_Goal)
+		(create-accessor read-write))
+	(multislot criterion_to_achieve
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot interval
+;+		(comment "interval by which the action should be repeated")
+		(type INSTANCE)
+;+		(allowed-classes Fuzzy_Duration)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot primary
 ;+		(comment "If true, actions in this guideline pre-empt other actions that may be suggested by consultation guideline.")
@@ -683,6 +491,19 @@
 ;+		(allowed-classes Criterion)
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
+	(single-slot drug_administration
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot at_time
+;+		(comment "Compared to Asbru, we cannot specify temporal constraits of the time when action must be carried out (e.g., give insulin every morning). The attribute at_time is a string constraint for information purpose.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot max_recommended_dose
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot allowed_offset
 ;+		(comment "Slot Description\n\nSlot Notes\n\nHistory\n06Jan1998 09:04:19  tu   created\n06Jan1998 17:04:02  tu   edited\n")
 		(type INSTANCE)
@@ -694,6 +515,22 @@
 ;+		(allowed-classes Management_Diagram)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot guideline_entity
+		(type INSTANCE)
+;+		(allowed-classes Management_Guideline)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot activity_spec
+		(type SYMBOL)
+;+		(allowed-parents Activity_Specification)
+		(default Drug_Usage)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot activity_to_stop
+		(type INSTANCE)
+;+		(allowed-classes PAL_Query Structured_Query)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot dose_level_ranges
 		(type INSTANCE)
 ;+		(allowed-classes Range_Mapping_Entry)
@@ -702,10 +539,23 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot increase_dose_ceiling
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot property
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot Do_Not_Start_Conditions
 ;+		(comment "A list of conditions such that, if any is true, overrides the preferred status of a drug to add.")
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
+	(single-slot replacing_activity
+		(type INSTANCE)
+;+		(allowed-classes Activity_Specification)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot activity_spec_key
 		(type INSTANCE)
@@ -713,8 +563,23 @@
 		(default Drug_Class_Name)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot parameterized_message
+		(type INSTANCE)
+;+		(allowed-classes Parameterized_String)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot quantity_per_prescription
 		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rule_in
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot candidate_generator
+		(type INSTANCE)
+;+		(allowed-classes PAL-QUERY)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot add_constraint
@@ -726,6 +591,11 @@
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot first_step
+		(type INSTANCE)
+;+		(allowed-classes Management_Algorithm_Entity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot responses
 		(type INSTANCE)
 ;+		(allowed-classes Collect_Patient_Data)
@@ -735,16 +605,51 @@
 		(allowed-values PO IV IM)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot strict_rule_out_condition
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline
+		(type INSTANCE)
+;+		(allowed-classes Guideline)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot start_constraint
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot choice_type
+		(type SYMBOL)
+		(allowed-values some_of one_of)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot generic_drug
+;+		(comment "This slot is meant to hold a reference to a generic drug, not a drug class (anything that can have a dose)")
+		(type SYMBOL)
+;+		(allowed-parents Medications_Class)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot conditional_goals
 ;+		(comment "One goal (e.g. for HbA1C) that may have different ranges for different groups of patients.")
 		(type INSTANCE)
 ;+		(allowed-classes General_Conditional_Goal)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot replace_candidates_generator
+		(type INSTANCE)
+;+		(allowed-classes PAL-QUERY)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot iteration_spec
+		(type INSTANCE)
+;+		(allowed-classes Iteration_Specification)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot revision_actions
+		(type INSTANCE)
+;+		(allowed-classes Action_Specification)
 		(create-accessor read-write))
 	(single-slot subguideline
 		(type INSTANCE)
@@ -762,14 +667,46 @@
 ;+		(allowed-classes Guideline_Model_Entity)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot lower_right_corner
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot order_constraint
 		(type SYMBOL)
 		(allowed-values parallel any_order)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot choices_to_evaluate
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot allowed_terms
+		(type STRING)
+		(create-accessor read-write))
 	(multislot relative_indications
 		(type INSTANCE)
 ;+		(allowed-classes Drug_Indication_Relation)
+		(create-accessor read-write))
+	(single-slot quantity_per_prescription_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sensitive
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot completion_criteria
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot default_preference
+		(type SYMBOL)
+		(allowed-values neutral prefered ruled_out)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot exceptions
 		(type INSTANCE)
@@ -778,6 +715,11 @@
 	(multislot branches
 		(type INSTANCE)
 ;+		(allowed-classes Management_Algorithm_Entity)
+		(create-accessor read-write))
+	(single-slot goal_operator
+		(type SYMBOL)
+		(allowed-values achieve maintain avoid)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot Complication_Factor
 ;+		(comment "Those medical conditions whose presence make use the the drug class problematic.")
@@ -794,8 +736,38 @@
 		(type INSTANCE)
 ;+		(allowed-classes Activity_Specification)
 		(create-accessor read-write))
+	(multislot guideline_drugs
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Drug)
+		(create-accessor read-write))
+	(single-slot author
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot formulary_preferred_drug_in_class
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Drug)
+		(create-accessor read-write))
+	(multislot Compelling_Indications
+;+		(comment "the compelling indications as listed in Table 9 and referred to in Fig 8 of JNC 6")
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
 	(single-slot strength_of_recommendationf
 		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot necessary_condition
+;+		(comment "Encoding variable dose levels\n\nThe one exception about PAL criteria/queries not evaluating other criteria is in checking whether a class is “derivable”. For example, we may write a PAL criteria that checks to see if there is any note entry whose domain term is “Diabetes Type 2”, but we can also check whether the class “Diabetes Type 2” is_derivable (i.e., whether “Diabetes Type 2” has a definition (being an instance of Diagnostic_Term_Metaclass)). \n\nWe can add a slot to Guideline_Drug (call it, say, necessary_condition) whose values are instances of Diagnostic_Term_Metaclass. Then, instead of\n\n              (exists ?guidelineDrug\n                       (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                            (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                       (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                       (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n\nin the current increase dose query/criteria, we can write\n\n              (exists ?guidelineDrug\n                       (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                              (=> (own-slot-not-null necessary_condition ?guidelineDrug)\n                                    (and (necessary_condition ?guidelineDrug ?condition)\n                                            (is_derivable ?condition)))\n                            (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                       (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose(high/low)\"))\n                                                       (< (daily_dose ?med) (lower_limit ?rangeMapping))  )))\n\n\nIn this scheme, you’ll have 3 guideline drug instances for, say, Lovastatin, where each instance has a “necessary condition” (essentially rule-in criterion, but not instances of Criterion) that says when the guideline drug instance applies.\n\nthere will be 3 instances of lovastatin Guideline_drug, each with different max dose (eg lovastatin A, B, C), with the same “generic drug” (lovastatin), but with different “necessary condition” where a necessary condition is a class (that is an instance of  Diagnostic_Term_Metclass) whose definition slot is the criterion Presence of verapamil (or amiodarone) etc")
+		(type INSTANCE)
+;+		(allowed-classes Diagnostic_Term_Metaclass)
+		(create-accessor read-write))
+	(multislot disjuctive_criteria_to_achieve
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+		(create-accessor read-write))
+	(single-slot LowerValidAgeLimit
+		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot filter
@@ -814,6 +786,11 @@
 		(allowed-values FALSE TRUE)
 		(default FALSE)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot additional_ADR_check
+;+		(comment "The list of drugs or drug classes whose prior adverse reactions should be displayed when recommending adding a drug (class)")
+		(type SYMBOL)
+;+		(allowed-parents Medications_Class)
 		(create-accessor read-write))
 	(multislot drug_relations
 		(type INSTANCE)
@@ -861,10 +838,24 @@
 		(type INSTANCE)
 ;+		(allowed-classes Connector_Relation)
 		(create-accessor read-write))
+	(multislot steps
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(multislot drug_partners_to_avoid
+		(type INSTANCE)
+;+		(allowed-classes Drug_Drug_Interaction)
+		(create-accessor read-write))
 	(multislot Absolute_Contraindications
 ;+		(comment "Absolute contraindications to use of a drug from the Guideline (as opposed to other absolute contraindications asstd with this drug in general)")
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
+	(single-slot main_message
+		(type INSTANCE)
+;+		(allowed-classes Message)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot actions
 ;+		(comment "The set of tasks (instances of Action_Specification) that should be performed")
@@ -876,6 +867,11 @@
 		(type INSTANCE)
 ;+		(allowed-classes Management_Guideline)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot condition
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot date
 		(type STRING)
@@ -2083,10 +2079,6 @@
 	(multislot dose_level_ranges
 		(type INSTANCE)
 ;+		(allowed-classes Range_Mapping_Entry)
-		(create-accessor read-write))
-	(single-slot minimum_effective_dose
-		(type FLOAT)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot increase_dose_ceiling
 		(type FLOAT)
