@@ -1,4 +1,4 @@
-; Thu Jun 22 14:16:19 PDT 2017
+; Thu Aug 03 12:17:43 PDT 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -393,54 +393,6 @@
 
 (defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
 	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives)
-	(role concrete))
-
-(defclass bendroflumethiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass bendroflumethiazide_SA
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass benzthiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass chlorothiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass cyclothiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass hydroflumethiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass indapamide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass methyclothiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass metolazone
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass polythiazide
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass quinethazone
-	(is-a Thiazide_Diuretics)
-	(role concrete))
-
-(defclass trichlormethiazide
-	(is-a Thiazide_Diuretics)
 	(role concrete))
 
 (defclass cardiotoxic+interventions
@@ -1733,6 +1685,58 @@
 
 (defclass SUMATRIPTAN
 	(is-a Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass SULFACETAMIDE
+	(is-a Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass bendroflumethiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass bendroflumethiazide_SA
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass benzthiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass chlorothiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass cyclothiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass hydroflumethiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass indapamide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass methyclothiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass metolazone
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass polythiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass quinethazone
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(role concrete))
+
+(defclass trichlormethiazide
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass Autonomic_Agents_Other_AU900

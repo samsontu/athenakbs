@@ -1,0 +1,1528 @@
+; Tue Aug 15 14:04:43 PDT 2017
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Guideline_Concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Guideline_Recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot deletionName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot STRENGTH
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timestamp
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot retiredEntity
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Guideline_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Primary_Key_Fields
+		(type STRING)
+		(create-accessor read-write))
+	(multislot watchedBy
+		(type INSTANCE)
+;+		(allowed-classes User)
+;+		(inverse-slot watchedEntity)
+		(create-accessor read-write))
+	(single-slot entity1
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot UNITS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot entity2
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot newName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Recommendation_Annotation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot page
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Classification
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hasStatus
+		(type INSTANCE)
+;+		(allowed-classes Status)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot applyTo
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+;+		(inverse-slot changes)
+		(create-accessor read-write))
+	(single-slot expert_defining
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot synonym
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+		(create-accessor read-write))
+	(multislot subChanges
+		(type INSTANCE)
+;+		(allowed-classes Change)
+;+		(inverse-slot partOfCompositeChange)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot moduleName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot watchedBranchBy
+		(type INSTANCE)
+;+		(allowed-classes User)
+;+		(inverse-slot watchedBranch)
+		(create-accessor read-write))
+	(single-slot Module
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_defintion
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot inverse_of_annotates
+		(type INSTANCE)
+;+		(allowed-classes Annotation)
+		(create-accessor read-write))
+	(single-slot concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot subject
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Overall_Quality
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changes_Slot_1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot date
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changes_Slot_0
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot newParents
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(single-slot oldName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Foreign_Keys
+		(type INSTANCE)
+;+		(allowed-classes Foreign_Key)
+		(create-accessor read-write))
+	(single-slot NeedsResearch
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_reference
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Reference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_definition_concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot creationName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reasonForChange
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot parent
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Class)
+		(create-accessor read-write))
+	(single-slot overall_quality
+		(type SYMBOL)
+		(allowed-values Good Poor)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot is_used_in
+		(type INSTANCE)
+;+		(allowed-classes Recommendation)
+;+		(inverse-slot uses_concepts)
+		(create-accessor read-write))
+	(single-slot GuidelineName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot watchedBranch
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(inverse-slot watchedBranchBy)
+		(create-accessor read-write))
+	(single-slot expert_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot archived
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sequence
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot completed
+;+		(comment "Flag - true, if review has been completed; false - if review is still pending")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot quality_of_evidence
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot associatedAnnotations
+		(type INSTANCE)
+;+		(allowed-classes Annotation)
+;+		(inverse-slot annotates)
+		(create-accessor read-write))
+	(single-slot Is_Bridge_Table
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Code
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot GENERIC_NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Quality_of_Evidence
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot oldValue
+;+		(type ANY)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ModuleID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Expert_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot newValue
+;+		(type ANY)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot property
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot contactInformation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot annotates
+		(type INSTANCE)
+;+		(allowed-classes AnnotatableThing)
+;+		(inverse-slot associatedAnnotations)
+		(create-accessor read-write))
+	(single-slot context
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ConceptID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Module_Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot partOfCompositeChange
+		(type INSTANCE)
+;+		(allowed-classes Composite_Change)
+;+		(cardinality 0 1)
+;+		(inverse-slot subChanges)
+		(create-accessor read-write))
+	(single-slot entityId
+;+		(comment "This can be generated or proposed by the user")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Local_Field
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot module
+		(type INSTANCE)
+;+		(allowed-classes Module_Reference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot modified
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot preferredName
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relationType
+		(type SYMBOL)
+		(allowed-values subclassOf partOf)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Expert_defining
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot FK_Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+;+		(comment "Numeric id")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot patient_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reviewer
+		(type INSTANCE)
+;+		(allowed-classes Reviewer)
+;+		(cardinality 0 1)
+;+		(inverse-slot reviewRequests)
+		(create-accessor read-write))
+	(single-slot Reference_Field
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot currentName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ModuleName
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Patient_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot oldParents
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(single-slot NAT_ID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot needs_research
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot VA_NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot domainOfInterest
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(multislot uses_concepts
+		(type INSTANCE)
+;+		(allowed-classes Concept)
+;+		(inverse-slot is_used_in)
+		(create-accessor read-write))
+	(single-slot ID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot definition
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot voteValue
+		(type SYMBOL)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot changes
+		(type INSTANCE)
+;+		(allowed-classes Change)
+;+		(inverse-slot applyTo)
+		(create-accessor read-write))
+	(multislot watchedEntity
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(inverse-slot watchedBy)
+		(create-accessor read-write))
+	(multislot reviewRequests
+		(type INSTANCE)
+;+		(allowed-classes ReviewRequest)
+;+		(inverse-slot reviewer)
+		(create-accessor read-write))
+	(single-slot inLibrary
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot associatedProperty
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot comment
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot body
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot deadline
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot author
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot language
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot RecID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot InLibrary
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot created
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot related
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Reference_Table
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Table_Metaclass
+	(is-a %3ASTANDARD-CLASS)
+	(role concrete)
+	(multislot Foreign_Keys
+		(type INSTANCE)
+;+		(allowed-classes Foreign_Key)
+		(create-accessor read-write))
+	(single-slot Is_Bridge_Table
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Primary_Key_Fields
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AFUNCTION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFINITION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFFACTS
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFGLOBAL
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFMESSAGE-HANDLER
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFMETHOD
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFTEMPLATE
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-FUNCTION
+	(is-a %3AFUNCTION %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-ENGINE
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3ARULE
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-RULE
+	(is-a %3AJESS-DEFINITION %3ARULE)
+	(role concrete))
+
+(defclass Foreign_Key
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot Local_Field
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Reference_Table
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Reference_Field
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot FK_Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass AnnotatableThing
+	(is-a USER)
+	(role abstract)
+	(single-slot hasStatus
+		(type INSTANCE)
+;+		(allowed-classes Status)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot associatedAnnotations
+		(type INSTANCE)
+;+		(allowed-classes Annotation)
+		(create-accessor read-write)))
+
+(defclass Annotation
+	(is-a AnnotatableThing)
+	(role abstract)
+	(single-slot hasStatus
+		(type INSTANCE)
+;+		(allowed-classes AnnotationStatus)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot created
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot annotates
+		(type INSTANCE)
+;+		(allowed-classes AnnotatableThing)
+		(create-accessor read-write))
+	(single-slot modified
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot related
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot context
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot body
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot subject
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot archived
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot author
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Advice "A class of Annotations representing advice for the reader"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Comment "A class of Annotations representing general comments"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Example "A class of Annotations representing examples"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Explanation "A class of Annotations representing explanations of content"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Proposal
+	(is-a Annotation)
+	(role abstract)
+	(single-slot contactInformation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reasonForChange
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ChangeHierarchyProposal
+	(is-a Proposal)
+	(role concrete)
+	(multislot newParents
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(single-slot relationType
+		(type SYMBOL)
+		(allowed-values subclassOf partOf)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot oldParents
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write)))
+
+(defclass MergeProposal
+	(is-a Proposal)
+	(role concrete)
+	(single-slot entity1
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot entity2
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass NewEntityProposal
+	(is-a Proposal)
+	(role concrete)
+	(multislot parent
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Class)
+		(create-accessor read-write))
+	(single-slot entityId
+;+		(comment "This can be generated or proposed by the user")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot definition
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot synonym
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+		(create-accessor read-write))
+	(single-slot preferredName
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass PropertyValueChangeProposal
+	(is-a Proposal)
+	(role concrete)
+	(single-slot property
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot oldValue
+;+		(type ANY)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot newValue
+;+		(type ANY)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass RetireProposal
+	(is-a Proposal)
+	(role concrete)
+	(single-slot retiredEntity
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass SimpleProposal
+	(is-a Proposal)
+	(role concrete))
+
+(defclass SplitProposal
+	(is-a Proposal)
+	(role concrete)
+	(single-slot entityId
+;+		(comment "This can be generated or proposed by the user")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot preferredName
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass VotingProposal
+	(is-a Proposal)
+	(role abstract))
+
+(defclass AgreeDisagreeVoteProposal
+	(is-a VotingProposal)
+	(role concrete))
+
+(defclass FiveStarsVoteProposal
+	(is-a VotingProposal)
+	(role concrete))
+
+(defclass Question "A class of Annotations representing questions about the content"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Review
+	(is-a Annotation)
+	(role concrete))
+
+(defclass ReviewRequest
+	(is-a Annotation)
+	(role concrete)
+	(single-slot reviewer
+		(type INSTANCE)
+;+		(allowed-classes Reviewer)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot completed
+;+		(comment "Flag - true, if review has been completed; false - if review is still pending")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot deadline
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass SeeAlso "A class of Annotations representing a reference to another resource"
+	(is-a Annotation)
+	(role concrete))
+
+(defclass Vote
+	(is-a Annotation)
+	(role abstract)
+	(single-slot voteValue
+		(type SYMBOL)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass AgreeDisagreeVote
+	(is-a Vote)
+	(role concrete)
+	(single-slot voteValue
+		(type SYMBOL)
+		(allowed-values I_agree I_don%27t_know I_disagree)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass FiveStarsVote
+	(is-a Vote)
+	(role concrete)
+	(single-slot voteValue
+		(type SYMBOL)
+		(allowed-values **** * ***** *** No_Vote **)
+		(default No_Vote)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Concept
+	(is-a Annotation)
+	(role concrete)
+	(single-slot needs_research
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot patient_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot is_used_in
+		(type INSTANCE)
+;+		(allowed-classes Recommendation)
+		(create-accessor read-write))
+	(single-slot concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot inLibrary
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_defining
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ConceptID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_definition_concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Guideline_Reference
+	(is-a Annotation)
+	(role concrete)
+	(single-slot GuidelineName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+;+		(comment "Numeric id")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Module_Reference
+	(is-a Annotation)
+	(role concrete)
+	(single-slot Module
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ModuleID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Module_Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Recommendation
+	(is-a Annotation)
+	(role concrete)
+	(single-slot RecID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot page
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Guideline_Recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot overall_quality
+		(type SYMBOL)
+		(allowed-values Good Poor)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot uses_concepts
+		(type INSTANCE)
+;+		(allowed-classes Concept)
+		(create-accessor read-write))
+	(single-slot quality_of_evidence
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot module
+		(type INSTANCE)
+;+		(allowed-classes Module_Reference)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot definition
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_reference
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Reference)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Change
+	(is-a AnnotatableThing)
+	(role abstract)
+	(single-slot hasStatus
+		(type INSTANCE)
+;+		(allowed-classes ChangeStatus)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot timestamp
+		(type INSTANCE)
+;+		(allowed-classes Timestamp)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot applyTo
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot context
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot author
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot partOfCompositeChange
+		(type INSTANCE)
+;+		(allowed-classes Composite_Change)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Class_Change
+	(is-a Change)
+	(role abstract))
+
+(defclass Annotation_Change
+	(is-a Class_Change)
+	(role concrete)
+	(single-slot associatedProperty
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Annotation_Added
+	(is-a Annotation_Change)
+	(role concrete))
+
+(defclass Annotation_Modified
+	(is-a Annotation_Change)
+	(role concrete))
+
+(defclass Annotation_Removed
+	(is-a Annotation_Change)
+	(role concrete))
+
+(defclass DisjointClass_Added
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Documentation_Added
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Documentation_Removed
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass DomainProperty_Added
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass DomainProperty_Removed
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Subclass_Added
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Subclass_Removed
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Superclass_Added
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass Superclass_Removed
+	(is-a Class_Change)
+	(role concrete))
+
+(defclass TemplateSlot_Added
+	(is-a Class_Change)
+	(role concrete)
+	(single-slot associatedProperty
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changes_Slot_0
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass TemplateSlot_Removed
+	(is-a Class_Change)
+	(role concrete)
+	(single-slot associatedProperty
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Property)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot changes_Slot_1
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Composite_Change
+	(is-a Change)
+	(role concrete)
+	(multislot subChanges
+		(type INSTANCE)
+;+		(allowed-classes Change)
+		(create-accessor read-write)))
+
+(defclass Created_Change
+	(is-a Change)
+	(role concrete)
+	(single-slot creationName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Class_Created "Created_Change"
+	(is-a Class_Change Created_Change)
+	(role concrete))
+
+(defclass Deleted_Change
+	(is-a Change)
+	(role concrete)
+	(single-slot deletionName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Class_Deleted "Deleted_Change"
+	(is-a Class_Change Deleted_Change)
+	(role concrete))
+
+(defclass Individual_Change
+	(is-a Change)
+	(role abstract))
+
+(defclass DirectType_Added
+	(is-a Individual_Change)
+	(role concrete))
+
+(defclass DirectType_Removed
+	(is-a Individual_Change)
+	(role concrete))
+
+(defclass Individual_Added
+	(is-a Individual_Change)
+	(role concrete))
+
+(defclass Individual_Created "Created_Change"
+	(is-a Created_Change Individual_Change)
+	(role concrete))
+
+(defclass Individual_Deleted "Deleted_Change"
+	(is-a Deleted_Change Individual_Change)
+	(role concrete))
+
+(defclass Individual_Removed
+	(is-a Individual_Change)
+	(role concrete))
+
+(defclass Property_Value
+	(is-a Individual_Change)
+	(role concrete))
+
+(defclass Name_Changed
+	(is-a Change)
+	(role concrete)
+	(single-slot oldName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot newName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Property_Change
+	(is-a Change)
+	(role concrete))
+
+(defclass Maximum_Cardinality
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Maximum_Value
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Minimum_Cardinality
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Minimum_Value
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Property_Created "Created_Change"
+	(is-a Created_Change Property_Change)
+	(role concrete))
+
+(defclass Property_Deleted "Deleted_Change"
+	(is-a Deleted_Change Property_Change)
+	(role concrete))
+
+(defclass Subproperty_Added
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Subproperty_Removed
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Superproperty_Added
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Superproperty_Removed
+	(is-a Property_Change)
+	(role concrete))
+
+(defclass Ontology_Component
+	(is-a AnnotatableThing)
+	(role concrete)
+	(single-slot hasStatus
+		(type INSTANCE)
+;+		(allowed-classes Ontology_ComponentStatus)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot changes
+		(type INSTANCE)
+;+		(allowed-classes Change)
+		(create-accessor read-write))
+	(multislot watchedBranchBy
+		(type INSTANCE)
+;+		(allowed-classes User)
+		(create-accessor read-write))
+	(single-slot currentName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot watchedBy
+		(type INSTANCE)
+;+		(allowed-classes User)
+		(create-accessor read-write)))
+
+(defclass Ontology_Class
+	(is-a Ontology_Component)
+	(role concrete))
+
+(defclass Ontology_Individual
+	(is-a Ontology_Component)
+	(role concrete))
+
+(defclass Ontology_Property
+	(is-a Ontology_Component)
+	(role concrete))
+
+(defclass Ontology
+	(is-a Ontology_Component)
+	(role concrete))
+
+(defclass LinguisticEntity
+	(is-a USER)
+	(role concrete)
+	(single-slot language
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot label
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Status
+	(is-a USER)
+	(role concrete)
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass AnnotationStatus
+	(is-a Status)
+	(role concrete))
+
+(defclass ChangeStatus
+	(is-a Status)
+	(role concrete))
+
+(defclass Ontology_ComponentStatus
+	(is-a Status)
+	(role concrete))
+
+(defclass Timestamp
+	(is-a USER)
+	(role concrete)
+	(single-slot date
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot sequence
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass User
+	(is-a USER)
+	(role concrete)
+	(multislot domainOfInterest
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(multislot watchedEntity
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(multislot watchedBranch
+		(type INSTANCE)
+;+		(allowed-classes Ontology_Component)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Reviewer
+	(is-a User)
+	(role concrete)
+	(multislot reviewRequests
+		(type INSTANCE)
+;+		(allowed-classes ReviewRequest)
+		(create-accessor read-write)))
+
+(defclass Table
+	(is-a USER)
+	(role concrete))
+
+(defclass Concepts
+	(is-a Table)
+	(role concrete)
+	(single-slot Guideline_Concept
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot InLibrary
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Guideline_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot NeedsResearch
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ConceptID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Patient_data
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Expert_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Expert_defining
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass DiabetesDrugs
+	(is-a Table)
+	(role concrete)
+	(single-slot VA_NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Classification
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot STRENGTH
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot UNITS
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Code
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot GENERIC_NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot NAT_ID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Modules
+	(is-a Table)
+	(role concrete)
+	(single-slot Module
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ModuleID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Module_Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass RecID_ConceptID
+	(is-a Table)
+	(role concrete)
+	(single-slot RecID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ConceptID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Recommendations
+	(is-a Table)
+	(role concrete)
+	(single-slot RecID
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot page
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Guideline_Recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot GuidelineName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot recommendation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Quality_of_Evidence
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot definition
+		(type INSTANCE)
+;+		(allowed-classes LinguisticEntity)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Recommendation_Annotation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot expert_definition
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Overall_Quality
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ModuleName
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

@@ -1,4 +1,4 @@
-; Thu Jun 22 14:16:19 PDT 2017
+; Thu Aug 03 12:17:43 PDT 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -460,6 +460,103 @@
 
 	(name "instances_file_name")
 	(string_value "library.pins"))
+
+([KB_482053_Class3876] of  Map
+
+	(entries
+		[KB_482053_Class3877]
+		[KB_482053_Class3879]
+		[KB_482053_Class3880]
+		[KB_482053_Class3882]
+		[KB_482053_Class3883]
+		[KB_482053_Class3885]
+		[KB_482053_Class3887]
+		[KB_482053_Class3889]
+		[KB_482053_Class3890])
+	(referenced_maps
+		[KB_482053_Class3878]
+		[KB_482053_Class3884]
+		[KB_482053_Class3886]
+		[KB_482053_Class3888]
+		[KB_482053_Class3881]))
+
+([KB_482053_Class3877] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_482053_Class3878] of  Map
+)
+
+([KB_482053_Class3879] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_482053_Class3878")
+	(value_class "java.util.Map"))
+
+([KB_482053_Class3880] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_482053_Class3881] of  Map
+)
+
+([KB_482053_Class3882] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_482053_Class3881")
+	(value_class "java.util.Map"))
+
+([KB_482053_Class3883] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_482053_Class3884] of  Map
+)
+
+([KB_482053_Class3885] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_482053_Class3884")
+	(value_class "java.util.Map"))
+
+([KB_482053_Class3886] of  Map
+)
+
+([KB_482053_Class3887] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_482053_Class3886")
+	(value_class "java.util.Map"))
+
+([KB_482053_Class3888] of  Map
+)
+
+([KB_482053_Class3889] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_482053_Class3888")
+	(value_class "java.util.Map"))
+
+([KB_482053_Class3890] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([KB_533515_Instance_329] of  Widget
 
@@ -4523,103 +4620,6 @@
 	(boolean_value TRUE)
 	(name "ButtonDisplayed-View Class"))
 
-([KB_956739_Class3876] of  Map
-
-	(entries
-		[KB_956739_Class3877]
-		[KB_956739_Class3879]
-		[KB_956739_Class3880]
-		[KB_956739_Class3882]
-		[KB_956739_Class3883]
-		[KB_956739_Class3885]
-		[KB_956739_Class3887]
-		[KB_956739_Class3889]
-		[KB_956739_Class3890])
-	(referenced_maps
-		[KB_956739_Class3888]
-		[KB_956739_Class3878]
-		[KB_956739_Class3884]
-		[KB_956739_Class3886]
-		[KB_956739_Class3881]))
-
-([KB_956739_Class3877] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_956739_Class3878] of  Map
-)
-
-([KB_956739_Class3879] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "KB_956739_Class3878")
-	(value_class "java.util.Map"))
-
-([KB_956739_Class3880] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_956739_Class3881] of  Map
-)
-
-([KB_956739_Class3882] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_956739_Class3881")
-	(value_class "java.util.Map"))
-
-([KB_956739_Class3883] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_956739_Class3884] of  Map
-)
-
-([KB_956739_Class3885] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_956739_Class3884")
-	(value_class "java.util.Map"))
-
-([KB_956739_Class3886] of  Map
-)
-
-([KB_956739_Class3887] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_956739_Class3886")
-	(value_class "java.util.Map"))
-
-([KB_956739_Class3888] of  Map
-)
-
-([KB_956739_Class3889] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_956739_Class3888")
-	(value_class "java.util.Map"))
-
-([KB_956739_Class3890] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([library_ProjectKB_Class10717] of  Widget
 
 	(height 60)
@@ -6098,8 +6098,8 @@
 		[KB_943075_Instance_866]
 		[KB_943075_Instance_332]
 		[KB_943075_Instance_661]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_943075_Instance_73]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_943075_Instance_615]
 		[library_ProjectKB_Instance_10926]
 		[KB_943075_Instance_500]

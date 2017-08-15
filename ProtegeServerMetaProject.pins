@@ -1,0 +1,279 @@
+; Wed Aug 02 15:00:28 PDT 2017
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+([metaproject_Class0] of  User
+
+	(group
+		[metaproject_Class30002]
+		[metaproject_Class20003]
+		[metaproject_Instance_0])
+	(name "Alyssa Corley")
+	(password "5388628c19a53850cfdf6ed9ebfe003f")
+	(salt "07f8bb85394c83bb"))
+
+([metaproject_Class1] of  User
+
+	(group
+		[metaproject_Class30002]
+		[metaproject_Class20003]
+		[metaproject_Instance_0])
+	(lastAccess "1343414130321")
+	(lastLogin "1343414121211")
+	(name "Samson Tu")
+	(password "fe83f7198cae4ed1e9065cbc9d04b33c")
+	(salt "cb67da39cf045f47"))
+
+([metaproject_Class10000] of  ServerAppliedOperation
+
+	(description "The operation of shutting down the server.")
+	(name "ShutdownServer"))
+
+([metaproject_Class10001] of  User
+
+	(group
+		[metaproject_Class20003]
+		[metaproject_Instance_0]
+		[metaproject_Class30002])
+	(lastAccess "1343154999309")
+	(lastLogin "1343145890734")
+	(name "Connie Oshiro")
+	(password "e93c6ab16a897cafdfde57cb4a9b32a8")
+	(salt "1d9e7c5504efe091"))
+
+([metaproject_Class10002] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA Lipid KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_Lipid.pprj")
+	(name "ATHENA Lipid KB"))
+
+([metaproject_Class10011] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA HF KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_HF.pprj")
+	(name "ATHENA HF KB"))
+
+([metaproject_Class10012] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA HTN KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_HTN.pprj")
+	(name "ATHENA HTN KB"))
+
+([metaproject_Class10013] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA CKD KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_CKD.pprj")
+	(name "ATHENA CKD KB"))
+
+([metaproject_Class10014] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA DM Foot KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_DM_Foot.pprj")
+	(name "ATHENA DM Foot KB"))
+
+([metaproject_Class10015] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA DM Eye KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_DM_Eye.pprj")
+	(name "ATHENA DM Eye KB"))
+
+([metaproject_Class10016] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA  Glycemic Control KB")
+	(location "C:\\ATHENASharedKB_v1\\ATHENA_GlycemicControl.pprj")
+	(name "ATHENA Glycemic Control KB"))
+
+([metaproject_Class2] of  ProjectAppliedOperation
+
+	(description "The operation of displaying the project in the project list.\n\nThis is used to control the projects displayed when a user connects to a server.")
+	(name "DisplayInProjectList"))
+
+([metaproject_Class20000] of  ServerAppliedOperation
+
+	(description "This  operation allows a user to make alterations to his credentials.  This privilege should probably only be  used by fake users representing server processes.")
+	(name "Delegate"))
+
+([metaproject_Class20003] of  Group
+
+	(description "The group of adminsitrators of the Protege server.")
+	(member
+		[metaproject_Class20008]
+		[metaproject_Class30001]
+		[metaproject_Class40000]
+		[metaproject_Class1]
+		[metaproject_Class0]
+		[metaproject_Class10001])
+	(name "AdminGroup"))
+
+([metaproject_Class20004] of  ServerAppliedOperation
+
+	(description "A super-right: a user who has this right can kill other users' sessions, stop and start server projects without having these rights set for each ptoject individually.")
+	(name "AdministerServer"))
+
+([metaproject_Class20005] of  ServerAppliedOperation
+
+	(description "The operation of killing another user's session.")
+	(name "KillOtherUserSession"))
+
+([metaproject_Class20006] of  ServerAppliedOperation
+
+	(description "The operation of starting a (previously stopped) server project.")
+	(name "StartRemoteProject"))
+
+([metaproject_Class20007] of  ServerAppliedOperation
+
+	(description "The operation of stopping/closing a running server project.")
+	(name "StopRemoteProject"))
+
+([metaproject_Class20008] of  User
+
+	(description "A admin user that can perform adminisitrative operations on the Protege server.")
+	(group
+		[metaproject_Class20003]
+		[metaproject_Instance_0])
+	(name "Admin")
+	(password "0235b8f25cacfecdb0adb560c95da1a9")
+	(salt "0b209d16f20a5dac"))
+
+([metaproject_Class20009] of  Server
+
+	(allowedGroupOperation
+		[metaproject_Class20010]
+		[metaproject_Class30003])
+	(description "The server on which the policies apply.\nCurrent implementaion does not take into account the hostname, so all the policies (allowed group operations) are applied to this one instance.")
+	(name "MyServer"))
+
+([metaproject_Class20010] of  GroupOperation
+
+	(allowedGroup [metaproject_Class20003])
+	(allowedOperation
+		[metaproject_Class20004]
+		[metaproject_Class20005]
+		[metaproject_Class20006]
+		[metaproject_Class20007]
+		[metaproject_Class10000]))
+
+([metaproject_Class3] of  GroupOperation
+
+	(allowedGroup [metaproject_Instance_0])
+	(allowedOperation [metaproject_Class2]))
+
+([metaproject_Class30000] of  GroupAppliedOperation
+
+	(description "The operation of adding or removing users to a group. (not enforced)")
+	(name "EditGroup"))
+
+([metaproject_Class30001] of  User
+
+	(group
+		[metaproject_Class30002]
+		[metaproject_Class20003]
+		[metaproject_Instance_0])
+	(name "webprotege")
+	(password "f7bcce407455edd3befd66e6405da28d")
+	(salt "574c25cbabe1feed"))
+
+([metaproject_Class30002] of  Group
+
+	(member
+		[metaproject_Class30001]
+		[metaproject_Class40000]
+		[metaproject_Class1]
+		[metaproject_Class0]
+		[metaproject_Class10001])
+	(name "WebProtegeGroup"))
+
+([metaproject_Class30003] of  GroupOperation
+
+	(allowedGroup [metaproject_Class30002])
+	(allowedOperation [metaproject_Class20000]))
+
+([metaproject_Class40000] of  User
+
+	(group
+		[metaproject_Class30002]
+		[metaproject_Class20003]
+		[metaproject_Instance_0])
+	(lastAccess "1342469501751")
+	(lastLogin "1342469170644")
+	(name "Susana Martins")
+	(password "0313d932240eb95d108d47eb29243212")
+	(salt "a80a385ce974874f"))
+
+([metaproject_Class50002] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA HF Recommendations")
+	(location "C:\\ATHENASharedKB_v1\\recommendations_HF.pprj")
+	(name "Recommendations: HF"))
+
+([metaproject_Class60005] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "DM Recommendations")
+	(location "C:\\ATHENASharedKB_v1\\recommendations_DM.pprj")
+	(name "Recommendations: DM"))
+
+([metaproject_Class60006] of  Project
+
+	(allowedGroupOperation
+		[metaproject_Instance_10008]
+		[metaproject_Class3])
+	(description "ATHENA Lipid Recommendations")
+	(location "C:\\ATHENASharedKB_v1\\recommendations_Lipid.pprj")
+	(name "Recommendations: Lipid"))
+
+([metaproject_Instance_0] of  Group
+
+	(description "This group is intended to represent all the users.\n\nNewly created users are added to this group by default.")
+	(member
+		[metaproject_Class20008]
+		[metaproject_Class30001]
+		[metaproject_Class40000]
+		[metaproject_Class1]
+		[metaproject_Class0]
+		[metaproject_Class10001])
+	(name "World"))
+
+([metaproject_Instance_10008] of  GroupOperation
+
+	(allowedGroup [metaproject_Instance_0])
+	(allowedOperation
+		[nci_metaproject_Instance_60009]
+		[nci_metaproject_Instance_60010]))
+
+([nci_metaproject_Instance_60009] of  ProjectAppliedOperation
+
+	(description "The operation of reading an ontology project.\n\nThis controls who can open a remote project.")
+	(name "Read"))
+
+([nci_metaproject_Instance_60010] of  ProjectAppliedOperation
+
+	(description "The operation of writing to an ontology project.\n\n(Enforcement not implemented yet)")
+	(name "Write"))

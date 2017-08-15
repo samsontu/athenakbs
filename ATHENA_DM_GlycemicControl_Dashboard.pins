@@ -1,7 +1,7 @@
-; Fri Jul 28 13:25:56 PDT 2017
+; Tue Aug 15 13:46:34 PDT 2017
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 ([30%3C%3DeGFR%3C45] of  Diagnostic_Term_Metaclass
 
@@ -1033,7 +1033,7 @@
 		Dapagliflozin)
 	(drug_usage [ATHENA_GlycemicControl_Class1110002])
 	(generic_drug Empagliflozin)
-	(increase_dose_ceiling 24.1)
+	(increase_dose_ceiling 24.9)
 	(label "Empagliflozin")
 	(max_recommended_dose 25.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
@@ -8159,7 +8159,8 @@
 		CHLORPROPAMIDE
 		Glibenclamide
 		TOLAZAMIDE
-		TOLBUTAMIDE)
+		TOLBUTAMIDE
+		Sulfa_drugs_noSU)
 	(collateral_actions
 		[ATHENA_GlycemicControl_Instance_140143]
 		[ATHENA_GlycemicControl_Class490000]
@@ -8991,9 +8992,9 @@
 		[ATHENA_GlycemicControl_Class1181527])
 	(drug_usage [ATHENA_GlycemicControl_Class60000])
 	(generic_drug GLIPIZIDE_XL)
-	(increase_dose_ceiling 20.0)
+	(increase_dose_ceiling 19.9)
 	(label "Glipizide XL")
-	(max_recommended_dose 20.2)
+	(max_recommended_dose 20.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 2.5))
 
@@ -12435,7 +12436,7 @@
 		[ATHENA_GlycemicControl_Instance_100007])
 	(drug_usage [ATHENA_GlycemicControl_Class60000])
 	(generic_drug GLIPIZIDE)
-	(increase_dose_ceiling 40.0)
+	(increase_dose_ceiling 39.9)
 	(label "GLIPIZIDE")
 	(max_recommended_dose 40.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
@@ -12517,7 +12518,7 @@
 		[ATHENA_GlycemicControl_Class190000])
 	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
 	(generic_drug METFORMIN)
-	(increase_dose_ceiling 2500.0)
+	(increase_dose_ceiling 2499.9)
 	(label "METFORMIN")
 	(max_recommended_dose 2600.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
@@ -12535,9 +12536,9 @@
 		[ATHENA_GlycemicControl_Instance_110003])
 	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
 	(generic_drug METFORMIN_ER)
-	(increase_dose_ceiling 2000.0)
+	(increase_dose_ceiling 1999.9)
 	(label "METFORMIN_ER")
-	(max_recommended_dose 2000.2)
+	(max_recommended_dose 2000.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 500.0))
 
@@ -12564,9 +12565,9 @@
 	(Drug_Class_Name PIOGLITAZONE)
 	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
 	(generic_drug PIOGLITAZONE)
-	(increase_dose_ceiling 45.0)
+	(increase_dose_ceiling 44.9)
 	(label "PIOGLITAZONE")
-	(max_recommended_dose 45.2)
+	(max_recommended_dose 45.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 15.0))
 

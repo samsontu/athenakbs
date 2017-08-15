@@ -1,0 +1,4176 @@
+; Tue Aug 15 13:44:29 PDT 2017
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4767] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_dashboard_ProjectKB_Class4768])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4768] of  Property_List
+)
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4769] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3ANAME"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4770] of  String
+
+	(name "Drug_Usage")
+	(string_value "label"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4771] of  String
+
+	(name "Guideline_View")
+	(string_value "guideline"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4772] of  String
+
+	(name "Collateral_Action")
+	(string_value "actions"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4773] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_ATHENA_CKD.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4774] of  Map
+
+	(entries
+		[ATHENA_CKD_dashboard_ProjectKB_Class4775]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4776]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4777]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4778]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4779]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4780]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4781]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4782]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4783]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4784]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4785]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4786]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4787]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4788]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4789]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4790]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4791]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4792]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4793]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4794]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4795]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4796]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4797]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4798]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4799]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4800]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4801]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4802]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4803]))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4775] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10006")
+	(key_class "java.lang.String")
+	(value "332 125 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4776] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10062")
+	(key_class "java.lang.String")
+	(value "518 767 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4777] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_6")
+	(key_class "java.lang.String")
+	(value "31 51 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4778] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10063")
+	(key_class "java.lang.String")
+	(value "603 771 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4779] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10045")
+	(key_class "java.lang.String")
+	(value "282 628 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4780] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10064")
+	(key_class "java.lang.String")
+	(value "701 770 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4781] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10028")
+	(key_class "java.lang.String")
+	(value "95 637 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4782] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_8")
+	(key_class "java.lang.String")
+	(value "191 51 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4783] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_1")
+	(key_class "java.lang.String")
+	(value "334 29 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4784] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10022")
+	(key_class "java.lang.String")
+	(value "7 634 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4785] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_20006")
+	(key_class "java.lang.String")
+	(value "466 548 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4786] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_20005")
+	(key_class "java.lang.String")
+	(value "190 633 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4787] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10019")
+	(key_class "java.lang.String")
+	(value "428 273 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4788] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10036")
+	(key_class "java.lang.String")
+	(value "560 606 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4789] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10035")
+	(key_class "java.lang.String")
+	(value "470 672 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4790] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10016")
+	(key_class "java.lang.String")
+	(value "425 180 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4791] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10077")
+	(key_class "java.lang.String")
+	(value "388 968 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4792] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10078")
+	(key_class "java.lang.String")
+	(value "274 987 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4793] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10052")
+	(key_class "java.lang.String")
+	(value "405 757 86 76")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4794] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10014")
+	(key_class "java.lang.String")
+	(value "227 251 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4795] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10050")
+	(key_class "java.lang.String")
+	(value "364 638 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4796] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10013")
+	(key_class "java.lang.String")
+	(value "15 245 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4797] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_40000")
+	(key_class "java.lang.String")
+	(value "111 992 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4798] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10034")
+	(key_class "java.lang.String")
+	(value "372 871 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4799] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10033")
+	(key_class "java.lang.String")
+	(value "268 804 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4800] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10032")
+	(key_class "java.lang.String")
+	(value "26 897 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4801] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10031")
+	(key_class "java.lang.String")
+	(value "140 893 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4802] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_80003")
+	(key_class "java.lang.String")
+	(value "641 682 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4803] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10081")
+	(key_class "java.lang.String")
+	(value "430 364 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4804] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Instance_5.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_dashboard_ProjectKB_Class4774")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4805] of  Map
+
+	(entries
+		[ATHENA_CKD_dashboard_ProjectKB_Class4806]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4807]))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4806] of  Map_Entry
+
+	(key "ATHENA_CKD_Class6")
+	(key_class "java.lang.String")
+	(value "10 10 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4807] of  Map_Entry
+
+	(key "ATHENA_CKD_Class7")
+	(key_class "java.lang.String")
+	(value "100 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4808] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Class8.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_dashboard_ProjectKB_Class4805")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4809] of  Map
+
+	(entries
+		[ATHENA_CKD_dashboard_ProjectKB_Class4810]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4811]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4812]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4813]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4814]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4815]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4816]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4817]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4818]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4819]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4820]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4821]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4822]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4823]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4824]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4825]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4826]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4827]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4828]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4829]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4830]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4831]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4832]))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4810] of  Map_Entry
+
+	(key "ATHENA_CKD_Class190354")
+	(key_class "java.lang.String")
+	(value "915 489 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4811] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40009")
+	(key_class "java.lang.String")
+	(value "574 431 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4812] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30005")
+	(key_class "java.lang.String")
+	(value "364 206 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4813] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30004")
+	(key_class "java.lang.String")
+	(value "364 92 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4814] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40018")
+	(key_class "java.lang.String")
+	(value "313 451 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4815] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40005")
+	(key_class "java.lang.String")
+	(value "570 96 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4816] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40019")
+	(key_class "java.lang.String")
+	(value "336 533 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4817] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40006")
+	(key_class "java.lang.String")
+	(value "568 210 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4818] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40007")
+	(key_class "java.lang.String")
+	(value "521 315 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4819] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40008")
+	(key_class "java.lang.String")
+	(value "645 316 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4820] of  Map_Entry
+
+	(key "ATHENA_CKD_Class170260")
+	(key_class "java.lang.String")
+	(value "809 521 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4821] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20006")
+	(key_class "java.lang.String")
+	(value "225 310 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4822] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20005")
+	(key_class "java.lang.String")
+	(value "132 306 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4823] of  Map_Entry
+
+	(key "ATHENA_CKD_Class60003")
+	(key_class "java.lang.String")
+	(value "605 618 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4824] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20004")
+	(key_class "java.lang.String")
+	(value "160 196 70 70")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4825] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20003")
+	(key_class "java.lang.String")
+	(value "165 90 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4826] of  Map_Entry
+
+	(key "ATHENA_CKD_Class80000")
+	(key_class "java.lang.String")
+	(value "20 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4827] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30006")
+	(key_class "java.lang.String")
+	(value "367 316 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4828] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40024")
+	(key_class "java.lang.String")
+	(value "779 427 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4829] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40023")
+	(key_class "java.lang.String")
+	(value "503 621 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4830] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40027")
+	(key_class "java.lang.String")
+	(value "739 617 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4831] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40021")
+	(key_class "java.lang.String")
+	(value "848 618 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4832] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40020")
+	(key_class "java.lang.String")
+	(value "363 609 62 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4833] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Class20002.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_dashboard_ProjectKB_Class4809")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4834] of  Map
+
+	(entries
+		[ATHENA_CKD_dashboard_ProjectKB_Class4835]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4836]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4837]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4838]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4839]))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4835] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10003")
+	(key_class "java.lang.String")
+	(value "70 128 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4836] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10002")
+	(key_class "java.lang.String")
+	(value "58 335 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4837] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10004")
+	(key_class "java.lang.String")
+	(value "357 227 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4838] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10025")
+	(key_class "java.lang.String")
+	(value "233 334 71 72")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4839] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10024")
+	(key_class "java.lang.String")
+	(value "216 122 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4840] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Class10001.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_dashboard_ProjectKB_Class4834")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4841] of  Map
+)
+
+([ATHENA_CKD_dashboard_ProjectKB_Class4842] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_dashboard_ProjectKB_Class4841")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_ProjectKB_Class13588] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class13589] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class13592] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class13593] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class13763] of  Widget
+
+	(is_hidden FALSE)
+	(name "PAL-QUERY")
+	(property_list [ATHENA_CKD_ProjectKB_Class13764])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_CKD_ProjectKB_Class13764] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class13765]
+		[ATHENA_CKD_ProjectKB_Class13766]
+		[ATHENA_CKD_ProjectKB_Class13768]
+		[ATHENA_CKD_ProjectKB_Class13770]
+		[ATHENA_CKD_ProjectKB_Class13772]))
+
+([ATHENA_CKD_ProjectKB_Class13765] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_ProjectKB_Class13766] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name ":PAL-NAME")
+	(property_list [ATHENA_CKD_ProjectKB_Class13767])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 10))
+
+([ATHENA_CKD_ProjectKB_Class13767] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13768] of  Widget
+
+	(height 230)
+	(is_hidden FALSE)
+	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_CKD_ProjectKB_Class13769])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 450)
+	(x 0)
+	(y 160))
+
+([ATHENA_CKD_ProjectKB_Class13769] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13770] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":PAL-RANGE")
+	(property_list [ATHENA_CKD_ProjectKB_Class13771])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 220)
+	(x 230)
+	(y 20))
+
+([ATHENA_CKD_ProjectKB_Class13771] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13772] of  Widget
+
+	(height 70)
+	(is_hidden FALSE)
+	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_CKD_ProjectKB_Class13773])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 80))
+
+([ATHENA_CKD_ProjectKB_Class13773] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13791] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Class13792])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([ATHENA_CKD_ProjectKB_Class13792] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13799] of  Widget
+
+	(is_hidden FALSE)
+	(name "Parameterized_String")
+	(property_list [ATHENA_CKD_ProjectKB_Class13800])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_CKD_ProjectKB_Class13800] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class13801]
+		[ATHENA_CKD_ProjectKB_Class13802]
+		[ATHENA_CKD_ProjectKB_Class13804]
+		[ATHENA_CKD_ProjectKB_Class13808]
+		[ATHENA_CKD_ProjectKB_Class13810]
+		[ATHENA_CKD_ProjectKB_Class24800]))
+
+([ATHENA_CKD_ProjectKB_Class13801] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_ProjectKB_Class13802] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Class13803])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 190))
+
+([ATHENA_CKD_ProjectKB_Class13803] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13804] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "variables")
+	(property_list [ATHENA_CKD_ProjectKB_Class13805])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Class13805] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class13806]
+		[ATHENA_CKD_ProjectKB_Class13807]))
+
+([ATHENA_CKD_ProjectKB_Class13806] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class13807] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Class13808] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ATHENA_CKD_ProjectKB_Class13809])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Class13809] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13810] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Class13811])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Class13811] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13891] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Class13892])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([ATHENA_CKD_ProjectKB_Class13892] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class13893] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "status")
+	(property_list [ATHENA_CKD_ProjectKB_Class13894])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 240))
+
+([ATHENA_CKD_ProjectKB_Class13894] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class14689] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [ATHENA_CKD_ProjectKB_Class14690])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 570))
+
+([ATHENA_CKD_ProjectKB_Class14690] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class14691]
+		[ATHENA_CKD_ProjectKB_Class14692]))
+
+([ATHENA_CKD_ProjectKB_Class14691] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class14692] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Class23596] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Class23597])
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+
+([ATHENA_CKD_ProjectKB_Class23597] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23598] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Class23599])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([ATHENA_CKD_ProjectKB_Class23599] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23604] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "data_source")
+	(property_list [ATHENA_CKD_ProjectKB_Class23605])
+	(widget_class_name "edu.stanford.smi.protege.widget.SymbolListWidget")
+	(width 200)
+	(x 0)
+	(y 250))
+
+([ATHENA_CKD_ProjectKB_Class23605] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23811] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Class23812])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([ATHENA_CKD_ProjectKB_Class23812] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23813] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class23816] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strength_of_recommendation")
+	(property_list [ATHENA_CKD_ProjectKB_Class23817])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 330))
+
+([ATHENA_CKD_ProjectKB_Class23817] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23818] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "net_benefit")
+	(property_list [ATHENA_CKD_ProjectKB_Class23819])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 450))
+
+([ATHENA_CKD_ProjectKB_Class23819] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23820] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [ATHENA_CKD_ProjectKB_Class23821])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 270))
+
+([ATHENA_CKD_ProjectKB_Class23821] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23822] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "subsidiary_message")
+	(property_list [ATHENA_CKD_ProjectKB_Class23823])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 400)
+	(y 270))
+
+([ATHENA_CKD_ProjectKB_Class23823] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23824] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "fine-grain_priority")
+	(property_list [ATHENA_CKD_ProjectKB_Class23825])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 330))
+
+([ATHENA_CKD_ProjectKB_Class23825] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23826] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "overall_quality_of_evidence")
+	(property_list [ATHENA_CKD_ProjectKB_Class23827])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 270))
+
+([ATHENA_CKD_ProjectKB_Class23827] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23828] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "level_of_evidence")
+	(property_list [ATHENA_CKD_ProjectKB_Class23829])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 390))
+
+([ATHENA_CKD_ProjectKB_Class23829] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23838] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class23839] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class23842] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strength_of_recommendation")
+	(property_list [ATHENA_CKD_ProjectKB_Class23843])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 390))
+
+([ATHENA_CKD_ProjectKB_Class23843] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23844] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "net_benefit")
+	(property_list [ATHENA_CKD_ProjectKB_Class23845])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 510))
+
+([ATHENA_CKD_ProjectKB_Class23845] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23846] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [ATHENA_CKD_ProjectKB_Class23847])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 330))
+
+([ATHENA_CKD_ProjectKB_Class23847] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23848] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "subsidiary_message")
+	(property_list [ATHENA_CKD_ProjectKB_Class23849])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 400)
+	(y 330))
+
+([ATHENA_CKD_ProjectKB_Class23849] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23850] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "fine-grain_priority")
+	(property_list [ATHENA_CKD_ProjectKB_Class23851])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 390))
+
+([ATHENA_CKD_ProjectKB_Class23851] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23852] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "overall_quality_of_evidence")
+	(property_list [ATHENA_CKD_ProjectKB_Class23853])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 330))
+
+([ATHENA_CKD_ProjectKB_Class23853] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class23854] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "level_of_evidence")
+	(property_list [ATHENA_CKD_ProjectKB_Class23855])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 450))
+
+([ATHENA_CKD_ProjectKB_Class23855] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class24516] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Class24517])
+	(widget_class_name "gov.va.test.opioidtesttool.TestingEnvironment"))
+
+([ATHENA_CKD_ProjectKB_Class24517] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class24800] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "multivalued_variables")
+	(property_list [ATHENA_CKD_ProjectKB_Class24801])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 310))
+
+([ATHENA_CKD_ProjectKB_Class24801] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class24802]
+		[ATHENA_CKD_ProjectKB_Class24803]))
+
+([ATHENA_CKD_ProjectKB_Class24802] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class24803] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Class24804] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Class24805])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Class24805] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class33846] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [ATHENA_CKD_ProjectKB_Class33847])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([ATHENA_CKD_ProjectKB_Class33847] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3528] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Class3529])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([ATHENA_CKD_ProjectKB_Class3529] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3538] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Class3539])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([ATHENA_CKD_ProjectKB_Class3539] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3554] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Class3555])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([ATHENA_CKD_ProjectKB_Class3555] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3584] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Class3585])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([ATHENA_CKD_ProjectKB_Class3585] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3763] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Class3764])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Class3764] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class3769] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class3770] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class3771] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class3772] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class4494] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Class4495])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 370))
+
+([ATHENA_CKD_ProjectKB_Class4495] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class4496] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "controllable")
+	(property_list [ATHENA_CKD_ProjectKB_Class4497])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 200)
+	(x 0)
+	(y 430))
+
+([ATHENA_CKD_ProjectKB_Class4497] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class4498] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "status")
+	(property_list [ATHENA_CKD_ProjectKB_Class4499])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([ATHENA_CKD_ProjectKB_Class4499] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Class4553] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "collateral_actions")
+	(property_list [ATHENA_CKD_ProjectKB_Class4554])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 0)
+	(y 570))
+
+([ATHENA_CKD_ProjectKB_Class4554] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class4555]
+		[ATHENA_CKD_ProjectKB_Class4556]))
+
+([ATHENA_CKD_ProjectKB_Class4555] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class4556] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Class4557] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in_condition")
+	(property_list [ATHENA_CKD_ProjectKB_Class4558])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 510))
+
+([ATHENA_CKD_ProjectKB_Class4558] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Class4559]
+		[ATHENA_CKD_ProjectKB_Class4560]))
+
+([ATHENA_CKD_ProjectKB_Class4559] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Class4560] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Class4637] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "status")
+	(property_list [ATHENA_CKD_ProjectKB_Class4638])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([ATHENA_CKD_ProjectKB_Class4638] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_12491] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_12492] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_12493] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_12494] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_12495] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_12577] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "display_location")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_12578])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_12578] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_12579] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "priority")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_12580])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_12580] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_12581] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_message")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_12582])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_12582] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_12585] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_12586] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13114] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "display_location")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13115])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_13115] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13116] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "priority")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13117])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_13117] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13118] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "main_message")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13119])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_13119] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13122] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13123] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_13550] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([ATHENA_CKD_ProjectKB_Instance_13551] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_22488] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "coding_system")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_22489])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_22489] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_22490] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "code")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32491])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_22550] of  Integer
+
+	(integer_value 456)
+	(name "PAL_TAB_DIVIDER_LOCATION"))
+
+([ATHENA_CKD_ProjectKB_Instance_22551] of  Integer
+
+	(integer_value 419)
+	(name "CONSTRAINT_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([ATHENA_CKD_ProjectKB_Instance_22552] of  Integer
+
+	(integer_value 419)
+	(name "CONSTRAINT_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([ATHENA_CKD_ProjectKB_Instance_2319] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2320])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2320] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2329] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2330])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2330] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2335] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2336])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2336] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2339] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2340])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2340] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_22550]
+		[ATHENA_CKD_ProjectKB_Instance_22551]
+		[ATHENA_CKD_ProjectKB_Instance_22552]))
+
+([ATHENA_CKD_ProjectKB_Instance_2341] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2342])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2342] of  Property_List
+
+	(properties [ATHENA_CKD_ProjectKB_Instance_2403]))
+
+([ATHENA_CKD_ProjectKB_Instance_2343] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2344])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2344] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2351] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2352])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2352] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2358] of  Widget
+
+	(is_hidden FALSE)
+	(name "Guideline_View")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2359])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_CKD_ProjectKB_Instance_2359] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2360]
+		[ATHENA_CKD_ProjectKB_Instance_2361]
+		[ATHENA_CKD_ProjectKB_Instance_2365]
+		[ATHENA_CKD_ProjectKB_Instance_2369]))
+
+([ATHENA_CKD_ProjectKB_Instance_2360] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2401]
+		[ATHENA_CKD_ProjectKB_Instance_2402]))
+
+([ATHENA_CKD_ProjectKB_Instance_2361] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "guideline_drugs")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2362])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 270)
+	(x 270)
+	(y 600))
+
+([ATHENA_CKD_ProjectKB_Instance_2362] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2363]
+		[ATHENA_CKD_ProjectKB_Instance_2364]
+		[ATHENA_CKD_ProjectKB_Instance_2830]))
+
+([ATHENA_CKD_ProjectKB_Instance_2363] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_2364] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2365] of  Widget
+
+	(height 600)
+	(is_hidden FALSE)
+	(label "Guideline")
+	(name "guideline")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2366])
+	(widget_class_name "edu.stanford.smi.protegex.widget.contains.ContainsWidget")
+	(width 810)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_2366] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2373]
+		[ATHENA_CKD_ProjectKB_Instance_2374]
+		[ATHENA_CKD_ProjectKB_Instance_2375]
+		[ATHENA_CKD_ProjectKB_Instance_2376]
+		[ATHENA_CKD_ProjectKB_Instance_2377]
+		[ATHENA_CKD_ProjectKB_Instance_2378]
+		[ATHENA_CKD_ProjectKB_Instance_2379]
+		[ATHENA_CKD_ProjectKB_Instance_2380]
+		[ATHENA_CKD_ProjectKB_Instance_2381]
+		[ATHENA_CKD_ProjectKB_Instance_2382]
+		[ATHENA_CKD_ProjectKB_Instance_2383]
+		[ATHENA_CKD_ProjectKB_Instance_2384]
+		[ATHENA_CKD_ProjectKB_Instance_2385]
+		[ATHENA_CKD_ProjectKB_Instance_2386]
+		[ATHENA_CKD_ProjectKB_Instance_2387]
+		[ATHENA_CKD_ProjectKB_Instance_2388]
+		[ATHENA_CKD_ProjectKB_Instance_2389]
+		[ATHENA_CKD_ProjectKB_Instance_2390]
+		[ATHENA_CKD_ProjectKB_Instance_2391]
+		[ATHENA_CKD_ProjectKB_Instance_2392]
+		[ATHENA_CKD_ProjectKB_Instance_2393]
+		[ATHENA_CKD_ProjectKB_Instance_2394]
+		[ATHENA_CKD_ProjectKB_Instance_2395]
+		[ATHENA_CKD_ProjectKB_Instance_2396]
+		[ATHENA_CKD_ProjectKB_Instance_2397]
+		[ATHENA_CKD_ProjectKB_Instance_2398]
+		[ATHENA_CKD_ProjectKB_Instance_2399]
+		[ATHENA_CKD_ProjectKB_Instance_2400]))
+
+([ATHENA_CKD_ProjectKB_Instance_2369] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "drug_usages")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2370])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 270)
+	(x 0)
+	(y 600))
+
+([ATHENA_CKD_ProjectKB_Instance_2370] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2371]
+		[ATHENA_CKD_ProjectKB_Instance_2372]
+		[ATHENA_CKD_ProjectKB_Instance_2831]))
+
+([ATHENA_CKD_ProjectKB_Instance_2371] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_2372] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2373] of  String
+
+	(name "tooltip_text"))
+
+([ATHENA_CKD_ProjectKB_Instance_2374] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Insert:At:Current:Selection"))
+
+([ATHENA_CKD_ProjectKB_Instance_2375] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Select:New:Insertions"))
+
+([ATHENA_CKD_ProjectKB_Instance_2376] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Create:Form:For:New:Instances"))
+
+([ATHENA_CKD_ProjectKB_Instance_2377] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Subwidget:Selection:Enabled"))
+
+([ATHENA_CKD_ProjectKB_Instance_2378] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Summary:Panel"))
+
+([ATHENA_CKD_ProjectKB_Instance_2379] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Number:Of:Subordinates"))
+
+([ATHENA_CKD_ProjectKB_Instance_2380] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Subordinate:Browser:Keys"))
+
+([ATHENA_CKD_ProjectKB_Instance_2381] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Use:Separators:Between:Subwidgets"))
+
+([ATHENA_CKD_ProjectKB_Instance_2382] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Comtain:In:Vertical:Direction"))
+
+([ATHENA_CKD_ProjectKB_Instance_2383] of  Integer
+
+	(integer_value 10)
+	(name ":Size:Of:Space:Between:Subwidgets"))
+
+([ATHENA_CKD_ProjectKB_Instance_2384] of  Integer
+
+	(integer_value 1)
+	(name ":Prototype:Depth"))
+
+([ATHENA_CKD_ProjectKB_Instance_2385] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Create:Instance:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2386] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Add:Instance:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2387] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:View:Instance:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2388] of  Boolean
+
+	(boolean_value TRUE)
+	(name ":Display:Remove:Instance:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2389] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Delete:Instance:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2390] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Prototype:Button"))
+
+([ATHENA_CKD_ProjectKB_Instance_2391] of  Boolean
+
+	(boolean_value FALSE)
+	(name ":Display:Move:Instance:Buttons"))
+
+([ATHENA_CKD_ProjectKB_Instance_2392] of  String
+
+	(name ":Create:Instance:Button:Tooltip")
+	(string_value "Create a new instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2393] of  String
+
+	(name ":Add:Instance:Button:Tooltip")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2394] of  String
+
+	(name ":View:Instance:Button:Tooltip")
+	(string_value "View the selected instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2395] of  String
+
+	(name ":Remove:Instance:Button:Tooltip")
+	(string_value "Remove the selected instance(s)"))
+
+([ATHENA_CKD_ProjectKB_Instance_2396] of  String
+
+	(name ":Delete:Instance:Button:Tooltip")
+	(string_value "Delete the selected instance(s) from the knowledge base"))
+
+([ATHENA_CKD_ProjectKB_Instance_2397] of  String
+
+	(name ":Prototype:Button:Tooltip")
+	(string_value "Create a new instance which is a duplicate of the selected instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2398] of  String
+
+	(name ":Move:Instance:Buttons:Tooltip")
+	(string_value "Move the selected instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2399] of  String
+
+	(name ":Create:Instance:Dialog:Title")
+	(string_value "Create a new instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2400] of  String
+
+	(name ":Add:Instance:Dialog:Title")
+	(string_value "Select an already existing instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2401] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_2402] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_2403] of  String
+
+	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
+	(string_value "ATHENA_CKD_Class40022"))
+
+([ATHENA_CKD_ProjectKB_Instance_2409] of  Map
+
+	(entries
+		[ATHENA_CKD_dashboard_ProjectKB_Class4773]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4804]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4808]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4833]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4840]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4842])
+	(referenced_maps
+		[ATHENA_CKD_dashboard_ProjectKB_Class4809]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4841]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4805]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4774]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4834]))
+
+([ATHENA_CKD_ProjectKB_Instance_2464] of  Widget
+
+	(is_hidden FALSE)
+	(name "Numeric_Term_Criterion")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2467])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_CKD_ProjectKB_Instance_2467] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2468]
+		[ATHENA_CKD_ProjectKB_Instance_2469]
+		[ATHENA_CKD_ProjectKB_Instance_2471]
+		[ATHENA_CKD_ProjectKB_Instance_2473]
+		[ATHENA_CKD_ProjectKB_Instance_2475]
+		[ATHENA_CKD_ProjectKB_Instance_2479]
+		[ATHENA_CKD_ProjectKB_Instance_2481]
+		[ATHENA_CKD_ProjectKB_Instance_2483]
+		[ATHENA_CKD_ProjectKB_Instance_2485]
+		[ATHENA_CKD_ProjectKB_Instance_2487]
+		[ATHENA_CKD_ProjectKB_Instance_2489]
+		[ATHENA_CKD_ProjectKB_Instance_2491]
+		[ATHENA_CKD_ProjectKB_Class13791]
+		[ATHENA_CKD_ProjectKB_Class4637]))
+
+([ATHENA_CKD_ProjectKB_Instance_2468] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_ProjectKB_Instance_2469] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2470])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_2470] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2471] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "unit")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2472])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 100)
+	(x 400)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_2472] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2473] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "numeric_domain_term")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2474])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_2474] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2475] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2476])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 400)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_2476] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_2477]
+		[ATHENA_CKD_ProjectKB_Instance_2478]
+		[ATHENA_CKD_ProjectKB_Instance_3023]))
+
+([ATHENA_CKD_ProjectKB_Instance_2477] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_2478] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_2479] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2480])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_2480] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2481] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2482])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Instance_2482] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2483] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2484])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Instance_2484] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2485] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2486])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 300)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_2486] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2487] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2488])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_2488] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2489] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2490])
+	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_2490] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2491] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2492])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Instance_2492] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2495] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "description")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2496])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 200)
+	(x 200)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_2496] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2734] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2735])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2735] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2736] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2737])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2737] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2738] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2739])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2739] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2742] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2743])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2743] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2744] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2745])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2745] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2748] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2749])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2749] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2750] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2751])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2751] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2752] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2753])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2753] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2760] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2761])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2761] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2764] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2765])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2765] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2772] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_CKD_ProjectKB_Instance_2773])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([ATHENA_CKD_ProjectKB_Instance_2773] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_2830] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_2831] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_2837] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_2838] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_3022] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_3023] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_32491] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32492] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "PrettyName")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32493])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 190))
+
+([ATHENA_CKD_ProjectKB_Instance_32493] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32494] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32495] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32496] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32497] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32498] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_32499] of  String
+
+	(name "vertical_stretcher")
+	(string_value "<<none>>"))
+
+([ATHENA_CKD_ProjectKB_Instance_32501] of  Widget
+
+	(is_hidden FALSE)
+	(name "General_Comparison_Criterion")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32504])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_CKD_ProjectKB_Instance_32504] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_32505]
+		[ATHENA_CKD_ProjectKB_Instance_32506]
+		[ATHENA_CKD_ProjectKB_Instance_32508]
+		[ATHENA_CKD_ProjectKB_Instance_32510]
+		[ATHENA_CKD_ProjectKB_Instance_32512]
+		[ATHENA_CKD_ProjectKB_Instance_32516]
+		[ATHENA_CKD_ProjectKB_Instance_32518]
+		[ATHENA_CKD_ProjectKB_Instance_32522]
+		[ATHENA_CKD_ProjectKB_Instance_32524]
+		[ATHENA_CKD_ProjectKB_Instance_32526]
+		[ATHENA_CKD_ProjectKB_Instance_32528]
+		[ATHENA_CKD_ProjectKB_Class13891]
+		[ATHENA_CKD_ProjectKB_Class13893]))
+
+([ATHENA_CKD_ProjectKB_Instance_32505] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_ProjectKB_Instance_32506] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32507])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_32507] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32508] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32509])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Instance_32509] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32510] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "aggregation_operator")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32511])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_32511] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32512] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32513])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 300)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_32513] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_32514]
+		[ATHENA_CKD_ProjectKB_Instance_32515]
+		[ATHENA_CKD_ProjectKB_Class13592]))
+
+([ATHENA_CKD_ProjectKB_Instance_32514] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_32515] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_32516] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "assume_if_no_value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32517])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 100)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_32517] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32518] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "valid_window")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32519])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ATHENA_CKD_ProjectKB_Instance_32519] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_32520]
+		[ATHENA_CKD_ProjectKB_Instance_32521]
+		[ATHENA_CKD_ProjectKB_Class13593]))
+
+([ATHENA_CKD_ProjectKB_Instance_32520] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([ATHENA_CKD_ProjectKB_Instance_32521] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_32522] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32523])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ATHENA_CKD_ProjectKB_Instance_32523] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32524] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "default_value")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32525])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ATHENA_CKD_ProjectKB_Instance_32525] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32526] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "operator")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32527])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 200)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_32527] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_32528] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32529])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_CKD_ProjectKB_Instance_32529] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3494] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_ProjectKB_Instance_3495] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3496] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3497] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3498] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3499] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3500] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3501] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3502] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3503] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3504] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3505] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3543] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_3544]
+		[ATHENA_CKD_ProjectKB_Instance_3545]))
+
+([ATHENA_CKD_ProjectKB_Instance_3544] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_CKD_ProjectKB_Instance_3545] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_CKD_ProjectKB_Instance_3546] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3547] of  Property_List
+)
+
+([ATHENA_CKD_ProjectKB_Instance_3548] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_3549]
+		[ATHENA_CKD_ProjectKB_Instance_13550]))
+
+([ATHENA_CKD_ProjectKB_Instance_3549] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([ATHENA_CKD_ProjectKB_Instance_66] of  String
+
+	(name "SearchTab_Query"))
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[ATHENA_CKD_dashboard_ProjectKB_Class4769]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4770]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4771]
+		[ATHENA_CKD_dashboard_ProjectKB_Class4772]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [KB_431458_Instance_33])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_001134_Instance_621] of  Widget
+
+	(height 797)
+	(is_hidden FALSE)
+	(name "Conditional_Expression")
+	(property_list [KB_001134_Instance_622])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 1038)
+	(x 0)
+	(y 0))
+
+([KB_001134_Instance_622] of  Property_List
+
+	(properties
+		[KB_001134_Instance_623]
+		[KB_001134_Instance_633]
+		[KB_001134_Instance_635]
+		[KB_001134_Instance_637]
+		[ATHENA_CKD_ProjectKB_Class24804]))
+
+([KB_001134_Instance_623] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "precondition")
+	(property_list [KB_001134_Instance_624])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([KB_001134_Instance_624] of  Property_List
+
+	(properties
+		[KB_001134_Instance_625]
+		[KB_001134_Instance_626]
+		[KB_001134_Instance_627]
+		[KB_001134_Instance_628]
+		[KB_001134_Instance_629]
+		[KB_001134_Instance_630]
+		[KB_001134_Instance_631]
+		[KB_001134_Instance_632]
+		[ATHENA_CKD_ProjectKB_Instance_12491]
+		[ATHENA_CKD_ProjectKB_Class13588]))
+
+([KB_001134_Instance_625] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_001134_Instance_626] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_001134_Instance_627] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_001134_Instance_628] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_001134_Instance_629] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_001134_Instance_630] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_001134_Instance_631] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_001134_Instance_632] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_001134_Instance_633] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "value")
+	(property_list [KB_001134_Instance_634])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_001134_Instance_634] of  Property_List
+
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_12492]
+		[ATHENA_CKD_ProjectKB_Instance_12493]
+		[ATHENA_CKD_ProjectKB_Class13589]))
+
+([KB_001134_Instance_635] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_001134_Instance_636])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_001134_Instance_636] of  Property_List
+)
+
+([KB_001134_Instance_637] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_12494]
+		[ATHENA_CKD_ProjectKB_Instance_12495]))
+
+([KB_224202_Class4748] of  Map
+
+	(entries
+		[KB_224202_Class4749]
+		[KB_224202_Class4750]
+		[KB_224202_Class4751]
+		[KB_224202_Class4752]
+		[KB_224202_Class4753]
+		[KB_224202_Class4755]
+		[KB_224202_Class4756]
+		[KB_224202_Class4757]
+		[KB_224202_Class4759]
+		[KB_224202_Class4761]
+		[KB_224202_Class4763]
+		[KB_224202_Class4765]
+		[KB_224202_Class4766])
+	(referenced_maps
+		[KB_224202_Class4758]
+		[KB_224202_Class4754]
+		[KB_224202_Class4764]
+		[KB_224202_Class4762]
+		[KB_224202_Class4760]))
+
+([KB_224202_Class4749] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4750] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4751] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4752] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4753] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4754] of  Map
+)
+
+([KB_224202_Class4755] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_224202_Class4754")
+	(value_class "java.util.Map"))
+
+([KB_224202_Class4756] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_224202_Class4757] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([KB_224202_Class4758] of  Map
+)
+
+([KB_224202_Class4759] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_224202_Class4758")
+	(value_class "java.util.Map"))
+
+([KB_224202_Class4760] of  Map
+)
+
+([KB_224202_Class4761] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_224202_Class4760")
+	(value_class "java.util.Map"))
+
+([KB_224202_Class4762] of  Map
+)
+
+([KB_224202_Class4763] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_224202_Class4762")
+	(value_class "java.util.Map"))
+
+([KB_224202_Class4764] of  Map
+)
+
+([KB_224202_Class4765] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_224202_Class4764")
+	(value_class "java.util.Map"))
+
+([KB_224202_Class4766] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_431458_Instance_0] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_431458_Instance_1]
+		[KB_431458_Instance_2]
+		[KB_431458_Instance_3]
+		[KB_431458_Instance_4]
+		[KB_431458_Instance_5]
+		[KB_431458_Instance_6]
+		[KB_431458_Instance_7]
+		[KB_431458_Instance_8]
+		[KB_431458_Instance_9]
+		[KB_431458_Instance_10]))
+
+([KB_431458_Instance_1] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3543])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_431458_Instance_10] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_431458_Instance_11]))
+
+([KB_431458_Instance_11] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_431458_Instance_12] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_431458_Instance_13]
+		[KB_431458_Instance_14]
+		[KB_431458_Instance_15]
+		[KB_431458_Instance_16]
+		[KB_431458_Instance_17]
+		[KB_431458_Instance_18]
+		[KB_431458_Instance_19]
+		[KB_431458_Instance_20]
+		[KB_431458_Instance_21]
+		[KB_431458_Instance_22]
+		[KB_431458_Instance_23]
+		[KB_431458_Instance_24]
+		[KB_431458_Instance_25]
+		[KB_431458_Instance_26]
+		[KB_431458_Instance_27]
+		[KB_431458_Instance_28]
+		[ATHENA_CKD_ProjectKB_Instance_3494]))
+
+([KB_431458_Instance_13] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3502])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_431458_Instance_14] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3503])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_431458_Instance_15] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_431458_Instance_16] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_431458_Instance_17] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3495])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([KB_431458_Instance_18] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3496])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_431458_Instance_19] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_431458_Instance_2] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_431458_Instance_20] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_431458_Instance_21] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3497])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([KB_431458_Instance_22] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3498])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_431458_Instance_23] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3499])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([KB_431458_Instance_24] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3500])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([KB_431458_Instance_25] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_431458_Instance_26] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3501])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_431458_Instance_27] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3504])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([KB_431458_Instance_28] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3505])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_431458_Instance_29] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[KB_431458_Instance_30]
+		[KB_431458_Instance_31]
+		[KB_431458_Instance_32]))
+
+([KB_431458_Instance_3] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_431458_Instance_30] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_431458_Instance_31] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_431458_Instance_32] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_431458_Instance_33] of  Property_List
+
+	(properties
+		[KB_431458_Instance_34]
+		[KB_431458_Instance_35]
+		[KB_431458_Instance_36]
+		[KB_431458_Instance_37]))
+
+([KB_431458_Instance_34] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([KB_431458_Instance_35] of  Widget
+
+	(name ":CREATOR"))
+
+([KB_431458_Instance_36] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([KB_431458_Instance_37] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_431458_Instance_38] of  Property_List
+
+	(properties
+		[KB_431458_Instance_39]
+		[KB_431458_Instance_40]
+		[KB_431458_Instance_41]
+		[KB_431458_Instance_42]))
+
+([KB_431458_Instance_39] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([KB_431458_Instance_4] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_431458_Instance_40] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([KB_431458_Instance_41] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([KB_431458_Instance_42] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([KB_431458_Instance_5] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3546])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_431458_Instance_6] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3547])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_431458_Instance_7] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13551])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_431458_Instance_8] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_431458_Instance_9] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_3548])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([KB_536775_Instance_0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_536775_Instance_1] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon FALSE)
+	(display_hidden_classes FALSE)
+	(display_multi_parent_class_icon FALSE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([KB_536775_Instance_63] of  Property_List
+
+	(properties [ATHENA_CKD_ProjectKB_Instance_66]))
+
+([KB_536775_Instance_64] of  String
+
+	(name "classes_file_name")
+	(string_value "ATHENA_CKD_Dashboard.pont"))
+
+([KB_536775_Instance_65] of  String
+
+	(name "instances_file_name")
+	(string_value "ATHENA_CKD_Dashboard.pins"))
+
+([KB_547878_Instance_2186] of  Widget
+
+	(height 574)
+	(is_hidden FALSE)
+	(name "Presence_Criterion")
+	(property_list [KB_547878_Instance_2187])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 806)
+	(x 0)
+	(y 0))
+
+([KB_547878_Instance_2187] of  Property_List
+
+	(properties
+		[KB_547878_Instance_2188]
+		[KB_547878_Instance_2189]
+		[KB_547878_Instance_2200]
+		[KB_547878_Instance_2205]
+		[KB_547878_Instance_2210]
+		[KB_547878_Instance_2215]
+		[KB_547878_Instance_2217]
+		[ATHENA_CKD_ProjectKB_Class3763]
+		[ATHENA_CKD_ProjectKB_Class4498]))
+
+([KB_547878_Instance_2188] of  Property_List
+
+	(name "layout properties"))
+
+([KB_547878_Instance_2189] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "period")
+	(property_list [KB_547878_Instance_2190])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 250)
+	(y 120))
+
+([KB_547878_Instance_2190] of  Property_List
+
+	(properties
+		[KB_547878_Instance_2191]
+		[KB_547878_Instance_2192]
+		[KB_547878_Instance_2193]
+		[KB_547878_Instance_2194]
+		[KB_547878_Instance_2195]
+		[KB_547878_Instance_2196]
+		[KB_547878_Instance_2197]
+		[KB_547878_Instance_2198]
+		[KB_547878_Instance_2199]
+		[ATHENA_CKD_ProjectKB_Instance_3022]))
+
+([KB_547878_Instance_2191] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
+
+([KB_547878_Instance_2192] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_547878_Instance_2193] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_547878_Instance_2194] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_547878_Instance_2195] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_547878_Instance_2196] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_547878_Instance_2197] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_547878_Instance_2198] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_547878_Instance_2199] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_547878_Instance_2200] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "mood")
+	(property_list [KB_547878_Instance_2201])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([KB_547878_Instance_2201] of  Property_List
+
+	(properties
+		[KB_547878_Instance_2202]
+		[KB_547878_Instance_2203]
+		[KB_547878_Instance_2204]))
+
+([KB_547878_Instance_2202] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_547878_Instance_2203] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_547878_Instance_2204] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_547878_Instance_2205] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [KB_547878_Instance_2206])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([KB_547878_Instance_2206] of  Property_List
+
+	(properties
+		[KB_547878_Instance_2207]
+		[KB_547878_Instance_2208]
+		[KB_547878_Instance_2209]))
+
+([KB_547878_Instance_2207] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_547878_Instance_2208] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_547878_Instance_2209] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_547878_Instance_2210] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "entry_type")
+	(property_list [KB_547878_Instance_2211])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 250)
+	(y 0))
+
+([KB_547878_Instance_2211] of  Property_List
+
+	(properties
+		[KB_547878_Instance_2212]
+		[KB_547878_Instance_2213]
+		[KB_547878_Instance_2214]))
+
+([KB_547878_Instance_2212] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Class"))
+
+([KB_547878_Instance_2213] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_547878_Instance_2214] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_547878_Instance_2215] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "presence")
+	(property_list [KB_547878_Instance_2216])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 60))
+
+([KB_547878_Instance_2216] of  Property_List
+)
+
+([KB_547878_Instance_2217] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_547878_Instance_2218])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 240)
+	(x 0)
+	(y 0))
+
+([KB_547878_Instance_2218] of  Property_List
+)
+
+([KB_629034_Instance_1326] of  Widget
+
+	(is_hidden FALSE)
+	(name "Scenario")
+	(property_list [KB_629034_Instance_1327])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_629034_Instance_1327] of  Property_List
+
+	(properties
+		[KB_629034_Instance_1328]
+		[KB_629034_Instance_1329]
+		[KB_629034_Instance_1333]
+		[KB_629034_Instance_1335]
+		[KB_629034_Instance_1339]
+		[KB_629034_Instance_1343]
+		[KB_629034_Instance_1347]
+		[ATHENA_CKD_ProjectKB_Instance_2495]
+		[ATHENA_CKD_ProjectKB_Class33846]))
+
+([KB_629034_Instance_1328] of  Property_List
+
+	(name "layout properties"))
+
+([KB_629034_Instance_1329] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "precondition")
+	(property_list [KB_629034_Instance_1330])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_629034_Instance_1330] of  Property_List
+
+	(properties
+		[KB_629034_Instance_1331]
+		[KB_629034_Instance_1332]
+		[ATHENA_CKD_ProjectKB_Class3769]))
+
+([KB_629034_Instance_1331] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_629034_Instance_1332] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_629034_Instance_1333] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "new_encounter")
+	(property_list [KB_629034_Instance_1334])
+	(widget_class_name "edu.stanford.smi.protege.widget.ComboBoxWidget")
+	(width 100)
+	(x 0)
+	(y 60))
+
+([KB_629034_Instance_1334] of  Property_List
+)
+
+([KB_629034_Instance_1335] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "consultation_template")
+	(property_list [KB_629034_Instance_1336])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KB_629034_Instance_1336] of  Property_List
+
+	(properties
+		[KB_629034_Instance_1337]
+		[KB_629034_Instance_1338]
+		[ATHENA_CKD_ProjectKB_Class3770]))
+
+([KB_629034_Instance_1337] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_629034_Instance_1338] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_629034_Instance_1339] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "followed_by")
+	(property_list [KB_629034_Instance_1340])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([KB_629034_Instance_1340] of  Property_List
+
+	(properties
+		[KB_629034_Instance_1341]
+		[KB_629034_Instance_1342]
+		[ATHENA_CKD_ProjectKB_Class3771]))
+
+([KB_629034_Instance_1341] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_629034_Instance_1342] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_629034_Instance_1343] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_629034_Instance_1344])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_629034_Instance_1344] of  Property_List
+
+	(properties
+		[KB_629034_Instance_1345]
+		[KB_629034_Instance_1346]
+		[ATHENA_CKD_ProjectKB_Class3772]))
+
+([KB_629034_Instance_1345] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_629034_Instance_1346] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_629034_Instance_1347] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [KB_629034_Instance_1348])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_629034_Instance_1348] of  Property_List
+)
+
+([KB_840064_Instance_2420] of  Widget
+
+	(is_hidden FALSE)
+	(name "Diagnostic_Term_Metaclass")
+	(property_list [KB_840064_Instance_2421])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_840064_Instance_2421] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_840064_Instance_2422]
+		[KB_840064_Instance_2423]
+		[KB_840064_Instance_2424]
+		[KB_840064_Instance_2425]
+		[KB_840064_Instance_2437]
+		[KB_840064_Instance_2438]
+		[KB_840064_Instance_2439]
+		[KB_840064_Instance_2440]
+		[KB_840064_Instance_2451]
+		[KB_840064_Instance_2458]
+		[KB_840064_Instance_2461]
+		[ATHENA_CKD_ProjectKB_Instance_22488]
+		[ATHENA_CKD_ProjectKB_Instance_22490]
+		[ATHENA_CKD_ProjectKB_Instance_32492]
+		[ATHENA_CKD_ProjectKB_Class23604]
+		[ATHENA_CKD_ProjectKB_Class4494]
+		[ATHENA_CKD_ProjectKB_Class4496]))
+
+([KB_840064_Instance_2422] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32494])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_840064_Instance_2423] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32495])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_840064_Instance_2424] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32496])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_840064_Instance_2425] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_840064_Instance_2426])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_840064_Instance_2426] of  Property_List
+
+	(properties
+		[KB_840064_Instance_2427]
+		[KB_840064_Instance_2428]
+		[KB_840064_Instance_2429]
+		[KB_840064_Instance_2430]
+		[KB_840064_Instance_2431]
+		[KB_840064_Instance_2432]
+		[KB_840064_Instance_2433]
+		[KB_840064_Instance_2434]
+		[KB_840064_Instance_2435]
+		[KB_840064_Instance_2436]
+		[ATHENA_CKD_ProjectKB_Instance_2837]))
+
+([KB_840064_Instance_2427] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Selected Instances"))
+
+([KB_840064_Instance_2428] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create"))
+
+([KB_840064_Instance_2429] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-References"))
+
+([KB_840064_Instance_2430] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add"))
+
+([KB_840064_Instance_2431] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove"))
+
+([KB_840064_Instance_2432] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete"))
+
+([KB_840064_Instance_2433] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([KB_840064_Instance_2434] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Selected Instances"))
+
+([KB_840064_Instance_2435] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_840064_Instance_2436] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_840064_Instance_2437] of  Widget
+
+	(height 120)
+	(name ":DIRECT-SUPERCLASSES")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_32497])
+	(widget_class_name "edu.stanford.smi.protege.widget.SuperclassWidget")
+	(width 200)
+	(x 200)
+	(y 130))
+
+([KB_840064_Instance_2438] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_840064_Instance_2439] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_840064_Instance_2440] of  Widget
+
+	(height 0)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_840064_Instance_2441])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_840064_Instance_2441] of  Property_List
+)
+
+([KB_840064_Instance_2451] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[ATHENA_CKD_ProjectKB_Instance_32498]
+		[ATHENA_CKD_ProjectKB_Instance_32499]))
+
+([KB_840064_Instance_2458] of  Widget
+
+	(is_hidden FALSE)
+	(name ":DIRECT-TYPE"))
+
+([KB_840064_Instance_2461] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "DiagnosticCriteria")
+	(property_list [KB_840064_Instance_2462])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 130))
+
+([KB_840064_Instance_2462] of  Property_List
+
+	(properties
+		[KB_840064_Instance_2463]
+		[KB_840064_Instance_2464]
+		[ATHENA_CKD_ProjectKB_Instance_2838]))
+
+([KB_840064_Instance_2463] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_840064_Instance_2464] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_900568_Instance_1889] of  Widget
+
+	(is_hidden FALSE)
+	(name "Conditional_On_Screen_Message")
+	(property_list [KB_900568_Instance_1890])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_900568_Instance_1890] of  Property_List
+
+	(properties
+		[KB_900568_Instance_1891]
+		[KB_900568_Instance_1892]
+		[KB_900568_Instance_1893]
+		[KB_900568_Instance_1896]
+		[KB_900568_Instance_1900]
+		[KB_900568_Instance_1902]
+		[KB_900568_Instance_1904]
+		[ATHENA_CKD_ProjectKB_Instance_13114]
+		[ATHENA_CKD_ProjectKB_Instance_13116]
+		[ATHENA_CKD_ProjectKB_Instance_13118]
+		[ATHENA_CKD_ProjectKB_Class23842]
+		[ATHENA_CKD_ProjectKB_Class23844]
+		[ATHENA_CKD_ProjectKB_Class23846]
+		[ATHENA_CKD_ProjectKB_Class23848]
+		[ATHENA_CKD_ProjectKB_Class23850]
+		[ATHENA_CKD_ProjectKB_Class23852]
+		[ATHENA_CKD_ProjectKB_Class23854]
+		[ATHENA_CKD_ProjectKB_Class14689]))
+
+([KB_900568_Instance_1891] of  Widget
+
+	(height 60)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13122])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_900568_Instance_1892] of  Widget
+
+	(height 90)
+	(name "description")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_13123])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_900568_Instance_1893] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_900568_Instance_1894]
+		[KB_900568_Instance_1895]))
+
+([KB_900568_Instance_1894] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_900568_Instance_1895] of  String
+
+	(name "vertical_stretcher")
+	(string_value "message"))
+
+([KB_900568_Instance_1896] of  Widget
+
+	(height 90)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_900568_Instance_1897])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([KB_900568_Instance_1897] of  Property_List
+
+	(properties
+		[KB_900568_Instance_1898]
+		[KB_900568_Instance_1899]
+		[ATHENA_CKD_ProjectKB_Class23838]))
+
+([KB_900568_Instance_1898] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_900568_Instance_1899] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_900568_Instance_1900] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "message")
+	(property_list [KB_900568_Instance_1901])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 490)
+	(x 0)
+	(y 210))
+
+([KB_900568_Instance_1901] of  Property_List
+)
+
+([KB_900568_Instance_1902] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_type")
+	(property_list [KB_900568_Instance_1903])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([KB_900568_Instance_1903] of  Property_List
+)
+
+([KB_900568_Instance_1904] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in_condition")
+	(property_list [KB_900568_Instance_1905])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 250)
+	(x 0)
+	(y 150))
+
+([KB_900568_Instance_1905] of  Property_List
+
+	(properties
+		[KB_900568_Instance_1906]
+		[KB_900568_Instance_1907]
+		[ATHENA_CKD_ProjectKB_Class23839]))
+
+([KB_900568_Instance_1906] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_900568_Instance_1907] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_900568_Instance_898] of  Widget
+
+	(is_hidden FALSE)
+	(name "On_Screen_Message")
+	(property_list [KB_900568_Instance_899])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_900568_Instance_899] of  Property_List
+
+	(properties
+		[KB_900568_Instance_900]
+		[KB_900568_Instance_901]
+		[KB_900568_Instance_902]
+		[KB_900568_Instance_905]
+		[KB_900568_Instance_909]
+		[KB_900568_Instance_911]
+		[ATHENA_CKD_ProjectKB_Instance_12577]
+		[ATHENA_CKD_ProjectKB_Instance_12579]
+		[ATHENA_CKD_ProjectKB_Instance_12581]
+		[ATHENA_CKD_ProjectKB_Class23816]
+		[ATHENA_CKD_ProjectKB_Class23818]
+		[ATHENA_CKD_ProjectKB_Class23820]
+		[ATHENA_CKD_ProjectKB_Class23822]
+		[ATHENA_CKD_ProjectKB_Class23824]
+		[ATHENA_CKD_ProjectKB_Class23826]
+		[ATHENA_CKD_ProjectKB_Class23828]
+		[ATHENA_CKD_ProjectKB_Class4553]
+		[ATHENA_CKD_ProjectKB_Class4557]))
+
+([KB_900568_Instance_900] of  Widget
+
+	(height 60)
+	(name "label")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_12585])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_900568_Instance_901] of  Widget
+
+	(height 90)
+	(name "description")
+	(property_list [ATHENA_CKD_ProjectKB_Instance_12586])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_900568_Instance_902] of  Property_List
+
+	(name "layout properties")
+	(properties
+		[KB_900568_Instance_903]
+		[KB_900568_Instance_904]))
+
+([KB_900568_Instance_903] of  String
+
+	(name "horizontal_stretcher")
+	(string_value "<<all>>"))
+
+([KB_900568_Instance_904] of  String
+
+	(name "vertical_stretcher")
+	(string_value "message"))
+
+([KB_900568_Instance_905] of  Widget
+
+	(height 90)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_900568_Instance_906])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 250)
+	(y 60))
+
+([KB_900568_Instance_906] of  Property_List
+
+	(properties
+		[KB_900568_Instance_907]
+		[KB_900568_Instance_908]
+		[ATHENA_CKD_ProjectKB_Class23813]))
+
+([KB_900568_Instance_907] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_900568_Instance_908] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_900568_Instance_909] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "message")
+	(property_list [KB_900568_Instance_910])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 490)
+	(x 0)
+	(y 150))
+
+([KB_900568_Instance_910] of  Property_List
+)
+
+([KB_900568_Instance_911] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_type")
+	(property_list [KB_900568_Instance_912])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([KB_900568_Instance_912] of  Property_List
+)
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [KB_431458_Instance_38])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[ATHENA_CKD_ProjectKB_Class13799]
+		[PAL_FORM_WIDGET]
+		[ATHENA_CKD_ProjectKB_Class13763]
+		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[KB_840064_Instance_2420]
+		[KB_629034_Instance_1326]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[KB_900568_Instance_898]
+		[KB_547878_Instance_2186]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[KB_900568_Instance_1889]
+		[ATHENA_CKD_ProjectKB_Instance_32501]
+		[ATHENA_CKD_ProjectKB_Instance_2464]
+		[ATHENA_CKD_ProjectKB_Instance_2358]
+		[KB_001134_Instance_621])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(hidden_classes
+		"Condition"
+		"Encounter")
+	(included_projects
+		"eon2.pprj"
+		"library.pprj"
+		"eon2.pprj"
+		"library.pprj"
+		"library.pprj")
+	(java_packages
+		"edu.stanford.smi.eon.Dharma"
+		"edu.stanford.smi.eon.time"
+		"edu.stanford.smi.eon.criterion"
+		"edu.stanford.smi.eon.athenaextensions"
+		"edu.stanford.smi.eon.datahandler")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [KB_536775_Instance_1])
+	(property_map [ATHENA_CKD_ProjectKB_Instance_2409])
+	(sources [SOURCES])
+	(tabs
+		[ATHENA_CKD_ProjectKB_Instance_2341]
+		[ATHENA_CKD_ProjectKB_Instance_2319]
+		[CLSES_TAB]
+		[FORMS_TAB]
+		[ATHENA_CKD_ProjectKB_Instance_2329]
+		[ATHENA_CKD_ProjectKB_Instance_2339]
+		[ATHENA_CKD_ProjectKB_Instance_2744]
+		[INSTANCES_TAB]
+		[ATHENA_CKD_ProjectKB_Class3528]
+		[ATHENA_CKD_ProjectKB_Class3584]
+		[QUERIES_TAB]
+		[ATHENA_CKD_ProjectKB_Class23596]
+		[ATHENA_CKD_ProjectKB_Instance_2736]
+		[ATHENA_CKD_ProjectKB_Instance_2752]
+		[ATHENA_CKD_ProjectKB_Instance_2343]
+		[ATHENA_CKD_ProjectKB_Class3538]
+		[ATHENA_CKD_ProjectKB_Instance_2335]
+		[ATHENA_CKD_ProjectKB_Instance_2738]
+		[ATHENA_CKD_ProjectKB_Instance_2351]
+		[ATHENA_CKD_ProjectKB_Class23811]
+		[ATHENA_CKD_ProjectKB_Instance_2750]
+		[SLOTS_TAB]
+		[ATHENA_CKD_ProjectKB_Class24516]
+		[ATHENA_CKD_ProjectKB_Class23598]
+		[ATHENA_CKD_ProjectKB_Instance_2772]
+		[ATHENA_CKD_ProjectKB_Class3554]
+		[ATHENA_CKD_ProjectKB_Instance_2764]
+		[ATHENA_CKD_ProjectKB_Instance_2760]
+		[ATHENA_CKD_ProjectKB_Instance_2734]
+		[ATHENA_CKD_ProjectKB_Instance_2748]
+		[ATHENA_CKD_ProjectKB_Instance_2742]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_536775_Instance_63])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden TRUE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_536775_Instance_0]
+		[KB_536775_Instance_64]
+		[KB_536775_Instance_65]))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [KB_431458_Instance_0])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [KB_431458_Instance_29])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [KB_431458_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
