@@ -1,58 +1,10 @@
-; Thu Jul 27 10:40:07 PDT 2017
+; Tue Sep 19 10:23:46 PDT 2017
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
-([Absolute_Contraindications] of  Slot_With_Pretty_Name
-
-	(PrettyName "absolute contraindications")
-	(weight -10))
-
-([Compelling_Indications] of  Slot_With_Pretty_Name
-
-	(PrettyName "strong indications")
-	(weight 10))
-
-([Complication_Factor] of  Slot_With_Pretty_Name
-
-	(PrettyName "complication conditions"))
-
-([Dharma2_00000] of  %3ASTANDARD-FACET
+([Compelling_Indications] of  Recommendation_Basis
 )
-
-([Dharma2_00001] of  %3ASTANDARD-FACET
-)
-
-([Dharma_11861] of  %3ASTANDARD-FACET
-
-	(%3AASSOCIATED-SLOT [weight]))
-
-([Dharma_11862] of  %3ASTANDARD-FACET
-)
-
-([Dharma_11863] of  %3ASTANDARD-FACET
-)
-
-([Dharma_11864] of  %3ASTANDARD-FACET
-
-	(%3AASSOCIATED-SLOT [PrettyName]))
-
-([Do_Not_Start_Conditions] of  Slot_With_Pretty_Name
-)
-
-([Drug_Class_Name] of  Slot_With_Pretty_Name
-
-	(PrettyName "drug class name"))
-
-([Drug_Partners] of  Slot_With_Pretty_Name
-
-	(PrettyName "drug partners")
-	(weight 1))
-
-([Drug_Partners_To_Avoid] of  Slot_With_Pretty_Name
-
-	(PrettyName "drug partners to avoid")
-	(weight -1))
 
 ([eon-guideline2_107819] of  %3APAL-CONSTRAINT
 
@@ -588,27 +540,24 @@
 	(version "version 2.16")
 	(version_note "Added description slot to scenario for documentation purpose"))
 
+([first-line_for] of  Recommendation_Basis
+)
+
 ([OpioidGuideline_Instance_380003] of  Parameterized_String
 
 	(label "Test multi-valued substitution from a single instance")
 	(multivalued_variables [eon2_Class20000])
 	(value "The medication ?drugName has prescribed daily dose ?dose."))
 
-([Relative_Contraindications] of  Slot_With_Pretty_Name
+([Relative_Indications] of  Recommendation_Basis
+)
 
-	(PrettyName "relative contraindications")
-	(weight -1))
-
-([Relative_Indications] of  Slot_With_Pretty_Name
-
-	(PrettyName "relative indications")
-	(weight 1))
+([second-line_for] of  Recommendation_Basis
+)
 
 ([Session_Time] of  Canonical_Terms_Metaclass
 
 	(PrettyName "Session Date"))
 
-([Side_Effects] of  Slot_With_Pretty_Name
-
-	(PrettyName "side effects")
-	(weight -1))
+([third-line_for] of  Recommendation_Basis
+)
