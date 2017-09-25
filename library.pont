@@ -1,4 +1,4 @@
-; Thu Aug 03 12:17:43 PDT 2017
+; Thu Sep 21 11:59:53 PDT 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -3693,6 +3693,22 @@
 
 (defclass EDEMA+OF+LARYNX "synonym VISTA"
 	(is-a ANGIONEUROTIC+EDEMA+OF+LARYNX)
+	(role concrete))
+
+(defclass ACIDOSIS
+	(is-a Allergies+and+ADR+reactions)
+	(role concrete))
+
+(defclass renalImpairment
+	(is-a Allergies+and+ADR+reactions)
+	(role concrete))
+
+(defclass renalFailure
+	(is-a Allergies+and+ADR+reactions)
+	(role concrete))
+
+(defclass COMA
+	(is-a Allergies+and+ADR+reactions)
 	(role concrete))
 
 (defclass Socio-economic+history

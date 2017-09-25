@@ -1,7 +1,7 @@
-; Tue Aug 15 13:46:34 PDT 2017
+; Mon Sep 25 09:11:27 PDT 2017
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.4.7")
+;+ (build "Build 620")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -277,6 +277,50 @@
 	(role concrete))
 
 (defclass Abs+Biguanide+and+45%3C%3DeGFR%3C60+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+sulfa+drugs
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+angioedema+to+sulfa+drugs+or+SU
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Absence+of+SGOT+or+SGPT+in+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass 30%3C%3DeGFR%3C45+past+30+days
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Abs+Empa+and+eGFR%3C45+past+30+days
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass bicarb%3C24+in+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+renal+failure+or+impairment+to+MF+or+MF_ER
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+acidosis+to+MF+or+MF_ER
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+of+thrombocytopenia+to+pio+or+rosi
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+SJS+to+glip+glyb+glim+SU+sulfa
 	(is-a Defined+concept)
 	(role concrete))
 

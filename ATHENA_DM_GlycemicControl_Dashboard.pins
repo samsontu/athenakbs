@@ -1,13 +1,20 @@
-; Tue Aug 15 13:46:34 PDT 2017
+; Mon Sep 25 09:11:27 PDT 2017
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.4.7")
+;+ (build "Build 620")
 
 ([30%3C%3DeGFR%3C45] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1080203])
 	(label "30<=eGFR<45 past month"))
+
+([30%3C%3DeGFR%3C45+past+30+days] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320004])
+	(label "30<=eGFR<45 past 30 days")
+	(PrettyName "30<=eGFR<45 past 30 days"))
 
 ([30%3C%3DeGFR%3C45+past+year] of  Diagnostic_Term_Metaclass
 
@@ -32,6 +39,12 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1240004])
 	(PrettyName "Abs Biguanide and 45<=eGFR<60 past month"))
+
+([Abs+Empa+and+eGFR%3C45+past+30+days] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320007])
+	(PrettyName "Abs Empa and eGFR<45 past 30 days"))
 
 ([Abs+Empa+and+eGFR%3C45+past+month] of  Diagnostic_Term_Metaclass
 
@@ -101,10 +114,21 @@
 	(controllable TRUE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class530006]))
 
+([Absence+of+SGOT+or+SGPT+in+past+year] of  Diagnostic_Term_Metaclass
+
+	(controllable TRUE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320000])
+	(PrettyName "Absence of SGOT or SGPT in past year"))
+
 ([Absence_of_insulin_defined_concept] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_DM_Eye_Instance_80028]))
+
+([ADR+acidosis+to+MF+or+MF_ER] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350011]))
 
 ([ADR+anaphylaxis+to+DPP4+inhibitor] of  Diagnostic_Term_Metaclass
 
@@ -126,6 +150,11 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class740003]))
 
+([ADR+anaphylaxis+to+sulfa+drugs] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1310004]))
+
 ([ADR+anapylaxis+to+glimepiride] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
@@ -142,6 +171,31 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1090001])
 	(PrettyName "ADR angioedema to DPP4 inhibitor"))
+
+([ADR+angioedema+to+sulfa+drugs+or+SU] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320494]))
+
+([ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350026]))
+
+([ADR+of+thrombocytopenia+to+pio+or+rosi] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350018]))
+
+([ADR+renal+failure+or+impairment+to+MF+or+MF_ER] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350008]))
+
+([ADR+SJS+to+glip+glyb+glim+SU+sulfa] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350030]))
 
 ([Age+%3E%3D65+and+absence+of+creatinine+in+past+month] of  Diagnostic_Term_Metaclass
 
@@ -417,7 +471,7 @@
 
 	(label "Parameterized: Old GFR for increase Metformin")
 	(multivalued_variables [ATHENA_GlycemicControl_Class1030425])
-	(value "We normally recommend an increase in dosage of Metformin, but cannot do so because the patient's last GFR is old. Last GFR: ?value (?date)"))
+	(value "\\We would normally recommend increasing the dose of metformin but cannot do so because the patient's eGFR is old.. Last GFR: ?value (?date)"))
 
 ([ATHENA_GlycemicControl_Class1030425] of  Variable_ValueSet
 
@@ -691,7 +745,7 @@
 ([ATHENA_GlycemicControl_Class1080003] of  On_Screen_Message
 
 	(label "Set target HbA1c 2017")
-	(message "Although the VA performance measure is to attain an HbA1c<9%, this is usually not the true target for an individual patient. The  <a href=\"http://@AUTOPMWEBSERVER@/DM/\nVADoD_DM_CPG_2017.pdf#page=35\"> Table 2 from VA 2017 DM Guidelines </a> can be used as a reference to decide an individual patient’s target.")
+	(message "Although the VA performance measure is to attain an HbA1c<=9%, this is usually not the true target for an individual patient. The  <a href=\"http://@AUTOPMWEBSERVER@/DM/\nVADoD_DM_CPG_2017.pdf#page=35\"> Table 2 from VA 2017 DM Guidelines </a> can be used as a reference to decide an individual patient’s target.")
 	(message_type Recommendation))
 
 ([ATHENA_GlycemicControl_Class1080004] of  Choice_Step
@@ -1016,11 +1070,14 @@
 ([ATHENA_GlycemicControl_Class1110002] of  Guideline_Drug
 
 	(Absolute_Contraindications
-		Abs+Empa+and+eGFR%3C45+past+month
-		Pres+Emp+and+eGFR%3C45+past+year)
+		Pres+Emp+and+eGFR%3C45+past+year
+		Abs+Empa+and+eGFR%3C45+past+30+days)
 	(additional_ADR_check
 		Canagliflozin
 		Dapagliflozin)
+	(collateral_actions
+		[ATHENA_GlycemicControl_Class1330000]
+		[ATHENA_GlycemicControl_Class1330002])
 	(Do_Not_Intensify_Conditions Absence+of+eGFR+in+past+year)
 	(Do_Not_Start_Conditions Absence+of+eGFR+in+past+month)
 	(dose_level_ranges
@@ -1169,7 +1226,7 @@
 	(label "eGFR<60 past month")
 	(numeric_domain_term eGFR)
 	(operator %3C)
-	(valid_window [ATHENA_DM_Eye_Instance_100007])
+	(valid_window [time%3AINSTANCE_2])
 	(value 60.0))
 
 ([ATHENA_GlycemicControl_Class1130008] of  N_ary_Criterion
@@ -1523,7 +1580,7 @@
 	(label "Follow up in 3 months if less than 3 drugs")
 	(message "Follow up in 3 months")
 	(message_type Follow_Up)
-	(rule_in_condition [ATHENA_GlycemicControl_Class1170007]))
+	(rule_in_condition [ATHENA_GlycemicControl_Class1300001]))
 
 ([ATHENA_GlycemicControl_Class1170007] of  N_ary_Criterion
 
@@ -2107,7 +2164,7 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class1040003]
 		[ATHENA_GlycemicControl_Class1240002])
-	(label "Abs Biguanide and 45<=eGFR<60 past month")
+	(label "Abs Biguanide and 45<=eGFR<60 past 30 days")
 	(operator AND))
 
 ([ATHENA_GlycemicControl_Class1250000] of  Variable
@@ -2137,7 +2194,7 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class210005]
 		[ATHENA_GlycemicControl_Class1270001]
-		[ATHENA_DM_Eye_Instance_80028])
+		[ATHENA_GlycemicControl_Class1300004])
 	(label "1 or 2 non-insulin agents & Abs insulin & Pres HbA1c or GlycHem")
 	(operator AND))
 
@@ -2203,6 +2260,44 @@
 	(Drug_Class_Name Pramlintide)
 	(label "AMYLIN_ANALOGS")
 	(Relative_Indications DM-Type2))
+
+([ATHENA_GlycemicControl_Class1300000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class240037]
+		[ATHENA_GlycemicControl_Class540000])
+	(label "2 non-insulin agents and rec add drug")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class1300001] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Class1300000])
+	(label "NOT (2 non-insulin agents and rec add drug)")
+	(operator NOT))
+
+([ATHENA_GlycemicControl_Class1300002] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class670000])
+	(%3ATO [ATHENA_GlycemicControl_Class680002]))
+
+([ATHENA_GlycemicControl_Class1300003] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class680002])
+	(%3ATO [ATHENA_GlycemicControl_Class680000]))
+
+([ATHENA_GlycemicControl_Class1300004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_Eye_Instance_80028]
+		[ATHENA_GlycemicControl_Class1280000])
+	(label "Absence of insulin and insulin syringe")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class1300005] of  N_ary_Criterion
+
+	(criteria [ATHENA_GlycemicControl_Class1300004])
+	(label "Presence of insulin or insulin syringe")
+	(operator NOT))
 
 ([ATHENA_GlycemicControl_Class130001] of  Scenario
 
@@ -2502,7 +2597,7 @@
 
 	(label "The medication ?drugName has prescribed daily dose (?dailyDose) greater than the DM-guideline maximum recommended dose.")
 	(multivalued_variables [ATHENA_GlycemicControl_Class1300427])
-	(value "The medication ?drugName has prescribed daily dose (?dailyDose) greater than the maximum recommended dose."))
+	(value "ALERT:  The medication ?drugName has prescribed daily dose (?dailyDose) greater than the maximum recommended dose.  Recommendations are given as if the drug is at its maximum dose."))
 
 ([ATHENA_GlycemicControl_Class1300427] of  Variable_ValueSet
 
@@ -2555,9 +2650,7 @@
 	(eligibility_criteria
 		[ATHENA_GlycemicControl_Class330000]
 		[KB_308520_Class9]
-		[ATHENA_DM_Eye_Instance_80028]
-		[ATHENA_GlycemicControl_Class1230002]
-		[ATHENA_GlycemicControl_Class1280000])
+		[ATHENA_GlycemicControl_Class1230002])
 	(goal
 		[ATHENA_GlycemicControl_Class280001]
 		[ATHENA_GlycemicControl_Class280002]
@@ -2571,9 +2664,7 @@
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Class1110002])
 	(label "ATHENA DM:  Glycemic Control Dashboard")
-	(references
-		[ATHENA_GlycemicControl_Class1050000]
-		[ATHENA_GlycemicControl_Class1050001]))
+	(references [ATHENA_GlycemicControl_Class1050001]))
 
 ([ATHENA_GlycemicControl_Class130050] of  N_ary_Criterion
 
@@ -2622,6 +2713,457 @@
 
 	(%3AFROM [ATHENA_GlycemicControl_Class9])
 	(%3ATO [ATHENA_GlycemicControl_Class90036]))
+
+([ATHENA_GlycemicControl_Class1310000] of  Structured_Query
+
+	(label "find anaphylaxis as ADR to sulfa drugs")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class690001]
+		[ATHENA_GlycemicControl_Class1310001]))
+
+([ATHENA_GlycemicControl_Class1310001] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance eq sulfa drug")
+	(operator eq)
+	(value_expression [Sulfa_drugs_noSU]))
+
+([ATHENA_GlycemicControl_Class1310004] of  Query_Result_Criterion
+
+	(label "anaphylaxis as ADR to sulfa drugs")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1310000]))
+
+([ATHENA_GlycemicControl_Class1310075] of  Parameterized_Message
+
+	(label "Param msg duplicate drug")
+	(message_type Recommendation)
+	(parameterized_message [ATHENA_GlycemicControl_Class1310076])
+	(rule_in_condition [library_Class160000]))
+
+([ATHENA_GlycemicControl_Class1310076] of  Parameterized_String
+
+	(label "Param string for dup drug")
+	(value "Patient has 2 active prescriptions for the drug ?dup_drug . The doses have been summed.")
+	(variables [ATHENA_GlycemicControl_Class1310078]))
+
+([ATHENA_GlycemicControl_Class1310077] of  Variable
+
+	(derivation_expression [library_Class150000])
+	(label "?dup_drug")
+	(string_name "?dup_drug"))
+
+([ATHENA_GlycemicControl_Class1310078] of  Variable
+
+	(derivation_expression [library_Class150000])
+	(label "PatientChar duplicated drug")
+	(string_name "?dup_drug"))
+
+([ATHENA_GlycemicControl_Class1310314] of  Query_Result_Criterion
+
+	(label "Presence of duplicate GL drug med")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1310315]))
+
+([ATHENA_GlycemicControl_Class1310315] of  Structured_Query
+
+	(attribute [value])
+	(label "query for drug name of duplicated GL drug")
+	(type Note_Entry)
+	(where_restriction
+		[library_Class160001]
+		[ATHENA_GlycemicControl_Class1330492]))
+
+([ATHENA_GlycemicControl_Class1310316] of  Variable
+
+	(derivation_expression [ATHENA_GlycemicControl_Class1310315])
+	(label "?dup_GL_drug")
+	(string_name "?dup_GL_drug"))
+
+([ATHENA_GlycemicControl_Class1310317] of  Variable
+
+	(derivation_expression [ATHENA_GlycemicControl_Class1310315])
+	(label "PatientChar duplicated GL drug")
+	(string_name "?dup_GL_drug"))
+
+([ATHENA_GlycemicControl_Class1312258] of  Join_Filter
+
+	(attribute_comparisons
+		[library_Class160001]
+		[ATHENA_GlycemicControl_Class880001])
+	(label "duplicate and GL drug DO NOT USE")
+	(query [ATHENA_GlycemicControl_Class1290000]))
+
+([ATHENA_GlycemicControl_Class1312626] of  Consultation_Action_Step
+
+	(actions [ATHENA_GlycemicControl_Class1320009])
+	(label "Duplicate drug message")
+	(rule_in [library_Class160000]))
+
+([ATHENA_GlycemicControl_Class1312627] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_GlycemicControl_Class1312626]))
+
+([ATHENA_GlycemicControl_Class1314938] of  Qualitative_Constant
+
+	(label "GLIPIZIDE")
+	(value "GLIPIZIDE"))
+
+([ATHENA_GlycemicControl_Class1320000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class500003]
+		[ATHENA_GlycemicControl_Class500004])
+	(label "Absence of SGOT or SGPT in past year")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1320002] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "eGFR>=30 in past 30 days")
+	(numeric_domain_term eGFR)
+	(operator %3E%3D)
+	(valid_window [time%3AINSTANCE_2])
+	(value 30.0))
+
+([ATHENA_GlycemicControl_Class1320003] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "eGFR < 45 within past 30 days")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(valid_window [time%3AINSTANCE_2])
+	(value 45.0))
+
+([ATHENA_GlycemicControl_Class1320004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class1320003]
+		[ATHENA_GlycemicControl_Class1320002])
+	(label "30<=eGFR<45 past 30 days")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class1320006] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "eGFR<45 past 30 days")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(valid_window [time%3AINSTANCE_2])
+	(value 45.0))
+
+([ATHENA_GlycemicControl_Class1320007] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class1140222]
+		[ATHENA_GlycemicControl_Class1320003])
+	(label "Abs Empa and eGFR<45 past 30 days")
+	(operator AND))
+
+([ATHENA_GlycemicControl_Class1320009] of  Parameterized_Message
+
+	(label "Param msg duplicate GL drug")
+	(message_type Recommendation)
+	(parameterized_message [ATHENA_GlycemicControl_Class1320010])
+	(rule_in_condition [ATHENA_GlycemicControl_Class1310314]))
+
+([ATHENA_GlycemicControl_Class1320010] of  Parameterized_String
+
+	(label "Param string for dup GL drug")
+	(value "Patient has 2 active prescriptions for the drug ?dup_GL_drug . The doses have been summed.")
+	(variables [ATHENA_GlycemicControl_Class1310316]))
+
+([ATHENA_GlycemicControl_Class1320490] of  Structured_Query
+
+	(label "find angioedema ADR to SU or sulfa drugs")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1320491]
+		[ATHENA_GlycemicControl_Class1320492]))
+
+([ATHENA_GlycemicControl_Class1320491] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain term is angioedema")
+	(operator eq)
+	(value_expression [angioedema]))
+
+([ATHENA_GlycemicControl_Class1320492] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1310001]
+		[ATHENA_GlycemicControl_Class700006]
+		[ATHENA_GlycemicControl_Class670434]
+		[ATHENA_GlycemicControl_Class1020219]
+		[ATHENA_GlycemicControl_Class740001])
+	(label "substance eq SU or sulfa")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1320494] of  Query_Result_Criterion
+
+	(label "angioedema as ADR to sulfa or SU")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1320490]))
+
+([ATHENA_GlycemicControl_Class1330000] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class1330001]
+		[ATHENA_GlycemicControl_Class410005])
+	(mood Blocked_Increase))
+
+([ATHENA_GlycemicControl_Class1330001] of  Conditional_On_Screen_Message
+
+	(label "empa missing GFR")
+	(message "Empagliflozin could not be evaluated because there is no GFR measurement in the last year.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_GlycemicControl_Class530008]))
+
+([ATHENA_GlycemicControl_Class1330002] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class1330003]
+		[ATHENA_GlycemicControl_Class730001])
+	(mood Blocked_Add))
+
+([ATHENA_GlycemicControl_Class1330003] of  Conditional_On_Screen_Message
+
+	(label "empa missing GFR past 30 days")
+	(message "Empa could not be evaluated because there is no GFR measurement in the past 30 days.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_GlycemicControl_Class400001]))
+
+([ATHENA_GlycemicControl_Class1330004] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class1330005]
+		[ATHENA_GlycemicControl_Class730010]
+		[ATHENA_GlycemicControl_Class730011])
+	(mood Blocked_Add))
+
+([ATHENA_GlycemicControl_Class1330005] of  Conditional_On_Screen_Message
+
+	(label "TZD missing SGOT or SGPT")
+	(message "Pioglitazone could not be evaluated because there is no SGOT or SGPT measurement in the last year.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_GlycemicControl_Class1320000]))
+
+([ATHENA_GlycemicControl_Class1330006] of  Collateral_Action
+
+	(actions
+		[ATHENA_GlycemicControl_Class1330005]
+		[ATHENA_GlycemicControl_Class730010]
+		[ATHENA_GlycemicControl_Class730011])
+	(mood Blocked_Increase))
+
+([ATHENA_GlycemicControl_Class1330492] of  Comparison_Filter
+
+	(attribute [value])
+	(label "value is encoded med")
+	(operator member_of)
+	(value_expression [ATHENA_GlycemicControl_Class1110006]))
+
+([ATHENA_GlycemicControl_Class1340000] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "bicarb<24 in past year")
+	(numeric_domain_term Bicarbonate)
+	(operator %3C)
+	(valid_window [ATHENA_DM_Eye_Instance_30019])
+	(value 24.0))
+
+([ATHENA_GlycemicControl_Class1350000] of  Structured_Query
+
+	(label "ADR renal failure or impairment to MF or MF_ER")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350001]
+		[ATHENA_GlycemicControl_Class1350005]))
+
+([ATHENA_GlycemicControl_Class1350001] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350002]
+		[ATHENA_GlycemicControl_Class1350003])
+	(label "renal failure or impairment")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1350002] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain eq renalFailure")
+	(operator eq)
+	(value_expression [renalFailure]))
+
+([ATHENA_GlycemicControl_Class1350003] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain eq renalImpairment")
+	(operator eq)
+	(value_expression [renalImpairment]))
+
+([ATHENA_GlycemicControl_Class1350004] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance eq MF")
+	(operator eq)
+	(value_expression [METFORMIN]))
+
+([ATHENA_GlycemicControl_Class1350005] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350004]
+		[ATHENA_GlycemicControl_Class1350006])
+	(label "substance eq MF or MF_ER")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1350006] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance eq MF_ER")
+	(operator eq)
+	(value_expression [METFORMIN_ER]))
+
+([ATHENA_GlycemicControl_Class1350008] of  Query_Result_Criterion
+
+	(label "ADR renal failure or impairment to MF or MF_ER")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1350000]))
+
+([ATHENA_GlycemicControl_Class1350009] of  Structured_Query
+
+	(label "ADR acidosis to MF or MF_ER")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350005]
+		[ATHENA_GlycemicControl_Class1350010]))
+
+([ATHENA_GlycemicControl_Class1350010] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain term eq acidosis")
+	(operator eq)
+	(value_expression [ACIDOSIS]))
+
+([ATHENA_GlycemicControl_Class1350011] of  Query_Result_Criterion
+
+	(label "ADR acidosis to MF or MF_ER")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1350009]))
+
+([ATHENA_GlycemicControl_Class1350013] of  Structured_Query
+
+	(label "ADR of thrombocytopenia to pio or rosi")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350014]
+		[ATHENA_GlycemicControl_Class1350017]))
+
+([ATHENA_GlycemicControl_Class1350014] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350015]
+		[ATHENA_GlycemicControl_Class1350016])
+	(label "substance eq pio or rosi")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1350015] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance eq pio")
+	(operator eq)
+	(value_expression [PIOGLITAZONE]))
+
+([ATHENA_GlycemicControl_Class1350016] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance eq rosi")
+	(operator eq)
+	(value_expression [ROSIGLITAZONE]))
+
+([ATHENA_GlycemicControl_Class1350017] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain tem eq thrombocytopenia")
+	(operator eq)
+	(value_expression [Thrombocytopenia]))
+
+([ATHENA_GlycemicControl_Class1350018] of  Query_Result_Criterion
+
+	(label "ADR of thrombocytopenia to pio or rosi")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1350013]))
+
+([ATHENA_GlycemicControl_Class1350020] of  Structured_Query
+
+	(label "ADR cardiac arrest or coma or thrombocytopenia or renal failure or renal impairment to glip, glyb, glim, first gen SU, sulfa")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350021]
+		[ATHENA_GlycemicControl_Class1350025]))
+
+([ATHENA_GlycemicControl_Class1350021] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350022]
+		[ATHENA_GlycemicControl_Class1350023]
+		[ATHENA_GlycemicControl_Class1350017]
+		[ATHENA_GlycemicControl_Class1350002]
+		[ATHENA_GlycemicControl_Class1350003])
+	(label "domain term eq cardiac arrest or comoa or thrombocyto or renal fail impair")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1350022] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain term eq cardiac arrest")
+	(operator eq)
+	(value_expression [cardiac+arrest]))
+
+([ATHENA_GlycemicControl_Class1350023] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "domain term eq coma")
+	(operator eq)
+	(value_expression [COMA]))
+
+([ATHENA_GlycemicControl_Class1350025] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class700004]
+		[ATHENA_GlycemicControl_Class700005]
+		[ATHENA_GlycemicControl_Class710001]
+		[ATHENA_GlycemicControl_Class690000]
+		[ATHENA_GlycemicControl_Class1310001]
+		[ATHENA_GlycemicControl_Class740001])
+	(label "substance eq glip glyb glim SU sulfa")
+	(operator OR))
+
+([ATHENA_GlycemicControl_Class1350026] of  Query_Result_Criterion
+
+	(label "ADR cardiac arrest or coma or thrombocytopenia or renal failure or renal impairment to glip, glyb, glim, first gen SU, sulfa")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1350020]))
+
+([ATHENA_GlycemicControl_Class1350028] of  Structured_Query
+
+	(label "ADR SJS to glip glyb glim SU sulfa")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class690002]
+		[ATHENA_GlycemicControl_Class1350025]))
+
+([ATHENA_GlycemicControl_Class1350030] of  Query_Result_Criterion
+
+	(label "ADR SJS to glip glyb glim SU sulfa")
+	(presence TRUE)
+	(query [ATHENA_GlycemicControl_Class1350028]))
 
 ([ATHENA_GlycemicControl_Class14] of  Followed_By
 
@@ -3228,7 +3770,8 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class210011]
-		[ATHENA_GlycemicControl_Class210005])
+		[ATHENA_GlycemicControl_Class210005]
+		[ATHENA_GlycemicControl_Class1300004])
 	(label "Presence of HbA1c or Glyc and Absence Glucose Regulation Agents")
 	(operator AND))
 
@@ -3512,7 +4055,7 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class210004]
 		[ATHENA_GlycemicControl_Instance_10020]
-		[ATHENA_DM_Eye_Instance_80028])
+		[ATHENA_GlycemicControl_Class1300004])
 	(label "No HbA1c No GlycHem in past year")
 	(operator AND))
 
@@ -4256,7 +4799,8 @@
 
 	(label "Insulin only management out of scope")
 	(message "Management of insulin is beyond scope of this system.")
-	(message_type Primary_Recommendation))
+	(message_type Primary_Recommendation)
+	(rule_in_condition [criterion_INSTANCE_00001]))
 
 ([ATHENA_GlycemicControl_Class240045] of  Referral
 
@@ -6630,7 +7174,7 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class440000]
 		[ATHENA_GlycemicControl_Class210005]
-		[ATHENA_DM_Eye_Instance_80028])
+		[ATHENA_GlycemicControl_Class1300004])
 	(label "Presence of HbA1c or GlycoH in past 12 mo and not DM-1 and 3+ agents")
 	(operator AND))
 
@@ -7213,7 +7757,10 @@
 		[ATHENA_GlycemicControl_Class1210005]
 		[ATHENA_GlycemicControl_Class1210009]
 		[ATHENA_GlycemicControl_Class1210012]
-		[ATHENA_GlycemicControl_Class1260002])
+		[ATHENA_GlycemicControl_Class1260002]
+		[ATHENA_GlycemicControl_Class670000]
+		[ATHENA_GlycemicControl_Class680002]
+		[ATHENA_GlycemicControl_Class680000])
 	(transitions
 		[ATHENA_GlycemicControl_Class530002]
 		[ATHENA_GlycemicControl_Class530003]
@@ -7255,7 +7802,9 @@
 		[ATHENA_GlycemicControl_Class1210011]
 		[ATHENA_GlycemicControl_Class1210014]
 		[ATHENA_GlycemicControl_Class1210016]
-		[ATHENA_GlycemicControl_Class1260003]))
+		[ATHENA_GlycemicControl_Class1260003]
+		[ATHENA_GlycemicControl_Class1300002]
+		[ATHENA_GlycemicControl_Class1300003]))
 
 ([ATHENA_GlycemicControl_Class530002] of  Followed_By
 
@@ -8150,7 +8699,11 @@
 		ADR+anaphylaxis+to+glyburide
 		ADR+anggioedema+or+anaphylaxis+or+stevens+johns+to+glimepiride
 		ADR+anaphylaxis+to+SU+1st+gen
-		ADR+anapylaxis+to+glimepiride)
+		ADR+anapylaxis+to+glimepiride
+		ADR+anaphylaxis+to+sulfa+drugs
+		ADR+angioedema+to+sulfa+drugs+or+SU
+		ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa
+		ADR+SJS+to+glip+glyb+glim+SU+sulfa)
 	(additional_ADR_check
 		GLIMEPIRIDE
 		GLYBURIDE
@@ -8175,7 +8728,6 @@
 	(Relative_Contraindications
 		hypoglycemia
 		HbA1c%3C6
-		Allergy_ADR_to_sulfa_drugs
 		Allergy_to_sulfonamides)
 	(Relative_Indications DM-Type2))
 
@@ -8805,8 +9357,7 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class210005]
-		[KB_362799_Class1]
-		[ATHENA_GlycemicControl_Class460002])
+		[ATHENA_GlycemicControl_Class1300005])
 	(label "Presence of HbA1c or GlycoHem and Pres insulin and Abs DM-I or pres Dm-1 and dm-2")
 	(operator AND))
 
@@ -8835,7 +9386,7 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class210005]
-		[KB_362799_Class1])
+		[ATHENA_GlycemicControl_Class1300005])
 	(label "Presence of HbA1c or GlycoHem and Pres insulin")
 	(operator AND))
 
@@ -9040,7 +9591,7 @@
 ([ATHENA_GlycemicControl_Class720001] of  Parameterized_String
 
 	(label "Missing bicarb and SGOT/SGPT")
-	(value "Consider adding Biguanide (metformin). The following labs: .are older than 1 year (?missingMFLab).")
+	(value "We would normally recommend metformin, but could not do so because we are missing labs. The following labs: .are older than 1 year (?missingMFLab).")
 	(variables [ATHENA_GlycemicControl_Class720002]))
 
 ([ATHENA_GlycemicControl_Class720002] of  Variable
@@ -9276,13 +9827,13 @@
 ([ATHENA_GlycemicControl_Class730010] of  Order_TestProcedure
 
 	(label "Order SGOT - missing in past year")
-	(rule_in_condition [ATHENA_GlycemicControl_Class520006])
+	(rule_in_condition [ATHENA_GlycemicControl_Class500003])
 	(test_or_procedure SGOT))
 
 ([ATHENA_GlycemicControl_Class730011] of  Order_TestProcedure
 
 	(label "Order SGPT - missing in past year")
-	(rule_in_condition [ATHENA_GlycemicControl_Class520006])
+	(rule_in_condition [ATHENA_GlycemicControl_Class500004])
 	(test_or_procedure SGPT))
 
 ([ATHENA_GlycemicControl_Class730012] of  Collateral_Action
@@ -9497,7 +10048,7 @@
 ([ATHENA_GlycemicControl_Class741056] of  On_Screen_Message
 
 	(label "Missing eGFR, cannot add metformin")
-	(message "We normally consider recomending Metformin, but cannot do so because we are missing an eGFR")
+	(message "We could not evaluate metformin because we are missing an eGFR.")
 	(message_type Primary_Recommendation)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
@@ -9616,7 +10167,8 @@
 		[ATHENA_GlycemicControl_Class1070181]
 		[ATHENA_GlycemicControl_Class1080002]
 		[ATHENA_GlycemicControl_Class1080000]
-		[ATHENA_GlycemicControl_Class1200000])
+		[ATHENA_GlycemicControl_Class1200000]
+		[ATHENA_GlycemicControl_Class1312626])
 	(transitions
 		[ATHENA_GlycemicControl_Class790005]
 		[ATHENA_GlycemicControl_Class790006]
@@ -9635,7 +10187,8 @@
 		[ATHENA_GlycemicControl_Class1070182]
 		[ATHENA_GlycemicControl_Class1090004]
 		[ATHENA_GlycemicControl_Class1090005]
-		[ATHENA_GlycemicControl_Class1200001]))
+		[ATHENA_GlycemicControl_Class1200001]
+		[ATHENA_GlycemicControl_Class1312627]))
 
 ([ATHENA_GlycemicControl_Class780001] of  Numeric_Term_Criterion
 
@@ -9750,7 +10303,8 @@
 		[ATHENA_GlycemicControl_Class1070181]
 		[ATHENA_GlycemicControl_Class1080002]
 		[ATHENA_GlycemicControl_Class1080000]
-		[ATHENA_GlycemicControl_Class1200000])
+		[ATHENA_GlycemicControl_Class1200000]
+		[ATHENA_GlycemicControl_Class1312626])
 	(label "dAll CDS scenarios No ACE/ARB")
 	(selection_method all_of))
 
@@ -9848,13 +10402,13 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class240037]
 		[ATHENA_GlycemicControl_Class800006])
-	(label "2 non-insulin agents and rec add new agent")
+	(label "2 non-insulin agents and rec add or block new agent")
 	(operator AND))
 
 ([ATHENA_GlycemicControl_Class800003] of  Referral
 
 	(label "Refer to endocrinologist when adding 3rd drug")
-	(rule_in_condition [ATHENA_GlycemicControl_Class800002])
+	(rule_in_condition [ATHENA_GlycemicControl_Class1300000])
 	(who_to endocrinologist))
 
 ([ATHENA_GlycemicControl_Class800006] of  N_ary_Criterion
@@ -11931,7 +12485,9 @@
 
 	(Absolute_Contraindications
 		Poor+renal+function+and+Abs+Biguanide
-		Pres+Biguanide+and+eGFR%3C30+past+year)
+		Pres+Biguanide+and+eGFR%3C30+past+year
+		ADR+renal+failure+or+impairment+to+MF+or+MF_ER
+		ADR+acidosis+to+MF+or+MF_ER)
 	(collateral_actions
 		[ATHENA_GlycemicControl_Instance_120001]
 		[ATHENA_GlycemicControl_Class30002]
@@ -11946,22 +12502,22 @@
 	(Do_Not_Intensify_Conditions
 		Absence+of+eGFR+in+past+year
 		Absence+of+bicarb+in+past+year
-		Absence+of+SGOT+and+SGPT+in+past+year
-		30%3C%3DeGFR%3C45+past+year)
+		30%3C%3DeGFR%3C45+past+year
+		Absence+of+SGOT+or+SGPT+in+past+year)
 	(Do_Not_Start_Conditions
 		Absence+of+eGFR+in+past+month
-		30%3C%3DeGFR%3C45
 		Absence+of+bicarb+in+past+year
-		Absence+of+SGOT+and+SGPT+in+past+year)
+		Absence+of+SGOT+or+SGPT+in+past+year
+		30%3C%3DeGFR%3C45+past+30+days)
 	(Drug_Class_Name BIGUANIDE)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80009])
 	(label "Biguanide")
 	(Relative_Contraindications
-		bicarb%3C%3D21
 		SGOT%3E3*UpperLimitOfNormal
 		SGPT%3E3*UpperLimitOfNormal
 		Abs+Biguanide+and+45%3C%3DeGFR%3C60+past+month
-		Pres+of+Biguanide+and+45%3C%3DeGFR%3C60+past+year))
+		Pres+of+Biguanide+and+45%3C%3DeGFR%3C60+past+year
+		bicarb%3C24+in+past+year))
 
 ([ATHENA_GlycemicControl_Instance_50005] of  Evaluate_Start_Activity
 
@@ -12053,28 +12609,31 @@
 
 ([ATHENA_GlycemicControl_Instance_50026] of  Drug_Usage
 
-	(Absolute_Contraindications Bladder_Cancer)
+	(Absolute_Contraindications
+		Bladder_Cancer
+		ADR+of+thrombocytopenia+to+pio+or+rosi)
 	(collateral_actions
 		[KB_308520_Class4]
 		[KB_308520_Class13]
 		[ATHENA_GlycemicControl_Class90046]
 		[ATHENA_GlycemicControl_Class210051]
 		[ATHENA_GlycemicControl_Class490000]
-		[ATHENA_GlycemicControl_Class1110000])
+		[ATHENA_GlycemicControl_Class1110000]
+		[ATHENA_GlycemicControl_Class1330004])
 	(Do_Not_Intensify_Conditions
 		SGOT%3E3*UpperLimitOfNormal
 		SGPT%3E3*UpperLimitOfNormal
-		Absence+of+SGOT+and+SGPT+in+past+year
 		Heart_failure_N
 		CCS-7.2.11.1
-		CCS-7.2.11)
+		CCS-7.2.11
+		Absence+of+SGOT+or+SGPT+in+past+year)
 	(Do_Not_Start_Conditions
 		SGOT%3E3*UpperLimitOfNormal
 		SGPT%3E3*UpperLimitOfNormal
-		Absence+of+SGOT+and+SGPT+in+past+year
 		Heart_failure_N
 		CCS-7.2.11.1
-		CCS-7.2.11)
+		CCS-7.2.11
+		Absence+of+SGOT+or+SGPT+in+past+year)
 	(Drug_Class_Name THIAZOLIDINEDIONES)
 	(Drug_Partners_To_Avoid
 		Insulin
@@ -12558,7 +13117,10 @@
 
 ([ATHENA_GlycemicControl_Instance_80012] of  Guideline_Drug
 
-	(collateral_actions [ATHENA_GlycemicControl_Class730023])
+	(collateral_actions
+		[ATHENA_GlycemicControl_Class730023]
+		[ATHENA_GlycemicControl_Class1330004]
+		[ATHENA_GlycemicControl_Class1330006])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_110007]
 		[ATHENA_GlycemicControl_Instance_110006])
@@ -12899,6 +13461,13 @@
 	(label "Metformin contraindicated by query")
 	(presence TRUE)
 	(query [ATHENA_GlycemicControlAlt_Class2]))
+
+([bicarb%3C24+in+past+year] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1340000])
+	(label "bicarb<24 in past year")
+	(PrettyName "bicarbless than 24 in past year"))
 
 ([bicarb%3C%3D21] of  Diagnostic_Term_Metaclass
 
