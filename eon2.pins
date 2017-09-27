@@ -1,7 +1,7 @@
-; Tue Sep 19 10:23:46 PDT 2017
+; Tue Sep 26 21:48:57 PDT 2017
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 ([Compelling_Indications] of  Recommendation_Basis
 )
@@ -540,7 +540,13 @@
 	(version "version 2.16")
 	(version_note "Added description slot to scenario for documentation purpose"))
 
-([first-line_for] of  Recommendation_Basis
+([is_first-line_drug_for] of  Recommendation_Basis
+)
+
+([is_second-line_drug_for] of  Recommendation_Basis
+)
+
+([is_third-line_drug_for] of  Recommendation_Basis
 )
 
 ([OpioidGuideline_Instance_380003] of  Parameterized_String
@@ -552,12 +558,6 @@
 ([Relative_Indications] of  Recommendation_Basis
 )
 
-([second-line_for] of  Recommendation_Basis
-)
-
 ([Session_Time] of  Canonical_Terms_Metaclass
 
 	(PrettyName "Session Date"))
-
-([third-line_for] of  Recommendation_Basis
-)

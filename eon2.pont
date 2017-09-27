@@ -1,7 +1,7 @@
-; Tue Sep 19 10:23:46 PDT 2017
+; Tue Sep 26 21:48:57 PDT 2017
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -201,10 +201,6 @@
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
-	(multislot third-line_for
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
 	(multislot focus
 		(type SYMBOL)
 ;+		(allowed-parents Medical_Domain_Class)
@@ -322,6 +318,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Management_Algorithm_Entity)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot is_second-line_drug_for
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(single-slot strict_rule_out_condition
 		(type INSTANCE)
@@ -449,10 +449,6 @@
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot second-line_for
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
 	(single-slot rule_in_condition
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
@@ -544,6 +540,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 		(create-accessor read-write))
+	(multislot is_third-line_drug_for
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
 	(single-slot activity
 		(type INSTANCE)
 ;+		(allowed-classes Activity_Specification)
@@ -571,10 +571,6 @@
 	(single-slot expected_value
 		(type FLOAT)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot first-line_for
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(single-slot fine-grain_priority
 		(type INTEGER)
@@ -750,6 +746,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot is_first-line_drug_for
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(multislot conditional_goals
 ;+		(comment "One goal (e.g. for HbA1C) that may have different ranges for different groups of patients.")
@@ -1988,6 +1988,10 @@
 (defclass Drug_Usage "for selection of drug class (e.g. beta blocker) or drug (glipizide)\nencode ADR's that are absolute contraindications; ADR's that relative contraindications do NOT need to be encoded because ADRs will be displayed"
 	(is-a Activity_Specification)
 	(role concrete)
+	(multislot is_first-line_drug_for
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
 	(single-slot Drug_Class_Name
 ;+		(comment "medication")
 		(type SYMBOL)
@@ -2003,10 +2007,6 @@
 		(type SYMBOL)
 ;+		(allowed-parents Therapeutic_Class)
 		(create-accessor read-write))
-	(multislot first-line_for
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
 	(multislot Absolute_Contraindications
 ;+		(comment "Absolute contraindications to use of a drug from the Guideline (as opposed to other absolute contraindications asstd with this drug in general)")
 		(type SYMBOL)
@@ -2018,10 +2018,6 @@
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(multislot Side_Effects
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
-		(create-accessor read-write))
-	(multislot third-line_for
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
@@ -2039,6 +2035,10 @@
 		(type SYMBOL)
 ;+		(allowed-parents Therapeutic_Class)
 		(create-accessor read-write))
+	(multislot is_third-line_drug_for
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
 	(multislot components
 ;+		(comment "components of a compound drug")
 		(type INSTANCE)
@@ -2050,6 +2050,10 @@
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(multislot Do_Not_Intensify_Conditions
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
+	(multislot is_second-line_drug_for
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
@@ -2070,10 +2074,6 @@
 	(multislot drug_relations
 		(type INSTANCE)
 ;+		(allowed-classes Drug_Relation)
-		(create-accessor read-write))
-	(multislot second-line_for
-		(type SYMBOL)
-;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write)))
 
 (defclass Guideline_Drug
