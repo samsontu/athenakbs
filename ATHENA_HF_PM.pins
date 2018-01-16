@@ -1,4 +1,4 @@
-; Sun Jul 20 23:43:57 PDT 2014
+; Wed Jan 03 11:50:10 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -1914,9 +1914,6 @@
 	(%3APAL-NAME "ARB within [-2, +1] day of discharge")
 	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?hospitalizationTime :FRAME Definite_Time_Interval)")
 	(%3APAL-STATEMENT "(exists ?med \n        (and (subclass-of (drug_name ?med) Angiotensin_II_receptor_blockers)\n             (=(patient_id ?med) $patient_id)\n             (or (= (status ?med) \"active\")\n                 (exists ?hospitalizationTime\n                         (and (= (:NAME ?hospitalizationTime) \"FocusAdmissionPeriod\")\n                              (<  (system_time  (start_time  (valid_time ?med)))(+ 2 (system_time (stop_time ?hospitalizationTime))))\n                              (>  (system_time  (start_time  (valid_time ?med)))(-  (system_time (stop_time ?hospitalizationTime)) 3))\n                         )\n                 )\n             )\n        )\n)"))
-
-([ATHENA_HF_PM_Class2] of  Performance_Measure_Group
-)
 
 ([ATHENA_HF_PM_Class20000] of  PAL_Criterion
 

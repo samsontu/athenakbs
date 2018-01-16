@@ -1,4 +1,4 @@
-; Sun Jul 20 23:43:57 PDT 2014
+; Wed Jan 03 11:50:10 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -50,6 +50,10 @@
 
 (defclass idecainide
 	(is-a antiarrhythmic+drugs)
+	(role concrete))
+
+(defclass sustained+release+metoprolol+tartrate
+	(is-a metoprolol_tartrate)
 	(role concrete))
 
 (defclass indomethacin
@@ -275,12 +279,12 @@
 (defclass Performance_Measure_Group
 	(is-a USER)
 	(role concrete)
-	(multislot subguidelines
-		(type INSTANCE)
-;+		(allowed-classes Management_Guideline)
-		(create-accessor read-write))
 	(single-slot label
 ;+		(comment "Short descriptive string that names the concept represented by the instance")
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot subguidelines
+		(type INSTANCE)
+;+		(allowed-classes Management_Guideline)
 		(create-accessor read-write)))
