@@ -1,4 +1,4 @@
-; Tue Sep 26 21:48:57 PDT 2017
+; Tue Jan 16 13:22:15 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -344,6 +344,10 @@
 ;+		(allowed-parents Medications_Class)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot Shared_documentation
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot replace_candidates_generator
 		(type INSTANCE)
 ;+		(allowed-classes PAL-QUERY)
@@ -457,7 +461,6 @@
 	(multislot selection_criterion
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
-		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(multislot activities
 		(type INSTANCE)
@@ -1448,6 +1451,11 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot Shared_documentation
+		(type STRING)
+;+		(value "")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot strength_of_recommendation
 		(type SYMBOL)
 ;+		(allowed-parents Strength_Of_Recommendation)
@@ -1765,6 +1773,11 @@
 (defclass Evaluate_Stop_Activity
 	(is-a Evaluate_Activity_Act)
 	(role concrete)
+	(single-slot Shared_documentation
+		(type STRING)
+;+		(value "The query for 'activity to stop' should return a list of strings corresponding the names of activities (e.g., medication) that should be stopped." "")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot domain_term
 ;+		(comment "A domain concept represented as a term in a controlled vocabulary")
 		(type SYMBOL)
@@ -1792,6 +1805,11 @@
 (defclass Evaluate_Substitution_Activity
 	(is-a Evaluate_Activity_Act)
 	(role concrete)
+	(single-slot Shared_documentation
+		(type STRING)
+;+		(value "The query for 'activity to stop' should return a list of strings corresponding the names of activities (e.g., medication) that should be stopped." "")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot domain_term
 ;+		(comment "A domain concept represented as a term in a controlled vocabulary")
 		(type SYMBOL)
@@ -1975,6 +1993,11 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot Shared_documentation
+		(type STRING)
+;+		(value "")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot collateral_actions
 		(type INSTANCE)
 ;+		(allowed-classes Collateral_Action)
@@ -2000,7 +2023,7 @@
 		(create-accessor read-write))
 	(single-slot Shared_documentation
 		(type STRING)
-;+		(value "Encode ADRs that are absolute contraindications; do not encode ADRs that are relative contraindications; these displayed independently ")
+;+		(value "Encode ADRs that are absolute contraindications; do not encode ADRs that are relative contraindications; these displayed independently " "")
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot Drug_Partners_To_Avoid
@@ -2233,7 +2256,6 @@
 	(multislot selection_criterion
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
-		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(multislot criterion_to_achieve
 		(type INSTANCE)
@@ -2251,7 +2273,7 @@
 	(single-slot selection_criterion
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
-;+		(cardinality 1 1)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot criterion_to_achieve
 		(type INSTANCE)

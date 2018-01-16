@@ -1,4 +1,4 @@
-; Thu Jul 27 13:54:07 PDT 2017
+; Tue Jan 16 13:02:59 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -510,10 +510,6 @@
 		(create-accessor read-write))
 	(single-slot dob
 ;+		(comment "Date of birth, in the format yyyy-mm-dd")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Shared_documentation
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -2662,10 +2658,6 @@
 	(role concrete)
 	(single-slot label
 ;+		(comment "Short descriptive string that names the concept represented by the instance")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Shared_documentation
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))

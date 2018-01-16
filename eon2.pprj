@@ -1,4 +1,4 @@
-; Tue Sep 26 21:48:57 PDT 2017
+; Tue Jan 16 13:22:15 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -1544,17 +1544,17 @@
 ([Dharma_ProjectKB_03794] of  Map
 
 	(entries
-		[eon2_ProjectKB_Class90856]
-		[eon2_ProjectKB_Class90858]
+		[eon2_ProjectKB_Class80856]
+		[eon2_ProjectKB_Class80858]
 		[eon2_ProjectKB_Class90860]
 		[eon2_ProjectKB_Class90862]
-		[eon2_ProjectKB_Class100864])
+		[eon2_ProjectKB_Class90864])
 	(referenced_maps
+		[eon2_ProjectKB_Class80855]
+		[eon2_ProjectKB_Class90863]
+		[eon2_ProjectKB_Class80857]
 		[eon2_ProjectKB_Class90861]
-		[eon2_ProjectKB_Class100863]
-		[eon2_ProjectKB_Class90859]
-		[eon2_ProjectKB_Class90857]
-		[eon2_ProjectKB_Class90855]))
+		[eon2_ProjectKB_Class90859]))
 
 ([Dharma_ProjectKB_Instance_1191] of  Widget
 
@@ -2515,13 +2515,13 @@
 
 ([eon-guideline2_ProjectKB_INSTANCE_00711] of  Widget
 
-	(height 160)
+	(height 60)
 	(name "description")
 	(property_list [eon2_ProjectKB_Class71455])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
-	(width 250)
-	(x 260)
-	(y 0))
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
 
 ([eon-guideline2_ProjectKB_INSTANCE_00727] of  Widget
 
@@ -2814,7 +2814,10 @@
 		[eon2_ProjectKB_Class50904]
 		[eon2_ProjectKB_Class831]
 		[eon2_ProjectKB_Class10833]
-		[eon2_ProjectKB_Class80859]))
+		[eon2_ProjectKB_Class80859]
+		[eon2_ProjectKB_Class90847]
+		[eon2_ProjectKB_Class90849]
+		[eon2_ProjectKB_Class90851]))
 
 ([eon-guideline2_ProjectKB_INSTANCE_01058] of  Widget
 
@@ -2851,9 +2854,9 @@
 		[eon2_ProjectKB_Class30783]
 		[eon2_ProjectKB_Class71673]
 		[eon2_ProjectKB_Class71675]
-		[eon2_ProjectKB_Class80855]
-		[eon2_ProjectKB_Class80857]
-		[eon2_ProjectKB_Class90863]))
+		[eon2_ProjectKB_Class80841]
+		[eon2_ProjectKB_Class90843]
+		[eon2_ProjectKB_Class90845]))
 
 ([eon-guideline2_ProjectKB_INSTANCE_01265] of  Widget
 
@@ -3023,16 +3026,6 @@
 	(width 699)
 	(x 0)
 	(y 0))
-
-([eon2_ProjectKB_Class100863] of  Map
-)
-
-([eon2_ProjectKB_Class100864] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class100863")
-	(value_class "java.util.Map"))
 
 ([eon2_ProjectKB_Class10760] of  Boolean
 
@@ -3423,7 +3416,7 @@
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
 	(width 200)
 	(x 0)
-	(y 600))
+	(y 960))
 
 ([eon2_ProjectKB_Class30810] of  Property_List
 )
@@ -3436,8 +3429,8 @@
 	(property_list [eon2_ProjectKB_Class30812])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
 	(width 200)
-	(x 0)
-	(y 720))
+	(x 210)
+	(y 1080))
 
 ([eon2_ProjectKB_Class30812] of  Property_List
 
@@ -6709,14 +6702,14 @@
 
 ([eon2_ProjectKB_Class71469] of  Widget
 
-	(height 60)
+	(height 140)
 	(is_hidden FALSE)
 	(name "Shared_documentation")
 	(property_list [eon2_ProjectKB_Class71470])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 300))
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 250)
+	(x 250)
+	(y 20))
 
 ([eon2_ProjectKB_Class71470] of  Property_List
 )
@@ -7364,14 +7357,14 @@
 
 ([eon2_ProjectKB_Class71671] of  Widget
 
-	(height 60)
+	(height 110)
 	(is_hidden FALSE)
 	(name "Shared_documentation")
 	(property_list [eon2_ProjectKB_Class71672])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
 	(width 200)
-	(x 0)
-	(y 180))
+	(x 200)
+	(y 10))
 
 ([eon2_ProjectKB_Class71672] of  Property_List
 )
@@ -7384,7 +7377,7 @@
 	(property_list [eon2_ProjectKB_Class71674])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
 	(width 200)
-	(x 0)
+	(x 210)
 	(y 840))
 
 ([eon2_ProjectKB_Class71674] of  Property_List
@@ -7398,7 +7391,7 @@
 	(property_list [eon2_ProjectKB_Class71676])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
 	(width 200)
-	(x 210)
+	(x 0)
 	(y 840))
 
 ([eon2_ProjectKB_Class71676] of  Property_List
@@ -7954,6 +7947,17 @@
 ([eon2_ProjectKB_Class800] of  Property_List
 )
 
+([eon2_ProjectKB_Class80841] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_first-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90842])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 600))
+
 ([eon2_ProjectKB_Class80842] of  String
 
 	(name "Case_Selection")
@@ -8019,33 +8023,25 @@
 	(name "Variable_ValueSet")
 	(string_value "label"))
 
-([eon2_ProjectKB_Class80855] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "first-line_for")
-	(property_list [eon2_ProjectKB_Class80856])
-	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
-	(width 200)
-	(x 0)
-	(y 1080))
-
-([eon2_ProjectKB_Class80856] of  Property_List
+([eon2_ProjectKB_Class80855] of  Map
 )
 
-([eon2_ProjectKB_Class80857] of  Widget
+([eon2_ProjectKB_Class80856] of  Map_Entry
 
-	(height 120)
-	(is_hidden FALSE)
-	(name "third-line_for")
-	(property_list [eon2_ProjectKB_Class80858])
-	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
-	(width 200)
-	(x 200)
-	(y 1080))
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class80855")
+	(value_class "java.util.Map"))
 
-([eon2_ProjectKB_Class80858] of  Property_List
+([eon2_ProjectKB_Class80857] of  Map
 )
+
+([eon2_ProjectKB_Class80858] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class80857")
+	(value_class "java.util.Map"))
 
 ([eon2_ProjectKB_Class80859] of  Widget
 
@@ -8329,25 +8325,107 @@
 	(name "horizontal_stretcher")
 	(string_value "<<all>>"))
 
-([eon2_ProjectKB_Class90855] of  Map
+([eon2_ProjectKB_Class90842] of  Property_List
 )
 
-([eon2_ProjectKB_Class90856] of  Map_Entry
+([eon2_ProjectKB_Class90843] of  Widget
 
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class90855")
-	(value_class "java.util.Map"))
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_third-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90844])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 720))
 
-([eon2_ProjectKB_Class90857] of  Map
+([eon2_ProjectKB_Class90844] of  Property_List
 )
 
-([eon2_ProjectKB_Class90858] of  Map_Entry
+([eon2_ProjectKB_Class90845] of  Widget
 
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class90857")
-	(value_class "java.util.Map"))
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_second-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90846])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 210)
+	(y 600))
+
+([eon2_ProjectKB_Class90846] of  Property_List
+)
+
+([eon2_ProjectKB_Class90847] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_second-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90848])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 1220))
+
+([eon2_ProjectKB_Class90848] of  Property_List
+)
+
+([eon2_ProjectKB_Class90849] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_first-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90850])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 1100))
+
+([eon2_ProjectKB_Class90850] of  Property_List
+)
+
+([eon2_ProjectKB_Class90851] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "is_third-line_drug_for")
+	(property_list [eon2_ProjectKB_Class90852])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 200)
+	(y 1100))
+
+([eon2_ProjectKB_Class90852] of  Property_List
+)
+
+([eon2_ProjectKB_Class90853] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([eon2_ProjectKB_Class90854] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([eon2_ProjectKB_Class90855] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([eon2_ProjectKB_Class90856] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [eon2_ProjectKB_Class90857])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 420))
+
+([eon2_ProjectKB_Class90857] of  Property_List
+)
 
 ([eon2_ProjectKB_Class90859] of  Map
 )
@@ -8369,19 +8447,15 @@
 	(value "eon2_ProjectKB_Class90861")
 	(value_class "java.util.Map"))
 
-([eon2_ProjectKB_Class90863] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "second-line_for")
-	(property_list [eon2_ProjectKB_Class90864])
-	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
-	(width 200)
-	(x 0)
-	(y 1200))
-
-([eon2_ProjectKB_Class90864] of  Property_List
+([eon2_ProjectKB_Class90863] of  Map
 )
+
+([eon2_ProjectKB_Class90864] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class90863")
+	(value_class "java.util.Map"))
 
 ([eon2_ProjectKB_Class90886] of  Property_List
 )
@@ -13020,34 +13094,6 @@
 
 	(name "layout properties"))
 
-([eon2_ProjectKB_Instance_1191] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "weight")
-	(property_list [eon2_ProjectKB_Instance_1192])
-	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
-	(width 100)
-	(x 200)
-	(y 280))
-
-([eon2_ProjectKB_Instance_1192] of  Property_List
-)
-
-([eon2_ProjectKB_Instance_1193] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "PrettyName")
-	(property_list [eon2_ProjectKB_Instance_1194])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 275))
-
-([eon2_ProjectKB_Instance_1194] of  Property_List
-)
-
 ([eon2_ProjectKB_Instance_1275] of  Widget
 
 	(height 60)
@@ -13830,10 +13876,10 @@
 		[eon2_ProjectKB_Instance_21108]
 		[eon2_ProjectKB_Instance_21110]
 		[eon2_ProjectKB_Instance_21112]
-		[eon2_ProjectKB_Instance_21116]
 		[eon2_ProjectKB_Instance_21118]
 		[eon2_ProjectKB_Instance_21120]
-		[eon2_ProjectKB_Instance_51129]))
+		[eon2_ProjectKB_Instance_51129]
+		[eon2_ProjectKB_Class90856]))
 
 ([eon2_ProjectKB_Instance_21085] of  Property_List
 
@@ -13910,7 +13956,8 @@
 
 	(properties
 		[eon2_ProjectKB_Instance_21096]
-		[eon2_ProjectKB_Instance_21097]))
+		[eon2_ProjectKB_Instance_21097]
+		[eon2_ProjectKB_Class90853]))
 
 ([eon2_ProjectKB_Instance_21096] of  Boolean
 
@@ -14007,7 +14054,8 @@
 
 	(properties
 		[eon2_ProjectKB_Instance_21114]
-		[eon2_ProjectKB_Instance_21115]))
+		[eon2_ProjectKB_Instance_21115]
+		[eon2_ProjectKB_Class90854]))
 
 ([eon2_ProjectKB_Instance_21114] of  Boolean
 
@@ -14018,20 +14066,6 @@
 
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
-
-([eon2_ProjectKB_Instance_21116] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "maximum_daily_dose")
-	(property_list [eon2_ProjectKB_Instance_21117])
-	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
-	(width 100)
-	(x 300)
-	(y 0))
-
-([eon2_ProjectKB_Instance_21117] of  Property_List
-)
 
 ([eon2_ProjectKB_Instance_21118] of  Widget
 
@@ -15406,7 +15440,7 @@
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
 	(width 200)
 	(x 0)
-	(y 960))
+	(y 1080))
 
 ([eon2_ProjectKB_Instance_51105] of  Property_List
 
@@ -15434,7 +15468,7 @@
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
 	(width 200)
 	(x 210)
-	(y 600))
+	(y 960))
 
 ([eon2_ProjectKB_Instance_51109] of  Property_List
 )
@@ -15555,7 +15589,8 @@
 
 	(properties
 		[eon2_ProjectKB_Instance_51131]
-		[eon2_ProjectKB_Instance_51132]))
+		[eon2_ProjectKB_Instance_51132]
+		[eon2_ProjectKB_Class90855]))
 
 ([eon2_ProjectKB_Instance_51131] of  Boolean
 
@@ -16812,7 +16847,7 @@
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
 	(width 200)
 	(x 200)
-	(y 0))
+	(y 120))
 
 ([eon2_ProjectKB_Instance_71266] of  Property_List
 
@@ -21246,6 +21281,42 @@
 		[eon2_ProjectKB_Instance_10717]
 		[eon2_ProjectKB_Instance_10718]))
 
+([KB_271966_Class826] of  Map
+
+	(entries
+		[KB_271966_Class827]
+		[KB_271966_Class828]
+		[KB_271966_Class829]
+		[KB_271966_Class830]))
+
+([KB_271966_Class827] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_271966_Class828] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_271966_Class829] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_271966_Class830] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([KB_721828_Instance_0] of  Property_List
 
 	(name "class widget properties")
@@ -21633,42 +21704,6 @@
 	(width 600)
 	(x 0)
 	(y 120))
-
-([KB_813588_Class826] of  Map
-
-	(entries
-		[KB_813588_Class827]
-		[KB_813588_Class828]
-		[KB_813588_Class829]
-		[KB_813588_Class830]))
-
-([KB_813588_Class827] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_813588_Class828] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_813588_Class829] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_813588_Class830] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([KB_INSTANCE_00001] of  Property_List
 
