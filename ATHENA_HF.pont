@@ -1,4 +1,4 @@
-; Wed Dec 07 23:48:11 PST 2016
+; Wed Jan 03 11:18:35 PST 2018
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -46,6 +46,14 @@
 
 (defclass idecainide
 	(is-a antiarrhythmic+drugs)
+	(role concrete))
+
+(defclass fosinopril
+	(is-a ACE_Inhibitors)
+	(role concrete))
+
+(defclass sustained+release+metoprolol+tartrate
+	(is-a metoprolol_tartrate)
 	(role concrete))
 
 (defclass indomethacin
