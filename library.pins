@@ -1,4 +1,4 @@
-; Thu Sep 21 11:59:54 PDT 2017
+; Mon Jan 29 11:05:21 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -66,6 +66,10 @@
 ([ACIDOSIS] of  Medical_Conditions_Metaclass
 
 	(PrettyName "ACIDOSIS"))
+
+([Acromegaly] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Acromegaly"))
 
 ([Active_Liver_Disease] of  Diagnostic_Term_Metaclass
 
@@ -181,6 +185,12 @@
 
 	(data_source VISTA_data_element))
 
+([ALT] of  Interval-Valued_AtomicTest_Metaclass
+
+	(Precision 1)
+	(PrettyName "ALT")
+	(UpperLimitOfNormal [library_Class20006]))
+
 ([AM000_Antimicrobials] of  Medications_Metaclass
 
 	(code "AM000")
@@ -241,10 +251,6 @@
 	(data_source VISTA_data_element))
 
 ([amiodarone] of  Medications_Metaclass
-
-	(data_source VISTA_data_element))
-
-([amlodipine] of  Medications_Metaclass
 
 	(data_source VISTA_data_element))
 
@@ -352,6 +358,12 @@
 
 ([aspirin] of  Medications_Metaclass
 )
+
+([AST] of  Interval-Valued_AtomicTest_Metaclass
+
+	(Precision 1)
+	(PrettyName "AST")
+	(UpperLimitOfNormal [library_Class20005]))
 
 ([Asthma] of  Medical_Conditions_Metaclass
 
@@ -1915,6 +1927,10 @@
 
 	(PrettyName "Chronic Liver disease"))
 
+([ChronicRefluxNephropathy] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Chronic reflux nephropathy"))
+
 ([Cilostazol] of  Medications_Metaclass
 )
 
@@ -2988,10 +3004,6 @@
 ([famotidine] of  Medications_Metaclass
 )
 
-([felodipine] of  Medications_Metaclass
-
-	(data_source VISTA_data_element))
-
 ([felodipine_SA] of  Medications_Metaclass
 
 	(data_source VISTA_data_element))
@@ -3016,6 +3028,9 @@
 ([Fibric_Acid] of  Medications_Metaclass
 
 	(PrettyName "Fibric acid"))
+
+([FirstSecondLineDrugs_VA_GL] of  Medications_Metaclass
+)
 
 ([Flatulence_eructation_gass_pain_787_3] of  Medical_Conditions_Metaclass
 
@@ -3069,10 +3084,6 @@
 	(data_source clinical_assessment))
 
 ([Footwear+prescriptions] of  Medical_Conditions_Metaclass
-
-	(data_source VISTA_data_element))
-
-([fosinopril] of  Medications_Metaclass
 
 	(data_source VISTA_data_element))
 
@@ -3460,6 +3471,16 @@
 	(code "hs900")
 	(PrettyName "Hormones/Synthetics/Modifiers, Other"))
 
+([HTN_in_Scope_Dx] of  Medical_Conditions_Metaclass
+
+	(label "HTN in Scope Dx")
+	(PrettyName "HTN in Scope Dx"))
+
+([HTN_Out_of_Scope_Dx] of  Medical_Conditions_Metaclass
+
+	(label "HTN Out of Scope Dx")
+	(PrettyName "HTN Out of Scope Dx"))
+
 ([hydralazine] of  Medications_Metaclass
 
 	(data_source VISTA_data_element)
@@ -3488,6 +3509,10 @@
 ([Hyperlipidemia] of  Medical_Conditions_Metaclass
 
 	(PrettyName "Hyperlipidemia"))
+
+([Hyperparathyroidism] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Hyperparathyroidism"))
 
 ([Hyperpotassemia_ICD9] of  Medical_Conditions_Metaclass
 
@@ -3526,6 +3551,9 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "hypoglycemia"))
+
+([Hypoosmality_Hyponatremia] of  Medical_Conditions_Metaclass
+)
 
 ([hypotension] of  Medical_Conditions_Metaclass
 
@@ -3884,7 +3912,7 @@
 
 ([library_Class100001] of  %3APAL-CONSTRAINT
 
-	(%3APAL-DESCRIPTION "Any increase of more than 20% in creatinine AFTER prescription for an ACEi/ARB.  The comparison is FROM the baseline creatinine prior to initiation of ACEi/ARB (the most recent creatinine prior to first ACEi/ARB) TO the peak creatinine within 3 months after initiation of ACEi/ARB (MKG 2012) (From HF PM)")
+	(%3APAL-DESCRIPTION "Any increase of more than 20% in creatinine AFTER prescription for an ACEi/ARB.  The comparison is FROM the baseline creatinine prior to start of the current active ACEi/ARB (the most recent creatinine prior to first ACEi/ARB) TO the peak creatinine within 3 months after initiation of ACEi/ARB (MKG 2012) (From HF PM)")
 	(%3APAL-NAME "20% increase in creatinine after ACE/ARB")
 	(%3APAL-RANGE "(defrange ?baseCreat :FRAME Numeric_Entry)\n(defrange ?peakCreat :FRAME Numeric_Entry)\n(defrange ?initACEARB :FRAME Medication)\n(defrange ?preCreat :FRAME Numeric_Entry)\n(defrange ?postCreat :FRAME Numeric_Entry)\n(defrange ?nonACEARB :FRAME Medication)")
 	(%3APAL-STATEMENT "(exists ?initACEARB (and (= (patient_id ?initACEARB) $patient_id)\n                         (is-class (drug_name ?initACEARB))\n                         (or (subclass-of (coerce-to-class (drug_name ?initACEARB)) ACE_Inhibitors)\n                             (subclass-of (coerce-to-class (drug_name ?initACEARB)) Angiotensin_II_receptor_blockers))\n                         (not (exists ?nonACEARB (and (= (patient_id ?nonACEARB) $patient_id)\n                                                      (is-class (drug_name ?nonACEARB))\n                                                      (or (subclass-of (coerce-to-class (drug_name ?nonACEARB)) ACE_Inhibitors)\n                                                          (subclass-of (coerce-to-class (drug_name ?nonACEARB)) Angiotensin_II_receptor_blockers))\n                                                      (>(system_time (start_time (valid_time ?initACEARB)))(system_time (start_time (valid_time ?nonACEARB)))))))\n                         (exists ?baseCreat (and (= (patient_id ?baseCreat) $patient_id)\n                                                 (=    (domain_term ?baseCreat) \"Creatinine\")\n                                                 (< (system_time (valid_time ?baseCreat)) (system_time (start_time (valid_time ?initACEARB))))\n                                                 (not (exists ?preCreat (and (= (patient_id ?preCreat) $patient_id)\n                                                                             (=    (domain_term ?preCreat) \"Creatinine\")\n                                                                             (< (system_time (valid_time ?preCreat)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                             (> (system_time (valid_time ?preCreat)) (system_time (valid_time ?baseCreat))))))\n                                                 (exists ?peakCreat (and (= (patient_id ?peakCreat) $patient_id)\n                                                                         (=    (domain_term ?peakCreat) \"Creatinine\")                                                                \n                                                                         (> (system_time (valid_time ?peakCreat)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                         (< (system_time (valid_time ?peakCreat)) (+ 90 (system_time (start_time (valid_time ?initACEARB)))))\n                                                                         (not (exists ?postCreat  (and (= (patient_id ?postCreat) $patient_id)\n                                                                                                       (=    (domain_term ?postCreat) \"Creatinine\")                                                                \n                                                                                                       (> (system_time (valid_time ?postCreat)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                                                       (> (value ?postCreat)(value ?peakCreat)))))\n                                                                         (> (/ (* 100.0 (- (value ?peakCreat) (value ?baseCreat))) (value ?baseCreat)) 20.0)\n                                                                    ))\n                                            ))\n                    ))\n"))
@@ -4385,6 +4413,12 @@
 	(label "Check meds whose dose > max recommended dose")
 	(rule_in [criterion_INSTANCE_00001]))
 
+([library_Class190000] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "15% decrease in eGFR after ACE/ARB, but still normal")
+	(%3APAL-RANGE "(defrange ?baseEGFR :FRAME Numeric_Entry)\n(defrange ?troughEGFR :FRAME Numeric_Entry)\n(defrange ?initACEARB :FRAME Medication)\n(defrange ?preEGFR :FRAME Numeric_Entry)\n(defrange ?postEGFR :FRAME Numeric_Entry)\n(defrange ?nonACEARB :FRAME Medication)\n")
+	(%3APAL-STATEMENT "(exists  ?initACEARB  (and (= (patient_id ?initACEARB) $patient_id)\n                           (is-class (drug_name ?initACEARB))\n                           (or (subclass-of (coerce-to-class (drug_name ?initACEARB)) ACE_Inhibitors)\n                               (subclass-of (coerce-to-class (drug_name ?initACEARB)) Angiotensin_II_receptor_blockers))\n                           (not (exists ?nonACEARB (and (= (patient_id ?nonACEARB) $patient_id)\n                                                        (is-class (drug_name ?nonACEARB))\n                                                        (or (subclass-of (coerce-to-class (drug_name ?nonACEARB)) ACE_Inhibitors)\n                                                            (subclass-of (coerce-to-class (drug_name ?nonACEARB)) Angiotensin_II_receptor_blockers))\n                                                        (>(system_time (start_time (valid_time ?initACEARB)))(system_time (start_time (valid_time ?nonACEARB)))))))\n                           (exists ?baseEGFR (and (= (patient_id ?baseEGFR) $patient_id)\n                                                  (=    (domain_term ?baseEGFR) \"eGFR\")\n                                                  (< (system_time (valid_time ?baseEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                  (not (exists ?preEGFR (and (= (patient_id ?preEGFR) $patient_id)\n                                                                             (=    (domain_term ?preEGFR) \"eGFR\")\n                                                                             (< (system_time (valid_time ?preEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                             (> (system_time (valid_time ?preEGFR)) (system_time (valid_time ?baseEGFR))))))\n                                                  (exists ?troughEGFR (and (= (patient_id ?troughEGFR) $patient_id)\n                                                                           (=    (domain_term ?troughEGFR) \"eGFR\")  \n                                                                           (or  (> (value ?troughEGFR) 60)  (= (value ?troughEGFR) 60) )\n                                                                           (> (system_time (valid_time ?troughEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                           (< (system_time (valid_time ?troughEGFR)) (+ 90 (system_time (start_time (valid_time ?initACEARB)))))\n                                                                           (not (exists ?postEGFR  (and (= (patient_id ?postEGFR) $patient_id)\n                                                                                                        (=    (domain_term ?postEGFR) \"eGFR\")                      \n                                                                                                        (> (system_time (valid_time ?postEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                                                        (< (value ?postEGFR)(value ?troughEGFR)))))\n                                                                           (> (/ (* 100.0 (-  (value ?baseEGFR)(value ?troughEGFR))) (value ?baseEGFR)) 15.0)\n                                                                      ))\n                                             ))\n                      ))"))
+
 ([library_Class190001] of  Property_Value
 
 	(slot [drug_name])
@@ -4407,6 +4441,24 @@
 	(numeric_domain_term Age)
 	(operator %3E%3D)
 	(value 21.5))
+
+([library_Class200000] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "15% decrease in eGFR after ACE/ARB, but still normal")
+	(PAL_constraint [library_Class190000]))
+
+([library_Class200001] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "15% decrease in eGFR after ACE/ARB, and between 30 and 60")
+	(%3APAL-RANGE "(defrange ?baseEGFR :FRAME Numeric_Entry)\n(defrange ?troughEGFR :FRAME Numeric_Entry)\n(defrange ?initACEARB :FRAME Medication)\n(defrange ?preEGFR :FRAME Numeric_Entry)\n(defrange ?postEGFR :FRAME Numeric_Entry)\n(defrange ?nonACEARB :FRAME Medication)\n")
+	(%3APAL-STATEMENT "(exists  ?initACEARB  (and (= (patient_id ?initACEARB) $patient_id)\n                           (is-class (drug_name ?initACEARB))\n                           (or (subclass-of (coerce-to-class (drug_name ?initACEARB)) ACE_Inhibitors)\n                               (subclass-of (coerce-to-class (drug_name ?initACEARB)) Angiotensin_II_receptor_blockers))\n                           (not (exists ?nonACEARB (and (= (patient_id ?nonACEARB) $patient_id)\n                                                        (is-class (drug_name ?nonACEARB))\n                                                        (or (subclass-of (coerce-to-class (drug_name ?nonACEARB)) ACE_Inhibitors)\n                                                            (subclass-of (coerce-to-class (drug_name ?nonACEARB)) Angiotensin_II_receptor_blockers))\n                                                        (>(system_time (start_time (valid_time ?initACEARB)))(system_time (start_time (valid_time ?nonACEARB)))))))\n                           (exists ?baseEGFR (and (= (patient_id ?baseEGFR) $patient_id)\n                                                  (=    (domain_term ?baseEGFR) \"eGFR\")\n                                                  (< (system_time (valid_time ?baseEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                  (not (exists ?preEGFR (and (= (patient_id ?preEGFR) $patient_id)\n                                                                             (=    (domain_term ?preEGFR) \"eGFR\")\n                                                                             (< (system_time (valid_time ?preEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                             (> (system_time (valid_time ?preEGFR)) (system_time (valid_time ?baseEGFR))))))\n                                                  (exists ?troughEGFR (and (= (patient_id ?troughEGFR) $patient_id)\n                                                                           (=    (domain_term ?troughEGFR) \"eGFR\")  \n                                                                         (or  (> (value ?troughEGFR) 30)  (= (value ?troughEGFR) 30) )\n                                                                           (< (value ?troughEGFR) 60) \n                                                                           (> (system_time (valid_time ?troughEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                           (< (system_time (valid_time ?troughEGFR)) (+ 90 (system_time (start_time (valid_time ?initACEARB)))))\n                                                                           (not (exists ?postEGFR  (and (= (patient_id ?postEGFR) $patient_id)\n                                                                                                        (=    (domain_term ?postEGFR) \"eGFR\")                      \n                                                                                                        (> (system_time (valid_time ?postEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                                                        (< (value ?postEGFR)(value ?troughEGFR)))))\n                                                                           (> (/ (* 100.0 (-  (value ?baseEGFR)(value ?troughEGFR))) (value ?baseEGFR)) 15.0)\n                                                                      ))\n                                             ))\n                      ))\n\n"))
+
+([library_Class200002] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "15% decrease in eGFR after ACE/ARB, and less than 30")
+	(%3APAL-RANGE "(defrange ?baseEGFR :FRAME Numeric_Entry)\n(defrange ?troughEGFR :FRAME Numeric_Entry)\n(defrange ?initACEARB :FRAME Medication)\n(defrange ?preEGFR :FRAME Numeric_Entry)\n(defrange ?postEGFR :FRAME Numeric_Entry)\n(defrange ?nonACEARB :FRAME Medication)\n")
+	(%3APAL-STATEMENT "\n(exists  ?initACEARB  (and (= (patient_id ?initACEARB) $patient_id)\n                           (is-class (drug_name ?initACEARB))\n                           (or (subclass-of (coerce-to-class (drug_name ?initACEARB)) ACE_Inhibitors)\n                               (subclass-of (coerce-to-class (drug_name ?initACEARB)) Angiotensin_II_receptor_blockers))\n                           (not (exists ?nonACEARB (and (= (patient_id ?nonACEARB) $patient_id)\n                                                        (is-class (drug_name ?nonACEARB))\n                                                        (or (subclass-of (coerce-to-class (drug_name ?nonACEARB)) ACE_Inhibitors)\n                                                            (subclass-of (coerce-to-class (drug_name ?nonACEARB)) Angiotensin_II_receptor_blockers))\n                                                        (>(system_time (start_time (valid_time ?initACEARB)))(system_time (start_time (valid_time ?nonACEARB)))))))\n                           (exists ?baseEGFR (and (= (patient_id ?baseEGFR) $patient_id)\n                                                  (=    (domain_term ?baseEGFR) \"eGFR\")\n                                                  (< (system_time (valid_time ?baseEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                  (not (exists ?preEGFR (and (= (patient_id ?preEGFR) $patient_id)\n                                                                             (=    (domain_term ?preEGFR) \"eGFR\")\n                                                                             (< (system_time (valid_time ?preEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                             (> (system_time (valid_time ?preEGFR)) (system_time (valid_time ?baseEGFR))))))\n                                                  (exists ?troughEGFR (and (= (patient_id ?troughEGFR) $patient_id)\n                                                                           (=    (domain_term ?troughEGFR) \"eGFR\")  \n                                                                           (< (value ?troughEGFR) 30)  \n                                                                           (> (system_time (valid_time ?troughEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                           (< (system_time (valid_time ?troughEGFR)) (+ 90 (system_time (start_time (valid_time ?initACEARB)))))\n                                                                           (not (exists ?postEGFR  (and (= (patient_id ?postEGFR) $patient_id)\n                                                                                                        (=    (domain_term ?postEGFR) \"eGFR\")                      \n                                                                                                        (> (system_time (valid_time ?postEGFR)) (system_time (start_time (valid_time ?initACEARB))))\n                                                                                                        (< (value ?postEGFR)(value ?troughEGFR)))))\n                                                                           (> (/ (* 100.0 (-  (value ?baseEGFR)(value ?troughEGFR))) (value ?baseEGFR)) 15.0)\n                                                                      ))\n                                             ))\n                      ))"))
 
 ([library_Class20001] of  Numeric_Term_Criterion
 
@@ -4442,6 +4494,18 @@
 
 	(label "ALT/GPT max")
 	(value 45.0))
+
+([library_Class210001] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "15% decrease in eGFR after ACE/ARB, and < 30")
+	(PAL_constraint [library_Class200002]))
+
+([library_Class210002] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "15% decrease in eGFR after ACE/ARB, and between 30 and 60")
+	(PAL_constraint [library_Class200001]))
 
 ([library_Class3] of  Numeric_Term_Criterion
 
@@ -4696,7 +4760,7 @@
 
 	(entry_type Numeric_Entry)
 	(label "AST > 40")
-	(numeric_domain_term SGOT)
+	(numeric_domain_term AST)
 	(operator %3E)
 	(value 40.0))
 
@@ -4704,7 +4768,7 @@
 
 	(entry_type Numeric_Entry)
 	(label "ALT > 45")
-	(numeric_domain_term SGPT)
+	(numeric_domain_term ALT)
 	(operator %3E)
 	(value 45.0))
 
@@ -5664,7 +5728,8 @@
 
 ([metoprolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "metoprolol (class)"))
 
 ([Metoprolol_and_felodopine] of  Medications_Metaclass
 
@@ -5674,18 +5739,9 @@
 
 	(data_source VISTA_data_element))
 
-([metoprolol_notSA] of  Medications_Metaclass
-)
-
-([metoprolol_SA] of  Medications_Metaclass
-
-	(data_source VISTA_data_element))
-
-([metoprolol_succinate] of  Medications_Metaclass
-)
-
 ([metoprolol_tartrate] of  Medications_Metaclass
-)
+
+	(PrettyName "metoprolol tartrate"))
 
 ([microalbuminuria] of  Medical_Conditions_Metaclass
 
@@ -5853,10 +5909,6 @@
 
 	(data_source VISTA_data_element))
 
-([nisoldipine] of  Medications_Metaclass
-
-	(data_source VISTA_data_element))
-
 ([nisoldipine_SA] of  Medications_Metaclass
 
 	(data_source VISTA_data_element))
@@ -5997,6 +6049,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Obstructive Pulmonary Disease"))
+
+([ObstructiveSleepApnea] of  Medical_Conditions_Metaclass
+
+	(PrettyName "OSA"))
 
 ([Occulusion+of+cerebral+arteries] of  Medical_Conditions_Metaclass
 
@@ -6220,6 +6276,10 @@
 
 ([podiatrist] of  Canonical_Terms_Metaclass
 )
+
+([PolycysticOvarianSyndrome] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Polycystic Ovarian Syndrome"))
 
 ([polythiazide] of  Medications_Metaclass
 
@@ -6580,18 +6640,6 @@
 	(code "HS502")
 	(PrettyName "SGLT2 Inhibitor"))
 
-([SGOT] of  Interval-Valued_AtomicTest_Metaclass
-
-	(Precision 1)
-	(PrettyName "SGOT (AST)")
-	(UpperLimitOfNormal [library_Class20005]))
-
-([SGPT] of  Interval-Valued_AtomicTest_Metaclass
-
-	(Precision 1)
-	(PrettyName "SGPT (ALT)")
-	(UpperLimitOfNormal [library_Class20006]))
-
 ([SIADH] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element))
@@ -6736,10 +6784,6 @@
 	(data_source VISTA_data_element)
 	(PrettyName "sustained release metoprolol succinate"))
 
-([sustained+release+metoprolol+tartrate] of  Medications_Metaclass
-
-	(data_source VISTA_data_element))
-
 ([sustained_release_nicotinic_acid] of  Medications_Metaclass
 )
 
@@ -6792,9 +6836,26 @@
 	(data_source VISTA_data_element)
 	(PrettyName "Thiazide diuretics"))
 
+([Thiazide_lessPreferred] of  Medications_Metaclass
+
+	(PrettyName "Thiazide less preferred"))
+
+([Thiazide_preferred] of  Medications_Metaclass
+
+	(PrettyName "Thiazide preferred"))
+
 ([THIAZOLIDINEDIONES] of  Medications_Metaclass
 
 	(PrettyName "Thiazolidinediones"))
+
+([ThirdLine_Encoded_VA_GL] of  Medications_Metaclass
+)
+
+([ThirdLine_nonEncoded_VA_GL] of  Medical_Conditions_Metaclass
+)
+
+([ThirdLineDrugs_VA_GL] of  Medications_Metaclass
+)
 
 ([Thrombocytopenia] of  Medical_Conditions_Metaclass
 

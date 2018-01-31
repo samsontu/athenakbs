@@ -1,4 +1,4 @@
-; Thu Sep 21 11:59:53 PDT 2017
+; Mon Jan 29 11:05:21 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -211,10 +211,6 @@
 	(is-a Potassium-Sparing_Diuretics)
 	(role abstract))
 
-(defclass Alpha_beta_blockers "postural hypotension, bronchospasm"
-	(is-a Antihypertensive_Agents)
-	(role concrete))
-
 (defclass Adrenergic_inhibitors_central "Central alpha-agonists: clinidine, guanabenz, guanfacine, methldopa\nalso called \"central alpha-agonists\""
 	(is-a Antihypertensive_Agents)
 	(role concrete))
@@ -359,40 +355,60 @@
 	(is-a Antihypertensive_Agents JNC8_antihypertensives)
 	(role concrete))
 
+(defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
+	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives)
+	(role concrete))
+
+(defclass FirstSecondLineDrugs_VA_GL
+	(is-a Anti-Hypertensive_Drugs_Inclusive)
+	(role concrete))
+
 (defclass Dihydropyridines "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Calcium_channel_antagonists)
-	(role concrete))
-
-(defclass amlodipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines)
-	(role concrete))
-
-(defclass amlodipine_besylate
-	(is-a amlodipine)
-	(role concrete))
-
-(defclass felodipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines)
-	(role concrete))
-
-(defclass felodipine_SA
-	(is-a felodipine)
+	(is-a Calcium_channel_antagonists FirstSecondLineDrugs_VA_GL)
 	(role concrete))
 
 (defclass nimodipine
 	(is-a Dihydropyridines)
 	(role concrete))
 
+(defclass felodipine_SA "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
+	(is-a Dihydropyridines)
+	(role concrete))
+
+(defclass amlodipine_besylate "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
+	(is-a Dihydropyridines)
+	(role concrete))
+
+(defclass Thiazide_preferred
+	(is-a FirstSecondLineDrugs_VA_GL)
+	(role concrete))
+
+(defclass Thiazide_lessPreferred
+	(is-a FirstSecondLineDrugs_VA_GL)
+	(role concrete))
+
+(defclass ThirdLineDrugs_VA_GL
+	(is-a Anti-Hypertensive_Drugs_Inclusive)
+	(role concrete))
+
+(defclass ThirdLine_Encoded_VA_GL
+	(is-a ThirdLineDrugs_VA_GL)
+	(role concrete))
+
 (defclass Non-Dihydropyridines
-	(is-a Calcium_channel_antagonists)
+	(is-a Calcium_channel_antagonists ThirdLine_Encoded_VA_GL)
 	(role concrete))
 
 (defclass bepridil
 	(is-a Non-Dihydropyridines)
 	(role concrete))
 
-(defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
-	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives)
+(defclass Alpha_beta_blockers "postural hypotension, bronchospasm"
+	(is-a Antihypertensive_Agents ThirdLine_Encoded_VA_GL)
+	(role concrete))
+
+(defclass ThirdLine_nonEncoded_VA_GL
+	(is-a ThirdLineDrugs_VA_GL)
 	(role concrete))
 
 (defclass cardiotoxic+interventions
@@ -876,8 +892,8 @@
 	(role concrete))
 
 (defclass ACE_Inhibitors "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
-	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives)
-	(role abstract))
+	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
+	(role concrete))
 
 (defclass captopril "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
 	(is-a ACE_Inhibitors)
@@ -885,14 +901,6 @@
 
 (defclass enalapril "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
 	(is-a ACE_Inhibitors)
-	(role abstract))
-
-(defclass fosinopril "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
-	(is-a ACE_Inhibitors)
-	(role abstract))
-
-(defclass fosinopril+NA
-	(is-a fosinopril)
 	(role abstract))
 
 (defclass lisinopril "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
@@ -923,8 +931,12 @@
 	(is-a ACE_Inhibitors)
 	(role abstract))
 
+(defclass fosinopril+NA "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia.\""
+	(is-a ACE_Inhibitors)
+	(role abstract))
+
 (defclass Angiotensin_II_receptor_blockers "class effects: angiodema (very rare), hyperkalemia"
-	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives)
+	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
 	(role abstract))
 
 (defclass candesartan
@@ -980,19 +992,11 @@
 	(role concrete))
 
 (defclass Beta-Blockers-Cardioselective
-	(is-a Beta-Blockers)
+	(is-a Beta-Blockers ThirdLine_Encoded_VA_GL)
 	(role concrete))
 
 (defclass metoprolol
 	(is-a Beta-Blockers-Cardioselective)
-	(role concrete))
-
-(defclass metoprolol_SA
-	(is-a metoprolol)
-	(role concrete))
-
-(defclass metoprolol_notSA
-	(is-a metoprolol)
 	(role concrete))
 
 (defclass beta-blockers-ISA
@@ -1000,7 +1004,7 @@
 	(role concrete))
 
 (defclass Beta-Blockers-non-cardioselective
-	(is-a Beta-Blockers)
+	(is-a Beta-Blockers ThirdLine_Encoded_VA_GL)
 	(role concrete))
 
 (defclass Beta_Blocker+Stage+C+Heart+Failure
@@ -1024,7 +1028,7 @@
 	(role concrete))
 
 (defclass sustained+release+metoprolol+succinate
-	(is-a Beta_Blocker+Stage+C+Heart+Failure Beta+Blocker+Stage+B+no+MI metoprolol_SA)
+	(is-a Beta_Blocker+Stage+C+Heart+Failure Beta+Blocker+Stage+B+no+MI metoprolol)
 	(role concrete))
 
 (defclass Beta_blocker_not_StageC_HF
@@ -1075,16 +1079,8 @@
 	(is-a Beta-Blockers-non-cardioselective Beta+blocker+stage+B+post+MI Beta_blocker_not_StageC_HF)
 	(role concrete))
 
-(defclass sustained+release+metoprolol+tartrate
-	(is-a Beta+blocker+stage+B+post+MI metoprolol_SA Beta_blocker_not_StageC_HF)
-	(role concrete))
-
 (defclass metoprolol_tartrate
-	(is-a metoprolol_notSA Beta_blocker_not_StageC_HF)
-	(role concrete))
-
-(defclass metoprolol_succinate
-	(is-a metoprolol_notSA Beta_blocker_not_StageC_HF)
+	(is-a Beta_blocker_not_StageC_HF metoprolol)
 	(role concrete))
 
 (defclass digoxin
@@ -1459,14 +1455,6 @@
 	(is-a nifedipine)
 	(role concrete))
 
-(defclass nisoldipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects)
-	(role concrete))
-
-(defclass nisoldipine_SA
-	(is-a nisoldipine)
-	(role concrete))
-
 (defclass nicardipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
 	(is-a Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects)
 	(role concrete))
@@ -1497,6 +1485,10 @@
 
 (defclass verapamil_SA
 	(is-a verapamil)
+	(role concrete))
+
+(defclass nisoldipine_SA "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects Dihydropyridines)
 	(role concrete))
 
 (defclass THIAZOLIDINEDIONES
@@ -1648,7 +1640,7 @@
 	(role concrete))
 
 (defclass chlorthalidone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_preferred)
 	(role concrete))
 
 (defclass furosemide "short duration of action.  no hypercalcemia"
@@ -1656,7 +1648,7 @@
 	(role concrete))
 
 (defclass hydrochlorothiazide "HCTZ"
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass Acetazolamide
@@ -1692,51 +1684,51 @@
 	(role concrete))
 
 (defclass bendroflumethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass bendroflumethiazide_SA
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass benzthiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass chlorothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass cyclothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass hydroflumethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass indapamide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_preferred)
 	(role concrete))
 
 (defclass methyclothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass metolazone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass polythiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass quinethazone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass trichlormethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
 	(role concrete))
 
 (defclass Autonomic_Agents_Other_AU900
@@ -1851,10 +1843,6 @@
 	(is-a Therapeutic_Procedure)
 	(role concrete))
 
-(defclass Hemodialysis
-	(is-a Dialysis)
-	(role concrete))
-
 (defclass Medications
 	(is-a Therapeutic_Procedure)
 	(role concrete))
@@ -1881,54 +1869,6 @@
 
 (defclass Syndrome
 	(is-a Medical_Conditions_Class)
-	(role concrete))
-
-(defclass Idiopathic+Hypertrophic+Subaortic+Stenosis
-	(is-a Syndrome)
-	(role concrete))
-
-(defclass OrganTransplant
-	(is-a Syndrome)
-	(role concrete))
-
-(defclass TRANSPLANT002
-	(is-a OrganTransplant Cardiac+procedures)
-	(role concrete))
-
-(defclass TRANSPLANT003
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT004
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT005
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT006
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT008
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT009
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT001
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass TRANSPLANT007
-	(is-a OrganTransplant)
-	(role concrete))
-
-(defclass heart_transplant_CPT
-	(is-a OrganTransplant)
 	(role concrete))
 
 (defclass DM_Dashboard_definig_diseases
@@ -2067,10 +2007,6 @@
 	(is-a Renal-Urinary_Diseases)
 	(role concrete))
 
-(defclass Renovascular_Disease
-	(is-a Renal-Urinary_Diseases)
-	(role concrete))
-
 (defclass CKD
 	(is-a Renal-Urinary_Diseases)
 	(role concrete))
@@ -2169,10 +2105,6 @@
 
 (defclass Obstruction_of_bile_duct_576.2
 	(is-a Other_disorders_of_biliary_tract_576)
-	(role concrete))
-
-(defclass Ascites
-	(is-a CCS-9)
 	(role concrete))
 
 (defclass Diseases_of_pancreas_577
@@ -2447,10 +2379,6 @@
 	(is-a CCS-7)
 	(role concrete))
 
-(defclass Renal_artery_stenosis
-	(is-a Secondary_Hypertension Renal-Urinary_Diseases)
-	(role concrete))
-
 (defclass Cerebrovascular+disease
 	(is-a CCS-7)
 	(role concrete))
@@ -2519,16 +2447,8 @@
 	(is-a Essential_Tremor)
 	(role concrete))
 
-(defclass Narcolepsy
-	(is-a CCS-6)
-	(role concrete))
-
 (defclass Traumatic_Disorders
 	(is-a Medical_Conditions_Class)
-	(role concrete))
-
-(defclass Spinal_Cord_Injury
-	(is-a Traumatic_Disorders)
 	(role concrete))
 
 (defclass CCS-5
@@ -3179,6 +3099,10 @@
 	(is-a Metabolic%26Nutritional_Diseases)
 	(role concrete))
 
+(defclass Hypoosmality_Hyponatremia
+	(is-a Metabolic%26Nutritional_Diseases)
+	(role concrete))
+
 (defclass Endocrine_Diseases
 	(is-a CCS-3)
 	(role concrete))
@@ -3549,6 +3473,106 @@
 
 (defclass Allergy_to_sulfonamides
 	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass HTN_Out_of_Scope_Dx
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Renal_artery_stenosis
+	(is-a Secondary_Hypertension Renal-Urinary_Diseases HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass Spinal_Cord_Injury
+	(is-a Traumatic_Disorders HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass OrganTransplant
+	(is-a Syndrome HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass TRANSPLANT002
+	(is-a OrganTransplant Cardiac+procedures)
+	(role concrete))
+
+(defclass TRANSPLANT003
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT004
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT005
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT006
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT008
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT009
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT001
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass TRANSPLANT007
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass heart_transplant_CPT
+	(is-a OrganTransplant)
+	(role concrete))
+
+(defclass Ascites
+	(is-a CCS-9 HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass Narcolepsy
+	(is-a CCS-6 HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass Idiopathic+Hypertrophic+Subaortic+Stenosis
+	(is-a Syndrome HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass Renovascular_Disease
+	(is-a Renal-Urinary_Diseases HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass Hemodialysis
+	(is-a Dialysis HTN_Out_of_Scope_Dx)
+	(role concrete))
+
+(defclass HTN_in_Scope_Dx
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Acromegaly
+	(is-a Endocrine_Diseases HTN_in_Scope_Dx)
+	(role concrete))
+
+(defclass PolycysticOvarianSyndrome
+	(is-a Endocrine_Diseases HTN_in_Scope_Dx)
+	(role concrete))
+
+(defclass Hyperparathyroidism
+	(is-a Endocrine_Diseases HTN_in_Scope_Dx)
+	(role concrete))
+
+(defclass ChronicRefluxNephropathy
+	(is-a Renal-Urinary_Diseases HTN_in_Scope_Dx)
+	(role concrete))
+
+(defclass ObstructiveSleepApnea
+	(is-a CCS-6 HTN_in_Scope_Dx)
 	(role concrete))
 
 (defclass Unknown_Race
@@ -4259,11 +4283,11 @@
 	(is-a Blood_Chemistry)
 	(role abstract))
 
-(defclass SGOT
+(defclass AST
 	(is-a Blood_Chemistry)
 	(role abstract))
 
-(defclass SGPT
+(defclass ALT
 	(is-a Blood_Chemistry)
 	(role abstract))
 

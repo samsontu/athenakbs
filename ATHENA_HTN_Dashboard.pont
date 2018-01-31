@@ -1,4 +1,4 @@
-; Fri Dec 09 17:38:54 PST 2016
+; Mon Jan 29 12:12:30 PST 2018
 ; 
 ;+ (version "3.4.5")
 ;+ (build "Build 585")
@@ -7,83 +7,8 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot presence_of_qualifying_object
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot perform
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
-	(single-slot Target_Class_in_KB
-		(type SYMBOL)
-;+		(allowed-parents Medical_Domain_Class)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot connectors
-		(type INSTANCE)
-;+		(allowed-classes Connector)
-		(create-accessor read-write))
-	(multislot layout_information
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
-	(single-slot last_divider_location
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot object
-		(type INSTANCE)
-;+		(allowed-classes %3ATHING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot Target_Unit
-		(type SYMBOL)
-		(allowed-values mg%2Fdl mEq%2FL unit)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot Target_String_in_KB
 		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Table_in_va_db
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot weigth
-		(type INTEGER)
-;+		(cardinality 0 1)
-;+		(associated-facet Dharma_11861)
-		(create-accessor read-write))
-	(multislot drug_classes
-		(type INSTANCE)
-;+		(allowed-classes Drug_Usage)
-		(create-accessor read-write))
-	(single-slot node_slot
-		(type INSTANCE)
-;+		(allowed-classes %3ASTANDARD-SLOT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot second_object
-		(type INSTANCE)
-;+		(allowed-classes %3ATHING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Column_in_va_db
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot first_object_slot_pointer
-;+		(comment "Used for diagrams. This contains a slot . The system automatically inserts the second_object as the slot value of this slot at the first_object.\n\nImplicit in here is the restriction that this slot must be an own slot of the first_object (and must take instance values)\n")
-		(type INSTANCE)
-;+		(allowed-classes %3ASTANDARD-SLOT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot have_goals
-		(type INSTANCE)
-;+		(allowed-classes)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot Semantic_Operation
@@ -91,8 +16,40 @@
 ;+		(allowed-parents Athenaeum_Mapping_Operation)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot main_panel_height
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Source_String_in_DB
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Target_Unit
+		(type SYMBOL)
+		(allowed-values mg%2Fdl mEq%2FL unit)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Target_Class_in_KB
+		(type SYMBOL)
+;+		(allowed-parents Medical_Domain_Class)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot joining_slot
 ;+		(comment "This is the slot from the upperlevel instance whose value should be equal to that of the qualifying_slot ")
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot main_panel_width
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot weigth
+		(type INTEGER)
+;+		(cardinality 0 1)
+;+		(associated-facet Dharma_11861)
+		(create-accessor read-write))
+	(single-slot primary_subsuming_class_key
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
@@ -102,27 +59,51 @@
 		(default 1)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot Source_String_in_DB
-		(type STRING)
+	(multislot layout_information
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(multislot BodySystem
+		(type SYMBOL)
+;+		(allowed-parents)
+		(create-accessor read-write))
+	(single-slot first_object
+		(type INSTANCE)
+;+		(allowed-classes %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot primary_subsuming_class_key
+	(single-slot presence_of_qualifying_object
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_classes
 		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
+;+		(allowed-classes Drug_Usage)
+		(create-accessor read-write))
+	(single-slot first_object_slot_pointer
+;+		(comment "Used for diagrams. This contains a slot . The system automatically inserts the second_object as the slot value of this slot at the first_object.\n\nImplicit in here is the restriction that this slot must be an own slot of the first_object (and must take instance values)\n")
+		(type INSTANCE)
+;+		(allowed-classes %3ASTANDARD-SLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Table_in_va_db
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot Label
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot primary_subsuming_class
-		(type SYMBOL)
-;+		(allowed-parents %3ATHING)
+	(single-slot second_object
+		(type INSTANCE)
+;+		(allowed-classes %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot main_panel_height
-		(type INTEGER)
-;+		(cardinality 0 1)
+	(multislot perform
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot second_object_slot_pointer
 ;+		(comment "Used for diagrams. This contains a slot . The system automatically inserts the fist_object as the slot value of this slot at the second_object.\n\nImplicit in here is the restriction that this slot must be an own slot of the second_object (and must take instance values)\n")
@@ -130,31 +111,14 @@
 ;+		(allowed-classes %3ASTANDARD-SLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot supervised_by
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
-	(single-slot qualifying_object_type
-		(type SYMBOL)
-;+		(allowed-parents %3ATHING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot qualifying_slot
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot first_object
-		(type INSTANCE)
-;+		(allowed-classes %3ATHING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot BodySystem
+	(single-slot primary_subsuming_class
 		(type SYMBOL)
-;+		(allowed-parents)
-		(create-accessor read-write))
-	(single-slot assessed_status
-		(type STRING)
+;+		(allowed-parents %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot reference
@@ -162,19 +126,50 @@
 		(type INSTANCE)
 ;+		(allowed-classes Supporting_Material)
 		(create-accessor read-write))
-	(single-slot main_panel_width
+	(multislot supervised_by
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot last_divider_location
 		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot have_goals
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot qualifying_object_type
+		(type SYMBOL)
+;+		(allowed-parents %3ATHING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot assessed_status
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot object
+		(type INSTANCE)
+;+		(allowed-classes %3ATHING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot node_slot
+		(type INSTANCE)
+;+		(allowed-classes %3ASTANDARD-SLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot connectors
+		(type INSTANCE)
+;+		(allowed-classes Connector)
+		(create-accessor read-write))
+	(single-slot Column_in_va_db
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Athenaeum_Mapping
 	(is-a %3ASTANDARD-CLASS)
 	(role concrete)
-	(single-slot %3ADIRECT-TYPE
-		(type SYMBOL)
-;+		(allowed-parents %3ACLASS)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot Table_in_va_db
 		(type STRING)
 ;+		(cardinality 0 1)
@@ -187,17 +182,22 @@
 	(single-slot Column_in_va_db
 		(type STRING)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADIRECT-TYPE
+		(type SYMBOL)
+;+		(allowed-parents %3ACLASS)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Connector "This is the abstract superclass for all connectors. To create a specific connector class (for a network), you must subclass Connector (using Connector_Metaclass). "
 	(is-a %3ADIRECTED-BINARY-RELATION)
 	(role abstract)
-	(single-slot first_object
+	(single-slot second_object
 		(type INSTANCE)
 ;+		(allowed-classes %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot second_object
+	(single-slot first_object
 		(type INSTANCE)
 ;+		(allowed-classes %3ATHING)
 ;+		(cardinality 0 1)
@@ -206,9 +206,9 @@
 (defclass Numeric_PAL_Criterion
 	(is-a Comparison_Criterion)
 	(role concrete)
-	(single-slot label
-;+		(comment "Short descriptive string that labels the concept represented by the instance")
-		(type STRING)
+	(single-slot slot
+		(type INSTANCE)
+;+		(allowed-classes %3ASTANDARD-SLOT)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot PAL_query
@@ -216,21 +216,21 @@
 ;+		(allowed-classes PAL-QUERY)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot case_variable
+;+		(comment "This is the variable name that should be instantiate with case id.")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot label
+;+		(comment "Short descriptive string that labels the concept represented by the instance")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot aggregation_operator
 ;+		(comment "If there is more than 1 investigation results that satisfy temporal constraint, apply the data function to determine the value to use")
 		(type SYMBOL)
 		(allowed-values most_recent average count maximum minimum)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot slot
-		(type INSTANCE)
-;+		(allowed-classes %3ASTANDARD-SLOT)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot case_variable
-;+		(comment "This is the variable name that should be instantiate with case id.")
-		(type STRING)
-;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Extended_Boolean_Criterion
@@ -301,12 +301,18 @@
 (defclass Joined_Attribute_Query "Find instance of qualifying_object_type where value of qualifying_slot equals value of joining_slot. Then get value of attribute in that instance."
 	(is-a Expression)
 	(role concrete)
+	(single-slot qualifying_slot
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot attribute
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot qualifying_slot
+	(single-slot joining_slot
+;+		(comment "This is the slot from the upperlevel instance whose value should be equal to that of the qualifying_slot ")
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
@@ -319,12 +325,6 @@
 	(single-slot qualifying_object_type
 		(type SYMBOL)
 ;+		(allowed-parents %3ATHING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot joining_slot
-;+		(comment "This is the slot from the upperlevel instance whose value should be equal to that of the qualifying_slot ")
-		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -355,78 +355,6 @@
 (defclass Phosphodiesterase+inhibitors
 	(is-a Medications_Class)
 	(role abstract))
-
-(defclass 425.1
-	(is-a Idiopathic+Hypertrophic+Subaortic+Stenosis)
-	(role concrete))
-
-(defclass V42.1
-	(is-a TRANSPLANT002)
-	(role concrete))
-
-(defclass V42.89
-	(is-a TRANSPLANT003)
-	(role concrete))
-
-(defclass V42.0
-	(is-a TRANSPLANT004)
-	(role concrete))
-
-(defclass V42.7
-	(is-a TRANSPLANT005)
-	(role concrete))
-
-(defclass V42.6
-	(is-a TRANSPLANT006)
-	(role concrete))
-
-(defclass V42.83
-	(is-a TRANSPLANT008)
-	(role concrete))
-
-(defclass V42.82
-	(is-a TRANSPLANT009)
-	(role concrete))
-
-(defclass 996.85
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.80
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.83
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.89
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.81
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.82
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.84
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass 996.86
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass athena_hypertension_53284
-	(is-a TRANSPLANT001)
-	(role concrete))
-
-(defclass V42.9
-	(is-a TRANSPLANT007)
-	(role concrete))
 
 (defclass CRI
 	(is-a Syndrome)
@@ -766,102 +694,6 @@
 
 (defclass 733.19
 	(is-a Osteoporosis)
-	(role concrete))
-
-(defclass 403.0
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.00
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.01
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.1
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.10
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.11
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.9
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.90
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 403.91
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.0
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.00
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.01
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.02
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.03
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.1
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.10
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.11
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.12
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.13
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.9
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.90
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.91
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.92
-	(is-a Renovascular_Disease)
-	(role concrete))
-
-(defclass 404.93
-	(is-a Renovascular_Disease)
 	(role concrete))
 
 (defclass 600.
@@ -2776,10 +2608,6 @@
 	(is-a Liver_Disease)
 	(role concrete))
 
-(defclass 789.5
-	(is-a Ascites)
-	(role concrete))
-
 (defclass 443.1
 	(is-a PVD)
 	(role concrete))
@@ -3576,202 +3404,6 @@
 	(is-a Migraine)
 	(role concrete))
 
-(defclass 347
-	(is-a Narcolepsy)
-	(role concrete))
-
-(defclass 013.4
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 013.5
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 192.2
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 198.3
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 225.3
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 237.5
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 336
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 336.2
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 336.9
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 742.5
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 742.9
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 767.4
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 805
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.04
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.05
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.09
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.1
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.14
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.15
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.19
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.20
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.24
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.25
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.29
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.30
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.34
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.35
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.60
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.69
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.70
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 806.79
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 907.2
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.00
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.01
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.04
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.05
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.06
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.09
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.10
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.11
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.14
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.15
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.16
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.19
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.8
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
-(defclass 952.9
-	(is-a Spinal_Cord_Injury)
-	(role concrete))
-
 (defclass 305.1
 	(is-a Tobacco_Use)
 	(role concrete))
@@ -4428,6 +4060,118 @@
 	(is-a Defined+concept)
 	(role concrete))
 
+(defclass VA+HTN+Pres+HTN+and+Abs+CKD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass VA+HTN+Pres+HTN+and+CKD+and+NOT+black
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass VA+HTN+Pres+HTN+and+CKD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+HTN
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+HTN+and+CKD+and+black
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Na+%3C%3D+130+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass K%3C%3D3+past+month+%26+Pres+thiazide
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass K%3C3.5+past+month+and+Abs+thiazide
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass 130%3CNa%3C135+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass K%3C3.5+ever
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass uric+acid+%3E6.8+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass 3%3CK%3C3.5+past+month+and+Pres+thiazide
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Absence+of+Na+in+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Absence+of+uric+acid+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass K+gt+5.5+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+DHP+CCB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass HCTZ+at+max+dose
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Na+le+130+ever
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+DM+via+ICD+or+meds
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass 5%3C%3DK%3C%3D5.5+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Absence+of+eGFR+in+past+month
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+HTN+and+Abs+CKD+and+ADR+to+ACE+not+angioedema
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+of+HTN+and+CKD+not+black+and+ADR+to+ACE+not+angioedema
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass CKD+via+ICD+or+eGFR%3C60+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Angioedema+ADR+to+DHP+CCB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+dx+HTN+and+ADR+to+DHP+CCB+not+anaphylaxis+not+angioedema
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+NDHP+CCB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Angioedema+ADR+to+NDHP+CCB
+	(is-a Defined+concept)
+	(role concrete))
+
 (defclass 493.00
 	(is-a Bronchospastic_Disease)
 	(role concrete))
@@ -4542,6 +4286,374 @@
 
 (defclass 496.
 	(is-a Obstructive_Pulmonary_Disease)
+	(role concrete))
+
+(defclass 013.4
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 013.5
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 192.2
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 198.3
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 225.3
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 237.5
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 336
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 336.2
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 336.9
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 742.5
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 742.9
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 767.4
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 805
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.04
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.05
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.09
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.1
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.14
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.15
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.19
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.20
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.24
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.25
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.29
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.30
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.34
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.35
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.60
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.69
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.70
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 806.79
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 907.2
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.00
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.01
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.04
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.05
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.06
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.09
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.10
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.11
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.14
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.15
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.16
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.19
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.8
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass 952.9
+	(is-a Spinal_Cord_Injury)
+	(role concrete))
+
+(defclass V42.1
+	(is-a TRANSPLANT002)
+	(role concrete))
+
+(defclass V42.89
+	(is-a TRANSPLANT003)
+	(role concrete))
+
+(defclass V42.0
+	(is-a TRANSPLANT004)
+	(role concrete))
+
+(defclass V42.7
+	(is-a TRANSPLANT005)
+	(role concrete))
+
+(defclass V42.6
+	(is-a TRANSPLANT006)
+	(role concrete))
+
+(defclass V42.83
+	(is-a TRANSPLANT008)
+	(role concrete))
+
+(defclass V42.82
+	(is-a TRANSPLANT009)
+	(role concrete))
+
+(defclass 996.85
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.80
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.83
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.89
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.81
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.82
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.84
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass 996.86
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass athena_hypertension_53284
+	(is-a TRANSPLANT001)
+	(role concrete))
+
+(defclass V42.9
+	(is-a TRANSPLANT007)
+	(role concrete))
+
+(defclass 789.5
+	(is-a Ascites)
+	(role concrete))
+
+(defclass 347
+	(is-a Narcolepsy)
+	(role concrete))
+
+(defclass 425.1
+	(is-a Idiopathic+Hypertrophic+Subaortic+Stenosis)
+	(role concrete))
+
+(defclass 403.0
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.00
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.01
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.1
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.10
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.11
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.9
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.90
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 403.91
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.0
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.00
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.01
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.02
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.03
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.1
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.10
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.11
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.12
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.13
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.9
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.90
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.91
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.92
+	(is-a Renovascular_Disease)
+	(role concrete))
+
+(defclass 404.93
+	(is-a Renovascular_Disease)
 	(role concrete))
 
 (defclass athena_hypertension_453503
@@ -4686,14 +4798,14 @@
 (defclass Aggregate_Filter
 	(is-a Filter)
 	(role concrete)
+	(multislot children
+		(type INSTANCE)
+;+		(allowed-classes Filter)
+		(create-accessor read-write))
 	(single-slot label
 ;+		(comment "Short descriptive string that labels the concept represented by the instance")
 		(type STRING)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot children
-		(type INSTANCE)
-;+		(allowed-classes Filter)
 		(create-accessor read-write))
 	(single-slot aggregation_operator
 ;+		(comment "If there is more than 1 investigation results that satisfy temporal constraint, apply the data function to determine the value to use")
@@ -4705,7 +4817,18 @@
 (defclass Single_Join_Filter
 	(is-a Filter)
 	(role concrete)
+	(single-slot operator
+		(type SYMBOL)
+		(allowed-values greater_than less_than kind_of equal not_equal greater_than_or_equal_to less_than_or_equal_to)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot qualifying_slot
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot joining_slot
+;+		(comment "This is the slot from the upperlevel instance whose value should be equal to that of the qualifying_slot ")
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
@@ -4719,36 +4842,30 @@
 		(type SYMBOL)
 ;+		(allowed-parents %3ATHING)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot operator
-		(type SYMBOL)
-		(allowed-values greater_than less_than kind_of equal not_equal greater_than_or_equal_to less_than_or_equal_to)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot joining_slot
-;+		(comment "This is the slot from the upperlevel instance whose value should be equal to that of the qualifying_slot ")
-		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
-;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Where_Template1 "This class models the following where relations:\n\nThere exists d of type R1 *where*\nforall D and C, \n1. d is subsumed by D \n2. (C  r D) \n3. (there does not exist p of type R2 such that  p is subsumed by C)\n\nD is primary subsuming class [e.g., Drug_Usage]\nr is qualifying slot [e.g., compelling indication], C is value of qualifying slot, and p is an instance of qualifying object type\n\nExample\nThere exists a medication that is not compellingly indicated\n\nIn Jess, \n\n(Medication (drug_name ?drug_name))\n(Drug_Usage (Drug_Class_Name ?drug_class)\n                          (Compelling_Indication ?indications)\n(not (Problem (domain_term ?problem)))\n(test (subsumed ?drug_name ?drug_class))\n(test (subsumed_by_any ?problem ?indications))\n\nAll compellingly indicated drugs are used\n\n(Medication (drug_name ?drug_name))\n(Drug_Usage (Drug_Class_Name ?drug_class)\n                          (Compelling_Indication ?indications)\n                          (Absolute_Contraindications ?contras)\n                          (Relative_Contraindications ?relativecontras))\n(Problem (domain_term ?problem1))\n(not (Problem (domain_term ?problem2))\n(test (subsumed ?drug_name ?drug_class))\n(test (subsumed_by_any ?problem1 ?indications))\n(test (subsumed_by_any ?problem2 (union ?contras ?relativecontras)))"
 	(is-a Filter)
 	(role concrete)
-	(single-slot primary_subsuming_class_key
+	(single-slot qualifying_slot
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot qualifying_slot
-		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
+	(single-slot primary_subsuming_class
+		(type SYMBOL)
+;+		(allowed-parents %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot label
 ;+		(comment "Short descriptive string that labels the concept represented by the instance")
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primary_subsuming_class_key
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot qualifying_object_type
 		(type SYMBOL)
@@ -4760,16 +4877,20 @@
 		(allowed-values FALSE TRUE)
 		(default FALSE)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot primary_subsuming_class
-		(type SYMBOL)
-;+		(allowed-parents %3ATHING)
-;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Presence_Message
 	(is-a On_Screen_Message)
 	(role concrete)
+	(single-slot assessed_status
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot entry_type
+		(type SYMBOL)
+;+		(allowed-parents EPR_Entity)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot presence
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
@@ -4782,19 +4903,10 @@
 ;+		(allowed-parents Medical_Domain_Class)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot entry_type
-		(type SYMBOL)
-;+		(allowed-parents EPR_Entity)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot filter
 ;+		(comment "This is an obsolete slot. It is here for sake of backward compability with ATHENA HTN")
 		(type INSTANCE)
 ;+		(allowed-classes Filter)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot assessed_status
-		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
