@@ -1,18 +1,18 @@
-; Mon Jan 29 11:05:21 PST 2018
+; Wed Feb 21 13:54:40 PST 2018
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[library_ProjectKB_Class13958]
-		[library_ProjectKB_Class13959]
-		[library_ProjectKB_Class13960]
-		[library_ProjectKB_Class13961]
-		[library_ProjectKB_Class13962]
-		[library_ProjectKB_Class13963]
-		[library_ProjectKB_Class13964]))
+		[library_ProjectKB_Class13940]
+		[library_ProjectKB_Class13941]
+		[library_ProjectKB_Class13942]
+		[library_ProjectKB_Class13943]
+		[library_ProjectKB_Class13944]
+		[library_ProjectKB_Class13945]
+		[library_ProjectKB_Class13946]))
 
 ([CLSES_TAB] of  Widget
 
@@ -423,102 +423,102 @@
 	(x 0)
 	(y 120))
 
-([KB_175550_Class3886] of  Map
+([KB_257880_Class3895] of  Map
 
 	(entries
-		[KB_175550_Class3887]
-		[KB_175550_Class3889]
-		[KB_175550_Class3890]
-		[KB_175550_Class3892]
-		[KB_175550_Class3893]
-		[KB_175550_Class3895]
-		[KB_175550_Class3897]
-		[KB_175550_Class3899]
-		[KB_175550_Class3900])
+		[KB_257880_Class3896]
+		[KB_257880_Class3898]
+		[KB_257880_Class3900]
+		[KB_257880_Class3901]
+		[KB_257880_Class3903]
+		[KB_257880_Class3904]
+		[KB_257880_Class3906]
+		[KB_257880_Class3907]
+		[KB_257880_Class3909])
 	(referenced_maps
-		[KB_175550_Class3894]
-		[KB_175550_Class3898]
-		[KB_175550_Class3896]
-		[KB_175550_Class3888]
-		[KB_175550_Class3891]))
+		[KB_257880_Class3902]
+		[KB_257880_Class3899]
+		[KB_257880_Class3897]
+		[KB_257880_Class3908]
+		[KB_257880_Class3905]))
 
-([KB_175550_Class3887] of  Map_Entry
+([KB_257880_Class3896] of  Map_Entry
 
-	(key "add_name_on_instance_form")
+	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_175550_Class3888] of  Map
+([KB_257880_Class3897] of  Map
 )
 
-([KB_175550_Class3889] of  Map_Entry
+([KB_257880_Class3898] of  Map_Entry
 
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
 	(key_class "java.lang.String")
-	(value "KB_175550_Class3888")
+	(value "KB_257880_Class3897")
 	(value_class "java.util.Map"))
 
-([KB_175550_Class3890] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_175550_Class3891] of  Map
+([KB_257880_Class3899] of  Map
 )
 
-([KB_175550_Class3892] of  Map_Entry
+([KB_257880_Class3900] of  Map_Entry
 
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
 	(key_class "java.lang.String")
-	(value "KB_175550_Class3891")
+	(value "KB_257880_Class3899")
 	(value_class "java.util.Map"))
 
-([KB_175550_Class3893] of  Map_Entry
+([KB_257880_Class3901] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_175550_Class3894] of  Map
+([KB_257880_Class3902] of  Map
 )
 
-([KB_175550_Class3895] of  Map_Entry
+([KB_257880_Class3903] of  Map_Entry
 
 	(key "InstanceGraphWidget.eon2_Instance_0.steps")
 	(key_class "java.lang.String")
-	(value "KB_175550_Class3894")
+	(value "KB_257880_Class3902")
 	(value_class "java.util.Map"))
 
-([KB_175550_Class3896] of  Map
-)
+([KB_257880_Class3904] of  Map_Entry
 
-([KB_175550_Class3897] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_175550_Class3896")
-	(value_class "java.util.Map"))
-
-([KB_175550_Class3898] of  Map
-)
-
-([KB_175550_Class3899] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_175550_Class3898")
-	(value_class "java.util.Map"))
-
-([KB_175550_Class3900] of  Map_Entry
-
-	(key "suppress_instance_counting")
+	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
+
+([KB_257880_Class3905] of  Map
+)
+
+([KB_257880_Class3906] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_257880_Class3905")
+	(value_class "java.util.Map"))
+
+([KB_257880_Class3907] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_257880_Class3908] of  Map
+)
+
+([KB_257880_Class3909] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_257880_Class3908")
+	(value_class "java.util.Map"))
 
 ([KB_475580_Instance_0] of  String
 
@@ -528,10 +528,10 @@
 ([KB_475580_Instance_1] of  Map
 
 	(entries
-		[library_ProjectKB_Class13965]
-		[library_ProjectKB_Class13966]
-		[library_ProjectKB_Class13967]
-		[library_ProjectKB_Class13968]))
+		[library_ProjectKB_Class13947]
+		[library_ProjectKB_Class13948]
+		[library_ProjectKB_Class13949]
+		[library_ProjectKB_Class13950]))
 
 ([KB_475580_Instance_3] of  Options
 
@@ -4718,81 +4718,147 @@
 	(integer_value 272)
 	(name "QUERY_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
 
-([library_ProjectKB_Class13921] of  Widget
+([library_ProjectKB_Class13921] of  Property_List
+)
+
+([library_ProjectKB_Class13922] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class13922])
+	(property_list [library_ProjectKB_Class13923])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([library_ProjectKB_Class13923] of  Property_List
+)
+
+([library_ProjectKB_Class13924] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13925])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([library_ProjectKB_Class13925] of  Property_List
+)
+
+([library_ProjectKB_Class13926] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13927])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([library_ProjectKB_Class13927] of  Property_List
+)
+
+([library_ProjectKB_Class13928] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13929])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([library_ProjectKB_Class13929] of  Property_List
+)
+
+([library_ProjectKB_Class13930] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13931])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([library_ProjectKB_Class13931] of  Property_List
+)
+
+([library_ProjectKB_Class13932] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13933])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([library_ProjectKB_Class13933] of  Property_List
+)
+
+([library_ProjectKB_Class13934] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13935])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([library_ProjectKB_Class13935] of  Property_List
+)
+
+([library_ProjectKB_Class13936] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13937])
 	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
 
-([library_ProjectKB_Class13922] of  Property_List
+([library_ProjectKB_Class13937] of  Property_List
 )
 
-([library_ProjectKB_Class13923] of  Widget
+([library_ProjectKB_Class13938] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class13924])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+	(property_list [library_ProjectKB_Class13939])
+	(widget_class_name "ezpal.EZPalTab"))
 
-([library_ProjectKB_Class13924] of  Property_List
+([library_ProjectKB_Class13939] of  Property_List
 )
 
-([library_ProjectKB_Class13958] of  String
-
-	(name "Diagnostic_Term_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class13959] of  String
-
-	(name "Ordinal-Valued_AtomicTest_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class13960] of  String
-
-	(name "Medications_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class13961] of  String
-
-	(name "Medical_Conditions_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class13962] of  String
+([library_ProjectKB_Class13940] of  String
 
 	(name "Derived_Parameter_Metaclass")
 	(string_value "PrettyName"))
 
-([library_ProjectKB_Class13963] of  String
+([library_ProjectKB_Class13941] of  String
 
 	(name "Interval-Valued_AtomicTest_Metaclass")
 	(string_value "PrettyName"))
 
-([library_ProjectKB_Class13964] of  String
+([library_ProjectKB_Class13942] of  String
+
+	(name "Diagnostic_Term_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class13943] of  String
 
 	(name "Canonical_Terms_Metaclass")
 	(string_value "PrettyName"))
 
-([library_ProjectKB_Class13965] of  Map_Entry
+([library_ProjectKB_Class13944] of  String
+
+	(name "Medications_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class13945] of  String
+
+	(name "Medical_Conditions_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class13946] of  String
+
+	(name "Ordinal-Valued_AtomicTest_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class13947] of  Map_Entry
 
 	(key "collab.hide.archived")
 	(key_class "java.lang.String")
 	(value "true")
 	(value_class "java.lang.String"))
 
-([library_ProjectKB_Class13966] of  Map_Entry
+([library_ProjectKB_Class13948] of  Map_Entry
 
 	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([library_ProjectKB_Class13967] of  Map_Entry
+([library_ProjectKB_Class13949] of  Map_Entry
 
 	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([library_ProjectKB_Class13968] of  Map_Entry
+([library_ProjectKB_Class13950] of  Map_Entry
 
 	(key "show_collaboration_panel")
 	(key_class "java.lang.String")
@@ -5055,95 +5121,56 @@
 ([library_ProjectKB_Class3662] of  Property_List
 )
 
-([library_ProjectKB_Class3901] of  Widget
+([library_ProjectKB_Class3910] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3902])
-	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+	(property_list [library_ProjectKB_Class3911])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
 
-([library_ProjectKB_Class3902] of  Property_List
+([library_ProjectKB_Class3911] of  Property_List
 )
 
-([library_ProjectKB_Class3903] of  Widget
+([library_ProjectKB_Class3912] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3904])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([library_ProjectKB_Class3904] of  Property_List
-)
-
-([library_ProjectKB_Class3905] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3906])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([library_ProjectKB_Class3906] of  Property_List
-)
-
-([library_ProjectKB_Class3907] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3908])
-	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
-
-([library_ProjectKB_Class3908] of  Property_List
-)
-
-([library_ProjectKB_Class3909] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3910])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
-
-([library_ProjectKB_Class3910] of  Property_List
-)
-
-([library_ProjectKB_Class3911] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3912])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([library_ProjectKB_Class3912] of  Property_List
-)
-
-([library_ProjectKB_Class3913] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3914])
+	(property_list [library_ProjectKB_Class3913])
 	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
-([library_ProjectKB_Class3914] of  Property_List
+([library_ProjectKB_Class3913] of  Property_List
 )
 
-([library_ProjectKB_Class3915] of  Widget
+([library_ProjectKB_Class3914] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3916])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+	(property_list [library_ProjectKB_Class3915])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
 
-([library_ProjectKB_Class3916] of  Property_List
+([library_ProjectKB_Class3915] of  Property_List
 )
 
-([library_ProjectKB_Class3917] of  Widget
+([library_ProjectKB_Class3916] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3918])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+	(property_list [library_ProjectKB_Class3917])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
 
-([library_ProjectKB_Class3918] of  Property_List
+([library_ProjectKB_Class3917] of  Property_List
 )
 
-([library_ProjectKB_Class3919] of  Widget
+([library_ProjectKB_Class3918] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [library_ProjectKB_Class3920])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+	(property_list [library_ProjectKB_Class3919])
+	(widget_class_name "org.protege.owl.mm.protege3.MappingMasterTab"))
 
-([library_ProjectKB_Class3920] of  Property_List
+([library_ProjectKB_Class3919] of  Property_List
 )
+
+([library_ProjectKB_Class3920] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [library_ProjectKB_Class13921])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
 
 ([library_ProjectKB_Class3921] of  Widget
 
@@ -6080,43 +6107,43 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[PAL_FORM_WIDGET]
-		[KB_943075_Instance_444]
-		[library_ProjectKB_Class792]
-		[KB_943075_Instance_400]
-		[KB_533515_Instance_569]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET]
-		[KB_943075_Instance_143]
-		[KB_943075_Instance_170]
-		[KB_943075_Instance_686]
-		[KB_943075_Instance_544]
 		[STANDARD_SLOT_FORM_WIDGET]
-		[KB_943075_Instance_592]
-		[KB_943075_Instance_671]
-		[KB_943075_Instance_357]
-		[KB_943075_Instance_866]
-		[KB_943075_Instance_332]
-		[KB_943075_Instance_661]
-		[KB_943075_Instance_73]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_943075_Instance_615]
+		[KB_943075_Instance_686]
+		[KB_943075_Instance_357]
+		[KB_943075_Instance_592]
+		[KB_943075_Instance_143]
+		[KB_943075_Instance_73]
+		[STANDARD_FACET_FORM_WIDGET]
+		[KB_943075_Instance_671]
 		[library_ProjectKB_Instance_10926]
+		[KB_533515_Instance_569]
+		[library_ProjectKB_Class792]
 		[KB_943075_Instance_500]
-		[KB_943075_Instance_515]
-		[KB_943075_Instance_323]
 		[KB_943075_Instance_644]
-		[KB_943075_Instance_587]
-		[KB_943075_Instance_306]
-		[KB_943075_Instance_424]
-		[KB_943075_Instance_776]
-		[KB_943075_Instance_246]
+		[KB_943075_Instance_170]
 		[KB_943075_Instance_455]
-		[KB_943075_Instance_106]
-		[KB_533515_Instance_329]
-		[KB_943075_Instance_470]
+		[KB_943075_Instance_246]
 		[KB_943075_Instance_417]
-		[KB_943075_Instance_527])
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[KB_943075_Instance_424]
+		[PAL_FORM_WIDGET]
+		[KB_943075_Instance_661]
+		[KB_943075_Instance_544]
+		[KB_943075_Instance_866]
+		[KB_943075_Instance_776]
+		[KB_943075_Instance_323]
+		[KB_943075_Instance_306]
+		[KB_943075_Instance_587]
+		[KB_943075_Instance_106]
+		[KB_943075_Instance_444]
+		[KB_533515_Instance_329]
+		[KB_943075_Instance_527]
+		[KB_943075_Instance_470]
+		[KB_943075_Instance_400]
+		[KB_943075_Instance_332]
+		[KB_943075_Instance_515])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")

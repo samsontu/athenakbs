@@ -1,4 +1,4 @@
-; Tue Dec 05 18:44:47 CST 2017
+; Tue Feb 20 12:45:36 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,14 +7,6 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract))
-
-(defclass Biguanide+and+Glipzide+Combination
-	(is-a BIGUANIDE GLIPIZIDE)
-	(role concrete))
-
-(defclass Metformin+or+metformin+extended+release+in+combination+with+glipzide+or+glipzide+extended+release
-	(is-a Biguanide+and+Glipzide+Combination)
-	(role concrete))
 
 (defclass K%3E5.5+and+ACE-I+in+last+3+months
 	(is-a Syndrome)
@@ -329,6 +321,18 @@
 	(role concrete))
 
 (defclass ADR+SJS+to+glip+glyb+glim+SU+sulfa
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+MF+or+MF_ER
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+TZD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+SGLT2+inhibitor
 	(is-a Defined+concept)
 	(role concrete))
 

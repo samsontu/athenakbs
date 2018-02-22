@@ -1,7 +1,7 @@
-; Mon Jan 29 12:12:30 PST 2018
+; Thu Feb 15 16:12:42 PST 2018
 ; 
-;+ (version "3.4.5")
-;+ (build "Build 585")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -4169,6 +4169,38 @@
 	(role concrete))
 
 (defclass Angioedema+ADR+to+NDHP+CCB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+of+DM+and+Pres+of+CKD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+of+DM+and+Abs+of+CKD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+thiazide
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+ARB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+ACE
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+non-Cardioselective+BB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+Cardioselective+BB
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Anaphylaxis+ADR+to+alpha+beta+blocker
 	(is-a Defined+concept)
 	(role concrete))
 

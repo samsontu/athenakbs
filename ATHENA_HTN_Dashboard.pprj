@@ -1,7 +1,7 @@
-; Mon Jan 29 12:12:30 PST 2018
+; Thu Feb 15 16:12:43 PST 2018
 ; 
-;+ (version "3.4.5")
-;+ (build "Build 585")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 ([ANNOTATED_INSTANCE_WIDGET] of  Widget
 
@@ -55,42 +55,42 @@
 ([athena-all_ProjectKB_00056] of  Map
 
 	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25226]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25227]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25231]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25237]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25241]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25249]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25253]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25287]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25291]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25295]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25310]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25326]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25332]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25336]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25340]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25410]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25414]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35462])
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14981]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14982]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14986]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14992]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14996]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15004]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15008]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15042]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15046]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15050]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15065]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15081]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15087]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15091]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15095]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25165]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25169]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25224])
 	(referenced_maps
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25250]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25327]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25288]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25238]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25415]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25296]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25223]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25254]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25242]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25292]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25232]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25341]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25333]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25228]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25337]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25411]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25311]))
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15082]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15066]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15009]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15051]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15088]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14987]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15096]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14978]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15092]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14993]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15047]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25166]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14997]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14983]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25170]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15043]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15005]))
 
 ([ATHENA-HTN_ProjectKB_Class13731] of  Boolean
 
@@ -718,6 +718,1517 @@
 ([ATHENA_HTN_Dashboard_ProjectKB_Class14747] of  Property_List
 )
 
+([ATHENA_HTN_Dashboard_ProjectKB_Class14954] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_second-line_drug_for")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class14955])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 1220))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14955] of  Property_List
+)
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14956] of  Widget
+
+	(height 240)
+	(is_hidden FALSE)
+	(name "is_third-line_drug_for")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class14957])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 200)
+	(y 1100))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14957] of  Property_List
+)
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14958] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_first-line_drug_for")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class14959])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 1100))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14959] of  Property_List
+)
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14960] of  String
+
+	(name "Note_Entry")
+	(string_value "domain_term"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14961] of  String
+
+	(name "Literal_Strng_Translation")
+	(string_value "Target_String_in_KB"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14962] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14963] of  String
+
+	(name "Numeric_Entry")
+	(string_value "domain_term"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14964] of  String
+
+	(name "Definite_Time_Point")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14965] of  String
+
+	(name "Medication")
+	(string_value "drug_name"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14966] of  String
+
+	(name "Condition")
+	(string_value "domain_term"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14967] of  String
+
+	(name "Adverse_Reaction")
+	(string_value "domain_term"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14968] of  String
+
+	(name "Lab_Dictionary_Translation")
+	(string_value "Target_Class_in_KB"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14969] of  String
+
+	(name "Drug_Usage")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14970] of  String
+
+	(name "Range_Mapping_Entry")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14971] of  String
+
+	(name "Drug_Indication_Relation")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14972] of  String
+
+	(name "Patient_History_Translation")
+	(string_value "Target_Class_in_KB"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14973] of  String
+
+	(name "Guideline_View")
+	(string_value "guideline"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14974] of  String
+
+	(name "Numeric_Term_Query")
+	(string_value "aggregation_operator{+}numeric_domain_term{+}period"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14975] of  String
+
+	(name "Management_Diagram")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14976] of  String
+
+	(name "Collateral_Action")
+	(string_value "mood{%3A+}actions"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14977] of  String
+
+	(name "Supporting_Material")
+	(string_value "label"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14978] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14979]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14980]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14979] of  Map_Entry
+
+	(key "athena_hypertension_372678")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14980] of  Map_Entry
+
+	(key "athena_hypertension_371795")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14981] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_371794.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class14978")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14982] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_ATHENA_HTN.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14983] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14984]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14985]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14984] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class90003")
+	(key_class "java.lang.String")
+	(value "103 77 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14985] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class90002")
+	(key_class "java.lang.String")
+	(value "-19 38 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14986] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class80019.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class14983")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14987] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14988]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14989]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14990]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14991]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14988] of  Map_Entry
+
+	(key "athena_hypertension_150133")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14989] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00385")
+	(key_class "java.lang.String")
+	(value "220 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14990] of  Map_Entry
+
+	(key "athena_hypertension_132287")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14991] of  Map_Entry
+
+	(key "athena_hypertension_100859")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14992] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00384.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class14987")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14993] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14994]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14995]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14994] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10045")
+	(key_class "java.lang.String")
+	(value "11 23 86 106")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14995] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10046")
+	(key_class "java.lang.String")
+	(value "151 53 93 99")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14996] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10044.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class14993")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14997] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14998]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14999]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15000]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15001]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15002]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15003]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14998] of  Map_Entry
+
+	(key "athena_hypertension_376366")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class14999] of  Map_Entry
+
+	(key "athena_hypertension_09854")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15000] of  Map_Entry
+
+	(key "athena_hypertension_132302")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15001] of  Map_Entry
+
+	(key "athena_hypertension_192994")
+	(key_class "java.lang.String")
+	(value "519 88 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15002] of  Map_Entry
+
+	(key "athena_hypertension_150112")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15003] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00436")
+	(key_class "java.lang.String")
+	(value "270 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15004] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00429.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class14997")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15005] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15006]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15007]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15006] of  Map_Entry
+
+	(key "athena_hypertension_360316")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "85 14 160 90")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15007] of  Map_Entry
+
+	(key "athena_hypertension_510167")
+	(key_class "edu.stanford.smi.protege.model.Frame")
+	(value "349 246 213 137")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15008] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15005")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15009] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15010]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15011]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15012]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15013]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15014]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15015]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15016]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15017]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15018]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15019]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15020]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15021]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15022]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15023]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15024]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15025]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15026]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15027]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15028]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15029]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15030]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15031]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15032]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15033]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15034]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15035]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15036]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15037]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15038]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15039]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15040]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15041]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15010] of  Map_Entry
+
+	(key "athena_hypertension_00530")
+	(key_class "java.lang.String")
+	(value "2170 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15011] of  Map_Entry
+
+	(key "athena_hypertension_00116")
+	(key_class "java.lang.String")
+	(value "1720 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15012] of  Map_Entry
+
+	(key "athena_runtime_14962")
+	(key_class "java.lang.String")
+	(value "2920 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15013] of  Map_Entry
+
+	(key "athena_hypertension_04874")
+	(key_class "java.lang.String")
+	(value "3370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15014] of  Map_Entry
+
+	(key "athena_hypertension_272144")
+	(key_class "java.lang.String")
+	(value "3970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15015] of  Map_Entry
+
+	(key "athena_hypertension_00615")
+	(key_class "java.lang.String")
+	(value "2470 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15016] of  Map_Entry
+
+	(key "athena_hypertension_272149")
+	(key_class "java.lang.String")
+	(value "4120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15017] of  Map_Entry
+
+	(key "athena_hypertension_00057")
+	(key_class "java.lang.String")
+	(value "1270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15018] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00085")
+	(key_class "java.lang.String")
+	(value "820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15019] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00080")
+	(key_class "java.lang.String")
+	(value "670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15020] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00026")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15021] of  Map_Entry
+
+	(key "athena_hypertension_00017")
+	(key_class "java.lang.String")
+	(value "1870 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15022] of  Map_Entry
+
+	(key "athena_hypertension_00070")
+	(key_class "java.lang.String")
+	(value "1120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15023] of  Map_Entry
+
+	(key "athena_hypertension_113051")
+	(key_class "java.lang.String")
+	(value "3670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15024] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00031")
+	(key_class "java.lang.String")
+	(value "2320 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15025] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00032")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15026] of  Map_Entry
+
+	(key "athena_hypertension_00245")
+	(key_class "java.lang.String")
+	(value "2020 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15027] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00304")
+	(key_class "java.lang.String")
+	(value "970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15028] of  Map_Entry
+
+	(key "athena_hypertension_00102")
+	(key_class "java.lang.String")
+	(value "1570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15029] of  Map_Entry
+
+	(key "athena_hypertension_445157")
+	(key_class "java.lang.String")
+	(value "4270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15030] of  Map_Entry
+
+	(key "athena_hypertension_00642")
+	(key_class "java.lang.String")
+	(value "2770 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15031] of  Map_Entry
+
+	(key "athena_hypertension_508899")
+	(key_class "java.lang.String")
+	(value "4570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15032] of  Map_Entry
+
+	(key "athena_hypertension_101791")
+	(key_class "java.lang.String")
+	(value "3520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15033] of  Map_Entry
+
+	(key "athena_hypertension_00603")
+	(key_class "java.lang.String")
+	(value "2320 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15034] of  Map_Entry
+
+	(key "athena_hypertension_00067")
+	(key_class "java.lang.String")
+	(value "1420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15035] of  Map_Entry
+
+	(key "athena_hypertension_00627")
+	(key_class "java.lang.String")
+	(value "2620 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15036] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00029")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15037] of  Map_Entry
+
+	(key "athena_hypertension_04864")
+	(key_class "java.lang.String")
+	(value "3220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15038] of  Map_Entry
+
+	(key "athena_hypertension_501010")
+	(key_class "java.lang.String")
+	(value "4420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15039] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00068")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15040] of  Map_Entry
+
+	(key "athena_hypertension_119576")
+	(key_class "java.lang.String")
+	(value "3820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15041] of  Map_Entry
+
+	(key "athena_hypertension_04822")
+	(key_class "java.lang.String")
+	(value "3070 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15042] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00030.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15009")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15043] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15044]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15045]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15044] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class80007")
+	(key_class "java.lang.String")
+	(value "40 80 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15045] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class80008")
+	(key_class "java.lang.String")
+	(value "180 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15046] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class80002.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15043")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15047] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15048]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15049]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15048] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class80011")
+	(key_class "java.lang.String")
+	(value "168 33 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15049] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10041")
+	(key_class "java.lang.String")
+	(value "14 77 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15050] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10040.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15047")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15051] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15052]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15053]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15054]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15055]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15056]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15057]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15058]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15059]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15060]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15061]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15062]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15063]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15064]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15052] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10053")
+	(key_class "java.lang.String")
+	(value "331 166 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15053] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10017")
+	(key_class "java.lang.String")
+	(value "18 30 125 115")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15054] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10051")
+	(key_class "java.lang.String")
+	(value "187 255 78 78")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15055] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class80013")
+	(key_class "java.lang.String")
+	(value "28 405 96 116")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15056] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10019")
+	(key_class "java.lang.String")
+	(value "188 25 154 137")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15057] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10027")
+	(key_class "java.lang.String")
+	(value "590 24 126 124")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15058] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10054")
+	(key_class "java.lang.String")
+	(value "373 274 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15059] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class110532")
+	(key_class "java.lang.String")
+	(value "507 212 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15060] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10058")
+	(key_class "java.lang.String")
+	(value "696 223 97 82")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15061] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10049")
+	(key_class "java.lang.String")
+	(value "14 212 96 111")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15062] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class70664")
+	(key_class "java.lang.String")
+	(value "284 353 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15063] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10023")
+	(key_class "java.lang.String")
+	(value "406 27 133 131")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15064] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10060")
+	(key_class "java.lang.String")
+	(value "701 144 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15065] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10001.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15051")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15066] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15067]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15068]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15069]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15070]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15071]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15072]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15073]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15074]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15075]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15076]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15077]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15078]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15079]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15080]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15067] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00304")
+	(key_class "java.lang.String")
+	(value "1120 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15068] of  Map_Entry
+
+	(key "athena_hypertension_00234")
+	(key_class "java.lang.String")
+	(value "1420 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15069] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00003")
+	(key_class "java.lang.String")
+	(value "520 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15070] of  Map_Entry
+
+	(key "athena_hypertension_101772")
+	(key_class "java.lang.String")
+	(value "1720 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15071] of  Map_Entry
+
+	(key "athena_hypertension_00182")
+	(key_class "java.lang.String")
+	(value "1270 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15072] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00029")
+	(key_class "java.lang.String")
+	(value "220 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15073] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00013")
+	(key_class "java.lang.String")
+	(value "670 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15074] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00025")
+	(key_class "java.lang.String")
+	(value "820 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15075] of  Map_Entry
+
+	(key "athena_hypertension_04853")
+	(key_class "java.lang.String")
+	(value "1570 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15076] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00068")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15077] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00055")
+	(key_class "java.lang.String")
+	(value "970 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15078] of  Map_Entry
+
+	(key "athena_hypertension_508270")
+	(key_class "java.lang.String")
+	(value "1870 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15079] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00010")
+	(key_class "java.lang.String")
+	(value "970 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15080] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00032")
+	(key_class "java.lang.String")
+	(value "370 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15081] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00037.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15066")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15082] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15083]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15084]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15085]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15086]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15083] of  Map_Entry
+
+	(key "athena_hypertension_320750")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15084] of  Map_Entry
+
+	(key "athena_hypertension_303339")
+	(key_class "java.lang.String")
+	(value "77 249 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15085] of  Map_Entry
+
+	(key "athena_hypertension_301086")
+	(key_class "java.lang.String")
+	(value "198 21 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15086] of  Map_Entry
+
+	(key "athena_hypertension_178160")
+	(key_class "java.lang.String")
+	(value "254 162 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15087] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_hypertension_320679.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15082")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15088] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15089]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15090]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15089] of  Map_Entry
+
+	(key "athena_runtime_15093")
+	(key_class "java.lang.String")
+	(value "70 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15090] of  Map_Entry
+
+	(key "athena_runtime_00088")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15091] of  Map_Entry
+
+	(key "InstanceGraphWidget.athena_runtime_00087.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15088")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15092] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15093]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15094]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15093] of  Map_Entry
+
+	(key "athena_hypertension_372678")
+	(key_class "java.lang.String")
+	(value "266 27 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15094] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class10029")
+	(key_class "java.lang.String")
+	(value "-23 26 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15095] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10028.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15092")
+	(value_class "java.util.Map"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15096] of  Map
+
+	(entries
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15097]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15098]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15099]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15100]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15101]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15102]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15103]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15104]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15105]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15106]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15107]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15108]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15109]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15110]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15111]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15112]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15113]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15114]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15115]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15116]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15117]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15118]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15119]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15120]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15121]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15122]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15123]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15124]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15125]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15126]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15127]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15128]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15129]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15130]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15131]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15132]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15133]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15134]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15135]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15136]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15137]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15138]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15139]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15140]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15141]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15142]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15143]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15144]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15145]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15146]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15147]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15148]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15149]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15150]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15151]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15152]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15153]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15154]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15155]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15156]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15157]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class15158]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25159]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25160]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25161]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25162]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25163]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25164]))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15097] of  Map_Entry
+
+	(key "athena_hypertension_14131")
+	(key_class "java.lang.String")
+	(value "1027 1192 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15098] of  Map_Entry
+
+	(key "athena_edit_138526")
+	(key_class "java.lang.String")
+	(value "1106 553 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15099] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00560")
+	(key_class "java.lang.String")
+	(value "508 1445 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15100] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91036")
+	(key_class "java.lang.String")
+	(value "555 381 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15101] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91033")
+	(key_class "java.lang.String")
+	(value "317 1786 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15102] of  Map_Entry
+
+	(key "athena_edit_138521")
+	(key_class "java.lang.String")
+	(value "1141 957 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15103] of  Map_Entry
+
+	(key "athena_runtime_00067")
+	(key_class "java.lang.String")
+	(value "1160 1906 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15104] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91030")
+	(key_class "java.lang.String")
+	(value "455 2216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15105] of  Map_Entry
+
+	(key "athena_hypertension_162724")
+	(key_class "java.lang.String")
+	(value "403 748 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15106] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00334")
+	(key_class "java.lang.String")
+	(value "747 939 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15107] of  Map_Entry
+
+	(key "ATHENAINSTANCE_90991")
+	(key_class "java.lang.String")
+	(value "239 2173 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15108] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00035")
+	(key_class "java.lang.String")
+	(value "17 1652 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15109] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00143")
+	(key_class "java.lang.String")
+	(value "624 2115 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15110] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00036")
+	(key_class "java.lang.String")
+	(value "24 1394 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15111] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00182")
+	(key_class "java.lang.String")
+	(value "693 348 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15112] of  Map_Entry
+
+	(key "ATHENAINSTANCE_90996")
+	(key_class "java.lang.String")
+	(value "369 2294 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15113] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00001")
+	(key_class "java.lang.String")
+	(value "287 1985 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15114] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00002")
+	(key_class "java.lang.String")
+	(value "507 1734 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15115] of  Map_Entry
+
+	(key "athena_hypertension_INSTANCE_00003")
+	(key_class "java.lang.String")
+	(value "350 1886 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15116] of  Map_Entry
+
+	(key "athena_hypertension_133269")
+	(key_class "java.lang.String")
+	(value "874 1940 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15117] of  Map_Entry
+
+	(key "athena_hypertension_153033")
+	(key_class "java.lang.String")
+	(value "452 1356 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15118] of  Map_Entry
+
+	(key "athena_hypertension_162779")
+	(key_class "java.lang.String")
+	(value "480 1040 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15119] of  Map_Entry
+
+	(key "athena_edit_138638")
+	(key_class "java.lang.String")
+	(value "871 1081 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15120] of  Map_Entry
+
+	(key "athena_hypertension_508465")
+	(key_class "java.lang.String")
+	(value "535 568 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15121] of  Map_Entry
+
+	(key "athena_runtime_84853")
+	(key_class "java.lang.String")
+	(value "759 2307 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15122] of  Map_Entry
+
+	(key "athena_hypertension_508490")
+	(key_class "java.lang.String")
+	(value "1072 1470 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15123] of  Map_Entry
+
+	(key "athena_hypertension_508495")
+	(key_class "java.lang.String")
+	(value "1023 1615 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15124] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00133")
+	(key_class "java.lang.String")
+	(value "555 231 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15125] of  Map_Entry
+
+	(key "athena_runtime_00012")
+	(key_class "java.lang.String")
+	(value "159 1216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15126] of  Map_Entry
+
+	(key "athena_hypertension_250217")
+	(key_class "java.lang.String")
+	(value "763 112 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15127] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00218")
+	(key_class "java.lang.String")
+	(value "730 230 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15128] of  Map_Entry
+
+	(key "athena_hypertension_179920")
+	(key_class "java.lang.String")
+	(value "935 2299 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15129] of  Map_Entry
+
+	(key "athena_hypertension_508500")
+	(key_class "java.lang.String")
+	(value "1045 1782 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15130] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00018")
+	(key_class "java.lang.String")
+	(value "139 1647 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15131] of  Map_Entry
+
+	(key "athena_hypertension_508505")
+	(key_class "java.lang.String")
+	(value "1170 1574 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15132] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00019")
+	(key_class "java.lang.String")
+	(value "212 1384 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15133] of  Map_Entry
+
+	(key "athena_hypertension_374500")
+	(key_class "java.lang.String")
+	(value "390 119 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15134] of  Map_Entry
+
+	(key "athena_hypertension_183878")
+	(key_class "java.lang.String")
+	(value "948 1847 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15135] of  Map_Entry
+
+	(key "athena_hypertension_162784")
+	(key_class "java.lang.String")
+	(value "474 1216 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15136] of  Map_Entry
+
+	(key "athena_hypertension_43290")
+	(key_class "java.lang.String")
+	(value "445 23 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15137] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91012")
+	(key_class "java.lang.String")
+	(value "228 434 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15138] of  Map_Entry
+
+	(key "athena_edit_138540")
+	(key_class "java.lang.String")
+	(value "1027 1042 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15139] of  Map_Entry
+
+	(key "athena_hypertension_133284")
+	(key_class "java.lang.String")
+	(value "487 653 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15140] of  Map_Entry
+
+	(key "athena_hypertension_508470")
+	(key_class "java.lang.String")
+	(value "914 1466 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15141] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91010")
+	(key_class "java.lang.String")
+	(value "426 353 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15142] of  Map_Entry
+
+	(key "athena_hypertension_185443")
+	(key_class "java.lang.String")
+	(value "467 1615 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15143] of  Map_Entry
+
+	(key "ATHENAINSTANCE_91011")
+	(key_class "java.lang.String")
+	(value "194 1127 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15144] of  Map_Entry
+
+	(key "athena_hypertension_133289")
+	(key_class "java.lang.String")
+	(value "893 2096 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15145] of  Map_Entry
+
+	(key "athena_hypertension_14110")
+	(key_class "java.lang.String")
+	(value "1196 1152 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15146] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00350")
+	(key_class "java.lang.String")
+	(value "918 925 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15147] of  Map_Entry
+
+	(key "athena_hypertension_128621")
+	(key_class "java.lang.String")
+	(value "761 1870 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15148] of  Map_Entry
+
+	(key "athena_hypertension_180808")
+	(key_class "java.lang.String")
+	(value "1177 1042 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15149] of  Map_Entry
+
+	(key "athena_edit_138516")
+	(key_class "java.lang.String")
+	(value "1141 807 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15150] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00228")
+	(key_class "java.lang.String")
+	(value "821 2109 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15151] of  Map_Entry
+
+	(key "athena_edit_138511")
+	(key_class "java.lang.String")
+	(value "1135 687 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15152] of  Map_Entry
+
+	(key "athena_hypertension_162751")
+	(key_class "java.lang.String")
+	(value "449 964 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15153] of  Map_Entry
+
+	(key "athena_runtime_INSTANCE_00329")
+	(key_class "java.lang.String")
+	(value "1291 807 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15154] of  Map_Entry
+
+	(key "athena_hypertension_508485")
+	(key_class "java.lang.String")
+	(value "1129 1351 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15155] of  Map_Entry
+
+	(key "athena_hypertension_44688")
+	(key_class "java.lang.String")
+	(value "272 19 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15156] of  Map_Entry
+
+	(key "athena_hypertension_371786")
+	(key_class "java.lang.String")
+	(value "102 126 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15157] of  Map_Entry
+
+	(key "ATHENAINSTANCE_00021")
+	(key_class "java.lang.String")
+	(value "434 234 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class15158] of  Map_Entry
+
+	(key "athena_hypertension_43284")
+	(key_class "java.lang.String")
+	(value "98 18 60 60")
+	(value_class "java.awt.Rectangle"))
+
 ([ATHENA_HTN_Dashboard_ProjectKB_Class15159] of  Widget
 
 	(height 120)
@@ -923,1607 +2434,516 @@
 ([ATHENA_HTN_Dashboard_ProjectKB_Class24746] of  Property_List
 )
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25205] of  String
-
-	(name "Note_Entry")
-	(string_value "domain_term"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25206] of  String
-
-	(name "Literal_Strng_Translation")
-	(string_value "Target_String_in_KB"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25207] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25208] of  String
-
-	(name "Numeric_Entry")
-	(string_value "domain_term"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25209] of  String
-
-	(name "Definite_Time_Point")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25210] of  String
-
-	(name "Medication")
-	(string_value "drug_name"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25211] of  String
-
-	(name "Condition")
-	(string_value "domain_term"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25212] of  String
-
-	(name "Adverse_Reaction")
-	(string_value "domain_term"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25213] of  String
-
-	(name "Lab_Dictionary_Translation")
-	(string_value "Target_Class_in_KB"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25214] of  String
-
-	(name "Drug_Usage")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25215] of  String
-
-	(name "Range_Mapping_Entry")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25216] of  String
-
-	(name "Drug_Indication_Relation")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25217] of  String
-
-	(name "Patient_History_Translation")
-	(string_value "Target_Class_in_KB"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25218] of  String
-
-	(name "Guideline_View")
-	(string_value "guideline"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25219] of  String
-
-	(name "Numeric_Term_Query")
-	(string_value "aggregation_operator{+}numeric_domain_term{+}period"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25220] of  String
-
-	(name "Management_Diagram")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25221] of  String
-
-	(name "Collateral_Action")
-	(string_value "mood{%3A+}actions"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25222] of  String
-
-	(name "Supporting_Material")
-	(string_value "label"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25223] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25224]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25225]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25224] of  Map_Entry
-
-	(key "athena_hypertension_372678")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25225] of  Map_Entry
-
-	(key "athena_hypertension_371795")
-	(key_class "java.lang.String")
-	(value "70 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25226] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_hypertension_371794.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25223")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25227] of  Map_Entry
-
-	(key "chaoProject")
-	(key_class "java.lang.String")
-	(value "annotation_ATHENA_HTN.pprj")
-	(value_class "java.lang.String"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25228] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25229]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25230]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25229] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class90003")
-	(key_class "java.lang.String")
-	(value "103 77 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25230] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class90002")
-	(key_class "java.lang.String")
-	(value "-19 38 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25231] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class80019.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25228")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25232] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25233]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25234]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25235]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25236]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25233] of  Map_Entry
-
-	(key "athena_hypertension_150133")
-	(key_class "java.lang.String")
-	(value "370 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25234] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00385")
-	(key_class "java.lang.String")
-	(value "220 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25235] of  Map_Entry
-
-	(key "athena_hypertension_132287")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25236] of  Map_Entry
-
-	(key "athena_hypertension_100859")
-	(key_class "java.lang.String")
-	(value "220 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25237] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00384.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25232")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25238] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25239]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25240]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25239] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10045")
-	(key_class "java.lang.String")
-	(value "11 23 86 106")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25240] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10046")
-	(key_class "java.lang.String")
-	(value "151 53 93 99")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25241] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10044.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25238")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25242] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25243]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25244]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25245]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25246]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25247]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25248]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25243] of  Map_Entry
-
-	(key "athena_hypertension_376366")
-	(key_class "java.lang.String")
-	(value "370 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25244] of  Map_Entry
-
-	(key "athena_hypertension_09854")
-	(key_class "java.lang.String")
-	(value "220 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25245] of  Map_Entry
-
-	(key "athena_hypertension_132302")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25246] of  Map_Entry
-
-	(key "athena_hypertension_192994")
-	(key_class "java.lang.String")
-	(value "519 88 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25247] of  Map_Entry
-
-	(key "athena_hypertension_150112")
-	(key_class "java.lang.String")
-	(value "520 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25248] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00436")
-	(key_class "java.lang.String")
-	(value "270 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25249] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_runtime_INSTANCE_00429.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25242")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25250] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25251]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25252]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25251] of  Map_Entry
-
-	(key "athena_hypertension_360316")
-	(key_class "edu.stanford.smi.protege.model.Frame")
-	(value "85 14 160 90")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25252] of  Map_Entry
-
-	(key "athena_hypertension_510167")
-	(key_class "edu.stanford.smi.protege.model.Frame")
-	(value "349 246 213 137")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25253] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25250")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25254] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25255]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25256]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25257]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25258]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25259]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25260]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25261]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25262]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25263]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25264]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25265]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25266]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25267]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25268]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25269]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25270]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25271]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25272]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25273]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25274]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25275]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25276]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25277]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25278]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25279]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25280]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25281]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25282]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25283]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25284]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25285]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25286]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25255] of  Map_Entry
-
-	(key "athena_hypertension_00530")
-	(key_class "java.lang.String")
-	(value "2170 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25256] of  Map_Entry
-
-	(key "athena_hypertension_00116")
-	(key_class "java.lang.String")
-	(value "1720 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25257] of  Map_Entry
-
-	(key "athena_runtime_14962")
-	(key_class "java.lang.String")
-	(value "2920 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25258] of  Map_Entry
-
-	(key "athena_hypertension_04874")
-	(key_class "java.lang.String")
-	(value "3370 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25259] of  Map_Entry
-
-	(key "athena_hypertension_272144")
-	(key_class "java.lang.String")
-	(value "3970 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25260] of  Map_Entry
-
-	(key "athena_hypertension_00615")
-	(key_class "java.lang.String")
-	(value "2470 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25261] of  Map_Entry
-
-	(key "athena_hypertension_272149")
-	(key_class "java.lang.String")
-	(value "4120 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25262] of  Map_Entry
-
-	(key "athena_hypertension_00057")
-	(key_class "java.lang.String")
-	(value "1270 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25263] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00085")
-	(key_class "java.lang.String")
-	(value "820 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25264] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00080")
-	(key_class "java.lang.String")
-	(value "670 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25265] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00026")
-	(key_class "java.lang.String")
-	(value "520 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25266] of  Map_Entry
-
-	(key "athena_hypertension_00017")
-	(key_class "java.lang.String")
-	(value "1870 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25267] of  Map_Entry
-
-	(key "athena_hypertension_00070")
-	(key_class "java.lang.String")
-	(value "1120 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25268] of  Map_Entry
-
-	(key "athena_hypertension_113051")
-	(key_class "java.lang.String")
-	(value "3670 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25269] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00031")
-	(key_class "java.lang.String")
-	(value "2320 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25270] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00032")
-	(key_class "java.lang.String")
-	(value "370 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25271] of  Map_Entry
-
-	(key "athena_hypertension_00245")
-	(key_class "java.lang.String")
-	(value "2020 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25272] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00304")
-	(key_class "java.lang.String")
-	(value "970 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25273] of  Map_Entry
-
-	(key "athena_hypertension_00102")
-	(key_class "java.lang.String")
-	(value "1570 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25274] of  Map_Entry
-
-	(key "athena_hypertension_445157")
-	(key_class "java.lang.String")
-	(value "4270 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25275] of  Map_Entry
-
-	(key "athena_hypertension_00642")
-	(key_class "java.lang.String")
-	(value "2770 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25276] of  Map_Entry
-
-	(key "athena_hypertension_508899")
-	(key_class "java.lang.String")
-	(value "4570 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25277] of  Map_Entry
-
-	(key "athena_hypertension_101791")
-	(key_class "java.lang.String")
-	(value "3520 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25278] of  Map_Entry
-
-	(key "athena_hypertension_00603")
-	(key_class "java.lang.String")
-	(value "2320 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25279] of  Map_Entry
-
-	(key "athena_hypertension_00067")
-	(key_class "java.lang.String")
-	(value "1420 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25280] of  Map_Entry
-
-	(key "athena_hypertension_00627")
-	(key_class "java.lang.String")
-	(value "2620 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25281] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00029")
-	(key_class "java.lang.String")
-	(value "220 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25282] of  Map_Entry
-
-	(key "athena_hypertension_04864")
-	(key_class "java.lang.String")
-	(value "3220 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25283] of  Map_Entry
-
-	(key "athena_hypertension_501010")
-	(key_class "java.lang.String")
-	(value "4420 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25284] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00068")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25285] of  Map_Entry
-
-	(key "athena_hypertension_119576")
-	(key_class "java.lang.String")
-	(value "3820 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25286] of  Map_Entry
-
-	(key "athena_hypertension_04822")
-	(key_class "java.lang.String")
-	(value "3070 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25287] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00030.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25254")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25288] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25289]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25290]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25289] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class80007")
-	(key_class "java.lang.String")
-	(value "40 80 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25290] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class80008")
-	(key_class "java.lang.String")
-	(value "180 20 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25291] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class80002.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25288")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25292] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25293]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25294]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25293] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class80011")
-	(key_class "java.lang.String")
-	(value "168 33 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25294] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10041")
-	(key_class "java.lang.String")
-	(value "14 77 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25295] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10040.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25292")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25296] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25297]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25298]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25299]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25300]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25301]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25302]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25303]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25304]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25305]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25306]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25307]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25308]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25309]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25297] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10053")
-	(key_class "java.lang.String")
-	(value "331 166 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25298] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10017")
-	(key_class "java.lang.String")
-	(value "18 30 125 115")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25299] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10051")
-	(key_class "java.lang.String")
-	(value "187 255 78 78")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25300] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10019")
-	(key_class "java.lang.String")
-	(value "188 25 154 137")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25301] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class80013")
-	(key_class "java.lang.String")
-	(value "28 405 96 116")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25302] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10027")
-	(key_class "java.lang.String")
-	(value "590 24 126 124")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25303] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10054")
-	(key_class "java.lang.String")
-	(value "373 274 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25304] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10049")
-	(key_class "java.lang.String")
-	(value "14 212 96 111")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25305] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10058")
-	(key_class "java.lang.String")
-	(value "696 223 97 82")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25306] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class110532")
-	(key_class "java.lang.String")
-	(value "507 212 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25307] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class70664")
-	(key_class "java.lang.String")
-	(value "284 353 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25308] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10023")
-	(key_class "java.lang.String")
-	(value "406 27 133 131")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25309] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10060")
-	(key_class "java.lang.String")
-	(value "701 144 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25310] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10001.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25296")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25311] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25312]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25313]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25314]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25315]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25316]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25317]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25318]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25319]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25320]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25321]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25322]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25323]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25324]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25325]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25312] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00304")
-	(key_class "java.lang.String")
-	(value "1120 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25313] of  Map_Entry
-
-	(key "athena_hypertension_00234")
-	(key_class "java.lang.String")
-	(value "1420 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25314] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00003")
-	(key_class "java.lang.String")
-	(value "520 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25315] of  Map_Entry
-
-	(key "athena_hypertension_101772")
-	(key_class "java.lang.String")
-	(value "1720 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25316] of  Map_Entry
-
-	(key "athena_hypertension_00182")
-	(key_class "java.lang.String")
-	(value "1270 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25317] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00029")
-	(key_class "java.lang.String")
-	(value "220 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25318] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00013")
-	(key_class "java.lang.String")
-	(value "670 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25319] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00025")
-	(key_class "java.lang.String")
-	(value "820 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25320] of  Map_Entry
-
-	(key "athena_hypertension_04853")
-	(key_class "java.lang.String")
-	(value "1570 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25321] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00068")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25322] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00055")
-	(key_class "java.lang.String")
-	(value "970 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25323] of  Map_Entry
-
-	(key "athena_hypertension_508270")
-	(key_class "java.lang.String")
-	(value "1870 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25324] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00010")
-	(key_class "java.lang.String")
-	(value "970 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25325] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00032")
-	(key_class "java.lang.String")
-	(value "370 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25326] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_hypertension_INSTANCE_00037.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25311")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25327] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25328]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25329]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25330]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25331]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25328] of  Map_Entry
-
-	(key "athena_hypertension_320750")
-	(key_class "java.lang.String")
-	(value "70 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25329] of  Map_Entry
-
-	(key "athena_hypertension_303339")
-	(key_class "java.lang.String")
-	(value "77 249 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25330] of  Map_Entry
-
-	(key "athena_hypertension_301086")
-	(key_class "java.lang.String")
-	(value "198 21 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25331] of  Map_Entry
-
-	(key "athena_hypertension_178160")
-	(key_class "java.lang.String")
-	(value "254 162 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25332] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_hypertension_320679.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25327")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25333] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25334]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25335]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25334] of  Map_Entry
-
-	(key "athena_runtime_15093")
-	(key_class "java.lang.String")
-	(value "70 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25335] of  Map_Entry
-
-	(key "athena_runtime_00088")
-	(key_class "java.lang.String")
-	(value "70 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25336] of  Map_Entry
-
-	(key "InstanceGraphWidget.athena_runtime_00087.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25333")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25337] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25338]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25339]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25338] of  Map_Entry
-
-	(key "athena_hypertension_372678")
-	(key_class "java.lang.String")
-	(value "266 27 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25339] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class10029")
-	(key_class "java.lang.String")
-	(value "-23 26 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25340] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class10028.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25337")
-	(value_class "java.util.Map"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25341] of  Map
-
-	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25342]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25343]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25344]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25345]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25346]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25347]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25348]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25349]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25350]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25351]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25352]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25353]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25354]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25355]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25356]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25357]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25358]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25359]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25360]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25361]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25362]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25363]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25364]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25365]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25366]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25367]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25368]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25369]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25370]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25371]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25372]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25373]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25374]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25375]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25376]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25377]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25378]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25379]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25380]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25381]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25382]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25383]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25384]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25385]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25386]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25387]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25388]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25389]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25390]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25391]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25392]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25393]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25394]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25395]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25396]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25397]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25398]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25399]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25400]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25401]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25402]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25403]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25404]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25405]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25406]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25407]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25408]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25409]))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25342] of  Map_Entry
-
-	(key "athena_hypertension_14131")
-	(key_class "java.lang.String")
-	(value "1027 1192 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25343] of  Map_Entry
-
-	(key "athena_edit_138526")
-	(key_class "java.lang.String")
-	(value "1106 553 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25344] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00560")
-	(key_class "java.lang.String")
-	(value "508 1445 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25345] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91036")
-	(key_class "java.lang.String")
-	(value "555 381 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25346] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91033")
-	(key_class "java.lang.String")
-	(value "317 1786 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25347] of  Map_Entry
-
-	(key "athena_edit_138521")
-	(key_class "java.lang.String")
-	(value "1141 957 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25348] of  Map_Entry
-
-	(key "athena_runtime_00067")
-	(key_class "java.lang.String")
-	(value "1160 1906 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25349] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91030")
-	(key_class "java.lang.String")
-	(value "455 2216 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25350] of  Map_Entry
-
-	(key "athena_hypertension_162724")
-	(key_class "java.lang.String")
-	(value "403 748 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25351] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00334")
-	(key_class "java.lang.String")
-	(value "747 939 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25352] of  Map_Entry
-
-	(key "ATHENAINSTANCE_90991")
-	(key_class "java.lang.String")
-	(value "239 2173 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25353] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00035")
-	(key_class "java.lang.String")
-	(value "17 1652 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25354] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00143")
-	(key_class "java.lang.String")
-	(value "624 2115 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25355] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00036")
-	(key_class "java.lang.String")
-	(value "24 1394 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25356] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00182")
-	(key_class "java.lang.String")
-	(value "693 348 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25357] of  Map_Entry
-
-	(key "ATHENAINSTANCE_90996")
-	(key_class "java.lang.String")
-	(value "369 2294 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25358] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00001")
-	(key_class "java.lang.String")
-	(value "287 1985 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25359] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00002")
-	(key_class "java.lang.String")
-	(value "507 1734 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25360] of  Map_Entry
-
-	(key "athena_hypertension_INSTANCE_00003")
-	(key_class "java.lang.String")
-	(value "350 1886 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25361] of  Map_Entry
-
-	(key "athena_hypertension_133269")
-	(key_class "java.lang.String")
-	(value "874 1940 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25362] of  Map_Entry
-
-	(key "athena_hypertension_153033")
-	(key_class "java.lang.String")
-	(value "452 1356 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25363] of  Map_Entry
-
-	(key "athena_hypertension_162779")
-	(key_class "java.lang.String")
-	(value "480 1040 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25364] of  Map_Entry
-
-	(key "athena_edit_138638")
-	(key_class "java.lang.String")
-	(value "871 1081 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25365] of  Map_Entry
-
-	(key "athena_hypertension_508465")
-	(key_class "java.lang.String")
-	(value "535 568 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25366] of  Map_Entry
-
-	(key "athena_runtime_84853")
-	(key_class "java.lang.String")
-	(value "759 2307 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25367] of  Map_Entry
-
-	(key "athena_hypertension_508490")
-	(key_class "java.lang.String")
-	(value "1072 1470 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25368] of  Map_Entry
-
-	(key "athena_hypertension_508495")
-	(key_class "java.lang.String")
-	(value "1023 1615 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25369] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00133")
-	(key_class "java.lang.String")
-	(value "555 231 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25370] of  Map_Entry
-
-	(key "athena_runtime_00012")
-	(key_class "java.lang.String")
-	(value "159 1216 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25371] of  Map_Entry
-
-	(key "athena_hypertension_250217")
-	(key_class "java.lang.String")
-	(value "763 112 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25372] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00218")
-	(key_class "java.lang.String")
-	(value "730 230 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25373] of  Map_Entry
-
-	(key "athena_hypertension_179920")
-	(key_class "java.lang.String")
-	(value "935 2299 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25374] of  Map_Entry
-
-	(key "athena_hypertension_508500")
-	(key_class "java.lang.String")
-	(value "1045 1782 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25375] of  Map_Entry
-
-	(key "ATHENAINSTANCE_00018")
-	(key_class "java.lang.String")
-	(value "139 1647 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25376] of  Map_Entry
-
-	(key "athena_hypertension_508505")
-	(key_class "java.lang.String")
-	(value "1170 1574 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25377] of  Map_Entry
-
-	(key "ATHENAINSTANCE_00019")
-	(key_class "java.lang.String")
-	(value "212 1384 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25378] of  Map_Entry
-
-	(key "athena_hypertension_374500")
-	(key_class "java.lang.String")
-	(value "390 119 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25379] of  Map_Entry
-
-	(key "athena_hypertension_183878")
-	(key_class "java.lang.String")
-	(value "948 1847 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25380] of  Map_Entry
-
-	(key "athena_hypertension_162784")
-	(key_class "java.lang.String")
-	(value "474 1216 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25381] of  Map_Entry
-
-	(key "athena_hypertension_43290")
-	(key_class "java.lang.String")
-	(value "445 23 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25382] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91012")
-	(key_class "java.lang.String")
-	(value "228 434 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25383] of  Map_Entry
-
-	(key "athena_edit_138540")
-	(key_class "java.lang.String")
-	(value "1027 1042 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25384] of  Map_Entry
-
-	(key "athena_hypertension_133284")
-	(key_class "java.lang.String")
-	(value "487 653 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25385] of  Map_Entry
-
-	(key "athena_hypertension_508470")
-	(key_class "java.lang.String")
-	(value "914 1466 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25386] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91010")
-	(key_class "java.lang.String")
-	(value "426 353 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25387] of  Map_Entry
-
-	(key "athena_hypertension_185443")
-	(key_class "java.lang.String")
-	(value "467 1615 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25388] of  Map_Entry
-
-	(key "ATHENAINSTANCE_91011")
-	(key_class "java.lang.String")
-	(value "194 1127 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25389] of  Map_Entry
-
-	(key "athena_hypertension_133289")
-	(key_class "java.lang.String")
-	(value "893 2096 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25390] of  Map_Entry
-
-	(key "athena_hypertension_14110")
-	(key_class "java.lang.String")
-	(value "1196 1152 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25391] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00350")
-	(key_class "java.lang.String")
-	(value "918 925 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25392] of  Map_Entry
-
-	(key "athena_hypertension_128621")
-	(key_class "java.lang.String")
-	(value "761 1870 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25393] of  Map_Entry
-
-	(key "athena_hypertension_180808")
-	(key_class "java.lang.String")
-	(value "1177 1042 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25394] of  Map_Entry
-
-	(key "athena_edit_138516")
-	(key_class "java.lang.String")
-	(value "1141 807 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25395] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00228")
-	(key_class "java.lang.String")
-	(value "821 2109 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25396] of  Map_Entry
-
-	(key "athena_edit_138511")
-	(key_class "java.lang.String")
-	(value "1135 687 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25397] of  Map_Entry
-
-	(key "athena_hypertension_162751")
-	(key_class "java.lang.String")
-	(value "449 964 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25398] of  Map_Entry
-
-	(key "athena_runtime_INSTANCE_00329")
-	(key_class "java.lang.String")
-	(value "1291 807 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25399] of  Map_Entry
-
-	(key "athena_hypertension_508485")
-	(key_class "java.lang.String")
-	(value "1129 1351 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25400] of  Map_Entry
-
-	(key "athena_hypertension_44688")
-	(key_class "java.lang.String")
-	(value "272 19 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25401] of  Map_Entry
-
-	(key "athena_hypertension_371786")
-	(key_class "java.lang.String")
-	(value "102 126 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25402] of  Map_Entry
-
-	(key "ATHENAINSTANCE_00021")
-	(key_class "java.lang.String")
-	(value "434 234 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25403] of  Map_Entry
-
-	(key "athena_hypertension_43284")
-	(key_class "java.lang.String")
-	(value "98 18 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class25404] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25159] of  Map_Entry
 
 	(key "athena_hypertension_495098")
 	(key_class "java.lang.String")
 	(value "346 612 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25405] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25160] of  Map_Entry
 
 	(key "ATHENAINSTANCE_91004")
 	(key_class "java.lang.String")
 	(value "85 420 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25406] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25161] of  Map_Entry
 
 	(key "ATHENAINSTANCE_90984")
 	(key_class "java.lang.String")
 	(value "27 2143 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25407] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25162] of  Map_Entry
 
 	(key "athena_hypertension_523311")
 	(key_class "java.lang.String")
 	(value "679 574 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25408] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25163] of  Map_Entry
 
 	(key "athena_hypertension_374490")
 	(key_class "java.lang.String")
 	(value "252 126 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25409] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25164] of  Map_Entry
 
 	(key "athena_runtime_INSTANCE_00223")
 	(key_class "java.lang.String")
 	(value "895 2188 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25410] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25165] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENAINSTANCE_90982.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25341")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class15096")
 	(value_class "java.util.Map"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25411] of  Map
+([ATHENA_HTN_Dashboard_ProjectKB_Class25166] of  Map
 
 	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25412]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25413]))
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25167]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25168]))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25412] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25167] of  Map_Entry
 
 	(key "ATHENA_HTN_Dashboard_Class80015")
 	(key_class "java.lang.String")
 	(value "-23 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25413] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25168] of  Map_Entry
 
 	(key "ATHENA_HTN_Dashboard_Class80016")
 	(key_class "java.lang.String")
 	(value "72 46 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25414] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25169] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class80014.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25411")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25166")
 	(value_class "java.util.Map"))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25415] of  Map
+([ATHENA_HTN_Dashboard_ProjectKB_Class25170] of  Map
 
 	(entries
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25416]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35417]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35418]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35419]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35420]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35421]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35422]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35423]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35424]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35425]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35426]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35427]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35428]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35429]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35430]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35431]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35432]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35433]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35434]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35435]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35436]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35437]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35438]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35439]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35440]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35441]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35442]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35443]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35444]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35445]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35446]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35447]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35448]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35449]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35450]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35451]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35452]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35453]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35454]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35455]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35456]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35457]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35458]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35459]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35460]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class35461]))
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25171]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25172]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25173]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25174]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25175]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25176]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25177]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25178]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25179]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25180]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25181]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25182]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25183]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25184]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25185]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25186]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25187]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25188]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25189]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25190]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25191]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25192]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25193]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25194]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25195]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25196]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25197]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25198]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25199]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25200]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25201]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25202]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25203]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25204]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25205]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25206]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25207]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25208]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25209]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25210]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25211]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25212]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25213]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25214]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25215]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25216]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25217]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25218]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25219]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25220]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25221]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25222]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class25223]))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class25416] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class25171] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class230005")
+	(key_class "java.lang.String")
+	(value "338 1158 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25172] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class330004")
+	(key_class "java.lang.String")
+	(value "1381 238 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25173] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class200017")
+	(key_class "java.lang.String")
+	(value "384 431 59 70")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25174] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class240006")
+	(key_class "java.lang.String")
+	(value "344 1252 62 67")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25175] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190001")
+	(key_class "java.lang.String")
+	(value "396 535 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25176] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class180029")
+	(key_class "java.lang.String")
+	(value "73 638 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25177] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210000")
+	(key_class "java.lang.String")
+	(value "242 520 64 65")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25178] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class220003")
+	(key_class "java.lang.String")
+	(value "229 835 67 72")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25179] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210002")
+	(key_class "java.lang.String")
+	(value "197 321 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25180] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class220002")
+	(key_class "java.lang.String")
+	(value "250 722 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25181] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210001")
+	(key_class "java.lang.String")
+	(value "244 630 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25182] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class360000")
+	(key_class "java.lang.String")
+	(value "89 185 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25183] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210006")
+	(key_class "java.lang.String")
+	(value "421 730 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25184] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210008")
+	(key_class "java.lang.String")
+	(value "448 834 69 65")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25185] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class220005")
+	(key_class "java.lang.String")
+	(value "666 968 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25186] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class400002")
+	(key_class "java.lang.String")
+	(value "1418 55 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25187] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class220004")
+	(key_class "java.lang.String")
+	(value "328 831 67 72")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25188] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class220009")
+	(key_class "java.lang.String")
+	(value "241 427 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25189] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class260429")
+	(key_class "java.lang.String")
+	(value "184 109 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25190] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class300000")
+	(key_class "java.lang.String")
+	(value "1239 17 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25191] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190012")
+	(key_class "java.lang.String")
+	(value "79 856 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25192] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class180025")
+	(key_class "java.lang.String")
+	(value "56 534 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25193] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320148")
+	(key_class "java.lang.String")
+	(value "829 299 64 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25194] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class180026")
+	(key_class "java.lang.String")
+	(value "635 533 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25195] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320000")
+	(key_class "java.lang.String")
+	(value "1236 415 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25196] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190009")
+	(key_class "java.lang.String")
+	(value "650 739 65 64")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25197] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190008")
+	(key_class "java.lang.String")
+	(value "77 748 63 59")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25198] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320143")
+	(key_class "java.lang.String")
+	(value "682 290 69 68")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25199] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class342957")
+	(key_class "java.lang.String")
+	(value "1318 475 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25200] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320141")
+	(key_class "java.lang.String")
+	(value "703 7 72 69")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25201] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320146")
+	(key_class "java.lang.String")
+	(value "632 435 68 72")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25202] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class150007")
+	(key_class "java.lang.String")
+	(value "1435 376 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25203] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class320145")
+	(key_class "java.lang.String")
+	(value "711 116 59 63")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25204] of  Map_Entry
 
 	(key "ATHENA_HTN_Dashboard_Class190022")
 	(key_class "java.lang.String")
 	(value "304 336 60 60")
 	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25205] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class371248")
+	(key_class "java.lang.String")
+	(value "765 204 63 63")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25206] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190021")
+	(key_class "java.lang.String")
+	(value "180 4 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25207] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class190020")
+	(key_class "java.lang.String")
+	(value "115 1162 70 64")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25208] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210012")
+	(key_class "java.lang.String")
+	(value "121 1272 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25209] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class230024")
+	(key_class "java.lang.String")
+	(value "438 1039 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25210] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class230022")
+	(key_class "java.lang.String")
+	(value "341 1035 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25211] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class230020")
+	(key_class "java.lang.String")
+	(value "348 935 67 66")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25212] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class210027")
+	(key_class "java.lang.String")
+	(value "460 310 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25213] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class150278")
+	(key_class "java.lang.String")
+	(value "1312 366 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25214] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class342565")
+	(key_class "java.lang.String")
+	(value "1420 150 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25215] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class180013")
+	(key_class "java.lang.String")
+	(value "402 159 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25216] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class200003")
+	(key_class "java.lang.String")
+	(value "407 629 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25217] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class240010")
+	(key_class "java.lang.String")
+	(value "486 383 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25218] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class200000")
+	(key_class "java.lang.String")
+	(value "94 291 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25219] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class200001")
+	(key_class "java.lang.String")
+	(value "52 427 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25220] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class310001")
+	(key_class "java.lang.String")
+	(value "1241 150 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25221] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class170000")
+	(key_class "java.lang.String")
+	(value "645 631 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25222] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class410393")
+	(key_class "java.lang.String")
+	(value "809 390 72 70")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25223] of  Map_Entry
+
+	(key "ATHENA_HTN_Dashboard_Class310003")
+	(key_class "java.lang.String")
+	(value "1173 280 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_HTN_Dashboard_ProjectKB_Class25224] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class150275.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25170")
+	(value_class "java.util.Map"))
 
 ([ATHENA_HTN_Dashboard_ProjectKB_Class25417] of  Widget
 
@@ -2985,327 +3405,73 @@
 ([ATHENA_HTN_Dashboard_ProjectKB_Class35105] of  Property_List
 )
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35417] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class36057] of  Widget
 
-	(key "ATHENA_HTN_Dashboard_Class230005")
-	(key_class "java.lang.String")
-	(value "365 1153 60 60")
-	(value_class "java.awt.Rectangle"))
+	(height 120)
+	(is_hidden FALSE)
+	(name ":DOCUMENTATION")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class36058])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 0)
+	(y 300))
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35418] of  Map_Entry
+([ATHENA_HTN_Dashboard_ProjectKB_Class36058] of  Property_List
+)
 
-	(key "ATHENA_HTN_Dashboard_Class190021")
-	(key_class "java.lang.String")
-	(value "132 40 60 60")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36059] of  Widget
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35419] of  Map_Entry
+	(height 60)
+	(is_hidden FALSE)
+	(name "start_time")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class36060])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-	(key "ATHENA_HTN_Dashboard_Class190020")
-	(key_class "java.lang.String")
-	(value "115 1162 70 64")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36060] of  Property_List
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35420] of  Map_Entry
+	(properties
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36061]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36062]))
 
-	(key "ATHENA_HTN_Dashboard_Class130000")
-	(key_class "java.lang.String")
-	(value "1514 23 60 60")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36061] of  Boolean
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35421] of  Map_Entry
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-	(key "ATHENA_HTN_Dashboard_Class150263")
-	(key_class "java.lang.String")
-	(value "1373 25 60 60")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36062] of  Boolean
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35422] of  Map_Entry
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-	(key "ATHENA_HTN_Dashboard_Class200017")
-	(key_class "java.lang.String")
-	(value "496 441 59 70")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36063] of  Widget
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35423] of  Map_Entry
+	(height 60)
+	(is_hidden FALSE)
+	(name "stop_time")
+	(property_list [ATHENA_HTN_Dashboard_ProjectKB_Class36064])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
 
-	(key "ATHENA_HTN_Dashboard_Class240006")
-	(key_class "java.lang.String")
-	(value "361 1243 62 67")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36064] of  Property_List
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35424] of  Map_Entry
+	(properties
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36065]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36066]))
 
-	(key "ATHENA_HTN_Dashboard_Class210012")
-	(key_class "java.lang.String")
-	(value "121 1272 60 60")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36065] of  Boolean
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35425] of  Map_Entry
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-	(key "ATHENA_HTN_Dashboard_Class190001")
-	(key_class "java.lang.String")
-	(value "574 532 60 60")
-	(value_class "java.awt.Rectangle"))
+([ATHENA_HTN_Dashboard_ProjectKB_Class36066] of  Boolean
 
-([ATHENA_HTN_Dashboard_ProjectKB_Class35426] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class180029")
-	(key_class "java.lang.String")
-	(value "73 638 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35427] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class230024")
-	(key_class "java.lang.String")
-	(value "485 1051 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35428] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class230022")
-	(key_class "java.lang.String")
-	(value "354 1044 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35429] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210000")
-	(key_class "java.lang.String")
-	(value "255 530 64 65")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35430] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class230020")
-	(key_class "java.lang.String")
-	(value "387 937 67 66")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35431] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class220003")
-	(key_class "java.lang.String")
-	(value "227 834 67 72")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35432] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210002")
-	(key_class "java.lang.String")
-	(value "210 249 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35433] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class220002")
-	(key_class "java.lang.String")
-	(value "283 719 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35434] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210001")
-	(key_class "java.lang.String")
-	(value "258 630 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35435] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210006")
-	(key_class "java.lang.String")
-	(value "593 734 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35436] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class150011")
-	(key_class "java.lang.String")
-	(value "1520 138 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35437] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class220005")
-	(key_class "java.lang.String")
-	(value "459 810 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35438] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210008")
-	(key_class "java.lang.String")
-	(value "605 846 74 72")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35439] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class220004")
-	(key_class "java.lang.String")
-	(value "344 833 67 72")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35440] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class220009")
-	(key_class "java.lang.String")
-	(value "257 442 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35441] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class290010")
-	(key_class "java.lang.String")
-	(value "1180 35 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35442] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class210027")
-	(key_class "java.lang.String")
-	(value "441 285 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35443] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class150276")
-	(key_class "java.lang.String")
-	(value "1373 127 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35444] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class260427")
-	(key_class "java.lang.String")
-	(value "52 249 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35445] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class150278")
-	(key_class "java.lang.String")
-	(value "1379 255 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35446] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class260429")
-	(key_class "java.lang.String")
-	(value "49 337 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35447] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class180013")
-	(key_class "java.lang.String")
-	(value "424 150 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35448] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class200003")
-	(key_class "java.lang.String")
-	(value "589 630 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35449] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class240010")
-	(key_class "java.lang.String")
-	(value "374 449 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35450] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class200000")
-	(key_class "java.lang.String")
-	(value "133 156 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35451] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class200001")
-	(key_class "java.lang.String")
-	(value "52 427 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35452] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class190012")
-	(key_class "java.lang.String")
-	(value "79 856 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35453] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class180025")
-	(key_class "java.lang.String")
-	(value "56 534 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35454] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class180026")
-	(key_class "java.lang.String")
-	(value "814 350 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35455] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class190009")
-	(key_class "java.lang.String")
-	(value "833 559 65 64")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35456] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class190008")
-	(key_class "java.lang.String")
-	(value "77 748 63 59")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35457] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class180008")
-	(key_class "java.lang.String")
-	(value "814 239 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35458] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class290024")
-	(key_class "java.lang.String")
-	(value "1187 264 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35459] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class170000")
-	(key_class "java.lang.String")
-	(value "824 453 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35460] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class290022")
-	(key_class "java.lang.String")
-	(value "1183 147 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35461] of  Map_Entry
-
-	(key "ATHENA_HTN_Dashboard_Class150007")
-	(key_class "java.lang.String")
-	(value "1583 263 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_HTN_Dashboard_ProjectKB_Class35462] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_HTN_Dashboard_Class150275.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_HTN_Dashboard_ProjectKB_Class25415")
-	(value_class "java.util.Map"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
 ([ATHENA_HTN_Dashboard_ProjectKB_Class37295] of  Property_List
 )
@@ -6564,24 +6730,24 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25205]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25206]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25207]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25208]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25209]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25210]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25211]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25212]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25213]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25214]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25215]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25216]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25217]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25218]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25219]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25220]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25221]
-		[ATHENA_HTN_Dashboard_ProjectKB_Class25222]))
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14960]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14961]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14962]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14963]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14964]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14965]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14966]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14967]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14968]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14969]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14970]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14971]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14972]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14973]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14974]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14975]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14976]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class14977]))
 
 ([CLSES_TAB] of  Widget
 
@@ -6761,6 +6927,135 @@
 
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_173306_Class4935] of  Map
+
+	(entries
+		[KB_173306_Class4936]
+		[KB_173306_Class4937]
+		[KB_173306_Class4938]
+		[KB_173306_Class4939]
+		[KB_173306_Class4940]
+		[KB_173306_Class4942]
+		[KB_173306_Class4943]
+		[KB_173306_Class4944]
+		[KB_173306_Class4946]
+		[KB_173306_Class4948]
+		[KB_173306_Class4950]
+		[KB_173306_Class4952]
+		[KB_173306_Class4953])
+	(referenced_maps
+		[KB_173306_Class4945]
+		[KB_173306_Class4947]
+		[KB_173306_Class4949]
+		[KB_173306_Class4951]
+		[KB_173306_Class4941]))
+
+([KB_173306_Class4936] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4937] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4938] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4939] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4940] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4941] of  Map
+)
+
+([KB_173306_Class4942] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_173306_Class4941")
+	(value_class "java.util.Map"))
+
+([KB_173306_Class4943] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_173306_Class4944] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([KB_173306_Class4945] of  Map
+)
+
+([KB_173306_Class4946] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_173306_Class4945")
+	(value_class "java.util.Map"))
+
+([KB_173306_Class4947] of  Map
+)
+
+([KB_173306_Class4948] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_173306_Class4947")
+	(value_class "java.util.Map"))
+
+([KB_173306_Class4949] of  Map
+)
+
+([KB_173306_Class4950] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_173306_Class4949")
+	(value_class "java.util.Map"))
+
+([KB_173306_Class4951] of  Map
+)
+
+([KB_173306_Class4952] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_173306_Class4951")
+	(value_class "java.util.Map"))
+
+([KB_173306_Class4953] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([KB_815365_Class1244] of  Widget
 
@@ -7510,7 +7805,10 @@
 		[KB_815365_Class1464]
 		[KB_815365_Class1466]
 		[KB_815365_Class1468]
-		[KB_815365_Class1470]))
+		[KB_815365_Class1470]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36057]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36059]
+		[ATHENA_HTN_Dashboard_ProjectKB_Class36063]))
 
 ([KB_815365_Class1463] of  Property_List
 
@@ -16038,135 +16336,6 @@
 
 	(name "vertical_stretcher")
 	(string_value "<<none>>"))
-
-([KB_877020_Class4928] of  Map
-
-	(entries
-		[KB_877020_Class4929]
-		[KB_877020_Class4930]
-		[KB_877020_Class4931]
-		[KB_877020_Class4932]
-		[KB_877020_Class4933]
-		[KB_877020_Class4935]
-		[KB_877020_Class4936]
-		[KB_877020_Class4937]
-		[KB_877020_Class4939]
-		[KB_877020_Class4941]
-		[KB_877020_Class4943]
-		[KB_877020_Class4945]
-		[KB_877020_Class4946])
-	(referenced_maps
-		[KB_877020_Class4938]
-		[KB_877020_Class4934]
-		[KB_877020_Class4942]
-		[KB_877020_Class4940]
-		[KB_877020_Class4944]))
-
-([KB_877020_Class4929] of  Map_Entry
-
-	(key "collab.hide.archived")
-	(key_class "java.lang.String")
-	(value "true")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4930] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4931] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4932] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4933] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4934] of  Map
-)
-
-([KB_877020_Class4935] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_877020_Class4934")
-	(value_class "java.util.Map"))
-
-([KB_877020_Class4936] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_877020_Class4937] of  Map_Entry
-
-	(key "show_collaboration_panel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.Boolean"))
-
-([KB_877020_Class4938] of  Map
-)
-
-([KB_877020_Class4939] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "KB_877020_Class4938")
-	(value_class "java.util.Map"))
-
-([KB_877020_Class4940] of  Map
-)
-
-([KB_877020_Class4941] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_877020_Class4940")
-	(value_class "java.util.Map"))
-
-([KB_877020_Class4942] of  Map
-)
-
-([KB_877020_Class4943] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_877020_Class4942")
-	(value_class "java.util.Map"))
-
-([KB_877020_Class4944] of  Map
-)
-
-([KB_877020_Class4945] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_877020_Class4944")
-	(value_class "java.util.Map"))
-
-([KB_877020_Class4946] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([LAYOUT_PROPERTIES] of  Property_List
 

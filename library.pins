@@ -1,7 +1,7 @@
-; Mon Jan 29 11:05:21 PST 2018
+; Wed Feb 21 13:54:40 PST 2018
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 ([1st+degree+Heart+Block] of  Medical_Conditions_Metaclass
 
@@ -38,7 +38,8 @@
 
 ([acebutolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Acebutolol"))
 
 ([Aceclofenac] of  Medications_Metaclass
 
@@ -49,13 +50,16 @@
 	(PrettyName "Acemetacin"))
 
 ([Acetaminophen] of  Medications_Metaclass
-)
+
+	(PrettyName "Acetaminophen"))
 
 ([Acetazolamide] of  Medications_Metaclass
-)
+
+	(PrettyName "Acetazolamide"))
 
 ([ACETOHEXAMIDE] of  Medications_Metaclass
-)
+
+	(PrettyName "Acetohexamide"))
 
 ([Acetonuria] of  Medical_Conditions_Metaclass
 
@@ -92,10 +96,12 @@
 	(PrettyName "Acute Coronary Syndrome"))
 
 ([acyclovir] of  Medications_Metaclass
-)
+
+	(PrettyName "Acyclovir"))
 
 ([adefovir] of  Medications_Metaclass
-)
+
+	(PrettyName "Adefovir"))
 
 ([Admission_Institution] of  Canonical_Terms_Metaclass
 
@@ -106,7 +112,8 @@
 	(PrettyName "Admission source"))
 
 ([Adrenaline] of  Medications_Metaclass
-)
+
+	(PrettyName "Adrenaline"))
 
 ([Adrenergic_inhibitors_central] of  Medications_Metaclass
 
@@ -140,11 +147,13 @@
 	(PrettyName "Aldosterone Antagonist"))
 
 ([alfuzosin_SA] of  Medications_Metaclass
-)
+
+	(PrettyName "Alfuzosin Sa"))
 
 ([Aliskiren] of  Medications_Metaclass
 
-	(label "aliskiren"))
+	(label "aliskiren")
+	(PrettyName "Aliskiren"))
 
 ([Alkaline_phosphatase] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -161,7 +170,8 @@
 	(PrettyName "Allergy to sulfonamides"))
 
 ([allopurinol] of  Medications_Metaclass
-)
+
+	(PrettyName "Allopurinol"))
 
 ([Alogliptin] of  Medications_Metaclass
 
@@ -183,7 +193,8 @@
 
 ([alseroxylon] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Alseroxylon"))
 
 ([ALT] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -244,26 +255,31 @@
 	(PrettyName "Anti-Infectives, other"))
 
 ([Ambrisentan] of  Medications_Metaclass
-)
+
+	(PrettyName "Ambrisentan"))
 
 ([amiloride] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Amiloride"))
 
 ([amiodarone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Amiodarone"))
 
 ([amlodipine_besylate] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Amlodipine Besylate"))
 
 ([amphotericin_b] of  Medications_Metaclass
 
 	(PrettyName "amphotericin b"))
 
 ([Amrinone] of  Medications_Metaclass
-)
+
+	(PrettyName "Amrinone"))
 
 ([AN000_Antineoplastics] of  Medications_Metaclass
 
@@ -289,14 +305,14 @@
 
 	(data_source VISTA_data_element))
 
+([ANGIOEDEMA] of  Medical_Conditions_Metaclass
+
+	(data_source VISTA_data_element))
+
 ([angioedema] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element)
 	(PrettyName "Angioedema"))
-
-([ANGIOEDEMA] of  Medical_Conditions_Metaclass
-
-	(data_source VISTA_data_element))
 
 ([Angioedema+due+to+ADR+to+ACEI] of  Diagnostic_Term_Metaclass
 
@@ -324,7 +340,8 @@
 
 ([Anti-Hypertensive_Drugs_Inclusive] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Anti-Hypertensive Drugs Inclusive"))
 
 ([antiarrhythmic+drugs] of  Medications_Metaclass
 
@@ -333,7 +350,8 @@
 
 ([Antihypertensive_Agents] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Antihypertensive Agents"))
 
 ([Anxiety] of  Medical_Conditions_Metaclass
 
@@ -357,7 +375,8 @@
 	(PrettyName "Asian or Pacific Islander (Non-Hispanic)"))
 
 ([aspirin] of  Medications_Metaclass
-)
+
+	(PrettyName "Aspirin"))
 
 ([AST] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -376,7 +395,8 @@
 
 ([atenolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Atenolol"))
 
 ([ATHENA_CKD_Class97] of  N_ary_Criterion
 
@@ -1329,7 +1349,8 @@
 	(data_source VISTA_data_element))
 
 ([atorvastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Atorvastatin"))
 
 ([Atrial_Fibrillation] of  Medical_Conditions_Metaclass
 
@@ -1355,7 +1376,8 @@
 
 ([azilsartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Azilsartan"))
 
 ([Azole_antifungals] of  Medications_Metaclass
 
@@ -1368,15 +1390,18 @@
 
 ([benazepril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Benazepril"))
 
 ([bendroflumethiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Bendroflumethiazide"))
 
 ([bendroflumethiazide_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Bendroflumethiazide Sa"))
 
 ([Benoxaprofen] of  Medications_Metaclass
 
@@ -1384,11 +1409,13 @@
 
 ([benzthiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Benzthiazide"))
 
 ([bepridil] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Bepridil"))
 
 ([Beta+Blocker+Stage+B+no+MI] of  Medications_Metaclass
 
@@ -1428,7 +1455,8 @@
 
 ([betaxolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Betaxolol"))
 
 ([Bicarbonate] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -1452,10 +1480,12 @@
 
 ([bisoprolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Bisoprolol"))
 
 ([Bisphosphonates] of  Medications_Metaclass
-)
+
+	(PrettyName "Bisphosphonates"))
 
 ([BL000_BloodProducts_Modifiers_VolumeExpanders] of  Medical_Conditions_Metaclass
 
@@ -1483,7 +1513,8 @@
 )
 
 ([Blood_Glucose_Regulation_Agent] of  Medications_Metaclass
-)
+
+	(PrettyName "Blood Glucose Regulation Agent"))
 
 ([Blood_Pressure] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -1508,7 +1539,8 @@
 )
 
 ([Bosentan] of  Medications_Metaclass
-)
+
+	(PrettyName "Bosentan"))
 
 ([Breaks+in+the+skin] of  Canonical_Terms_Metaclass
 )
@@ -1528,7 +1560,8 @@
 
 ([bumetanide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Bumetanide"))
 
 ([BUN] of  Interval-Valued_AtomicTest_Metaclass
 )
@@ -1538,7 +1571,8 @@
 	(data_source VISTA_data_element))
 
 ([bupropion] of  Medications_Metaclass
-)
+
+	(PrettyName "Bupropion"))
 
 ([Calcium] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -1550,7 +1584,8 @@
 	(PrettyName "calcium channel blockers with negative inotropic effects"))
 
 ([Calcium_channel_antagonists] of  Medications_Metaclass
-)
+
+	(PrettyName "Calcium Channel Antagonists"))
 
 ([Calculated_LDL] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -1566,14 +1601,17 @@
 
 ([candesartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Candesartan"))
 
 ([captopril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Captopril"))
 
 ([carboplatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Carboplatin"))
 
 ([cardiac+arrest] of  Medical_Conditions_Metaclass
 
@@ -1621,7 +1659,8 @@
 
 ([carteolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Carteolol"))
 
 ([carvedilol] of  Medications_Metaclass
 
@@ -1858,7 +1897,8 @@
 )
 
 ([cerivastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Cerivastatin"))
 
 ([change+in+ocular+function] of  Diagnostic_Term_Metaclass
 
@@ -1879,14 +1919,17 @@
 
 ([chlorothiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Chlorothiazide"))
 
 ([CHLORPROPAMIDE] of  Medications_Metaclass
-)
+
+	(PrettyName "Chlorpropamide"))
 
 ([chlorthalidone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Chlorthalidone"))
 
 ([Cholesterol] of  Interval-Valued_AtomicTest_Metaclass
 )
@@ -1896,7 +1939,8 @@
 	(PrettyName "Cholesterol absorption inhibitors"))
 
 ([cholestyramine] of  Medications_Metaclass
-)
+
+	(PrettyName "Cholestyramine"))
 
 ([chronic+severe+hyperglycemia] of  Medical_Conditions_Metaclass
 
@@ -1932,10 +1976,12 @@
 	(PrettyName "Chronic reflux nephropathy"))
 
 ([Cilostazol] of  Medications_Metaclass
-)
+
+	(PrettyName "Cilostazol"))
 
 ([cimetidine] of  Medications_Metaclass
-)
+
+	(PrettyName "Cimetidine"))
 
 ([circulatory+symptoms+that+limit+patient%27s+lifestyle] of  Medical_Conditions_Metaclass
 
@@ -1946,10 +1992,12 @@
 	(data_source VISTA_data_element))
 
 ([cisplatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Cisplatin"))
 
 ([citalopram] of  Medications_Metaclass
-)
+
+	(PrettyName "Citalopram"))
 
 ([CKD+by+eGFR+or+ICD9+codes] of  Diagnostic_Term_Metaclass
 
@@ -1994,14 +2042,17 @@
 )
 
 ([clofibrate] of  Medications_Metaclass
-)
+
+	(PrettyName "Clofibrate"))
 
 ([clonidine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Clonidine"))
 
 ([Clopidogrel] of  Medications_Metaclass
-)
+
+	(PrettyName "Clopidogrel"))
 
 ([CN000_Central_Nervous_System_Medications] of  Medications_Metaclass
 
@@ -2058,7 +2109,8 @@
 	(PrettyName "Colesevelam"))
 
 ([colestipol] of  Medications_Metaclass
-)
+
+	(PrettyName "Colestipol"))
 
 ([COMA] of  Medical_Conditions_Metaclass
 )
@@ -2111,7 +2163,8 @@
 
 ([cryptenamine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Cryptenamine"))
 
 ([CV+autonomic+neuropathy] of  Diagnostic_Term_Metaclass
 
@@ -2150,15 +2203,18 @@
 
 ([cyclosporine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Cyclosporine"))
 
 ([cyclothiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Cyclothiazide"))
 
 ([cylcosporine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Cylcosporine"))
 
 ([CYP_2D6_Inhibitors] of  Medications_Metaclass
 
@@ -2174,7 +2230,8 @@
 
 ([Dapagliflozin] of  Medications_Metaclass
 
-	(label "Dapagliflozin"))
+	(label "Dapagliflozin")
+	(PrettyName "Dapagliflozin"))
 
 ([DB_Diastolic_BP] of  Interval-Valued_AtomicTest_Metaclass
 )
@@ -2216,7 +2273,8 @@
 )
 
 ([delavirdine] of  Medications_Metaclass
-)
+
+	(PrettyName "Delavirdine"))
 
 ([Dementia] of  Medical_Conditions_Metaclass
 
@@ -2234,10 +2292,12 @@
 
 ([deserpidine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Deserpidine"))
 
 ([desvenlafaxine] of  Medications_Metaclass
-)
+
+	(PrettyName "Desvenlafaxine"))
 
 ([Diabetes+with+renal+manifestations] of  Medical_Conditions_Metaclass
 
@@ -2288,7 +2348,8 @@
 	(PrettyName "digitalis"))
 
 ([Digitoxin] of  Medications_Metaclass
-)
+
+	(PrettyName "Digitoxin"))
 
 ([digoxin] of  Medications_Metaclass
 
@@ -2306,11 +2367,13 @@
 
 ([diltiazem] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Diltiazem"))
 
 ([diltiazem_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Diltiazem Sa"))
 
 ([DIPEPTIDYL_PEPTIDASE-4_INHIBITOR] of  Medications_Metaclass
 
@@ -2323,7 +2386,8 @@
 
 ([Direct_vasodilators] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Direct Vasodilators"))
 
 ([Discharge_Destination] of  Canonical_Terms_Metaclass
 
@@ -2379,7 +2443,8 @@
 )
 
 ([Diuretics] of  Medications_Metaclass
-)
+
+	(PrettyName "Diuretics"))
 
 ([DM-Type2] of  Medical_Conditions_Metaclass
 
@@ -2391,14 +2456,16 @@
 	(PrettyName "DM Dashboard defining diseases"))
 
 ([Dobutamine] of  Medications_Metaclass
-)
+
+	(PrettyName "Dobutamine"))
 
 ([DOE] of  Medical_Conditions_Metaclass
 
 	(PrettyName "DOE"))
 
 ([Dopamine] of  Medications_Metaclass
-)
+
+	(PrettyName "Dopamine"))
 
 ([Dopamine_agonist] of  Medications_Metaclass
 
@@ -2411,7 +2478,8 @@
 
 ([doxazosin] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Doxazosin"))
 
 ([Dronedarone] of  Medications_Metaclass
 
@@ -2434,7 +2502,8 @@
 	(PrettyName "Dulaglutide"))
 
 ([duloxetine] of  Medications_Metaclass
-)
+
+	(PrettyName "Duloxetine"))
 
 ([Duration+of+Diabetes] of  Canonical_Terms_Metaclass
 )
@@ -2919,29 +2988,36 @@
 
 ([enalapril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Enalapril"))
 
 ([Endocrine_Diseases] of  Medical_Conditions_Metaclass
 )
 
 ([entecavir] of  Medications_Metaclass
-)
+
+	(PrettyName "Entecavir"))
 
 ([Ephedrine_sulphate] of  Medications_Metaclass
-)
+
+	(PrettyName "Ephedrine Sulphate"))
 
 ([Epinephrine] of  Medications_Metaclass
-)
+
+	(PrettyName "Epinephrine"))
 
 ([eplerenone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Eplerenone"))
 
 ([Epoprostenol] of  Medications_Metaclass
-)
+
+	(PrettyName "Epoprostenol"))
 
 ([eprosartan] of  Medications_Metaclass
-)
+
+	(PrettyName "Eprosartan"))
 
 ([Erythema] of  Canonical_Terms_Metaclass
 )
@@ -2956,7 +3032,8 @@
 
 ([ethacrynic_acid] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Ethacrynic Acid"))
 
 ([Etodolac] of  Medications_Metaclass
 
@@ -2991,7 +3068,8 @@
 )
 
 ([ezetimibe] of  Medications_Metaclass
-)
+
+	(PrettyName "Ezetimibe"))
 
 ([family+history+of+cardiomyopathy] of  Medical_Conditions_Metaclass
 
@@ -3002,11 +3080,13 @@
 )
 
 ([famotidine] of  Medications_Metaclass
-)
+
+	(PrettyName "Famotidine"))
 
 ([felodipine_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Felodipine Sa"))
 
 ([Female] of  Canonical_Terms_Metaclass
 )
@@ -3016,7 +3096,8 @@
 	(DiagnosticCriteria [library_Class6]))
 
 ([fenofibrate] of  Medications_Metaclass
-)
+
+	(PrettyName "Fenofibrate"))
 
 ([Fenoprofen] of  Medications_Metaclass
 
@@ -3030,7 +3111,8 @@
 	(PrettyName "Fibric acid"))
 
 ([FirstSecondLineDrugs_VA_GL] of  Medications_Metaclass
-)
+
+	(PrettyName "Firstsecondlinedrugs Va Gl"))
 
 ([Flatulence_eructation_gass_pain_787_3] of  Medical_Conditions_Metaclass
 
@@ -3040,10 +3122,12 @@
 
 ([flosequinan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Flosequinan"))
 
 ([fluconazole] of  Medications_Metaclass
-)
+
+	(PrettyName "Fluconazole"))
 
 ([fluid+retention] of  Medical_Conditions_Metaclass
 
@@ -3060,7 +3144,8 @@
 	(PrettyName "Flushing"))
 
 ([fluvastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Fluvastatin"))
 
 ([fluvastatin_XL] of  Medications_Metaclass
 
@@ -3089,14 +3174,17 @@
 
 ([fosinopril+NA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Fosinopril Na"))
 
 ([Fosphenytoin] of  Medications_Metaclass
-)
+
+	(PrettyName "Fosphenytoin"))
 
 ([furosemide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Furosemide"))
 
 ([FVC] of  Interval-Valued_AtomicTest_Metaclass
 )
@@ -3116,23 +3204,27 @@
 	(PrettyName "GA900 Gastric Medications, Other"))
 
 ([gabapentin] of  Medications_Metaclass
-)
+
+	(PrettyName "Gabapentin"))
 
 ([ganciclovir] of  Medications_Metaclass
-)
+
+	(PrettyName "Ganciclovir"))
 
 ([Gastroparesis] of  Medical_Conditions_Metaclass
 )
 
 ([gemfibrozil] of  Medications_Metaclass
-)
+
+	(PrettyName "Gemfibrozil"))
 
 ([GERD] of  Medical_Conditions_Metaclass
 
 	(code "530.81"))
 
 ([Glibenclamide] of  Medications_Metaclass
-)
+
+	(PrettyName "Glibenclamide"))
 
 ([GLIMEPIRIDE] of  Medications_Metaclass
 
@@ -3198,22 +3290,27 @@
 
 ([guanabenz] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Guanabenz"))
 
 ([guanadrel] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Guanadrel"))
 
 ([guanethidine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Guanethidine"))
 
 ([guanfacine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Guanfacine"))
 
 ([Gymnema] of  Medications_Metaclass
-)
+
+	(PrettyName "Gymnema"))
 
 ([hammer+toes] of  Diagnostic_Term_Metaclass
 
@@ -3321,7 +3418,8 @@
 	(PrettyName "Hemorrhagic stroke"))
 
 ([heparin] of  Medications_Metaclass
-)
+
+	(PrettyName "Heparin"))
 
 ([Hepatitis_573_1_2_3] of  Medical_Conditions_Metaclass
 
@@ -3488,11 +3586,13 @@
 
 ([hydrochlorothiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Hydrochlorothiazide"))
 
 ([hydroflumethiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Hydroflumethiazide"))
 
 ([Hypercalcemia] of  Medical_Conditions_Metaclass
 
@@ -3575,7 +3675,8 @@
 	(PrettyName "IHSS"))
 
 ([IIoprost] of  Medications_Metaclass
-)
+
+	(PrettyName "Iioprost"))
 
 ([illicit+drug+use] of  Medical_Conditions_Metaclass
 
@@ -3591,7 +3692,8 @@
 	(PrettyName "Immune Suppressants"))
 
 ([immediate_release_crystalline_nicotinic_acid] of  Medications_Metaclass
-)
+
+	(PrettyName "Immediate Release Crystalline Nicotinic Acid"))
 
 ([Immunological_Diseases] of  Medical_Conditions_Metaclass
 )
@@ -3610,11 +3712,13 @@
 	(data_source VISTA_freetext clinical_assessment))
 
 ([Inamrinone_lactate] of  Medications_Metaclass
-)
+
+	(PrettyName "Inamrinone Lactate"))
 
 ([indapamide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Indapamide"))
 
 ([Indomethacin] of  Medications_Metaclass
 
@@ -3654,7 +3758,8 @@
 
 ([irbesartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Irbesartan"))
 
 ([irregular] of  Canonical_Terms_Metaclass
 
@@ -3673,21 +3778,25 @@
 	(PrettyName "Isosorbide mononitrate"))
 
 ([Isoxsuprine] of  Medications_Metaclass
-)
+
+	(PrettyName "Isoxsuprine"))
 
 ([isradipine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Isradipine"))
 
 ([isradipine_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Isradipine Sa"))
 
 ([itching] of  Medical_Conditions_Metaclass
 )
 
 ([itraconazole] of  Medications_Metaclass
-)
+
+	(PrettyName "Itraconazole"))
 
 ([JNC8_antihypertensives] of  Medical_Conditions_Metaclass
 
@@ -3834,7 +3943,8 @@
 	(value 0.8))
 
 ([ketoconazole] of  Medications_Metaclass
-)
+
+	(PrettyName "Ketoconazole"))
 
 ([Ketoprofen] of  Medications_Metaclass
 
@@ -3846,7 +3956,8 @@
 
 ([labetalol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Labetalol"))
 
 ([Lack+of+sensation+to+Semmes-Weinstein+5.07+monofilament+at+one+or+more+noncallused+plantar+sites] of  Diagnostic_Term_Metaclass
 
@@ -3881,7 +3992,8 @@
 	(PrettyName "Left ventricular assistive device"))
 
 ([levetiracetam] of  Medications_Metaclass
-)
+
+	(PrettyName "Levetiracetam"))
 
 ([levothyroxine] of  Medications_Metaclass
 
@@ -5584,10 +5696,12 @@
 
 ([lisinopril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Lisinopril"))
 
 ([lithium] of  Medications_Metaclass
-)
+
+	(PrettyName "Lithium"))
 
 ([Liver_Disease] of  Medical_Conditions_Metaclass
 
@@ -5600,18 +5714,22 @@
 
 ([Long_acting_nitrates] of  Medications_Metaclass
 
-	(label "Long acting nitrates"))
+	(label "Long acting nitrates")
+	(PrettyName "Long Acting Nitrates"))
 
 ([Loop_diuretics] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Loop Diuretics"))
 
 ([losartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Losartan"))
 
 ([lovastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Lovastatin"))
 
 ([lower+extremity+amputation+related+to+DM] of  Canonical_Terms_Metaclass
 
@@ -5671,10 +5789,12 @@
 	(PrettyName "Meloxicam"))
 
 ([melphalan] of  Medications_Metaclass
-)
+
+	(PrettyName "Melphalan"))
 
 ([memantine] of  Medications_Metaclass
-)
+
+	(PrettyName "Memantine"))
 
 ([Mental+retardation] of  Medical_Conditions_Metaclass
 )
@@ -5705,26 +5825,32 @@
 	(PrettyName "Metformin extended release"))
 
 ([Methazolamide] of  Medications_Metaclass
-)
+
+	(PrettyName "Methazolamide"))
 
 ([methotrexate] of  Medications_Metaclass
-)
+
+	(PrettyName "Methotrexate"))
 
 ([methyclothiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Methyclothiazide"))
 
 ([methyldopa] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Methyldopa"))
 
 ([methyldopa_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Methyldopa Sa"))
 
 ([metolazone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Metolazone"))
 
 ([metoprolol] of  Medications_Metaclass
 
@@ -5733,11 +5859,13 @@
 
 ([Metoprolol_and_felodopine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Metoprolol And Felodopine"))
 
 ([Metoprolol_and_terazosin] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Metoprolol And Terazosin"))
 
 ([metoprolol_tartrate] of  Medications_Metaclass
 
@@ -5773,7 +5901,8 @@
 	(PrettyName "military hospital"))
 
 ([Milrinone] of  Medications_Metaclass
-)
+
+	(PrettyName "Milrinone"))
 
 ([minor+calluses] of  Canonical_Terms_Metaclass
 )
@@ -5789,7 +5918,8 @@
 
 ([minoxidil] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Minoxidil"))
 
 ([Moderate+microvascular+disease] of  Medical_Conditions_Metaclass
 
@@ -5801,7 +5931,8 @@
 
 ([moexipril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Moexipril"))
 
 ([MS000_Musculoskeletal_Medications] of  Medications_Metaclass
 
@@ -5830,7 +5961,8 @@
 	(PrettyName "Myalgia"))
 
 ([Mycophenolate] of  Medications_Metaclass
-)
+
+	(PrettyName "Mycophenolate"))
 
 ([Myocardial_Infarction] of  Medical_Conditions_Metaclass
 
@@ -5846,7 +5978,8 @@
 
 ([nadolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nadolol"))
 
 ([Nail+deformities] of  Canonical_Terms_Metaclass
 )
@@ -5855,7 +5988,8 @@
 )
 
 ([Naproxen] of  Medications_Metaclass
-)
+
+	(PrettyName "Naproxen"))
 
 ([Narcolepsy] of  Medical_Conditions_Metaclass
 
@@ -5875,7 +6009,8 @@
 )
 
 ([nefazodone] of  Medications_Metaclass
-)
+
+	(PrettyName "Nefazodone"))
 
 ([Nephritis_nephrosis_renal+sclerosis] of  Medical_Conditions_Metaclass
 
@@ -5887,11 +6022,13 @@
 
 ([nicardipine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nicardipine"))
 
 ([nicardipine_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nicardipine Sa"))
 
 ([Nicotinic_Acid] of  Medications_Metaclass
 
@@ -5899,19 +6036,23 @@
 
 ([nifedipine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nifedipine"))
 
 ([nifedipine_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nifedipine Sa"))
 
 ([nimodipine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nimodipine"))
 
 ([nisoldipine_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Nisoldipine Sa"))
 
 ([nitrate] of  Medications_Metaclass
 
@@ -5922,7 +6063,8 @@
 	(PrettyName "Nitroglycerin"))
 
 ([nizatidine] of  Medications_Metaclass
-)
+
+	(PrettyName "Nizatidine"))
 
 ([No+longer+diabetic] of  Medical_Conditions_Metaclass
 )
@@ -5934,7 +6076,8 @@
 )
 
 ([Non-Cardiac_Drugs] of  Medications_Metaclass
-)
+
+	(PrettyName "Non-Cardiac Drugs"))
 
 ([Non-Dihydropyridines] of  Medications_Metaclass
 
@@ -5945,7 +6088,8 @@
 )
 
 ([Non_encoded_DM_drugs] of  Medications_Metaclass
-)
+
+	(PrettyName "Non Encoded Dm Drugs"))
 
 ([Non_Insulin_Related_Glucose_Reg_Agents] of  Medications_Metaclass
 
@@ -5965,10 +6109,12 @@
 	(PrettyName "nonsteroidal anti-inflammatory drugs"))
 
 ([Noradrenaline] of  Medications_Metaclass
-)
+
+	(PrettyName "Noradrenaline"))
 
 ([Norepinephrine] of  Medications_Metaclass
-)
+
+	(PrettyName "Norepinephrine"))
 
 ([Nph_Insulin] of  Medications_Metaclass
 
@@ -6063,7 +6209,8 @@
 	(data_source VISTA_data_element))
 
 ([olmesartan] of  Medications_Metaclass
-)
+
+	(PrettyName "Olmesartan"))
 
 ([omega3_fatty_acid] of  Medications_Metaclass
 
@@ -6092,7 +6239,8 @@
 
 ([Oral_Hypoglycemic_Agent] of  Medications_Metaclass
 
-	(code "HS502"))
+	(code "HS502")
+	(PrettyName "Oral Hypoglycemic Agent"))
 
 ([OrganTransplant] of  Medical_Conditions_Metaclass
 
@@ -6133,7 +6281,8 @@
 	(PrettyName "othopnea"))
 
 ([oxaliplatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Oxaliplatin"))
 
 ([Oxaprozin] of  Medications_Metaclass
 
@@ -6159,7 +6308,8 @@
 )
 
 ([paliperidone] of  Medications_Metaclass
-)
+
+	(PrettyName "Paliperidone"))
 
 ([Pallor+on+elevation] of  Canonical_Terms_Metaclass
 )
@@ -6175,7 +6325,8 @@
 	(data_source VISTA_data_element))
 
 ([paroxetine] of  Medications_Metaclass
-)
+
+	(PrettyName "Paroxetine"))
 
 ([patient+history+data] of  Medical_Conditions_Metaclass
 )
@@ -6185,7 +6336,8 @@
 	(data_source VISTA_freetext VISTA_data_element))
 
 ([PDE5_Inhibitors] of  Medications_Metaclass
-)
+
+	(PrettyName "Pde5 Inhibitors"))
 
 ([Pedal+pulses+dm] of  Medical_Conditions_Metaclass
 
@@ -6193,13 +6345,16 @@
 
 ([penbutolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Penbutolol"))
 
 ([Penicillins] of  Medications_Metaclass
-)
+
+	(PrettyName "Penicillins"))
 
 ([Pentoxifylline] of  Medications_Metaclass
-)
+
+	(PrettyName "Pentoxifylline"))
 
 ([Peptic_Ulcer] of  Medical_Conditions_Metaclass
 
@@ -6207,7 +6362,8 @@
 
 ([perindopril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Perindopril"))
 
 ([peripheral+neuropathy] of  Medical_Conditions_Metaclass
 
@@ -6228,17 +6384,20 @@
 	(PrettyName "Personality Disorder"))
 
 ([Phenobarbital] of  Medications_Metaclass
-)
+
+	(PrettyName "Phenobarbital"))
 
 ([Phenylbutazone] of  Medications_Metaclass
 
 	(PrettyName "Phenylbutazone"))
 
 ([Phenylephrine] of  Medications_Metaclass
-)
+
+	(PrettyName "Phenylephrine"))
 
 ([Phenytoin] of  Medications_Metaclass
-)
+
+	(PrettyName "Phenytoin"))
 
 ([Phosphorus] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -6246,7 +6405,8 @@
 
 ([pindolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Pindolol"))
 
 ([PIOGLITAZONE] of  Medications_Metaclass
 
@@ -6283,14 +6443,16 @@
 
 ([polythiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Polythiazide"))
 
 ([poor+recognition+of+hypoglycemia] of  Medical_Conditions_Metaclass
 
 	(data_source clinical_assessment VISTA_freetext))
 
 ([Positive_inotropic_vasopressor] of  Medical_Conditions_Metaclass
-)
+
+	(PrettyName "Positive Inotropic Vasopressor"))
 
 ([Potassium] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -6315,11 +6477,13 @@
 	(PrettyName "Pramlintide (amylin analog)"))
 
 ([pravastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Pravastatin"))
 
 ([prazosin] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Prazosin"))
 
 ([Pregnancy] of  Medical_Conditions_Metaclass
 
@@ -6355,25 +6519,29 @@
 )
 
 ([Primidone] of  Medications_Metaclass
-)
+
+	(PrettyName "Primidone"))
 
 ([Principal_Diagnosis] of  Canonical_Terms_Metaclass
 
 	(PrettyName "Principal diagnosis"))
 
 ([Probenecid] of  Medications_Metaclass
-)
+
+	(PrettyName "Probenecid"))
 
 ([Procedure_finding] of  Canonical_Terms_Metaclass
 )
 
 ([propranolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Propranolol"))
 
 ([propranolol_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Propranolol Sa"))
 
 ([Prostate_Cancer] of  Medical_Conditions_Metaclass
 
@@ -6420,7 +6588,8 @@
 )
 
 ([Pulmonary_htn_meds] of  Medications_Metaclass
-)
+
+	(PrettyName "Pulmonary Htn Meds"))
 
 ([Pulse] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -6447,11 +6616,13 @@
 
 ([quinapril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Quinapril"))
 
 ([quinethazone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Quinethazone"))
 
 ([Radiation_therapy] of  Medical_Conditions_Metaclass
 
@@ -6459,10 +6630,12 @@
 
 ([ramipril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Ramipril"))
 
 ([ranitidine] of  Medications_Metaclass
-)
+
+	(PrettyName "Ranitidine"))
 
 ([rash] of  Medical_Conditions_Metaclass
 
@@ -6470,11 +6643,13 @@
 
 ([rauwolfia] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Rauwolfia"))
 
 ([rauwolfia+serpentina] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Rauwolfia Serpentina"))
 
 ([Raynaud%27s+syndrome] of  Medical_Conditions_Metaclass
 
@@ -6531,11 +6706,13 @@
 
 ([rescinnamine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Rescinnamine"))
 
 ([reserpine] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Reserpine"))
 
 ([respiratory+gas+exchange] of  Ordinal-Valued_AtomicTest_Metaclass
 
@@ -6568,10 +6745,12 @@
 	(PrettyName "Rheumatic Disease and CHF"))
 
 ([Rifampin] of  Medications_Metaclass
-)
+
+	(PrettyName "Rifampin"))
 
 ([Riociguat] of  Medications_Metaclass
-)
+
+	(PrettyName "Riociguat"))
 
 ([risk+for+foot+ulcer] of  Medical_Conditions_Metaclass
 
@@ -6591,10 +6770,12 @@
 	(PrettyName "Risk Factor for CVD treated according to secondary prevention protocols"))
 
 ([risperidone] of  Medications_Metaclass
-)
+
+	(PrettyName "Risperidone"))
 
 ([ritonavir] of  Medications_Metaclass
-)
+
+	(PrettyName "Ritonavir"))
 
 ([Rofecoxib] of  Medications_Metaclass
 
@@ -6605,10 +6786,12 @@
 	(PrettyName "Rosiglitazone"))
 
 ([rosuvastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Rosuvastatin"))
 
 ([saquinavir] of  Medications_Metaclass
-)
+
+	(PrettyName "Saquinavir"))
 
 ([Saxagliptin] of  Medications_Metaclass
 
@@ -6648,7 +6831,8 @@
 )
 
 ([sildenafil] of  Medications_Metaclass
-)
+
+	(PrettyName "Sildenafil"))
 
 ([Silent+Ischemia] of  Medical_Conditions_Metaclass
 
@@ -6656,7 +6840,8 @@
 	(PrettyName "Silent Ischemia"))
 
 ([simvastatin] of  Medications_Metaclass
-)
+
+	(PrettyName "Simvastatin"))
 
 ([Sinoatrial+node+dysfunction] of  Medical_Conditions_Metaclass
 
@@ -6688,7 +6873,8 @@
 	(Precision 0))
 
 ([sotalol] of  Medications_Metaclass
-)
+
+	(PrettyName "Sotalol"))
 
 ([Spinal_Cord_Injury] of  Medical_Conditions_Metaclass
 
@@ -6696,7 +6882,8 @@
 
 ([spironolactone] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Spironolactone"))
 
 ([Stable+Angina] of  Medical_Conditions_Metaclass
 
@@ -6715,10 +6902,12 @@
 	(PrettyName "Statin Not metabolized by CYP3A4"))
 
 ([Statin_withdrawn] of  Medications_Metaclass
-)
+
+	(PrettyName "Statin Withdrawn"))
 
 ([Statins] of  Medications_Metaclass
-)
+
+	(PrettyName "Statins"))
 
 ([Stevens_Johnson_Syndrome] of  Medical_Conditions_Metaclass
 
@@ -6741,23 +6930,28 @@
 	(PrettyName "Sulfa drugs"))
 
 ([SULFACETAMIDE] of  Medications_Metaclass
-)
+
+	(PrettyName "Sulfacetamide"))
 
 ([Sulfadiazine] of  Medications_Metaclass
-)
+
+	(PrettyName "Sulfadiazine"))
 
 ([SULFAMETHOXAZOLE] of  Medications_Metaclass
-)
+
+	(PrettyName "Sulfamethoxazole"))
 
 ([SULFASALAZINE] of  Medications_Metaclass
-)
+
+	(PrettyName "Sulfasalazine"))
 
 ([SULFONYLUREAS] of  Medications_Metaclass
 
 	(PrettyName "Sulfonylureas"))
 
 ([SULFONYLUREAS_1STGEN] of  Medications_Metaclass
-)
+
+	(PrettyName "Sulfonylureas 1Stgen"))
 
 ([SULFONYLUREAS_2NDGEN] of  Medications_Metaclass
 
@@ -6768,7 +6962,8 @@
 	(PrettyName "Sulindac"))
 
 ([SUMATRIPTAN] of  Medications_Metaclass
-)
+
+	(PrettyName "Sumatriptan"))
 
 ([supraventricular+tachyarrhythmias] of  Medical_Conditions_Metaclass
 
@@ -6785,7 +6980,8 @@
 	(PrettyName "sustained release metoprolol succinate"))
 
 ([sustained_release_nicotinic_acid] of  Medications_Metaclass
-)
+
+	(PrettyName "Sustained Release Nicotinic Acid"))
 
 ([SWELLING+OF+LIPS] of  Medical_Conditions_Metaclass
 )
@@ -6807,14 +7003,17 @@
 
 ([tacrolimus] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Tacrolimus"))
 
 ([tadalafil] of  Medications_Metaclass
-)
+
+	(PrettyName "Tadalafil"))
 
 ([tamsulosin] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Tamsulosin"))
 
 ([target_HBA1c] of  Canonical_Terms_Metaclass
 
@@ -6825,11 +7024,13 @@
 
 ([telmisartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Telmisartan"))
 
 ([terazosin] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Terazosin"))
 
 ([Thiazide_Diuretics] of  Medications_Metaclass
 
@@ -6849,13 +7050,16 @@
 	(PrettyName "Thiazolidinediones"))
 
 ([ThirdLine_Encoded_VA_GL] of  Medications_Metaclass
-)
+
+	(PrettyName "Thirdline Encoded Va Gl"))
 
 ([ThirdLine_nonEncoded_VA_GL] of  Medical_Conditions_Metaclass
-)
+
+	(PrettyName "Thirdline Nonencoded Va Gl"))
 
 ([ThirdLineDrugs_VA_GL] of  Medications_Metaclass
-)
+
+	(PrettyName "Thirdlinedrugs Va Gl"))
 
 ([Thrombocytopenia] of  Medical_Conditions_Metaclass
 
@@ -6874,7 +7078,8 @@
 
 ([timolol] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Timolol"))
 
 ([Tinea+pedis] of  Medical_Conditions_Metaclass
 
@@ -6885,10 +7090,12 @@
 	(data_source VISTA_data_element))
 
 ([TOLAZAMIDE] of  Medications_Metaclass
-)
+
+	(PrettyName "Tolazamide"))
 
 ([TOLBUTAMIDE] of  Medications_Metaclass
-)
+
+	(PrettyName "Tolbutamide"))
 
 ([Tolmetin] of  Medications_Metaclass
 
@@ -6896,7 +7103,8 @@
 
 ([torsemide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Torsemide"))
 
 ([Total_Bilirubin] of  Interval-Valued_AtomicTest_Metaclass
 )
@@ -6908,7 +7116,8 @@
 
 ([trandolapril] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Trandolapril"))
 
 ([Transient+cerebral+ischemia] of  Medical_Conditions_Metaclass
 
@@ -6992,15 +7201,18 @@
 		[ATHENA_HTN_Class0]))
 
 ([Treprostinil] of  Medications_Metaclass
-)
+
+	(PrettyName "Treprostinil"))
 
 ([triamterene] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Triamterene"))
 
 ([trichlormethiazide] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Trichlormethiazide"))
 
 ([Triglycerides] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -7008,10 +7220,12 @@
 	(Precision 0))
 
 ([trimethoprim] of  Medications_Metaclass
-)
+
+	(PrettyName "Trimethoprim"))
 
 ([UGT_Inducers] of  Medications_Metaclass
-)
+
+	(PrettyName "Ugt Inducers"))
 
 ([Ulcerative_enterocolitis] of  Medical_Conditions_Metaclass
 
@@ -7090,11 +7304,13 @@
 	(PrettyName "Valdecoxib"))
 
 ([valganciclovir] of  Medications_Metaclass
-)
+
+	(PrettyName "Valganciclovir"))
 
 ([valsartan] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Valsartan"))
 
 ([valvular+regurgitation] of  Medical_Conditions_Metaclass
 
@@ -7105,16 +7321,19 @@
 	(PrettyName "valvular stenosis"))
 
 ([vardenafil] of  Medications_Metaclass
-)
+
+	(PrettyName "Vardenafil"))
 
 ([vascular+specialist] of  Canonical_Terms_Metaclass
 )
 
 ([Vasopressin] of  Medications_Metaclass
-)
+
+	(PrettyName "Vasopressin"))
 
 ([venlafaxine] of  Medications_Metaclass
-)
+
+	(PrettyName "Venlafaxine"))
 
 ([ventricular+fibrillation] of  Medical_Conditions_Metaclass
 
@@ -7127,11 +7346,13 @@
 
 ([verapamil] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Verapamil"))
 
 ([verapamil_SA] of  Medications_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Verapamil Sa"))
 
 ([Vildagliptin] of  Medications_Metaclass
 

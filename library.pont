@@ -1,13 +1,22 @@
-; Mon Jan 29 11:05:21 PST 2018
+; Wed Feb 21 13:54:40 PST 2018
 ; 
-;+ (version "3.5")
-;+ (build "Build 663")
+;+ (version "3.4.8")
+;+ (build "Build 629")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot %3ADEFINITION-NAME
+	(single-slot _REFERENCES
+		(type INTEGER)
+;+		(cardinality 0 1)
+;+		(associated-facet _REFERENCES_FACET)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -17,22 +26,13 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ASTARTUP-FILE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3ASTARTUP-EXPRESSION
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot %3ADEFINITION
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot _REFERENCES
-		(type INTEGER)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
 ;+		(cardinality 0 1)
-;+		(associated-facet _REFERENCES_FACET)
 		(create-accessor read-write)))
 
 (defclass _DUMMY-FRAMES-METACLASS
