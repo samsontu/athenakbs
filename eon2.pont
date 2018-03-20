@@ -1,7 +1,7 @@
-; Tue Jan 16 13:22:15 PST 2018
+; Tue Mar 20 15:30:52 PDT 2018
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 660")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -10,6 +10,12 @@
 	(multislot Drug_Partners_To_Avoid
 		(type SYMBOL)
 ;+		(allowed-parents Therapeutic_Class)
+		(create-accessor read-write))
+	(single-slot condition_for_being_preferred
+;+		(comment "If the condition for being preferred evaluates to 'true', the specific drug  in drug recommendation is appened with \"preferred\".")
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot title
 		(type STRING)
@@ -536,7 +542,7 @@
 	(single-slot max_recommended_dose_level
 		(type SYMBOL)
 ;+		(allowed-parents Drug_Dose_Level)
-;+		(cardinality 1 1)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot exclusion_criteria
 ;+		(comment "Criteria that exclude a patient (or some unit of measurement for a performance measure).")
@@ -2124,11 +2130,17 @@
 	(single-slot max_recommended_dose_level
 		(type SYMBOL)
 ;+		(allowed-parents Drug_Dose_Level)
-;+		(cardinality 1 1)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot dose_level_ranges
 		(type INSTANCE)
 ;+		(allowed-classes Range_Mapping_Entry)
+		(create-accessor read-write))
+	(single-slot condition_for_being_preferred
+;+		(comment "If the condition for being preferred evaluates to 'true', the specific drug  in drug recommendation is appened with \"preferred\".")
+		(type INSTANCE)
+;+		(allowed-classes Criterion)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot increase_dose_ceiling
 		(type FLOAT)

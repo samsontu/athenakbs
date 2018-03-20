@@ -1,7 +1,7 @@
-; Tue Jan 16 13:22:15 PST 2018
+; Tue Mar 20 15:30:52 PDT 2018
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 660")
 
 ([Dharma2_ProjectKB_Instance_10898] of  Widget
 
@@ -1544,17 +1544,17 @@
 ([Dharma_ProjectKB_03794] of  Map
 
 	(entries
-		[eon2_ProjectKB_Class80856]
-		[eon2_ProjectKB_Class80858]
-		[eon2_ProjectKB_Class90860]
-		[eon2_ProjectKB_Class90862]
-		[eon2_ProjectKB_Class90864])
+		[eon2_ProjectKB_Class100934]
+		[eon2_ProjectKB_Class100936]
+		[eon2_ProjectKB_Class100938]
+		[eon2_ProjectKB_Class100940]
+		[eon2_ProjectKB_Class100942])
 	(referenced_maps
-		[eon2_ProjectKB_Class80855]
-		[eon2_ProjectKB_Class90863]
-		[eon2_ProjectKB_Class80857]
-		[eon2_ProjectKB_Class90861]
-		[eon2_ProjectKB_Class90859]))
+		[eon2_ProjectKB_Class100941]
+		[eon2_ProjectKB_Class100933]
+		[eon2_ProjectKB_Class100935]
+		[eon2_ProjectKB_Class100937]
+		[eon2_ProjectKB_Class100939]))
 
 ([Dharma_ProjectKB_Instance_1191] of  Widget
 
@@ -2817,7 +2817,8 @@
 		[eon2_ProjectKB_Class80859]
 		[eon2_ProjectKB_Class90847]
 		[eon2_ProjectKB_Class90849]
-		[eon2_ProjectKB_Class90851]))
+		[eon2_ProjectKB_Class90851]
+		[eon2_ProjectKB_Class80855]))
 
 ([eon-guideline2_ProjectKB_INSTANCE_01058] of  Widget
 
@@ -3027,6 +3028,126 @@
 	(x 0)
 	(y 0))
 
+([eon2_ProjectKB_Class100919] of  String
+
+	(name "Date_Expression")
+	(string_value "first_argument{+}operator{+}second_argument"))
+
+([eon2_ProjectKB_Class100920] of  String
+
+	(name "Case_Selection")
+	(string_value "value"))
+
+([eon2_ProjectKB_Class100921] of  String
+
+	(name "Drug_Relation")
+	(string_value "label"))
+
+([eon2_ProjectKB_Class100922] of  String
+
+	(name "Version")
+	(string_value "version"))
+
+([eon2_ProjectKB_Class100923] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3APAL-NAME"))
+
+([eon2_ProjectKB_Class100924] of  String
+
+	(name "Interval")
+	(string_value "{%5B}low{%2C+}high{%5D}"))
+
+([eon2_ProjectKB_Class100925] of  String
+
+	(name "Drug_Contraindication_Relation")
+	(string_value "contraindication{+as+}degree{+contraindication+of+}Drug"))
+
+([eon2_ProjectKB_Class100926] of  String
+
+	(name "Drug_Indication_Relation")
+	(string_value "indication{+as+}degree{+indication+of}Drug"))
+
+([eon2_ProjectKB_Class100927] of  String
+
+	(name "Attributes_Comparison")
+	(string_value "label"))
+
+([eon2_ProjectKB_Class100928] of  String
+
+	(name "Guideline_Model_Entity")
+	(string_value "label"))
+
+([eon2_ProjectKB_Class100929] of  String
+
+	(name "Drug_Complication_Relation")
+	(string_value "{complication%3A+}Drug{+%7C+}complication"))
+
+([eon2_ProjectKB_Class100930] of  String
+
+	(name "Drug_Usage")
+	(string_value "Drug_Class_Name"))
+
+([eon2_ProjectKB_Class100931] of  String
+
+	(name "Drug_Drug_Interaction")
+	(string_value "interaction_type{%3A}Drug{+%7C+}interacting_drug"))
+
+([eon2_ProjectKB_Class100932] of  String
+
+	(name "Variable_ValueSet")
+	(string_value "label"))
+
+([eon2_ProjectKB_Class100933] of  Map
+)
+
+([eon2_ProjectKB_Class100934] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class100933")
+	(value_class "java.util.Map"))
+
+([eon2_ProjectKB_Class100935] of  Map
+)
+
+([eon2_ProjectKB_Class100936] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class100935")
+	(value_class "java.util.Map"))
+
+([eon2_ProjectKB_Class100937] of  Map
+)
+
+([eon2_ProjectKB_Class100938] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class100937")
+	(value_class "java.util.Map"))
+
+([eon2_ProjectKB_Class100939] of  Map
+)
+
+([eon2_ProjectKB_Class100940] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class100939")
+	(value_class "java.util.Map"))
+
+([eon2_ProjectKB_Class100941] of  Map
+)
+
+([eon2_ProjectKB_Class100942] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "eon2_ProjectKB_Class100941")
+	(value_class "java.util.Map"))
+
 ([eon2_ProjectKB_Class10760] of  Boolean
 
 	(boolean_value FALSE)
@@ -3090,7 +3211,7 @@
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 200)
 	(x 200)
-	(y 180))
+	(y 240))
 
 ([eon2_ProjectKB_Class10834] of  Property_List
 )
@@ -3276,12 +3397,6 @@
 
 ([eon2_ProjectKB_Class20807] of  Property_List
 )
-
-([eon2_ProjectKB_Class20831] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [eon2_ProjectKB_Class40832])
-	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
 
 ([eon2_ProjectKB_Class20832] of  Property_List
 )
@@ -3849,24 +3964,6 @@
 ([eon2_ProjectKB_Class40802] of  Property_List
 )
 
-([eon2_ProjectKB_Class40832] of  Property_List
-)
-
-([eon2_ProjectKB_Class40833] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [eon2_ProjectKB_Class40834])
-	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
-
-([eon2_ProjectKB_Class40834] of  Property_List
-)
-
-([eon2_ProjectKB_Class40835] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [eon2_ProjectKB_Class50836])
-	(widget_class_name "org.protege.owl.mm.protege3.MappingMasterTab"))
-
 ([eon2_ProjectKB_Class40836] of  Boolean
 
 	(boolean_value FALSE)
@@ -4037,32 +4134,6 @@
 	(property_list [eon2_ProjectKB_Class70842])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
-([eon2_ProjectKB_Class50836] of  Property_List
-)
-
-([eon2_ProjectKB_Class50837] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [eon2_ProjectKB_Class50838])
-	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
-
-([eon2_ProjectKB_Class50838] of  Property_List
-)
-
-([eon2_ProjectKB_Class50839] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [eon2_ProjectKB_Class50840])
-	(widget_class_name "edu.uchsc.ccp.knowtator.Knowtator"))
-
-([eon2_ProjectKB_Class50840] of  Property_List
-)
-
-([eon2_ProjectKB_Class50841] of  String
-
-	(name "Date_Expression")
-	(string_value "first_argument{+}operator{+}second_argument"))
-
 ([eon2_ProjectKB_Class50842] of  Property_List
 )
 
@@ -4173,10 +4244,10 @@
 	(is_hidden FALSE)
 	(name "Shared_documentation")
 	(property_list [eon2_ProjectKB_Class50863])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
 	(width 200)
 	(x 400)
-	(y 60))
+	(y 130))
 
 ([eon2_ProjectKB_Class50863] of  Property_List
 )
@@ -7958,90 +8029,45 @@
 	(x 0)
 	(y 600))
 
-([eon2_ProjectKB_Class80842] of  String
+([eon2_ProjectKB_Class80855] of  Widget
 
-	(name "Case_Selection")
-	(string_value "value"))
+	(height 60)
+	(is_hidden FALSE)
+	(label "Being Preferred Condition")
+	(name "condition_for_being_preferred")
+	(property_list [eon2_ProjectKB_Class80856])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 400)
+	(y 60))
 
-([eon2_ProjectKB_Class80843] of  String
+([eon2_ProjectKB_Class80856] of  Property_List
 
-	(name "Drug_Relation")
-	(string_value "label"))
+	(properties
+		[eon2_ProjectKB_Class80857]
+		[eon2_ProjectKB_Class80858]
+		[eon2_ProjectKB_Class90859]
+		[eon2_ProjectKB_Class90860]
+		[eon2_ProjectKB_Class90861]
+		[eon2_ProjectKB_Class90862]
+		[eon2_ProjectKB_Class90863]
+		[eon2_ProjectKB_Class90864]
+		[eon2_ProjectKB_Class90865]
+		[eon2_ProjectKB_Class90866]
+		[eon2_ProjectKB_Class90867]
+		[eon2_ProjectKB_Class90868]
+		[eon2_ProjectKB_Class90869]
+		[eon2_ProjectKB_Class90870]))
 
-([eon2_ProjectKB_Class80844] of  String
+([eon2_ProjectKB_Class80857] of  Boolean
 
-	(name "Version")
-	(string_value "version"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([eon2_ProjectKB_Class80845] of  String
+([eon2_ProjectKB_Class80858] of  Boolean
 
-	(name "PAL-QUERY")
-	(string_value "%3APAL-NAME"))
-
-([eon2_ProjectKB_Class80846] of  String
-
-	(name "Interval")
-	(string_value "{%5B}low{%2C+}high{%5D}"))
-
-([eon2_ProjectKB_Class80847] of  String
-
-	(name "Drug_Contraindication_Relation")
-	(string_value "contraindication{+as+}degree{+contraindication+of+}Drug"))
-
-([eon2_ProjectKB_Class80848] of  String
-
-	(name "Drug_Indication_Relation")
-	(string_value "indication{+as+}degree{+indication+of}Drug"))
-
-([eon2_ProjectKB_Class80849] of  String
-
-	(name "Attributes_Comparison")
-	(string_value "label"))
-
-([eon2_ProjectKB_Class80850] of  String
-
-	(name "Guideline_Model_Entity")
-	(string_value "label"))
-
-([eon2_ProjectKB_Class80851] of  String
-
-	(name "Drug_Complication_Relation")
-	(string_value "{complication%3A+}Drug{+%7C+}complication"))
-
-([eon2_ProjectKB_Class80852] of  String
-
-	(name "Drug_Usage")
-	(string_value "Drug_Class_Name"))
-
-([eon2_ProjectKB_Class80853] of  String
-
-	(name "Drug_Drug_Interaction")
-	(string_value "interaction_type{%3A}Drug{+%7C+}interacting_drug"))
-
-([eon2_ProjectKB_Class80854] of  String
-
-	(name "Variable_ValueSet")
-	(string_value "label"))
-
-([eon2_ProjectKB_Class80855] of  Map
-)
-
-([eon2_ProjectKB_Class80856] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class80855")
-	(value_class "java.util.Map"))
-
-([eon2_ProjectKB_Class80857] of  Map
-)
-
-([eon2_ProjectKB_Class80858] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class80857")
-	(value_class "java.util.Map"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
 ([eon2_ProjectKB_Class80859] of  Widget
 
@@ -8317,7 +8343,7 @@
 	(property_list [eon2_ProjectKB_Class10832])
 	(widget_class_name "edu.stanford.smi.protege.widget.FloatFieldWidget")
 	(width 200)
-	(x 400)
+	(x 200)
 	(y 180))
 
 ([eon2_ProjectKB_Class832] of  String
@@ -8427,35 +8453,58 @@
 ([eon2_ProjectKB_Class90857] of  Property_List
 )
 
-([eon2_ProjectKB_Class90859] of  Map
-)
+([eon2_ProjectKB_Class90859] of  String
 
-([eon2_ProjectKB_Class90860] of  Map_Entry
+	(name "tooltip_text"))
 
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class90859")
-	(value_class "java.util.Map"))
+([eon2_ProjectKB_Class90860] of  Boolean
 
-([eon2_ProjectKB_Class90861] of  Map
-)
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-View Instance"))
 
-([eon2_ProjectKB_Class90862] of  Map_Entry
+([eon2_ProjectKB_Class90861] of  String
 
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class90861")
-	(value_class "java.util.Map"))
+	(name "ButtonDescription-View Instance"))
 
-([eon2_ProjectKB_Class90863] of  Map
-)
+([eon2_ProjectKB_Class90862] of  String
 
-([eon2_ProjectKB_Class90864] of  Map_Entry
+	(name "ButtonDescription-View References to Value"))
 
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "eon2_ProjectKB_Class90863")
-	(value_class "java.util.Map"))
+([eon2_ProjectKB_Class90863] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Create Instance"))
+
+([eon2_ProjectKB_Class90864] of  String
+
+	(name "ButtonDescription-Create Instance"))
+
+([eon2_ProjectKB_Class90865] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Add Instance"))
+
+([eon2_ProjectKB_Class90866] of  String
+
+	(name "ButtonDescription-Add Instance"))
+
+([eon2_ProjectKB_Class90867] of  Boolean
+
+	(boolean_value TRUE)
+	(name "ButtonDisplayed-Remove Instance"))
+
+([eon2_ProjectKB_Class90868] of  String
+
+	(name "ButtonDescription-Remove Instance"))
+
+([eon2_ProjectKB_Class90869] of  String
+
+	(name "ButtonDescription-Delete Instance"))
+
+([eon2_ProjectKB_Class90870] of  Boolean
+
+	(boolean_value FALSE)
+	(name "readOnly_configured"))
 
 ([eon2_ProjectKB_Class90886] of  Property_List
 )
@@ -21281,42 +21330,6 @@
 		[eon2_ProjectKB_Instance_10717]
 		[eon2_ProjectKB_Instance_10718]))
 
-([KB_271966_Class826] of  Map
-
-	(entries
-		[KB_271966_Class827]
-		[KB_271966_Class828]
-		[KB_271966_Class829]
-		[KB_271966_Class830]))
-
-([KB_271966_Class827] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_271966_Class828] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_271966_Class829] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_271966_Class830] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([KB_721828_Instance_0] of  Property_List
 
 	(name "class widget properties")
@@ -21705,23 +21718,59 @@
 	(x 0)
 	(y 120))
 
+([KB_997068_Class826] of  Map
+
+	(entries
+		[KB_997068_Class827]
+		[KB_997068_Class828]
+		[KB_997068_Class829]
+		[KB_997068_Class830]))
+
+([KB_997068_Class827] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_997068_Class828] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_997068_Class829] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_997068_Class830] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([KB_INSTANCE_00001] of  Property_List
 
 	(properties
-		[eon2_ProjectKB_Class50841]
-		[eon2_ProjectKB_Class80842]
-		[eon2_ProjectKB_Class80843]
-		[eon2_ProjectKB_Class80844]
-		[eon2_ProjectKB_Class80845]
-		[eon2_ProjectKB_Class80846]
-		[eon2_ProjectKB_Class80847]
-		[eon2_ProjectKB_Class80848]
-		[eon2_ProjectKB_Class80849]
-		[eon2_ProjectKB_Class80850]
-		[eon2_ProjectKB_Class80851]
-		[eon2_ProjectKB_Class80852]
-		[eon2_ProjectKB_Class80853]
-		[eon2_ProjectKB_Class80854]))
+		[eon2_ProjectKB_Class100919]
+		[eon2_ProjectKB_Class100920]
+		[eon2_ProjectKB_Class100921]
+		[eon2_ProjectKB_Class100922]
+		[eon2_ProjectKB_Class100923]
+		[eon2_ProjectKB_Class100924]
+		[eon2_ProjectKB_Class100925]
+		[eon2_ProjectKB_Class100926]
+		[eon2_ProjectKB_Class100927]
+		[eon2_ProjectKB_Class100928]
+		[eon2_ProjectKB_Class100929]
+		[eon2_ProjectKB_Class100930]
+		[eon2_ProjectKB_Class100931]
+		[eon2_ProjectKB_Class100932]))
 
 ([KB_INSTANCE_00002] of  String
 
