@@ -1,7 +1,7 @@
-; Wed Feb 21 13:54:40 PST 2018
+; Wed Apr 11 21:57:09 PDT 2018
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 660")
 
 ([1st+degree+Heart+Block] of  Medical_Conditions_Metaclass
 
@@ -1417,6 +1417,10 @@
 	(data_source VISTA_data_element)
 	(PrettyName "Bepridil"))
 
+([Beta+block+Cardioselective+and+vasodilatory] of  Medications_Metaclass
+
+	(PrettyName "Cardioselective and vasodilatory beta blockers"))
+
 ([Beta+Blocker+Stage+B+no+MI] of  Medications_Metaclass
 
 	(PrettyName "Beta Blocker Stage B no MI"))
@@ -1461,6 +1465,14 @@
 ([Bicarbonate] of  Interval-Valued_AtomicTest_Metaclass
 
 	(Precision 0))
+
+([Bicarbonate_alt1] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Bicarbonate alternate1"))
+
+([Bicarbonate_alt2] of  Interval-Valued_AtomicTest_Metaclass
+
+	(PrettyName "Bicarbonate alternate2"))
 
 ([BIGUANIDE] of  Medications_Metaclass
 
@@ -1541,6 +1553,10 @@
 ([Bosentan] of  Medications_Metaclass
 
 	(PrettyName "Bosentan"))
+
+([Bradycardia] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Bradycardia"))
 
 ([Breaks+in+the+skin] of  Canonical_Terms_Metaclass
 )
@@ -2977,7 +2993,7 @@
 ([eGFR] of  Interval-Valued_AtomicTest_Metaclass
 
 	(data_source VISTA_data_element)
-	(Precision 0))
+	(Precision 1))
 
 ([EKG] of  Canonical_Terms_Metaclass
 )
@@ -2990,6 +3006,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Enalapril"))
+
+([Encoded_DM_Drugs] of  Medications_Metaclass
+
+	(PrettyName "Encoded DM Drugs"))
 
 ([Endocrine_Diseases] of  Medical_Conditions_Metaclass
 )
@@ -3621,6 +3641,9 @@
 ([Hypertension] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element))
+
+([hypertension+specialist] of  Canonical_Terms_Metaclass
+)
 
 ([Hypertension_Complicated_by_Heart_Failure] of  Medical_Conditions_Metaclass
 
@@ -6008,6 +6031,10 @@
 ([nausea] of  Medical_Conditions_Metaclass
 )
 
+([Nebivolol] of  Medications_Metaclass
+
+	(PrettyName "Nebivolol"))
+
 ([nefazodone] of  Medications_Metaclass
 
 	(PrettyName "Nefazodone"))
@@ -6876,6 +6903,9 @@
 
 	(PrettyName "Sotalol"))
 
+([specialist] of  Canonical_Terms_Metaclass
+)
+
 ([Spinal_Cord_Injury] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element))
@@ -7051,11 +7081,11 @@
 
 ([ThirdLine_Encoded_VA_GL] of  Medications_Metaclass
 
-	(PrettyName "Thirdline Encoded Va Gl"))
+	(PrettyName "Thirdline Encoded VA GL"))
 
-([ThirdLine_nonEncoded_VA_GL] of  Medical_Conditions_Metaclass
+([ThirdLine_NonEncoded_VA_GL] of  Medications_Metaclass
 
-	(PrettyName "Thirdline Nonencoded Va Gl"))
+	(PrettyName "ThirdLine NonEncoded VA GL"))
 
 ([ThirdLineDrugs_VA_GL] of  Medications_Metaclass
 

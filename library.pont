@@ -1,7 +1,7 @@
-; Wed Feb 21 13:54:40 PST 2018
+; Wed Apr 11 21:57:09 PDT 2018
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 660")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -32,14 +32,6 @@
 		(create-accessor read-write))
 	(single-slot %3ADEFINITION-NAME
 		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass _DUMMY-FRAMES-METACLASS
-	(is-a %3ASTANDARD-CLASS)
-	(role concrete)
-	(single-slot _REFERENCES
-		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -119,20 +111,8 @@
 	(is-a SULFONYLUREAS)
 	(role concrete))
 
-(defclass GLIPIZIDE
-	(is-a SULFONYLUREAS_2NDGEN)
-	(role concrete))
-
-(defclass GLIPIZIDE_XL
-	(is-a GLIPIZIDE)
-	(role concrete))
-
 (defclass SGLT2_Inhibitor
 	(is-a Oral_Hypoglycemic_Agent)
-	(role concrete))
-
-(defclass Empagliflozin
-	(is-a SGLT2_Inhibitor)
 	(role concrete))
 
 (defclass Non_encoded_DM_drugs
@@ -179,6 +159,22 @@
 	(is-a Insulin_Adjunctive_Therapy)
 	(role concrete))
 
+(defclass Encoded_DM_Drugs
+	(is-a Blood_Glucose_Regulation_Agent)
+	(role concrete))
+
+(defclass Empagliflozin
+	(is-a SGLT2_Inhibitor Encoded_DM_Drugs)
+	(role concrete))
+
+(defclass GLIPIZIDE
+	(is-a SULFONYLUREAS_2NDGEN Encoded_DM_Drugs)
+	(role concrete))
+
+(defclass GLIPIZIDE_XL
+	(is-a GLIPIZIDE)
+	(role concrete))
+
 (defclass digitalis
 	(is-a Medications_Class)
 	(role concrete))
@@ -198,114 +194,6 @@
 (defclass Antihypertensive_Agents
 	(is-a Anti-Hypertensive_Drugs_Inclusive)
 	(role abstract))
-
-(defclass Potassium-Sparing_Diuretics
-	(is-a Antihypertensive_Agents)
-	(role abstract))
-
-(defclass amiloride
-	(is-a Potassium-Sparing_Diuretics)
-	(role abstract))
-
-(defclass triamterene
-	(is-a Potassium-Sparing_Diuretics)
-	(role abstract))
-
-(defclass Adrenergic_inhibitors_central "Central alpha-agonists: clinidine, guanabenz, guanfacine, methldopa\nalso called \"central alpha-agonists\""
-	(is-a Antihypertensive_Agents)
-	(role concrete))
-
-(defclass clonidine "sedation, dry mouth, bradycardia, withdrawal hypertension\nmore withrdawal"
-	(is-a Adrenergic_inhibitors_central)
-	(role concrete))
-
-(defclass guanabenz "sedation, dry mouth, bradycardia, withdrawal hypertension"
-	(is-a Adrenergic_inhibitors_central)
-	(role concrete))
-
-(defclass guanfacine "sedation, dry mouth, bradycardia, withdrawal hypertension\nless withdrawal"
-	(is-a Adrenergic_inhibitors_central)
-	(role concrete))
-
-(defclass methyldopa "sedation, dry mouth, bradycardia, withdrawal hypertension\nhepatic and autoimmune disorders"
-	(is-a Adrenergic_inhibitors_central)
-	(role concrete))
-
-(defclass methyldopa_SA
-	(is-a Adrenergic_inhibitors_central)
-	(role concrete))
-
-(defclass Adrenergic_inhibitors_peripheral "guanadrel, guanethidine, reserpine"
-	(is-a Antihypertensive_Agents)
-	(role concrete))
-
-(defclass reserpine "nasal congestion, sedation, depression, activation of peptic ulcer"
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass alseroxylon
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass cryptenamine
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass deserpidine
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass guanadrel "postural hypotension, diarrhea"
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass guanethidine "postural Hypotension, diarrhea"
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass rauwolfia+serpentina
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass rauwolfia
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass rescinnamine
-	(is-a Adrenergic_inhibitors_peripheral)
-	(role concrete))
-
-(defclass Alpha_blockers
-	(is-a Antihypertensive_Agents)
-	(role concrete))
-
-(defclass doxazosin "postural hypotension"
-	(is-a Alpha_blockers)
-	(role concrete))
-
-(defclass prazosin "postural hypotension"
-	(is-a Alpha_blockers)
-	(role concrete))
-
-(defclass terazosin "postural hypotension"
-	(is-a Alpha_blockers)
-	(role concrete))
-
-(defclass Direct_vasodilators "headaches, fluid retention, tachycardia"
-	(is-a Antihypertensive_Agents)
-	(role concrete))
-
-(defclass hydralazine "class effect: headaches, fluid retention, tachycardia.\n\nlupus syndrome"
-	(is-a Direct_vasodilators)
-	(role concrete))
-
-(defclass minoxidil "class effect: headaches, fluid retention, tachycardia\n\nhirsutism"
-	(is-a Direct_vasodilators)
-	(role concrete))
-
-(defclass flosequinan
-	(is-a Direct_vasodilators)
-	(role concrete))
 
 (defclass Metoprolol_and_terazosin
 	(is-a Antihypertensive_Agents)
@@ -327,24 +215,8 @@
 	(is-a Non-Cardiac_Drugs)
 	(role concrete))
 
-(defclass sotalol
-	(is-a Non-Cardiac_Drugs)
-	(role concrete))
-
 (defclass Diuretics
 	(is-a Anti-Hypertensive_Drugs_Inclusive Medications_Class)
-	(role concrete))
-
-(defclass Loop_diuretics "furosemide, bumetanide, ethacrynic acid, torsemide"
-	(is-a Diuretics)
-	(role concrete))
-
-(defclass ethacrynic_acid "only nonsulfonamide diuretic.  ototoxicity."
-	(is-a Loop_diuretics)
-	(role concrete))
-
-(defclass torsemide
-	(is-a Loop_diuretics)
 	(role concrete))
 
 (defclass JNC8_antihypertensives
@@ -407,8 +279,132 @@
 	(is-a Antihypertensive_Agents ThirdLine_Encoded_VA_GL)
 	(role concrete))
 
-(defclass ThirdLine_nonEncoded_VA_GL
+(defclass ThirdLine_NonEncoded_VA_GL
 	(is-a ThirdLineDrugs_VA_GL)
+	(role concrete))
+
+(defclass Alpha_blockers
+	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass doxazosin "postural hypotension"
+	(is-a Alpha_blockers)
+	(role concrete))
+
+(defclass prazosin "postural hypotension"
+	(is-a Alpha_blockers)
+	(role concrete))
+
+(defclass terazosin "postural hypotension"
+	(is-a Alpha_blockers)
+	(role concrete))
+
+(defclass Adrenergic_inhibitors_central "Central alpha-agonists: clinidine, guanabenz, guanfacine, methldopa\nalso called \"central alpha-agonists\""
+	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass clonidine "sedation, dry mouth, bradycardia, withdrawal hypertension\nmore withrdawal"
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass guanabenz "sedation, dry mouth, bradycardia, withdrawal hypertension"
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass guanfacine "sedation, dry mouth, bradycardia, withdrawal hypertension\nless withdrawal"
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass methyldopa "sedation, dry mouth, bradycardia, withdrawal hypertension\nhepatic and autoimmune disorders"
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass methyldopa_SA
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass Direct_vasodilators "headaches, fluid retention, tachycardia"
+	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass hydralazine "class effect: headaches, fluid retention, tachycardia.\n\nlupus syndrome"
+	(is-a Direct_vasodilators)
+	(role concrete))
+
+(defclass minoxidil "class effect: headaches, fluid retention, tachycardia\n\nhirsutism"
+	(is-a Direct_vasodilators)
+	(role concrete))
+
+(defclass flosequinan
+	(is-a Direct_vasodilators)
+	(role concrete))
+
+(defclass Loop_diuretics "furosemide, bumetanide, ethacrynic acid, torsemide"
+	(is-a Diuretics Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass ethacrynic_acid "only nonsulfonamide diuretic.  ototoxicity."
+	(is-a Loop_diuretics)
+	(role concrete))
+
+(defclass torsemide
+	(is-a Loop_diuretics)
+	(role concrete))
+
+(defclass Adrenergic_inhibitors_peripheral "guanadrel, guanethidine, reserpine"
+	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass reserpine "nasal congestion, sedation, depression, activation of peptic ulcer"
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass alseroxylon
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass cryptenamine
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass deserpidine
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass guanadrel "postural hypotension, diarrhea"
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass guanethidine "postural Hypotension, diarrhea"
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass rauwolfia+serpentina
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass rauwolfia
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass rescinnamine
+	(is-a Adrenergic_inhibitors_peripheral)
+	(role concrete))
+
+(defclass Potassium-Sparing_Diuretics
+	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(role abstract))
+
+(defclass amiloride
+	(is-a Potassium-Sparing_Diuretics)
+	(role abstract))
+
+(defclass triamterene
+	(is-a Potassium-Sparing_Diuretics)
+	(role abstract))
+
+(defclass sotalol
+	(is-a Non-Cardiac_Drugs Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
 	(role concrete))
 
 (defclass cardiotoxic+interventions
@@ -984,7 +980,7 @@
 	(role concrete))
 
 (defclass Aliskiren
-	(is-a Medications_Class Nephrotoxic_drugs)
+	(is-a Medications_Class Nephrotoxic_drugs Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
 	(role concrete))
 
 (defclass Beta-Blockers "bronchospasm, bradycardia, ht failure.  may mask insuline-induced hypoglycemia.  less serious: impaired periph circ, insomnia, fatigue, decreased exercise tolerance, hypertriglyceridemia (except agents with ISA).  NOTE: need to finish list and categorization"
@@ -1000,7 +996,7 @@
 	(role concrete))
 
 (defclass beta-blockers-ISA
-	(is-a Beta-Blockers)
+	(is-a Beta-Blockers ThirdLine_NonEncoded_VA_GL)
 	(role concrete))
 
 (defclass Beta-Blockers-non-cardioselective
@@ -1083,6 +1079,14 @@
 	(is-a Beta_blocker_not_StageC_HF metoprolol)
 	(role concrete))
 
+(defclass Beta+block+Cardioselective+and+vasodilatory
+	(is-a Beta-Blockers ThirdLine_NonEncoded_VA_GL)
+	(role concrete))
+
+(defclass Nebivolol
+	(is-a Beta+block+Cardioselective+and+vasodilatory)
+	(role concrete))
+
 (defclass digoxin
 	(is-a Medications_Class CV050_Digitalis_glycosides Nephrotoxic_drugs)
 	(role concrete))
@@ -1152,7 +1156,7 @@
 	(role concrete))
 
 (defclass BIGUANIDE
-	(is-a Oral_Hypoglycemic_Agent Nephrotoxic_drugs)
+	(is-a Oral_Hypoglycemic_Agent Nephrotoxic_drugs Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass METFORMIN
@@ -1208,7 +1212,7 @@
 	(role concrete))
 
 (defclass Saxagliptin
-	(is-a DIPEPTIDYL_PEPTIDASE-4_INHIBITOR)
+	(is-a DIPEPTIDYL_PEPTIDASE-4_INHIBITOR Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass Linagliptin
@@ -1492,7 +1496,7 @@
 	(role concrete))
 
 (defclass THIAZOLIDINEDIONES
-	(is-a Oral_Hypoglycemic_Agent Harmful_to_HF)
+	(is-a Oral_Hypoglycemic_Agent Harmful_to_HF Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass ROSIGLITAZONE
@@ -3575,6 +3579,10 @@
 	(is-a CCS-6 HTN_in_Scope_Dx)
 	(role concrete))
 
+(defclass Bradycardia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
 (defclass Unknown_Race
 	(is-a Race)
 	(role concrete))
@@ -4255,6 +4263,14 @@
 	(is-a Blood_Chemistry)
 	(role abstract))
 
+(defclass Bicarbonate_alt1
+	(is-a Bicarbonate)
+	(role concrete))
+
+(defclass Bicarbonate_alt2
+	(is-a Bicarbonate)
+	(role concrete))
+
 (defclass BUN
 	(is-a Blood_Chemistry)
 	(role abstract))
@@ -4528,6 +4544,14 @@
 	(role concrete))
 
 (defclass primary+care+provider
+	(is-a Role)
+	(role concrete))
+
+(defclass specialist
+	(is-a Role)
+	(role concrete))
+
+(defclass hypertension+specialist
 	(is-a Role)
 	(role concrete))
 

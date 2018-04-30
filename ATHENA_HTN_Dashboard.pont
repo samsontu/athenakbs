@@ -1,4 +1,4 @@
-; Thu Feb 15 16:12:42 PST 2018
+; Tue Mar 20 15:07:42 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -101,15 +101,15 @@
 ;+		(allowed-classes %3ATHING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(multislot perform
-		(type INSTANCE)
-;+		(allowed-classes)
-		(create-accessor read-write))
 	(single-slot second_object_slot_pointer
 ;+		(comment "Used for diagrams. This contains a slot . The system automatically inserts the fist_object as the slot value of this slot at the second_object.\n\nImplicit in here is the restriction that this slot must be an own slot of the second_object (and must take instance values)\n")
 		(type INSTANCE)
 ;+		(allowed-classes %3ASTANDARD-SLOT)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot perform
+		(type INSTANCE)
+;+		(allowed-classes)
 		(create-accessor read-write))
 	(single-slot qualifying_slot
 		(type INSTANCE)
@@ -4894,14 +4894,14 @@
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot primary_subsuming_class_key
-		(type INSTANCE)
-;+		(allowed-classes %3ASLOT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot qualifying_object_type
 		(type SYMBOL)
 ;+		(allowed-parents %3ATHING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot primary_subsuming_class_key
+		(type INSTANCE)
+;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot presence_of_qualifying_object
@@ -4929,16 +4929,16 @@
 		(default FALSE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot domain_term
-;+		(comment "A domain concept represented as a term in a controlled vocabulary")
-		(type SYMBOL)
-;+		(allowed-parents Medical_Domain_Class)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot filter
 ;+		(comment "This is an obsolete slot. It is here for sake of backward compability with ATHENA HTN")
 		(type INSTANCE)
 ;+		(allowed-classes Filter)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot domain_term
+;+		(comment "A domain concept represented as a term in a controlled vocabulary")
+		(type SYMBOL)
+;+		(allowed-parents Medical_Domain_Class)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 

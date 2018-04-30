@@ -1,4 +1,4 @@
-; Tue Feb 20 12:45:36 PST 2018
+; Mon Apr 09 13:58:43 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -333,6 +333,14 @@
 	(role concrete))
 
 (defclass ADR+anaphylaxis+to+SGLT2+inhibitor
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass bicarb+lt+24+or+22+or+23+past+year
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Absence+all+bicarb+labs+past+year
 	(is-a Defined+concept)
 	(role concrete))
 
