@@ -13,7 +13,7 @@
 	(controllable TRUE)
 	(DiagnosticCriteria [Lipid_dashboard_Class270030]))
 
-([Absence+of+SGOT+and+SGPT+in+past+year] of  Diagnostic_Term_Metaclass
+([Absence+of+AST+and+ALT+in+past+year] of  Diagnostic_Term_Metaclass
 
 	(controllable TRUE)
 	(DiagnosticCriteria [Lipid_dashboard_Class270031]))
@@ -1814,8 +1814,8 @@
 
 	(Absolute_Contraindications
 		CK%3E3*ULN
-		SGOT%3E3*ULN
-		SGPT%3E3*ULN
+		AST%3E3*ULN
+		ALT%3E3*ULN
 		myalgia+as+ADR+to+statins
 		rhabdomyolysis+as+ADR+to+statins
 		anaphylaxis+as+ADR+to+statins)
@@ -1838,7 +1838,7 @@
 		Presence+niacin+greater+than+1+gram+per+day
 		Presence_of_fibric_acids)
 	(Do_Not_Start_Conditions
-		Absence+of+SGOT+and+SGPT+in+past+year
+		Absence+of+AST+and+ALT+in+past+year
 		Absence+of+eGFR+in+past+3+months
 		Presence+niacin+greater+than+1+gram+per+day
 		Presence_of_fibric_acids
@@ -2265,8 +2265,8 @@
 
 	(Absolute_Contraindications
 		CK%3E3*ULN
-		SGOT%3E3*ULN
-		SGPT%3E3*ULN
+		AST%3E3*ULN
+		ALT%3E3*ULN
 		myalgia+as+ADR+to+statins
 		rhabdomyolysis+as+ADR+to+statins
 		anaphylaxis+as+ADR+to+statins)
@@ -2289,7 +2289,7 @@
 		Presence_of_fibric_acids)
 	(Do_Not_Start_Conditions
 		Absence+of+eGFR+in+past+3+months
-		Absence+of+SGOT+and+SGPT+in+past+year
+		Absence+of+AST+and+ALT+in+past+year
 		Presence+niacin+greater+than+1+gram+per+day
 		Presence_of_fibric_acids)
 	(Drug_Class_Name Moderate_Intensity_Statins)
@@ -2741,8 +2741,8 @@
 
 	(aggregation_operator most_recent)
 	(entry_type Numeric_Entry)
-	(label "SGOT>123")
-	(numeric_domain_term SGOT)
+	(label "AST>123")
+	(numeric_domain_term AST)
 	(operator %3E)
 	(status "active")
 	(value 123.0))
@@ -2750,8 +2750,8 @@
 ([Lipid_dashboard_Class270015] of  Numeric_Term_Criterion
 
 	(entry_type Numeric_Entry)
-	(label "SGPT>135")
-	(numeric_domain_term SGPT)
+	(label "ALT>135")
+	(numeric_domain_term ALT)
 	(operator %3E)
 	(status "active")
 	(value 135.0))
@@ -2800,18 +2800,18 @@
 
 ([Lipid_dashboard_Class270026] of  Presence_Criterion
 
-	(domain_term SGOT)
+	(domain_term AST)
 	(entry_type Numeric_Entry)
-	(label "Absence of SGOT in past year")
+	(label "Absence of AST in past year")
 	(period [ATHENA_DM_Eye_Instance_30019])
 	(presence FALSE)
 	(status "active"))
 
 ([Lipid_dashboard_Class270027] of  Presence_Criterion
 
-	(domain_term SGPT)
+	(domain_term ALT)
 	(entry_type Numeric_Entry)
-	(label "Absence of SGPT in past year")
+	(label "Absence of ALT in past year")
 	(period [ATHENA_DM_Eye_Instance_30019])
 	(presence FALSE)
 	(status "active"))
@@ -2847,7 +2847,7 @@
 	(criteria
 		[Lipid_dashboard_Class270026]
 		[Lipid_dashboard_Class270027])
-	(label "Absence of SGOT and SGPT in past year")
+	(label "Absence of AST and ALT in past year")
 	(operator AND))
 
 ([Lipid_dashboard_Class280000] of  N_ary_Criterion
@@ -3129,9 +3129,9 @@
 
 ([Lipid_dashboard_Class30002] of  Presence_Criterion
 
-	(domain_term SGPT)
+	(domain_term ALT)
 	(entry_type Numeric_Entry)
-	(label "Presence of SGPT (ALT)")
+	(label "Presence of ALT (ALT)")
 	(presence TRUE)
 	(status "active"))
 
@@ -3165,8 +3165,8 @@
 
 	(Absolute_Contraindications
 		CK%3E3*ULN
-		SGOT%3E3*ULN
-		SGPT%3E3*ULN
+		AST%3E3*ULN
+		ALT%3E3*ULN
 		myalgia+as+ADR+to+statins
 		rhabdomyolysis+as+ADR+to+statins
 		anaphylaxis+as+ADR+to+statins)
@@ -3236,8 +3236,8 @@
 
 	(Absolute_Contraindications
 		CK%3E3*ULN
-		SGOT%3E3*ULN
-		SGPT%3E3*ULN
+		AST%3E3*ULN
+		ALT%3E3*ULN
 		myalgia+as+ADR+to+statins
 		rhabdomyolysis+as+ADR+to+statins
 		anaphylaxis+as+ADR+to+statins)
@@ -3975,8 +3975,8 @@
 
 ([Lipid_dashboard_Class360002] of  Conditional_On_Screen_Message
 
-	(label "Blocked add statin missing SGOT/SGPT past year")
-	(message "We would normally recommend adding a statin, but we are missing SGOT and SGPT in the past year.")
+	(label "Blocked add statin missing AST/ALT past year")
+	(message "We would normally recommend adding a statin, but we are missing AST and ALT in the past year.")
 	(message_type Recommendation)
 	(rule_in_condition [Lipid_dashboard_Class460123]))
 
@@ -4026,15 +4026,15 @@
 
 ([Lipid_dashboard_Class370002] of  Order_TestProcedure
 
-	(label "order sgot is missing in past year")
+	(label "order AST is missing in past year")
 	(rule_in_condition [Lipid_dashboard_Class270026])
-	(test_or_procedure SGOT))
+	(test_or_procedure AST))
 
 ([Lipid_dashboard_Class370003] of  Order_TestProcedure
 
-	(label "order sgpt is missing in pat year")
+	(label "order ALT is missing in pat year")
 	(rule_in_condition [Lipid_dashboard_Class270027])
-	(test_or_procedure SGPT))
+	(test_or_procedure ALT))
 
 ([Lipid_dashboard_Class370004] of  Collateral_Action
 
@@ -4364,8 +4364,8 @@
 
 ([Lipid_dashboard_Class460121] of  Conditional_On_Screen_Message
 
-	(label "Blocked incr dose really add statin missing SGOT/SGPT past year")
-	(message "We would normally recommend adding a statin, but we are missing SGOT and SGPT in the past year.")
+	(label "Blocked incr dose really add statin missing AST/ALT past year")
+	(message "We would normally recommend adding a statin, but we are missing AST and ALT in the past year.")
 	(message_type Recommendation)
 	(rule_in_condition [Lipid_dashboard_Class460122]))
 
@@ -4374,7 +4374,7 @@
 	(criteria
 		[Lipid_dashboard_Class270031]
 		[Lipid_dashboard_Class80002])
-	(label "Abs SGOT/SGPT past yr and Pres statin")
+	(label "Abs AST/ALT past yr and Pres statin")
 	(operator AND))
 
 ([Lipid_dashboard_Class460123] of  N_ary_Criterion
@@ -4382,7 +4382,7 @@
 	(criteria
 		[Lipid_dashboard_Class270031]
 		[Lipid_dashboard_Class30001])
-	(label "Abs SGOT/SGPT past year and Abs statin")
+	(label "Abs AST/ALT past year and Abs statin")
 	(operator AND))
 
 ([Lipid_dashboard_Class470000] of  Guideline_Drug
@@ -5341,9 +5341,9 @@
 
 ([Lipid_dashboard_Class80064] of  Presence_Criterion
 
-	(domain_term SGPT)
+	(domain_term ALT)
 	(entry_type Numeric_Entry)
-	(label "Absence of SGPT (ALT)")
+	(label "Absence of ALT (ALT)")
 	(presence FALSE)
 	(status "active"))
 
@@ -5631,20 +5631,20 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [Lipid_dashboard_Class280031]))
 
-([SGOT%3E3*ULN] of  Diagnostic_Term_Metaclass
+([AST%3E3*ULN] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [Lipid_dashboard_Class270014])
-	(PrettyName "SGOT>3*ULN"))
+	(PrettyName "AST>3*ULN"))
 
-([SGPT%3E3*ULN] of  Diagnostic_Term_Metaclass
+([ALT%3E3*ULN] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [Lipid_dashboard_Class270015])
-	(PrettyName "SGPT>3*ULN"))
+	(PrettyName "ALT>3*ULN"))
 
-([SGPT_absent] of  Diagnostic_Term_Metaclass
+([ALT_absent] of  Diagnostic_Term_Metaclass
 
 	(controllable TRUE)
 	(DiagnosticCriteria [Lipid_dashboard_Class80064])
-	(PrettyName "Absence of SGPT (ALT)"))
+	(PrettyName "Absence of ALT (ALT)"))

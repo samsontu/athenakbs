@@ -1,4 +1,4 @@
-; Tue Mar 20 15:07:42 PDT 2018
+; Tue Apr 24 16:49:44 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -301,12 +301,12 @@
 (defclass Joined_Attribute_Query "Find instance of qualifying_object_type where value of qualifying_slot equals value of joining_slot. Then get value of attribute in that instance."
 	(is-a Expression)
 	(role concrete)
-	(single-slot qualifying_slot
+	(single-slot attribute
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot attribute
+	(single-slot qualifying_slot
 		(type INSTANCE)
 ;+		(allowed-classes %3ASLOT)
 ;+		(cardinality 0 1)
@@ -4204,6 +4204,10 @@
 	(is-a Defined+concept)
 	(role concrete))
 
+(defclass Presence+of+sacubitril
+	(is-a Defined+concept)
+	(role concrete))
+
 (defclass 493.00
 	(is-a Bronchospastic_Disease)
 	(role concrete))
@@ -4914,14 +4918,14 @@
 (defclass Presence_Message
 	(is-a On_Screen_Message)
 	(role concrete)
-	(single-slot assessed_status
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot entry_type
 		(type SYMBOL)
 ;+		(allowed-parents EPR_Entity)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot assessed_status
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot presence
 		(type SYMBOL)

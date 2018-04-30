@@ -1,4 +1,4 @@
-; Mon Apr 09 13:58:43 PDT 2018
+; Mon Apr 16 09:49:04 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -809,14 +809,14 @@
 
 	(criteria
 		[ATHENA_DM_GlycemicControl_Dashboard_Class130011]
-		[ATHENA_GlycemicControl_Class210005])
-	(label "out of scope and Pres HbA1c or GlycHem")
-	(operator AND))
+		[ATHENA_GlycemicControl_Class210039])
+	(label "out of scope or No HbA1c and GlycHem")
+	(operator OR))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130014] of  Scenario
 
 	(followed_by [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
-	(label "out of scope no recs")
+	(label "out of scope no HbA1c or Glyco past 12 mo no recs")
 	(new_encounter TRUE)
 	(precondition [ATHENA_DM_GlycemicControl_Dashboard_Class130013]))
 
@@ -825,7 +825,8 @@
 	(branches
 		[ATHENA_GlycemicControl_Class680000]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class90342]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class160000])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class160000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190228])
 	(label "out of scope choices"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130017] of  Followed_By
@@ -1000,6 +1001,14 @@
 	(label "Absence DM med rec inc and incr blocked for 3 encoded meds")
 	(operator AND))
 
+([ATHENA_DM_GlycemicControl_Dashboard_Class170000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class360003]
+		[ATHENA_GlycemicControl_Class130051])
+	(label "No Dx DM-2 but presence of DM meds")
+	(operator AND))
+
 ([ATHENA_DM_GlycemicControl_Dashboard_Class170001] of  Parameterized_Message
 
 	(label "Param msg for 3 encode meds")
@@ -1052,6 +1061,30 @@
 	(label "Absence all bicarbs")
 	(string_name "Absence all bicarbs"))
 
+([ATHENA_DM_GlycemicControl_Dashboard_Class180000] of  Presence_Criterion
+
+	(domain_term Nph_Insulin)
+	(entry_type Medication)
+	(label "Absence of NPH insulin")
+	(presence FALSE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class180002] of  Consultation_Action_Step
+
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class180003])
+	(label "No Dx DM-2 but presence of DM meds")
+	(rule_in [ATHENA_DM_GlycemicControl_Dashboard_Class170000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class180003] of  On_Screen_Message
+
+	(label "No Dx DM-2 but presence of DM meds")
+	(message "Patient dose not have a diagnosis of DM-2, but has active prescriptions of DM meds.  We have assumed that patient has DM-2.")
+	(message_type Primary_Recommendation))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class180004] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class180002]))
+
 ([ATHENA_DM_GlycemicControl_Dashboard_Class183748] of  N_ary_Criterion
 
 	(criteria [ATHENA_DM_GlycemicControl_Dashboard_Class110112])
@@ -1065,6 +1098,22 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class183748])
 	(label "not at goal and not bad TZD and gemfibrozil")
 	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class190228] of  Action_Choice
+
+	(followed_by [ATHENA_GlycemicControl_Class210040])
+	(label "Order HbA1c or GlycoHem")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Class210039]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class190232] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class190228]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class190236] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class190228])
+	(%3ATO [ATHENA_GlycemicControl_Class210040]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class2] of  Binary_Expression
 
@@ -1991,7 +2040,9 @@
 	(drug_usage [ATHENA_GlycemicControl_Class1070005])
 	(generic_drug Saxagliptin)
 	(increase_dose_ceiling 4.9)
-	(is_second-line_drug_for DM-Type2)
+	(is_second-line_drug_for
+		DM-Type2
+		No+Dx+DM-2+but+presence+of+DM+meds)
 	(label "Saxagliptin")
 	(max_recommended_dose 5.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
@@ -2406,7 +2457,9 @@
 	(drug_usage [ATHENA_GlycemicControl_Class1110002])
 	(generic_drug Empagliflozin)
 	(increase_dose_ceiling 24.9)
-	(is_second-line_drug_for DM-Type2)
+	(is_second-line_drug_for
+		DM-Type2
+		No+Dx+DM-2+but+presence+of+DM+meds)
 	(label "Empagliflozin")
 	(max_recommended_dose 25.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
@@ -3599,14 +3652,15 @@
 
 	(criteria
 		[ATHENA_DM_Eye_Instance_80028]
-		[ATHENA_GlycemicControl_Class1280000])
-	(label "Absence of insulin and insulin syringe")
+		[ATHENA_GlycemicControl_Class1280000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class180000])
+	(label "Absence of insulin and insulin syringe and nph insulin")
 	(operator AND))
 
 ([ATHENA_GlycemicControl_Class1300005] of  N_ary_Criterion
 
 	(criteria [ATHENA_GlycemicControl_Class1300004])
-	(label "Presence of insulin or insulin syringe")
+	(label "Presence of insulin or insulin syringe or nph insulin")
 	(operator NOT))
 
 ([ATHENA_GlycemicControl_Class130001] of  Scenario
@@ -5500,8 +5554,7 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class210004]
-		[ATHENA_GlycemicControl_Instance_10020]
-		[ATHENA_GlycemicControl_Class1300004])
+		[ATHENA_GlycemicControl_Instance_10020])
 	(label "No HbA1c No GlycHem in past year")
 	(operator AND))
 
@@ -9165,7 +9218,6 @@
 
 	(label "Glycemic Control Dashboard III")
 	(steps
-		[ATHENA_GlycemicControl_Class210037]
 		[ATHENA_GlycemicControl_Class210040]
 		[ATHENA_GlycemicControl_Class230000]
 		[ATHENA_GlycemicControl_Class230004]
@@ -9203,9 +9255,9 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class160323]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170298]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class160000]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class170004])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class170004]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190228])
 	(transitions
-		[ATHENA_GlycemicControl_Class530002]
 		[ATHENA_GlycemicControl_Class530003]
 		[ATHENA_GlycemicControl_Class530004]
 		[ATHENA_GlycemicControl_Class540029]
@@ -9242,7 +9294,9 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170299]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170300]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170003]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class170005]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class170005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190232]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190236]))
 
 ([ATHENA_GlycemicControl_Class530002] of  Followed_By
 
@@ -10154,7 +10208,9 @@
 		TOLAZAMIDE
 		TOLBUTAMIDE)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80004])
-	(is_second-line_drug_for DM-Type2)
+	(is_second-line_drug_for
+		DM-Type2
+		No+Dx+DM-2+but+presence+of+DM+meds)
 	(label "Glipizide")
 	(Relative_Contraindications
 		hypoglycemia
@@ -10811,13 +10867,13 @@
 		[ATHENA_GlycemicControl_Class240034]
 		[ATHENA_GlycemicControl_Class240045])
 	(label "dInsulin out of scope")
-	(strict_rule_in_condition [ATHENA_GlycemicControl_Class680001]))
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Class1300005]))
 
 ([ATHENA_GlycemicControl_Class680001] of  N_ary_Criterion
 
 	(criteria
-		[ATHENA_GlycemicControl_Class210005]
-		[ATHENA_GlycemicControl_Class1300005])
+		[ATHENA_GlycemicControl_Class1300005]
+		[ATHENA_GlycemicControl_Class460001])
 	(label "Presence of HbA1c or GlycoHem and Pres insulin")
 	(operator AND))
 
@@ -11604,7 +11660,8 @@
 		[ATHENA_GlycemicControl_Class1080000]
 		[ATHENA_GlycemicControl_Class1200000]
 		[ATHENA_GlycemicControl_Class1312626]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class80006])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class80006]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class180002])
 	(transitions
 		[ATHENA_GlycemicControl_Class790005]
 		[ATHENA_GlycemicControl_Class790006]
@@ -11624,7 +11681,8 @@
 		[ATHENA_GlycemicControl_Class1090005]
 		[ATHENA_GlycemicControl_Class1200001]
 		[ATHENA_GlycemicControl_Class1312627]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class80007]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class80007]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class180004]))
 
 ([ATHENA_GlycemicControl_Class780001] of  Numeric_Term_Criterion
 
@@ -11740,7 +11798,8 @@
 		[ATHENA_GlycemicControl_Class1080000]
 		[ATHENA_GlycemicControl_Class1200000]
 		[ATHENA_GlycemicControl_Class1312626]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class80006])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class80006]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class180002])
 	(label "dAll CDS scenarios No ACE/ARB")
 	(selection_method all_of))
 
@@ -13940,14 +13999,16 @@
 		Absence+all+bicarb+labs+past+year)
 	(Drug_Class_Name BIGUANIDE)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80009])
-	(is_first-line_drug_for DM-Type2)
+	(is_first-line_drug_for
+		DM-Type2
+		No+Dx+DM-2+but+presence+of+DM+meds)
 	(label "Biguanide")
 	(Relative_Contraindications
 		AST%3E3*UpperLimitOfNormal
 		ALT%3E3*UpperLimitOfNormal
 		Abs+Biguanide+and+45%3C%3DeGFR%3C60+past+month
 		Pres+of+Biguanide+and+45%3C%3DeGFR%3C60+past+year
-		bicarb+lt+24+or+22+or+23+past+year))
+		bicarb%3C24+in+past+year))
 
 ([ATHENA_GlycemicControl_Instance_50005] of  Evaluate_Start_Activity
 
@@ -14070,7 +14131,9 @@
 		Insulin
 		gemfibrozil)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80012])
-	(is_second-line_drug_for DM-Type2)
+	(is_second-line_drug_for
+		DM-Type2
+		No+Dx+DM-2+but+presence+of+DM+meds)
 	(label "THIAZOLIDINEDIONES")
 	(references [ATHENA_GlycemicControl_Class80024])
 	(Relative_Contraindications
@@ -14900,7 +14963,7 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1340000])
 	(label "bicarb<24 in past year")
-	(PrettyName "bicarbless than 24 in past year"))
+	(PrettyName "bicarb less than 24 in past year"))
 
 ([bicarb%3C%3D21] of  Diagnostic_Term_Metaclass
 
@@ -15420,6 +15483,12 @@
 
 ([new-onset+insulin-requiring+DM] of  Medical_Conditions_Metaclass
 )
+
+([No+Dx+DM-2+but+presence+of+DM+meds] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class170000])
+	(PrettyName "No Dx DM-2 but presence of DM meds"))
 
 ([Poor+renal+function+and+Abs+Biguanide] of  Diagnostic_Term_Metaclass
 
