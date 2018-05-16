@@ -1,4 +1,4 @@
-; Tue Apr 24 16:49:44 PDT 2018
+; Thu May 03 16:36:39 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -3937,7 +3937,8 @@
 		[ATHENA_HTN_Dashboard_Class400006]
 		[ATHENA_HTN_Dashboard_Class410011]
 		[ATHENA_HTN_Dashboard_Class470001]
-		[ATHENA_HTN_Dashboard_Class510451])
+		[ATHENA_HTN_Dashboard_Class510451]
+		[ATHENA_HTN_Dashboard_Class540005])
 	(title "VA 2014 HTN Guideline Dashboard")
 	(version "Oct 2017"))
 
@@ -4526,7 +4527,6 @@
 		Anaphylaxis+ADR+to+thiazide)
 	(additional_ADR_check
 		Sulfa_drugs_noSU
-		Thiazide_lessPreferred
 		SULFONYLUREAS)
 	(Do_Not_Intensify_Conditions
 		AbsenceSBPpastmonth
@@ -4538,10 +4538,8 @@
 		absenceKpastmonth
 		Absence+of+Na+in+past+month
 		Absence+of+uric+acid+past+year)
-	(Drug_Class_Name Thiazide_preferred)
-	(Drug_Partners_To_Avoid
-		furosemide
-		Thiazide_lessPreferred)
+	(Drug_Class_Name Thiazide_Diuretics)
+	(Drug_Partners_To_Avoid furosemide)
 	(formulary_preferred_drug_in_class
 		[ATHENA_HTN_Dashboard_Class230000]
 		[ATHENA_HTN_Dashboard_Class230001]
@@ -4550,7 +4548,7 @@
 		VA+HTN+Pres+HTN+and+Abs+CKD
 		Pres+HTN+and+CKD+and+black)
 	(is_second-line_drug_for VA+HTN+Pres+HTN+and+CKD+and+NOT+black)
-	(label "Thiazide Diuretic VA 2014 preferred")
+	(label "Thiazide Diuretic VA 2014")
 	(Relative_Contraindications
 		Gout
 		Hypoosmality_Hyponatremia
@@ -5321,17 +5319,17 @@
 
 ([ATHENA_HTN_Dashboard_Class180031] of  Presence_Criterion
 
-	(domain_term Thiazide_preferred)
+	(domain_term Thiazide_Diuretics)
 	(entry_type Medication)
-	(label "Abs thiazide preferred rec add")
+	(label "Abs thiazide  rec add")
 	(mood Recommend_Add)
 	(presence FALSE))
 
 ([ATHENA_HTN_Dashboard_Class180032] of  Presence_Criterion
 
-	(domain_term Thiazide_preferred)
+	(domain_term Thiazide_Diuretics)
 	(entry_type Medication)
-	(label "Abs thiazide preferred rec blocked")
+	(label "Abs thiazide rec blocked")
 	(mood Blocked_Add)
 	(presence FALSE))
 
@@ -6442,51 +6440,6 @@
 		[ATHENA_HTN_Dashboard_Class240013]
 		[ATHENA_HTN_Dashboard_Class250176]))
 
-([ATHENA_HTN_Dashboard_Class251450] of  Drug_Usage
-
-	(Absolute_Contraindications
-		Na+%3C%3D+130+past+month
-		Gout_Complicated
-		K%3C%3D3+past+month+%26+Pres+thiazide
-		K%3C3.5+past+month+and+Abs+thiazide
-		On+Lithium
-		Anaphylaxis+ADR+to+thiazide)
-	(additional_ADR_check
-		Sulfa_drugs_noSU
-		Thiazide_preferred
-		SULFONYLUREAS)
-	(Do_Not_Intensify_Conditions
-		AbsenceSBPpastmonth
-		absenceKpastmonth
-		Absence+of+Na+in+past+month
-		Absence+of+uric+acid+past+year)
-	(Do_Not_Start_Conditions
-		AbsenceSBPpastmonth
-		absenceKpastmonth
-		Absence+of+Na+in+past+month
-		Absence+of+uric+acid+past+year)
-	(Drug_Class_Name Thiazide_lessPreferred)
-	(Drug_Partners_To_Avoid
-		furosemide
-		Thiazide_preferred)
-	(formulary_preferred_drug_in_class [athena_runtime_INSTANCE_00118])
-	(is_first-line_drug_for
-		VA+HTN+Pres+HTN+and+Abs+CKD
-		Pres+HTN+and+CKD+and+black)
-	(is_second-line_drug_for VA+HTN+Pres+HTN+and+CKD+and+NOT+black)
-	(label "Thiazide Diuretic VA 2014 less preferred")
-	(Relative_Contraindications
-		Gout
-		Hypoosmality_Hyponatremia
-		130%3CNa%3C135+past+month
-		uric+acid+%3E6.8+past+year
-		3%3CK%3C3.5+past+month+and+Pres+thiazide
-		Allergy_to_sulfonamides
-		K%3C3.5+ever
-		Na+le+130+ever
-		Hyperuricemia)
-	(Relative_Indications Osteoporosis))
-
 ([ATHENA_HTN_Dashboard_Class260000] of  Variable
 
 	(derivation_expression [ATHENA_HTN_Dashboard_Class250003])
@@ -6703,19 +6656,6 @@
 	(activity_to_stop [ATHENA_HTN_Dashboard_Class210028])
 	(domain_term hydrochlorothiazide)
 	(label "Evaluate stop HCTZ at max dose"))
-
-([ATHENA_HTN_Dashboard_Class285235] of  Structured_Query
-
-	(label "WORK Drug class name of thiazide less preferred")
-	(type Medication)
-	(where_restriction [ATHENA_HTN_Dashboard_Class285236]))
-
-([ATHENA_HTN_Dashboard_Class285236] of  Comparison_Filter
-
-	(attribute [Drug_Class_Name])
-	(label "Drug class name is thiazide less preferred")
-	(operator eq)
-	(value_expression [Thiazide_lessPreferred]))
 
 ([ATHENA_HTN_Dashboard_Class286531] of  Variable
 
@@ -7575,26 +7515,18 @@
 ([ATHENA_HTN_Dashboard_Class370002] of  Structured_Query
 
 	(attribute [Drug_Class_Name])
-	(label "drug class name is contraindicated thiazide preferred or less preferred")
+	(label "drug class name is contraindicated thiazide preferred")
 	(type Drug_Usage)
 	(where_restriction
 		[eon2_Class60001]
-		[ATHENA_HTN_Dashboard_Class370003]))
-
-([ATHENA_HTN_Dashboard_Class370003] of  N_aryFilter
-
-	(filters
-		[ATHENA_HTN_Dashboard_Class285236]
-		[ATHENA_HTN_Dashboard_Class370004])
-	(label "drug class name is thiazide or thiazide less preferred")
-	(operator OR))
+		[ATHENA_HTN_Dashboard_Class370004]))
 
 ([ATHENA_HTN_Dashboard_Class370004] of  Comparison_Filter
 
 	(attribute [Drug_Class_Name])
-	(label "drug class name is thiazide preferred")
+	(label "drug class name is thiazide")
 	(operator eq)
-	(value_expression [Thiazide_preferred]))
+	(value_expression [Thiazide_Diuretics]))
 
 ([ATHENA_HTN_Dashboard_Class370005] of  Variable
 
@@ -9695,6 +9627,45 @@
 	(label "Pres of multiple meds or bad drug partner AND Pres contra OR not multiple med same drug class and bad drug partner")
 	(operator OR))
 
+([ATHENA_HTN_Dashboard_Class540000] of  N_ary_Criterion
+
+	(criteria [ATHENA_HTN_Dashboard_Class540001])
+	(label "not HTN GL drug")
+	(operator NOT))
+
+([ATHENA_HTN_Dashboard_Class540001] of  Query_Result_Criterion
+
+	(label "Guideline Drugs of HTN guideline")
+	(presence TRUE)
+	(query [ATHENA_HTN_Dashboard_Class240003]))
+
+([ATHENA_HTN_Dashboard_Class540002] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug name is 1st2nd3rdLine encoded Non GL drug")
+	(type Medication)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class420036]
+		[ATHENA_HTN_Dashboard_Class540003]))
+
+([ATHENA_HTN_Dashboard_Class540003] of  N_aryFilter
+
+	(filters [ATHENA_HTN_Dashboard_Class551068])
+	(label "not drug name member of HTN GL drug")
+	(operator NOT))
+
+([ATHENA_HTN_Dashboard_Class540004] of  Comparison_Filter
+
+	(label "Guideline drug member of HTN GL")
+	(operator member_of)
+	(value_expression [ATHENA_HTN_Dashboard_Class240003]))
+
+([ATHENA_HTN_Dashboard_Class540005] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class540002])
+	(label "?1st2nd3rdLineNoDose")
+	(string_name "?1st2nd3rdLineNoDose"))
+
 ([ATHENA_HTN_Dashboard_Class540702] of  Evaluate_Start_Activity
 
 	(activity_class "Medication")
@@ -9727,6 +9698,20 @@
 		[ATHENA_HTN_Dashboard_Class541845])
 	(label "count thiazide=1 and abs furosemide")
 	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class550000] of  Structured_Query
+
+	(attribute [generic_drug])
+	(label "Generic drugs of Guideline Drug member of HTN GL")
+	(type Guideline_Drug)
+	(where_restriction [ATHENA_HTN_Dashboard_Class540004]))
+
+([ATHENA_HTN_Dashboard_Class551068] of  Comparison_Filter
+
+	(attribute [drug_name])
+	(label "Guideline drug name is member of HTN GL")
+	(operator member_of)
+	(value_expression [ATHENA_HTN_Dashboard_Class550000]))
 
 ([ATHENA_HTN_Dashboard_Class60000] of  On_Screen_Message
 
@@ -21448,8 +21433,8 @@
 ([athena_hypertension_INSTANCE_00013] of  Drug_Usage
 
 	(Absolute_Contraindications
-		Sodium_Very_Low%28%3C%3D130%29+most+recent
 		Gout_Complicated
+		Sodium_Very_Low%28%3C%3D130%29+most+recent
 		Using+HCTZ%2C+K%3C%3D3.0+most+recent
 		K%3C3.5+%28most+recent%29+NOT+ON+HCTZ
 		On+Lithium)
@@ -25779,8 +25764,8 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class160003])
-	(label "Na %le 130 past month")
-	(PrettyName "Na &le 130 past month"))
+	(label "Na &le; 130 past month")
+	(PrettyName "Na &le; 130 past month"))
 
 ([Na+le+130+ever] of  Diagnostic_Term_Metaclass
 

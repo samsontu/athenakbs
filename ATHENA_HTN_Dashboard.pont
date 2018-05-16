@@ -1,4 +1,4 @@
-; Tue Apr 24 16:49:44 PDT 2018
+; Thu May 03 16:36:38 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -5011,3 +5011,11 @@
 (defclass Temporal_Granularity_Change
 	(is-a Athenaeum_Mapping_Operation)
 	(role abstract))
+
+(defclass %3AUNDEFINED
+	(is-a USER)
+	(role concrete))
+
+(defclass Sacubitril
+	(is-a %3AUNDEFINED)
+	(role concrete))
