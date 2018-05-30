@@ -1,7 +1,7 @@
-; Tue Jan 16 13:02:59 PST 2018
+; Tue May 29 15:00:02 PDT 2018
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 ([Age] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -107,8 +107,20 @@
 ([Diagnostic_Procedures_Class] of  Canonical_Terms_Metaclass
 )
 
+([do_not_add_controllable_condition] of  Canonical_Terms_Metaclass
+
+	(PrettyName "do not add controllable condition"))
+
+([do_not_intensify_controllable_condition] of  Canonical_Terms_Metaclass
+
+	(PrettyName "do not intensify controllable condition"))
+
 ([Drug_Medical_Condition_Relation] of  Canonical_Terms_Metaclass
 )
+
+([Drug_Related] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Drug Related"))
 
 ([Drug_Relation] of  Canonical_Terms_Metaclass
 )
@@ -140,6 +152,10 @@
 
 ([Follow_Up] of  Canonical_Terms_Metaclass
 )
+
+([General_Info] of  Canonical_Terms_Metaclass
+
+	(PrettyName "General Info"))
 
 ([grams] of  Canonical_Terms_Metaclass
 
@@ -230,6 +246,10 @@
 	(%3APAL-NAME "Most recent creatinine")
 	(%3APAL-RANGE "(defrange ?creat :FRAME Numeric_Entry)\n(defrange ?creat2 :FRAME Numeric_Entry)")
 	(%3APAL-STATEMENT "(findall ?creat (and (= (domain_term ?creat) \"foo\")\n                     (not (exists ?creat2 \n                                  (and (= (domain_term ?creat2) \"foo\")\n                                       (> (system_time (valid_time ?creat2))\n                                          (system_time (valid_time ?creat)))))))\n)"))
+
+([Out_of_Scope] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Out of Scope"))
 
 ([Outpatient_Encounter] of  Canonical_Terms_Metaclass
 )

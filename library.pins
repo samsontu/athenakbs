@@ -1,4 +1,4 @@
-; Mon Apr 02 10:14:04 PDT 2018
+; Mon Apr 30 13:41:14 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6047,6 +6047,11 @@
 
 	(PrettyName "Nephrotoxic Drugs"))
 
+([NeprilysinInhibitors] of  Medications_Metaclass
+
+	(label "Neprilysin Inhibitors")
+	(PrettyName "Neprilysin Inhibitors"))
+
 ([nicardipine] of  Medications_Metaclass
 
 	(data_source VISTA_data_element)
@@ -6816,6 +6821,11 @@
 
 	(PrettyName "Rosuvastatin"))
 
+([Sacubitril] of  Medications_Metaclass
+
+	(label "Sacubitril")
+	(PrettyName "Sacubitril"))
+
 ([saquinavir] of  Medications_Metaclass
 
 	(PrettyName "Saquinavir"))
@@ -7066,14 +7076,6 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Thiazide diuretics"))
-
-([Thiazide_lessPreferred] of  Medications_Metaclass
-
-	(PrettyName "Thiazide less preferred"))
-
-([Thiazide_preferred] of  Medications_Metaclass
-
-	(PrettyName "Thiazide preferred"))
 
 ([THIAZOLIDINEDIONES] of  Medications_Metaclass
 

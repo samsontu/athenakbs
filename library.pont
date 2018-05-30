@@ -1,4 +1,4 @@
-; Mon Apr 02 10:14:04 PDT 2018
+; Mon Apr 30 13:41:14 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -211,6 +211,14 @@
 	(is-a Antihypertensive_Agents)
 	(role abstract))
 
+(defclass NeprilysinInhibitors
+	(is-a Antihypertensive_Agents)
+	(role concrete))
+
+(defclass Sacubitril
+	(is-a NeprilysinInhibitors)
+	(role concrete))
+
 (defclass Non-Cardiac_Drugs
 	(is-a Anti-Hypertensive_Drugs_Inclusive)
 	(role concrete))
@@ -235,10 +243,6 @@
 	(is-a Antihypertensive_Agents JNC8_antihypertensives)
 	(role concrete))
 
-(defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
-	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives)
-	(role concrete))
-
 (defclass FirstSecondLineDrugs_VA_GL
 	(is-a Anti-Hypertensive_Drugs_Inclusive)
 	(role concrete))
@@ -259,12 +263,8 @@
 	(is-a Dihydropyridines)
 	(role concrete))
 
-(defclass Thiazide_preferred
-	(is-a FirstSecondLineDrugs_VA_GL)
-	(role concrete))
-
-(defclass Thiazide_lessPreferred
-	(is-a FirstSecondLineDrugs_VA_GL)
+(defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
+	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
 	(role concrete))
 
 (defclass ThirdLineDrugs_VA_GL
@@ -1652,7 +1652,7 @@
 	(role concrete))
 
 (defclass chlorthalidone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_preferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass furosemide "short duration of action.  no hypercalcemia"
@@ -1660,7 +1660,7 @@
 	(role concrete))
 
 (defclass hydrochlorothiazide "HCTZ"
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass Acetazolamide
@@ -1696,51 +1696,51 @@
 	(role concrete))
 
 (defclass bendroflumethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass bendroflumethiazide_SA
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass benzthiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass chlorothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass cyclothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass hydroflumethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass indapamide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_preferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass methyclothiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass metolazone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass polythiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass quinethazone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass trichlormethiazide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU Thiazide_lessPreferred)
+	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
 	(role concrete))
 
 (defclass Autonomic_Agents_Other_AU900
