@@ -1,7 +1,7 @@
-; Tue Mar 20 15:30:52 PDT 2018
+; Sat Jun 02 10:32:19 PDT 2018
 ; 
 ;+ (version "3.5")
-;+ (build "Build 660")
+;+ (build "Build 663")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -225,6 +225,10 @@
 		(type INSTANCE)
 ;+		(allowed-classes Criterion)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot Do_Not_Decrease_Dose_Conditions
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
 	(single-slot UpperValidAgeLimit
 		(type INTEGER)
@@ -2075,6 +2079,10 @@
 		(create-accessor read-write))
 	(multislot Do_Not_Start_Conditions
 ;+		(comment "A list of conditions such that, if any is true, overrides the preferred status of a drug to add.")
+		(type SYMBOL)
+;+		(allowed-parents Diagnostic_Class)
+		(create-accessor read-write))
+	(multislot Do_Not_Decrease_Dose_Conditions
 		(type SYMBOL)
 ;+		(allowed-parents Diagnostic_Class)
 		(create-accessor read-write))
