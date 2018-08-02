@@ -1,0 +1,1897 @@
+; Sat Nov 11 01:11:42 PST 2017
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([ANNOTATED_INSTANCE_WIDGET] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([ANNOTATION_TEXT_WIDGET] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_Advisory_ProjectKB_Class10004] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ATHENA_Advisory_ProjectKB_Class10005] of  String
+
+	(name "Guideline_Goal")
+	(string_value "case_id{+}guideline_id{+}goal"))
+
+([ATHENA_Advisory_ProjectKB_Class10006] of  String
+
+	(name ":RULE")
+	(string_value "%3ADEFINITION-NAME"))
+
+([ATHENA_Advisory_ProjectKB_Class10007] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([ATHENA_Advisory_ProjectKB_Class10008] of  String
+
+	(name "Conclusion")
+	(string_value "case_id{+}guideline_id{+}parameter"))
+
+([ATHENA_Advisory_ProjectKB_Class10009] of  String
+
+	(name ":FUNCTION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([ATHENA_Advisory_ProjectKB_Class10010] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([ATHENA_Advisory_ProjectKB_Class10011] of  String
+
+	(name ":JESS-DEFINITION")
+	(string_value "%3ADEFINITION-NAME"))
+
+([ATHENA_Advisory_ProjectKB_Class10012] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([ATHENA_Advisory_ProjectKB_Class10013] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([ATHENA_Advisory_ProjectKB_Class10014] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([ATHENA_Advisory_ProjectKB_Class10111] of  Integer
+
+	(integer_value 456)
+	(name "PAL_TAB_DIVIDER_LOCATION"))
+
+([ATHENA_Advisory_ProjectKB_Class10112] of  Integer
+
+	(integer_value 322)
+	(name "CONSTRAINT_CONTROL_PANEL_TOP_DIVIDER_LOCATION"))
+
+([ATHENA_Advisory_ProjectKB_Class10113] of  Integer
+
+	(integer_value 322)
+	(name "CONSTRAINT_CONTROL_PANEL_BOTTOM_DIVIDER_LOCATION"))
+
+([ATHENA_Advisory_ProjectKB_Class10114] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_Advisory_ProjectKB_Class10115] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class10116] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class10117] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class10118] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class15] of  Widget
+
+	(is_hidden FALSE)
+	(name "Message")
+	(property_list [ATHENA_Advisory_ProjectKB_Class16])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([ATHENA_Advisory_ProjectKB_Class16] of  Property_List
+
+	(properties
+		[ATHENA_Advisory_ProjectKB_Class17]
+		[ATHENA_Advisory_ProjectKB_Class18]
+		[ATHENA_Advisory_ProjectKB_Class20]
+		[ATHENA_Advisory_ProjectKB_Class22]
+		[ATHENA_Advisory_ProjectKB_Class24]
+		[ATHENA_Advisory_ProjectKB_Class26]
+		[ATHENA_Advisory_ProjectKB_Class28]
+		[ATHENA_Advisory_ProjectKB_Class30]
+		[ATHENA_Advisory_ProjectKB_Class32]
+		[ATHENA_Advisory_ProjectKB_Class34]
+		[ATHENA_Advisory_ProjectKB_Class36]
+		[ATHENA_Advisory_ProjectKB_Class38]
+		[ATHENA_Advisory_ProjectKB_Class40]
+		[ATHENA_Advisory_ProjectKB_Class42]))
+
+([ATHENA_Advisory_ProjectKB_Class17] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_Advisory_ProjectKB_Class18] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "fine_grain_priority")
+	(property_list [ATHENA_Advisory_ProjectKB_Class19])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 400)
+	(y 0))
+
+([ATHENA_Advisory_ProjectKB_Class19] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class20] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "kb_instance_id")
+	(property_list [ATHENA_Advisory_ProjectKB_Class21])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([ATHENA_Advisory_ProjectKB_Class21] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class22] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "level_of_evidence")
+	(property_list [ATHENA_Advisory_ProjectKB_Class23])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ATHENA_Advisory_ProjectKB_Class23] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class24] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "message_type")
+	(property_list [ATHENA_Advisory_ProjectKB_Class25])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([ATHENA_Advisory_ProjectKB_Class25] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class26] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "case_id")
+	(property_list [ATHENA_Advisory_ProjectKB_Class27])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([ATHENA_Advisory_ProjectKB_Class27] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class28] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "action_class")
+	(property_list [ATHENA_Advisory_ProjectKB_Class29])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 60))
+
+([ATHENA_Advisory_ProjectKB_Class29] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class30] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "guideline_id")
+	(property_list [ATHENA_Advisory_ProjectKB_Class31])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([ATHENA_Advisory_ProjectKB_Class31] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class32] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in_criteria")
+	(property_list [ATHENA_Advisory_ProjectKB_Class33])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([ATHENA_Advisory_ProjectKB_Class33] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class34] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strength_of_recommendation")
+	(property_list [ATHENA_Advisory_ProjectKB_Class35])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 200)
+	(y 240))
+
+([ATHENA_Advisory_ProjectKB_Class35] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class36] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "subsidiary_messages")
+	(property_list [ATHENA_Advisory_ProjectKB_Class37])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([ATHENA_Advisory_ProjectKB_Class37] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class38] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "label")
+	(property_list [ATHENA_Advisory_ProjectKB_Class39])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([ATHENA_Advisory_ProjectKB_Class39] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class4] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_Advisory_ProjectKB_Class5])
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+
+([ATHENA_Advisory_ProjectKB_Class40] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "reference")
+	(property_list [ATHENA_Advisory_ProjectKB_Class41])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 400)
+	(y 60))
+
+([ATHENA_Advisory_ProjectKB_Class41] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class42] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "message")
+	(property_list [ATHENA_Advisory_ProjectKB_Class43])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([ATHENA_Advisory_ProjectKB_Class43] of  Property_List
+)
+
+([ATHENA_Advisory_ProjectKB_Class5] of  Property_List
+)
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[ATHENA_Advisory_ProjectKB_Class10004]
+		[ATHENA_Advisory_ProjectKB_Class10005]
+		[ATHENA_Advisory_ProjectKB_Class10006]
+		[ATHENA_Advisory_ProjectKB_Class10007]
+		[ATHENA_Advisory_ProjectKB_Class10008]
+		[ATHENA_Advisory_ProjectKB_Class10009]
+		[ATHENA_Advisory_ProjectKB_Class10010]
+		[ATHENA_Advisory_ProjectKB_Class10011]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([CREATION_TIMESTAMP_WIDGET] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([CREATOR_WIDGET] of  Widget
+
+	(name ":CREATOR"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class1] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class2])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10107] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Startup expression")
+	(name ":STARTUP-EXPRESSION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10108])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10108] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10109] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-RULE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10120])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10120] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10121]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10122]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10124]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10126]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10128]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10121] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10122] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10123])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10123] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10124] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10125])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10125] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10126] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10127])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10127] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10128] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10129])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10129] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10130] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-FUNCTION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10141])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10141] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10142]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10143]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10145]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10147]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10149]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10142] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10143] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10144])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10144] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10145] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10146])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10146] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10147] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10148])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10148] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10149] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10150])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10150] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10151] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFGLOBAL")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10160])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10160] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10161]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10162]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10164]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10166]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10161] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10162] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10163])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10163] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10164] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10165])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10165] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10166] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10167])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10167] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10168] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFTEMPLATE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10179])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10179] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10180]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10181]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10183]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10185]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10187]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10180] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10181] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10182])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10182] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10183] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10184])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10184] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10185] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10186])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10186] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10187] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10188])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10188] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10189] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFFACTS")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10200])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10200] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10201]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10202]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10204]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10206]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10208]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10201] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10202] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10203])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10203] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10204] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10205])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10205] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10206] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10207])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10207] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10208] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10209])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10209] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10210] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMESSAGE-HANDLER")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10221])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10221] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10222]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10223]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10225]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10227]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10229]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10222] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10223] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10224])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10224] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10225] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10226])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10226] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10227] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10228])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10228] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10229] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10230])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10230] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10231] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-DEFMETHOD")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10242])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10242] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10243]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10244]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10246]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10248]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10250]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10243] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10244] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10245])
+	(widget_class_name "se.liu.ida.JessTab.JessDocumentationWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10245] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10246] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":DEFINITION-NAME")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10247])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10247] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10248] of  Widget
+
+	(height 30)
+	(is_hidden FALSE)
+	(label "Save definition in knowledge base")
+	(name ":KB-SAVE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10249])
+	(widget_class_name "edu.stanford.smi.protege.widget.CheckBoxWidget")
+	(width 250)
+	(x 0)
+	(y 380))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10249] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10250] of  Widget
+
+	(height 250)
+	(is_hidden FALSE)
+	(label "Jess definition")
+	(name ":DEFINITION")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10251])
+	(widget_class_name "se.liu.ida.JessTab.JessDefinitionWidget")
+	(width 450)
+	(x 0)
+	(y 120))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class10251] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class103] of  Property_List
+
+	(properties
+		[GLINDAAdvisoryInteractions_ProjectKB_Class104]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class105]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10107]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class104] of  Property_List
+
+	(name "layout properties"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class105] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Startup file name")
+	(name ":STARTUP-FILE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class106])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class106] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class107] of  String
+
+	(name "SearchTab_Query"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class11] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class12])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class12] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class13] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class14])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class14] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class15] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class16])
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class16] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class17] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class18])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class18] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class2] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class22])
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class22] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class23] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class24])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class24] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class27] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class28])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class28] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class29] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class30])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class3] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class4])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class30] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class31] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class32])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class32] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class33] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class34])
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class34] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class36])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class36] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class37] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class38])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class38] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class39] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class40])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class4] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class40] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class41] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class42])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class42] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class43] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class44])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class44] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class45] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class46])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class46] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class47] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class48])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class48] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class49] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class50])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class5] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class6])
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class50] of  Property_List
+
+	(properties
+		[ATHENA_Advisory_ProjectKB_Class10111]
+		[ATHENA_Advisory_ProjectKB_Class10112]
+		[ATHENA_Advisory_ProjectKB_Class10113]))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class53] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class54])
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class54] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class57] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class58])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class58] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class59] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class60])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.individuals.OWLIndividualsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class6] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class60] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class61] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class62])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class62] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class63] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class64])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class64] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class65] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class66])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class66] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class67] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class68])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class68] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class69] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class70])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class7] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class8])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class70] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class71] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class72])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class72] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class73] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class74])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class74] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class75] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class76])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class76] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class77] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class78])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class78] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class79] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class80])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class8] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class80] of  Property_List
+)
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class9] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class10])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([GLINDAAdvisoryInteractions_ProjectKB_Class96] of  Widget
+
+	(is_hidden FALSE)
+	(name ":JESS-ENGINE")
+	(property_list [GLINDAAdvisoryInteractions_ProjectKB_Class103])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [INSTANCE_ANNOTATION_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCE_ANNOTATION_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[ANNOTATED_INSTANCE_WIDGET]
+		[CREATOR_WIDGET]
+		[CREATION_TIMESTAMP_WIDGET]
+		[ANNOTATION_TEXT_WIDGET]))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_268755_Class3] of  Map
+)
+
+([KB_662116_Class0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_662116_Class1] of  Map
+
+	(entries
+		[ATHENA_Advisory_ProjectKB_Class10012]
+		[ATHENA_Advisory_ProjectKB_Class10013]
+		[ATHENA_Advisory_ProjectKB_Class10014]))
+
+([KB_662116_Class100] of  Property_List
+)
+
+([KB_662116_Class101] of  Property_List
+)
+
+([KB_662116_Class102] of  Property_List
+)
+
+([KB_662116_Class103] of  Property_List
+)
+
+([KB_662116_Class104] of  Property_List
+
+	(properties [GLINDAAdvisoryInteractions_ProjectKB_Class107]))
+
+([KB_662116_Class105] of  String
+
+	(name "classes_file_name")
+	(string_value "ATHENA_Advisory.pont"))
+
+([KB_662116_Class106] of  String
+
+	(name "instances_file_name")
+	(string_value "ATHENA_Advisory.pins"))
+
+([KB_662116_Class83] of  Property_List
+
+	(properties
+		[KB_662116_Class84]
+		[KB_662116_Class85]))
+
+([KB_662116_Class84] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_662116_Class85] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_662116_Class86] of  Property_List
+)
+
+([KB_662116_Class87] of  Property_List
+)
+
+([KB_662116_Class88] of  Property_List
+
+	(properties
+		[KB_662116_Class89]
+		[KB_662116_Class90]))
+
+([KB_662116_Class89] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([KB_662116_Class90] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([KB_662116_Class91] of  Property_List
+)
+
+([KB_662116_Class92] of  Property_List
+
+	(name "layout properties"))
+
+([KB_662116_Class93] of  Property_List
+)
+
+([KB_662116_Class94] of  Property_List
+)
+
+([KB_662116_Class95] of  Property_List
+)
+
+([KB_662116_Class96] of  Property_List
+)
+
+([KB_662116_Class97] of  Property_List
+)
+
+([KB_662116_Class98] of  Property_List
+)
+
+([KB_662116_Class99] of  Property_List
+)
+
+([LAYOUT_PROPERTIES] of  Property_List
+
+	(name "layout properties")
+	(properties [VERTICAL_STRETCHER]))
+
+([option_instance] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([PAL_DESCRIPTION_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_Advisory_ProjectKB_Class10116])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [PAL_PROPERTY_LIST])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PAL_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(property_list [ATHENA_Advisory_ProjectKB_Class10115])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([PAL_PROPERTY_LIST] of  Property_List
+
+	(properties
+		[PAL_NAME_WIDGET]
+		[PAL_RANGE_WIDGET]
+		[PAL_DESCRIPTION_WIDGET]
+		[PAL_STATEMENT_WIDGET]
+		[ATHENA_Advisory_ProjectKB_Class10114]))
+
+([PAL_RANGE_WIDGET] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(property_list [ATHENA_Advisory_ProjectKB_Class10117])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([PAL_STATEMENT_WIDGET] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_Advisory_ProjectKB_Class10118])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[STANDARD_CLASS_FORM_WIDGET]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10151]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10130]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10189]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10231]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[ATHENA_Advisory_ProjectKB_Class15]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10210]
+		[STANDARD_FACET_FORM_WIDGET]
+		[PAL_FORM_WIDGET]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10168]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class10109]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class96])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [option_instance])
+	(property_map [KB_662116_Class1])
+	(sources [SOURCES])
+	(tabs
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class71]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class1]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class47]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class49]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class67]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class21]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class73]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class11]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class75]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class5]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class35]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class9]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class63]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class37]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class15]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class57]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class77]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class53]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class69]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class79]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class43]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class23]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class27]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class31]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class61]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class39]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class65]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class7]
+		[ATHENA_Advisory_ProjectKB_Class4]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class17]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class59]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class3]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class41]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class13]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class29]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class33]
+		[GLINDAAdvisoryInteractions_ProjectKB_Class45]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_662116_Class104])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_662116_Class0]
+		[KB_662116_Class105]
+		[KB_662116_Class106]))
+
+([STANDARD_CLASS_CONSTRAINTS_WIDGET] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [KB_662116_Class83])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_CLASS_DIRECT_INSTANCES_WIDGET] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([STANDARD_CLASS_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_CLASS_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_662116_Class86])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [STANDARD_CLASS_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_CLASS_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_662116_Class87])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_CLASS_ROLE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [KB_662116_Class91])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [KB_662116_Class88])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([STANDARD_CLASS_WIDGETS] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[STANDARD_CLASS_CONSTRAINTS_WIDGET]
+		[STANDARD_CLASS_DIRECT_INSTANCES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUBCLASSES_WIDGET]
+		[STANDARD_CLASS_DIRECT_SUPERCLASSES_WIDGET]
+		[STANDARD_CLASS_DOCUMENTATION_WIDGET]
+		[STANDARD_CLASS_NAME_WIDGET]
+		[STANDARD_CLASS_ROLE_WIDGET]
+		[STANDARD_CLASS_DIRECT_TYPE_WIDGET]
+		[STANDARD_CLASS_TEMPLATE_SLOTS_WIDGET]
+		[LAYOUT_PROPERTIES]))
+
+([STANDARD_FACET_ASSOCIATED_SLOT_WIDGET] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_FACET_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [STANDARD_FACET_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_FACET_WIDGETS] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[STANDARD_FACET_NAME_WIDGET]
+		[STANDARD_FACET_DOCUMENTATION_WIDGET]
+		[STANDARD_FACET_ASSOCIATED_SLOT_WIDGET]))
+
+([STANDARD_SLOT_ASSOCIATED_FACET_WIDGET] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([STANDARD_SLOT_CONSTRAINTS_WIDGET] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([STANDARD_SLOT_DEFAULT_VALUE_WIDGET] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [KB_662116_Class95])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([STANDARD_SLOT_DIRECT_DOMAIN_WIDGET] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [KB_662116_Class93])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([STANDARD_SLOT_DIRECT_TYPE_WIDGET] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([STANDARD_SLOT_DOCUMENTATION_WIDGET] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [KB_662116_Class96])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [STANDARD_SLOT_WIDGETS])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_INVERSE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [KB_662116_Class102])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [KB_662116_Class101])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([STANDARD_SLOT_MAXIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [KB_662116_Class97])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [KB_662116_Class100])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([STANDARD_SLOT_MINIMUM_VALUE_WIDGET] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [KB_662116_Class98])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([STANDARD_SLOT_NAME_WIDGET] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [KB_662116_Class99])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([STANDARD_SLOT_SUBSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([STANDARD_SLOT_SUPERSLOTS_WIDGET] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([STANDARD_SLOT_TYPE_WIDGET] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [KB_662116_Class103])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([STANDARD_SLOT_VALUES_WIDGET] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [KB_662116_Class94])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([STANDARD_SLOT_WIDGETS] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[STANDARD_SLOT_MINIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_CARDINALITY_WIDGET]
+		[STANDARD_SLOT_CONSTRAINTS_WIDGET]
+		[STANDARD_SLOT_DIRECT_TYPE_WIDGET]
+		[STANDARD_SLOT_DIRECT_DOMAIN_WIDGET]
+		[STANDARD_SLOT_VALUES_WIDGET]
+		[STANDARD_SLOT_SUPERSLOTS_WIDGET]
+		[STANDARD_SLOT_SUBSLOTS_WIDGET]
+		[STANDARD_SLOT_DEFAULT_VALUE_WIDGET]
+		[STANDARD_SLOT_DOCUMENTATION_WIDGET]
+		[STANDARD_SLOT_MAXIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_MINIMUM_VALUE_WIDGET]
+		[STANDARD_SLOT_ASSOCIATED_FACET_WIDGET]
+		[STANDARD_SLOT_NAME_WIDGET]
+		[STANDARD_SLOT_INVERSE_WIDGET]
+		[STANDARD_SLOT_TYPE_WIDGET]
+		[KB_662116_Class92]))
+
+([VERTICAL_STRETCHER] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))

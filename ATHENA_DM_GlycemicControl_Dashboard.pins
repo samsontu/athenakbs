@@ -1,4 +1,4 @@
-; Tue May 29 22:44:07 PDT 2018
+; Tue Jul 31 10:38:36 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -39,7 +39,13 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1240004])
-	(PrettyName "Absence Metformin and 45<=eGFR<60 in past month"))
+	(PrettyName "Absence Metformin and 45<=eGFR<60 in past 30 days"))
+
+([Abs+biguanide+and+eGFR%3C30+past+30+days] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class281416])
+	(PrettyName "Abs biguanide and eGFR<30 past 30 days"))
 
 ([Abs+Empa+and+eGFR%3C45+past+30+days] of  Diagnostic_Term_Metaclass
 
@@ -136,12 +142,14 @@
 ([ADR+acidosis+to+MF+or+MF_ER] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350011]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350011])
+	(PrettyName "ADR acidosis"))
 
 ([ADR+anaphylaxis+to+DPP4+inhibitor] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1090639]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1090639])
+	(PrettyName "ADR anaphylaxis"))
 
 ([ADR+anaphylaxis+to+glipizide] of  Diagnostic_Term_Metaclass
 
@@ -157,13 +165,13 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class30004])
-	(PrettyName "ADR anaphylaxis to MF or MF_ER"))
+	(PrettyName "ADR anaphylaxis"))
 
 ([ADR+anaphylaxis+to+SGLT2+inhibitor] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class30006])
-	(PrettyName "ADR anaphylaxis to SGLT2 inhibitor"))
+	(PrettyName "ADR anaphylaxis"))
 
 ([ADR+anaphylaxis+to+SU+1st+gen] of  Diagnostic_Term_Metaclass
 
@@ -175,11 +183,18 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1310004]))
 
+([ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class330000])
+	(label "ADR anaphylaxis to sulfonylurea or sulfa drug")
+	(PrettyName "ADR anaphylaxis"))
+
 ([ADR+anaphylaxis+to+TZD] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class30005])
-	(PrettyName "ADR anaphylaxis to TZD"))
+	(PrettyName "ADR anaphylaxis"))
 
 ([ADR+anapylaxis+to+glimepiride] of  Diagnostic_Term_Metaclass
 
@@ -196,32 +211,37 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1090001])
-	(PrettyName "ADR angioedema to DPP4 inhibitor"))
+	(PrettyName "ADR angioedema"))
 
 ([ADR+angioedema+to+sulfa+drugs+or+SU] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320494]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1320494])
+	(PrettyName "ADR angioedema"))
 
 ([ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350026]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350026])
+	(PrettyName "ADR cardiac arrest or coma or thrombocytopenia or renal failure or renal impairment"))
 
 ([ADR+of+thrombocytopenia+to+pio+or+rosi] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350018]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350018])
+	(PrettyName "ADR thrombocytopenia"))
 
 ([ADR+renal+failure+or+impairment+to+MF+or+MF_ER] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350008]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350008])
+	(PrettyName "ADR renal impairment"))
 
 ([ADR+SJS+to+glip+glyb+glim+SU+sulfa] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
-	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350030]))
+	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350030])
+	(PrettyName "ADR Stevens-Johnson Syndrome"))
 
 ([Age+%3E%3D65+and+absence+of+creatinine+in+past+month] of  Diagnostic_Term_Metaclass
 
@@ -267,13 +287,13 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class330015])
-	(PrettyName "ALT>3*UpperLimitOfNormal"))
+	(PrettyName "ALT>3 x Upper Limit of Normal in past year"))
 
 ([AST%3E3*UpperLimitOfNormal] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class330014])
-	(PrettyName "AST >3*UpperLimitOfNormal"))
+	(PrettyName "AST >3 x Upper Limit of Normal in past year"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class0] of  Structured_Query
 
@@ -287,7 +307,12 @@
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class10000] of  Collateral_Action
 
-	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class10001])
+	(actions
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230007]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class320005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class320004]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class320741]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class320742])
 	(mood Recommend_Add))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class100000] of  Parameterized_Message
@@ -548,7 +573,7 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class850001]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class110110])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class280002])
 	(label "Pres gemfibrozil and TZD and not TZD contra")
 	(operator AND))
 
@@ -649,7 +674,7 @@
 		[ATHENA_GlycemicControl_Class1140229])
 	(followed_by [ATHENA_GlycemicControl_Class1210009])
 	(label "Rec 1st and 2nd line")
-	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class90346]))
+	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class260012]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class120001] of  On_Screen_Message
 
@@ -721,7 +746,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class12291] of  Parameterized_String
 
 	(label "missing bicarb or AST or ALT")
-	(value "Would add metformin, but old lab: (?missingMFLab).")
+	(value "Would add metformin, but old lab: (?missingMFlabAdd).")
 	(variables [ATHENA_DM_GlycemicControl_Dashboard_Class1131]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130000] of  N_ary_Criterion
@@ -801,7 +826,8 @@
 	(criteria
 		[ATHENA_GlycemicControl_Class1300005]
 		[ATHENA_GlycemicControl_Class1140001]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class90000])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260008]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class141391])
 	(label "out of scope - no rec's")
 	(operator OR))
 
@@ -831,26 +857,14 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130015] of  Choice_Step
 
 	(branches
-		[ATHENA_GlycemicControl_Class680000]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class90342]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class160000]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class190228])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190228]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250174])
 	(label "out of scope choices"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130017] of  Followed_By
 
 	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130014])
 	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class130015]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_Class130018] of  Followed_By
-
-	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
-	(%3ATO [ATHENA_GlycemicControl_Class680000]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_Class130019] of  Followed_By
-
-	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
-	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class90342]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130020] of  Followed_By
 
@@ -975,7 +989,7 @@
 
 	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class170001])
 	(label "dThree+ encoded meds")
-	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class90000]))
+	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class270000]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class160001] of  Presence_Criterion
 
@@ -1030,11 +1044,6 @@
 	(value "Pt has Rx for 3+ DM drugs: ?Encoded_DM_drug and HbA1c &gt; 9.  Consider referral to DM care team.")
 	(variables [ATHENA_GlycemicControl_Class1110008]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_Class170003] of  Followed_By
-
-	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
-	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class160000]))
-
 ([ATHENA_DM_GlycemicControl_Dashboard_Class170004] of  Scenario
 
 	(consultation_template [ATHENA_GlycemicControl_Class780000])
@@ -1053,11 +1062,6 @@
 	(followed_by [ATHENA_GlycemicControl_Class1140002])
 	(label "Make rec's")
 	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class183749]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_Class170299] of  Followed_By
-
-	(%3AFROM [ATHENA_GlycemicControl_Class550006])
-	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class170298]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class170300] of  Followed_By
 
@@ -1134,7 +1138,7 @@
 	(fine-grain_priority 100)
 	(label "Param msg empa missing eGFR past year")
 	(message_type do_not_intensify_controllable_condition)
-	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class190001])
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class240000])
 	(rule_in_condition [ATHENA_GlycemicControl_Class1030632]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190005] of  Parameterized_Message
@@ -1235,10 +1239,10 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class200005] of  Conditional_On_Screen_Message
 
 	(fine-grain_priority 100)
-	(label "TZD incr missing AST or ALT")
-	(message "Would recommend increasing thiazolidinedione but missing AST or ALT.")
+	(label "TZD incr missing AST and ALT")
+	(message "Would recommend increasing thiazolidinedione but missing AST and ALT.")
 	(message_type do_not_intensify_controllable_condition)
-	(rule_in_condition [ATHENA_GlycemicControl_Class1320000]))
+	(rule_in_condition [ATHENA_GlycemicControl_Class520006]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class20002] of  Choice_Step
 
@@ -1474,7 +1478,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class230008] of  Parameterized_String
 
 	(label "On MF monitor GFR 45<=GFG<60")
-	(value "As GFR  ?value (?date). would recheck q3-4 months."))
+	(value "As GFR  ?value (?date), would recheck q3-4 months."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class230182] of  Consultation_Action_Step
 
@@ -1487,6 +1491,12 @@
 	(%3AFROM [ATHENA_GlycemicControl_Class790002])
 	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class230182]))
 
+([ATHENA_DM_GlycemicControl_Dashboard_Class240000] of  Parameterized_String
+
+	(label "Empa missing GFR past year")
+	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
+	(value "Would increase empagliflozin, but old GFR: ?value (?date)."))
+
 ([ATHENA_DM_GlycemicControl_Dashboard_Class240001] of  Parameterized_String
 
 	(label "Sax missing GFR past year")
@@ -1498,8 +1508,381 @@
 	(fine-grain_priority 100)
 	(label "Presence of gemfibrozil and thiazolidinedione no contra bad drug partner msg")
 	(message "Pt has Rx for gemfibrozil and TZD which is unsafe.")
-	(message_type Drug_Related)
+	(message_type No_Drug_Rec)
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class110112]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250000] of  Conditional_On_Screen_Message
+
+	(label "Msg to order GlycoHem")
+	(message "Order GlycoHemoglobin as it is old or missing.")
+	(message_type No_Drug_Rec)
+	(rule_in_condition [ATHENA_GlycemicControl_Class230002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250174] of  Action_Choice
+
+	(followed_by [ATHENA_DM_GlycemicControl_Dashboard_Class250176])
+	(label "Pres HbA1c or GlycoHem past 12 months")
+	(strict_rule_in_condition [ATHENA_GlycemicControl_Class210005]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250175] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class130015])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class250174]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250176] of  Choice_Step
+
+	(branches
+		[ATHENA_DM_GlycemicControl_Dashboard_Class160000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class90342]
+		[ATHENA_GlycemicControl_Class680000])
+	(label "out of scope choices II"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250177] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class250174])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class250176]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250178] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class250176])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class160000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250179] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class250176])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class90342]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250180] of  Followed_By
+
+	(%3AFROM [ATHENA_DM_GlycemicControl_Dashboard_Class250176])
+	(%3ATO [ATHENA_GlycemicControl_Class680000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250496] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "query for sax daily dose > 2.4")
+	(type Medication)
+	(where_restriction
+		[ATHENA_DM_GlycemicControl_Dashboard_Class110005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250497]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250497] of  Comparison_Filter
+
+	(attribute [daily_dose])
+	(label "daily dose > 2.4")
+	(operator %3E)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class250498]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250498] of  Numeric_Constant
+
+	(label "2.4")
+	(value 2.4))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250499] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class250496])
+	(label "PatientChar daily dose sax>2.4")
+	(string_name "PatientChar daily dose sax>2.4"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250697] of  Query_Result_Criterion
+
+	(label "sax daily dose > 2.4")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class250496]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250698] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class250697])
+	(label "PatientChar query result daily dose sax > 2.4")
+	(string_name "PatientChar query result daily dose sax > 2.4"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class250896] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250697]
+		[ATHENA_GlycemicControl_Class1120001])
+	(label "egfr<45 past year and sax daily dose > 2.4")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class251166] of  Consultation_Action_Step
+
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class251168])
+	(label "Sax messages")
+	(rule_in [ATHENA_DM_GlycemicControl_Dashboard_Class251167]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class251167] of  Presence_Criterion
+
+	(domain_term Saxagliptin)
+	(entry_type Medication)
+	(label "Pres sax")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class251168] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "Sax max dose 2.5 with GFR<45")
+	(message_type Drug_Related)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class251169])
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class250896]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class251169] of  Parameterized_String
+
+	(label "Sax max dose 2.5 with GFR<45")
+	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
+	(value "ALERT:  GFR ?value (?date).  Max dose sax 2.5 mg"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class251170] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class251166]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260000] of  Presence_Criterion
+
+	(domain_term PIOGLITAZONE)
+	(entry_type Medication)
+	(label "Pres pio")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260001] of  Presence_Criterion
+
+	(domain_term ROSIGLITAZONE)
+	(entry_type Medication)
+	(label "Pres rosi")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260002] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260001])
+	(label "Pres pio and rosi")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260003] of  Presence_Criterion
+
+	(domain_term METFORMIN)
+	(entry_type Medication)
+	(label "Pres MF")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260004] of  Presence_Criterion
+
+	(domain_term METFORMIN_ER)
+	(entry_type Medication)
+	(label "Pres MF_ER")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260005] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260003]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260004])
+	(label "Pres MF and MF_ER")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260005]
+		[ATHENA_GlycemicControl_Class1220007]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260002])
+	(label "Pres encoded meds same class")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260007] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class130008]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260006])
+	(label "3 encoded meds and Pres encoded meds same class")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260008] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class130008]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260009])
+	(label "3 encoded meds and Not Pres encoded meds same class")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260009] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_GlycemicControl_Dashboard_Class260006])
+	(label "NOT Pres encoded meds same class")
+	(operator NOT))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260010] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "1 encoded med")
+	(numeric_domain_term Encoded_DM_Drugs)
+	(operator %3D)
+	(value 1.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260011] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "2 encoded med")
+	(numeric_domain_term Encoded_DM_Drugs)
+	(operator %3D)
+	(value 2.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260012] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260010]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260011]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260007])
+	(label "1 or 2 encoded med or (3 encoded med and Pres encoded med in same class)")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260176] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "bicarb alt1 lt 24 in past year")
+	(numeric_domain_term Bicarbonate_alt1)
+	(operator %3C)
+	(valid_window [ATHENA_DM_Eye_Instance_30019])
+	(value 24.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class260177] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "bicarb alt2 lt 24 in past year")
+	(numeric_domain_term Bicarbonate_alt2)
+	(operator %3C)
+	(valid_window [ATHENA_DM_Eye_Instance_30019])
+	(value 24.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class90000]
+		[ATHENA_GlycemicControl_Class1300004])
+	(label "Absence of insulin and Pres 3+ encoded DM meds")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class1300004]
+		[ATHENA_GlycemicControl_Class1140001])
+	(label "Pres non encoded meds and Abs insulin")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270170] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Instance_10002]
+		[ATHENA_GlycemicControl_Instance_10005])
+	(label "Pres of HbA1c and HbA1c>9")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270171] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class270170]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class270172])
+	(label "Pres of HbA1c and HbA1c>9 OR Pres GlycHem and GlybHem>11")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270172] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class230002]
+		[ATHENA_GlycemicControl_Class210013])
+	(label "Pres GlycHem and GlycoHem>11")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270685] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class550006])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class170298]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class270686] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class550006])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class81111]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class280000] of  Structured_Query
+
+	(attribute [Drug_Class_Name])
+	(label "StrucQuery TZD contraindicated")
+	(type Drug_Usage)
+	(where_restriction
+		[eon2_Class60001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class280001]
+		[ATHENA_GlycemicControlAlt_Class20627]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class280001] of  Comparison_Filter
+
+	(attribute [Drug_Class_Name])
+	(label "drug class name is TZD")
+	(operator eq)
+	(value_expression [THIAZOLIDINEDIONES]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class280002] of  N_ary_Criterion
+
+	(criteria [ATHENA_DM_GlycemicControl_Dashboard_Class280003])
+	(label "QueryResult not TZD contraindicated")
+	(operator NOT))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class280003] of  Query_Result_Criterion
+
+	(label "QueryResult TZD contraindicated")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class280000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class280004] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class280003])
+	(label "PatientChar TZD contra via StrucQuery")
+	(string_name "PatientCha TZD contra via StrucQuery"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class281416] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class1040003]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class281417])
+	(label "Abs biguanide and eGFR<30 past 30 days")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class281417] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "eGFR<30 past 30 days")
+	(numeric_domain_term eGFR)
+	(operator %3C)
+	(valid_window [time%3AINSTANCE_2])
+	(value 30.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class290000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class270171]
+		[ATHENA_GlycemicControl_Class310000])
+	(label "Pres of HbA1c and HbA1c>9 OR Pres GlycHem and GlybHem>11 OR Abs HbA1c and Abs GlycHem")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class294760] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class110112])
+	(label "Pres gemfibrozil and TZD and not TZD contra")
+	(string_name "Pres gemfibrozil and TZD and not TZD contra"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class295229] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class50000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class110112])
+	(label "Pres multiple meds from same DM class OR Pres gemfibrozil and TZD and not TZD contra")
+	(operator OR))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class30000] of  Structured_Query
 
@@ -1508,6 +1891,28 @@
 	(where_restriction
 		[ATHENA_GlycemicControl_Class690001]
 		[ATHENA_GlycemicControl_Class1350005]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class300000] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug name is MF, MFXL, sax, empa")
+	(type Medication)
+	(where_restriction [ATHENA_DM_GlycemicControl_Dashboard_Class300001]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class300001] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1100002]
+		[ATHENA_GlycemicControl_Class1100000]
+		[ATHENA_GlycemicControl_Class1070001])
+	(label "drug name is MF, MFXL, empa, sax")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class300002] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class300000])
+	(label "?eGFRdrug")
+	(string_name "?eGFRdrug"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class30001] of  Structured_Query
 
@@ -1549,6 +1954,264 @@
 	(label "ADR anaphylaxis to SGLT2 inhibitor")
 	(presence TRUE)
 	(query [ATHENA_DM_GlycemicControl_Dashboard_Class30002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303874] of  Parameterized_String
+
+	(label "Param string for eGFR drug")
+	(value "Pt has Rx for ?eGFRdrug.  Check GFR annually.")
+	(variables [ATHENA_DM_GlycemicControl_Dashboard_Class300002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303875] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "Param msg for eGFR drug")
+	(message_type Drug_Related)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class303874])
+	(rule_in_condition [ATHENA_GlycemicControl_Class530008]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303876] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug eq empa at max dose")
+	(type Medication)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1100000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303877]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303877] of  Comparison_Filter
+
+	(attribute [daily_dose])
+	(label "daily dose >=24.9 empa")
+	(operator %3E%3D)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class110011]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303878] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug eq sax at max dose")
+	(type Medication)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1070001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303879]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303879] of  Comparison_Filter
+
+	(attribute [daily_dose])
+	(label "daily dose >=4.9 sax")
+	(operator %3E%3D)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class110007]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303880] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1100000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class110010])
+	(label "drug eq empa at max dose")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303881] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1070001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303879])
+	(label "drug eq sax at max dose")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303882] of  N_aryFilter
+
+	(filters
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303880]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303881]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class306950]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class306952])
+	(label "drug eq empa at max dose OR sax at max dose OR MF at max dose OR MF_ER at max dose")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303884] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug eq empa at max dose OR sax at max dose")
+	(type Medication)
+	(where_restriction [ATHENA_DM_GlycemicControl_Dashboard_Class303882]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class303885] of  Variable
+
+	(derivation_expression [ATHENA_DM_GlycemicControl_Dashboard_Class303884])
+	(label "?eGFRdrugMaxDose")
+	(string_name "?eGFRdrugMaxDose"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class306950] of  N_aryFilter
+
+	(filters
+		[ATHENA_DM_GlycemicControl_Dashboard_Class120886]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class306951])
+	(label "drug eq metformin at max dose")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class306951] of  Comparison_Filter
+
+	(attribute [daily_dose])
+	(label "daily dose >=2499.8")
+	(operator %3E%3D)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class120888]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class306952] of  N_aryFilter
+
+	(filters
+		[ATHENA_DM_GlycemicControl_Dashboard_Class110001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class306953])
+	(label "drug eq MFXL at max dose")
+	(operator AND))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class306953] of  Comparison_Filter
+
+	(attribute [daily_dose])
+	(label "daily dose >= 1999.8")
+	(operator %3E%3D)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class110003]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class310000] of  On_Screen_Message
+
+	(fine-grain_priority 100)
+	(label "Do not change meds if meds recently changed")
+	(message "Do not change meds if meds recently changed.")
+	(message_type Primary_Recommendation))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class310001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310002]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310003])
+	(label "CHF")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class310002] of  Presence_Criterion
+
+	(domain_term CCS-7.2.11.1)
+	(entry_type Note_Entry)
+	(label "Pres CHF")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class310003] of  Presence_Criterion
+
+	(domain_term Heart_failure_N)
+	(entry_type Note_Entry)
+	(label "Pres Heart Failure")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class311115] of  Consultation_Action_Step
+
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class311116])
+	(label "absent eGFR checks")
+	(rule_in [ATHENA_GlycemicControl_Class530008]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class311116] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "eGFR missing past year drug max dose msg")
+	(message_type Drug_Related)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class311117])
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class311118]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class311117] of  Parameterized_String
+
+	(label "Param string drug max dose needs eGFR")
+	(value "Pt has Rx for ?eGFRdrugMaxDose.  Check GFR annually.")
+	(variables [ATHENA_DM_GlycemicControl_Dashboard_Class303885]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class311118] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class1140223]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class251167]
+		[ATHENA_GlycemicControl_Class90019])
+	(label "on empa or sax or biguanide")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class311119] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class311115]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320000] of  Parameterized_String
+
+	(label "asses risks low egfr")
+	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
+	(value "GFR ?value (?date).  Asses risks."))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320001] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "asses risks low egfr<45")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class320000])
+	(rule_in_condition [ATHENA_GlycemicControl_Class1130011]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320002] of  Parameterized_String
+
+	(label "AST high asses risks")
+	(multivalued_variables [ATHENA_DM_GlycemicControl_Dashboard_Class220363])
+	(value "AST ?value (?date).  Assess risks with metformin."))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320003] of  Parameterized_String
+
+	(label "ALT high asses risks")
+	(multivalued_variables [ATHENA_DM_GlycemicControl_Dashboard_Class220369])
+	(value "ALT ?value (?date).  Assess risks with metformin."))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320004] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "AST high asses risks")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class320002])
+	(rule_in_condition [ATHENA_GlycemicControl_Class330014]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320005] of  Parameterized_Message
+
+	(label "ALT high assess risks")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class320003])
+	(rule_in_condition [ATHENA_GlycemicControl_Class330015]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320740] of  Parameterized_String
+
+	(label "bicarb low assess risks")
+	(multivalued_variables [ATHENA_DM_GlycemicControl_Dashboard_Class220002])
+	(value "CO2 ?value (?date).  Assess risks"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320741] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "bicarb low assess risks")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class320740])
+	(rule_in_condition [ATHENA_GlycemicControl_Class1340000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320742] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "assess risks 45<=eGFR<60")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class320743])
+	(rule_in_condition [ATHENA_GlycemicControl_Class1240002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class320743] of  Parameterized_String
+
+	(label "assess risks 45<=eGFR<60")
+	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
+	(value "GFR ?value (?date).  Assess risks."))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class330000] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_GlycemicControl_Class700007]
+		[ATHENA_GlycemicControl_Class710002]
+		[ATHENA_GlycemicControl_Class1020221]
+		[ATHENA_GlycemicControl_Class740003]
+		[ATHENA_GlycemicControl_Class1310004])
+	(label "ADR anaphylaxis to sulfonylurea or sulfa drug")
+	(operator OR))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class40000] of  Consultation_Selection
 
@@ -1596,7 +2259,9 @@
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class60002] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class1170006])
+	(actions
+		[ATHENA_GlycemicControl_Class1170006]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310000])
 	(label "Msg F/U")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class800006]))
 
@@ -1791,13 +2456,12 @@
 	(actions
 		[ATHENA_GlycemicControl_Class1220004]
 		[ATHENA_GlycemicControl_Class1220009]
-		[ATHENA_GlycemicControl_Class1060199]
 		[ATHENA_GlycemicControl_Class1220006]
 		[ATHENA_GlycemicControl_Class1220011]
 		[ATHENA_GlycemicControl_Class1220013]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class240002])
-	(label "dBad Drug partner DM drug II no contra")
-	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class110113]))
+	(label "dBad Drug partner DM drug II not no contra")
+	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class295229]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class81113] of  Parameterized_Message
 
@@ -1811,11 +2475,6 @@
 	(label "parm msg bad drug stop one")
 	(value "Patient has an active prescription of two drugs  ?badPartnerGlycemicControlmed that are normally not taken together.  Please stop one")
 	(variables [ATHENA_GlycemicControl_Class850704]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_Class81115] of  Followed_By
-
-	(%3AFROM [ATHENA_GlycemicControl_Class550006])
-	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class81111]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class84120] of  Parameterized_Message
 
@@ -1891,7 +2550,7 @@
 
 	(actions [ATHENA_GlycemicControl_Class810214])
 	(label "non encoded meds out of scope")
-	(strict_rule_in_condition [ATHENA_GlycemicControl_Class1140001]))
+	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class270001]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class90345] of  N_ary_Criterion
 
@@ -1899,7 +2558,7 @@
 		[ATHENA_GlycemicControl_Class210005]
 		[ATHENA_GlycemicControl_Class1300004]
 		[ATHENA_GlycemicControl_Class800000]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class90346])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class260012])
 	(label "1 or 2 encoded DM meds and no insulin and Pres HbA1c")
 	(operator AND))
 
@@ -2357,7 +3016,10 @@
 		[ATHENA_GlycemicControl_Class1100005]
 		[ATHENA_GlycemicControl_Class730017]
 		[ATHENA_GlycemicControl_Class730030])
-	(Do_Not_Intensify_Conditions Absence+of+eGFR+in+past+year)
+	(condition_for_being_preferred [criterion_INSTANCE_00001])
+	(Do_Not_Intensify_Conditions
+		Absence+of+eGFR+in+past+year
+		GFR%3C45+past+year+and+sax+daily+dose%3E2.4)
 	(Do_Not_Start_Conditions Absence+of+eGFR+in+past+month)
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Class1070006]
@@ -2379,10 +3041,8 @@
 	(max_recommended_dose 5.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(Relative_Contraindications
-		CCS-7.2.11.1
-		Heart_failure_N
-		CCS-7.2.11
-		eGFR%3C45+most+recent+any+time+frame)
+		eGFR%3C45+most+recent+any+time+frame
+		CHF_defined_as_CHForHF_N)
 	(starting_dose 2.5))
 
 ([ATHENA_GlycemicControl_Class1070006] of  Range_Mapping_Entry
@@ -2445,7 +3105,7 @@
 
 	(fine-grain_priority 300)
 	(label "Set target HbA1c 2017")
-	(message "Refer ti  <a href=\"https://vaww.fre.cdw.va.gov/sites/D05_VISN21/Documents/CDS/VADoD_DM_CPG_2017.pdf#page=35\"> Table 2 from VA 2017 DM Guidelines </a> to determine HbA1c target.")
+	(message "Refer to  <a href=\"https://vaww.fre.cdw.va.gov/sites/D05_VISN21/Documents/CDS/VADoD_DM_CPG_2017.pdf#page=35\"> Table 2 from VA 2017 DM Guidelines </a> to determine HbA1c target.")
 	(message_type General_Info))
 
 ([ATHENA_GlycemicControl_Class1080004] of  Choice_Step
@@ -2592,11 +3252,14 @@
 	(fine-grain_priority 100)
 	(label "Metformin XL")
 	(message "Consider metformin XL if pt has GI symptoms or has difficulty tolerating metformin.")
-	(message_type General_Info))
+	(message_type General_Info)
+	(rule_in_condition [criterion_INSTANCE_00001]))
 
 ([ATHENA_GlycemicControl_Class1090635] of  Collateral_Action
 
-	(actions [ATHENA_GlycemicControl_Class1090636])
+	(actions
+		[ATHENA_GlycemicControl_Class1090636]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class320001])
 	(mood Recommend_Add))
 
 ([ATHENA_GlycemicControl_Class1090636] of  On_Screen_Message
@@ -2789,6 +3452,7 @@
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class1330000]
 		[ATHENA_GlycemicControl_Class1330002])
+	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(Do_Not_Intensify_Conditions Absence+of+eGFR+in+past+year)
 	(Do_Not_Start_Conditions Absence+of+eGFR+in+past+month)
 	(dose_level_ranges
@@ -2910,7 +3574,7 @@
 
 ([ATHENA_GlycemicControl_Class1130000] of  On_Screen_Message
 
-	(fine-grain_priority 200)
+	(fine-grain_priority 100)
 	(label "Msg No recs; Link to other DM drugs")
 	(message "Cannot recommend metformin, glipizide, pioglitazone, saxagliptin or, if CVD present, empaglifozin.  Please consider other <a href=\"\"https://vaww.fre.cdw.va.gov/sites/D05_VISN21/Documents/CDS/VADoD_DM_CPG_2017.pdf#page=83\">  drugs from Appendix B of the VA 2017 DM Guidelines </a> .")
 	(message_type Drug_Related)
@@ -3082,7 +3746,7 @@
 
 	(activity_class "Medication")
 	(alternatives [ATHENA_GlycemicControl_Class1110002])
-	(fine-grain_priority 1000)
+	(fine-grain_priority 200)
 	(label "Initiate empa")
 	(recommendation_basis [is_second-line_drug_for])
 	(rule_in_condition [ATHENA_GlycemicControl_Class1140230])
@@ -3102,7 +3766,7 @@
 	(activity_spec_key [Drug_Class_Name])
 	(activity_to_stop [ATHENA_GlycemicControl_Class760000])
 	(alternatives [ATHENA_GlycemicControl_Class1110002])
-	(fine-grain_priority 1000)
+	(fine-grain_priority 100)
 	(label "dEvaluate sub Empa")
 	(recommendation_basis [is_second-line_drug_for])
 	(rule_in_condition [ATHENA_GlycemicControl_Class1180001]))
@@ -3320,7 +3984,9 @@
 
 ([ATHENA_GlycemicControl_Class1170843] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class210036])
+	(actions
+		[ATHENA_GlycemicControl_Class210036]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310000])
 	(label "Msg follow up 3 months incr dose")
 	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class77594]))
 
@@ -3369,7 +4035,9 @@
 
 ([ATHENA_GlycemicControl_Class1181956] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class210036])
+	(actions
+		[ATHENA_GlycemicControl_Class210036]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310000])
 	(label "Follow up msg sub")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class540024]))
 
@@ -3655,7 +4323,7 @@
 		[ATHENA_GlycemicControl_Class60000]
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Instance_50026])
-	(fine-grain_priority 1000)
+	(fine-grain_priority 200)
 	(label "Initiate glip, Saxa, TZD")
 	(recommendation_basis [is_second-line_drug_for])
 	(therapeutic_goal [ATHENA_GlycemicControl_Class610454]))
@@ -3692,7 +4360,9 @@
 
 ([ATHENA_GlycemicControl_Class1210012] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class210036])
+	(actions
+		[ATHENA_GlycemicControl_Class210036]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class310000])
 	(label "MF rec F/U")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class1210013]))
 
@@ -4364,7 +5034,8 @@
 		[ATHENA_GlycemicControl_Class330000]
 		[KB_308520_Class9]
 		[ATHENA_GlycemicControl_Class1230002]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class230000])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class290000])
 	(goal
 		[ATHENA_GlycemicControl_Class280001]
 		[ATHENA_GlycemicControl_Class280002]
@@ -4378,6 +5049,9 @@
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Class1110002])
 	(label "ATHENA DM:  Glycemic Control Dashboard")
+	(patient_characterization
+		[ATHENA_DM_GlycemicControl_Dashboard_Class300002]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class303885])
 	(references [ATHENA_GlycemicControl_Class1050001]))
 
 ([ATHENA_GlycemicControl_Class130050] of  N_ary_Criterion
@@ -4590,7 +5264,7 @@
 ([ATHENA_GlycemicControl_Class1320010] of  Parameterized_String
 
 	(label "Param string for dup GL drug")
-	(value "There are multiple Rxs for ?dup_GL_drug . Doses summed.")
+	(value "There are multiple Rxs for ?dup_GL_drug.  Doses summed.")
 	(variables [ATHENA_GlycemicControl_Class1310316]))
 
 ([ATHENA_GlycemicControl_Class1320490] of  Structured_Query
@@ -4670,10 +5344,10 @@
 ([ATHENA_GlycemicControl_Class1330005] of  Conditional_On_Screen_Message
 
 	(fine-grain_priority 100)
-	(label "TZD missing AST or ALT")
-	(message "Would recommend thiazolidinedione but missing AST or ALT.")
+	(label "TZD missing ASTand ALT")
+	(message "Would recommend thiazolidinedione but missing AST and  ALT.")
 	(message_type do_not_add_controllable_condition)
-	(rule_in_condition [ATHENA_GlycemicControl_Class1320000]))
+	(rule_in_condition [ATHENA_GlycemicControl_Class520006]))
 
 ([ATHENA_GlycemicControl_Class1330006] of  Collateral_Action
 
@@ -5419,7 +6093,7 @@
 	(activity_spec_candidate [ATHENA_GlycemicControl_Class1290000])
 	(activity_spec_key [generic_drug])
 	(attribute "daily_dose")
-	(fine-grain_priority 1000)
+	(fine-grain_priority 300)
 	(label "consider increasing dose of drugs"))
 
 ([ATHENA_GlycemicControl_Class200000] of  Action_Choice
@@ -5672,7 +6346,7 @@
 	(fine-grain_priority 100)
 	(label "HbA1c <= 9")
 	(message "HbA1c <=9, meets goal. Congratulations!")
-	(message_type Primary_Recommendation))
+	(message_type No_Drug_Rec))
 
 ([ATHENA_GlycemicControl_Class210018] of  On_Screen_Message
 
@@ -6170,7 +6844,9 @@
 
 ([ATHENA_GlycemicControl_Class230004] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class230005])
+	(actions
+		[ATHENA_GlycemicControl_Class230005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250000])
 	(label "dOrder GlycoHem now")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class230002]))
 
@@ -6663,7 +7339,7 @@
 	(fine-grain_priority 100)
 	(label "Insulin only management out of scope")
 	(message "Management of insulin is beyond scope of this system.")
-	(message_type Primary_Recommendation)
+	(message_type Out_of_Scope)
 	(rule_in_condition [criterion_INSTANCE_00001]))
 
 ([ATHENA_GlycemicControl_Class240045] of  Referral
@@ -7103,7 +7779,7 @@
 		[ATHENA_GlycemicControl_Class60000]
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Instance_50026])
-	(fine-grain_priority 1000)
+	(fine-grain_priority 100)
 	(label "dEvaluate substitution first line agent")
 	(recommendation_basis
 		[is_first-line_drug_for]
@@ -7508,9 +8184,11 @@
 
 	(actions
 		[ATHENA_GlycemicControl_Class50002]
-		[ATHENA_GlycemicControl_Class150033]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230005]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class230007])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230007]
+		[ATHENA_GlycemicControl_Class1090425]
+		[ATHENA_GlycemicControl_Class30003]
+		[KB_308520_Class6])
 	(label "Metformin checks")
 	(rule_in [ATHENA_DM_GlycemicControl_Dashboard_Class132980]))
 
@@ -7588,7 +8266,8 @@
 	(actions
 		[ATHENA_GlycemicControl_Class30003]
 		[ATHENA_GlycemicControl_Class40001]
-		[ATHENA_GlycemicControl_Instance_120002])
+		[ATHENA_GlycemicControl_Instance_120002]
+		[KB_308520_Class6])
 	(mood Recommend_Add))
 
 ([ATHENA_GlycemicControl_Class30003] of  On_Screen_Message
@@ -7597,7 +8276,8 @@
 	(fine-grain_priority 100)
 	(label "Add biguanide, alert hipoxemia, dehydration or sepsis")
 	(message "Stop metformin if pt has hypoxemia, dehydration or sepsis.")
-	(message_type General_Info))
+	(message_type General_Info)
+	(rule_in_condition [criterion_INSTANCE_00001]))
 
 ([ATHENA_GlycemicControl_Class310000] of  N_ary_Criterion
 
@@ -7617,8 +8297,8 @@
 
 	(fine-grain_priority 100)
 	(label "Msg to order HbA1c")
-	(message "Order HgA1C as it is old or missing.")
-	(message_type Primary_Recommendation)
+	(message "Order HbA1C as it is old or missing.")
+	(message_type No_Drug_Rec)
 	(rule_in_condition [ATHENA_GlycemicControl_Instance_10020]))
 
 ([ATHENA_GlycemicControl_Class310003] of  Consultation_Selection
@@ -7813,7 +8493,7 @@
 	(Drug_Class_Name Exenatide)
 	(generic_drug Exenatide)
 	(increase_dose_ceiling 10.5)
-	(label "Exenatide")
+	(label "exenatide")
 	(max_recommended_dose 20.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 10.0))
@@ -8098,7 +8778,7 @@
 ([ATHENA_GlycemicControl_Class380010] of  Parameterized_Message
 
 	(fine-grain_priority 100)
-	(label "DM guideline med MPR < 0.9 message")
+	(label "Discuss adherence with pt.")
 	(message_type Primary_Recommendation)
 	(parameterized_message [ATHENA_GlycemicControl_Class380017])
 	(rule_in_condition [ATHENA_GlycemicControlAlt_Class20276]))
@@ -8137,7 +8817,7 @@
 
 	(label "drug mpr<0.9 message")
 	(multivalued_variables [ATHENA_GlycemicControl_Class380016])
-	(value "?drugName (MPR= ?mpr %). Discuss with pt."))
+	(value "<Br> ?drugName (MPR ?mpr%)."))
 
 ([ATHENA_GlycemicControl_Class380018] of  Consultation_Action_Step
 
@@ -8345,7 +9025,7 @@
 	(display_location Summary)
 	(fine-grain_priority 100)
 	(label "Metformin and B12")
-	(message "Check B12 levels every 2 years as pt has Rx for metformin.")
+	(message "Check B12 levels every 2 years.")
 	(message_type General_Info))
 
 ([ATHENA_GlycemicControl_Class41] of  Followed_By
@@ -9481,7 +10161,7 @@
 	(message "Check B12 levels every 2 years as pt has Rx for metformin.")
 	(message_type General_Info)
 	(references [ATHENA_GlycemicControl_Class80009])
-	(rule_in_condition [ATHENA_GlycemicControl_Class80011]))
+	(rule_in_condition [criterion_INSTANCE_00001]))
 
 ([ATHENA_GlycemicControl_Class50003] of  Presence_Criterion
 
@@ -9511,7 +10191,7 @@
 
 	(fine-grain_priority 100)
 	(label "Presence of DM-1 and DM-2 message")
-	(message "Pt has Dx of both type 1 and type 2 DM. If pt has type 1 DM, these recommendations are not appropriate.")
+	(message "Pt has Dx of both type 1 and type 2 DM. If pt truly has type 1 DM, these recommendations  DO NOT APPLY.")
 	(message_type Primary_Recommendation))
 
 ([ATHENA_GlycemicControl_Class510003] of  Consultation_Selection
@@ -9622,7 +10302,9 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170298]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class160000]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170004]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class190228])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190228]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250174]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250176])
 	(transitions
 		[ATHENA_GlycemicControl_Class530003]
 		[ATHENA_GlycemicControl_Class530004]
@@ -9650,19 +10332,21 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class60005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class60006]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class60007]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class81115]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class130002]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class130003]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class130017]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class130018]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class130019]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class140001]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class170299]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170300]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class170003]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class170005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class190232]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class190236]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class190236]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250175]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250177]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250178]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250179]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class250180]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class270685]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class270686]))
 
 ([ATHENA_GlycemicControl_Class530002] of  Followed_By
 
@@ -9728,10 +10412,7 @@
 
 ([ATHENA_GlycemicControl_Class540001] of  Action_Choice
 
-	(actions
-		[ATHENA_GlycemicControl_Class1300425]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class110024]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class110022])
+	(actions [ATHENA_GlycemicControl_Class1300425])
 	(followed_by [ATHENA_GlycemicControl_Class540003])
 	(label "dCannot Increase dose")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class1190001]))
@@ -10031,8 +10712,8 @@
 	(branches
 		[ATHENA_GlycemicControl_Class240016]
 		[ATHENA_GlycemicControl_Class210015]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class81111]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class170298])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class170298]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class81111])
 	(label "dTwo drug choices II"))
 
 ([ATHENA_GlycemicControl_Class550008] of  Action_Choice
@@ -10539,15 +11220,10 @@
 ([ATHENA_GlycemicControl_Class60000] of  Drug_Usage
 
 	(Absolute_Contraindications
-		ADR+anaphylaxis+to+glipizide
-		ADR+anaphylaxis+to+glyburide
-		ADR+anggioedema+or+anaphylaxis+or+stevens+johns+to+glimepiride
-		ADR+anaphylaxis+to+SU+1st+gen
-		ADR+anapylaxis+to+glimepiride
-		ADR+anaphylaxis+to+sulfa+drugs
 		ADR+angioedema+to+sulfa+drugs+or+SU
 		ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa
-		ADR+SJS+to+glip+glyb+glim+SU+sulfa)
+		ADR+SJS+to+glip+glyb+glim+SU+sulfa
+		ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug)
 	(additional_ADR_check
 		GLIMEPIRIDE
 		GLYBURIDE
@@ -11392,7 +12068,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class60000])
 	(generic_drug GLIPIZIDE_XL)
 	(increase_dose_ceiling 19.9)
-	(label "Glipizide XL")
+	(label "glipizide extended release")
 	(max_recommended_dose 20.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 2.5))
@@ -11433,7 +12109,7 @@
 
 	(fine-grain_priority 100)
 	(label "Parameterized: Missing add metformin labs (AST/ALT)  message")
-	(message_type do_not_add_controllable_condition)
+	(message_type do_not_intensify_controllable_condition)
 	(parameterized_message [ATHENA_GlycemicControl_Class720001])
 	(rule_in_condition [ATHENA_GlycemicControl_Class720004]))
 
@@ -11460,7 +12136,7 @@
 
 	(criteria
 		[ATHENA_GlycemicControl_Class520001]
-		[ATHENA_GlycemicControl_Class1320000])
+		[ATHENA_GlycemicControl_Class520006])
 	(label "Absence of Bicarb or AST/ALT in past year")
 	(operator OR))
 
@@ -12019,10 +12695,11 @@
 		[ATHENA_GlycemicControl_Class1200000]
 		[ATHENA_GlycemicControl_Class1312626]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class180002]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class210000]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class220005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230003]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class230182])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311115])
 	(transitions
 		[ATHENA_GlycemicControl_Class790005]
 		[ATHENA_GlycemicControl_Class790007]
@@ -12038,10 +12715,11 @@
 		[ATHENA_GlycemicControl_Class1200001]
 		[ATHENA_GlycemicControl_Class1312627]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class180004]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class210001]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class220006]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230004]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class230183]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230183]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class251170]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311119]))
 
 ([ATHENA_GlycemicControl_Class780001] of  Numeric_Term_Criterion
 
@@ -12153,10 +12831,11 @@
 		[ATHENA_GlycemicControl_Class1200000]
 		[ATHENA_GlycemicControl_Class1312626]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class180002]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class210000]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class220005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230003]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class230182])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311115])
 	(label "dAll CDS scenarios No ACE/ARB")
 	(selection_method all_of))
 
@@ -12649,7 +13328,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class770000])
 	(generic_drug Canagliflozin)
 	(increase_dose_ceiling 100.1)
-	(label "Canagliflozin")
+	(label "canagliflozin")
 	(max_recommended_dose 300.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 100.0))
@@ -13073,7 +13752,6 @@
 	(actions
 		[ATHENA_GlycemicControl_Class90048]
 		[KB_308520_Class14]
-		[KB_308520_Class6]
 		[ATHENA_GlycemicControl_Class1110001])
 	(mood Recommend_Add))
 
@@ -14335,11 +15013,11 @@
 ([ATHENA_GlycemicControl_Instance_50004] of  Drug_Usage
 
 	(Absolute_Contraindications
-		Poor+renal+function+and+Abs+Biguanide
 		Pres+Biguanide+and+eGFR%3C30+past+year
 		ADR+renal+failure+or+impairment+to+MF+or+MF_ER
+		ADR+anaphylaxis+to+MF+or+MF_ER
 		ADR+acidosis+to+MF+or+MF_ER
-		ADR+anaphylaxis+to+MF+or+MF_ER)
+		Abs+biguanide+and+eGFR%3C30+past+30+days)
 	(collateral_actions
 		[ATHENA_GlycemicControl_Instance_120001]
 		[ATHENA_GlycemicControl_Class30002]
@@ -14351,13 +15029,13 @@
 	(Do_Not_Intensify_Conditions
 		Absence+of+eGFR+in+past+year
 		30%3C%3DeGFR%3C45+past+year
-		Absence+of+AST+or+ALT+in+past+year
-		Absence+all+bicarb+labs+past+year)
+		Absence+all+bicarb+labs+past+year
+		Absence+of+AST+and+ALT+in+past+year)
 	(Do_Not_Start_Conditions
 		Absence+of+eGFR+in+past+month
-		Absence+of+AST+or+ALT+in+past+year
 		30%3C%3DeGFR%3C45+past+30+days
-		Absence+all+bicarb+labs+past+year)
+		Absence+all+bicarb+labs+past+year
+		Absence+of+AST+and+ALT+in+past+year)
 	(Drug_Class_Name BIGUANIDE)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80009])
 	(is_first-line_drug_for
@@ -14474,15 +15152,13 @@
 		ALT%3E3*UpperLimitOfNormal
 		Heart_failure_N
 		CCS-7.2.11.1
-		CCS-7.2.11
-		Absence+of+AST+or+ALT+in+past+year)
+		Absence+of+AST+and+ALT+in+past+year)
 	(Do_Not_Start_Conditions
 		AST%3E3*UpperLimitOfNormal
 		ALT%3E3*UpperLimitOfNormal
 		Heart_failure_N
 		CCS-7.2.11.1
-		CCS-7.2.11
-		Absence+of+AST+or+ALT+in+past+year)
+		Absence+of+AST+and+ALT+in+past+year)
 	(Drug_Class_Name THIAZOLIDINEDIONES)
 	(Drug_Partners_To_Avoid
 		Insulin
@@ -14495,7 +15171,6 @@
 	(references [ATHENA_GlycemicControl_Class80024])
 	(Relative_Contraindications
 		cirrhosis
-		CCS-9.8.2.1
 		Osteoporosis))
 
 ([ATHENA_GlycemicControl_Instance_50027] of  Drug_Usage
@@ -14791,7 +15466,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
 	(generic_drug CHLORPROPAMIDE)
 	(increase_dose_ceiling 500.0)
-	(label "CHLORPROPAMIDE")
+	(label "chlorpropamide")
 	(max_recommended_dose 750.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 100.0))
@@ -14805,7 +15480,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
 	(generic_drug TOLAZAMIDE)
 	(increase_dose_ceiling 750.0)
-	(label "TOLAZAMIDE")
+	(label "tolazamide")
 	(max_recommended_dose 1000.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 100.0))
@@ -14819,7 +15494,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
 	(generic_drug TOLBUTAMIDE)
 	(increase_dose_ceiling 2000.1)
-	(label "TOLBUTAMIDE")
+	(label "tolbutamide")
 	(max_recommended_dose 3000.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 1000.0))
@@ -14832,20 +15507,21 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50002])
 	(generic_drug ACETOHEXAMIDE)
 	(increase_dose_ceiling 1000.0)
-	(label "ACETOHEXAMIDE")
+	(label "acetohexamide")
 	(max_recommended_dose 1500.0)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 250.0))
 
 ([ATHENA_GlycemicControl_Instance_80004] of  Guideline_Drug
 
+	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_100006]
 		[ATHENA_GlycemicControl_Instance_100007])
 	(drug_usage [ATHENA_GlycemicControl_Class60000])
 	(generic_drug GLIPIZIDE)
 	(increase_dose_ceiling 39.9)
-	(label "Glipizide")
+	(label "glipizide")
 	(max_recommended_dose 40.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 2.5))
@@ -14861,7 +15537,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class70000])
 	(generic_drug GLYBURIDE)
 	(increase_dose_ceiling 20.0)
-	(label "GLYBURIDE")
+	(label "glyburide")
 	(max_recommended_dose 20.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(references [ATHENA_GlycemicControl_Class80027])
@@ -14878,7 +15554,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class330008])
 	(generic_drug GLIMEPIRIDE)
 	(increase_dose_ceiling 8.0)
-	(label "GLIMEPIRIDE")
+	(label "glimepiride")
 	(max_recommended_dose 8.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 1.0))
@@ -14893,7 +15569,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class90051])
 	(generic_drug ACARBOSE)
 	(increase_dose_ceiling 150.0)
-	(label "ACARBOSE")
+	(label "acarbose")
 	(max_recommended_dose 150.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(rule_out [ATHENA_GlycemicControl_Class90053])
@@ -14908,7 +15584,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class90051])
 	(generic_drug MIGLITOL)
 	(increase_dose_ceiling 300.0)
-	(label "MIGLITOL")
+	(label "miglitol")
 	(max_recommended_dose 300.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 25.0))
@@ -14919,14 +15595,15 @@
 		[ATHENA_GlycemicControl_Class730025]
 		[ATHENA_GlycemicControl_Class741055]
 		[ATHENA_GlycemicControl_Class720148])
+	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Class10001]
 		[ATHENA_GlycemicControl_Class190000])
 	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
 	(generic_drug METFORMIN)
 	(increase_dose_ceiling 2499.8)
-	(label "Metformin")
-	(max_recommended_dose 2600.0)
+	(label "metformin")
+	(max_recommended_dose 2550.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 500.0))
 
@@ -14943,7 +15620,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50004])
 	(generic_drug METFORMIN_ER)
 	(increase_dose_ceiling 1999.9)
-	(label "Metformin extended release")
+	(label "metformin extended release")
 	(max_recommended_dose 2000.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 500.0))
@@ -14957,7 +15634,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
 	(generic_drug ROSIGLITAZONE)
 	(increase_dose_ceiling 8.0)
-	(label "ROSIGLITAZONE")
+	(label "rosiglitazone")
 	(max_recommended_dose 8.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 4.0))
@@ -14967,6 +15644,7 @@
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class1330004]
 		[ATHENA_GlycemicControl_Class1330006])
+	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_110007]
 		[ATHENA_GlycemicControl_Instance_110006])
@@ -14974,7 +15652,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50026])
 	(generic_drug PIOGLITAZONE)
 	(increase_dose_ceiling 44.9)
-	(label "Pioglitazone")
+	(label "pioglitazone")
 	(max_recommended_dose 45.1)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 15.0))
@@ -14995,7 +15673,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50027])
 	(generic_drug REPAGLINIDE)
 	(increase_dose_ceiling 16.0)
-	(label "REPAGLINIDE")
+	(label "repaglinide")
 	(max_recommended_dose 16.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(Relative_Contraindications Poor_renal_function)
@@ -15014,7 +15692,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Class340013])
 	(generic_drug NATEGLINIDE)
 	(increase_dose_ceiling 360.0)
-	(label "NATEGLINIDE")
+	(label "nateglinide")
 	(max_recommended_dose 360.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(Relative_Contraindications
@@ -15032,7 +15710,7 @@
 	(drug_usage [ATHENA_GlycemicControl_Instance_50028])
 	(generic_drug SITAGLIPTIN)
 	(increase_dose_ceiling 100.0)
-	(label "SITAGLIPTIN")
+	(label "sitagliptin")
 	(max_recommended_dose 100.2)
 	(max_recommended_dose_level High_Dose%28high%2Flow%29)
 	(starting_dose 25.0))
@@ -15333,6 +16011,12 @@
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Instance_60016])
 	(PrettyName "PatinetChar Morbidly overweight (BMI>=29)"))
 
+([CHF_defined_as_CHForHF_N] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class310001])
+	(PrettyName "CHF"))
+
 ([CKD_stage_3_or_4_or_5_or_eGFR_lt_50] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
@@ -15389,7 +16073,7 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1130011])
-	(PrettyName "eGFR<45 most recent any time frame"))
+	(PrettyName "eGFR<45 most recent past year"))
 
 ([eGFR%3C60] of  Diagnostic_Term_Metaclass
 
@@ -15400,6 +16084,12 @@
 
 ([endocrinologist] of  Canonical_Terms_Metaclass
 )
+
+([GFR%3C45+past+year+and+sax+daily+dose%3E2.4] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class250896])
+	(PrettyName "eGFR<45 past year and sax daily dose>2.4"))
 
 ([HbA1c%3C6] of  Diagnostic_Term_Metaclass
 
@@ -15528,7 +16218,7 @@
 
 	(activity_class "Medication")
 	(alternatives [ATHENA_GlycemicControl_Instance_50004])
-	(fine-grain_priority 1000)
+	(fine-grain_priority 200)
 	(label "Evaluate start Biguanide")
 	(recommendation_basis [is_first-line_drug_for])
 	(therapeutic_goal [ATHENA_GlycemicControl_Class610454]))
@@ -15866,7 +16556,7 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class950000])
-	(PrettyName "Pres Biguanide and eGFR<30 past year"))
+	(PrettyName "eGFR<30 past year"))
 
 ([Pres+dialysis] of  Diagnostic_Term_Metaclass
 
@@ -15879,7 +16569,7 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1150001])
 	(label "Pres Emp and eGFR<45 past year")
-	(PrettyName "Pres Emp and eGFR<45 past year"))
+	(PrettyName "eGFR<45 past year"))
 
 ([Pres+glyb+and+eGFR%3C30+past+year] of  Diagnostic_Term_Metaclass
 

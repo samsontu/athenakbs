@@ -1,4 +1,4 @@
-; Mon Apr 30 13:41:14 PDT 2018
+; Mon Jul 23 11:13:51 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -265,6 +265,10 @@
 
 (defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
 	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
+	(role concrete))
+
+(defclass Thiazide_diuretics_preferred
+	(is-a Thiazide_Diuretics)
 	(role concrete))
 
 (defclass ThirdLineDrugs_VA_GL
@@ -1504,7 +1508,7 @@
 	(role concrete))
 
 (defclass THIAZOLIDINEDIONES
-	(is-a Oral_Hypoglycemic_Agent Harmful_to_HF Encoded_DM_Drugs)
+	(is-a Oral_Hypoglycemic_Agent Harmful_to_HF)
 	(role concrete))
 
 (defclass ROSIGLITAZONE
@@ -1512,7 +1516,7 @@
 	(role concrete))
 
 (defclass PIOGLITAZONE
-	(is-a THIAZOLIDINEDIONES)
+	(is-a THIAZOLIDINEDIONES Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass Dronedarone
@@ -1652,7 +1656,7 @@
 	(role concrete))
 
 (defclass chlorthalidone
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Sulfa_drugs_noSU Thiazide_diuretics_preferred)
 	(role concrete))
 
 (defclass furosemide "short duration of action.  no hypercalcemia"
@@ -1720,7 +1724,7 @@
 	(role concrete))
 
 (defclass indapamide
-	(is-a Thiazide_Diuretics Sulfa_drugs_noSU)
+	(is-a Sulfa_drugs_noSU Thiazide_diuretics_preferred)
 	(role concrete))
 
 (defclass methyclothiazide
@@ -2347,7 +2351,7 @@
 	(is-a Heart_Failure)
 	(role concrete))
 
-(defclass Heart_failure_N "based on ICD9s from NQF 081, which is equivalent to AHA/PCPI measure 7"
+(defclass Heart_failure_N "based on ICD9s from NQF 081, which is equivalent to AHA/PCPI measure 7\nthis used to have PrettyName \"Heart Failure PM\", but because the PrettyName is now exposed, PrettyName became simply \"Heart Failure\".  The KB name was mapped around May 2018 by Geoffrey Tso for DM KB"
 	(is-a Heart_Failure_Global)
 	(role concrete))
 
@@ -2383,7 +2387,7 @@
 	(is-a CCS-7)
 	(role concrete))
 
-(defclass CVD_DM
+(defclass CVD_DM "CVD as defined by Supplementary Material from paper by Zinman NEJM 2015; includes MI, angina, stroke and other Dx; mapping done by Geoffrey Tso around May 2018;"
 	(is-a Cardiovascular_disease_unspecified)
 	(role concrete))
 

@@ -1,0 +1,999 @@
+; Sat Nov 11 01:11:42 PST 2017
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot kb_goal_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot label
+;+		(comment "The label of the knowledge base instance from which the action (e.g., message) is generated.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot messages
+;+		(comment "Collateral messages related to the administration of a drug")
+		(type INSTANCE)
+;+		(allowed-classes Message)
+		(create-accessor read-write))
+	(single-slot domain_term
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot route
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot debug_html
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grade_recommendation
+;+		(comment "Confidence in recommendation based on expected benefit and on the level of evidence.Used to be \"strength of recommendation\"\nVA/DoD guideline has the following scale:\n\n                                The net benefit of the intervention\nQuality of Evidence Substantial Moderate Small Zero or Negative\nGood                            A                  B            C          D\nFair                               B                  B            C           D\nPoor                               I                    I              I            I")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot goal
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot evaluated_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(single-slot substance
+;+		(comment "The substance for which there is an reaction in adverse_reaction")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot valid_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot primary
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot impact
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot mood
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_upper_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot advisory_id
+;+		(comment "Unique identifier for an advisory")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot subsidiary_message
+;+		(comment "Message strings that elaborate on the \"main message\" string.")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot test_or_procedure
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot criterion_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rule_in_criteria
+;+		(comment "The rule-in criteria (which evaluated to \"true\") that prompted the display of the message or the recommendation of specific drugs")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot criterion_type
+		(type SYMBOL)
+		(allowed-values exclusion_criterion denominator_criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot assumption
+;+		(comment "The assumption (e.g., blood pressure goal is satisfied) made in order to generated the advisory")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot associated_substitution_drug
+;+		(comment "A drug substitution is a combination of a delete recommendation and an associated \"add\" recommendation and vice versa.")
+		(type INSTANCE)
+;+		(allowed-classes Add_Delete_Drug_Recommendation)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_upper_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action_class
+;+		(comment "The type of recommended action (e.g., On_Screen_Message, Parameterized_Message, or (in future), Order laboratory test, Referral)")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_class
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot who_to
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot kb_instance_id
+;+		(comment "Identifier of knowledge base instance from which the action (e.g., message) is generated")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot code
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot stop_time
+;+		(comment "For performance measures, the stop time of the measuring period")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot provider
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot prescription_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot evaluated_drug_relation
+		(type INSTANCE)
+;+		(allowed-classes Evaluated_Drug_Relation)
+		(create-accessor read-write))
+	(multislot criteria_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+		(create-accessor read-write))
+	(single-slot daily_dose
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot quality_of_evidence
+;+		(comment "The type of evidences supporting a recommendation. Usually assessed using a scale of ordinal values.\nVA-DoD guideline has the follwoing scale:\nAt least one properly done RCT\nII-1 Well designed controlled trial without randomization\nII-2 Well designed cohort or case-control analytic study\nII-3 Multiple time series, dramatic results of uncontrolled experiment\nIII Opinion of respected authorities, case reports, and expert committees")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot specific_drug
+;+		(comment "A specific drug that's the subject of the drug recommendation. It may be a drug a patient is taking already and whose dose should be changed, or a drug (in a drug class) that should be added or deleted.")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot coding_system
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot therapeutic_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(single-slot start_time
+;+		(comment "For performance measures, the start time of the measurement period")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_to_add_string
+;+		(comment "This is a composite of drug_class and specific drug generated (\"drug_class(specific drug1, specific drug2)\" for display purpose.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot net_benefit
+;+		(comment "Relative benefit compared to risk at individual level. Impact of intervention at population level. VA/DoD guideline has the following scale:\n\nSubstantial\nMore than a small relative impact on a frequent condition with a substantial burden of suffering; \nor A large impact on an infrequent condition with a significant impact on the individual patient  level.\n\nModerate\nA small relative impact on a frequent condition with a substantial burden of suffering; or \nA moderate impact on an infrequent condition with a significant impact on the individual patient level.\n\nSmall\nA negligible relative impact on a frequent condition with a substantial burden of suffering; or \nA small impact on an infrequent condition with a significant impact on the individual patient level.\n\nZero or \nNegative\nNegative impact on patients; or\nNo relative impact on either a frequent condition with a substantial burden of suffering; or\nAn infrequent condition with a significant impact on the individual patient level.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_recommendation
+		(type INSTANCE)
+;+		(allowed-classes Drug_Recommendation)
+		(create-accessor read-write))
+	(single-slot achieved
+		(type SYMBOL)
+		(allowed-values achieved failed unknown)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot recommended_action
+;+		(comment "An action (currently messages) that is recommended for the patient.")
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot patient_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot case_id
+;+		(comment "Identifier of patient case")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot patient_characteristic
+;+		(comment "This is a set of conclusions made about a patient case. The conclusions are in the form of either (1) a concept (e.g., \"high risk\") that has been evaluated to be true for the patient, or (2) a variable (e.g., patient eligible) and a value (true).")
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+		(create-accessor read-write))
+	(single-slot parameter
+;+		(comment "Can be a (1) Protege class representing a condition that's true or (2) a parameter (variable) and a value.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot reference
+;+		(comment "The URLs of reference sources to justify an action (e.g., message) or a drug recommendation (e.g., why MI is a compelling indication for ACE inhibitor)")
+		(type STRING)
+		(create-accessor read-write))
+	(multislot missing_data
+		(type INSTANCE)
+;+		(allowed-classes Missing_Data)
+		(create-accessor read-write))
+	(single-slot station
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot daily_dose_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot evaluation_result
+		(type SYMBOL)
+		(allowed-values true false unknown)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_action_type
+		(type SYMBOL)
+		(allowed-values add delete increase_dose decrease_dose)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot message_type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reason_for_goal
+;+		(comment "The reason (e.g., patient has diabetes mellitus) that justifies a particular goal.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+;+		(comment "Identifier of guideline")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot status
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot relation_type
+		(type SYMBOL)
+		(allowed-values compelling_indication relative_indication strong_contraindication relative_contraindication side_effect adverse_event bad_drug_partner good_drug_partner do_not_add_condition do_not_intensify_condition first_line_drug_for second_line_drug_for third_line_drug_for)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot focus
+;+		(comment "The clinical parameter that is the focus of the goal")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot hospitalization_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot source
+;+		(comment "The source of the goal")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot advisory_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot collateral_action
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot message
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot fine_grain_priority
+;+		(comment "An integer for prioritizing goals and messages")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot overall_quality_evidence
+;+		(comment "The extent to which the evidence support the recommendation. Used to be \"level of evidence\"\nGood High grade evidence (I or II-1) directly linked to health outcome\n\nFair High grade evidence (I or II-1) linked to intermediate outcome; or\nModerate grade evidence (II-2 or II-3) directly linked to health outcome\n\nPoor Level III evidence or no linkage of evidence to health outcome")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot preference
+		(type SYMBOL)
+		(allowed-values preferred neutral blocked)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot data
+;+		(comment "Data used to evaluate goal")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot condition_or_drug
+;+		(comment "An indication, contraindication, side effect, adverse event of a drug class, or the drugs that have harmful or beneficial interactions with the drug class.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Maximum_Number_Intervention_Metaclass
+	(is-a %3ASTANDARD-CLASS)
+	(role concrete))
+
+(defclass %3AJESS-ENGINE
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFINITION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFGLOBAL
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFTEMPLATE
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFFACTS
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMESSAGE-HANDLER
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMETHOD
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3ARULE
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-RULE
+	(is-a %3AJESS-DEFINITION %3ARULE)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AFUNCTION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-FUNCTION
+	(is-a %3AFUNCTION %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Advisory_Component "A component of an ATHENA advisory for a patient case, uisng a guideline as the source of information."
+	(is-a USER)
+	(role abstract))
+
+(defclass Action "A generic class of actions that are recommended. Examples of actions are Message, Referral, Order Test, etc."
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot label
+;+		(comment "The label of the knowledge base instance from which the action (e.g., message) is generated.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot action_class
+;+		(comment "The type of recommended action (e.g., On_Screen_Message, Parameterized_Message, or (in future), Order laboratory test, Referral)")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot description
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot net_benefit
+;+		(comment "Relative benefit compared to risk at individual level. Impact of intervention at population level. VA/DoD guideline has the following scale:\n\nSubstantial\nMore than a small relative impact on a frequent condition with a substantial burden of suffering; \nor A large impact on an infrequent condition with a significant impact on the individual patient  level.\n\nModerate\nA small relative impact on a frequent condition with a substantial burden of suffering; or \nA moderate impact on an infrequent condition with a significant impact on the individual patient level.\n\nSmall\nA negligible relative impact on a frequent condition with a substantial burden of suffering; or \nA small impact on an infrequent condition with a significant impact on the individual patient level.\n\nZero or \nNegative\nNegative impact on patients; or\nNo relative impact on either a frequent condition with a substantial burden of suffering; or\nAn infrequent condition with a significant impact on the individual patient level.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot collateral_action
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot overall_quality_evidence
+;+		(comment "The extent to which the evidence support the recommendation. Used to be \"level of evidence\"\nGood High grade evidence (I or II-1) directly linked to health outcome\n\nFair High grade evidence (I or II-1) linked to intermediate outcome; or\nModerate grade evidence (II-2 or II-3) directly linked to health outcome\n\nPoor Level III evidence or no linkage of evidence to health outcome")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot fine_grain_priority
+;+		(comment "An integer for prioritizing goals and messages")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot subsidiary_message
+;+		(comment "Message strings that elaborate on the \"main message\" string.")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot quality_of_evidence
+;+		(comment "The type of evidences supporting a recommendation. Usually assessed using a scale of ordinal values.\nVA-DoD guideline has the follwoing scale:\nAt least one properly done RCT\nII-1 Well designed controlled trial without randomization\nII-2 Well designed cohort or case-control analytic study\nII-3 Multiple time series, dramatic results of uncontrolled experiment\nIII Opinion of respected authorities, case reports, and expert committees")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grade_recommendation
+;+		(comment "Confidence in recommendation based on expected benefit and on the level of evidence.Used to be \"strength of recommendation\"\nVA/DoD guideline has the following scale:\n\n                                The net benefit of the intervention\nQuality of Evidence Substantial Moderate Small Zero or Negative\nGood                            A                  B            C          D\nFair                               B                  B            C           D\nPoor                               I                    I              I            I")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot reference
+;+		(comment "The URLs of reference sources to justify an action (e.g., message) or a drug recommendation (e.g., why MI is a compelling indication for ACE inhibitor)")
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Message "A textual message to be displayed."
+	(is-a Action)
+	(role concrete)
+	(single-slot message_type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot rule_in_criteria
+;+		(comment "The rule-in criteria (which evaluated to \"true\") that prompted the display of the message or the recommendation of specific drugs")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot message
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Referral
+	(is-a Action)
+	(role concrete)
+	(single-slot when_upper_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot who_to
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_upper_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Order_TestProcedure
+	(is-a Action)
+	(role concrete)
+	(single-slot test_or_procedure
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_upper_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_lower_bound
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot code
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot coding_system
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot when_upper_bound_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Guideline_Goal "A patient-specific goal (possibly justified by 'reason_for_goal. A patient may achieve or fail to achieve the goal. Alternatively, we may not have enough information to determine the status of goal achievement."
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot kb_goal_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot primary
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot achieved
+		(type SYMBOL)
+		(allowed-values achieved failed unknown)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot collateral_action
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot data
+;+		(comment "Data used to evaluate goal")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot fine_grain_priority
+;+		(comment "An integer for prioritizing goals and messages")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reason_for_goal
+;+		(comment "The reason (e.g., patient has diabetes mellitus) that justifies a particular goal.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot goal
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot criteria_evaluation
+		(type INSTANCE)
+;+		(allowed-classes Criterion_Evaluation)
+		(create-accessor read-write)))
+
+(defclass Conclusion "Something (parameter) about the patient that has been inferred to be true. \"value\" property defaults to \"true\" if no value is supplied."
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parameter
+;+		(comment "Can be a (1) Protege class representing a condition that's true or (2) a parameter (variable) and a value.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Drug_Recommendation "Detailed recommendation to add, delete, or substitute a drug and to increase/decrease the dose of a specific drug."
+	(is-a Advisory_Component)
+	(role abstract)
+	(multislot specific_drug
+;+		(comment "A specific drug that's the subject of the drug recommendation. It may be a drug a patient is taking already and whose dose should be changed, or a drug (in a drug class) that should be added or deleted.")
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot preference
+		(type SYMBOL)
+		(allowed-values preferred neutral blocked)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_action_type
+		(type SYMBOL)
+		(allowed-values add delete increase_dose decrease_dose)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot collateral_action
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(multislot therapeutic_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(single-slot fine_grain_priority
+;+		(comment "An integer for prioritizing goals and messages")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Add_Delete_Drug_Recommendation "Add, delete, or (when there is an associated_drug_recommendation) substitute (which is add and delete) a class of drug (with formulary-preferred 'specific_drug'). The drug recommendation may be justified by 'evaluated drug relations' (e.g.., evidence based compelling indications)"
+	(is-a Drug_Recommendation)
+	(role concrete)
+	(single-slot drug_to_add_string
+;+		(comment "This is a composite of drug_class and specific drug generated (\"drug_class(specific drug1, specific drug2)\" for display purpose.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_class
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot evaluated_drug_relation
+		(type INSTANCE)
+;+		(allowed-classes Evaluated_Drug_Relation)
+		(create-accessor read-write))
+	(single-slot drug_action_type
+		(type SYMBOL)
+		(allowed-values add delete)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot associated_substitution_drug
+;+		(comment "A drug substitution is a combination of a delete recommendation and an associated \"add\" recommendation and vice versa.")
+		(type INSTANCE)
+;+		(allowed-classes Add_Delete_Drug_Recommendation)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Increase_Decrease_Dose_Recommendation "Recommending increasing or decreasing the dose of a specific drug that a patient is taking already."
+	(is-a Drug_Recommendation)
+	(role concrete)
+	(single-slot specific_drug
+;+		(comment "A specific drug that's the subject of the drug recommendation. It may be a drug a patient is taking already and whose dose should be changed, or a drug (in a drug class) that should be added or deleted.")
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot evaluated_drug_relation
+		(type INSTANCE)
+;+		(allowed-classes Evaluated_Drug_Relation)
+		(create-accessor read-write))
+	(single-slot preference
+		(type SYMBOL)
+		(allowed-values preferred neutral blocked)
+;+		(value preferred)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_action_type
+		(type SYMBOL)
+		(allowed-values increase_dose decrease_dose)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Evaluated_Drug_Relation "For a given drug class, the drug/drug or drug/condition relationship that is applicable to the patient for the purpose of managing the disease. For example, MI (a condition) may be a 'compelling indication' (relationship) for the use of ACE Inhibitor (drug class)."
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot relation_type
+		(type SYMBOL)
+		(allowed-values compelling_indication relative_indication strong_contraindication relative_contraindication side_effect adverse_event bad_drug_partner good_drug_partner do_not_add_condition do_not_intensify_condition first_line_drug_for second_line_drug_for third_line_drug_for)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot net_benefit
+;+		(comment "Relative benefit compared to risk at individual level. Impact of intervention at population level. VA/DoD guideline has the following scale:\n\nSubstantial\nMore than a small relative impact on a frequent condition with a substantial burden of suffering; \nor A large impact on an infrequent condition with a significant impact on the individual patient  level.\n\nModerate\nA small relative impact on a frequent condition with a substantial burden of suffering; or \nA moderate impact on an infrequent condition with a significant impact on the individual patient level.\n\nSmall\nA negligible relative impact on a frequent condition with a substantial burden of suffering; or \nA small impact on an infrequent condition with a significant impact on the individual patient level.\n\nZero or \nNegative\nNegative impact on patients; or\nNo relative impact on either a frequent condition with a substantial burden of suffering; or\nAn infrequent condition with a significant impact on the individual patient level.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot overall_quality_evidence
+;+		(comment "The extent to which the evidence support the recommendation. Used to be \"level of evidence\"\nGood High grade evidence (I or II-1) directly linked to health outcome\n\nFair High grade evidence (I or II-1) linked to intermediate outcome; or\nModerate grade evidence (II-2 or II-3) directly linked to health outcome\n\nPoor Level III evidence or no linkage of evidence to health outcome")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot condition_or_drug
+;+		(comment "An indication, contraindication, side effect, adverse event of a drug class, or the drugs that have harmful or beneficial interactions with the drug class.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot quality_of_evidence
+;+		(comment "The type of evidences supporting a recommendation. Usually assessed using a scale of ordinal values.\nVA-DoD guideline has the follwoing scale:\nAt least one properly done RCT\nII-1 Well designed controlled trial without randomization\nII-2 Well designed cohort or case-control analytic study\nII-3 Multiple time series, dramatic results of uncontrolled experiment\nIII Opinion of respected authorities, case reports, and expert committees")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grade_recommendation
+;+		(comment "Confidence in recommendation based on expected benefit and on the level of evidence.Used to be \"strength of recommendation\"\nVA/DoD guideline has the following scale:\n\n                                The net benefit of the intervention\nQuality of Evidence Substantial Moderate Small Zero or Negative\nGood                            A                  B            C          D\nFair                               B                  B            C           D\nPoor                               I                    I              I            I")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot substance
+;+		(comment "The substance for which there is an reaction in adverse_reaction")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot reference
+;+		(comment "The URLs of reference sources to justify an action (e.g., message) or a drug recommendation (e.g., why MI is a compelling indication for ACE inhibitor)")
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Criterion_Evaluation
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot kb_goal_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot criterion_type
+		(type SYMBOL)
+		(allowed-values exclusion_criterion denominator_criterion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot criterion_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot evaluation_result
+		(type SYMBOL)
+		(allowed-values true false unknown)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot data
+;+		(comment "Data used to evaluate goal")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot missing_data
+		(type INSTANCE)
+;+		(allowed-classes Missing_Data)
+		(create-accessor read-write)))
+
+(defclass Missing_Data
+	(is-a Advisory_Component)
+	(role concrete)
+	(single-slot criterion_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot evaluation_result
+		(type SYMBOL)
+		(allowed-values true false unknown)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot parameter
+;+		(comment "Can be a (1) Protege class representing a condition that's true or (2) a parameter (variable) and a value.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Advisory "Container for one set of guideline-based advisory"
+	(is-a USER)
+	(role concrete)
+	(single-slot case_id
+;+		(comment "Identifier of patient case")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot assumption
+;+		(comment "The assumption (e.g., blood pressure goal is satisfied) made in order to generated the advisory")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot debug_html
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot patient_characteristic
+;+		(comment "This is a set of conclusions made about a patient case. The conclusions are in the form of either (1) a concept (e.g., \"high risk\") that has been evaluated to be true for the patient, or (2) a variable (e.g., patient eligible) and a value (true).")
+		(type INSTANCE)
+;+		(allowed-classes Conclusion)
+		(create-accessor read-write))
+	(multislot evaluated_goal
+		(type INSTANCE)
+;+		(allowed-classes Guideline_Goal)
+		(create-accessor read-write))
+	(single-slot start_time
+;+		(comment "For performance measures, the start time of the measurement period")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot guideline_id
+;+		(comment "Identifier of guideline")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot station
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hospitalization_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drug_recommendation
+		(type INSTANCE)
+;+		(allowed-classes Drug_Recommendation)
+		(create-accessor read-write))
+	(single-slot advisory_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot advisory_id
+;+		(comment "Unique identifier for an advisory")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot recommended_action
+;+		(comment "An action (currently messages) that is recommended for the patient.")
+		(type INSTANCE)
+;+		(allowed-classes Action)
+		(create-accessor read-write))
+	(single-slot stop_time
+;+		(comment "For performance measures, the stop time of the measuring period")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot provider
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Data
+	(is-a USER)
+	(role concrete)
+	(single-slot patient_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass AdverseReaction
+	(is-a Data)
+	(role concrete)
+	(single-slot valid_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot domain_term
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot substance
+;+		(comment "The substance for which there is an reaction in adverse_reaction")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass DataEntry
+	(is-a Data)
+	(role concrete)
+	(single-slot valid_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot domain_term
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot value
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Medication
+	(is-a Data)
+	(role concrete)
+	(single-slot valid_time
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot status
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot prescription_id
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot mood
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot daily_dose
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot daily_dose_unit
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot route
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot drug_name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

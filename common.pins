@@ -1,7 +1,10 @@
-; Tue May 29 15:00:02 PDT 2018
+; Tue Jul 24 10:20:09 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
+
+([adverse_reaction] of  Canonical_Terms_Metaclass
+)
 
 ([Age] of  Interval-Valued_AtomicTest_Metaclass
 
@@ -11,6 +14,9 @@
 )
 
 ([Assumption] of  Canonical_Terms_Metaclass
+)
+
+([bad_drug_partner] of  Canonical_Terms_Metaclass
 )
 
 ([Clinic] of  Canonical_Terms_Metaclass
@@ -79,6 +85,9 @@
 	(label "2 years")
 	(time_unit year))
 
+([compelling_indication] of  Canonical_Terms_Metaclass
+)
+
 ([Concentration_Unit] of  Canonical_Terms_Metaclass
 )
 
@@ -116,6 +125,9 @@
 	(PrettyName "do not intensify controllable condition"))
 
 ([Drug_Medical_Condition_Relation] of  Canonical_Terms_Metaclass
+)
+
+([Drug_Recommendation_Relation] of  Canonical_Terms_Metaclass
 )
 
 ([Drug_Related] of  Canonical_Terms_Metaclass
@@ -157,6 +169,9 @@
 
 	(PrettyName "General Info"))
 
+([good_drug_partner] of  Canonical_Terms_Metaclass
+)
+
 ([grams] of  Canonical_Terms_Metaclass
 
 	(PrettyName "grams"))
@@ -176,6 +191,15 @@
 )
 
 ([Inpatient_Encounter] of  Canonical_Terms_Metaclass
+)
+
+([is_first_line_drug_for] of  Canonical_Terms_Metaclass
+)
+
+([is_second_line_drug_for] of  Canonical_Terms_Metaclass
+)
+
+([is_third_line_drug_for] of  Canonical_Terms_Metaclass
 )
 
 ([Laboratory_Tests] of  Interval-Valued_AtomicTest_Metaclass
@@ -279,6 +303,12 @@
 ([Recommendation_Attribute] of  Canonical_Terms_Metaclass
 )
 
+([relative_contraindication] of  Canonical_Terms_Metaclass
+)
+
+([relative_indication] of  Canonical_Terms_Metaclass
+)
+
 ([Risk_Factor] of  Canonical_Terms_Metaclass
 )
 
@@ -294,6 +324,9 @@
 ([Strength_Of_Recommendation] of  Canonical_Terms_Metaclass
 
 	(PrettyName "Strength of recommendation"))
+
+([strong_contraindication] of  Canonical_Terms_Metaclass
+)
 
 ([Telephone_Encounter] of  Canonical_Terms_Metaclass
 )

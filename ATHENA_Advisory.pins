@@ -1,0 +1,56 @@
+; Sat Nov 11 01:11:42 PST 2017
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([ATHENA_Advisory_Class2] of  Message
+
+	(action_class "On_Screen_Message")
+	(fine_grain_priority 1)
+	(grade_recommendation "Class I")
+	(label "Acute MI, use contemporary guidelines")
+	(message "Patients who have not developed HF symptoms should be treated according to contemporary guidelines after an acute MI.")
+	(message_type "Primary_Recommendation")
+	(overall_quality_evidence "C")
+	(reference
+		"http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Citation&list_uids=22139085"
+		"http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Citation&list_uids=17238399")
+	(rule_in_criteria "Presence of MI within 41 days")
+	(subsidiary_message
+		"Pro mollis ornatus accommodare at. Aliquip mediocritatem nec an. Facilis albucius vix ne, mea ex soleat meliore adipiscing, "
+		"Ei nec fabellas iracundia disputationi"
+		" te vel audire ceteros petentium, pro porro facilisi ea."))
+
+([ATHENA_Advisory_Class20] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "all slots have domains")
+	(%3APAL-RANGE "(defrange ?slot :STANDARD-SLOT)")
+	(%3APAL-STATEMENT "(forall ?slot \n        (own-slot-not-null :DIRECT-DOMAIN ?slot))"))
+
+([Jess+engine] of  %3AJESS-ENGINE
+)
+
+([KB_037182_Class0] of  %3AJESS-DEFTEMPLATE
+
+	(%3ADEFINITION "(deftemplate MAIN::object \n   \"$PROTEGE-OBJECTS$\" \n   (slot is-a (type SYMBOL)) \n   (slot is-a-name (type STRING)) \n   (slot OBJECT (type OBJECT)) \n   (multislot name))")
+	(%3ADEFINITION-NAME "MAIN::object")
+	(%3ADOCUMENTATION "$PROTEGE-OBJECTS$")
+	(%3AKB-SAVE TRUE))
+
+([KB_037182_Class2] of  %3AJESS-RULE
+
+	(%3ADEFINITION "(defrule MAIN::Contradictory-support-detection-1 \n   (object (is-a Advisory) (evaluated_intervention $?_blank_mf20 ?ev $?_blank_mf21)) \n   (object (is-a Guideline_Activity_Evaluation) (OBJECT ?ev) (activity ?intervention) (evaluations $?_blank_mf22 ?g1-evaluation $?_blank_mf23 ?g2-evaluation $?_blank_mf24)) \n   (object (is-a Add_Evaluation) (OBJECT ?g1-evaluation) (relative_contraindications nil) (relative_indications $?ri) (contraindications nil) (compelling_indications $?ci)) \n   (object (is-a Add_Evaluation) (OBJECT ?g2-evaluation) (relative_contraindications $?rc) (relative_indications nil) (contraindications nil) (compelling_indications nil)) \n   (object (is-a Add_Evaluation) (OBJECT ?g1-evaluation) (preference ?g1-preference)) \n   (object (is-a Add_Evaluation) (OBJECT ?g2-evaluation) (preference ?g2-preference)) \n   => \n   (make-instance Contradictory_Support (indication-evaluations ?g1-evaluation) (contraindication-evaluation ?g2-evaluation) (name ?intervention)))")
+	(%3ADEFINITION-NAME "MAIN::Contradictory-support-detection-1")
+	(%3AKB-SAVE TRUE))
+
+([KB_037182_Class3] of  %3AJESS-RULE
+
+	(%3ADEFINITION "(defrule MAIN::Contradictory-support-detection-2 \n   (object (is-a Advisory) (evaluated_intervention $?_blank_mf30 ?ev $?_blank_mf31)) \n   (object (is-a Guideline_Activity_Evaluation) (OBJECT ?ev) (activity ?intervention) (evaluations $?_blank_mf32 ?g1-evaluation $?_blank_mf33 ?g2-evaluation $?_blank_mf34)) \n   (object (is-a Add_Evaluation) (OBJECT ?g1-evaluation) (preference ?g1-preference) (relative_contraindications nil) (relative_indications $?ri) (contraindications nil) (compelling_indications $?ci)) \n   (object (is-a Preference) (OBJECT ?g2-preference) (label \"ruled out\")) \n   (object (is-a Add_Evaluation) (OBJECT ?g2-evaluation) (preference g2-preference) (relative_contraindications $?rc) (relative_indications nil) (contraindications nil) (compelling_indications nil)) \n   (object (is-a Preference) (OBJECT ?g2-preference) (label \"preferred\")) \n   => \n   (make-instance Contradictory_Support (indication-evaluations ?g1-evaluation) (contraindication-evaluations ?g2-evaluation) (name ?intervention)))")
+	(%3ADEFINITION-NAME "MAIN::Contradictory-support-detection-2")
+	(%3AKB-SAVE TRUE))
+
+([KB_037182_Class4] of  %3AJESS-RULE
+
+	(%3ADEFINITION "(defrule MAIN::Collateral-Effect-1 \n   (object (is-a Advisory) (evaluated_intervention $?_blank_mf35 ?ev $?_blank_mf36)) \n   (object (is-a Guideline_Activity_Evaluation) (OBJECT ?ev) (activity ?intervention) (evaluations $?_blank_mf37 ?g1-evaluation $?_blank_mf38 ?g2-evaluation $?_blank_mf39)) \n   (object (is-a Add_Evaluation) (OBJECT ?g1-evaluation) (preference ?g1-preference) (relative_contraindications nil) (relative_indications $?ri) (contraindications nil) (compelling_indications $?ci)) \n   (object (is-a Preference) (OBJECT ?g2-preference) (label \"ruled-out\")) \n   (object (is-a Add_Evaluation) (OBJECT ?g2-evaluation) (preference g2-preference) (relative_contraindications $?rc) (relative_indications nil) (contraindications nil) (compelling_indications nil)) \n   (object (is-a Preference) (OBJECT ?g2-preference) (label \"preferred\")) \n   => \n   (make-instance Contradiction-Support (indication-evaluations ?g1-evaluation) (contraindication-evaluation ?g2-evaluation)))")
+	(%3ADEFINITION-NAME "MAIN::Collateral-Effect-1")
+	(%3AKB-SAVE TRUE))

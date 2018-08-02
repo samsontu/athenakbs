@@ -1,4 +1,4 @@
-; Tue May 29 22:44:07 PDT 2018
+; Tue Jul 31 10:38:36 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -345,6 +345,22 @@
 	(role concrete))
 
 (defclass No+Dx+DM-2+but+presence+of+DM+meds
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass GFR%3C45+past+year+and+sax+daily+dose%3E2.4
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Abs+biguanide+and+eGFR%3C30+past+30+days
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass CHF_defined_as_CHForHF_N
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug
 	(is-a Defined+concept)
 	(role concrete))
 

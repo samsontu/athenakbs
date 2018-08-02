@@ -1,4 +1,4 @@
-; Mon Apr 30 13:41:14 PDT 2018
+; Mon Jul 23 11:13:51 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,13 +6,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[library_ProjectKB_Class3950]
-		[library_ProjectKB_Class3951]
-		[library_ProjectKB_Class3952]
-		[library_ProjectKB_Class3953]
-		[library_ProjectKB_Class3954]
-		[library_ProjectKB_Class3955]
-		[library_ProjectKB_Class3956]))
+		[library_ProjectKB_Class4071]
+		[library_ProjectKB_Class4072]
+		[library_ProjectKB_Class4073]
+		[library_ProjectKB_Class4074]
+		[library_ProjectKB_Class4075]
+		[library_ProjectKB_Class4076]
+		[library_ProjectKB_Class4077]))
 
 ([CLSES_TAB] of  Widget
 
@@ -423,103 +423,6 @@
 	(x 0)
 	(y 120))
 
-([KB_258051_Class3911] of  Map
-
-	(entries
-		[KB_258051_Class3912]
-		[KB_258051_Class3914]
-		[KB_258051_Class3915]
-		[KB_258051_Class3917]
-		[KB_258051_Class3918]
-		[KB_258051_Class3920]
-		[KB_258051_Class3922]
-		[KB_258051_Class3924]
-		[KB_258051_Class3925])
-	(referenced_maps
-		[KB_258051_Class3919]
-		[KB_258051_Class3916]
-		[KB_258051_Class3913]
-		[KB_258051_Class3923]
-		[KB_258051_Class3921]))
-
-([KB_258051_Class3912] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_258051_Class3913] of  Map
-)
-
-([KB_258051_Class3914] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "KB_258051_Class3913")
-	(value_class "java.util.Map"))
-
-([KB_258051_Class3915] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_258051_Class3916] of  Map
-)
-
-([KB_258051_Class3917] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_258051_Class3916")
-	(value_class "java.util.Map"))
-
-([KB_258051_Class3918] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_258051_Class3919] of  Map
-)
-
-([KB_258051_Class3920] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_258051_Class3919")
-	(value_class "java.util.Map"))
-
-([KB_258051_Class3921] of  Map
-)
-
-([KB_258051_Class3922] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_258051_Class3921")
-	(value_class "java.util.Map"))
-
-([KB_258051_Class3923] of  Map
-)
-
-([KB_258051_Class3924] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_258051_Class3923")
-	(value_class "java.util.Map"))
-
-([KB_258051_Class3925] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([KB_475580_Instance_0] of  String
 
 	(name "factory_class_name")
@@ -528,10 +431,10 @@
 ([KB_475580_Instance_1] of  Map
 
 	(entries
-		[library_ProjectKB_Class3957]
-		[library_ProjectKB_Class3958]
-		[library_ProjectKB_Class3959]
-		[library_ProjectKB_Class3960]))
+		[library_ProjectKB_Class4078]
+		[library_ProjectKB_Class4079]
+		[library_ProjectKB_Class4080]
+		[library_ProjectKB_Class4081]))
 
 ([KB_475580_Instance_3] of  Options
 
@@ -629,6 +532,103 @@
 
 ([KB_533515_Instance_573] of  Property_List
 )
+
+([KB_877490_Class3911] of  Map
+
+	(entries
+		[KB_877490_Class3912]
+		[KB_877490_Class3914]
+		[KB_877490_Class3915]
+		[KB_877490_Class3917]
+		[KB_877490_Class3918]
+		[KB_877490_Class3920]
+		[KB_877490_Class3922]
+		[KB_877490_Class3924]
+		[KB_877490_Class3925])
+	(referenced_maps
+		[KB_877490_Class3919]
+		[KB_877490_Class3923]
+		[KB_877490_Class3913]
+		[KB_877490_Class3921]
+		[KB_877490_Class3916]))
+
+([KB_877490_Class3912] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_877490_Class3913] of  Map
+)
+
+([KB_877490_Class3914] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_877490_Class3913")
+	(value_class "java.util.Map"))
+
+([KB_877490_Class3915] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_877490_Class3916] of  Map
+)
+
+([KB_877490_Class3917] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_877490_Class3916")
+	(value_class "java.util.Map"))
+
+([KB_877490_Class3918] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_877490_Class3919] of  Map
+)
+
+([KB_877490_Class3920] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_877490_Class3919")
+	(value_class "java.util.Map"))
+
+([KB_877490_Class3921] of  Map
+)
+
+([KB_877490_Class3922] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_877490_Class3921")
+	(value_class "java.util.Map"))
+
+([KB_877490_Class3923] of  Map
+)
+
+([KB_877490_Class3924] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_877490_Class3923")
+	(value_class "java.util.Map"))
+
+([KB_877490_Class3925] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([KB_943075_Instance_100] of  Boolean
 
@@ -5096,69 +5096,6 @@
 ([library_ProjectKB_Class3949] of  Property_List
 )
 
-([library_ProjectKB_Class3950] of  String
-
-	(name "Diagnostic_Term_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3951] of  String
-
-	(name "Ordinal-Valued_AtomicTest_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3952] of  String
-
-	(name "Medications_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3953] of  String
-
-	(name "Medical_Conditions_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3954] of  String
-
-	(name "Derived_Parameter_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3955] of  String
-
-	(name "Interval-Valued_AtomicTest_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3956] of  String
-
-	(name "Canonical_Terms_Metaclass")
-	(string_value "PrettyName"))
-
-([library_ProjectKB_Class3957] of  Map_Entry
-
-	(key "collab.hide.archived")
-	(key_class "java.lang.String")
-	(value "true")
-	(value_class "java.lang.String"))
-
-([library_ProjectKB_Class3958] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([library_ProjectKB_Class3959] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([library_ProjectKB_Class3960] of  Map_Entry
-
-	(key "show_collaboration_panel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.Boolean"))
-
 ([library_ProjectKB_Class40679] of  Widget
 
 	(height 120)
@@ -5172,6 +5109,69 @@
 
 ([library_ProjectKB_Class40680] of  Property_List
 )
+
+([library_ProjectKB_Class4071] of  String
+
+	(name "Diagnostic_Term_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4072] of  String
+
+	(name "Ordinal-Valued_AtomicTest_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4073] of  String
+
+	(name "Medications_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4074] of  String
+
+	(name "Medical_Conditions_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4075] of  String
+
+	(name "Derived_Parameter_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4076] of  String
+
+	(name "Interval-Valued_AtomicTest_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4077] of  String
+
+	(name "Canonical_Terms_Metaclass")
+	(string_value "PrettyName"))
+
+([library_ProjectKB_Class4078] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([library_ProjectKB_Class4079] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([library_ProjectKB_Class4080] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([library_ProjectKB_Class4081] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
 
 ([library_ProjectKB_Class50679] of  Property_List
 )
