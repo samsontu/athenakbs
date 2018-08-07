@@ -1,4 +1,4 @@
-; Tue Jul 31 14:57:25 PDT 2018
+; Mon Aug 06 11:08:56 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -3253,7 +3253,7 @@
 	(drug_usage [ATHENA_HTN_Dashboard_Class140017])
 	(generic_drug sustained+release+metoprolol+succinate)
 	(increase_dose_ceiling 199.0)
-	(label "sustained release metorprolol succinate")
+	(label "sustained release metoprolol succinate")
 	(max_recommended_dose 200.1)
 	(max_recommended_dose_level High_Dose)
 	(starting_dose 50.0))
@@ -3268,10 +3268,9 @@
 	(drug_usage [ATHENA_HTN_Dashboard_Class140017])
 	(generic_drug metoprolol_tartrate)
 	(increase_dose_ceiling 199.0)
-	(label "metoprolol_tartrate")
+	(label "metoprolol tartrate")
 	(max_recommended_dose 200.1)
 	(max_recommended_dose_level High_Dose)
-	(rule_in [athena_hypertension_INSTANCE_00086])
 	(starting_dose 50.0))
 
 ([ATHENA_HTN_Dashboard_Class10000] of  Management_Guideline
@@ -10408,7 +10407,8 @@
 	(actions
 		[ATHENA_HTN_Dashboard_Class630028]
 		[ATHENA_HTN_Dashboard_Class480002]
-		[ATHENA_HTN_Dashboard_Class737041])
+		[ATHENA_HTN_Dashboard_Class737041]
+		[ATHENA_HTN_Dashboard_Class713425])
 	(label "st Has rec add OR (black and not monotherapy--black monotherapy msg; not both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class630027]))
 
@@ -11027,7 +11027,8 @@
 
 	(actions
 		[ATHENA_HTN_Dashboard_Class480002]
-		[ATHENA_HTN_Dashboard_Class737041])
+		[ATHENA_HTN_Dashboard_Class737041]
+		[ATHENA_HTN_Dashboard_Class713425])
 	(label "st has rec add-- not on both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class660490]))
 
@@ -11114,7 +11115,9 @@
 
 	(actions
 		[ATHENA_HTN_Dashboard_Class480002]
-		[ATHENA_HTN_Dashboard_Class210034])
+		[ATHENA_HTN_Dashboard_Class210034]
+		[ATHENA_HTN_Dashboard_Class742649]
+		[ATHENA_HTN_Dashboard_Class713425])
 	(label "st Has rec add, HCTZ max dose, Sub with Pref thiazide -- not on both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class660490]))
 
@@ -11397,7 +11400,6 @@
 
 	(actions
 		[ATHENA_HTN_Dashboard_Class390312]
-		[ATHENA_HTN_Dashboard_Class420239]
 		[ATHENA_HTN_Dashboard_Class670670]
 		[ATHENA_HTN_Dashboard_Class240011]
 		[ATHENA_HTN_Dashboard_Class706305])
@@ -11445,11 +11447,11 @@
 ([ATHENA_HTN_Dashboard_Class670671] of  Action_Choice
 
 	(actions
-		[ATHENA_HTN_Dashboard_Class420239]
 		[ATHENA_HTN_Dashboard_Class670670]
 		[ATHENA_HTN_Dashboard_Class240011]
 		[ATHENA_HTN_Dashboard_Class420239]
-		[ATHENA_HTN_Dashboard_Class706305])
+		[ATHENA_HTN_Dashboard_Class706305]
+		[ATHENA_HTN_Dashboard_Class390312])
 	(followed_by [ATHENA_HTN_Dashboard_Class670673])
 	(label "st contra and (not black OR black and #contra<#htn meds), Sub 1st line AND incr dose 1st, 2nd line")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class689411]))
@@ -11538,8 +11540,8 @@
 
 	(attribute [mood])
 	(label "mood blocked")
-	(operator member_of)
-	(value_expression [ATHENA_HTN_Dashboard_Class680009]))
+	(operator eq)
+	(value_expression [ATHENA_HTN_Dashboard_Class717785]))
 
 ([ATHENA_HTN_Dashboard_Class680011] of  Structured_Query
 
@@ -11551,7 +11553,7 @@
 
 ([ATHENA_HTN_Dashboard_Class680012] of  Variable
 
-	(derivation_expression [ATHENA_HTN_Dashboard_Class680011])
+	(derivation_expression [ATHENA_HTN_Dashboard_Class732168])
 	(label "?blockedDrug")
 	(string_name "?blockedDrug"))
 
@@ -11744,7 +11746,9 @@
 		[ATHENA_HTN_Dashboard_Class630028]
 		[ATHENA_HTN_Dashboard_Class480002]
 		[ATHENA_HTN_Dashboard_Class210034]
-		[ATHENA_HTN_Dashboard_Class737041])
+		[ATHENA_HTN_Dashboard_Class737041]
+		[ATHENA_HTN_Dashboard_Class742649]
+		[ATHENA_HTN_Dashboard_Class713425])
 	(label "st Has rec add OR (black and not monotherapy--HCTZ max dose Sub with Pref thiazide -- black monotherapy msg; not both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class630027]))
 
@@ -11757,8 +11761,7 @@
 
 	(actions
 		[ATHENA_HTN_Dashboard_Class420016]
-		[ATHENA_HTN_Dashboard_Class200005]
-		[ATHENA_HTN_Dashboard_Class420244])
+		[ATHENA_HTN_Dashboard_Class200005])
 	(followed_by [ATHENA_HTN_Dashboard_Class693483])
 	(label "st contra and black, no Rec add OR black and monotherapy, Sub 2nd line")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class630017]))
@@ -12091,6 +12094,19 @@
 	(%3AFROM [ATHENA_HTN_Dashboard_Class10051])
 	(%3ATO [ATHENA_HTN_Dashboard_Class70664]))
 
+([ATHENA_HTN_Dashboard_Class713425] of  On_Screen_Message
+
+	(description "Do not change meds if meds recently changed")
+	(fine-grain_priority 100)
+	(label "Do not change meds if meds recently changed")
+	(message "Do not change meds if meds recently changed.")
+	(message_type Primary_Recommendation))
+
+([ATHENA_HTN_Dashboard_Class717785] of  Qualitative_Constant
+
+	(label "Blocked_Add")
+	(value "Blocked_Add"))
+
 ([ATHENA_HTN_Dashboard_Class719607] of  Query_Result_Criterion
 
 	(label "there exists drug not at max dose 1st2nd line")
@@ -12120,7 +12136,7 @@
 ([ATHENA_HTN_Dashboard_Class737041] of  Parameterized_Message
 
 	(label "param msg blocked ?drug ?SBPvalueDate")
-	(message_type Drug_Related)
+	(message_type do_not_add_controllable_condition)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class737042])
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class150003]))
 
@@ -12130,6 +12146,45 @@
 	(multivalued_variables [ATHENA_HTN_Dashboard_Class680006])
 	(value "Would add ?blockedDrug but SBP old ?value (?date).")
 	(variables [ATHENA_HTN_Dashboard_Class680012]))
+
+([ATHENA_HTN_Dashboard_Class742649] of  Parameterized_Message
+
+	(label "Param msg blocked incr ?darug ?SBPvalueDate")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class742650])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class150003]))
+
+([ATHENA_HTN_Dashboard_Class742650] of  Parameterized_String
+
+	(label "param string blocked incr ?drug ?SBPvalueDate")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class680006])
+	(value "Would increase ?blockedIncrDrug but SBP old ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class742651]))
+
+([ATHENA_HTN_Dashboard_Class742651] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class742652])
+	(label "?blockedIncrDrug")
+	(string_name "?blockedIncrDrug"))
+
+([ATHENA_HTN_Dashboard_Class742652] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug name with blocked incr rec")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class742653]))
+
+([ATHENA_HTN_Dashboard_Class742653] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "mood blocked incr")
+	(operator eq)
+	(value_expression [ATHENA_HTN_Dashboard_Class742654]))
+
+([ATHENA_HTN_Dashboard_Class742654] of  Qualitative_Constant
+
+	(label "Blocked_Increase")
+	(value "Blocked_Increase"))
 
 ([ATHENA_HTN_Dashboard_Class80000] of  N_ary_Criterion
 
