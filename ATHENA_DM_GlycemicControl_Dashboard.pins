@@ -1,4 +1,4 @@
-; Tue Jul 31 10:38:36 PDT 2018
+; Tue Aug 21 12:30:11 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -225,6 +225,12 @@
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350026])
 	(PrettyName "ADR cardiac arrest or coma or thrombocytopenia or renal failure or renal impairment"))
 
+([ADR+cardiac+arrest+or+coma+or+thrombocytopenia+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class350003])
+	(PrettyName "ADR cardiac arrest or coma or thrombocytopenia"))
+
 ([ADR+of+thrombocytopenia+to+pio+or+rosi] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
@@ -236,6 +242,12 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class1350008])
 	(PrettyName "ADR renal impairment"))
+
+([ADR+renal+impairment+or+renal+failure+to+SU+or+sulfa+drug] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class350007])
+	(PrettyName "ADR renal impairment or renal failure"))
 
 ([ADR+SJS+to+glip+glyb+glim+SU+sulfa] of  Diagnostic_Term_Metaclass
 
@@ -1560,7 +1572,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class250496] of  Structured_Query
 
 	(attribute [drug_name])
-	(label "query for sax daily dose > 2.4")
+	(label "query for sax daily dose > 2.5")
 	(type Medication)
 	(where_restriction
 		[ATHENA_DM_GlycemicControl_Dashboard_Class110005]
@@ -1569,14 +1581,14 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class250497] of  Comparison_Filter
 
 	(attribute [daily_dose])
-	(label "daily dose > 2.4")
-	(operator %3E)
+	(label "daily dose > 2.5")
+	(operator %3E%3D)
 	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class250498]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class250498] of  Numeric_Constant
 
-	(label "2.4")
-	(value 2.4))
+	(label "2.5")
+	(value 2.5))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class250499] of  Variable
 
@@ -1586,7 +1598,7 @@
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class250697] of  Query_Result_Criterion
 
-	(label "sax daily dose > 2.4")
+	(label "sax daily dose => 2.5")
 	(presence TRUE)
 	(query [ATHENA_DM_GlycemicControl_Dashboard_Class250496]))
 
@@ -1601,7 +1613,7 @@
 	(criteria
 		[ATHENA_DM_GlycemicControl_Dashboard_Class250697]
 		[ATHENA_GlycemicControl_Class1120001])
-	(label "egfr<45 past year and sax daily dose > 2.4")
+	(label "egfr<45 past year and sax daily dose > 2.5")
 	(operator AND))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class251166] of  Consultation_Action_Step
@@ -2212,6 +2224,77 @@
 		[ATHENA_GlycemicControl_Class1310004])
 	(label "ADR anaphylaxis to sulfonylurea or sulfa drug")
 	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class340000] of  Structured_Query
+
+	(label "ADR cardiac arrest or coma or thrombocytopenia to glip, glyb, glim, first gen SU, sulfa")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350025]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class350001]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class340001] of  On_Screen_Message
+
+	(fine-grain_priority 100)
+	(label "Dx long term insulin use")
+	(message "Warning:  recommendations do not apply to patients taking insulin.")
+	(message_type Primary_Recommendation)
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class340002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class340002] of  Presence_Criterion
+
+	(domain_term Long_Term_Use_Insulin)
+	(entry_type Note_Entry)
+	(label "Pres long term insulin")
+	(presence TRUE))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class340003] of  Consultation_Action_Step
+
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class340001])
+	(label "Dx insulin")
+	(rule_in [ATHENA_DM_GlycemicControl_Dashboard_Class340002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class340004] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class340003]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class350001] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350022]
+		[ATHENA_GlycemicControl_Class1350023]
+		[ATHENA_GlycemicControl_Class1350017])
+	(label "domain term eq cardiac arrest or comoa or thrombocyto")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class350003] of  Query_Result_Criterion
+
+	(label "ADR cardiac arrest or coma or thrombocytopenia to glip, glyb, glim, first gen SU, sulfa")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class340000]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class350004] of  Structured_Query
+
+	(label "ADR renal failure or renal impairment to glip, glyb, glim, first gen SU, sulfa")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1350025]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class350005]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class350005] of  N_aryFilter
+
+	(filters
+		[ATHENA_GlycemicControl_Class1350002]
+		[ATHENA_GlycemicControl_Class1350003])
+	(label "domain term eq renal failure or renal impairment")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class350007] of  Query_Result_Criterion
+
+	(label "ADR renal impairment or renal failure to SU or sulfa drug")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class350004]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class40000] of  Consultation_Selection
 
@@ -5049,9 +5132,6 @@
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Class1110002])
 	(label "ATHENA DM:  Glycemic Control Dashboard")
-	(patient_characterization
-		[ATHENA_DM_GlycemicControl_Dashboard_Class300002]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class303885])
 	(references [ATHENA_GlycemicControl_Class1050001]))
 
 ([ATHENA_GlycemicControl_Class130050] of  N_ary_Criterion
@@ -11221,9 +11301,9 @@
 
 	(Absolute_Contraindications
 		ADR+angioedema+to+sulfa+drugs+or+SU
-		ADR+cardiac+arrest+or+coma+or+thrombocytopenia+or+renal+failure+or+renal+impairment+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa
 		ADR+SJS+to+glip+glyb+glim+SU+sulfa
-		ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug)
+		ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug
+		ADR+cardiac+arrest+or+coma+or+thrombocytopenia+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa)
 	(additional_ADR_check
 		GLIMEPIRIDE
 		GLYBURIDE
@@ -11234,6 +11314,7 @@
 		TOLAZAMIDE
 		TOLBUTAMIDE
 		Sulfa_drugs_noSU)
+	(Do_Not_Start_Conditions ADR+renal+impairment+or+renal+failure+to+SU+or+sulfa+drug)
 	(Drug_Class_Name GLIPIZIDE)
 	(Drug_Partners_To_Avoid
 		GLYBURIDE
@@ -12699,7 +12780,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230003]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class311115])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311115]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class340003])
 	(transitions
 		[ATHENA_GlycemicControl_Class790005]
 		[ATHENA_GlycemicControl_Class790007]
@@ -12719,7 +12801,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230004]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230183]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251170]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class311119]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311119]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class340004]))
 
 ([ATHENA_GlycemicControl_Class780001] of  Numeric_Term_Criterion
 
@@ -12835,7 +12918,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230003]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class311115])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class311115]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class340003])
 	(label "dAll CDS scenarios No ACE/ARB")
 	(selection_method all_of))
 
@@ -16089,7 +16173,7 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class250896])
-	(PrettyName "eGFR<45 past year and sax daily dose>2.4"))
+	(PrettyName "eGFR<45 past year and sax daily dose>2.5"))
 
 ([HbA1c%3C6] of  Diagnostic_Term_Metaclass
 
@@ -16521,6 +16605,11 @@
 	(label "Presence of contraindication")
 	(PAL_constraint [ATHENA_GlycemicControl_Instance_130131]))
 
+([Long_Term_Use_Insulin] of  Medical_Conditions_Metaclass
+
+	(code "V58.67 Z79.4")
+	(PrettyName "Long Term Use of Insulin"))
+
 ([nephrologist] of  Canonical_Terms_Metaclass
 )
 
@@ -16556,7 +16645,7 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_GlycemicControl_Class950000])
-	(PrettyName "eGFR<30 past year"))
+	(PrettyName "GFR<30 past year"))
 
 ([Pres+dialysis] of  Diagnostic_Term_Metaclass
 

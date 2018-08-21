@@ -1,4 +1,4 @@
-; Tue Jul 31 10:38:36 PDT 2018
+; Tue Aug 21 12:30:11 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -362,6 +362,18 @@
 
 (defclass ADR+anaphylaxis+to+sulfonylurea+or+sulfa+drug
 	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+cardiac+arrest+or+coma+or+thrombocytopenia+to+glip%2C+glyb%2C+glim%2C+first+gen+SU%2C+sulfa
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+renal+impairment+or+renal+failure+to+SU+or+sulfa+drug
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Long_Term_Use_Insulin
+	(is-a Medical_Conditions_Class)
 	(role concrete))
 
 (defclass Edema
