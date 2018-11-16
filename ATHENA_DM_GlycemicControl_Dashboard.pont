@@ -1,4 +1,4 @@
-; Tue Aug 21 12:30:11 PDT 2018
+; Thu Nov 15 19:07:20 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -369,6 +369,10 @@
 	(role concrete))
 
 (defclass ADR+renal+impairment+or+renal+failure+to+SU+or+sulfa+drug
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+dorzolamide
 	(is-a Defined+concept)
 	(role concrete))
 

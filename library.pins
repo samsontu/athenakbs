@@ -1,4 +1,4 @@
-; Mon Jul 23 11:13:51 PDT 2018
+; Thu Nov 15 19:06:50 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -310,10 +310,6 @@
 	(data_source VISTA_data_element)
 	(PrettyName "Angioedema"))
 
-([ANGIOEDEMA] of  Medical_Conditions_Metaclass
-
-	(data_source VISTA_data_element))
-
 ([Angioedema+due+to+ADR+to+ACEI] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
@@ -328,10 +324,6 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [library_Class140004])
 	(PrettyName "Angioedema due to ADR to ARB"))
-
-([ANGIONEUROTIC+EDEMA+OF+LARYNX] of  Medical_Conditions_Metaclass
-
-	(data_source VISTA_data_element))
 
 ([Angiotensin_II_receptor_blockers] of  Medications_Metaclass
 
@@ -352,6 +344,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Antihypertensive Agents"))
+
+([Anuria_and_oliguria] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Anuria and oliguria"))
 
 ([Anxiety] of  Medical_Conditions_Metaclass
 
@@ -1476,7 +1472,7 @@
 
 ([BIGUANIDE] of  Medications_Metaclass
 
-	(PrettyName "Biguanide"))
+	(PrettyName "metformin"))
 
 ([bilateral+LE+amputation] of  Medical_Conditions_Metaclass
 )
@@ -1682,6 +1678,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "carvedilol"))
+
+([carvedilol_SA] of  Medications_Metaclass
+
+	(PrettyName "carvedilol SA"))
 
 ([Cataracts] of  Medical_Conditions_Metaclass
 
@@ -2467,7 +2467,7 @@
 ([DM-Type2] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element)
-	(PrettyName "Diabetes Type 2"))
+	(PrettyName "Type 2 Diabetes"))
 
 ([DM_Dashboard_definig_diseases] of  Medical_Conditions_Metaclass
 
@@ -2493,6 +2493,10 @@
 
 	(controllable FALSE)
 	(data_source clinical_assessment))
+
+([dorzolamide] of  Medications_Metaclass
+
+	(PrettyName "dorzolamide"))
 
 ([doxazosin] of  Medications_Metaclass
 
@@ -2989,13 +2993,12 @@
 
 	(PrettyName "edema"))
 
-([EDEMA+OF+LARYNX] of  Medical_Conditions_Metaclass
-)
-
 ([eGFR] of  Interval-Valued_AtomicTest_Metaclass
 
 	(data_source VISTA_data_element)
-	(Precision 1))
+	(label "GFR")
+	(Precision 1)
+	(PrettyName "GFR"))
 
 ([EKG] of  Canonical_Terms_Metaclass
 )
@@ -3134,7 +3137,7 @@
 
 ([FirstSecondLineDrugs_VA_GL] of  Medications_Metaclass
 
-	(PrettyName "Firstsecondlinedrugs Va Gl"))
+	(PrettyName "First- or Second-line Drug VA Gl"))
 
 ([Flatulence_eructation_gass_pain_787_3] of  Medical_Conditions_Metaclass
 
@@ -3823,7 +3826,7 @@
 
 	(PrettyName "itraconazole"))
 
-([JNC8_antihypertensives] of  Medical_Conditions_Metaclass
+([JNC8_antihypertensives] of  Medications_Metaclass
 
 	(label "JNC8_antihypertensives")
 	(PrettyName "JNC8_antihypertensives"))
@@ -4632,6 +4635,12 @@
 	(label "ALT/GPT max")
 	(value 45.0))
 
+([library_Class210000] of  PAL-QUERY
+
+	(%3APAL-NAME "(new)Query for meds of drug classes for which at most one should be prescribed")
+	(%3APAL-RANGE "(defrange ?drugClass :FRAME Medications_Metaclass)\n(defrange ?med1 :FRAME Medication)\n(defrange ?med2 :FRAME Medication)")
+	(%3APAL-STATEMENT "(findall ?med1\n         (and \n              (or (not (own-slot-not-null mood ?med1 ))\n                  (mood ?med1 Authorized))\n              (is-class (drug_name ?med1))\n              (exists ?drugClass \n                      (and  \n                           (template-slot-not-null should_prescribe_at_most_one ?drugClass)\n                            (equal-or-subclass-of (coerce-to-class (drug_name ?med1)) ?drugClass)\n                            (exists ?med2\n                                    (and  (/= (drug_name ?med1)(drug_name ?med2))\n                                          (= (patient_id ?med2) $patient_id)\n                                          (or (not (own-slot-not-null mood ?med2 ))\n                                              (mood ?med2 Authorized))\n                                          (is-class (drug_name ?med2))\n                                          (equal-or-subclass-of (coerce-to-class (drug_name ?med2)) ?drugClass)\n                                    ))))\n         )\n)"))
+
 ([library_Class210001] of  PAL_Criterion
 
 	(case_variable "$patient_id")
@@ -4643,6 +4652,70 @@
 	(case_variable "$patient_id")
 	(label "15% decrease in eGFR after ACE/ARB, and between 30 and 60")
 	(PAL_constraint [library_Class200001]))
+
+([library_Class220000] of  Parameterized_Message
+
+	(label "(New)Message when there exist multiple meds that belong to the same class")
+	(message_type Primary_Recommendation)
+	(parameterized_message [library_Class220005])
+	(rule_in_condition [library_Class220001]))
+
+([library_Class220001] of  Query_Result_Criterion
+
+	(label "(new)Patient is taking meds that belong to the same class")
+	(presence TRUE)
+	(query [library_Class220002]))
+
+([library_Class220002] of  PAL_Query
+
+	(case_variable "$patient_id")
+	(key_slot [drug_name])
+	(label "(new) Query for meds with other meds that belong to the same drug class")
+	(PAL_query [library_Class210000]))
+
+([library_Class220005] of  Parameterized_String
+
+	(label "(new)Meds in same drug class message")
+	(value "The patient is taking ?dupmeds that represent duplicates of drug class(es) ?dupclass. Please adjust medications so that no two drugs belonging to the same drug class are prescribed.")
+	(variables
+		[library_Class220006]
+		[library_Class220007]))
+
+([library_Class220006] of  Variable
+
+	(derivation_expression [library_Class220002])
+	(label "(new)Meds with other meds that belong to the same drug class")
+	(string_name "?dupmeds"))
+
+([library_Class220007] of  Variable
+
+	(derivation_expression [library_Class220008])
+	(label "(new)Drug classes that have multiple meds")
+	(string_name "?dupclass"))
+
+([library_Class220008] of  PAL_Query
+
+	(case_variable "$patient_id")
+	(label "(new)drug classes that have multiple meds")
+	(PAL_query [library_Class220009]))
+
+([library_Class220009] of  PAL-QUERY
+
+	(%3APAL-NAME "(new)Query drug classes that have multiple meds")
+	(%3APAL-RANGE "(defrange ?drugClass1  :FRAME Medications_Metaclass)\n(defrange ?drugClass2  :FRAME Medications_Metaclass)\n(defrange ?med1 :FRAME Medication)\n(defrange ?med2 :FRAME Medication)")
+	(%3APAL-STATEMENT "(findall ?drugClass1\n         (and (template-slot-not-null should_prescribe_at_most_one ?drugClass1)\n              (not (exists ?drugClass2 \n                           (and (template-slot-not-null should_prescribe_at_most_one ?drugClass2)\n                                (subclass-of ?drugClass1 ?drugClass2))))\n              (exists ?med1 \n                      (and  \n                            (or (not (own-slot-not-null mood ?med1 ))\n                                (mood ?med1 Authorized))\n                            (and  (is-class (drug_name ?med1))\n                                  (equal-or-subclass-of (coerce-to-class (drug_name ?med1)) ?drugClass1)\n                                  (exists ?med2\n                                          (and  (/= (drug_name ?med1)(drug_name ?med2))\n                                                (= (patient_id ?med2) $patient_id)\n                                                (or (not (own-slot-not-null mood ?med2 ))\n                                                    (mood ?med2 Authorized))\n                                                (is-class (drug_name ?med2))\n                                                (equal-or-subclass-of (coerce-to-class (drug_name ?med2)) ?drugClass1)\n                                          ))))\n              )\n         ))"))
+
+([library_Class220010] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "there exists drug class for which no more than 1 med should be prescribed")
+	(%3APAL-RANGE "(defrange ?drugClass :FRAME Medications_Metaclass)\n")
+	(%3APAL-STATEMENT "(not (exists ?drugClass\n             (template-slot-not-null should_prescribe_at_most_one ?drugClass)))"))
+
+([library_Class230000] of  PAL-QUERY
+
+	(%3APAL-NAME "find top classes for which should_prescribe_at_most_one is not null")
+	(%3APAL-RANGE "(defrange ?drugClass1 :FRAME Medications_Metaclass)\n(defrange ?drugClass2 :FRAME Medications_Metaclass)")
+	(%3APAL-STATEMENT "(findall ?drugClass1\n        (and (template-slot-not-null should_prescribe_at_most_one ?drugClass1)\n             (not (exists ?drugClass2 \n	(and (template-slot-not-null should_prescribe_at_most_one ?drugClass2)\n                         (subclass-of ?drugClass1 ?drugClass2))))))"))
 
 ([library_Class3] of  Numeric_Term_Criterion
 
@@ -5708,9 +5781,6 @@
 
 	(PrettyName "linagliptin"))
 
-([LIP+SWELLING] of  Medical_Conditions_Metaclass
-)
-
 ([Lipid_Disease_Concepts_to_be_moved] of  Medical_Conditions_Metaclass
 
 	(PrettyName "Lipid Disease concepts to be moved"))
@@ -5736,6 +5806,14 @@
 ([Lixisenatide] of  Medications_Metaclass
 
 	(PrettyName "lixisenatide"))
+
+([Long_Acting_DHP_CCB] of  Medications_Metaclass
+
+	(PrettyName "Long Acting DHP CCB"))
+
+([Long_Acting_NDHP_CCB] of  Medications_Metaclass
+
+	(PrettyName "Long Acting NDHP CCB"))
 
 ([Long_acting_nitrates] of  Medications_Metaclass
 
@@ -6129,6 +6207,10 @@
 
 	(PrettyName "Non-Insulin Related Glucose Regulation Agents"))
 
+([Non_Treatment_VA_GL_meds] of  Medications_Metaclass
+
+	(PrettyName "Non treatment VA GL meds"))
+
 ([Noninfective_Enteritis_And_Colitis_555to558] of  Medical_Conditions_Metaclass
 )
 
@@ -6265,11 +6347,10 @@
 ([ophtalmologyst] of  Canonical_Terms_Metaclass
 )
 
-([ORAL+EDEMA] of  Medical_Conditions_Metaclass
-)
+([Ophthalmic_Agents] of  Medications_Metaclass
 
-([ORAL+SWELLING] of  Medical_Conditions_Metaclass
-)
+	(code "OP000")
+	(PrettyName "Ophthalmic Agents"))
 
 ([Oral_Hypoglycemic_Agent] of  Medications_Metaclass
 
@@ -6864,6 +6945,14 @@
 	(code "HS502")
 	(PrettyName "SGLT2 Inhibitor"))
 
+([Short_Acting_DHP_CCB] of  Medications_Metaclass
+
+	(PrettyName "Short Acting DHP CCB"))
+
+([Short_Acting_NDHP_CCB] of  Medications_Metaclass
+
+	(PrettyName "Short Acting NDHP CCB"))
+
 ([SIADH] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element))
@@ -7027,9 +7116,6 @@
 
 	(PrettyName "sustained release nicotinic acid"))
 
-([SWELLING+OF+LIPS] of  Medical_Conditions_Metaclass
-)
-
 ([Symptoms] of  Canonical_Terms_Metaclass
 )
 
@@ -7121,6 +7207,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "timolol"))
+
+([timolol_ophthalmic] of  Medications_Metaclass
+
+	(PrettyName "timolol ophthalmic"))
 
 ([Tinea+pedis] of  Medical_Conditions_Metaclass
 

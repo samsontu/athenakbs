@@ -1,4 +1,4 @@
-; Mon Aug 06 11:08:56 PDT 2018
+; Mon Oct 22 12:07:29 PDT 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2904,6 +2904,12 @@
 	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class350009])
 	(label "Anaphylaxis ADR to ARB"))
 
+([Anaphylaxis+ADR+to+BB] of  Diagnostic_Term_Metaclass
+
+	(controllable FALSE)
+	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class730003])
+	(label "Anaphylaxis ADR to BB"))
+
 ([Anaphylaxis+ADR+to+Cardioselective+BB] of  Diagnostic_Term_Metaclass
 
 	(controllable FALSE)
@@ -3245,6 +3251,7 @@
 
 ([ATHENA_HTN_Dashboard_Class0] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00205]
 		[athena_runtime_INSTANCE_00203]
@@ -3260,6 +3267,7 @@
 
 ([ATHENA_HTN_Dashboard_Class1] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00203]
 		[athena_runtime_INSTANCE_00204]
@@ -3267,9 +3275,9 @@
 	(dose_strength_unit mg)
 	(drug_usage [ATHENA_HTN_Dashboard_Class140017])
 	(generic_drug metoprolol_tartrate)
-	(increase_dose_ceiling 199.0)
+	(increase_dose_ceiling 299.0)
 	(label "metoprolol tartrate")
-	(max_recommended_dose 200.1)
+	(max_recommended_dose 300.1)
 	(max_recommended_dose_level High_Dose)
 	(starting_dose 50.0))
 
@@ -3384,9 +3392,6 @@
 	(numeric_domain_term Age)
 	(operator %3E)
 	(value 70.0))
-
-([ATHENA_HTN_Dashboard_Class100008] of  Collateral_Action
-)
 
 ([ATHENA_HTN_Dashboard_Class100009] of  Conditional_On_Screen_Message
 
@@ -3903,7 +3908,6 @@
 	(eligibility_criteria
 		[INSTANCE_00011]
 		[ATHENA_HTN_Dashboard_Class630114]
-		[ATHENA_HTN_Dashboard_Class670004]
 		[ATHENA_HTN_Dashboard_Class692073])
 	(goal
 		[ATHENA_HTN_Dashboard_Class130009]
@@ -3949,7 +3953,6 @@
 		[ATHENA_HTN_Dashboard_Class341138]
 		[ATHENA_HTN_Dashboard_Class370005]
 		[ATHENA_HTN_Dashboard_Class390000]
-		[ATHENA_HTN_Dashboard_Class400006]
 		[ATHENA_HTN_Dashboard_Class410011]
 		[ATHENA_HTN_Dashboard_Class470001]
 		[ATHENA_HTN_Dashboard_Class510451]
@@ -3959,7 +3962,20 @@
 		[ATHENA_HTN_Dashboard_Class683467]
 		[ATHENA_HTN_Dashboard_Class686963]
 		[ATHENA_HTN_Dashboard_Class670020]
-		[ATHENA_HTN_Dashboard_Class706303])
+		[ATHENA_HTN_Dashboard_Class706303]
+		[ATHENA_HTN_Dashboard_Class726019]
+		[ATHENA_HTN_Dashboard_Class726018]
+		[ATHENA_HTN_Dashboard_Class726020]
+		[ATHENA_HTN_Dashboard_Class742307]
+		[ATHENA_HTN_Dashboard_Class763469]
+		[ATHENA_HTN_Dashboard_Class706304]
+		[ATHENA_HTN_Dashboard_Class663717]
+		[ATHENA_HTN_Dashboard_Class665934]
+		[ATHENA_HTN_Dashboard_Class665933]
+		[ATHENA_HTN_Dashboard_Class755740]
+		[ATHENA_HTN_Dashboard_Class772193]
+		[ATHENA_HTN_Dashboard_Class763273]
+		[ATHENA_HTN_Dashboard_Class763274])
 	(title "VA 2014 HTN Guideline Dashboard")
 	(version "Oct 2017"))
 
@@ -4031,15 +4047,17 @@
 		Angioedema_due_to_ADR_to_ARB
 		K+gt+5.5+past+month
 		Anaphylaxis+ADR+to+ACE)
+	(additional_ADR_check Angiotensin_II_receptor_blockers)
 	(collateral_actions
-		[ATHENA_HTN_Dashboard_Class371259]
-		[ATHENA_HTN_Dashboard_Class371264]
 		[ATHENA_HTN_Dashboard_Class371254]
-		[ATHENA_HTN_Dashboard_Class371258])
+		[ATHENA_HTN_Dashboard_Class798879]
+		[ATHENA_HTN_Dashboard_Class798883]
+		[ATHENA_HTN_Dashboard_Class790012]
+		[ATHENA_HTN_Dashboard_Class800000])
 	(Compelling_Indications
-		Heart_Failure
 		CVD_DM
-		Pres+of+DM+and+Pres+of+CKD)
+		Pres+of+DM+and+Pres+of+CKD
+		Heart_failure_N)
 	(Do_Not_Intensify_Conditions
 		absenceKpastmonth
 		AbsenceSBPpastmonth
@@ -4284,18 +4302,20 @@
 		K+gt+5.5+past+month
 		Angioedema_due_to_ADR_to_ARB
 		Anaphylaxis+ADR+to+ARB)
+	(additional_ADR_check ACE_Inhibitors)
 	(collateral_actions
-		[ATHENA_HTN_Dashboard_Class371259]
-		[ATHENA_HTN_Dashboard_Class371264]
 		[ATHENA_HTN_Dashboard_Class371254]
-		[ATHENA_HTN_Dashboard_Class371258])
+		[ATHENA_HTN_Dashboard_Class798879]
+		[ATHENA_HTN_Dashboard_Class800014]
+		[ATHENA_HTN_Dashboard_Class800015]
+		[ATHENA_HTN_Dashboard_Class800016]
+		[ATHENA_HTN_Dashboard_Class800000])
 	(Compelling_Indications
 		Pres+HTN+and+Abs+CKD+and+ADR+to+ACE+not+angioedema
-		Heart_Failure
 		Pres+of+HTN+and+CKD+not+black+and+ADR+to+ACE+not+angioedema
 		Pres+of+DM+and+Pres+of+CKD
-		CVD_DM)
-	(Complication_Factor Presence+of+sacubitril)
+		CVD_DM
+		Heart_failure_N)
 	(Do_Not_Intensify_Conditions
 		absenceKpastmonth
 		AbsenceSBPpastmonth
@@ -4325,6 +4345,7 @@
 		ADR+anaphlaxis+CCB
 		ADR+angioedema+CCB)
 	(additional_ADR_check Non-Dihydropyridines)
+	(collateral_actions [ATHENA_HTN_Dashboard_Class810000])
 	(Do_Not_Intensify_Conditions AbsenceSBPpastmonth)
 	(Do_Not_Start_Conditions AbsenceSBPpastmonth)
 	(Drug_Class_Name Dihydropyridines)
@@ -4352,6 +4373,9 @@
 		ADR+anaphlaxis+CCB
 		ADR+angioedema+CCB)
 	(additional_ADR_check Dihydropyridines)
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class840649]
+		[ATHENA_HTN_Dashboard_Class840651])
 	(Compelling_Indications Pres+dx+HTN+and+ADR+to+DHP+CCB+not+anaphylaxis+not+angioedema)
 	(Do_Not_Intensify_Conditions AbsenceSBPpastmonth)
 	(Do_Not_Start_Conditions AbsenceSBPpastmonth)
@@ -4361,9 +4385,7 @@
 		Beta-Blockers
 		sotalol)
 	(formulary_preferred_drug_in_class
-		[athena_runtime_INSTANCE_00116]
 		[athena_hypertension_15725]
-		[athena_runtime_INSTANCE_00114]
 		[athena_hypertension_15724])
 	(is_third-line_drug_for
 		VA+HTN+Pres+HTN+and+Abs+CKD
@@ -4386,7 +4408,12 @@
 		Unspecified+Heart+Block+and+no+pacemaker
 		Heart+block+%281st%2C+2nd+or+3rd%29+without+pacemaker
 		Sinoatrial+node+dysfunction+and+no+pacemaker
-		Anaphylaxis+ADR+to+Cardioselective+BB)
+		Anaphylaxis+ADR+to+BB
+		Anaphylaxis+ADR+to+alpha+beta+blocker)
+	(additional_ADR_check
+		Beta-Blockers
+		sotalol)
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840657])
 	(Compelling_Indications
 		Myocardial_Infarction
 		Heart_Failure)
@@ -4398,10 +4425,8 @@
 		Alpha_beta_blockers
 		beta-blockers-ISA
 		sotalol
-		guanabenz
-		clonidine
-		guanfacine
-		Non-Dihydropyridines)
+		Non-Dihydropyridines
+		Adrenergic_inhibitors_central)
 	(formulary_preferred_drug_in_class
 		[athena_runtime_INSTANCE_00110]
 		[ATHENA_HTN_Dashboard_Class1]
@@ -4544,6 +4569,11 @@
 	(additional_ADR_check
 		Sulfa_drugs_noSU
 		SULFONYLUREAS)
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class740000]
+		[ATHENA_HTN_Dashboard_Class760000]
+		[ATHENA_HTN_Dashboard_Class770011]
+		[ATHENA_HTN_Dashboard_Class823051])
 	(Do_Not_Intensify_Conditions
 		AbsenceSBPpastmonth
 		absenceKpastmonth
@@ -4555,7 +4585,7 @@
 		Absence+of+Na+in+past+month
 		Absence+of+uric+acid+past+year)
 	(Drug_Class_Name Thiazide_Diuretics)
-	(Drug_Partners_To_Avoid furosemide)
+	(Drug_Partners_To_Avoid Loop_diuretics)
 	(formulary_preferred_drug_in_class
 		[ATHENA_HTN_Dashboard_Class230000]
 		[ATHENA_HTN_Dashboard_Class230001]
@@ -4574,7 +4604,8 @@
 		Allergy_to_sulfonamides
 		Na+le+130+ever
 		K%3C3.5+ever
-		Hyperuricemia)
+		Hyperuricemia
+		Anuria_and_oliguria)
 	(Relative_Indications Osteoporosis))
 
 ([ATHENA_HTN_Dashboard_Class150263] of  Scenario
@@ -4903,7 +4934,7 @@
 
 ([ATHENA_HTN_Dashboard_Class150281] of  Order_TestProcedure
 
-	(label "Order eGFR")
+	(label "Order GFR - missing past year")
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class150267])
 	(test_or_procedure eGFR))
 
@@ -4938,7 +4969,7 @@
 
 	(description "IHD and DBP<60 and VA HTN goal not satisfied")
 	(label "IHD and DBP<60 and VA HTN goal not satisfied")
-	(message "Patient has a diagnosis of ischemic heart disease and the most recent DBP<60mmHg. Patient at high risk for cardiovascular events.")
+	(message "Pt has a Dx of ischemic heart disease and the most recent DBP<60mmHg. Pt at high risk for cardiovascular events.")
 	(message_type Out_of_Scope)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class150287]))
 
@@ -5097,7 +5128,12 @@
 		Unspecified+Heart+Block+and+no+pacemaker
 		Heart+block+%281st%2C+2nd+or+3rd%29+without+pacemaker
 		Sinoatrial+node+dysfunction+and+no+pacemaker
-		Anaphylaxis+ADR+to+non-Cardioselective+BB)
+		Anaphylaxis+ADR+to+BB
+		Anaphylaxis+ADR+to+alpha+beta+blocker)
+	(additional_ADR_check
+		Beta-Blockers
+		sotalol)
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840657])
 	(Do_Not_Intensify_Conditions AbsenceSBPpastmonth)
 	(Do_Not_Start_Conditions AbsenceSBPpastmonth)
 	(Drug_Class_Name Beta-Blockers-non-cardioselective)
@@ -5105,11 +5141,9 @@
 		Beta-Blockers-Cardioselective
 		Alpha_beta_blockers
 		beta-blockers-ISA
-		clonidine
 		sotalol
-		guanabenz
-		guanfacine
-		Non-Dihydropyridines)
+		Non-Dihydropyridines
+		Adrenergic_inhibitors_central)
 	(formulary_preferred_drug_in_class [athena_runtime_INSTANCE_00112])
 	(is_third-line_drug_for
 		VA+HTN+Pres+HTN+and+Abs+CKD
@@ -5204,7 +5238,7 @@
 
 	(description "goal satisfied")
 	(label "goal satisfied")
-	(message "Patient is at dahsboard goal.  Good job!")
+	(message "Patient is at dahsboard goal.  Good job! No drug recommendations.")
 	(message_type Primary_Recommendation))
 
 ([ATHENA_HTN_Dashboard_Class180015] of  N_ary_Criterion
@@ -5271,17 +5305,20 @@
 	(Absolute_Contraindications
 		Unspecified+Heart+Block+and+no+pacemaker
 		Heart+block+%281st%2C+2nd+or+3rd%29+without+pacemaker
-		Anaphylaxis+ADR+to+alpha+beta+blocker)
-	(Complication_Factor Heart_Failure)
+		Anaphylaxis+ADR+to+alpha+beta+blocker
+		Anaphylaxis+ADR+to+BB)
+	(additional_ADR_check
+		Beta-Blockers
+		sotalol)
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840663])
 	(Do_Not_Intensify_Conditions AbsenceSBPpastmonth)
 	(Do_Not_Start_Conditions AbsenceSBPpastmonth)
 	(Drug_Class_Name Alpha_beta_blockers)
 	(Drug_Partners_To_Avoid
-		verapamil
-		verapamil_SA
 		Beta-Blockers
-		clonidine
-		sotalol)
+		sotalol
+		Adrenergic_inhibitors_central
+		Non-Dihydropyridines)
 	(formulary_preferred_drug_in_class [athena_hypertension_INSTANCE_00858])
 	(is_third-line_drug_for
 		VA+HTN+Pres+HTN+and+Abs+CKD
@@ -5289,8 +5326,8 @@
 	(label "Alpha Beta Blocker VA 2014")
 	(Relative_Contraindications
 		Depression
-		Obstructive_Pulmonary_Disease
 		Bronchospastic_Disease
+		Obstructive_Pulmonary_Disease
 		Myocardial_Infarction))
 
 ([ATHENA_HTN_Dashboard_Class180023] of  Evaluate_Start_Activity
@@ -5653,7 +5690,9 @@
 	(attribute [drug_name])
 	(label "Struc Query for contraindicated antihypertensive med drug name")
 	(type Medication)
-	(where_restriction [ATHENA_HTN_Dashboard_Class200012]))
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class200012]
+		[ATHENA_HTN_Dashboard_Class710000]))
 
 ([ATHENA_HTN_Dashboard_Class200012] of  Comparison_Filter
 
@@ -6044,6 +6083,10 @@
 
 ([ATHENA_HTN_Dashboard_Class230000] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class770000]
+		[ATHENA_HTN_Dashboard_Class740002]
+		[ATHENA_HTN_Dashboard_Class823052])
 	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(drug_usage [ATHENA_HTN_Dashboard_Class150262])
 	(generic_drug chlorthalidone)
@@ -6053,6 +6096,10 @@
 
 ([ATHENA_HTN_Dashboard_Class230001] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class770000]
+		[ATHENA_HTN_Dashboard_Class740002]
+		[ATHENA_HTN_Dashboard_Class823052])
 	(condition_for_being_preferred [criterion_INSTANCE_00001])
 	(drug_usage [ATHENA_HTN_Dashboard_Class150262])
 	(generic_drug indapamide)
@@ -6890,7 +6937,7 @@
 ([ATHENA_HTN_Dashboard_Class300001] of  Parameterized_String
 
 	(label "Parm string Dx out of scope")
-	(value "Dx of ?OutOfScopeDx that needs special attention.  Out of scope.")
+	(value "Out of scope. Dx of ?OutOfScopeDx that needs special attention.")
 	(variables [ATHENA_HTN_Dashboard_Class300002]))
 
 ([ATHENA_HTN_Dashboard_Class300002] of  Variable
@@ -6917,7 +6964,8 @@
 
 	(criteria
 		[ATHENA_HTN_Dashboard_Class290011]
-		[ATHENA_HTN_Dashboard_Class290019])
+		[ATHENA_HTN_Dashboard_Class290019]
+		[ATHENA_HTN_Dashboard_Class780001])
 	(label "VA HTN out of scope Dx includes secondary HtN")
 	(operator OR))
 
@@ -6925,7 +6973,7 @@
 
 	(description "Pres secondary htn out of scope")
 	(label "Pres secondary htn out of scope")
-	(message "Pt has a condition that causes Secondary Hypertension that needs special attention. Out of scope.")
+	(message "Out of scope.  Pt has a condition that causes Secondary Hypertension that needs special attention. .")
 	(message_type Out_of_Scope)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class290019]))
 
@@ -6980,7 +7028,8 @@
 
 	(actions
 		[ATHENA_HTN_Dashboard_Class290000]
-		[ATHENA_HTN_Dashboard_Class300007])
+		[ATHENA_HTN_Dashboard_Class300007]
+		[ATHENA_HTN_Dashboard_Class780004])
 	(label "out of scope Dx")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class300006]))
 
@@ -7006,9 +7055,9 @@
 		[ATHENA_HTN_Dashboard_Class300006]
 		[ATHENA_HTN_Dashboard_Class150272]
 		[ATHENA_HTN_Dashboard_Class330003]
-		[ATHENA_HTN_Dashboard_Class10018]
-		[ATHENA_HTN_Dashboard_Class610001]
-		[ATHENA_HTN_Dashboard_Class150267])
+		[ATHENA_HTN_Dashboard_Class150267]
+		[ATHENA_HTN_Dashboard_Class758783]
+		[ATHENA_HTN_Dashboard_Class780005])
 	(label "no recs - abs eGFR or BP extreme or eGFR<30 or Dx or Rx")
 	(operator OR))
 
@@ -7036,7 +7085,7 @@
 ([ATHENA_HTN_Dashboard_Class310150] of  Parameterized_String
 
 	(label "Param msg Dx in scope")
-	(value "Patient has a diagnosis of ?InScopeDx which may cause secondary hypertension; please insure treatment of ?InScopeDx")
+	(value "Pt has a Dx of ?InScopeDx which may cause secondary hypertension; please insure treatment of ?InScopeDx")
 	(variables [ATHENA_HTN_Dashboard_Class310151]))
 
 ([ATHENA_HTN_Dashboard_Class310151] of  Variable
@@ -7146,8 +7195,9 @@
 	(criteria
 		[ATHENA_HTN_Dashboard_Class330000]
 		[ATHENA_HTN_Dashboard_Class330001]
-		[ATHENA_HTN_Dashboard_Class330002])
-	(label "Pres of cyclosporine or metolazone or tacrolimus")
+		[ATHENA_HTN_Dashboard_Class330002]
+		[ATHENA_HTN_Dashboard_Class530000])
+	(label "Pres of cyclosporine or metolazone or tacrolimus or sacubitril")
 	(operator OR))
 
 ([ATHENA_HTN_Dashboard_Class330004] of  Action_Choice
@@ -7193,7 +7243,8 @@
 	(filters
 		[ATHENA_HTN_Dashboard_Class330007]
 		[ATHENA_HTN_Dashboard_Class330009]
-		[ATHENA_HTN_Dashboard_Class330008])
+		[ATHENA_HTN_Dashboard_Class330008]
+		[ATHENA_HTN_Dashboard_Class780007])
 	(label "cyclosporine or tacrolimus or metolazone")
 	(operator OR))
 
@@ -7206,7 +7257,7 @@
 ([ATHENA_HTN_Dashboard_Class330012] of  Parameterized_String
 
 	(label "Param string Drug out of scope")
-	(value "Rx for ?OutOfScopeRx .  Pt is out of scope..")
+	(value "Out of scope.  Rx for ?OutOfScopeRx")
 	(variables [ATHENA_HTN_Dashboard_Class330013]))
 
 ([ATHENA_HTN_Dashboard_Class330013] of  Variable
@@ -7236,6 +7287,12 @@
 
 ([ATHENA_HTN_Dashboard_Class340000] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(drug_usage [ATHENA_HTN_Dashboard_Class120000])
 	(generic_drug benazepril)
 	(increase_dose_ceiling 39.9)
@@ -7244,6 +7301,12 @@
 
 ([ATHENA_HTN_Dashboard_Class340001] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(drug_usage [ATHENA_HTN_Dashboard_Class120000])
 	(generic_drug ramipril)
 	(increase_dose_ceiling 19.9)
@@ -7252,6 +7315,7 @@
 
 ([ATHENA_HTN_Dashboard_Class340002] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(drug_usage [ATHENA_HTN_Dashboard_Class140017])
 	(generic_drug bisoprolol)
 	(increase_dose_ceiling 9.9)
@@ -7260,6 +7324,7 @@
 
 ([ATHENA_HTN_Dashboard_Class340003] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(drug_usage [ATHENA_HTN_Dashboard_Class170016])
 	(generic_drug propranolol_SA)
 	(increase_dose_ceiling 159.9)
@@ -7334,22 +7399,25 @@
 
 ([ATHENA_HTN_Dashboard_Class342566] of  Parameterized_Message
 
+	(fine-grain_priority 300)
 	(label "Bad drug partner msg")
-	(message_type Out_of_Scope)
+	(message_type Primary_Recommendation)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class342567])
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class341709]))
 
 ([ATHENA_HTN_Dashboard_Class342567] of  Parameterized_String
 
 	(label "Bad drug partner msg")
-	(value "Pt has Rx for ?BadDrugPartnerHTNGL that are normally not taken together.  Stop one.")
+	(value "Pt has Rx for ?BadDrugPartnerHTNGL Evaluate clinically.")
 	(variables [ATHENA_HTN_Dashboard_Class270000]))
 
 ([ATHENA_HTN_Dashboard_Class342957] of  Action_Choice
 
 	(actions
 		[ATHENAINSTANCE_91014]
-		[ATHENA_HTN_Dashboard_Class670018])
+		[ATHENA_HTN_Dashboard_Class670018]
+		[ATHENA_HTN_Dashboard_Class805891]
+		[ATHENA_HTN_Dashboard_Class805896])
 	(label ">=4 anti hypertensive meds")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class10018]))
 
@@ -7604,15 +7672,18 @@
 
 ([ATHENA_HTN_Dashboard_Class371254] of  Collateral_Action
 
-	(actions [ATHENA_HTN_Dashboard_Class371255])
+	(actions
+		[ATHENA_HTN_Dashboard_Class371255]
+		[ATHENA_HTN_Dashboard_Class800003])
 	(mood Recommend_Add))
 
 ([ATHENA_HTN_Dashboard_Class371255] of  On_Screen_Message
 
 	(description "20% increase creatinine after initiation/change dose")
+	(fine-grain_priority 300)
 	(label "ACE/ARB 20% increase creatinine after initiation/change dose")
 	(message "Beware of 20% increase in creatinine (or 15% decreaes in eGFR) after initiation or change in dose of ACE/ARB.")
-	(message_type Recommendation))
+	(message_type General_Info))
 
 ([ATHENA_HTN_Dashboard_Class371256] of  Collateral_Action
 
@@ -7626,7 +7697,9 @@
 
 ([ATHENA_HTN_Dashboard_Class371258] of  Collateral_Action
 
-	(actions [ATHENA_HTN_Dashboard_Class371255])
+	(actions
+		[ATHENA_HTN_Dashboard_Class371255]
+		[ATHENA_HTN_Dashboard_Class800003])
 	(mood Recommend_Increase))
 
 ([ATHENA_HTN_Dashboard_Class371259] of  Collateral_Action
@@ -7636,9 +7709,9 @@
 
 ([ATHENA_HTN_Dashboard_Class371260] of  On_Screen_Message
 
-	(label "ACE/ARB most recent K>5.5 older than 1 month")
+	(label "ACE/ARB most recent K>5.5 older than 1 month blocked add")
 	(message "ALERT:  patient's most recent K is older than one month and K>5.5.")
-	(message_type Recommendation)
+	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class371262]))
 
 ([ATHENA_HTN_Dashboard_Class371261] of  Numeric_Term_Criterion
@@ -7668,7 +7741,7 @@
 
 ([ATHENA_HTN_Dashboard_Class371264] of  Collateral_Action
 
-	(actions [ATHENA_HTN_Dashboard_Class371260])
+	(actions [ATHENA_HTN_Dashboard_Class793136])
 	(mood Blocked_Increase))
 
 ([ATHENA_HTN_Dashboard_Class380000] of  N_ary_Criterion
@@ -7697,19 +7770,17 @@
 ([ATHENA_HTN_Dashboard_Class390000] of  Variable
 
 	(derivation_expression [ATHENA_HTN_Dashboard_Class270182])
-	(label "query for thiazide")
-	(string_name "query for thiazide"))
+	(label "?query_for_thiazide")
+	(string_name "?query_for_thiazide"))
 
 ([ATHENA_HTN_Dashboard_Class390001] of  N_ary_Criterion
 
 	(criteria
 		[ATHENA_HTN_Dashboard_Class160001]
-		[ATHENA_HTN_Dashboard_Class190002]
 		[ATHENA_HTN_Dashboard_Class310376]
 		[ATHENA_HTN_Dashboard_Class310000]
 		[ATHENA_HTN_Dashboard_Class330173]
-		[ATHENA_HTN_Dashboard_Class160000]
-		[ATHENA_HTN_Dashboard_Class610006])
+		[ATHENA_HTN_Dashboard_Class160000])
 	(label "NOT out of scope")
 	(operator AND))
 
@@ -8202,6 +8273,7 @@
 
 ([ATHENA_HTN_Dashboard_Class400004] of  Parameterized_Message
 
+	(fine-grain_priority 300)
 	(label "Multiple meds msg")
 	(message_type Primary_Recommendation)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class400005])
@@ -8210,7 +8282,7 @@
 ([ATHENA_HTN_Dashboard_Class400005] of  Parameterized_String
 
 	(label "Multiple meds msg")
-	(value "Pt has Rx for two drugs ?MultiMedHTNGL from the same drug class,. Stop one.  Recommendations provided.")
+	(value "Pt has Rx for two drugs ?MultiMedHTNGL from the same drug class. Stop one.")
 	(variables [ATHENA_HTN_Dashboard_Class400006]))
 
 ([ATHENA_HTN_Dashboard_Class400006] of  Variable
@@ -8280,28 +8352,28 @@
 ([ATHENA_HTN_Dashboard_Class410000] of  Consultation_Branch_Step
 
 	(branches
-		[ATHENA_HTN_Dashboard_Class410001]
 		[ATHENA_HTN_Dashboard_Class420926]
-		[ATHENA_HTN_Dashboard_Class420222]
 		[ATHENA_HTN_Dashboard_Class420024]
 		[ATHENA_HTN_Dashboard_Class420030]
 		[ATHENA_HTN_Dashboard_Class430008]
 		[ATHENA_HTN_Dashboard_Class440000]
-		[ATHENA_HTN_Dashboard_Class440015]
 		[ATHENA_HTN_Dashboard_Class440018]
 		[ATHENA_HTN_Dashboard_Class440025]
 		[ATHENA_HTN_Dashboard_Class440028]
 		[ATHENA_HTN_Dashboard_Class460002]
-		[ATHENA_HTN_Dashboard_Class490225]
 		[ATHENA_HTN_Dashboard_Class561413]
-		[ATHENA_HTN_Dashboard_Class640960])
+		[ATHENA_HTN_Dashboard_Class640960]
+		[ATHENA_HTN_Dashboard_Class720001]
+		[ATHENA_HTN_Dashboard_Class490225]
+		[ATHENA_HTN_Dashboard_Class823044]
+		[ATHENA_HTN_Dashboard_Class836484])
 	(label "when there are recs")
 	(selection_method all_of))
 
 ([ATHENA_HTN_Dashboard_Class410001] of  Consultation_Action_Step
 
 	(actions [ATHENA_HTN_Dashboard_Class410002])
-	(label "watch creatinine when ACE/ARB at max dose")
+	(label "Rx of ACE/ARB")
 	(rule_in [ATHENA_HTN_Dashboard_Class500012]))
 
 ([ATHENA_HTN_Dashboard_Class410002] of  On_Screen_Message
@@ -8309,7 +8381,7 @@
 	(description "Beware of 20% increase creatinine")
 	(label "Beware of 20% increase creatinine")
 	(message "Beware of 20% increase in creatinine (or 15% decreaes in eGFR) after initiation or change in dose of ACE/ARB.")
-	(message_type Recommendation))
+	(message_type General_Info))
 
 ([ATHENA_HTN_Dashboard_Class410004] of  Attributes_Comparison
 
@@ -8535,8 +8607,9 @@
 ([ATHENA_HTN_Dashboard_Class420025] of  On_Screen_Message
 
 	(description "Recommendations do not apply to pregnant women")
+	(fine-grain_priority 100)
 	(label "Recommendations do not apply to pregnant women")
-	(message "Warning:  These recommendations do not apply to women who are pregnant.")
+	(message "Warning: recommendations do not apply to pregnant women.")
 	(message_type Primary_Recommendation))
 
 ([ATHENA_HTN_Dashboard_Class420026] of  N_ary_Criterion
@@ -8576,15 +8649,16 @@
 
 ([ATHENA_HTN_Dashboard_Class420031] of  Parameterized_Message
 
+	(fine-grain_priority 300)
 	(label "Param msg duplicate GL drug")
-	(message_type Recommendation)
+	(message_type Primary_Recommendation)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class420032])
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class420038]))
 
 ([ATHENA_HTN_Dashboard_Class420032] of  Parameterized_String
 
 	(label "Param string for dup GL drug")
-	(value "Patient has multiple active prescriptions for the same drug ?dup_GL_drug . The doses have been summed.")
+	(value "There are multiple Rxs for ?dup_GL_drug.  Doses summed.")
 	(variables [ATHENA_HTN_Dashboard_Class420033]))
 
 ([ATHENA_HTN_Dashboard_Class420033] of  Variable
@@ -8795,37 +8869,37 @@
 	(label "when there are recs consultation template")
 	(steps
 		[ATHENA_HTN_Dashboard_Class410000]
-		[ATHENA_HTN_Dashboard_Class410001]
 		[ATHENA_HTN_Dashboard_Class420926]
-		[ATHENA_HTN_Dashboard_Class420222]
 		[ATHENA_HTN_Dashboard_Class420024]
 		[ATHENA_HTN_Dashboard_Class420030]
 		[ATHENA_HTN_Dashboard_Class430008]
 		[ATHENA_HTN_Dashboard_Class440000]
-		[ATHENA_HTN_Dashboard_Class440015]
 		[ATHENA_HTN_Dashboard_Class440018]
 		[ATHENA_HTN_Dashboard_Class440025]
 		[ATHENA_HTN_Dashboard_Class440028]
 		[ATHENA_HTN_Dashboard_Class460002]
-		[ATHENA_HTN_Dashboard_Class490225]
 		[ATHENA_HTN_Dashboard_Class561413]
-		[ATHENA_HTN_Dashboard_Class640960])
+		[ATHENA_HTN_Dashboard_Class640960]
+		[ATHENA_HTN_Dashboard_Class720001]
+		[ATHENA_HTN_Dashboard_Class490225]
+		[ATHENA_HTN_Dashboard_Class823044]
+		[ATHENA_HTN_Dashboard_Class836484])
 	(transitions
-		[ATHENA_HTN_Dashboard_Class420698]
 		[ATHENA_HTN_Dashboard_Class420927]
-		[ATHENA_HTN_Dashboard_Class420224]
 		[ATHENA_HTN_Dashboard_Class420029]
 		[ATHENA_HTN_Dashboard_Class420039]
 		[ATHENA_HTN_Dashboard_Class430009]
 		[ATHENA_HTN_Dashboard_Class440013]
-		[ATHENA_HTN_Dashboard_Class440017]
 		[ATHENA_HTN_Dashboard_Class440020]
 		[ATHENA_HTN_Dashboard_Class440027]
 		[ATHENA_HTN_Dashboard_Class440034]
 		[ATHENA_HTN_Dashboard_Class480231]
-		[ATHENA_HTN_Dashboard_Class490227]
 		[ATHENA_HTN_Dashboard_Class561414]
-		[ATHENA_HTN_Dashboard_Class640961]))
+		[ATHENA_HTN_Dashboard_Class640961]
+		[ATHENA_HTN_Dashboard_Class720002]
+		[ATHENA_HTN_Dashboard_Class730000]
+		[ATHENA_HTN_Dashboard_Class823047]
+		[ATHENA_HTN_Dashboard_Class836486]))
 
 ([ATHENA_HTN_Dashboard_Class420698] of  Consultation_Selection
 
@@ -8880,7 +8954,7 @@
 
 	(label "The medication ?drugName has prescribed daily dose (?dailyDose) greater than the GLmax recommended dose.")
 	(multivalued_variables [ATHENA_HTN_Dashboard_Class430006])
-	(value "ALERT:  The medication ?drugName has prescribed daily dose (?dailyDose) greater than the maximum recommended dose.  Recommendations are given as if the drug is at its maximum dose."))
+	(value "?drugName dose (?dailyDose) greater than max dose"))
 
 ([ATHENA_HTN_Dashboard_Class430006] of  Variable_ValueSet
 
@@ -8892,8 +8966,9 @@
 
 ([ATHENA_HTN_Dashboard_Class430007] of  Parameterized_Message
 
+	(fine-grain_priority 200)
 	(label "Param msg active GL meds whose daily dose > max dose")
-	(message_type Recommendation)
+	(message_type Drug_Related)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class430004])
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class430002]))
 
@@ -8969,6 +9044,7 @@
 
 ([ATHENA_HTN_Dashboard_Class440009] of  Parameterized_Message
 
+	(fine-grain_priority 100)
 	(label "Param msg MPR checks")
 	(message_type Primary_Recommendation)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class440010])
@@ -8978,7 +9054,7 @@
 
 	(label "GL med MPR<90 msg")
 	(multivalued_variables [ATHENA_HTN_Dashboard_Class440011])
-	(value "Patient appears not to be adhering to ?drugName (MPR= ?mpr %). Confirm and evaluate clinical strategy."))
+	(value "MPR ?mpr% - evaluate adherence to ?drugName. <Br>"))
 
 ([ATHENA_HTN_Dashboard_Class440011] of  Variable_ValueSet
 
@@ -9000,8 +9076,7 @@
 
 ([ATHENA_HTN_Dashboard_Class440015] of  Consultation_Action_Step
 
-	(actions [ATHENA_HTN_Dashboard_Class440016])
-	(label "Pres thiazide and 3<K<3.5")
+	(label "NOT DONE Pres thiazide and 3<K<3.5")
 	(rule_in [ATHENA_HTN_Dashboard_Class170010]))
 
 ([ATHENA_HTN_Dashboard_Class440016] of  On_Screen_Message
@@ -9018,9 +9093,9 @@
 
 ([ATHENA_HTN_Dashboard_Class440018] of  Consultation_Action_Step
 
-	(actions [ATHENA_HTN_Dashboard_Class371260])
-	(label "Pres ACE or ARB max dose and K>5.5 older than 1 month")
-	(rule_in [ATHENA_HTN_Dashboard_Class490991]))
+	(actions [ATHENA_HTN_Dashboard_Class793137])
+	(label "Pres ACE or ARB max dose")
+	(rule_in [ATHENA_HTN_Dashboard_Class500012]))
 
 ([ATHENA_HTN_Dashboard_Class440019] of  N_ary_Criterion
 
@@ -9078,9 +9153,10 @@
 ([ATHENA_HTN_Dashboard_Class440026] of  On_Screen_Message
 
 	(description "above dashboard target and below VA HTN GL target")
+	(fine-grain_priority 300)
 	(label "above dashboard target and below VA HTN GL target")
-	(message "Patient's age<60 and has 140<=SBP<150.  This above Dashboard target, but is within VA GL target")
-	(message_type Recommendation))
+	(message "Pt age<60, does not have DM and has 140<SBP<150.  This above Dashboard target, but is within VA GL target")
+	(message_type Primary_Recommendation))
 
 ([ATHENA_HTN_Dashboard_Class440027] of  Consultation_Selection
 
@@ -9130,9 +9206,10 @@
 
 ([ATHENA_HTN_Dashboard_Class440033] of  On_Screen_Message
 
+	(fine-grain_priority 300)
 	(label "below dashboard target but above VA GL target")
-	(message "Although patient is below target for Dashboard,DBP is above VA GL target")
-	(message_type Recommendation))
+	(message "Pt has DM and 85<DBP<90.  This below Dashboard target, but is above VA GL target.")
+	(message_type Primary_Recommendation))
 
 ([ATHENA_HTN_Dashboard_Class440034] of  Consultation_Selection
 
@@ -9158,7 +9235,7 @@
 
 	(label "IHD and DBP<60 refer to specialit")
 	(rule_in_condition [athena_hypertension_371791])
-	(who_to specialist))
+	(who_to hypertension+specialist))
 
 ([ATHENA_HTN_Dashboard_Class460002] of  Consultation_Action_Step
 
@@ -9210,7 +9287,7 @@
 	(description "not ACE and ARB together")
 	(label "not ACE and ARB together")
 	(message "VA Guidelines recommends against the use of both an ACE and ARB together.")
-	(message_type Recommendation)
+	(message_type Drug_Related)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class480001]))
 
 ([ATHENA_HTN_Dashboard_Class480003] of  Followed_By
@@ -9265,14 +9342,15 @@
 
 ([ATHENA_HTN_Dashboard_Class480232] of  Parameterized_Message
 
+	(fine-grain_priority 200)
 	(label "nonEncoded drug msg")
-	(message_type Recommendation)
+	(message_type Drug_Related)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class480233]))
 
 ([ATHENA_HTN_Dashboard_Class480233] of  Parameterized_String
 
 	(label "nonEncoded drug msg")
-	(value "Patient has an active prescription for a drug ?nonEncodedDrug that has antihypertensive activity that we cannot evaluate.")
+	(value "Pt has Rx forHTN med ?nonEncodedDrug that we have not evaluated.")
 	(variables [ATHENA_HTN_Dashboard_Class470001]))
 
 ([ATHENA_HTN_Dashboard_Class490000] of  Structured_Query
@@ -9645,6 +9723,7 @@
 	(domain_term Sacubitril)
 	(entry_type Medication)
 	(label "Presence of sacubitril")
+	(mood Authorized)
 	(presence TRUE))
 
 ([ATHENA_HTN_Dashboard_Class530202] of  N_ary_Criterion
@@ -9753,6 +9832,11 @@
 	(additional_ADR_check
 		Sulfa_drugs_noSU
 		SULFONYLUREAS)
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class740000]
+		[ATHENA_HTN_Dashboard_Class760000]
+		[ATHENA_HTN_Dashboard_Class770011]
+		[ATHENA_HTN_Dashboard_Class823051])
 	(Do_Not_Intensify_Conditions
 		AbsenceSBPpastmonth
 		absenceKpastmonth
@@ -9764,7 +9848,7 @@
 		Absence+of+Na+in+past+month
 		Absence+of+uric+acid+past+year)
 	(Drug_Class_Name Thiazide_diuretics_preferred)
-	(Drug_Partners_To_Avoid furosemide)
+	(Drug_Partners_To_Avoid Loop_diuretics)
 	(formulary_preferred_drug_in_class
 		[ATHENA_HTN_Dashboard_Class230000]
 		[ATHENA_HTN_Dashboard_Class230001])
@@ -9782,7 +9866,8 @@
 		Allergy_to_sulfonamides
 		Na+le+130+ever
 		K%3C3.5+ever
-		Hyperuricemia)
+		Hyperuricemia
+		Anuria_and_oliguria)
 	(Relative_Indications Osteoporosis))
 
 ([ATHENA_HTN_Dashboard_Class560281] of  Query_Result_Criterion
@@ -9793,7 +9878,7 @@
 
 ([ATHENA_HTN_Dashboard_Class560282] of  Parameterized_Message
 
-	(fine-grain_priority 100)
+	(fine-grain_priority 200)
 	(label "1st2nd3rd line non GL drug no dose info")
 	(message_type Drug_Related)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class560283])
@@ -10254,14 +10339,14 @@
 		[ATHENA_HTN_Dashboard_Class693505]
 		[ATHENA_HTN_Dashboard_Class670007]
 		[ATHENA_HTN_Dashboard_Class670011]
-		[ATHENA_HTN_Dashboard_Class670012])
+		[ATHENA_HTN_Dashboard_Class670012]
+		[ATHENA_HTN_Dashboard_Class741941]
+		[ATHENA_HTN_Dashboard_Class741942])
 	(transitions
-		[ATHENA_HTN_Dashboard_Class630006]
 		[ATHENA_HTN_Dashboard_Class630009]
 		[ATHENA_HTN_Dashboard_Class630013]
 		[ATHENA_HTN_Dashboard_Class630014]
 		[ATHENA_HTN_Dashboard_Class630015]
-		[ATHENA_HTN_Dashboard_Class640000]
 		[ATHENA_HTN_Dashboard_Class650001]
 		[ATHENA_HTN_Dashboard_Class650003]
 		[ATHENA_HTN_Dashboard_Class650004]
@@ -10269,7 +10354,6 @@
 		[ATHENA_HTN_Dashboard_Class650009]
 		[ATHENA_HTN_Dashboard_Class650010]
 		[ATHENA_HTN_Dashboard_Class650019]
-		[ATHENA_HTN_Dashboard_Class650020]
 		[ATHENA_HTN_Dashboard_Class650024]
 		[ATHENA_HTN_Dashboard_Class650025]
 		[ATHENA_HTN_Dashboard_Class650026]
@@ -10300,7 +10384,6 @@
 		[ATHENA_HTN_Dashboard_Class660488]
 		[ATHENA_HTN_Dashboard_Class660489]
 		[ATHENA_HTN_Dashboard_Class660492]
-		[ATHENA_HTN_Dashboard_Class660497]
 		[ATHENA_HTN_Dashboard_Class660498]
 		[ATHENA_HTN_Dashboard_Class660499]
 		[ATHENA_HTN_Dashboard_Class670674]
@@ -10326,12 +10409,15 @@
 		[ATHENA_HTN_Dashboard_Class693507]
 		[ATHENA_HTN_Dashboard_Class693508]
 		[ATHENA_HTN_Dashboard_Class693509]
-		[ATHENA_HTN_Dashboard_Class693510]
 		[ATHENA_HTN_Dashboard_Class693511]
-		[ATHENA_HTN_Dashboard_Class670013]
 		[ATHENA_HTN_Dashboard_Class670014]
 		[ATHENA_HTN_Dashboard_Class670015]
-		[ATHENA_HTN_Dashboard_Class670016]))
+		[ATHENA_HTN_Dashboard_Class670016]
+		[ATHENA_HTN_Dashboard_Class720000]
+		[ATHENA_HTN_Dashboard_Class741943]
+		[ATHENA_HTN_Dashboard_Class741944]
+		[ATHENA_HTN_Dashboard_Class741945]
+		[ATHENA_HTN_Dashboard_Class741946]))
 
 ([ATHENA_HTN_Dashboard_Class630001] of  Scenario
 
@@ -10353,7 +10439,7 @@
 
 	(consultation_template [ATHENA_HTN_Dashboard_Class420697])
 	(followed_by [ATHENA_HTN_Dashboard_Class660496])
-	(label "2 meds both not same drug class OR 3 meds all not same drug class")
+	(label "2 meds both not same drug class OR 3 meds or 4 meds not max dose and no complication factors")
 	(new_encounter TRUE)
 	(precondition [ATHENA_HTN_Dashboard_Class693503]))
 
@@ -10367,15 +10453,8 @@
 
 ([ATHENA_HTN_Dashboard_Class630005] of  Choice_Step
 
-	(branches
-		[ATHENA_HTN_Dashboard_Class630007]
-		[ATHENA_HTN_Dashboard_Class180013])
-	(label "stNo meds At goal v not at goal"))
-
-([ATHENA_HTN_Dashboard_Class630006] of  Followed_By
-
-	(%3AFROM [ATHENA_HTN_Dashboard_Class630001])
-	(%3ATO [ATHENA_HTN_Dashboard_Class630005]))
+	(branches [ATHENA_HTN_Dashboard_Class630007])
+	(label "stNo meds recs"))
 
 ([ATHENA_HTN_Dashboard_Class630007] of  Action_Choice
 
@@ -10408,7 +10487,8 @@
 		[ATHENA_HTN_Dashboard_Class630028]
 		[ATHENA_HTN_Dashboard_Class480002]
 		[ATHENA_HTN_Dashboard_Class737041]
-		[ATHENA_HTN_Dashboard_Class713425])
+		[ATHENA_HTN_Dashboard_Class713425]
+		[ATHENA_HTN_Dashboard_Class680013])
 	(label "st Has rec add OR (black and not monotherapy--black monotherapy msg; not both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class630027]))
 
@@ -10538,7 +10618,7 @@
 	(description "black not ACE/ARB monotherapy msg")
 	(label "black not ACE/ARB monotherapy msg")
 	(message "For African Americans with hypertension, the VA GL recommends against using ACE or ARB as monotherapy.")
-	(message_type Recommendation)
+	(message_type Drug_Related)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class630029]))
 
 ([ATHENA_HTN_Dashboard_Class630029] of  N_ary_Criterion
@@ -10574,10 +10654,93 @@
 	(label "18<=age<=75")
 	(operator AND))
 
-([ATHENA_HTN_Dashboard_Class640000] of  Followed_By
+([ATHENA_HTN_Dashboard_Class640000] of  Structured_Query
 
-	(%3AFROM [ATHENA_HTN_Dashboard_Class630005])
-	(%3ATO [ATHENA_HTN_Dashboard_Class180013]))
+	(label "Anaphylaxis ADR to BB")
+	(type Adverse_Reaction)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class240021]
+		[ATHENA_HTN_Dashboard_Class730001]))
+
+([ATHENA_HTN_Dashboard_Class640001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class663716]
+		[ATHENA_HTN_Dashboard_Class693500])
+	(label "num HTN meds = 4 and num encoded GL meds at max dose EQ num encoded GL meds and not multiple meds same drug class")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640002] of  N_ary_Criterion
+
+	(criteria
+		[athena_runtime_12786]
+		[athena_hypertension_domain_INSTANCE_00010])
+	(label "Pres Heart Failure and Alpha beta blocker")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640003] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class640004]
+		[ATHENA_HTN_Dashboard_Class780000])
+	(label "Pres Heart Failure and valsartan and sacubitril")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class640005]
+		[ATHENA_HTN_Dashboard_Class530000])
+	(label "Pres valsartan and sacubitril")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640005] of  Presence_Criterion
+
+	(domain_term valsartan)
+	(entry_type Medication)
+	(label "Pres valsartan")
+	(mood Authorized)
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class640006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class640002]
+		[ATHENA_HTN_Dashboard_Class640003]
+		[ATHENA_HTN_Dashboard_Class663716])
+	(label "num encoded GL meds at max dose = num encoded GL meds OR Pres alpha beta blocker and Heart Failure HTN OR Prea valsartan and Neprilysin Inhibitors and Heart Failue HTN")
+	(operator OR))
+
+([ATHENA_HTN_Dashboard_Class640007] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class640006])
+	(label "num htn meds = 4 and (max dose or complication factor)")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640008] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758783]
+		[ATHENA_HTN_Dashboard_Class640007])
+	(label "num htn meds >=5 OR num htn meds = 4 and max dose or complication factor")
+	(operator OR))
+
+([ATHENA_HTN_Dashboard_Class640009] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class640010])
+	(label "num htn meds = 4 and not max dose or complication factor")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class640010] of  N_ary_Criterion
+
+	(criteria [ATHENA_HTN_Dashboard_Class640006])
+	(label "not max dose or complication factor")
+	(operator NOT))
 
 ([ATHENA_HTN_Dashboard_Class640552] of  N_ary_Criterion
 
@@ -10728,21 +10891,15 @@
 ([ATHENA_HTN_Dashboard_Class650018] of  Choice_Step
 
 	(branches
-		[ATHENA_HTN_Dashboard_Class180013]
 		[ATHENA_HTN_Dashboard_Class650021]
 		[ATHENA_HTN_Dashboard_Class650022]
 		[ATHENA_HTN_Dashboard_Class650023])
-	(label "One med at goal v not at goal"))
+	(label "One med recs"))
 
 ([ATHENA_HTN_Dashboard_Class650019] of  Followed_By
 
 	(%3AFROM [ATHENA_HTN_Dashboard_Class630002])
 	(%3ATO [ATHENA_HTN_Dashboard_Class650018]))
-
-([ATHENA_HTN_Dashboard_Class650020] of  Followed_By
-
-	(%3AFROM [ATHENA_HTN_Dashboard_Class650018])
-	(%3ATO [ATHENA_HTN_Dashboard_Class180013]))
 
 ([ATHENA_HTN_Dashboard_Class650021] of  Action_Choice
 
@@ -11028,7 +11185,8 @@
 	(actions
 		[ATHENA_HTN_Dashboard_Class480002]
 		[ATHENA_HTN_Dashboard_Class737041]
-		[ATHENA_HTN_Dashboard_Class713425])
+		[ATHENA_HTN_Dashboard_Class713425]
+		[ATHENA_HTN_Dashboard_Class680013])
 	(label "st has rec add-- not on both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class660490]))
 
@@ -11117,7 +11275,10 @@
 		[ATHENA_HTN_Dashboard_Class480002]
 		[ATHENA_HTN_Dashboard_Class210034]
 		[ATHENA_HTN_Dashboard_Class742649]
-		[ATHENA_HTN_Dashboard_Class713425])
+		[ATHENA_HTN_Dashboard_Class713425]
+		[ATHENA_HTN_Dashboard_Class737041]
+		[ATHENA_HTN_Dashboard_Class680013]
+		[ATHENA_HTN_Dashboard_Class727118])
 	(label "st Has rec add, HCTZ max dose, Sub with Pref thiazide -- not on both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class660490]))
 
@@ -11223,23 +11384,18 @@
 
 	(criteria
 		[ATHENA_HTN_Dashboard_Class660494]
-		[ATHENA_HTN_Dashboard_Class693501])
-	(label "st 2 meds not in same drug class OR 3 meds")
+		[ATHENA_HTN_Dashboard_Class693501]
+		[ATHENA_HTN_Dashboard_Class780006])
+	(label "st 2 meds not in same drug class OR 3 meds OR 4 meds not max")
 	(operator OR))
 
 ([ATHENA_HTN_Dashboard_Class660496] of  Choice_Step
 
 	(branches
-		[ATHENA_HTN_Dashboard_Class180013]
 		[ATHENA_HTN_Dashboard_Class650023]
 		[ATHENA_HTN_Dashboard_Class670671]
 		[ATHENA_HTN_Dashboard_Class670252])
-	(label "2,3 meds at goal v not at goal"))
-
-([ATHENA_HTN_Dashboard_Class660497] of  Followed_By
-
-	(%3AFROM [ATHENA_HTN_Dashboard_Class660496])
-	(%3ATO [ATHENA_HTN_Dashboard_Class180013]))
+	(label "2,3 meds recs"))
 
 ([ATHENA_HTN_Dashboard_Class660498] of  Followed_By
 
@@ -11250,6 +11406,42 @@
 
 	(%3AFROM [ATHENA_HTN_Dashboard_Class660496])
 	(%3ATO [ATHENA_HTN_Dashboard_Class650023]))
+
+([ATHENA_HTN_Dashboard_Class663715] of  Structured_Query
+
+	(aggregation_operator count)
+	(attribute [drug_name])
+	(label "number 1st2nd3rdEncode GL med not contra")
+	(type Medication)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class420036]
+		[ATHENA_HTN_Dashboard_Class250008]
+		[ATHENA_HTN_Dashboard_Class551068]))
+
+([ATHENA_HTN_Dashboard_Class663716] of  Expression_Comparison_Criterion
+
+	(expression [ATHENA_HTN_Dashboard_Class663715])
+	(label "num encoded GL meds at max dose = num encoded GL meds")
+	(operator %3D)
+	(variable [ATHENA_HTN_Dashboard_Class778476]))
+
+([ATHENA_HTN_Dashboard_Class663717] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class663716])
+	(label "num encoded GL meds at max dose = num encoded GL meds")
+	(string_name "num encoded GL meds at max dose = num encoded GL meds"))
+
+([ATHENA_HTN_Dashboard_Class665933] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class778476])
+	(label "number 1st2nd3rdEncode med max dose not contra")
+	(string_name "number 1st2nd3rdEncode med max dose not contra"))
+
+([ATHENA_HTN_Dashboard_Class665934] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class663715])
+	(label "number 1st2nd3rdEncode med not contra")
+	(string_name "number 1st2nd3rdEncode med not contra"))
 
 ([ATHENA_HTN_Dashboard_Class670000] of  N_ary_Criterion
 
@@ -11317,16 +11509,17 @@
 
 	(description "no eGFR  past year")
 	(label "no eGFR past year")
-	(message "No GFR in past year.")
-	(message_type Out_of_Scope)
+	(message "No recommendation. No GFR in past year.")
+	(message_type No_Drug_Rec)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class150267]))
 
 ([ATHENA_HTN_Dashboard_Class670009] of  Conditional_On_Screen_Message
 
 	(description "egfr<30 out of scope")
 	(label "egfr<30 out of scope")
-	(message "GFR<30 past year.")
-	(message_type Out_of_Scope))
+	(message "Out of Scope.  GFR<30 past year.")
+	(message_type Out_of_Scope)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class150272]))
 
 ([ATHENA_HTN_Dashboard_Class670011] of  Choice_Step
 
@@ -11340,11 +11533,6 @@
 	(followed_by [ATHENA_HTN_Dashboard_Class693505])
 	(label "eGFR ok")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class670006]))
-
-([ATHENA_HTN_Dashboard_Class670013] of  Followed_By
-
-	(%3AFROM [ATHENA_HTN_Dashboard_Class693504])
-	(%3ATO [ATHENA_HTN_Dashboard_Class670011]))
 
 ([ATHENA_HTN_Dashboard_Class670014] of  Followed_By
 
@@ -11370,14 +11558,16 @@
 
 ([ATHENA_HTN_Dashboard_Class670018] of  Parameterized_Message
 
-	(label "Param msg 4+ antihypertensive meds")
+	(fine-grain_priority 100)
+	(label "Param msg 5+ antihypertensive meds")
 	(message_type Out_of_Scope)
-	(parameterized_message [ATHENA_HTN_Dashboard_Class670019]))
+	(parameterized_message [ATHENA_HTN_Dashboard_Class670019])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class758783]))
 
 ([ATHENA_HTN_Dashboard_Class670019] of  Parameterized_String
 
-	(label "Param msg 4+ antihypertensive meds")
-	(value "Rx for 4 or more anti-hypertensive medications ?HTNmeds out of scope.")
+	(label "Param msg 5+ antihypertensive meds")
+	(value "Out of Scope. Rx for 5 or more anti-hypertensive meds ?HTNmeds.")
 	(variables [ATHENA_HTN_Dashboard_Class670020]))
 
 ([ATHENA_HTN_Dashboard_Class670020] of  Variable
@@ -11559,10 +11749,11 @@
 
 ([ATHENA_HTN_Dashboard_Class680013] of  Parameterized_Message
 
+	(fine-grain_priority 100)
 	(label "param msg blocked drug")
-	(message_type Drug_Related)
+	(message_type do_not_add_controllable_condition)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class680015])
-	(rule_in_condition [ATHENA_HTN_Dashboard_Class150003]))
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class727114]))
 
 ([ATHENA_HTN_Dashboard_Class680014] of  Query_Result_Criterion
 
@@ -11573,7 +11764,7 @@
 ([ATHENA_HTN_Dashboard_Class680015] of  Parameterized_String
 
 	(label "?blockedDrug missing SBP")
-	(value "?blockedDrug missing SBP")
+	(value "Would add ?blockedDrug but missing SBP.")
 	(variables [ATHENA_HTN_Dashboard_Class680012]))
 
 ([ATHENA_HTN_Dashboard_Class683465] of  Structured_Query
@@ -11748,7 +11939,9 @@
 		[ATHENA_HTN_Dashboard_Class210034]
 		[ATHENA_HTN_Dashboard_Class737041]
 		[ATHENA_HTN_Dashboard_Class742649]
-		[ATHENA_HTN_Dashboard_Class713425])
+		[ATHENA_HTN_Dashboard_Class713425]
+		[ATHENA_HTN_Dashboard_Class680013]
+		[ATHENA_HTN_Dashboard_Class727118])
 	(label "st Has rec add OR (black and not monotherapy--HCTZ max dose Sub with Pref thiazide -- black monotherapy msg; not both ACE/ARB msg")
 	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class630027]))
 
@@ -11905,7 +12098,7 @@
 
 ([ATHENA_HTN_Dashboard_Class693504] of  Scenario
 
-	(followed_by [ATHENA_HTN_Dashboard_Class670011])
+	(followed_by [ATHENA_HTN_Dashboard_Class741941])
 	(label "st VA HTN no recs")
 	(new_encounter TRUE)
 	(precondition [ATHENA_HTN_Dashboard_Class310007]))
@@ -11916,7 +12109,6 @@
 		[ATHENA_HTN_Dashboard_Class330004]
 		[ATHENA_HTN_Dashboard_Class310003]
 		[ATHENA_HTN_Dashboard_Class150278]
-		[ATHENA_HTN_Dashboard_Class342565]
 		[ATHENA_HTN_Dashboard_Class342957])
 	(label "no recs cascascade"))
 
@@ -11934,11 +12126,6 @@
 
 	(%3AFROM [ATHENA_HTN_Dashboard_Class693505])
 	(%3ATO [ATHENA_HTN_Dashboard_Class150278]))
-
-([ATHENA_HTN_Dashboard_Class693510] of  Followed_By
-
-	(%3AFROM [ATHENA_HTN_Dashboard_Class693505])
-	(%3ATO [ATHENA_HTN_Dashboard_Class342565]))
 
 ([ATHENA_HTN_Dashboard_Class693511] of  Followed_By
 
@@ -12094,10 +12281,22 @@
 	(%3AFROM [ATHENA_HTN_Dashboard_Class10051])
 	(%3ATO [ATHENA_HTN_Dashboard_Class70664]))
 
+([ATHENA_HTN_Dashboard_Class710000] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "drug mood is not rec delete")
+	(operator neq)
+	(value_expression [ATHENA_HTN_Dashboard_Class710001]))
+
+([ATHENA_HTN_Dashboard_Class710001] of  Qualitative_Constant
+
+	(label "Recommend_Delete")
+	(value "Recommend_Delete"))
+
 ([ATHENA_HTN_Dashboard_Class713425] of  On_Screen_Message
 
 	(description "Do not change meds if meds recently changed")
-	(fine-grain_priority 100)
+	(fine-grain_priority 300)
 	(label "Do not change meds if meds recently changed")
 	(message "Do not change meds if meds recently changed.")
 	(message_type Primary_Recommendation))
@@ -12113,11 +12312,92 @@
 	(presence TRUE)
 	(query [ATHENA_HTN_Dashboard_Class240012]))
 
+([ATHENA_HTN_Dashboard_Class720000] of  Followed_By
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class630001])
+	(%3ATO [ATHENA_HTN_Dashboard_Class630005]))
+
+([ATHENA_HTN_Dashboard_Class720001] of  Consultation_Action_Step
+
+	(actions [ATHENA_HTN_Dashboard_Class342566])
+	(label "Bad drug partner msg")
+	(rule_in [ATHENA_HTN_Dashboard_Class610001]))
+
+([ATHENA_HTN_Dashboard_Class720002] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class410000])
+	(%3ATO [ATHENA_HTN_Dashboard_Class720001]))
+
+([ATHENA_HTN_Dashboard_Class726018] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class130001])
+	(label "check Pres HTN and Abs CKD")
+	(string_name "check Pres HTN and Abs CKD"))
+
+([ATHENA_HTN_Dashboard_Class726019] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class140000])
+	(label "check  Pres HTN and CKD and black")
+	(string_name "check  Pres HTN and CKD and black"))
+
+([ATHENA_HTN_Dashboard_Class726020] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class140008])
+	(label "check Pres HTN and CKD and NOT black race")
+	(string_name "check Pres HTN and CKD and NOT black race"))
+
+([ATHENA_HTN_Dashboard_Class727113] of  Presence_Criterion
+
+	(domain_term Systolic_BP)
+	(entry_type Numeric_Entry)
+	(label "Presence SBP")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class727114] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class150003]
+		[ATHENA_HTN_Dashboard_Class727113])
+	(label "Abs SPB past month and Pres SBP")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class727118] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "param msg block incr drug")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class727119])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class727114]))
+
+([ATHENA_HTN_Dashboard_Class727119] of  Parameterized_String
+
+	(label "?blockedIncrDrug missing SBP")
+	(value "Would increase ?blockedIncrDrug but missing SBP.")
+	(variables [ATHENA_HTN_Dashboard_Class742651]))
+
 ([ATHENA_HTN_Dashboard_Class729171] of  Query_Result_Criterion
 
 	(label "there exists drug not at max dose 3rd line encoded")
 	(presence TRUE)
 	(query [ATHENA_HTN_Dashboard_Class230016]))
+
+([ATHENA_HTN_Dashboard_Class730000] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class410000])
+	(%3ATO [ATHENA_HTN_Dashboard_Class490225]))
+
+([ATHENA_HTN_Dashboard_Class730001] of  Comparison_Filter
+
+	(attribute [substance])
+	(label "substance is subclass BB")
+	(operator subclass_of)
+	(value_expression [Beta-Blockers]))
+
+([ATHENA_HTN_Dashboard_Class730003] of  Query_Result_Criterion
+
+	(label "Anaphylaxis ADR to BB")
+	(presence TRUE)
+	(query [ATHENA_HTN_Dashboard_Class640000]))
 
 ([ATHENA_HTN_Dashboard_Class732168] of  Structured_Query
 
@@ -12135,6 +12415,7 @@
 
 ([ATHENA_HTN_Dashboard_Class737041] of  Parameterized_Message
 
+	(fine-grain_priority 100)
 	(label "param msg blocked ?drug ?SBPvalueDate")
 	(message_type do_not_add_controllable_condition)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class737042])
@@ -12147,8 +12428,182 @@
 	(value "Would add ?blockedDrug but SBP old ?value (?date).")
 	(variables [ATHENA_HTN_Dashboard_Class680012]))
 
+([ATHENA_HTN_Dashboard_Class740000] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class740001]
+		[ATHENA_HTN_Dashboard_Class740003]
+		[ATHENA_HTN_Dashboard_Class740004]
+		[ATHENA_HTN_Dashboard_Class740005]
+		[ATHENA_HTN_Dashboard_Class740006]
+		[ATHENA_HTN_Dashboard_Class740008]
+		[ATHENA_HTN_Dashboard_Class776510]
+		[ATHENA_HTN_Dashboard_Class776515]
+		[ATHENA_HTN_Dashboard_Class776519]
+		[ATHENA_HTN_Dashboard_Class776523]
+		[ATHENA_HTN_Dashboard_Class776528]
+		[ATHENA_HTN_Dashboard_Class776530]
+		[ATHENA_HTN_Dashboard_Class776532]
+		[ATHENA_HTN_Dashboard_Class750000])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class740001] of  On_Screen_Message
+
+	(description "first line drug HTN and no CKD")
+	(label "first line drug HTN and no CKD")
+	(message "First line drug for HTN and no CKD")
+	(message_type is_first_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class130001]))
+
+([ATHENA_HTN_Dashboard_Class740002] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class740001]
+		[ATHENA_HTN_Dashboard_Class740003]
+		[ATHENA_HTN_Dashboard_Class740004]
+		[ATHENA_HTN_Dashboard_Class740005]
+		[ATHENA_HTN_Dashboard_Class740006]
+		[ATHENA_HTN_Dashboard_Class740008]
+		[ATHENA_HTN_Dashboard_Class776510]
+		[ATHENA_HTN_Dashboard_Class776515]
+		[ATHENA_HTN_Dashboard_Class776519]
+		[ATHENA_HTN_Dashboard_Class776523]
+		[ATHENA_HTN_Dashboard_Class776528]
+		[ATHENA_HTN_Dashboard_Class776530]
+		[ATHENA_HTN_Dashboard_Class776532]
+		[ATHENA_HTN_Dashboard_Class750000])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class740003] of  On_Screen_Message
+
+	(description "second line drug HTN and CKD not black")
+	(label "second line drug HTN and CKD not black")
+	(message "First line drug for HTN and CKD and not African American.")
+	(message_type is_second_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class140008]))
+
+([ATHENA_HTN_Dashboard_Class740004] of  On_Screen_Message
+
+	(description "first line drug HTN and CKD and African American")
+	(label "first line drug HTN and CKD and African American")
+	(message "First line drug for HTN and CKD and African American.")
+	(message_type is_first_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class140000]))
+
+([ATHENA_HTN_Dashboard_Class740005] of  On_Screen_Message
+
+	(description "relative contra gout uncomplicated")
+	(label "relative contra gout uncomplicated")
+	(message "Relative contraindication: Pt has uncomplicated gout")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_143081]))
+
+([ATHENA_HTN_Dashboard_Class740006] of  On_Screen_Message
+
+	(description "relative contra hyponatremia")
+	(label "relative contra hyponatremia")
+	(message "Relative contraindication:  pt has ICD code for hyponatremia")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class740007]))
+
+([ATHENA_HTN_Dashboard_Class740007] of  Presence_Criterion
+
+	(domain_term Hypoosmality_Hyponatremia)
+	(entry_type Note_Entry)
+	(label "Pres hypoosmality or hyponatremia")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class740008] of  Parameterized_Message
+
+	(label "relative contra 130 lt Na lt 135 past month")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class740009])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class160002]))
+
+([ATHENA_HTN_Dashboard_Class740009] of  Parameterized_String
+
+	(label "relative contra 130 lt Na lt 135 past month")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class740010])
+	(value "Relative contraindication. Pt has Na ?value (?date).  Hyponatremia may worsen."))
+
+([ATHENA_HTN_Dashboard_Class740010] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class740012])
+	(label "Na value date most recent")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class740011] of  Variable_ValueSet
+
+	(label "delete"))
+
+([ATHENA_HTN_Dashboard_Class740012] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(label "Na strutured query most recent")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class740013]))
+
+([ATHENA_HTN_Dashboard_Class740013] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "Na comparison filter")
+	(operator eq)
+	(value_expression [Sodium]))
+
+([ATHENA_HTN_Dashboard_Class741941] of  Choice_Step
+
+	(branches
+		[ATHENA_HTN_Dashboard_Class180013]
+		[ATHENA_HTN_Dashboard_Class741942])
+	(label "At goal vs not at goa"))
+
+([ATHENA_HTN_Dashboard_Class741942] of  Action_Choice
+
+	(followed_by [ATHENA_HTN_Dashboard_Class670011])
+	(label "goal not satisfied")
+	(strict_rule_in_condition [ATHENA_HTN_Dashboard_Class670004]))
+
+([ATHENA_HTN_Dashboard_Class741943] of  Followed_By
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class693504])
+	(%3ATO [ATHENA_HTN_Dashboard_Class741941]))
+
+([ATHENA_HTN_Dashboard_Class741944] of  Followed_By
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class741941])
+	(%3ATO [ATHENA_HTN_Dashboard_Class180013]))
+
+([ATHENA_HTN_Dashboard_Class741945] of  Followed_By
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class741941])
+	(%3ATO [ATHENA_HTN_Dashboard_Class741942]))
+
+([ATHENA_HTN_Dashboard_Class741946] of  Followed_By
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class741942])
+	(%3ATO [ATHENA_HTN_Dashboard_Class670011]))
+
+([ATHENA_HTN_Dashboard_Class742306] of  Structured_Query
+
+	(aggregation_operator count)
+	(attribute [drug_name])
+	(label "number meds that have bad drug partners HTN GL not contraindicated")
+	(type Medication)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class341135]
+		[ATHENA_HTN_Dashboard_Class250176]))
+
+([ATHENA_HTN_Dashboard_Class742307] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class742306])
+	(label "?numBadDrugPartnerNotContra")
+	(string_name "?numBadDrugPartnerNotContra"))
+
 ([ATHENA_HTN_Dashboard_Class742649] of  Parameterized_Message
 
+	(fine-grain_priority 100)
 	(label "Param msg blocked incr ?darug ?SBPvalueDate")
 	(message_type do_not_intensify_controllable_condition)
 	(parameterized_message [ATHENA_HTN_Dashboard_Class742650])
@@ -12186,6 +12641,1007 @@
 	(label "Blocked_Increase")
 	(value "Blocked_Increase"))
 
+([ATHENA_HTN_Dashboard_Class750000] of  On_Screen_Message
+
+	(description "relative indication osteoporosis")
+	(label "relative indication osteoporosis")
+	(message "Relative indication:  pt has osteoporosis.")
+	(message_type relative_indication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class750001]))
+
+([ATHENA_HTN_Dashboard_Class750001] of  Presence_Criterion
+
+	(domain_term Osteoporosis)
+	(entry_type Note_Entry)
+	(label "Pres osteoporosis")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class752869] of  Expression_Comparison_Criterion
+
+	(expression [ATHENA_HTN_Dashboard_Class663715])
+	(label "num encoded GL meds at max dose < num encoded GL meds")
+	(operator %3C)
+	(variable [ATHENA_HTN_Dashboard_Class778476]))
+
+([ATHENA_HTN_Dashboard_Class752870] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class752869])
+	(label "num htn meds = 4 and num encoded GL meds at max dose < num encoded GL meds")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class755740] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class752869])
+	(label "num encoded GL meds at max dose LT num encoded GL meds")
+	(string_name "num encoded GL meds at max dose LT num encoded GL meds"))
+
+([ATHENA_HTN_Dashboard_Class758781] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class663716])
+	(label "num HTN meds = 4 and num encoded GL meds at max dose EQ num encoded GL meds")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class758783] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "count antihypertensive >=5")
+	(numeric_domain_term Antihypertensive_Agents)
+	(operator %3E%3D)
+	(value 5.0))
+
+([ATHENA_HTN_Dashboard_Class758784] of  Numeric_Term_Criterion
+
+	(aggregation_operator count)
+	(entry_type Medication)
+	(label "count antihypertensive = 4")
+	(numeric_domain_term Antihypertensive_Agents)
+	(operator %3D)
+	(value 4.0))
+
+([ATHENA_HTN_Dashboard_Class760000] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class760001]
+		[ATHENA_HTN_Dashboard_Class760002]
+		[ATHENA_HTN_Dashboard_Class760006]
+		[ATHENA_HTN_Dashboard_Class760008]
+		[ATHENA_HTN_Dashboard_Class760013]
+		[ATHENA_HTN_Dashboard_Class760014])
+	(mood Blocked_Add))
+
+([ATHENA_HTN_Dashboard_Class760001] of  Conditional_On_Screen_Message
+
+	(description "Blocked add Thiazide missing K")
+	(label "Blocked add Thiazide missing K")
+	(message "Would add thiazide diuretics, but missing K.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class760002] of  Parameterized_Message
+
+	(label "Blocked add thiazide missing K past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class760003])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760004]))
+
+([ATHENA_HTN_Dashboard_Class760003] of  Parameterized_String
+
+	(label "Would add thiazide diuretics, but old K ?value (?date).")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would add thiazide, but old K ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class760004] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class90001]
+		[ATHENA_HTN_Dashboard_Class760005])
+	(label "Abs of K in past month but Pres K")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class760005] of  Presence_Criterion
+
+	(domain_term Potassium)
+	(entry_type Numeric_Entry)
+	(label "Presence of K")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class760006] of  Conditional_On_Screen_Message
+
+	(description "Blocked add thiazide missing Na")
+	(label "Blocked add thiazide missing Na")
+	(message "Would add thiazide diuretics, but missing Na.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760007]))
+
+([ATHENA_HTN_Dashboard_Class760007] of  Presence_Criterion
+
+	(domain_term Sodium)
+	(entry_type Numeric_Entry)
+	(label "Absence Na")
+	(presence FALSE))
+
+([ATHENA_HTN_Dashboard_Class760008] of  Parameterized_Message
+
+	(label "Blocked add thiazide missing Na past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class760009])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760010]))
+
+([ATHENA_HTN_Dashboard_Class760009] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class740010])
+	(value "Would add thiazide diuretics, but old Na ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class760010] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class760012]
+		[ATHENA_HTN_Dashboard_Class760011])
+	(label "Abs of Na past month but Pres Na")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class760011] of  Presence_Criterion
+
+	(domain_term Sodium)
+	(entry_type Numeric_Entry)
+	(label "Pres of Na")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class760012] of  Presence_Criterion
+
+	(domain_term Sodium)
+	(entry_type Numeric_Entry)
+	(label "Abs of Na past month")
+	(period [ATHENA_DM_Eye_Instance_100007])
+	(presence FALSE))
+
+([ATHENA_HTN_Dashboard_Class760013] of  Conditional_On_Screen_Message
+
+	(description "Blocked add Thiazide missing uric acid")
+	(label "Blocked add Thiazide missing uric acid")
+	(message "Would add thiazide diuretics, but missing uric acid.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [athena_hypertension_319807]))
+
+([ATHENA_HTN_Dashboard_Class760014] of  Parameterized_Message
+
+	(label "Blocked add thiazide missing uric acid past year")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class760015])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760019]))
+
+([ATHENA_HTN_Dashboard_Class760015] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class760016])
+	(value "Would add thiazide diuretics, but old uric acid ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class760016] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class760017])
+	(label "uric acid value date most recent")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class760017] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(label "uric acid structured query most recent")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class760018]))
+
+([ATHENA_HTN_Dashboard_Class760018] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "uric acid comparison filter")
+	(operator eq)
+	(value_expression [Uric_Acid]))
+
+([ATHENA_HTN_Dashboard_Class760019] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class760020]
+		[ATHENA_HTN_Dashboard_Class760021])
+	(label "Abs uric acid past year but Pres uric acid")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class760020] of  Presence_Criterion
+
+	(domain_term Uric_Acid)
+	(entry_type Numeric_Entry)
+	(label "Pres of uric acid")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class760021] of  Presence_Criterion
+
+	(domain_term Uric_Acid)
+	(entry_type Numeric_Entry)
+	(label "Abs of uric acid past year")
+	(period [ATHENA_DM_Eye_Instance_30019])
+	(presence FALSE))
+
+([ATHENA_HTN_Dashboard_Class763273] of  Variable
+
+	(derivation_expression [athena_hypertension_new_INSTANCE_00002])
+	(label "K<3.5 min ever")
+	(string_name "K<3.5 min ever"))
+
+([ATHENA_HTN_Dashboard_Class763274] of  Variable
+
+	(derivation_expression [athena_hypertension_351814])
+	(label "Na <=130 min ever"))
+
+([ATHENA_HTN_Dashboard_Class763275] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class776522])
+	(label "StrucQuery Na min")
+	(string_name "StrucQuery Na min"))
+
+([ATHENA_HTN_Dashboard_Class763468] of  Structured_Query
+
+	(attribute [drug_name])
+	(label "drug name is 1st2nd3rdEncode med max dose not contra")
+	(type Medication)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class420036]
+		[ATHENA_HTN_Dashboard_Class250008]
+		[ATHENA_HTN_Dashboard_Class410005]))
+
+([ATHENA_HTN_Dashboard_Class763469] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class763468])
+	(label "?1st2nd3rdLineEncodeMaxDoseNotContra")
+	(string_name "?1st2nd3rdLineEncodeMaxDoseNotContra"))
+
+([ATHENA_HTN_Dashboard_Class770000] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class770003]
+		[ATHENA_HTN_Dashboard_Class770006]
+		[ATHENA_HTN_Dashboard_Class770009]
+		[ATHENA_HTN_Dashboard_Class798874]
+		[ATHENA_HTN_Dashboard_Class798875]
+		[ATHENA_HTN_Dashboard_Class798877])
+	(mood Blocked_Increase))
+
+([ATHENA_HTN_Dashboard_Class770001] of  Conditional_On_Screen_Message
+
+	(description "Blocked increase Thiazide missing K")
+	(label "Blocked increase Thiazide missing K")
+	(message "Would increase thiazide diuretics, but missing K.")
+	(message_type do_not_intensify_controllable_condition)
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class770003] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing K past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class770004])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760004]))
+
+([ATHENA_HTN_Dashboard_Class770004] of  Parameterized_String
+
+	(label "Would increase thiazide diuretics, but old K ?value (?date).")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would increase ?query_for_thiazide, but old K ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class770005] of  Conditional_On_Screen_Message
+
+	(description "Blocked increase thiazide missing Na")
+	(label "Blocked increase thiazide missing Na")
+	(message "Would increase thiazide diuretics, but missing Na.")
+	(message_type do_not_intensify_controllable_condition)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760007]))
+
+([ATHENA_HTN_Dashboard_Class770006] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing Na past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class770007])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760010]))
+
+([ATHENA_HTN_Dashboard_Class770007] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class740010])
+	(value "Would increase ?query_for_thiazide, but old Na ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class770008] of  Conditional_On_Screen_Message
+
+	(description "Blocked increase Thiazide missing uric acid")
+	(label "Blocked increase Thiazide missing uric acid")
+	(message "Would increase thiazide diuretics, but missing uric acid.")
+	(message_type do_not_intensify_controllable_condition)
+	(rule_in_condition [athena_hypertension_319807]))
+
+([ATHENA_HTN_Dashboard_Class770009] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing uric acid past year")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class770010])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760019]))
+
+([ATHENA_HTN_Dashboard_Class770010] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class760016])
+	(value "Would increase ?query_for_thiazide, but old uric acid ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class770011] of  Collateral_Action
+
+	(actions [ATHENA_HTN_Dashboard_Class770012])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class770012] of  On_Screen_Message
+
+	(fine-grain_priority 100)
+	(label "General Info Thiazide BPH")
+	(message "BPH and Rx alpha blocker:  Thiazide diuretics may worsen urinary symptoms of BPH; Monitor for hyponatremia, hypokalemia, and uric acid levels.")
+	(message_type General_Info)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class770013]))
+
+([ATHENA_HTN_Dashboard_Class770013] of  N_ary_Criterion
+
+	(criteria
+		[athena_hypertension_101783]
+		[athena_hypertension_04885])
+	(label "Pres BPH and Pres alpha blocker")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class772193] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class390001])
+	(label "not out of scope")
+	(string_name "not out of scope"))
+
+([ATHENA_HTN_Dashboard_Class776510] of  Parameterized_Message
+
+	(label "relative contra 3<K<3.5 past month and pres thiazide")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class776516])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class170010]))
+
+([ATHENA_HTN_Dashboard_Class776511] of  Parameterized_String
+
+	(label "relative contra K<3.5 ever")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776512])
+	(value "Relative contraindication. Pt has K ?value (?date).  Hypokalemia may worsen."))
+
+([ATHENA_HTN_Dashboard_Class776512] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class776513])
+	(label "K value date min")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class776513] of  Structured_Query
+
+	(aggregation_operator minimum)
+	(label "K structured query minimum")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class776514]))
+
+([ATHENA_HTN_Dashboard_Class776514] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "K comparison filter")
+	(operator eq)
+	(value_expression [Potassium]))
+
+([ATHENA_HTN_Dashboard_Class776515] of  Parameterized_Message
+
+	(label "relative contra K<3.5 ever")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class776511])
+	(rule_in_condition [athena_hypertension_new_INSTANCE_00002]))
+
+([ATHENA_HTN_Dashboard_Class776516] of  Parameterized_String
+
+	(label "relative contra 3<K<3.5")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Relative contraindication. Pt has K ?value (?date).  Hypokalemia may worsen."))
+
+([ATHENA_HTN_Dashboard_Class776517] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class776518])
+	(label "K value date most recent")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class776518] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(label "K structured query most recent")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class776514]))
+
+([ATHENA_HTN_Dashboard_Class776519] of  Parameterized_Message
+
+	(label "relative contra Na<=130 ever")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class776520])
+	(rule_in_condition [athena_hypertension_351814]))
+
+([ATHENA_HTN_Dashboard_Class776520] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776521])
+	(value "Relative contraiindication. Pt has Na ?value (?date).  Hyponatremia may worsen."))
+
+([ATHENA_HTN_Dashboard_Class776521] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class776522])
+	(label "Na value date min ever")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class776522] of  Structured_Query
+
+	(aggregation_operator minimum)
+	(label "Na structured query min")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class740013]))
+
+([ATHENA_HTN_Dashboard_Class776523] of  Parameterized_Message
+
+	(label "relative contra uric acid gt 6.8 past month")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class776524])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class170006]))
+
+([ATHENA_HTN_Dashboard_Class776524] of  Parameterized_String
+
+	(label "reltive contra uric acid > 6.8 past year")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776525])
+	(value "Relative contraindication.  Pt has Uric Acid ?value (?date)"))
+
+([ATHENA_HTN_Dashboard_Class776525] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class776526])
+	(label "uric acid value date most recent")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class776526] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(label "uric acid structured query most recent")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class776527]))
+
+([ATHENA_HTN_Dashboard_Class776527] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "uric acid comparison filter")
+	(operator eq)
+	(value_expression [Uric_Acid]))
+
+([ATHENA_HTN_Dashboard_Class776528] of  On_Screen_Message
+
+	(description "relative contra allergy to sulfonamide")
+	(label "relative contra allergy to sulfonamide")
+	(message "Relative contraindication.  Pt has Dx Allelrgy to sulfonamide,")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class776529]))
+
+([ATHENA_HTN_Dashboard_Class776529] of  Presence_Criterion
+
+	(domain_term Allergy_to_sulfonamides)
+	(entry_type Note_Entry)
+	(label "Pres Allergy to sulfonamide")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class776530] of  On_Screen_Message
+
+	(description "relative contra hyperuricemia")
+	(label "relative contra hyperuricemia")
+	(message "Relative contraindication.  Pt has Dx of hyperuricemia.")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class776531]))
+
+([ATHENA_HTN_Dashboard_Class776531] of  Presence_Criterion
+
+	(domain_term Hyperuricemia)
+	(entry_type Note_Entry)
+	(label "Pres hyperuricemia")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class776532] of  On_Screen_Message
+
+	(description "relative contra anuria and oliguria")
+	(label "relative contra anuria and oliguria")
+	(message "Relative contraindication.  Pt has Dx for anura and oliguria.")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class776533]))
+
+([ATHENA_HTN_Dashboard_Class776533] of  Presence_Criterion
+
+	(domain_term Anuria_and_oliguria)
+	(entry_type Note_Entry)
+	(label "Pres anuria and oliguria")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class778476] of  Structured_Query
+
+	(aggregation_operator count)
+	(attribute [drug_name])
+	(label "number 1st2nd3rdEncode med max dose not contra")
+	(type Medication)
+	(where_restriction
+		[ATHENA_HTN_Dashboard_Class420036]
+		[ATHENA_HTN_Dashboard_Class250008]
+		[ATHENA_HTN_Dashboard_Class410005]))
+
+([ATHENA_HTN_Dashboard_Class778477] of  Structured_Query
+
+	(aggregation_operator count)
+	(label "number 3rd line nonEncoded drug")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class460004]))
+
+([ATHENA_HTN_Dashboard_Class778478] of  N_ary_Expression
+
+	(label "sum encoded htn meds max dose not contr plus 3rd line nonEncoded")
+	(operator *)
+	(values
+		[ATHENA_HTN_Dashboard_Class778476]
+		[ATHENA_HTN_Dashboard_Class778477]))
+
+([ATHENA_HTN_Dashboard_Class778481] of  Expression_Comparison_Criterion
+
+	(expression [ATHENA_HTN_Dashboard_Class778482])
+	(label "sum encoded htn meds max dose not contr plus 3rd line nonEncoded >=4")
+	(operator %3E%3D)
+	(variable [ATHENA_HTN_Dashboard_Class778478]))
+
+([ATHENA_HTN_Dashboard_Class778482] of  Numeric_Constant
+
+	(label "4")
+	(value 4.0))
+
+([ATHENA_HTN_Dashboard_Class778483] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class778481]
+		[ATHENA_HTN_Dashboard_Class510001])
+	(label "sum htn encoded med max dose not contra AND non encoded >4 and no bad drug partner no multiplemed HTN GL")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class778484] of  Expression_Comparison_Criterion
+
+	(expression [athena_hypertension_419397])
+	(label "sum encoded htn meds max dose not contr plus 3rd line nonEncoded >=5")
+	(operator %3E%3D)
+	(variable [ATHENA_HTN_Dashboard_Class778478]))
+
+([ATHENA_HTN_Dashboard_Class778485] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class778484]
+		[ATHENA_HTN_Dashboard_Class693496])
+	(label "sum htn encoded med not max not contra AND non encoded >=5 and multiple med HTN GL")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class780000] of  Presence_Criterion
+
+	(domain_term Heart_failure_N)
+	(entry_type Note_Entry)
+	(label "Presence of Heart Failure N")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class780001] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class780000]
+		[ATHENA_HTN_Dashboard_Class780002]
+		[ATHENA_HTN_Dashboard_Class780003])
+	(label "Presence of Heart Failure N or CHF")
+	(operator OR))
+
+([ATHENA_HTN_Dashboard_Class780002] of  Presence_Criterion
+
+	(domain_term CCS-7.2.11.1)
+	(entry_type Note_Entry)
+	(label "Presence of CHF")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class780003] of  Presence_Criterion
+
+	(domain_term CCS-7.2.11)
+	(entry_type Note_Entry)
+	(label "Presence of CHF non hypertensive")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class780004] of  Conditional_On_Screen_Message
+
+	(description "Pres CHF out of scope msg")
+	(label "Pres CHF out of scope msg")
+	(message "Out of scope:  Dx of HF.  Will address HTN and HF in HF module.")
+	(message_type Out_of_Scope)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class780001]))
+
+([ATHENA_HTN_Dashboard_Class780005] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class663716])
+	(label "num htn meds = 4 and encoded GL meds at max dose")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class780006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class752869])
+	(label "num htn meds = 4 and not max dose")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class780007] of  Comparison_Filter
+
+	(attribute [drug_name])
+	(label "drug name eq sacubitril")
+	(operator eq)
+	(value_expression [Sacubitril]))
+
+([ATHENA_HTN_Dashboard_Class790000] of  Parameterized_Message
+
+	(label "ACE relative contra K sparing diuretics")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class790001])
+	(rule_in_condition [athena_hypertension_23968]))
+
+([ATHENA_HTN_Dashboard_Class790001] of  Parameterized_String
+
+	(value "Relative contraindication:  Pt has Rx for ?KsparingDuiretic;")
+	(variables [ATHENA_HTN_Dashboard_Class790002]))
+
+([ATHENA_HTN_Dashboard_Class790002] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class790003])
+	(label "?KsparingDiuretic")
+	(string_name "?KsparingDiuretic"))
+
+([ATHENA_HTN_Dashboard_Class790003] of  Structured_Query
+
+	(label "drug is K sparing diuretic")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class790004]))
+
+([ATHENA_HTN_Dashboard_Class790004] of  Comparison_Filter
+
+	(attribute [drug_name])
+	(label "drug is subclass of K sparing diuretic")
+	(operator subclass_of)
+	(value_expression [Potassium-Sparing_Diuretics]))
+
+([ATHENA_HTN_Dashboard_Class790005] of  Parameterized_Message
+
+	(label "ACE relative contra 5<K<5.5 past month")
+	(message_type relative_contraindication)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class790006])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class270003]))
+
+([ATHENA_HTN_Dashboard_Class790006] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Relative contraindication:  Pt has K ?value (?date).  Hyperkalemia may worsen."))
+
+([ATHENA_HTN_Dashboard_Class790007] of  Conditional_On_Screen_Message
+
+	(label "ACE compelling indication CVD")
+	(message "CVD")
+	(message_type compelling_indication))
+
+([ATHENA_HTN_Dashboard_Class790008] of  Presence_Criterion
+
+	(domain_term CVD_DM)
+	(entry_type Note_Entry)
+	(label "Presence CVD")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class790009] of  Conditional_On_Screen_Message
+
+	(label "ACE compelling indication DM and CKD")
+	(message "DM and CKD")
+	(message_type compelling_indication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class350001]))
+
+([ATHENA_HTN_Dashboard_Class790010] of  Conditional_On_Screen_Message
+
+	(label "ACE compelling indication HF")
+	(message "CHF")
+	(message_type compelling_indication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class780000]))
+
+([ATHENA_HTN_Dashboard_Class790011] of  Conditional_On_Screen_Message
+
+	(label "ACE relative indication DM wiithout CKD")
+	(message "DM without CKD")
+	(message_type relative_indication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class350000]))
+
+([ATHENA_HTN_Dashboard_Class790012] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class790013]
+		[ATHENA_HTN_Dashboard_Class790014]
+		[ATHENA_HTN_Dashboard_Class790016]
+		[ATHENA_HTN_Dashboard_Class790023]
+		[ATHENA_HTN_Dashboard_Class800005])
+	(mood Blocked_Add))
+
+([ATHENA_HTN_Dashboard_Class790013] of  Conditional_On_Screen_Message
+
+	(description "Blocked add ACE missing K")
+	(label "Blocked add ACE missing K")
+	(message "Would add ACE inhibitor, but missing K.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class790014] of  Parameterized_Message
+
+	(label "Blocked add ACE missing K>5.5 past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class790015])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800006]))
+
+([ATHENA_HTN_Dashboard_Class790015] of  Parameterized_String
+
+	(label "Would add ACE, but old high K ?value (?date).")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would consider ACE, but old and high value of K ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class790016] of  Parameterized_Message
+
+	(label "Blocked add ACE missing GFR past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class790017])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class790022]))
+
+([ATHENA_HTN_Dashboard_Class790017] of  Parameterized_String
+
+	(label "Would add ACE, but old GFR ?value (?date).")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class790018])
+	(value "Would add ACE, but old GFR ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class790018] of  Variable_ValueSet
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class790019])
+	(label "GFR value date most recent")
+	(property_values_to_get
+		[ATHENA_HTN_Dashboard_Class680008]
+		[ATHENA_HTN_Dashboard_Class680007]))
+
+([ATHENA_HTN_Dashboard_Class790019] of  Structured_Query
+
+	(aggregation_operator most_recent)
+	(label "GFR structured query most recent")
+	(type Numeric_Entry)
+	(where_restriction [ATHENA_HTN_Dashboard_Class790020]))
+
+([ATHENA_HTN_Dashboard_Class790020] of  Comparison_Filter
+
+	(attribute [domain_term])
+	(label "GFR comparison filter")
+	(operator eq)
+	(value_expression [eGFR]))
+
+([ATHENA_HTN_Dashboard_Class790021] of  Presence_Criterion
+
+	(domain_term eGFR)
+	(entry_type Numeric_Entry)
+	(label "Abs GFR past month")
+	(period [ATHENA_DM_Eye_Instance_100007])
+	(presence FALSE))
+
+([ATHENA_HTN_Dashboard_Class790022] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class790021]
+		[ATHENA_HTN_Dashboard_Class120004])
+	(label "Abs GFR past month but Pres GFR")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class790023] of  Conditional_On_Screen_Message
+
+	(label "Blocked add ACE missing GFR")
+	(message "Would add ACE inhibitor, but missing GFR.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class120006]))
+
+([ATHENA_HTN_Dashboard_Class793123] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class790000]
+		[ATHENA_HTN_Dashboard_Class790005]
+		[ATHENA_HTN_Dashboard_Class790007]
+		[ATHENA_HTN_Dashboard_Class790009]
+		[ATHENA_HTN_Dashboard_Class790010]
+		[ATHENA_HTN_Dashboard_Class790011])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class793124] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class798880]
+		[ATHENA_HTN_Dashboard_Class798881]
+		[ATHENA_HTN_Dashboard_Class798882])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class793125] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class793126]
+		[ATHENA_HTN_Dashboard_Class793130]
+		[ATHENA_HTN_Dashboard_Class793132]
+		[ATHENA_HTN_Dashboard_Class793134]
+		[ATHENA_HTN_Dashboard_Class800010])
+	(mood Blocked_Increase))
+
+([ATHENA_HTN_Dashboard_Class793126] of  Parameterized_Message
+
+	(label "Blocked increase ACE missing K")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class793127])
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class793127] of  Parameterized_String
+
+	(value "Would increase ?query_for_ACE, but missing K.")
+	(variables [ATHENA_HTN_Dashboard_Class793128]))
+
+([ATHENA_HTN_Dashboard_Class793128] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class793129])
+	(label "?query_for_ACE")
+	(string_name "?query_for_ACE"))
+
+([ATHENA_HTN_Dashboard_Class793129] of  Structured_Query
+
+	(label "drug is ACE")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class410007]))
+
+([ATHENA_HTN_Dashboard_Class793130] of  Parameterized_Message
+
+	(label "blocked increase ACE missing K past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class793131])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800007]))
+
+([ATHENA_HTN_Dashboard_Class793131] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would increase ?query_for_ACE, but old K ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class793128]))
+
+([ATHENA_HTN_Dashboard_Class793132] of  Parameterized_Message
+
+	(label "blocked increase ACE missing GFR")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class793133])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class120006]))
+
+([ATHENA_HTN_Dashboard_Class793133] of  Parameterized_String
+
+	(value "Would increase ?query_for_ACE, but missing GFR.")
+	(variables [ATHENA_HTN_Dashboard_Class793128]))
+
+([ATHENA_HTN_Dashboard_Class793134] of  Parameterized_Message
+
+	(label "blocked increase ACE missing GFR past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class793135])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class790022]))
+
+([ATHENA_HTN_Dashboard_Class793135] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class790018])
+	(value "Would increase ?query_for_ACE, but old GFR ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class793128]))
+
+([ATHENA_HTN_Dashboard_Class793136] of  On_Screen_Message
+
+	(label "ACE/ARB most recent K>5.5 older than 1 month blocked incr")
+	(message "ALERT:  patient's most recent K is older than one month and K>5.5.")
+	(message_type do_not_intensify_controllable_condition)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class371262]))
+
+([ATHENA_HTN_Dashboard_Class793137] of  On_Screen_Message
+
+	(label "ACE/ARB most recent K>5.5 older than 1 month blocked add DrugRelated")
+	(message "ALERT:  Pt's most recent K is older than one month and K>5.5.")
+	(message_type Drug_Related)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class371262]))
+
+([ATHENA_HTN_Dashboard_Class798871] of  Parameterized_String
+
+	(value "Would increase ?query_for_thiazide, but missing K.")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class798874] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing K")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class798871])
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class798875] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing Na")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class798876])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class760007]))
+
+([ATHENA_HTN_Dashboard_Class798876] of  Parameterized_String
+
+	(value "Would increase ?query_for_thiazide, but missing Na")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class798877] of  Parameterized_Message
+
+	(label "Blocked increase thiazide missing uric acid")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class798878])
+	(rule_in_condition [athena_hypertension_319807]))
+
+([ATHENA_HTN_Dashboard_Class798878] of  Parameterized_String
+
+	(value "Would increase ?query_for_thiazide, but missing uric acid.")
+	(variables [ATHENA_HTN_Dashboard_Class390000]))
+
+([ATHENA_HTN_Dashboard_Class798879] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class798880]
+		[ATHENA_HTN_Dashboard_Class798881]
+		[ATHENA_HTN_Dashboard_Class798882])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class798880] of  Conditional_On_Screen_Message
+
+	(description "ACE first line drug HTN and CKD and not black")
+	(label "ACE first line drug HTN and CKD and not black")
+	(message "First line drug HTN and CKD and not African American")
+	(message_type is_first_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class140008]))
+
+([ATHENA_HTN_Dashboard_Class798881] of  Conditional_On_Screen_Message
+
+	(description "First line drug HTN and CKD and black")
+	(label "First line drug HTN and CKD and black")
+	(message "First line drug HTN and CKD and African American")
+	(message_type is_first_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class140000]))
+
+([ATHENA_HTN_Dashboard_Class798882] of  Conditional_On_Screen_Message
+
+	(description "second line drug HTN and no CKD")
+	(label "second line drug HTN and no CKD")
+	(message "Second line drug HTN and no CKD")
+	(message_type is_second_line_drug_for)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class130001]))
+
+([ATHENA_HTN_Dashboard_Class798883] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class790000]
+		[ATHENA_HTN_Dashboard_Class790005]
+		[ATHENA_HTN_Dashboard_Class790007]
+		[ATHENA_HTN_Dashboard_Class790009]
+		[ATHENA_HTN_Dashboard_Class790010]
+		[ATHENA_HTN_Dashboard_Class790011])
+	(mood Recommend_Add))
+
 ([ATHENA_HTN_Dashboard_Class80000] of  N_ary_Criterion
 
 	(criteria
@@ -12194,8 +13650,138 @@
 	(label "absence of IHD and DBP>=60")
 	(operator AND))
 
+([ATHENA_HTN_Dashboard_Class800000] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class823048]
+		[ATHENA_HTN_Dashboard_Class800001])
+	(mood Blocked_Add))
+
+([ATHENA_HTN_Dashboard_Class800001] of  Order_TestProcedure
+
+	(label "Order GFR  - missing past month")
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class790021])
+	(test_or_procedure eGFR))
+
+([ATHENA_HTN_Dashboard_Class800002] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class823048]
+		[ATHENA_HTN_Dashboard_Class800001])
+	(mood Blocked_Increase))
+
+([ATHENA_HTN_Dashboard_Class800003] of  Conditional_On_Screen_Message
+
+	(fine-grain_priority 300)
+	(label "DM and ACE/ARB")
+	(message "ACE Inhibitors or ARBs in pt with DM and proteinuria significantly reduces risk of MI, stroke, overt nephropathy and cardiovascular death.")
+	(message_type General_Info)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class130005]))
+
+([ATHENA_HTN_Dashboard_Class800004] of  Consultation_Action_Step
+
+	(actions [ATHENA_HTN_Dashboard_Class410002])
+	(label "Rx of ACE/ARB at max dose")
+	(rule_in [ATHENA_HTN_Dashboard_Class500012]))
+
+([ATHENA_HTN_Dashboard_Class800005] of  Parameterized_Message
+
+	(label "Blocked add ACE missing K<=5.5 past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800009])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800007]))
+
+([ATHENA_HTN_Dashboard_Class800006] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class90001]
+		[ATHENA_HTN_Dashboard_Class760005]
+		[ATHENA_HTN_Dashboard_Class371261])
+	(label "Abs of K in past month but Pres K>5.5")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class800007] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class90001]
+		[ATHENA_HTN_Dashboard_Class760005]
+		[ATHENA_HTN_Dashboard_Class800008])
+	(label "Abs of K in past month but Pres K<=5.5")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class800008] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "most K<=5.5 no time frame")
+	(numeric_domain_term Potassium)
+	(operator %3C%3D)
+	(value 5.5))
+
+([ATHENA_HTN_Dashboard_Class800009] of  Parameterized_String
+
+	(label "Would add ACE, but old K ?value (?date).")
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would add ACE, but old K ?value (?date)."))
+
 ([ATHENA_HTN_Dashboard_Class80001] of  Supporting_Material
 )
+
+([ATHENA_HTN_Dashboard_Class800010] of  Parameterized_Message
+
+	(label "blocked increase ACE missing K>5.5 past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800011])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800006]))
+
+([ATHENA_HTN_Dashboard_Class800011] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would consider increasing ?query_for_ACE, but old and high K ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class793128]))
+
+([ATHENA_HTN_Dashboard_Class800014] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class790000]
+		[ATHENA_HTN_Dashboard_Class790005])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class800015] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class790005]
+		[ATHENA_HTN_Dashboard_Class790000])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class800016] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class800017]
+		[ATHENA_HTN_Dashboard_Class800018]
+		[ATHENA_HTN_Dashboard_Class800020]
+		[ATHENA_HTN_Dashboard_Class800022]
+		[ATHENA_HTN_Dashboard_Class800024])
+	(mood Blocked_Add))
+
+([ATHENA_HTN_Dashboard_Class800017] of  Conditional_On_Screen_Message
+
+	(label "Blocked add ARB  missing K")
+	(message "Would addARB, but missing K.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class800018] of  Parameterized_Message
+
+	(label "Blocked add ARB missing K>5.5 past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800019])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800006]))
+
+([ATHENA_HTN_Dashboard_Class800019] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would consider ARB, but old and high value of K ?value (?date)."))
 
 ([ATHENA_HTN_Dashboard_Class80002] of  Consultation_Guideline
 
@@ -12205,6 +13791,122 @@
 		[ATHENA_HTN_Dashboard_Class80007]
 		[ATHENA_HTN_Dashboard_Class80008])
 	(transitions [ATHENA_HTN_Dashboard_Class80009]))
+
+([ATHENA_HTN_Dashboard_Class800020] of  Parameterized_Message
+
+	(label "Blocked add ARB missing K<=5.5 past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800021])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800007]))
+
+([ATHENA_HTN_Dashboard_Class800021] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would add ARB, but old K ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class800022] of  Parameterized_Message
+
+	(label "Blocked add ACE missing GFR past month")
+	(message_type do_not_add_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800023])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class790022]))
+
+([ATHENA_HTN_Dashboard_Class800023] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class790018])
+	(value "Would add ACE, but old GFR ?value (?date)."))
+
+([ATHENA_HTN_Dashboard_Class800024] of  Conditional_On_Screen_Message
+
+	(label "Blocked add ARB missing GFR")
+	(message "Would add ARB, but missing GFR.")
+	(message_type do_not_add_controllable_condition)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class120006]))
+
+([ATHENA_HTN_Dashboard_Class800025] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class800027]
+		[ATHENA_HTN_Dashboard_Class800031]
+		[ATHENA_HTN_Dashboard_Class800033]
+		[ATHENA_HTN_Dashboard_Class800035]
+		[ATHENA_HTN_Dashboard_Class800037])
+	(mood Blocked_Increase))
+
+([ATHENA_HTN_Dashboard_Class800027] of  Parameterized_Message
+
+	(label "Blocked increase ARB missing K")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800028])
+	(rule_in_condition [athena_runtime_38615]))
+
+([ATHENA_HTN_Dashboard_Class800028] of  Parameterized_String
+
+	(value "Would increase ?query_for_ARB, but missing K.")
+	(variables [ATHENA_HTN_Dashboard_Class800029]))
+
+([ATHENA_HTN_Dashboard_Class800029] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class800030])
+	(label "?query_for_ARB")
+	(string_name "?query_for_ARB"))
+
+([ATHENA_HTN_Dashboard_Class800030] of  Structured_Query
+
+	(label "drug is ARB")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class410008]))
+
+([ATHENA_HTN_Dashboard_Class800031] of  Parameterized_Message
+
+	(label "blocked increase ARB missing K past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800032])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800007]))
+
+([ATHENA_HTN_Dashboard_Class800032] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would increase ?query_for_ARB  but old K ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class800029]))
+
+([ATHENA_HTN_Dashboard_Class800033] of  Parameterized_Message
+
+	(label "blocked increase ARB missing K>5.5 past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800034])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class800006]))
+
+([ATHENA_HTN_Dashboard_Class800034] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class776517])
+	(value "Would consider increasing ?query_for_ARB, but old and high K ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class800029]))
+
+([ATHENA_HTN_Dashboard_Class800035] of  Parameterized_Message
+
+	(label "blocked increase ARB missing GFR")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800036])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class120006]))
+
+([ATHENA_HTN_Dashboard_Class800036] of  Parameterized_String
+
+	(value "Would increase ?query_for_ARB, but missing GFR.")
+	(variables [ATHENA_HTN_Dashboard_Class800029]))
+
+([ATHENA_HTN_Dashboard_Class800037] of  Parameterized_Message
+
+	(label "blocked increase ARB missing GFR past month")
+	(message_type do_not_intensify_controllable_condition)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class800038])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class790022]))
+
+([ATHENA_HTN_Dashboard_Class800038] of  Parameterized_String
+
+	(multivalued_variables [ATHENA_HTN_Dashboard_Class790018])
+	(value "Would increase ?query_for_ARB, but old GFR ?value (?date).")
+	(variables [ATHENA_HTN_Dashboard_Class800029]))
 
 ([ATHENA_HTN_Dashboard_Class80004] of  Consultation_Branch_Step
 
@@ -12321,6 +14023,370 @@
 	(%3APAL-NAME "test cannot intensify jnc8 drug")
 	(%3APAL-RANGE "(defrange ?med :FRAME Medication)\n(defrange ?guidelineDrug :FRAME Guideline_Drug)\n(defrange ?rangeMapping :FRAME Range_Mapping_Entry)\n(defrange ?drug_usage :FRAME Drug_Usage drug_usages)\n(defrange ?condition :FRAME Note_Entry)\n(defrange ?contraindication :FRAME Medical_Conditions_Metaclass)\n(defrange ?derived_contraindication :FRAME Diagnostic_Term_Metaclass)\n(defrange ?bad_partner_med :FRAME Medication)\n(defrange ?drug_class :FRAME Medications_Metaclass)\n(defrange ?guideline :FRAME Management_Guideline)")
 	(%3APAL-STATEMENT "(forall ?drug_usage\n       (=>  (and  (exists ?guideline (and (= (label ?guideline) \"JNC8_Dashboard\")\n                                       (drug_usages ?guideline ?drug_usage)))\n               (or (equal-or-subclass-of   (Drug_Class_Name ?drug_usage) ACE_Inhibitors)\n                   (equal-or-subclass-of   (Drug_Class_Name ?drug_usage) Angiotensin_II_receptor_blockers)\n                   (equal-or-subclass-of  (Drug_Class_Name ?drug_usage) Calcium_channel_antagonists)\n                   (equal-or-subclass-of   (Drug_Class_Name ?drug_usage) Thiazide_Diuretics)))\n                (or (exists ?condition (and  (patient_id ?condition \"TestCannotIntensifyJNC8Drug\")\n                                                 (is-class (domain_term ?condition))\n                                                 (exists ?contraindication    (and (Absolute_Contraindications ?drug_usage ?contraindication)       \n                                                                                   (equal-or-subclass-of (coerce-to-class (domain_term ?condition))   ?contraindication)))))\n                        (exists ?bad_partner_med (and (patient_id ?bad_partner_med \"JNC8_Dashboard\")\n                                                      (is-class (drug_name ?bad_partner_med))\n                                                      (or (not (own-slot-not-null mood ?bad_partner_med))\n                                                          (= (mood ?bad_partner_med) \"Authorized\"))\n                                                      (exists ?drug_class (and (Drug_Partners_To_Avoid ?drug_usage ?drug_class)\n                                                                               (equal-or-subclass-of (coerce-to-class (drug_name ?bad_partner_med))  ?drug_class)))))\n                        (exists  ?derived_contraindication     (and (Absolute_Contraindications ?drug_usage ?derived_contraindication)\n                                                                    (is-derivable ?derived_contraindication)))\n                        (exists ?med (and (patient_id ?med \"JNC8_Dashboard\")\n                                          (is-class (drug_name ?med))\n                                          (or (not (own-slot-not-null mood ?med))\n                                              (= (mood ?med) \"Authorized\"))\n                                          (exists ?guidelineDrug                 (and (= (coerce-to-class (drug_name ?med)) (generic_drug ?guidelineDrug))\n                                                                                      (exists ?rangeMapping (and (dose_level_ranges ?guidelineDrug ?rangeMapping)\n                                                                                                                 (or (= (abstract_value ?rangeMapping) (coerce-to-class \"High_Dose\"))\n                                                                                                                     (and (= (drug_name ?med) \"hydrochlorothiazide\")\n                                                                                                                          (= (abstract_value ?rangeMapping)(coerce-to-class \"Medium_Dose\"))))\n                                                                                                                 (or  (> (daily_dose ?med) (lower_limit ?rangeMapping))\n                                                                                                                      (= (daily_dose ?med)(lower_limit ?rangeMapping)))\n                                                                                                            ))))))))\n         )"))
+
+([ATHENA_HTN_Dashboard_Class805891] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "Param msg 4 htn meds max dose no complication")
+	(message_type Out_of_Scope)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class805892])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class805893]))
+
+([ATHENA_HTN_Dashboard_Class805892] of  Parameterized_String
+
+	(label "Param msg 4 htn meds")
+	(value "Out of scope. Rx for 4 anti hypertensive meds ?HTNmeds ; and encoded meds at max dose.")
+	(variables [ATHENA_HTN_Dashboard_Class670020]))
+
+([ATHENA_HTN_Dashboard_Class805893] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758781]
+		[ATHENA_HTN_Dashboard_Class805894]
+		[ATHENA_HTN_Dashboard_Class805895])
+	(label "num HTN meds = 4 max dose and no complication")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class805894] of  N_ary_Criterion
+
+	(criteria [ATHENA_HTN_Dashboard_Class640002])
+	(label "not Pres Heart Failure and Alpha beta blocker")
+	(operator NOT))
+
+([ATHENA_HTN_Dashboard_Class805895] of  N_ary_Criterion
+
+	(criteria [ATHENA_HTN_Dashboard_Class640003])
+	(label "not Pres Heart Failure and valsartan and sacubitril")
+	(operator NOT))
+
+([ATHENA_HTN_Dashboard_Class805896] of  Parameterized_Message
+
+	(fine-grain_priority 100)
+	(label "Param msg 4 htn meds complication")
+	(message_type Out_of_Scope)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class805897])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class805898]))
+
+([ATHENA_HTN_Dashboard_Class805897] of  Parameterized_String
+
+	(label "Param msg 4 htn meds complication")
+	(value "Out of scope. Rx for 4 anti hypertensive meds ?HTNmeds one of which we do not change.")
+	(variables [ATHENA_HTN_Dashboard_Class670020]))
+
+([ATHENA_HTN_Dashboard_Class805898] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class758784]
+		[ATHENA_HTN_Dashboard_Class805899])
+	(label "num HTN meds=4 and complication")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class805899] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class640002]
+		[ATHENA_HTN_Dashboard_Class640003])
+	(label "Pres HF and alpha beta blocker OR HF and valsartan and sacubutril")
+	(operator OR))
+
+([ATHENA_HTN_Dashboard_Class810000] of  Collateral_Action
+
+	(actions [ATHENA_HTN_Dashboard_Class810001])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class810001] of  On_Screen_Message
+
+	(description "caution if hepatic or renal dysfunction")
+	(fine-grain_priority 300)
+	(label "caution if hepatic or renal dysfunction")
+	(message "Use with caution in patients with hepatic or renal dysfunction.")
+	(message_type General_Info))
+
+([ATHENA_HTN_Dashboard_Class810003] of  Parameterized_Message
+
+	(label "Pres short acting DHP CCB")
+	(message_type Drug_Related)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class836478])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class836477]))
+
+([ATHENA_HTN_Dashboard_Class823044] of  Consultation_Action_Step
+
+	(actions [ATHENA_HTN_Dashboard_Class823046])
+	(label "above dashboard target and below VA HTN GL target DM")
+	(rule_in [ATHENA_HTN_Dashboard_Class823045]))
+
+([ATHENA_HTN_Dashboard_Class823045] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class130005]
+		[ATHENA_HTN_Dashboard_Class440022])
+	(label "Pres DM and 140<=SBP<150")
+	(operator AND))
+
+([ATHENA_HTN_Dashboard_Class823046] of  Conditional_On_Screen_Message
+
+	(fine-grain_priority 300)
+	(label "above dashboard target and below VA HTN GL target DM")
+	(message "Pt has DM and 140<=SBP<150.  This above Dashboard target, but is within VA GL target.")
+	(message_type Primary_Recommendation)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class823045]))
+
+([ATHENA_HTN_Dashboard_Class823047] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class410000])
+	(%3ATO [ATHENA_HTN_Dashboard_Class823044]))
+
+([ATHENA_HTN_Dashboard_Class823048] of  Order_TestProcedure
+
+	(label "Order K")
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class90001])
+	(test_or_procedure Potassium))
+
+([ATHENA_HTN_Dashboard_Class823049] of  Order_TestProcedure
+
+	(label "Order Na")
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class170012])
+	(test_or_procedure Sodium))
+
+([ATHENA_HTN_Dashboard_Class823050] of  Order_TestProcedure
+
+	(label "Order uric acid")
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class170014])
+	(test_or_procedure Uric_Acid))
+
+([ATHENA_HTN_Dashboard_Class823051] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class823048]
+		[ATHENA_HTN_Dashboard_Class823049]
+		[ATHENA_HTN_Dashboard_Class823050])
+	(mood Blocked_Add))
+
+([ATHENA_HTN_Dashboard_Class823052] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class823048]
+		[ATHENA_HTN_Dashboard_Class823049]
+		[ATHENA_HTN_Dashboard_Class823050])
+	(mood Blocked_Increase))
+
+([ATHENA_HTN_Dashboard_Class836473] of  Structured_Query
+
+	(label "drug is short acting DHP CCB")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class836474]))
+
+([ATHENA_HTN_Dashboard_Class836474] of  Comparison_Filter
+
+	(attribute [drug_name])
+	(label "drug is subclass of short acting DHP CCB")
+	(operator subclass_of)
+	(value_expression [Short_Acting_DHP_CCB]))
+
+([ATHENA_HTN_Dashboard_Class836475] of  Structured_Query
+
+	(label "drug is short acting NDHP CCB")
+	(type Medication)
+	(where_restriction [ATHENA_HTN_Dashboard_Class836476]))
+
+([ATHENA_HTN_Dashboard_Class836476] of  Comparison_Filter
+
+	(attribute [drug_name])
+	(label "drug is subclass of short acting NDHP CCB")
+	(operator subclass_of)
+	(value_expression [Short_Acting_NDHP_CCB]))
+
+([ATHENA_HTN_Dashboard_Class836477] of  Presence_Criterion
+
+	(domain_term Short_Acting_DHP_CCB)
+	(entry_type Medication)
+	(label "Pres short acting DPH CCB")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class836478] of  Parameterized_String
+
+	(value "Pt has Rx for ?ShortActingDHP_CCB.  VA recommends long acting DHP CCBs for treatment of HTN.")
+	(variables [ATHENA_HTN_Dashboard_Class836479]))
+
+([ATHENA_HTN_Dashboard_Class836479] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class836473])
+	(label "?ShortActingDHP_CCB")
+	(string_name "?ShortActingDHP_CCB"))
+
+([ATHENA_HTN_Dashboard_Class836480] of  Parameterized_Message
+
+	(label "Pres short acting NDHP CCB")
+	(message_type Drug_Related)
+	(parameterized_message [ATHENA_HTN_Dashboard_Class836482])
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class836481]))
+
+([ATHENA_HTN_Dashboard_Class836481] of  Presence_Criterion
+
+	(domain_term Short_Acting_NDHP_CCB)
+	(entry_type Medication)
+	(label "Pres short acting NDHP CCB")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class836482] of  Parameterized_String
+
+	(value "Pt has Rx for ?ShortActingNDHP_CCB.  VA recommends long acting NDHP CCBs for treatment of HTN.")
+	(variables [ATHENA_HTN_Dashboard_Class836483]))
+
+([ATHENA_HTN_Dashboard_Class836483] of  Variable
+
+	(derivation_expression [ATHENA_HTN_Dashboard_Class836475])
+	(label "?ShortActingNDHP_CCB")
+	(string_name "?ShortActingNDHP_CCB"))
+
+([ATHENA_HTN_Dashboard_Class836484] of  Consultation_Action_Step
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class810003]
+		[ATHENA_HTN_Dashboard_Class836480])
+	(label "Pres short acting CCB")
+	(rule_in [ATHENA_HTN_Dashboard_Class836485]))
+
+([ATHENA_HTN_Dashboard_Class836485] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_HTN_Dashboard_Class836477]
+		[ATHENA_HTN_Dashboard_Class836481])
+	(label "Pres short acting CCB")
+	(operator OR))
+
+([ATHENA_HTN_Dashboard_Class836486] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_HTN_Dashboard_Class410000])
+	(%3ATO [ATHENA_HTN_Dashboard_Class836484]))
+
+([ATHENA_HTN_Dashboard_Class840649] of  Collateral_Action
+
+	(actions [ATHENA_HTN_Dashboard_Class840650])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class840650] of  On_Screen_Message
+
+	(description "NDHP CCB caution CYP3A4/5")
+	(fine-grain_priority 300)
+	(label "NDHP CCB caution CYP3A4/5")
+	(message "Use with caution in patients with Rx for drugs that are CYP3A4/5 inhibitors or substrates.")
+	(message_type General_Info))
+
+([ATHENA_HTN_Dashboard_Class840651] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840652]
+		[ATHENA_HTN_Dashboard_Class840653]
+		[ATHENA_HTN_Dashboard_Class840654])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class840652] of  Conditional_On_Screen_Message
+
+	(description "relative contra heart failure")
+	(label "relative contra heart failure")
+	(message "Relative contraindicaton:  CHF")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class780000]))
+
+([ATHENA_HTN_Dashboard_Class840653] of  Conditional_On_Screen_Message
+
+	(description "relative contra amiodarone")
+	(label "relative contra amiodarone")
+	(message "Relative contraindication:  Rx amiodarone")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_229057]))
+
+([ATHENA_HTN_Dashboard_Class840654] of  Conditional_On_Screen_Message
+
+	(description "relative contra bradycardia")
+	(label "relative contra bradycardia")
+	(message "Relative contraindicaton:  bradycardia")
+	(message_type relative_contraindication)
+	(rule_in_condition [ATHENA_HTN_Dashboard_Class840655]))
+
+([ATHENA_HTN_Dashboard_Class840655] of  Presence_Criterion
+
+	(domain_term Bradycardia)
+	(entry_type Note_Entry)
+	(label "Pres bradycardia")
+	(presence TRUE))
+
+([ATHENA_HTN_Dashboard_Class840656] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840652]
+		[ATHENA_HTN_Dashboard_Class840653]
+		[ATHENA_HTN_Dashboard_Class840654])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class840657] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840658]
+		[ATHENA_HTN_Dashboard_Class840659]
+		[ATHENA_HTN_Dashboard_Class840660]
+		[ATHENA_HTN_Dashboard_Class840653])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class840658] of  Conditional_On_Screen_Message
+
+	(description "BB relative contra depression")
+	(label "BB relative contra depression")
+	(message "Relative contraindication:  depression")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_00567]))
+
+([ATHENA_HTN_Dashboard_Class840659] of  Conditional_On_Screen_Message
+
+	(description "relative contra obstructive pulmonary disease")
+	(label "relative contra obstructive pulmonary disease")
+	(message "Relatib contraindication:  obstructive pulmonary disease")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_270099]))
+
+([ATHENA_HTN_Dashboard_Class840660] of  Conditional_On_Screen_Message
+
+	(description "relative contra bronchospastic disease")
+	(label "relative contra bronchospastic disease")
+	(message "Relative contraindiation:  bronchospastic disease")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_00064]))
+
+([ATHENA_HTN_Dashboard_Class840662] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840658]
+		[ATHENA_HTN_Dashboard_Class840659]
+		[ATHENA_HTN_Dashboard_Class840660]
+		[ATHENA_HTN_Dashboard_Class840653])
+	(mood Recommend_Increase))
+
+([ATHENA_HTN_Dashboard_Class840663] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840659]
+		[ATHENA_HTN_Dashboard_Class840660]
+		[ATHENA_HTN_Dashboard_Class840664]
+		[ATHENA_HTN_Dashboard_Class840658])
+	(mood Recommend_Add))
+
+([ATHENA_HTN_Dashboard_Class840664] of  Conditional_On_Screen_Message
+
+	(description "AB blocker relative contra MI")
+	(label "AB blocker relative contra MI")
+	(message "Relative contraindication:  MI")
+	(message_type relative_contraindication)
+	(rule_in_condition [athena_hypertension_INSTANCE_00086]))
+
+([ATHENA_HTN_Dashboard_Class840665] of  Collateral_Action
+
+	(actions
+		[ATHENA_HTN_Dashboard_Class840659]
+		[ATHENA_HTN_Dashboard_Class840660]
+		[ATHENA_HTN_Dashboard_Class840664]
+		[ATHENA_HTN_Dashboard_Class840658])
+	(mood Recommend_Increase))
 
 ([ATHENA_HTN_Dashboard_Class90000] of  N_ary_Criterion
 
@@ -12594,6 +14660,11 @@
 
 ([athena_hypertension_00040] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class800015]
+		[ATHENA_HTN_Dashboard_Class800025]
+		[ATHENA_HTN_Dashboard_Class800002]
+		[ATHENA_HTN_Dashboard_Class371258])
 	(dose_level_ranges
 		[athena_hypertension_00041]
 		[athena_hypertension_00042]
@@ -12627,6 +14698,11 @@
 
 ([athena_hypertension_00044] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class800015]
+		[ATHENA_HTN_Dashboard_Class800025]
+		[ATHENA_HTN_Dashboard_Class800002]
+		[ATHENA_HTN_Dashboard_Class371258])
 	(dose_level_ranges
 		[athena_hypertension_00045]
 		[athena_hypertension_00046]
@@ -12660,6 +14736,11 @@
 
 ([athena_hypertension_00048] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class800015]
+		[ATHENA_HTN_Dashboard_Class800025]
+		[ATHENA_HTN_Dashboard_Class800002]
+		[ATHENA_HTN_Dashboard_Class371258])
 	(dose_level_ranges
 		[athena_hypertension_00049]
 		[athena_hypertension_00050]
@@ -14014,6 +16095,12 @@
 
 ([athena_hypertension_132212] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(dose_level_ranges
 		[athena_hypertension_132213]
 		[athena_hypertension_132214]
@@ -15104,6 +17191,7 @@
 
 ([athena_hypertension_15724] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840656])
 	(dose_level_ranges
 		[athena_runtime_20411]
 		[athena_runtime_20412]
@@ -15119,6 +17207,7 @@
 
 ([athena_hypertension_15725] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840656])
 	(dose_level_ranges
 		[athena_runtime_20418]
 		[athena_runtime_20419]
@@ -20870,7 +22959,7 @@
 
 	(description "SBP>=220 or DBP>=110, urgent attention")
 	(label "SBP>=220 or DBP>=110, urgent attention")
-	(message "SBP>=220 or DBP>=110 so treatment recommendations are beyond the scope of this program. If MARKED BP ELEVATION is confirmed, then the patient needs further TREATMENT and EARLY FOLLOW-UP to MONITOR THERAPEUTIC EFFICACY.")
+	(message "Out of scope. SBP>=220 or DBP>=110,  If MARKED BP ELEVATION is confirmed, then the patient needs further TREATMENT and EARLY FOLLOW-UP to MONITOR THERAPEUTIC EFFICACY.")
 	(message_type Out_of_Scope)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class90228]))
 
@@ -21886,6 +23975,12 @@
 
 ([athena_hypertension_478662] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(dose_level_ranges
 		[athena_hypertension_478679]
 		[athena_hypertension_478779]
@@ -24519,6 +26614,12 @@
 
 ([athena_hypertension_INSTANCE_00509] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00101]
 		[athena_runtime_INSTANCE_00103]
@@ -24661,6 +26762,7 @@
 
 ([athena_hypertension_INSTANCE_00851] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(dose_level_ranges
 		[athena_hypertension_INSTANCE_00855]
 		[athena_hypertension_INSTANCE_00856]
@@ -24693,6 +26795,7 @@
 
 ([athena_hypertension_INSTANCE_00858] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840665])
 	(dose_level_ranges
 		[athena_hypertension_INSTANCE_00859]
 		[athena_hypertension_INSTANCE_00860]
@@ -25881,6 +27984,12 @@
 
 ([athena_runtime_INSTANCE_00106] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class800002]
+		[ATHENA_HTN_Dashboard_Class371258])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00107]
 		[athena_runtime_INSTANCE_00108]
@@ -25914,6 +28023,7 @@
 
 ([athena_runtime_INSTANCE_00110] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00125]
 		[athena_runtime_INSTANCE_00126]
@@ -25930,6 +28040,7 @@
 
 ([athena_runtime_INSTANCE_00112] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840662])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00206]
 		[athena_runtime_INSTANCE_00207]
@@ -25945,6 +28056,7 @@
 
 ([athena_runtime_INSTANCE_00114] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840656])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00130]
 		[athena_runtime_INSTANCE_00131]
@@ -25960,6 +28072,7 @@
 
 ([athena_runtime_INSTANCE_00116] of  Guideline_Drug
 
+	(collateral_actions [ATHENA_HTN_Dashboard_Class840656])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00212]
 		[athena_runtime_INSTANCE_00213]
@@ -25989,6 +28102,10 @@
 
 ([athena_runtime_INSTANCE_00118] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class770000]
+		[ATHENA_HTN_Dashboard_Class740002]
+		[ATHENA_HTN_Dashboard_Class823052])
 	(dose_level_ranges
 		[athena_runtime_INSTANCE_00189]
 		[athena_runtime_INSTANCE_00190])
@@ -26419,6 +28536,12 @@
 
 ([athena_runtime_INSTANCE_00360] of  Guideline_Drug
 
+	(collateral_actions
+		[ATHENA_HTN_Dashboard_Class793125]
+		[ATHENA_HTN_Dashboard_Class793124]
+		[ATHENA_HTN_Dashboard_Class793123]
+		[ATHENA_HTN_Dashboard_Class371258]
+		[ATHENA_HTN_Dashboard_Class800002])
 	(dose_level_ranges
 		[athena_hypertension_00021]
 		[athena_hypertension_00022]
@@ -28072,7 +30195,8 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class140000])
-	(label "VA HTN Pres HTN and CKD and black"))
+	(label "HTN and CKD and African American")
+	(PrettyName "HTN and CKD and African American"))
 
 ([Pres+of+DM+and+Abs+of+CKD] of  Diagnostic_Term_Metaclass
 
@@ -28275,8 +30399,8 @@
 
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class130001])
-	(label "Pres HTN and Abs CKD")
-	(PrettyName "Pres HTN and Abs CKD"))
+	(label "HTN and no CKD")
+	(PrettyName "HTN and no CKD"))
 
 ([VA+HTN+Pres+HTN+and+CKD] of  Diagnostic_Term_Metaclass
 
@@ -28289,5 +30413,5 @@
 
 	(controllable TRUE)
 	(DiagnosticCriteria [ATHENA_HTN_Dashboard_Class140008])
-	(label "Pres HTN and CKD and NOT black")
-	(PrettyName "Pres HTN and CKD and NOT black"))
+	(label "HTN and CKD and not African American")
+	(PrettyName "HTN and CKD and not African American"))

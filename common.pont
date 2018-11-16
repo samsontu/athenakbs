@@ -1,4 +1,4 @@
-; Mon Aug 06 14:07:46 PDT 2018
+; Thu Nov 15 11:37:06 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -558,6 +558,11 @@
 	(single-slot low
 		(type INSTANCE)
 ;+		(allowed-classes Expression)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot DiseasesAffectingSystem
@@ -2306,7 +2311,12 @@
 
 (defclass Medications_Class
 	(is-a Therapeutic_Class)
-	(role abstract))
+	(role abstract)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass Therapeutic_Procedure
 	(is-a Therapeutic_Class)
@@ -2522,6 +2532,14 @@
 
 (defclass adverse_reaction
 	(is-a Drug_Recommendation_Relation)
+	(role concrete))
+
+(defclass No_Drug_Rec
+	(is-a Message_Type)
+	(role concrete))
+
+(defclass No_Drug_Rec_missingData
+	(is-a No_Drug_Rec)
 	(role concrete))
 
 (defclass Drug_Dose_Level

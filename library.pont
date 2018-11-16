@@ -1,4 +1,4 @@
-; Mon Jul 23 11:13:51 PDT 2018
+; Thu Nov 15 19:06:50 PST 2018
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,7 +7,16 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot %3ADEFINITION-NAME
+	(single-slot _REFERENCES
+		(type INTEGER)
+;+		(cardinality 0 1)
+;+		(associated-facet _REFERENCES_FACET)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -17,22 +26,13 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ASTARTUP-FILE
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3ASTARTUP-EXPRESSION
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot %3ADEFINITION
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot _REFERENCES
-		(type INTEGER)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
 ;+		(cardinality 0 1)
-;+		(associated-facet _REFERENCES_FACET)
 		(create-accessor read-write)))
 
 (defclass _DUMMY-FRAMES-METACLASS
@@ -113,7 +113,13 @@
 
 (defclass SULFONYLUREAS
 	(is-a Oral_Hypoglycemic_Agent)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass SULFONYLUREAS_2NDGEN
 	(is-a SULFONYLUREAS)
@@ -251,16 +257,36 @@
 	(is-a Calcium_channel_antagonists FirstSecondLineDrugs_VA_GL)
 	(role concrete))
 
-(defclass nimodipine
+(defclass Long_Acting_DHP_CCB
 	(is-a Dihydropyridines)
+	(role concrete))
+
+(defclass isradipine_SA
+	(is-a Long_Acting_DHP_CCB)
+	(role concrete))
+
+(defclass nifedipine_SA
+	(is-a Long_Acting_DHP_CCB)
+	(role concrete))
+
+(defclass nicardipine_SA
+	(is-a Long_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass felodipine_SA "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines)
+	(is-a Long_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass amlodipine_besylate "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
+	(is-a Long_Acting_DHP_CCB)
+	(role concrete))
+
+(defclass Short_Acting_DHP_CCB
 	(is-a Dihydropyridines)
+	(role concrete))
+
+(defclass nimodipine
+	(is-a Short_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
@@ -283,12 +309,32 @@
 	(is-a Calcium_channel_antagonists ThirdLine_Encoded_VA_GL)
 	(role concrete))
 
-(defclass bepridil
+(defclass Long_Acting_NDHP_CCB
 	(is-a Non-Dihydropyridines)
+	(role concrete))
+
+(defclass diltiazem_SA
+	(is-a Long_Acting_NDHP_CCB)
+	(role concrete))
+
+(defclass verapamil_SA
+	(is-a Long_Acting_NDHP_CCB)
+	(role concrete))
+
+(defclass Short_Acting_NDHP_CCB
+	(is-a Non-Dihydropyridines)
+	(role concrete))
+
+(defclass bepridil
+	(is-a Short_Acting_NDHP_CCB)
 	(role concrete))
 
 (defclass Alpha_beta_blockers "postural hypotension, bronchospasm"
 	(is-a Antihypertensive_Agents ThirdLine_Encoded_VA_GL)
+	(role concrete))
+
+(defclass carvedilol_SA
+	(is-a Alpha_beta_blockers)
 	(role concrete))
 
 (defclass ThirdLine_NonEncoded_VA_GL
@@ -351,18 +397,6 @@
 	(is-a Direct_vasodilators)
 	(role concrete))
 
-(defclass Loop_diuretics "furosemide, bumetanide, ethacrynic acid, torsemide"
-	(is-a Diuretics Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role concrete))
-
-(defclass ethacrynic_acid "only nonsulfonamide diuretic.  ototoxicity."
-	(is-a Loop_diuretics)
-	(role concrete))
-
-(defclass torsemide
-	(is-a Loop_diuretics)
-	(role concrete))
-
 (defclass Adrenergic_inhibitors_peripheral "guanadrel, guanethidine, reserpine"
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
 	(role concrete))
@@ -415,8 +449,24 @@
 	(is-a Potassium-Sparing_Diuretics)
 	(role abstract))
 
+(defclass Non_Treatment_VA_GL_meds
+	(is-a Anti-Hypertensive_Drugs_Inclusive)
+	(role concrete))
+
 (defclass sotalol
-	(is-a Non-Cardiac_Drugs Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(is-a Non-Cardiac_Drugs Non_Treatment_VA_GL_meds)
+	(role concrete))
+
+(defclass Loop_diuretics "furosemide, bumetanide, ethacrynic acid, torsemide"
+	(is-a Diuretics Non_Treatment_VA_GL_meds)
+	(role concrete))
+
+(defclass ethacrynic_acid "only nonsulfonamide diuretic.  ototoxicity."
+	(is-a Loop_diuretics)
+	(role concrete))
+
+(defclass torsemide
+	(is-a Loop_diuretics)
 	(role concrete))
 
 (defclass cardiotoxic+interventions
@@ -901,7 +951,13 @@
 
 (defclass ACE_Inhibitors "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
 	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass captopril "class effects: common: cough.  rare: angioedema, hyperkalemia, rash, loss of taste, leukopenia."
 	(is-a ACE_Inhibitors)
@@ -945,7 +1001,13 @@
 
 (defclass Angiotensin_II_receptor_blockers "class effects: angiodema (very rare), hyperkalemia"
 	(is-a Antihypertensive_Agents Nephrotoxic_drugs JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
-	(role abstract))
+	(role abstract)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass candesartan
 	(is-a Angiotensin_II_receptor_blockers)
@@ -992,7 +1054,7 @@
 	(role concrete))
 
 (defclass Aliskiren
-	(is-a Medications_Class Nephrotoxic_drugs Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
+	(is-a Medications_Class Nephrotoxic_drugs Non-Cardiac_Drugs Non_Treatment_VA_GL_meds)
 	(role concrete))
 
 (defclass Beta-Blockers "bronchospasm, bradycardia, ht failure.  may mask insuline-induced hypoglycemia.  less serious: impaired periph circ, insomnia, fatigue, decreased exercise tolerance, hypertriglyceridemia (except agents with ISA).  NOTE: need to finish list and categorization"
@@ -1464,47 +1526,27 @@
 	(role concrete))
 
 (defclass nifedipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects)
-	(role concrete))
-
-(defclass nifedipine_SA
-	(is-a nifedipine)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects Short_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass nicardipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects)
-	(role concrete))
-
-(defclass nicardipine_SA
-	(is-a nicardipine)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects Short_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass isradipine "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects)
-	(role concrete))
-
-(defclass isradipine_SA
-	(is-a isradipine)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects Short_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass diltiazem "nausea, headache\n\nclass effects: conduction defects, worsening of systolic dysfunction, gingival hyperplasia"
-	(is-a Non-Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects CV200_Calcium_Channel_Blockers CYP_3A4_Inhibitors)
-	(role concrete))
-
-(defclass diltiazem_SA
-	(is-a diltiazem)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects CV200_Calcium_Channel_Blockers CYP_3A4_Inhibitors Short_Acting_NDHP_CCB)
 	(role concrete))
 
 (defclass verapamil "class effects: conduction defects, worsening of systolic dysfunction, gingival hyperplasia\n\nconstipation"
-	(is-a Non-Dihydropyridines calcium+channel+blockers+with+negative+inotropic+effects CV200_Calcium_Channel_Blockers CYP_3A4_Inhibitors)
-	(role concrete))
-
-(defclass verapamil_SA
-	(is-a verapamil)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects CV200_Calcium_Channel_Blockers CYP_3A4_Inhibitors Short_Acting_NDHP_CCB)
 	(role concrete))
 
 (defclass nisoldipine_SA "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
-	(is-a calcium+channel+blockers+with+negative+inotropic+effects Dihydropyridines)
+	(is-a calcium+channel+blockers+with+negative+inotropic+effects Long_Acting_DHP_CCB)
 	(role concrete))
 
 (defclass THIAZOLIDINEDIONES
@@ -1799,6 +1841,18 @@
 	(is-a Medications_Class)
 	(role concrete))
 
+(defclass Ophthalmic_Agents
+	(is-a Medications_Class)
+	(role concrete))
+
+(defclass dorzolamide
+	(is-a Ophthalmic_Agents)
+	(role concrete))
+
+(defclass timolol_ophthalmic
+	(is-a Ophthalmic_Agents)
+	(role concrete))
+
 (defclass Eye+procedures
 	(is-a Therapeutic_Procedure)
 	(role concrete))
@@ -2004,6 +2058,10 @@
 	(role concrete))
 
 (defclass CCS-10.1.3
+	(is-a CCS-10.1)
+	(role concrete))
+
+(defclass Anuria_and_oliguria
 	(is-a CCS-10.1)
 	(role concrete))
 
@@ -3707,36 +3765,8 @@
 	(is-a Allergies+and+ADR+reactions)
 	(role concrete))
 
-(defclass LIP+SWELLING "NATIONAL_SIGN (VISTA)"
-	(is-a angioedema+equivalent)
-	(role concrete))
-
-(defclass SWELLING+OF+LIPS "synonym VISTA"
-	(is-a LIP+SWELLING)
-	(role concrete))
-
-(defclass ORAL+SWELLING "NATIONAL_SIGN (VISTA)"
-	(is-a angioedema+equivalent)
-	(role concrete))
-
-(defclass ORAL+EDEMA "synonym VISTA"
-	(is-a ORAL+SWELLING)
-	(role concrete))
-
 (defclass angioedema
 	(is-a Allergies+and+ADR+reactions Medical_Conditions_Class)
-	(role concrete))
-
-(defclass ANGIOEDEMA
-	(is-a angioedema)
-	(role concrete))
-
-(defclass ANGIONEUROTIC+EDEMA+OF+LARYNX "NATIONAL_SIGN (VISTA)"
-	(is-a angioedema)
-	(role concrete))
-
-(defclass EDEMA+OF+LARYNX "synonym VISTA"
-	(is-a ANGIONEUROTIC+EDEMA+OF+LARYNX)
 	(role concrete))
 
 (defclass ACIDOSIS
