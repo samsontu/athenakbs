@@ -1,4 +1,4 @@
-; Thu Nov 15 19:07:20 PST 2018
+; Sat Feb 02 10:20:37 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -71,7 +71,7 @@
 
 	(controllable TRUE)
 	(DiagnosticCriteria [ATHENA_DM_GlycemicControl_Dashboard_Class160002])
-	(PrettyName "Absence of bicarbonate in past year"))
+	(PrettyName "Absence of all bicarbonate in past year"))
 
 ([Absence+of+AST+and+ALT+in+past+year] of  Diagnostic_Term_Metaclass
 
@@ -765,7 +765,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class12291] of  Parameterized_String
 
 	(label "missing bicarb or AST or ALT")
-	(value "Would add metformin, but old lab: (?missingMFlabAdd).")
+	(value "Labs older than 1 year (?missingMFlabAdd).")
 	(variables [ATHENA_DM_GlycemicControl_Dashboard_Class1131]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class130000] of  N_ary_Criterion
@@ -1137,13 +1137,13 @@
 
 	(label "Sax missing GFR")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Would add saxagliptin, but old GFR: ?value (?date)."))
+	(value "GFR: older than 1 month ?value (?date)."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190001] of  Parameterized_String
 
 	(label "Empa missing GFR")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Would add empagliflozin, but old GFR: ?value (?date).  Do not start if GFR<45."))
+	(value "GFR: older than 1 month ?value (?date).  Do not start if GFR less than 45."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190002] of  Parameterized_Message
 
@@ -1173,7 +1173,7 @@
 
 	(label "empa missing egfr past month")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Cannot recommend adding empa when GFR < 45 and old: ?value (?date)"))
+	(value "GFR older than 1 month and less than 45: ?value (?date)"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190007] of  Parameterized_Message
 
@@ -1187,7 +1187,7 @@
 
 	(label "Old LOW eGFR incr empa")
 	(multivalued_variables [ATHENA_GlycemicControl_Class1030425])
-	(value "Cannot recommend increasing empa when GFR &lt; 45 and old: ?value (?date)"))
+	(value "GFR (?value (?date)) older than 1 year and less than 45."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190228] of  Action_Choice
 
@@ -1260,7 +1260,7 @@
 
 	(fine-grain_priority 6000)
 	(label "TZD incr missing AST and ALT")
-	(message "Would recommend increasing thiazolidinedione but missing AST and ALT.")
+	(message "AST and ALT older than 1 year.")
 	(message_type do_not_intensify_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class520006]))
 
@@ -1524,13 +1524,13 @@
 
 	(label "Empa missing GFR past year")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Would increase empagliflozin, but old GFR: ?value (?date).  Do not increase if GFR<45."))
+	(value "GFR: (?value (?date)) older than 1 year .  Do not increase if GFR less than 45."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class240001] of  Parameterized_String
 
 	(label "Sax missing GFR past year")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Would increase saxagliptin, but old GFR: ?value (?date)."))
+	(value "GFR (?value (?date). older than 1 year."))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class240002] of  Conditional_On_Screen_Message
 
@@ -2688,7 +2688,7 @@
 
 	(fine-grain_priority 6000)
 	(label "relative contra sax CHF")
-	(message "Relative contraindication:  pt has CHF.")
+	(message "Relative contraindication:  Pt has CHF.")
 	(message_type relative_contraindication)
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class310001]))
 
@@ -2756,17 +2756,31 @@
 	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class380953])
 	(mood Recommend_Increase))
 
-([ATHENA_DM_GlycemicControl_Dashboard_Class430135] of  Variable
+([ATHENA_DM_GlycemicControl_Dashboard_Class430000] of  Consultation_Action_Step
 
-	(derivation_expression [library_Class220005])
-	(label "query meds where  >2 meds of the same class")
-	(string_name "?2medsOfSameClass"))
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class430002])
+	(label "GFR>=60 not interpretable")
+	(rule_in [ATHENA_DM_GlycemicControl_Dashboard_Class430001]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_Class430276] of  Variable
+([ATHENA_DM_GlycemicControl_Dashboard_Class430001] of  Numeric_Term_Criterion
 
-	(derivation_expression [library_Class220001])
-	(label ">2meds of the same class")
-	(string_name "MoreThan2MedsOfTheSameClass"))
+	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
+	(label "most recent GFR>=60")
+	(numeric_domain_term eGFR)
+	(operator %3E%3D)
+	(value 60.0))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class430002] of  On_Screen_Message
+
+	(label "GFR>=60 not interpretable")
+	(message "Changes in GFR when GFR >= 60 are not interpretable.")
+	(message_type Recommendation))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class430003] of  Consultation_Selection
+
+	(%3AFROM [ATHENA_GlycemicControl_Class790002])
+	(%3ATO [ATHENA_DM_GlycemicControl_Dashboard_Class430000]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class50000] of  N_ary_Criterion
 
@@ -3349,7 +3363,7 @@
 
 	(fine-grain_priority 5000)
 	(label "No GFR for increase Metformin")
-	(message "Would increase metformin, but no GFR.  Do not increase if GFR<45.")
+	(message "GFR missing. Do not increase if GFR less than 45.")
 	(message_type do_not_intensify_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
@@ -3365,7 +3379,7 @@
 
 	(label "Parameterized: Old GFR for increase Metformin")
 	(multivalued_variables [ATHENA_GlycemicControl_Class1030425])
-	(value "Would increase metformin, but old GFR: ?value (?date).  Do not increase if GFR<45."))
+	(value "GFR: (?value (?date)) older than 1 year .  Do not increase if GFR less than 45."))
 
 ([ATHENA_GlycemicControl_Class1030425] of  Variable_ValueSet
 
@@ -3558,8 +3572,6 @@
 		[ATHENA_GlycemicControl_Class1090635]
 		[ATHENA_GlycemicControl_Class1100006]
 		[ATHENA_GlycemicControl_Class1100005]
-		[ATHENA_GlycemicControl_Class730017]
-		[ATHENA_GlycemicControl_Class730030]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class390010]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class390011])
 	(Do_Not_Intensify_Conditions
@@ -3773,7 +3785,7 @@
 
 	(fine-grain_priority 5000)
 	(label "DPP4 saxagliptin missing eGFR past month")
-	(message "Would add saxagliptin, but missing GFR.")
+	(message "GFR.missing.")
 	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
@@ -3918,9 +3930,9 @@
 
 	(fine-grain_priority 5000)
 	(label "DPP4 saxagliptin missing eGFR past year")
-	(message "Would increase saxagliptin, but missing GFR.")
+	(message "GFR missing.")
 	(message_type do_not_intensify_controllable_condition)
-	(rule_in_condition [ATHENA_GlycemicControl_Class530008]))
+	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
 ([ATHENA_GlycemicControl_Class1100005] of  Collateral_Action
 
@@ -5584,9 +5596,6 @@
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_GlycemicControl_Class1110002])
 	(label "ATHENA DM:  Glycemic Control Dashboard")
-	(patient_characterization
-		[ATHENA_DM_GlycemicControl_Dashboard_Class430135]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class430276])
 	(references [ATHENA_GlycemicControl_Class1050001]))
 
 ([ATHENA_GlycemicControl_Class130050] of  N_ary_Criterion
@@ -5838,7 +5847,6 @@
 
 	(actions
 		[ATHENA_GlycemicControl_Class1330001]
-		[ATHENA_GlycemicControl_Class410005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class190003]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class190007])
 	(mood Blocked_Increase))
@@ -5847,7 +5855,7 @@
 
 	(fine-grain_priority 5000)
 	(label "empa missing GFR")
-	(message "Would increase empa, but missing GFR.  Do not increase if GFR<45.")
+	(message "GFR missing. Do not increase if GFR less than 45.")
 	(message_type do_not_intensify_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class530008]))
 
@@ -5855,7 +5863,6 @@
 
 	(actions
 		[ATHENA_GlycemicControl_Class1330003]
-		[ATHENA_GlycemicControl_Class730001]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class190002]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class190005])
 	(mood Blocked_Add))
@@ -5864,32 +5871,26 @@
 
 	(fine-grain_priority 5000)
 	(label "empa missing GFR past 30 days")
-	(message "Would add empa, but missing GFR.  Do not start if GFR<45.")
+	(message "GFR missing.  Do not start if GFR less than 45.")
 	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
 ([ATHENA_GlycemicControl_Class1330004] of  Collateral_Action
 
-	(actions
-		[ATHENA_GlycemicControl_Class1330005]
-		[ATHENA_GlycemicControl_Class730010]
-		[ATHENA_GlycemicControl_Class730011])
+	(actions [ATHENA_GlycemicControl_Class1330005])
 	(mood Blocked_Add))
 
 ([ATHENA_GlycemicControl_Class1330005] of  Conditional_On_Screen_Message
 
 	(fine-grain_priority 5000)
 	(label "TZD missing ASTand ALT")
-	(message "Would recommend thiazolidinedione but missing AST and  ALT.")
+	(message "AST and  ALT older than 1 year.")
 	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class520006]))
 
 ([ATHENA_GlycemicControl_Class1330006] of  Collateral_Action
 
-	(actions
-		[ATHENA_GlycemicControl_Class730010]
-		[ATHENA_GlycemicControl_Class730011]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class200005])
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class200005])
 	(mood Blocked_Increase))
 
 ([ATHENA_GlycemicControl_Class1330492] of  Comparison_Filter
@@ -6242,7 +6243,7 @@
 
 	(label "MF missing eGFR past month last LOW")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Cannot recommend  metformin when GFR < 45 and old: ?value (?date)"))
+	(value "GFR (?value (?date)) older than 1 month and less than 45."))
 
 ([ATHENA_GlycemicControl_Class1410002] of  N_ary_Criterion
 
@@ -6273,7 +6274,7 @@
 
 	(label "Old LOW eGFR incr MF")
 	(multivalued_variables [ATHENA_GlycemicControl_Class1030425])
-	(value "Cannot recommend increasing metformin when GFR &lt; 45 and old: ?value (?date)"))
+	(value "GFR (?value (?date)) older than 1 year and less than 45."))
 
 ([ATHENA_GlycemicControl_Class1420002] of  N_ary_Criterion
 
@@ -11769,9 +11770,7 @@
 		TOLAZAMIDE
 		TOLBUTAMIDE
 		Sulfa_drugs_noSU)
-	(collateral_actions
-		[ATHENA_DM_GlycemicControl_Dashboard_Class390003]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class390005])
+	(collateral_actions [ATHENA_DM_GlycemicControl_Dashboard_Class390003])
 	(Do_Not_Start_Conditions ADR+renal+impairment+or+renal+failure+to+SU+or+sulfa+drug)
 	(Drug_Class_Name GLIPIZIDE)
 	(Drug_Partners_To_Avoid
@@ -12658,7 +12657,7 @@
 ([ATHENA_GlycemicControl_Class720001] of  Parameterized_String
 
 	(label "Missing bicarb and AST/ALT")
-	(value "Would add metformin, but old lab: ?missingMFLab .")
+	(value "Labs older than 1 year:( ?missingMFLab .)")
 	(variables [ATHENA_GlycemicControl_Class720149]))
 
 ([ATHENA_GlycemicControl_Class720002] of  Variable
@@ -13118,15 +13117,15 @@
 	(actions
 		[ATHENA_GlycemicControl_Class980014]
 		[ATHENA_GlycemicControl_Class741056]
-		[ATHENA_GlycemicControl_Class1410000]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class12289])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class12289]
+		[ATHENA_GlycemicControl_Class1410000])
 	(mood Blocked_Add))
 
 ([ATHENA_GlycemicControl_Class741056] of  On_Screen_Message
 
 	(fine-grain_priority 5000)
 	(label "Missing eGFR, cannot add metformin")
-	(message "Would add metformin, but missing GFR.  Do not start if GFR<45.")
+	(message "GFR missing.  Do not start if GFR less than 45.")
 	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
 
@@ -13246,7 +13245,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class311115]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class340003])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class340003]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class430000])
 	(transitions
 		[ATHENA_GlycemicControl_Class790005]
 		[ATHENA_GlycemicControl_Class790007]
@@ -13266,7 +13266,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230183]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251170]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class311119]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class400609]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class400609]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class430003]))
 
 ([ATHENA_GlycemicControl_Class780001] of  Numeric_Term_Criterion
 
@@ -13382,7 +13383,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class230182]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class251166]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class311115]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class340003])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class340003]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class430000])
 	(label "dAll CDS scenarios No ACE/ARB")
 	(selection_method all_of))
 
@@ -14618,7 +14620,7 @@
 
 	(label "Metformin missing GFR in last month: value/date")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
-	(value "Would add metformin, but old GFR: ?value (?date).  Do not start if GFR<45."))
+	(value "GFR:(?value (?date)) older than 1 month.  Do not start if GFR less than 45."))
 
 ([ATHENA_GlycemicControl_Class980016] of  Variable_ValueSet
 
@@ -15567,7 +15569,6 @@
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class30002]
 		[ATHENA_GlycemicControl_Instance_120001]
-		[ATHENA_GlycemicControl_Class730008]
 		[ATHENA_GlycemicControl_Class720148]
 		[ATHENA_GlycemicControl_Class741055]
 		[ATHENA_GlycemicControl_Class1090424]
@@ -15577,14 +15578,14 @@
 	(Do_Not_Intensify_Conditions
 		Absence+of+eGFR+in+past+year
 		30%3C%3DeGFR%3C45+past+year
-		Absence+all+bicarb+labs+past+year
-		Absence+of+AST+and+ALT+in+past+year)
+		Absence+of+AST+and+ALT+in+past+year
+		Absence+of+bicarb+in+past+year)
 	(Do_Not_Start_Conditions
 		Absence+of+eGFR+in+past+month
 		30%3C%3DeGFR%3C45+past+30+days
-		Absence+all+bicarb+labs+past+year
 		Absence+of+AST+and+ALT+in+past+year
-		ADR+renal+failure+or+impairment+to+MF+or+MF_ER)
+		ADR+renal+failure+or+impairment+to+MF+or+MF_ER
+		Absence+of+bicarb+in+past+year)
 	(Drug_Class_Name BIGUANIDE)
 	(formulary_preferred_drug_in_class [ATHENA_GlycemicControl_Instance_80009])
 	(is_first-line_drug_for
@@ -15695,9 +15696,7 @@
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class90046]
 		[ATHENA_GlycemicControl_Class1330004]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class200004]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class390006]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class390007])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class390006])
 	(Do_Not_Intensify_Conditions
 		AST%3E3*UpperLimitOfNormal
 		ALT%3E3*UpperLimitOfNormal
@@ -16143,10 +16142,8 @@
 ([ATHENA_GlycemicControl_Instance_80009] of  Guideline_Drug
 
 	(collateral_actions
-		[ATHENA_GlycemicControl_Class730025]
-		[ATHENA_GlycemicControl_Class741055]
 		[ATHENA_GlycemicControl_Class720148]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class420000])
+		[ATHENA_GlycemicControl_Instance_120001])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Class10001]
 		[ATHENA_GlycemicControl_Class190000])
@@ -16161,10 +16158,9 @@
 ([ATHENA_GlycemicControl_Instance_80010] of  Guideline_Drug
 
 	(collateral_actions
-		[ATHENA_GlycemicControl_Class730025]
 		[ATHENA_GlycemicControl_Class741055]
 		[ATHENA_GlycemicControl_Class720148]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class10002])
+		[ATHENA_GlycemicControl_Instance_120001])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_110002]
 		[ATHENA_GlycemicControl_Instance_110003])
@@ -16193,9 +16189,8 @@
 ([ATHENA_GlycemicControl_Instance_80012] of  Guideline_Drug
 
 	(collateral_actions
-		[ATHENA_GlycemicControl_Class1330004]
-		[ATHENA_GlycemicControl_Class1330006]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class390007])
+		[ATHENA_DM_GlycemicControl_Dashboard_Class390007]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class200004])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_110007]
 		[ATHENA_GlycemicControl_Instance_110006])

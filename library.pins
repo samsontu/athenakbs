@@ -1,4 +1,4 @@
-; Thu Nov 15 19:06:50 PST 2018
+; Mon Jan 14 11:31:14 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -271,7 +271,7 @@
 ([amlodipine_besylate] of  Medications_Metaclass
 
 	(data_source VISTA_data_element)
-	(PrettyName "amlodipine besylate"))
+	(PrettyName "amlodipine"))
 
 ([amphotericin_b] of  Medications_Metaclass
 
@@ -361,6 +361,9 @@
 ([Ascites] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element VISTA_freetext clinical_assessment))
+
+([Asian] of  Canonical_Terms_Metaclass
+)
 
 ([Asian_or_Pacific-Islander] of  Canonical_Terms_Metaclass
 
@@ -2286,6 +2289,10 @@
 ([Death_Without_Autopsy] of  Canonical_Terms_Metaclass
 
 	(PrettyName "death without autopsy"))
+
+([Declined_to_Answer] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Declined to Answer"))
 
 ([Defined+concept] of  Medical_Conditions_Metaclass
 )
@@ -6024,6 +6031,10 @@
 	(data_source VISTA_data_element)
 	(PrettyName "minoxidil"))
 
+([Missing] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Missing"))
+
 ([Moderate+microvascular+disease] of  Medical_Conditions_Metaclass
 
 	(data_source VISTA_data_element))
@@ -6107,6 +6118,10 @@
 
 ([Native_American_Non-Hispanic] of  Canonical_Terms_Metaclass
 )
+
+([Native_Hawaiian_or_Pacific_Islander] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Native Hawaiian or Pacific Islander"))
 
 ([nausea] of  Medical_Conditions_Metaclass
 )
@@ -6411,6 +6426,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Has Pacemaker"))
+
+([Pacific_Islander] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Pacific Islander"))
 
 ([pain] of  Medical_Conditions_Metaclass
 
@@ -7011,7 +7030,8 @@
 
 ([Spinal_Cord_Injury] of  Medical_Conditions_Metaclass
 
-	(data_source VISTA_data_element))
+	(data_source VISTA_data_element)
+	(PrettyName "Spinal Cord Injury"))
 
 ([spironolactone] of  Medications_Metaclass
 
@@ -7370,6 +7390,10 @@
 
 	(controllable FALSE)
 	(data_source VISTA_data_element))
+
+([Unknown] of  Canonical_Terms_Metaclass
+
+	(PrettyName "Unknown"))
 
 ([Unknown_Race] of  Canonical_Terms_Metaclass
 )

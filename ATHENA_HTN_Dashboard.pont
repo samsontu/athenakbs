@@ -1,4 +1,4 @@
-; Mon Oct 22 12:07:29 PDT 2018
+; Mon Jan 14 11:42:33 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -13,7 +13,7 @@
 		(create-accessor read-write))
 	(single-slot Semantic_Operation
 		(type SYMBOL)
-;+		(allowed-parents Athenaeum_Mapping_Operation)
+;+		(allowed-parents)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot main_panel_height
@@ -176,7 +176,7 @@
 		(create-accessor read-write))
 	(single-slot Semantic_Operation
 		(type SYMBOL)
-;+		(allowed-parents Athenaeum_Mapping_Operation)
+;+		(allowed-parents)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot Column_in_va_db
@@ -4220,6 +4220,14 @@
 	(is-a Defined+concept)
 	(role concrete))
 
+(defclass Angioedema+ADR+to+ACE
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Angioedema+ADR+to+ARB
+	(is-a Defined+concept)
+	(role concrete))
+
 (defclass 493.00
 	(is-a Bronchospastic_Disease)
 	(role concrete))
@@ -4704,10 +4712,6 @@
 	(is-a Renovascular_Disease)
 	(role concrete))
 
-(defclass athena_hypertension_453503
-	(is-a angioedema+equivalent)
-	(role concrete))
-
 (defclass High_Cardiovascular_Risk "Cappuccio, F. P., P. Oakeshott, et al. (2002). \"Application of Framingham risk estimates to ethnic minorities in United Kingdom and implications for primary prevention of heart disease in general practice: cross sectional population based study.\" Bmj 325(7375): 1271.\nWilson, P. W., R. B. D'Agostino, et al. (1998). \"Prediction of coronary heart disease using risk factor categories.\" Circulation 97(18): 1837-47.\n\n\n"
 	(is-a Vital_Signs)
 	(role concrete))
@@ -4957,69 +4961,3 @@
 ;+		(allowed-parents Medical_Domain_Class)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
-
-(defclass Athenaeum_Mapping_Operation
-	(is-a USER)
-	(role abstract))
-
-(defclass Drug_Name_Parsing
-	(is-a Athenaeum_Mapping_Operation)
-	(role abstract)
-	(single-slot Source_String_in_DB
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Drug_Dictionary_Translation
-	(is-a Drug_Name_Parsing)
-	(role concrete))
-
-(defclass Literal_Mapping
-	(is-a Athenaeum_Mapping_Operation)
-	(role abstract)
-	(single-slot Source_String_in_DB
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Target_String_in_KB
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Literal_Strng_Translation
-	(is-a Literal_Mapping)
-	(role concrete))
-
-(defclass Literal_to_Class_Mapping
-	(is-a Athenaeum_Mapping_Operation)
-	(role abstract)
-	(single-slot Source_String_in_DB
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Target_Class_in_KB
-		(type SYMBOL)
-;+		(allowed-parents Medical_Domain_Class)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Lab_Dictionary_Translation
-	(is-a Literal_to_Class_Mapping)
-	(role concrete)
-	(single-slot Target_Unit
-		(type SYMBOL)
-		(allowed-values mg%2Fdl mEq%2FL unit)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Patient_History_Translation
-	(is-a Literal_to_Class_Mapping)
-	(role concrete))
-
-(defclass Scope_Restriction
-	(is-a Athenaeum_Mapping_Operation)
-	(role abstract))
-
-(defclass Temporal_Granularity_Change
-	(is-a Athenaeum_Mapping_Operation)
-	(role abstract))

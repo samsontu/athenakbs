@@ -1,4 +1,4 @@
-; Thu Nov 15 19:06:50 PST 2018
+; Mon Jan 14 11:31:14 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,16 +7,7 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(single-slot _REFERENCES
-		(type INTEGER)
-;+		(cardinality 0 1)
-;+		(associated-facet _REFERENCES_FACET)
-		(create-accessor read-write))
-	(single-slot %3ASTARTUP-EXPRESSION
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3ASTARTUP-FILE
+	(single-slot %3ADEFINITION-NAME
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -26,13 +17,22 @@
 		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3ADEFINITION
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ADEFINITION-NAME
-		(type STRING)
+	(single-slot _REFERENCES
+		(type INTEGER)
 ;+		(cardinality 0 1)
+;+		(associated-facet _REFERENCES_FACET)
 		(create-accessor read-write)))
 
 (defclass _DUMMY-FRAMES-METACLASS
@@ -255,7 +255,13 @@
 
 (defclass Dihydropyridines "class effect: edema of the ankle, flushing, headache, gingival hypertrophy"
 	(is-a Calcium_channel_antagonists FirstSecondLineDrugs_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass Long_Acting_DHP_CCB
 	(is-a Dihydropyridines)
@@ -291,7 +297,13 @@
 
 (defclass Thiazide_Diuretics "per Table 7, JNC VI: short-term increases cholesterol and glucose.  biochemical: decreases potassium, sodium and magnesium levels, increases uric acid and calcium lelvels.  Rare: blood dyscarsias, photosens, pancreatitis, hyponatremia"
 	(is-a Antihypertensive_Agents Diuretics JNC8_antihypertensives FirstSecondLineDrugs_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass Thiazide_diuretics_preferred
 	(is-a Thiazide_Diuretics)
@@ -307,7 +319,13 @@
 
 (defclass Non-Dihydropyridines
 	(is-a Calcium_channel_antagonists ThirdLine_Encoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass Long_Acting_NDHP_CCB
 	(is-a Non-Dihydropyridines)
@@ -331,7 +349,13 @@
 
 (defclass Alpha_beta_blockers "postural hypotension, bronchospasm"
 	(is-a Antihypertensive_Agents ThirdLine_Encoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass carvedilol_SA
 	(is-a Alpha_beta_blockers)
@@ -343,7 +367,13 @@
 
 (defclass Alpha_blockers
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass doxazosin "postural hypotension"
 	(is-a Alpha_blockers)
@@ -359,7 +389,13 @@
 
 (defclass Adrenergic_inhibitors_central "Central alpha-agonists: clinidine, guanabenz, guanfacine, methldopa\nalso called \"central alpha-agonists\""
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass clonidine "sedation, dry mouth, bradycardia, withdrawal hypertension\nmore withrdawal"
 	(is-a Adrenergic_inhibitors_central)
@@ -383,7 +419,13 @@
 
 (defclass Direct_vasodilators "headaches, fluid retention, tachycardia"
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass hydralazine "class effect: headaches, fluid retention, tachycardia.\n\nlupus syndrome"
 	(is-a Direct_vasodilators)
@@ -399,7 +441,13 @@
 
 (defclass Adrenergic_inhibitors_peripheral "guanadrel, guanethidine, reserpine"
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass reserpine "nasal congestion, sedation, depression, activation of peptic ulcer"
 	(is-a Adrenergic_inhibitors_peripheral)
@@ -439,7 +487,13 @@
 
 (defclass Potassium-Sparing_Diuretics
 	(is-a Antihypertensive_Agents ThirdLine_NonEncoded_VA_GL)
-	(role abstract))
+	(role abstract)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass amiloride
 	(is-a Potassium-Sparing_Diuretics)
@@ -1059,7 +1113,13 @@
 
 (defclass Beta-Blockers "bronchospasm, bradycardia, ht failure.  may mask insuline-induced hypoglycemia.  less serious: impaired periph circ, insomnia, fatigue, decreased exercise tolerance, hypertriglyceridemia (except agents with ISA).  NOTE: need to finish list and categorization"
 	(is-a Antihypertensive_Agents Nephrotoxic_drugs)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass Beta-Blockers-Cardioselective
 	(is-a Beta-Blockers ThirdLine_Encoded_VA_GL)
@@ -1231,7 +1291,13 @@
 
 (defclass BIGUANIDE
 	(is-a Oral_Hypoglycemic_Agent Nephrotoxic_drugs Encoded_DM_Drugs)
-	(role concrete))
+	(role concrete)
+	(single-slot should_prescribe_at_most_one
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
 
 (defclass METFORMIN
 	(is-a BIGUANIDE)
@@ -3717,11 +3783,35 @@
 	(is-a Native_American Non-Hispanic)
 	(role concrete))
 
+(defclass Asian
+	(is-a Non-Black)
+	(role concrete))
+
+(defclass Native_Hawaiian_or_Pacific_Islander
+	(is-a Non-Black)
+	(role concrete))
+
+(defclass Pacific_Islander
+	(is-a Non-Black)
+	(role concrete))
+
 (defclass Other_Race
 	(is-a Race)
 	(role concrete))
 
 (defclass xxxxxxxx
+	(is-a Race)
+	(role concrete))
+
+(defclass Declined_to_Answer
+	(is-a Race)
+	(role concrete))
+
+(defclass Missing
+	(is-a Race)
+	(role concrete))
+
+(defclass Unknown
 	(is-a Race)
 	(role concrete))
 
