@@ -1,4 +1,4 @@
-; Mon Jan 14 11:31:14 PST 2019
+; Tue Feb 12 15:34:47 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -127,6 +127,10 @@
 
 (defclass SGLT2_Inhibitor
 	(is-a Oral_Hypoglycemic_Agent)
+	(role concrete))
+
+(defclass Ertugliflozin
+	(is-a SGLT2_Inhibitor)
 	(role concrete))
 
 (defclass Non_encoded_DM_drugs
@@ -414,6 +418,10 @@
 	(role concrete))
 
 (defclass methyldopa_SA
+	(is-a Adrenergic_inhibitors_central)
+	(role concrete))
+
+(defclass clonidine_SA
 	(is-a Adrenergic_inhibitors_central)
 	(role concrete))
 
@@ -1343,6 +1351,10 @@
 	(is-a Glucagon_like_peptide_1_agonist)
 	(role concrete))
 
+(defclass Semaglutide
+	(is-a Glucagon_like_peptide_1_agonist)
+	(role concrete))
+
 (defclass DIPEPTIDYL_PEPTIDASE-4_INHIBITOR
 	(is-a Oral_Hypoglycemic_Agent Nephrotoxic_drugs)
 	(role concrete))
@@ -1364,7 +1376,7 @@
 	(role concrete))
 
 (defclass Alogliptin
-	(is-a DIPEPTIDYL_PEPTIDASE-4_INHIBITOR Non_encoded_DM_drugs)
+	(is-a DIPEPTIDYL_PEPTIDASE-4_INHIBITOR Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass MEGLITINIDES

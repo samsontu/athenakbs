@@ -1,4 +1,4 @@
-; Sat Feb 02 10:20:37 PST 2019
+; Tue Feb 12 12:58:56 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -373,6 +373,10 @@
 	(role concrete))
 
 (defclass ADR+anaphylaxis+to+dorzolamide
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Pres+hemodialysis
 	(is-a Defined+concept)
 	(role concrete))
 

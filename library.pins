@@ -1,4 +1,4 @@
-; Mon Jan 14 11:31:14 PST 2019
+; Tue Feb 12 15:34:48 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2070,6 +2070,10 @@
 	(data_source VISTA_data_element)
 	(PrettyName "clonidine"))
 
+([clonidine_SA] of  Medications_Metaclass
+
+	(PrettyName "clonidine SA"))
+
 ([Clopidogrel] of  Medications_Metaclass
 
 	(PrettyName "clopidogrel"))
@@ -3050,6 +3054,10 @@
 ([eprosartan] of  Medications_Metaclass
 
 	(PrettyName "eprosartan"))
+
+([Ertugliflozin] of  Medications_Metaclass
+
+	(PrettyName "ertugliflozin"))
 
 ([Erythema] of  Canonical_Terms_Metaclass
 )
@@ -6954,6 +6962,10 @@
 
 	(data_source VISTA_data_element)
 	(PrettyName "Secondary hypertension"))
+
+([Semaglutide] of  Medications_Metaclass
+
+	(PrettyName "semaglutide"))
 
 ([Sensory+exam+%28foot+dm%29] of  Medical_Conditions_Metaclass
 
