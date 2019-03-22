@@ -1,4 +1,4 @@
-; Tue Feb 12 12:58:56 PST 2019
+; Thu Mar 21 15:44:46 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -377,6 +377,30 @@
 	(role concrete))
 
 (defclass Pres+hemodialysis
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass eGFR%3C30+past+year+and+alo+daily+dose%3E6.25
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass 30%3C%3DGFR%3C60+past+year+and+alo+daily+dose+%3E+12.5
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass ADR+anaphylaxis+to+GLP1+agonist
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass TG%3E1000
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass CVD_and_DM2
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass CVD+AND+No+Dx+DM-2+but+presence+of+DM+meds
 	(is-a Defined+concept)
 	(role concrete))
 

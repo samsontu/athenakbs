@@ -1,4 +1,4 @@
-; Tue Feb 12 15:34:47 PST 2019
+; Thu Mar 07 15:32:50 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1328,31 +1328,31 @@
 	(role concrete))
 
 (defclass Glucagon_like_peptide_1_agonist
-	(is-a Injectable_hypoglycemic_agent_not_insulin Nephrotoxic_drugs Non_Insulin_Related_Glucose_Reg_Agents Non_encoded_DM_drugs)
+	(is-a Injectable_hypoglycemic_agent_not_insulin Nephrotoxic_drugs Non_Insulin_Related_Glucose_Reg_Agents)
 	(role concrete))
 
 (defclass Exenatide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Liraglutide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Dulaglutide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Lixisenatide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Albiglutide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Semaglutide
-	(is-a Glucagon_like_peptide_1_agonist)
+	(is-a Glucagon_like_peptide_1_agonist Encoded_DM_Drugs)
 	(role concrete))
 
 (defclass DIPEPTIDYL_PEPTIDASE-4_INHIBITOR
@@ -2289,6 +2289,10 @@
 
 (defclass Disorders_of_gallbladde_570_to_579
 	(is-a CCS-9)
+	(role concrete))
+
+(defclass Gallstones
+	(is-a Disorders_of_gallbladde_570_to_579)
 	(role concrete))
 
 (defclass Noninfective_Enteritis_And_Colitis_555to558
@@ -3309,6 +3313,10 @@
 
 (defclass Hypothyroidism
 	(is-a thyroid+disorders)
+	(role concrete))
+
+(defclass Multiple_endocrineneoplasia_syndrome_type2
+	(is-a Endocrine_Diseases)
 	(role concrete))
 
 (defclass Immunological_Diseases

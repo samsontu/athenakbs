@@ -1,4 +1,4 @@
-; Tue Feb 12 15:34:48 PST 2019
+; Thu Mar 07 15:32:50 PST 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -3247,6 +3247,10 @@
 
 	(PrettyName "gabapentin"))
 
+([Gallstones] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Gallstones"))
+
 ([ganciclovir] of  Medications_Metaclass
 
 	(PrettyName "ganciclovir"))
@@ -6064,6 +6068,10 @@
 
 	(code "MS400")
 	(PrettyName "AntiGout Agents"))
+
+([Multiple_endocrineneoplasia_syndrome_type2] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Multiple endocrine neoplasia syndrome type 2"))
 
 ([Multiple_myeloma] of  Medical_Conditions_Metaclass
 
