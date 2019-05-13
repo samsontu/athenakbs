@@ -1,569 +1,877 @@
-; Tue Aug 15 13:44:29 PDT 2017
+; Fri Apr 19 09:32:02 PDT 2019
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4767] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [ATHENA_CKD_dashboard_ProjectKB_Class4768])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4768] of  Property_List
-)
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4769] of  String
-
-	(name "PAL-QUERY")
-	(string_value "%3ANAME"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4770] of  String
-
-	(name "Drug_Usage")
-	(string_value "label"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4771] of  String
+([ATHENA_CKD_Dashboard_ProjectKB_Class14993] of  String
 
 	(name "Guideline_View")
 	(string_value "guideline"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4772] of  String
+([ATHENA_CKD_Dashboard_ProjectKB_Class14994] of  String
+
+	(name "PAL-QUERY")
+	(string_value "%3ANAME"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class14995] of  String
+
+	(name "Drug_Usage")
+	(string_value "label"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class14996] of  String
+
+	(name "Definite_Time_Point")
+	(string_value "month_name{%2F}day{%2F}year_CE"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class14997] of  String
 
 	(name "Collateral_Action")
 	(string_value "actions"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4773] of  Map_Entry
+([ATHENA_CKD_Dashboard_ProjectKB_Class14998] of  Map
+)
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class14999] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class14998")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15000] of  Map
+
+	(entries
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15001]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15002]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15003]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15004]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15005]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15006]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15007]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15008]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15009]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15010]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15011]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15012]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15013]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15014]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15015]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15016]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15017]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15018]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15019]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15020]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15021]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15022]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15023]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15024]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15025]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15026]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15027]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15001] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class126")
+	(key_class "java.lang.String")
+	(value "2320 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15002] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class120")
+	(key_class "java.lang.String")
+	(value "2170 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15003] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class48")
+	(key_class "java.lang.String")
+	(value "370 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15004] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class47")
+	(key_class "java.lang.String")
+	(value "220 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15005] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class108")
+	(key_class "java.lang.String")
+	(value "2770 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15006] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class107")
+	(key_class "java.lang.String")
+	(value "2620 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15007] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class129")
+	(key_class "java.lang.String")
+	(value "1570 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15008] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class89")
+	(key_class "java.lang.String")
+	(value "1270 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15009] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class64")
+	(key_class "java.lang.String")
+	(value "970 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15010] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class63")
+	(key_class "java.lang.String")
+	(value "820 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15011] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class135")
+	(key_class "java.lang.String")
+	(value "2020 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15012] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class113")
+	(key_class "java.lang.String")
+	(value "3070 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15013] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class137")
+	(key_class "java.lang.String")
+	(value "3370 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15014] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class136")
+	(key_class "java.lang.String")
+	(value "3520 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15015] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class114")
+	(key_class "java.lang.String")
+	(value "3220 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15016] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class39")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15017] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class130")
+	(key_class "java.lang.String")
+	(value "1870 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15018] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class59")
+	(key_class "java.lang.String")
+	(value "670 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15019] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class110")
+	(key_class "java.lang.String")
+	(value "2920 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15020] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class139")
+	(key_class "java.lang.String")
+	(value "1720 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15021] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class138")
+	(key_class "java.lang.String")
+	(value "4120 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15022] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class70")
+	(key_class "java.lang.String")
+	(value "1120 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15023] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class77")
+	(key_class "java.lang.String")
+	(value "3670 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15024] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class97")
+	(key_class "java.lang.String")
+	(value "2470 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15025] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class53")
+	(key_class "java.lang.String")
+	(value "520 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15026] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class94")
+	(key_class "java.lang.String")
+	(value "3820 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15027] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class93")
+	(key_class "java.lang.String")
+	(value "1420 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15028] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Dashboard_Class8.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15000")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15029] of  Map_Entry
 
 	(key "chaoProject")
 	(key_class "java.lang.String")
 	(value "annotation_ATHENA_CKD.pprj")
 	(value_class "java.lang.String"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4774] of  Map
+([ATHENA_CKD_Dashboard_ProjectKB_Class15030] of  Map
 
 	(entries
-		[ATHENA_CKD_dashboard_ProjectKB_Class4775]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4776]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4777]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4778]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4779]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4780]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4781]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4782]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4783]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4784]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4785]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4786]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4787]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4788]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4789]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4790]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4791]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4792]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4793]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4794]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4795]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4796]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4797]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4798]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4799]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4800]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4801]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4802]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4803]))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4775] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10006")
-	(key_class "java.lang.String")
-	(value "332 125 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4776] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10062")
-	(key_class "java.lang.String")
-	(value "518 767 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4777] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_6")
-	(key_class "java.lang.String")
-	(value "31 51 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4778] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10063")
-	(key_class "java.lang.String")
-	(value "603 771 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4779] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10045")
-	(key_class "java.lang.String")
-	(value "282 628 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4780] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10064")
-	(key_class "java.lang.String")
-	(value "701 770 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4781] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10028")
-	(key_class "java.lang.String")
-	(value "95 637 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4782] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_8")
-	(key_class "java.lang.String")
-	(value "191 51 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4783] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_1")
-	(key_class "java.lang.String")
-	(value "334 29 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4784] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10022")
-	(key_class "java.lang.String")
-	(value "7 634 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4785] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_20006")
-	(key_class "java.lang.String")
-	(value "466 548 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4786] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_20005")
-	(key_class "java.lang.String")
-	(value "190 633 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4787] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10019")
-	(key_class "java.lang.String")
-	(value "428 273 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4788] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10036")
-	(key_class "java.lang.String")
-	(value "560 606 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4789] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10035")
-	(key_class "java.lang.String")
-	(value "470 672 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4790] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10016")
-	(key_class "java.lang.String")
-	(value "425 180 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4791] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10077")
-	(key_class "java.lang.String")
-	(value "388 968 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4792] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10078")
-	(key_class "java.lang.String")
-	(value "274 987 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4793] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10052")
-	(key_class "java.lang.String")
-	(value "405 757 86 76")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4794] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10014")
-	(key_class "java.lang.String")
-	(value "227 251 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4795] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10050")
-	(key_class "java.lang.String")
-	(value "364 638 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4796] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10013")
-	(key_class "java.lang.String")
-	(value "15 245 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4797] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_40000")
-	(key_class "java.lang.String")
-	(value "111 992 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4798] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10034")
-	(key_class "java.lang.String")
-	(value "372 871 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4799] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10033")
-	(key_class "java.lang.String")
-	(value "268 804 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4800] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10032")
-	(key_class "java.lang.String")
-	(value "26 897 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4801] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10031")
-	(key_class "java.lang.String")
-	(value "140 893 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4802] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_80003")
-	(key_class "java.lang.String")
-	(value "641 682 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4803] of  Map_Entry
-
-	(key "ATHENA_CKD_Instance_10081")
-	(key_class "java.lang.String")
-	(value "430 364 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4804] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_CKD_Instance_5.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_CKD_dashboard_ProjectKB_Class4774")
-	(value_class "java.util.Map"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4805] of  Map
-
-	(entries
-		[ATHENA_CKD_dashboard_ProjectKB_Class4806]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4807]))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4806] of  Map_Entry
-
-	(key "ATHENA_CKD_Class6")
-	(key_class "java.lang.String")
-	(value "10 10 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4807] of  Map_Entry
-
-	(key "ATHENA_CKD_Class7")
-	(key_class "java.lang.String")
-	(value "100 120 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4808] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_CKD_Class8.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_CKD_dashboard_ProjectKB_Class4805")
-	(value_class "java.util.Map"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4809] of  Map
-
-	(entries
-		[ATHENA_CKD_dashboard_ProjectKB_Class4810]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4811]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4812]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4813]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4814]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4815]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4816]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4817]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4818]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4819]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4820]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4821]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4822]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4823]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4824]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4825]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4826]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4827]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4828]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4829]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4830]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4831]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4832]))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4810] of  Map_Entry
-
-	(key "ATHENA_CKD_Class190354")
-	(key_class "java.lang.String")
-	(value "915 489 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4811] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40009")
-	(key_class "java.lang.String")
-	(value "574 431 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4812] of  Map_Entry
-
-	(key "ATHENA_CKD_Class30005")
-	(key_class "java.lang.String")
-	(value "364 206 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4813] of  Map_Entry
-
-	(key "ATHENA_CKD_Class30004")
-	(key_class "java.lang.String")
-	(value "364 92 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4814] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40018")
-	(key_class "java.lang.String")
-	(value "313 451 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4815] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40005")
-	(key_class "java.lang.String")
-	(value "570 96 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4816] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40019")
-	(key_class "java.lang.String")
-	(value "336 533 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4817] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40006")
-	(key_class "java.lang.String")
-	(value "568 210 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4818] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40007")
-	(key_class "java.lang.String")
-	(value "521 315 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4819] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40008")
-	(key_class "java.lang.String")
-	(value "645 316 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4820] of  Map_Entry
-
-	(key "ATHENA_CKD_Class170260")
-	(key_class "java.lang.String")
-	(value "809 521 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4821] of  Map_Entry
-
-	(key "ATHENA_CKD_Class20006")
-	(key_class "java.lang.String")
-	(value "225 310 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4822] of  Map_Entry
-
-	(key "ATHENA_CKD_Class20005")
-	(key_class "java.lang.String")
-	(value "132 306 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4823] of  Map_Entry
-
-	(key "ATHENA_CKD_Class60003")
-	(key_class "java.lang.String")
-	(value "605 618 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4824] of  Map_Entry
-
-	(key "ATHENA_CKD_Class20004")
-	(key_class "java.lang.String")
-	(value "160 196 70 70")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4825] of  Map_Entry
-
-	(key "ATHENA_CKD_Class20003")
-	(key_class "java.lang.String")
-	(value "165 90 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4826] of  Map_Entry
-
-	(key "ATHENA_CKD_Class80000")
-	(key_class "java.lang.String")
-	(value "20 160 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4827] of  Map_Entry
-
-	(key "ATHENA_CKD_Class30006")
-	(key_class "java.lang.String")
-	(value "367 316 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4828] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40024")
-	(key_class "java.lang.String")
-	(value "779 427 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4829] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40023")
-	(key_class "java.lang.String")
-	(value "503 621 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4830] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40027")
-	(key_class "java.lang.String")
-	(value "739 617 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4831] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40021")
-	(key_class "java.lang.String")
-	(value "848 618 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4832] of  Map_Entry
-
-	(key "ATHENA_CKD_Class40020")
-	(key_class "java.lang.String")
-	(value "363 609 62 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4833] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_CKD_Class20002.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_CKD_dashboard_ProjectKB_Class4809")
-	(value_class "java.util.Map"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4834] of  Map
-
-	(entries
-		[ATHENA_CKD_dashboard_ProjectKB_Class4835]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4836]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4837]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4838]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4839]))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4835] of  Map_Entry
-
-	(key "ATHENA_CKD_Class10003")
-	(key_class "java.lang.String")
-	(value "70 128 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4836] of  Map_Entry
-
-	(key "ATHENA_CKD_Class10002")
-	(key_class "java.lang.String")
-	(value "58 335 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_CKD_dashboard_ProjectKB_Class4837] of  Map_Entry
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15031]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15032]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15033]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15034]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15035]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15031] of  Map_Entry
 
 	(key "ATHENA_CKD_Class10004")
 	(key_class "java.lang.String")
 	(value "357 227 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4838] of  Map_Entry
+([ATHENA_CKD_Dashboard_ProjectKB_Class15032] of  Map_Entry
 
-	(key "ATHENA_CKD_Class10025")
+	(key "ATHENA_CKD_Class10002")
 	(key_class "java.lang.String")
-	(value "233 334 71 72")
+	(value "58 335 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4839] of  Map_Entry
+([ATHENA_CKD_Dashboard_ProjectKB_Class15033] of  Map_Entry
 
 	(key "ATHENA_CKD_Class10024")
 	(key_class "java.lang.String")
 	(value "216 122 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4840] of  Map_Entry
+([ATHENA_CKD_Dashboard_ProjectKB_Class15034] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10003")
+	(key_class "java.lang.String")
+	(value "70 128 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15035] of  Map_Entry
+
+	(key "ATHENA_CKD_Class10025")
+	(key_class "java.lang.String")
+	(value "233 334 71 72")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15036] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_CKD_Class10001.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_CKD_dashboard_ProjectKB_Class4834")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15030")
 	(value_class "java.util.Map"))
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4841] of  Map
+([ATHENA_CKD_Dashboard_ProjectKB_Class15037] of  Map
+
+	(entries
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15038]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15039]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15040]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15041]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15042]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15043]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15044]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15045]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15046]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15047]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15048]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15049]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15050]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15051]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15052]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15053]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15054]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15055]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15056]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15057]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15038] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30005")
+	(key_class "java.lang.String")
+	(value "364 206 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15039] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30004")
+	(key_class "java.lang.String")
+	(value "364 92 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15040] of  Map_Entry
+
+	(key "ATHENA_CKD_Class60003")
+	(key_class "java.lang.String")
+	(value "605 618 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15041] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40006")
+	(key_class "java.lang.String")
+	(value "568 210 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15042] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40005")
+	(key_class "java.lang.String")
+	(value "570 96 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15043] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40027")
+	(key_class "java.lang.String")
+	(value "739 617 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15044] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40019")
+	(key_class "java.lang.String")
+	(value "336 533 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15045] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40008")
+	(key_class "java.lang.String")
+	(value "645 316 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15046] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40018")
+	(key_class "java.lang.String")
+	(value "313 451 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15047] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40007")
+	(key_class "java.lang.String")
+	(value "521 315 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15048] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40009")
+	(key_class "java.lang.String")
+	(value "574 431 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15049] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40020")
+	(key_class "java.lang.String")
+	(value "363 609 62 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15050] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20005")
+	(key_class "java.lang.String")
+	(value "132 306 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15051] of  Map_Entry
+
+	(key "ATHENA_CKD_Class20006")
+	(key_class "java.lang.String")
+	(value "225 310 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15052] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40021")
+	(key_class "java.lang.String")
+	(value "848 618 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15053] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40024")
+	(key_class "java.lang.String")
+	(value "779 427 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15054] of  Map_Entry
+
+	(key "ATHENA_CKD_Class40023")
+	(key_class "java.lang.String")
+	(value "503 621 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15055] of  Map_Entry
+
+	(key "ATHENA_CKD_Class190354")
+	(key_class "java.lang.String")
+	(value "915 489 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15056] of  Map_Entry
+
+	(key "ATHENA_CKD_Class30006")
+	(key_class "java.lang.String")
+	(value "367 316 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15057] of  Map_Entry
+
+	(key "ATHENA_CKD_Class80000")
+	(key_class "java.lang.String")
+	(value "20 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15058] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Class20002.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15037")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15059] of  Map
+
+	(entries
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15060]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15061]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15062]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15063]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15064]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15065]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15066]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15067]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15068]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15069]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15070]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15071]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15072]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15073]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15074]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15075]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15076]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15077]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15078]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15079]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15080]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15081]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15082]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15083]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15084]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15085]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15086]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15087]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15060] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10063")
+	(key_class "java.lang.String")
+	(value "603 771 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15061] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10062")
+	(key_class "java.lang.String")
+	(value "518 767 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15062] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10045")
+	(key_class "java.lang.String")
+	(value "282 628 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15063] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10022")
+	(key_class "java.lang.String")
+	(value "7 634 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15064] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10064")
+	(key_class "java.lang.String")
+	(value "701 770 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15065] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10006")
+	(key_class "java.lang.String")
+	(value "332 125 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15066] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10028")
+	(key_class "java.lang.String")
+	(value "95 637 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15067] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_20006")
+	(key_class "java.lang.String")
+	(value "466 548 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15068] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10081")
+	(key_class "java.lang.String")
+	(value "430 364 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15069] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_20005")
+	(key_class "java.lang.String")
+	(value "190 633 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15070] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10052")
+	(key_class "java.lang.String")
+	(value "405 757 86 76")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15071] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10050")
+	(key_class "java.lang.String")
+	(value "364 638 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15072] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_6")
+	(key_class "java.lang.String")
+	(value "31 51 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15073] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10078")
+	(key_class "java.lang.String")
+	(value "274 987 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15074] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10034")
+	(key_class "java.lang.String")
+	(value "372 871 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15075] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_40000")
+	(key_class "java.lang.String")
+	(value "111 992 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15076] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_8")
+	(key_class "java.lang.String")
+	(value "191 51 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15077] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10077")
+	(key_class "java.lang.String")
+	(value "388 968 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15078] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10033")
+	(key_class "java.lang.String")
+	(value "268 804 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15079] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10032")
+	(key_class "java.lang.String")
+	(value "26 897 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15080] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10031")
+	(key_class "java.lang.String")
+	(value "140 893 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15081] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10016")
+	(key_class "java.lang.String")
+	(value "425 180 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15082] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10036")
+	(key_class "java.lang.String")
+	(value "560 606 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15083] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10014")
+	(key_class "java.lang.String")
+	(value "227 251 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15084] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10035")
+	(key_class "java.lang.String")
+	(value "470 672 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15085] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10013")
+	(key_class "java.lang.String")
+	(value "15 245 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15086] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_10019")
+	(key_class "java.lang.String")
+	(value "428 273 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15087] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_1")
+	(key_class "java.lang.String")
+	(value "334 29 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15088] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Instance_5.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15059")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15089] of  Map
+
+	(entries
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15090]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15091]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15092]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15093]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15094]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15095]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15096]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15097]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15098]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15099]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15090] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class30012")
+	(key_class "java.lang.String")
+	(value "740 280 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15091] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class50021")
+	(key_class "java.lang.String")
+	(value "220 320 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15092] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class50020")
+	(key_class "java.lang.String")
+	(value "300 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15093] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class89")
+	(key_class "java.lang.String")
+	(value "680 20 83 84")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15094] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class40007")
+	(key_class "java.lang.String")
+	(value "520 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15095] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class40008")
+	(key_class "java.lang.String")
+	(value "440 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15096] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_20006")
+	(key_class "java.lang.String")
+	(value "320 460 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15097] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class20000")
+	(key_class "java.lang.String")
+	(value "40 20 82 71")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15098] of  Map_Entry
+
+	(key "ATHENA_CKD_Dashboard_Class30015")
+	(key_class "java.lang.String")
+	(value "200 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15099] of  Map_Entry
+
+	(key "ATHENA_CKD_Instance_1")
+	(key_class "java.lang.String")
+	(value "520 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15100] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Dashboard_Class150.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15089")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15101] of  Map
+
+	(entries
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15102]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15103]))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15102] of  Map_Entry
+
+	(key "ATHENA_CKD_Class7")
+	(key_class "java.lang.String")
+	(value "100 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15103] of  Map_Entry
+
+	(key "ATHENA_CKD_Class6")
+	(key_class "java.lang.String")
+	(value "10 10 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15104] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_CKD_Class8.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15101")
+	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class15105] of  Map
 )
 
-([ATHENA_CKD_dashboard_ProjectKB_Class4842] of  Map_Entry
+([ATHENA_CKD_Dashboard_ProjectKB_Class15106] of  Map_Entry
 
-	(key "InstanceDisplay.yellow_stickies")
+	(key "InstanceGraphWidget.ATHENA_CKD_Dashboard_Class148.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_CKD_dashboard_ProjectKB_Class4841")
+	(value "ATHENA_CKD_Dashboard_ProjectKB_Class15105")
 	(value_class "java.util.Map"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class4810] of  Property_List
+
+	(name "layout properties"))
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class4811] of  Property_List
+)
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class4812] of  Property_List
+)
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class4813] of  Property_List
+)
+
+([ATHENA_CKD_Dashboard_ProjectKB_Class4814] of  Property_List
+)
 
 ([ATHENA_CKD_ProjectKB_Class13588] of  Boolean
 
@@ -1120,20 +1428,6 @@
 	(y 120))
 
 ([ATHENA_CKD_ProjectKB_Class24805] of  Property_List
-)
-
-([ATHENA_CKD_ProjectKB_Class33846] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "Shared_documentation")
-	(property_list [ATHENA_CKD_ProjectKB_Class33847])
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
-	(width 200)
-	(x 0)
-	(y 360))
-
-([ATHENA_CKD_ProjectKB_Class33847] of  Property_List
 )
 
 ([ATHENA_CKD_ProjectKB_Class3528] of  Widget
@@ -1819,23 +2113,29 @@
 ([ATHENA_CKD_ProjectKB_Instance_2403] of  String
 
 	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
-	(string_value "ATHENA_CKD_Class40022"))
+	(string_value "ATHENA_CKD_Dashboard_Class2"))
 
 ([ATHENA_CKD_ProjectKB_Instance_2409] of  Map
 
 	(entries
-		[ATHENA_CKD_dashboard_ProjectKB_Class4773]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4804]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4808]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4833]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4840]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4842])
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14999]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15028]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15029]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15036]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15058]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15088]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15100]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15104]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15106])
 	(referenced_maps
-		[ATHENA_CKD_dashboard_ProjectKB_Class4809]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4841]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4805]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4774]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4834]))
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15030]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15101]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15089]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15000]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15105]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15037]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class15059]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14998]))
 
 ([ATHENA_CKD_ProjectKB_Instance_2464] of  Widget
 
@@ -2489,10 +2789,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ATHENA_CKD_dashboard_ProjectKB_Class4769]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4770]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4771]
-		[ATHENA_CKD_dashboard_ProjectKB_Class4772]))
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14993]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14994]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14995]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14996]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class14997]))
 
 ([CLSES_TAB] of  Widget
 
@@ -2644,131 +2945,131 @@
 		[ATHENA_CKD_ProjectKB_Instance_12494]
 		[ATHENA_CKD_ProjectKB_Instance_12495]))
 
-([KB_224202_Class4748] of  Map
+([KB_368736_Class4830] of  Map
 
 	(entries
-		[KB_224202_Class4749]
-		[KB_224202_Class4750]
-		[KB_224202_Class4751]
-		[KB_224202_Class4752]
-		[KB_224202_Class4753]
-		[KB_224202_Class4755]
-		[KB_224202_Class4756]
-		[KB_224202_Class4757]
-		[KB_224202_Class4759]
-		[KB_224202_Class4761]
-		[KB_224202_Class4763]
-		[KB_224202_Class4765]
-		[KB_224202_Class4766])
+		[KB_368736_Class4832]
+		[KB_368736_Class4833]
+		[KB_368736_Class4834]
+		[KB_368736_Class4835]
+		[KB_368736_Class4837]
+		[KB_368736_Class4838]
+		[KB_368736_Class4840]
+		[KB_368736_Class4841]
+		[KB_368736_Class4843]
+		[KB_368736_Class4844]
+		[KB_368736_Class4845]
+		[KB_368736_Class4847]
+		[KB_368736_Class4848])
 	(referenced_maps
-		[KB_224202_Class4758]
-		[KB_224202_Class4754]
-		[KB_224202_Class4764]
-		[KB_224202_Class4762]
-		[KB_224202_Class4760]))
+		[KB_368736_Class4831]
+		[KB_368736_Class4842]
+		[KB_368736_Class4836]
+		[KB_368736_Class4846]
+		[KB_368736_Class4839]))
 
-([KB_224202_Class4749] of  Map_Entry
+([KB_368736_Class4831] of  Map
+)
+
+([KB_368736_Class4832] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_368736_Class4831")
+	(value_class "java.util.Map"))
+
+([KB_368736_Class4833] of  Map_Entry
 
 	(key "collab.hide.archived")
 	(key_class "java.lang.String")
 	(value "true")
 	(value_class "java.lang.String"))
 
-([KB_224202_Class4750] of  Map_Entry
+([KB_368736_Class4834] of  Map_Entry
 
 	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_224202_Class4751] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_224202_Class4752] of  Map_Entry
+([KB_368736_Class4835] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_224202_Class4753] of  Map_Entry
+([KB_368736_Class4836] of  Map
+)
+
+([KB_368736_Class4837] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_368736_Class4836")
+	(value_class "java.util.Map"))
+
+([KB_368736_Class4838] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_368736_Class4839] of  Map
+)
+
+([KB_368736_Class4840] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_368736_Class4839")
+	(value_class "java.util.Map"))
+
+([KB_368736_Class4841] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_368736_Class4842] of  Map
+)
+
+([KB_368736_Class4843] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_368736_Class4842")
+	(value_class "java.util.Map"))
+
+([KB_368736_Class4844] of  Map_Entry
 
 	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([KB_224202_Class4754] of  Map
-)
-
-([KB_224202_Class4755] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_224202_Class4754")
-	(value_class "java.util.Map"))
-
-([KB_224202_Class4756] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_224202_Class4757] of  Map_Entry
+([KB_368736_Class4845] of  Map_Entry
 
 	(key "show_collaboration_panel")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.Boolean"))
 
-([KB_224202_Class4758] of  Map
+([KB_368736_Class4846] of  Map
 )
 
-([KB_224202_Class4759] of  Map_Entry
+([KB_368736_Class4847] of  Map_Entry
 
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
 	(key_class "java.lang.String")
-	(value "KB_224202_Class4758")
+	(value "KB_368736_Class4846")
 	(value_class "java.util.Map"))
 
-([KB_224202_Class4760] of  Map
-)
+([KB_368736_Class4848] of  Map_Entry
 
-([KB_224202_Class4761] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_224202_Class4760")
-	(value_class "java.util.Map"))
-
-([KB_224202_Class4762] of  Map
-)
-
-([KB_224202_Class4763] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_224202_Class4762")
-	(value_class "java.util.Map"))
-
-([KB_224202_Class4764] of  Map
-)
-
-([KB_224202_Class4765] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_224202_Class4764")
-	(value_class "java.util.Map"))
-
-([KB_224202_Class4766] of  Map_Entry
-
-	(key "suppress_instance_counting")
+	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
@@ -3053,7 +3354,8 @@
 		[KB_431458_Instance_39]
 		[KB_431458_Instance_40]
 		[KB_431458_Instance_41]
-		[KB_431458_Instance_42]))
+		[KB_431458_Instance_42]
+		[ATHENA_CKD_Dashboard_ProjectKB_Class4810]))
 
 ([KB_431458_Instance_39] of  Widget
 
@@ -3061,6 +3363,7 @@
 	(is_hidden FALSE)
 	(label "Name")
 	(name ":PAL-NAME")
+	(property_list [ATHENA_CKD_Dashboard_ProjectKB_Class4811])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
 	(width 275)
 	(x 0)
@@ -3076,6 +3379,7 @@
 	(is_hidden FALSE)
 	(label "Range")
 	(name ":PAL-RANGE")
+	(property_list [ATHENA_CKD_Dashboard_ProjectKB_Class4813])
 	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
 	(width 250)
 	(x 275)
@@ -3087,6 +3391,7 @@
 	(is_hidden FALSE)
 	(label "Description")
 	(name ":PAL-DESCRIPTION")
+	(property_list [ATHENA_CKD_Dashboard_ProjectKB_Class4812])
 	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
 	(width 250)
 	(x 275)
@@ -3098,6 +3403,7 @@
 	(is_hidden FALSE)
 	(label "Statement")
 	(name ":PAL-STATEMENT")
+	(property_list [ATHENA_CKD_Dashboard_ProjectKB_Class4814])
 	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
 	(width 275)
 	(x 0)
@@ -3423,8 +3729,7 @@
 		[KB_629034_Instance_1339]
 		[KB_629034_Instance_1343]
 		[KB_629034_Instance_1347]
-		[ATHENA_CKD_ProjectKB_Instance_2495]
-		[ATHENA_CKD_ProjectKB_Class33846]))
+		[ATHENA_CKD_ProjectKB_Instance_2495]))
 
 ([KB_629034_Instance_1328] of  Property_List
 
@@ -4066,29 +4371,29 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[ATHENA_CKD_ProjectKB_Class13799]
-		[PAL_FORM_WIDGET]
-		[ATHENA_CKD_ProjectKB_Class13763]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET]
-		[KB_840064_Instance_2420]
-		[KB_629034_Instance_1326]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[KB_840064_Instance_2420]
+		[ATHENA_CKD_ProjectKB_Class13799]
 		[KB_900568_Instance_898]
 		[KB_547878_Instance_2186]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_900568_Instance_1889]
+		[STANDARD_FACET_FORM_WIDGET]
+		[KB_629034_Instance_1326]
 		[ATHENA_CKD_ProjectKB_Instance_32501]
+		[ATHENA_CKD_ProjectKB_Class13763]
 		[ATHENA_CKD_ProjectKB_Instance_2464]
 		[ATHENA_CKD_ProjectKB_Instance_2358]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[PAL_FORM_WIDGET]
+		[KB_900568_Instance_1889]
 		[KB_001134_Instance_621])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(default_slot_metaclass ":STANDARD-SLOT")
 	(hidden_classes
-		"Condition"
-		"Encounter")
+		"Encounter"
+		"Condition")
 	(included_projects
 		"eon2.pprj"
 		"library.pprj"

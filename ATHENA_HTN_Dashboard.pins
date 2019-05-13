@@ -1,4 +1,4 @@
-; Tue Feb 12 13:06:51 PST 2019
+; Mon Apr 01 09:01:28 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -12771,7 +12771,7 @@
 
 	(description "relative contra hyponatremia")
 	(label "relative contra hyponatremia")
-	(message "Relative contraindication:  pt has ICD code for hyponatremia")
+	(message "Relative contraindication:  pt has ICD code for hyponatremia and hypoosmality; hyponatremia is a relative contraindication for thiazide diuretics.")
 	(message_type relative_contraindication)
 	(rule_in_condition [ATHENA_HTN_Dashboard_Class740007]))
 

@@ -1,4 +1,4 @@
-; Thu Nov 15 11:37:06 PST 2018
+; Mon May 06 11:24:56 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -262,6 +262,10 @@
 ([No_Drug_Rec] of  Canonical_Terms_Metaclass
 
 	(PrettyName "No Drug Recommendations"))
+
+([No_Drug_Rec_bad_drug_partner] of  Canonical_Terms_Metaclass
+
+	(PrettyName "No Drug Rec bad drug partner"))
 
 ([No_Drug_Rec_missingData] of  Canonical_Terms_Metaclass
 

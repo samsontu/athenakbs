@@ -1,4 +1,4 @@
-; Thu Mar 07 15:32:50 PST 2019
+; Thu Apr 18 13:43:52 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2357,6 +2357,10 @@
 
 	(PrettyName "Dialysis"))
 
+([Dialysis_ICD] of  Medical_Conditions_Metaclass
+
+	(PrettyName "Dialysis via ICD"))
+
 ([diarrhea] of  Medical_Conditions_Metaclass
 )
 
@@ -2482,7 +2486,13 @@
 
 ([DM_Dashboard_definig_diseases] of  Medical_Conditions_Metaclass
 
-	(PrettyName "DM Dashboard defining diseases"))
+	(label "DM equivalent disease")
+	(PrettyName "DM equivalent disease"))
+
+([DM_unspecified_type] of  Medical_Conditions_Metaclass
+
+	(label "DM unspecified type")
+	(PrettyName "DM unspecified type"))
 
 ([Dobutamine] of  Medications_Metaclass
 
@@ -3715,6 +3725,11 @@
 ([Ibuprofen] of  Medications_Metaclass
 
 	(PrettyName "ibuprofen"))
+
+([ICD_insulin_pump] of  Medical_Conditions_Metaclass
+
+	(label "ICD code for insulin pump")
+	(PrettyName "ICD code for insulin pump"))
 
 ([Idiopathic+Hypertrophic+Subaortic+Stenosis] of  Medical_Conditions_Metaclass
 
@@ -7393,6 +7408,11 @@
 ([trimethoprim] of  Medications_Metaclass
 
 	(PrettyName "trimethoprim"))
+
+([TROGLITAZONE] of  Medications_Metaclass
+
+	(label "troglitazone")
+	(PrettyName "troglitazone"))
 
 ([UGT_Inducers] of  Medications_Metaclass
 

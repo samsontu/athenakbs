@@ -1,4 +1,4 @@
-; Sat Jun 02 10:32:19 PDT 2018
+; Mon Apr 01 12:23:46 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1889,7 +1889,7 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
-(defclass Conditional_On_Screen_Message
+(defclass Conditional_On_Screen_Message "This class is deprecated"
 	(is-a On_Screen_Message)
 	(role concrete))
 
@@ -2310,7 +2310,7 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass Guideline_View
+(defclass Guideline_View "This class is deprecated."
 	(is-a USER)
 	(role concrete)
 	(multislot guideline_drugs

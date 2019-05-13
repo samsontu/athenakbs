@@ -1,4 +1,4 @@
-; Thu Mar 21 15:44:46 PDT 2019
+; Wed May 08 11:23:27 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -401,6 +401,14 @@
 	(role concrete))
 
 (defclass CVD+AND+No+Dx+DM-2+but+presence+of+DM+meds
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass Dialysis+vis+CPT+or+ICD
+	(is-a Defined+concept)
+	(role concrete))
+
+(defclass No+DM-2+and+No+DM+meds+but+has+DM+unspecified+type+or+DM+equivalent+Dx
 	(is-a Defined+concept)
 	(role concrete))
 

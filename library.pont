@@ -1,4 +1,4 @@
-; Thu Mar 07 15:32:50 PST 2019
+; Thu Apr 18 13:43:52 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -129,10 +129,6 @@
 	(is-a Oral_Hypoglycemic_Agent)
 	(role concrete))
 
-(defclass Ertugliflozin
-	(is-a SGLT2_Inhibitor)
-	(role concrete))
-
 (defclass Non_encoded_DM_drugs
 	(is-a Blood_Glucose_Regulation_Agent)
 	(role concrete))
@@ -175,6 +171,10 @@
 
 (defclass Pramlintide
 	(is-a Insulin_Adjunctive_Therapy)
+	(role concrete))
+
+(defclass Ertugliflozin
+	(is-a SGLT2_Inhibitor Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Encoded_DM_Drugs
@@ -1637,6 +1637,10 @@
 
 (defclass PIOGLITAZONE
 	(is-a THIAZOLIDINEDIONES Encoded_DM_Drugs)
+	(role concrete))
+
+(defclass TROGLITAZONE
+	(is-a THIAZOLIDINEDIONES Non_encoded_DM_drugs)
 	(role concrete))
 
 (defclass Dronedarone
@@ -3303,6 +3307,10 @@
 	(is-a CCS-3.3)
 	(role concrete))
 
+(defclass DM_unspecified_type
+	(is-a Diabetes_Mellitus)
+	(role concrete))
+
 (defclass thyroid+disorders
 	(is-a Endocrine_Diseases)
 	(role concrete))
@@ -3736,6 +3744,14 @@
 	(role concrete))
 
 (defclass Bradycardia
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass Dialysis_ICD
+	(is-a Medical_Conditions_Class)
+	(role concrete))
+
+(defclass ICD_insulin_pump
 	(is-a Medical_Conditions_Class)
 	(role concrete))
 
