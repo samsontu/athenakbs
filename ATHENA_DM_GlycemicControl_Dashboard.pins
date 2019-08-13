@@ -1,4 +1,4 @@
-; Wed May 08 11:23:27 PDT 2019
+; Tue Aug 13 01:25:46 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -4579,6 +4579,64 @@
 	(label "Abs HbA1c and Abs GlycHem past 12 months")
 	(operator AND))
 
+([ATHENA_DM_GlycemicControl_Dashboard_Class630000] of  Evaluate_Start_Activity
+
+	(activity_class "Medication")
+	(alternatives
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Instance_50026]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class471049]
+		[ATHENA_GlycemicControl_Class1110002]
+		[ATHENA_GlycemicControl_Class1070005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class504725])
+	(label "Evaluate 2nd-line drug")
+	(recommendation_basis [is_second-line_drug_for])
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class630001]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class630001] of  Query_Result_Criterion
+
+	(label "presence of increase metformin dose recommendation")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class630002]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class630002] of  Structured_Query
+
+	(label "query increase metformin dose recommendation")
+	(type Medication)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1100002]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class630003]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class630003] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "mood is increase dose")
+	(operator eq)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class630004]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class630004] of  Qualitative_Constant
+
+	(label "Recommend_Increase")
+	(value "Recommend_Increase"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class631113] of  On_Screen_Message
+
+	(label "If cannot increase metformin dose, consider 2nd-line drug")
+	(message "if the physician cannot increase the metformin dose (due to adverse effect, etc), consider adding a second-line drug.")
+	(message_type Primary_Recommendation)
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class630001]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class632224] of  Collateral_Action
+
+	(actions [ATHENA_DM_GlycemicControl_Dashboard_Class632225])
+	(mood Recommend_Increase))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class632225] of  On_Screen_Message
+
+	(label "Increase metformin dose/add drug message")
+	(message "if the dose of  metformin cannot be increased (due to adverse effect, etc), consider adding a second-line drug.")
+	(message_type Drug_Related))
+
 ([ATHENA_DM_GlycemicControl_Dashboard_Class70000] of  Query_Result_Criterion
 
 	(label "there exists bad drug partner DM med")
@@ -6288,7 +6346,10 @@
 
 ([ATHENA_GlycemicControl_Class1170843] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class210036])
+	(actions
+		[ATHENA_GlycemicControl_Class210036]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class630000]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class631113])
 	(label "Msg follow up 3 months incr dose")
 	(strict_rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class77594]))
 
@@ -17911,7 +17972,8 @@
 
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class720148]
-		[ATHENA_GlycemicControl_Instance_120001])
+		[ATHENA_GlycemicControl_Instance_120001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class632224])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Class10001]
 		[ATHENA_GlycemicControl_Class190000])
@@ -17928,7 +17990,8 @@
 	(collateral_actions
 		[ATHENA_GlycemicControl_Class741055]
 		[ATHENA_GlycemicControl_Class720148]
-		[ATHENA_GlycemicControl_Instance_120001])
+		[ATHENA_GlycemicControl_Instance_120001]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class632224])
 	(dose_level_ranges
 		[ATHENA_GlycemicControl_Instance_110002]
 		[ATHENA_GlycemicControl_Instance_110003])
