@@ -1,4 +1,4 @@
-; Tue Aug 13 01:25:46 PDT 2019
+; Thu Sep 19 13:58:49 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -4589,7 +4589,7 @@
 		[ATHENA_GlycemicControl_Class1110002]
 		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class504725])
-	(label "Evaluate 2nd-line drug")
+	(label "Presence of increase metformin dose; Evaluate 2nd-line drug")
 	(recommendation_basis [is_second-line_drug_for])
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class630001]))
 
@@ -4605,7 +4605,7 @@
 	(type Medication)
 	(where_restriction
 		[ATHENA_GlycemicControl_Class1100002]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class630003]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class642005]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class630003] of  Comparison_Filter
 
@@ -4623,7 +4623,7 @@
 
 	(label "If cannot increase metformin dose, consider 2nd-line drug")
 	(message "if the physician cannot increase the metformin dose (due to adverse effect, etc), consider adding a second-line drug.")
-	(message_type Primary_Recommendation)
+	(message_type Drug_Related)
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class630001]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class632224] of  Collateral_Action
@@ -4636,6 +4636,98 @@
 	(label "Increase metformin dose/add drug message")
 	(message "if the dose of  metformin cannot be increased (due to adverse effect, etc), consider adding a second-line drug.")
 	(message_type Drug_Related))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class642005] of  N_aryFilter
+
+	(filters
+		[ATHENA_DM_GlycemicControl_Dashboard_Class630003]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class642006])
+	(label "mood is increased dose or blocked increase")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class642006] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "mood is blocked increase")
+	(operator eq)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class642007]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class642007] of  Qualitative_Constant
+
+	(label "Blocked_Increase")
+	(value "Blocked_Increase"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643106] of  Followed_By
+
+	(%3AFROM [ATHENA_GlycemicControl_Class1210001])
+	(%3ATO [ATHENA_GlycemicControl_Class1210003]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643107] of  On_Screen_Message
+
+	(label "If cannot add metformin, consider 2nd-line drug")
+	(message "if the physician cannot add metformin (due to adverse effect, etc), consider adding a second-line drug.")
+	(message_type Drug_Related)
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class643108]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643108] of  Query_Result_Criterion
+
+	(label "presence of add metformin recommendation")
+	(presence TRUE)
+	(query [ATHENA_DM_GlycemicControl_Dashboard_Class643109]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643109] of  Structured_Query
+
+	(label "query add/blocked add metformin  recommendation")
+	(type Medication)
+	(where_restriction
+		[ATHENA_GlycemicControl_Class1100002]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class643110]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643110] of  N_aryFilter
+
+	(filters
+		[ATHENA_DM_GlycemicControl_Dashboard_Class643111]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class643113])
+	(label "mood is add or blocked add")
+	(operator OR))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643111] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "mood is recommend add")
+	(operator eq)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class643112]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643112] of  Qualitative_Constant
+
+	(label "Recommend_Add")
+	(value "Recommend_Add"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643113] of  Comparison_Filter
+
+	(attribute [mood])
+	(label "mood is Blocked_Add")
+	(operator eq)
+	(value_expression [ATHENA_DM_GlycemicControl_Dashboard_Class643114]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class643114] of  Qualitative_Constant
+
+	(label "Blocked_Add")
+	(value "Blocked_Add"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_Class644545] of  Evaluate_Start_Activity
+
+	(activity_class "Medication")
+	(alternatives
+		[ATHENA_GlycemicControl_Class60000]
+		[ATHENA_GlycemicControl_Instance_50026]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class471049]
+		[ATHENA_GlycemicControl_Class1110002]
+		[ATHENA_GlycemicControl_Class1070005]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class504725])
+	(label "Presence of add metformin; recommend 2nd-line meds")
+	(recommendation_basis [is_second-line_drug_for])
+	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class643108]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class70000] of  Query_Result_Criterion
 
@@ -6714,7 +6806,10 @@
 
 ([ATHENA_GlycemicControl_Class1210012] of  Action_Choice
 
-	(actions [ATHENA_GlycemicControl_Class210036])
+	(actions
+		[ATHENA_GlycemicControl_Class210036]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class643107]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class644545])
 	(label "MF rec F/U")
 	(strict_rule_in_condition [ATHENA_GlycemicControl_Class1210013]))
 
@@ -12713,7 +12808,8 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_Class450018]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class510004]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class510005]
-		[ATHENA_DM_GlycemicControl_Dashboard_Class510007]))
+		[ATHENA_DM_GlycemicControl_Dashboard_Class510007]
+		[ATHENA_DM_GlycemicControl_Dashboard_Class643106]))
 
 ([ATHENA_GlycemicControl_Class530002] of  Followed_By
 
