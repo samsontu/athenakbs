@@ -1,7 +1,7 @@
-; Tue Aug 15 13:57:48 PDT 2017
+; Tue Sep 24 12:21:16 PDT 2019
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
@@ -15,11 +15,11 @@
 (defclass %3AJESS-ENGINE
 	(is-a %3ASYSTEM-CLASS)
 	(role concrete)
-	(single-slot %3ASTARTUP-FILE
+	(single-slot %3ASTARTUP-EXPRESSION
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot %3ASTARTUP-EXPRESSION
+	(single-slot %3ASTARTUP-FILE
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
@@ -31,14 +31,14 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot %3AKB-SAVE
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot %3ADEFINITION
-		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 

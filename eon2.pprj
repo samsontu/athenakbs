@@ -1,4 +1,4 @@
-; Mon Apr 01 12:23:46 PDT 2019
+; Tue Sep 24 09:44:01 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -19216,6 +19216,42 @@
 ([KB_009529_Instance_557] of  Property_List
 )
 
+([KB_011094_Class830] of  Map
+
+	(entries
+		[KB_011094_Class831]
+		[KB_011094_Class832]
+		[KB_011094_Class833]
+		[KB_011094_Class834]))
+
+([KB_011094_Class831] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_011094_Class832] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_011094_Class833] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_011094_Class834] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([KB_212003_Instance_0] of  Widget
 
 	(is_hidden FALSE)
@@ -21329,42 +21365,6 @@
 	(properties
 		[eon2_ProjectKB_Instance_10717]
 		[eon2_ProjectKB_Instance_10718]))
-
-([KB_659246_Class830] of  Map
-
-	(entries
-		[KB_659246_Class831]
-		[KB_659246_Class832]
-		[KB_659246_Class833]
-		[KB_659246_Class834]))
-
-([KB_659246_Class831] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_659246_Class832] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_659246_Class833] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_659246_Class834] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([KB_721828_Instance_0] of  Property_List
 

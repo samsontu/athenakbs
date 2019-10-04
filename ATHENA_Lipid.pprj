@@ -1,7 +1,7 @@
-; Tue Aug 15 13:57:48 PDT 2017
+; Tue Sep 24 12:21:16 PDT 2019
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 ([ATHENA_Lipid_mod1_ProjectKB_Class23589] of  Boolean
 
@@ -252,7 +252,7 @@
 ([ATHENA_Lipid_ProjectKB_Class13799] of  String
 
 	(name "KnowledgeTreeTab.TOP_LEVEL_INSTANCE")
-	(string_value "NCEPATPIII_Instance_2"))
+	(string_value "NCEPATPIII_Instance_3"))
 
 ([ATHENA_Lipid_ProjectKB_Class13902] of  Widget
 
@@ -509,6 +509,966 @@
 
 ([ATHENA_Lipid_ProjectKB_Class13992] of  Property_List
 )
+
+([ATHENA_Lipid_ProjectKB_Class14845] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [ATHENA_Lipid_ProjectKB_Class14846])
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+
+([ATHENA_Lipid_ProjectKB_Class14846] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14847] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "status")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14848])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([ATHENA_Lipid_ProjectKB_Class14848] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14849] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "status")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14850])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 420))
+
+([ATHENA_Lipid_ProjectKB_Class14850] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14960] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "condition_for_being_preferred")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14961])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 1260))
+
+([ATHENA_Lipid_ProjectKB_Class14961] of  Property_List
+
+	(properties
+		[ATHENA_Lipid_ProjectKB_Class14962]
+		[ATHENA_Lipid_ProjectKB_Class14963]))
+
+([ATHENA_Lipid_ProjectKB_Class14962] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_Lipid_ProjectKB_Class14963] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_Lipid_ProjectKB_Class14964] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "is_second-line_drug_for")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14965])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 200)
+	(y 1380))
+
+([ATHENA_Lipid_ProjectKB_Class14965] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14966] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "is_first-line_drug_for")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14967])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 200)
+	(y 1260))
+
+([ATHENA_Lipid_ProjectKB_Class14967] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14968] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14969])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 0)
+	(y 1320))
+
+([ATHENA_Lipid_ProjectKB_Class14969] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14970] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(name "is_third-line_drug_for")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14971])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 400)
+	(y 1260))
+
+([ATHENA_Lipid_ProjectKB_Class14971] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14972] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Do_Not_Decrease_Dose_Conditions")
+	(property_list [ATHENA_Lipid_ProjectKB_Class14973])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 1440))
+
+([ATHENA_Lipid_ProjectKB_Class14973] of  Property_List
+)
+
+([ATHENA_Lipid_ProjectKB_Class14974] of  String
+
+	(name "Guideline_View")
+	(string_value "guideline"))
+
+([ATHENA_Lipid_ProjectKB_Class14975] of  String
+
+	(name "Supporting_Material")
+	(string_value "label"))
+
+([ATHENA_Lipid_ProjectKB_Class14976] of  String
+
+	(name "Guideline_Drug")
+	(string_value "label"))
+
+([ATHENA_Lipid_ProjectKB_Class14977] of  String
+
+	(name "10_year_CHD_risk_15_to_20")
+	(string_value "%3ANAME"))
+
+([ATHENA_Lipid_ProjectKB_Class14978] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([ATHENA_Lipid_ProjectKB_Class14979] of  Map_Entry
+
+	(key "chaoProject")
+	(key_class "java.lang.String")
+	(value "annotation_ATHENA_Lipid.pprj")
+	(value_class "java.lang.String"))
+
+([ATHENA_Lipid_ProjectKB_Class14980] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class14981]
+		[ATHENA_Lipid_ProjectKB_Class14982]))
+
+([ATHENA_Lipid_ProjectKB_Class14981] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_90012")
+	(key_class "java.lang.String")
+	(value "0 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14982] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_90011")
+	(key_class "java.lang.String")
+	(value "140 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14983] of  Map_Entry
+
+	(key "InstanceGraphWidget.NCEPATPIII_Instance_90009.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class14980")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class14984] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class14985]
+		[ATHENA_Lipid_ProjectKB_Class14986]))
+
+([ATHENA_Lipid_ProjectKB_Class14985] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210049")
+	(key_class "java.lang.String")
+	(value "70 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14986] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210053")
+	(key_class "java.lang.String")
+	(value "40 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14987] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_Lipid_Class210048.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class14984")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class14988] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class14989]
+		[ATHENA_Lipid_ProjectKB_Class14990]
+		[ATHENA_Lipid_ProjectKB_Class14991]
+		[ATHENA_Lipid_ProjectKB_Class14992]
+		[ATHENA_Lipid_ProjectKB_Class14993]
+		[ATHENA_Lipid_ProjectKB_Class14994]
+		[ATHENA_Lipid_ProjectKB_Class14995]
+		[ATHENA_Lipid_ProjectKB_Class14996]
+		[ATHENA_Lipid_ProjectKB_Class14997]
+		[ATHENA_Lipid_ProjectKB_Class14998]
+		[ATHENA_Lipid_ProjectKB_Class14999]
+		[ATHENA_Lipid_ProjectKB_Class15000]
+		[ATHENA_Lipid_ProjectKB_Class15001]
+		[ATHENA_Lipid_ProjectKB_Class15002]
+		[ATHENA_Lipid_ProjectKB_Class15003]
+		[ATHENA_Lipid_ProjectKB_Class15004]
+		[ATHENA_Lipid_ProjectKB_Class15005]
+		[ATHENA_Lipid_ProjectKB_Class15006]
+		[ATHENA_Lipid_ProjectKB_Class15007]
+		[ATHENA_Lipid_ProjectKB_Class15008]
+		[ATHENA_Lipid_ProjectKB_Class15009]
+		[ATHENA_Lipid_ProjectKB_Class15010]
+		[ATHENA_Lipid_ProjectKB_Class15011]
+		[ATHENA_Lipid_ProjectKB_Class15012]
+		[ATHENA_Lipid_ProjectKB_Class15013]
+		[ATHENA_Lipid_ProjectKB_Class15014]
+		[ATHENA_Lipid_ProjectKB_Class15015]
+		[ATHENA_Lipid_ProjectKB_Class15016]))
+
+([ATHENA_Lipid_ProjectKB_Class14989] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160252")
+	(key_class "java.lang.String")
+	(value "740 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14990] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class220002")
+	(key_class "java.lang.String")
+	(value "920 40 66 70")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14991] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class190007")
+	(key_class "java.lang.String")
+	(value "540 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14992] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class220004")
+	(key_class "java.lang.String")
+	(value "940 160 65 67")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14993] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30026")
+	(key_class "java.lang.String")
+	(value "840 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14994] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40034")
+	(key_class "java.lang.String")
+	(value "580 260 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14995] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40007")
+	(key_class "java.lang.String")
+	(value "840 400 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14996] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210013")
+	(key_class "java.lang.String")
+	(value "0 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14997] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40008")
+	(key_class "java.lang.String")
+	(value "1020 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14998] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40009")
+	(key_class "java.lang.String")
+	(value "840 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class14999] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class180000")
+	(key_class "java.lang.String")
+	(value "420 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15000] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30012")
+	(key_class "java.lang.String")
+	(value "180 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15001] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_170010")
+	(key_class "java.lang.String")
+	(value "1080 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15002] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class190017")
+	(key_class "java.lang.String")
+	(value "260 180 68 71")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15003] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class200000")
+	(key_class "java.lang.String")
+	(value "760 40 66 71")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15004] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40045")
+	(key_class "java.lang.String")
+	(value "260 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15005] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40046")
+	(key_class "java.lang.String")
+	(value "100 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15006] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class190012")
+	(key_class "java.lang.String")
+	(value "100 180 69 69")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15007] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class150000")
+	(key_class "java.lang.String")
+	(value "920 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15008] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210008")
+	(key_class "java.lang.String")
+	(value "500 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15009] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210024")
+	(key_class "java.lang.String")
+	(value "340 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15010] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210027")
+	(key_class "java.lang.String")
+	(value "760 160 65 69")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15011] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210004")
+	(key_class "java.lang.String")
+	(value "540 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15012] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class210021")
+	(key_class "java.lang.String")
+	(value "260 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15013] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40014")
+	(key_class "java.lang.String")
+	(value "940 480 84 79")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15014] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class230432")
+	(key_class "java.lang.String")
+	(value "80 300 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15015] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40017")
+	(key_class "java.lang.String")
+	(value "1180 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15016] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class220016")
+	(key_class "java.lang.String")
+	(value "1100 160 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15017] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_Lipid_Class170000.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class14988")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class15018] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class15019]
+		[ATHENA_Lipid_ProjectKB_Class15020]
+		[ATHENA_Lipid_ProjectKB_Class15021]
+		[ATHENA_Lipid_ProjectKB_Class15022]
+		[ATHENA_Lipid_ProjectKB_Class15023]
+		[ATHENA_Lipid_ProjectKB_Class15024]
+		[ATHENA_Lipid_ProjectKB_Class15025]
+		[ATHENA_Lipid_ProjectKB_Class15026]
+		[ATHENA_Lipid_ProjectKB_Class15027]
+		[ATHENA_Lipid_ProjectKB_Class15028]
+		[ATHENA_Lipid_ProjectKB_Class15029]
+		[ATHENA_Lipid_ProjectKB_Class15030]
+		[ATHENA_Lipid_ProjectKB_Class15031]
+		[ATHENA_Lipid_ProjectKB_Class15032]
+		[ATHENA_Lipid_ProjectKB_Class15035]
+		[ATHENA_Lipid_ProjectKB_Class15036]
+		[ATHENA_Lipid_ProjectKB_Class15037]
+		[ATHENA_Lipid_ProjectKB_Class15038]
+		[ATHENA_Lipid_ProjectKB_Class15039]
+		[ATHENA_Lipid_ProjectKB_Class15040]
+		[ATHENA_Lipid_ProjectKB_Class15041]
+		[ATHENA_Lipid_ProjectKB_Class15042]
+		[ATHENA_Lipid_ProjectKB_Class15043]
+		[ATHENA_Lipid_ProjectKB_Class15044]
+		[ATHENA_Lipid_ProjectKB_Class15045]
+		[ATHENA_Lipid_ProjectKB_Class15046]))
+
+([ATHENA_Lipid_ProjectKB_Class15019] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_20001")
+	(key_class "java.lang.String")
+	(value "160 220 61 67")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15020] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30026")
+	(key_class "java.lang.String")
+	(value "280 660 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15021] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40034")
+	(key_class "java.lang.String")
+	(value "580 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15022] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40057")
+	(key_class "java.lang.String")
+	(value "180 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15023] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40051")
+	(key_class "java.lang.String")
+	(value "360 480 57 64")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15024] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40053")
+	(key_class "java.lang.String")
+	(value "200 500 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15025] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_10000")
+	(key_class "java.lang.String")
+	(value "40 220 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15026] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40007")
+	(key_class "java.lang.String")
+	(value "440 720 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15027] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_10001")
+	(key_class "java.lang.String")
+	(value "480 260 80 81")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15028] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40008")
+	(key_class "java.lang.String")
+	(value "520 620 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15029] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40009")
+	(key_class "java.lang.String")
+	(value "540 740 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15030] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40003")
+	(key_class "java.lang.String")
+	(value "340 580 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15031] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40005")
+	(key_class "java.lang.String")
+	(value "40 840 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15032] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40006")
+	(key_class "java.lang.String")
+	(value "220 820 75 74")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15033] of  Map
+
+	(entries [ATHENA_Lipid_ProjectKB_Class15034]))
+
+([ATHENA_Lipid_ProjectKB_Class15034] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "146,653")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([ATHENA_Lipid_ProjectKB_Class15035] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30057")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class15033")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class15036] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30014")
+	(key_class "java.lang.String")
+	(value "20 620 93 76")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15037] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30012")
+	(key_class "java.lang.String")
+	(value "400 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15038] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_170010")
+	(key_class "java.lang.String")
+	(value "740 800 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15039] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_70076")
+	(key_class "java.lang.String")
+	(value "500 120 60 61")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15040] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30019")
+	(key_class "java.lang.String")
+	(value "180 620 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15041] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40060")
+	(key_class "java.lang.String")
+	(value "440 380 85 74")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15042] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40045")
+	(key_class "java.lang.String")
+	(value "40 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15043] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40046")
+	(key_class "java.lang.String")
+	(value "40 480 60 58")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15044] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40020")
+	(key_class "java.lang.String")
+	(value "360 920 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15045] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40014")
+	(key_class "java.lang.String")
+	(value "640 660 91 83")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15046] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40017")
+	(key_class "java.lang.String")
+	(value "660 880 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15047] of  Map_Entry
+
+	(key "InstanceGraphWidget.NCEPATPIII_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class15018")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class15048] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class15049]
+		[ATHENA_Lipid_ProjectKB_Class15050]
+		[ATHENA_Lipid_ProjectKB_Class15051]
+		[ATHENA_Lipid_ProjectKB_Class15052]
+		[ATHENA_Lipid_ProjectKB_Class15053]
+		[ATHENA_Lipid_ProjectKB_Class15054]
+		[ATHENA_Lipid_ProjectKB_Class15055]
+		[ATHENA_Lipid_ProjectKB_Class15056]
+		[ATHENA_Lipid_ProjectKB_Class15057]
+		[ATHENA_Lipid_ProjectKB_Class15058]
+		[ATHENA_Lipid_ProjectKB_Class15059]
+		[ATHENA_Lipid_ProjectKB_Class15060]
+		[ATHENA_Lipid_ProjectKB_Class15061]
+		[ATHENA_Lipid_ProjectKB_Class15062]
+		[ATHENA_Lipid_ProjectKB_Class15063]
+		[ATHENA_Lipid_ProjectKB_Class15064]
+		[ATHENA_Lipid_ProjectKB_Class15065]
+		[ATHENA_Lipid_ProjectKB_Class15066]
+		[ATHENA_Lipid_ProjectKB_Class15067]
+		[ATHENA_Lipid_ProjectKB_Class15070]
+		[ATHENA_Lipid_ProjectKB_Class15071]
+		[ATHENA_Lipid_ProjectKB_Class15072]
+		[ATHENA_Lipid_ProjectKB_Class15073]
+		[ATHENA_Lipid_ProjectKB_Class15074]
+		[ATHENA_Lipid_ProjectKB_Class15075]
+		[ATHENA_Lipid_ProjectKB_Class15076]
+		[ATHENA_Lipid_ProjectKB_Class15077]))
+
+([ATHENA_Lipid_ProjectKB_Class15049] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160252")
+	(key_class "java.lang.String")
+	(value "520 370 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15050] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_20001")
+	(key_class "java.lang.String")
+	(value "60 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15051] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30026")
+	(key_class "java.lang.String")
+	(value "140 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15052] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class130000")
+	(key_class "java.lang.String")
+	(value "60 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15053] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40034")
+	(key_class "java.lang.String")
+	(value "660 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15054] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40057")
+	(key_class "java.lang.String")
+	(value "720 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15055] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40051")
+	(key_class "java.lang.String")
+	(value "1040 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15056] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40053")
+	(key_class "java.lang.String")
+	(value "860 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15057] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_10000")
+	(key_class "java.lang.String")
+	(value "60 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15058] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40007")
+	(key_class "java.lang.String")
+	(value "200 460 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15059] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40008")
+	(key_class "java.lang.String")
+	(value "80 540 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15060] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40009")
+	(key_class "java.lang.String")
+	(value "200 560 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15061] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40005")
+	(key_class "java.lang.String")
+	(value "460 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15062] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40006")
+	(key_class "java.lang.String")
+	(value "460 200 60 54")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15063] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30014")
+	(key_class "java.lang.String")
+	(value "260 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15064] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30012")
+	(key_class "java.lang.String")
+	(value "860 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15065] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_170010")
+	(key_class "java.lang.String")
+	(value "460 560 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15066] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160253")
+	(key_class "java.lang.String")
+	(value "370 370 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15067] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_70076")
+	(key_class "java.lang.String")
+	(value "960 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15068] of  Map
+
+	(entries [ATHENA_Lipid_ProjectKB_Class15069]))
+
+([ATHENA_Lipid_ProjectKB_Class15069] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "428,338")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([ATHENA_Lipid_ProjectKB_Class15070] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_200014")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class15068")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class15071] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_30019")
+	(key_class "java.lang.String")
+	(value "260 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15072] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40060")
+	(key_class "java.lang.String")
+	(value "760 360 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15073] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40045")
+	(key_class "java.lang.String")
+	(value "720 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15074] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40046")
+	(key_class "java.lang.String")
+	(value "840 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15075] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class150000")
+	(key_class "java.lang.String")
+	(value "260 340 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15076] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40014")
+	(key_class "java.lang.String")
+	(value "340 560 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15077] of  Map_Entry
+
+	(key "NCEPATPIII_Instance_40017")
+	(key_class "java.lang.String")
+	(value "440 460 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15078] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_Lipid_Class110000.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class15048")
+	(value_class "java.util.Map"))
+
+([ATHENA_Lipid_ProjectKB_Class15079] of  Map
+
+	(entries
+		[ATHENA_Lipid_ProjectKB_Class15080]
+		[ATHENA_Lipid_ProjectKB_Class15081]
+		[ATHENA_Lipid_ProjectKB_Class15082]))
+
+([ATHENA_Lipid_ProjectKB_Class15080] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160568")
+	(key_class "java.lang.String")
+	(value "120 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15081] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160567")
+	(key_class "java.lang.String")
+	(value "280 40 98 89")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15082] of  Map_Entry
+
+	(key "ATHENA_Lipid_Class160004")
+	(key_class "java.lang.String")
+	(value "240 180 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_Lipid_ProjectKB_Class15083] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_Lipid_Class160009.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_Lipid_ProjectKB_Class15079")
+	(value_class "java.util.Map"))
 
 ([ATHENA_Lipid_ProjectKB_Class23577] of  Boolean
 
@@ -1010,9 +1970,9 @@
 	(name "subguidelines")
 	(property_list [ATHENA_Lipid_ProjectKB_Class3559])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
-	(width 200)
+	(width 250)
 	(x 0)
-	(y 430))
+	(y 550))
 
 ([ATHENA_Lipid_ProjectKB_Class3559] of  Property_List
 
@@ -1091,20 +2051,6 @@
 	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
 ([ATHENA_Lipid_ProjectKB_Class3598] of  Property_List
-)
-
-([ATHENA_Lipid_ProjectKB_Class3602] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [ATHENA_Lipid_ProjectKB_Class3603])
-	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
-	(width 480)
-	(x 0)
-	(y 550))
-
-([ATHENA_Lipid_ProjectKB_Class3603] of  Property_List
 )
 
 ([ATHENA_Lipid_ProjectKB_Class3604] of  Widget
@@ -1203,20 +2149,6 @@
 	(y 180))
 
 ([ATHENA_Lipid_ProjectKB_Class3641] of  Property_List
-)
-
-([ATHENA_Lipid_ProjectKB_Class3642] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [ATHENA_Lipid_ProjectKB_Class3643])
-	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
-	(width 200)
-	(x 0)
-	(y 540))
-
-([ATHENA_Lipid_ProjectKB_Class3643] of  Property_List
 )
 
 ([ATHENA_Lipid_ProjectKB_Class3646] of  Widget
@@ -1665,9 +2597,9 @@
 	(name "guideline_drugs")
 	(property_list [ATHENA_Lipid_ProjectKB_Class3913])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
-	(width 200)
-	(x 0)
-	(y 850))
+	(width 220)
+	(x 250)
+	(y 430))
 
 ([ATHENA_Lipid_ProjectKB_Class3913] of  Property_List
 
@@ -1692,9 +2624,9 @@
 	(name "drug_usages")
 	(property_list [ATHENA_Lipid_ProjectKB_Class3917])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
-	(width 200)
+	(width 250)
 	(x 0)
-	(y 730))
+	(y 430))
 
 ([ATHENA_Lipid_ProjectKB_Class3917] of  Property_List
 
@@ -1719,9 +2651,9 @@
 	(name "alternative_goals")
 	(property_list [ATHENA_Lipid_ProjectKB_Class43578])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
-	(width 200)
+	(width 220)
 	(x 250)
-	(y 430))
+	(y 550))
 
 ([ATHENA_Lipid_ProjectKB_Class43578] of  Property_List
 
@@ -1831,15 +2763,6 @@
 	(y 540))
 
 ([ATHENA_Lipid_ProjectKB_Class43942] of  Property_List
-)
-
-([ATHENA_Lipid_ProjectKB_Class4802] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [ATHENA_Lipid_ProjectKB_Class4803])
-	(widget_class_name "gov.va.test.opioidtesttool.TestingEnvironment"))
-
-([ATHENA_Lipid_ProjectKB_Class4803] of  Property_List
 )
 
 ([ATHENA_Lipid_ProjectKB_Class4804] of  Widget
@@ -2159,827 +3082,6 @@
 
 ([ATHENA_Lipid_ProjectKB_Class4849] of  Property_List
 )
-
-([ATHENA_Lipid_ProjectKB_Class4850] of  String
-
-	(name "Guideline_View")
-	(string_value "guideline"))
-
-([ATHENA_Lipid_ProjectKB_Class4851] of  String
-
-	(name "10_year_CHD_risk_15_to_20")
-	(string_value "%3ANAME"))
-
-([ATHENA_Lipid_ProjectKB_Class4852] of  String
-
-	(name "Supporting_Material")
-	(string_value "label"))
-
-([ATHENA_Lipid_ProjectKB_Class4853] of  Map_Entry
-
-	(key "chaoProject")
-	(key_class "java.lang.String")
-	(value "annotation_ATHENA_Lipid.pprj")
-	(value_class "java.lang.String"))
-
-([ATHENA_Lipid_ProjectKB_Class4854] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "true")
-	(value_class "java.lang.String"))
-
-([ATHENA_Lipid_ProjectKB_Class4855] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4856]
-		[ATHENA_Lipid_ProjectKB_Class4857]
-		[ATHENA_Lipid_ProjectKB_Class4858]
-		[ATHENA_Lipid_ProjectKB_Class4859]
-		[ATHENA_Lipid_ProjectKB_Class4860]
-		[ATHENA_Lipid_ProjectKB_Class4861]
-		[ATHENA_Lipid_ProjectKB_Class4862]
-		[ATHENA_Lipid_ProjectKB_Class4863]
-		[ATHENA_Lipid_ProjectKB_Class4864]
-		[ATHENA_Lipid_ProjectKB_Class4865]
-		[ATHENA_Lipid_ProjectKB_Class4866]
-		[ATHENA_Lipid_ProjectKB_Class4867]
-		[ATHENA_Lipid_ProjectKB_Class4868]
-		[ATHENA_Lipid_ProjectKB_Class4869]
-		[ATHENA_Lipid_ProjectKB_Class4870]
-		[ATHENA_Lipid_ProjectKB_Class4871]
-		[ATHENA_Lipid_ProjectKB_Class4872]
-		[ATHENA_Lipid_ProjectKB_Class4873]
-		[ATHENA_Lipid_ProjectKB_Class4874]
-		[ATHENA_Lipid_ProjectKB_Class4875]
-		[ATHENA_Lipid_ProjectKB_Class4876]
-		[ATHENA_Lipid_ProjectKB_Class4877]
-		[ATHENA_Lipid_ProjectKB_Class4878]
-		[ATHENA_Lipid_ProjectKB_Class4879]
-		[ATHENA_Lipid_ProjectKB_Class4880]
-		[ATHENA_Lipid_ProjectKB_Class4881]
-		[ATHENA_Lipid_ProjectKB_Class4882]
-		[ATHENA_Lipid_ProjectKB_Class4883]))
-
-([ATHENA_Lipid_ProjectKB_Class4856] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class190012")
-	(key_class "java.lang.String")
-	(value "380 180 69 69")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4857] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40034")
-	(key_class "java.lang.String")
-	(value "180 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4858] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210027")
-	(key_class "java.lang.String")
-	(value "760 160 65 69")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4859] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210024")
-	(key_class "java.lang.String")
-	(value "640 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4860] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class190017")
-	(key_class "java.lang.String")
-	(value "540 180 68 71")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4861] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210004")
-	(key_class "java.lang.String")
-	(value "120 40 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4862] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210021")
-	(key_class "java.lang.String")
-	(value "540 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4863] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210008")
-	(key_class "java.lang.String")
-	(value "100 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4864] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class220016")
-	(key_class "java.lang.String")
-	(value "1100 160 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4865] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40007")
-	(key_class "java.lang.String")
-	(value "840 400 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4866] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40008")
-	(key_class "java.lang.String")
-	(value "1020 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4867] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40009")
-	(key_class "java.lang.String")
-	(value "840 500 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4868] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class200000")
-	(key_class "java.lang.String")
-	(value "760 20 66 71")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4869] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class190007")
-	(key_class "java.lang.String")
-	(value "120 160 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4870] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class180000")
-	(key_class "java.lang.String")
-	(value "20 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4871] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class220004")
-	(key_class "java.lang.String")
-	(value "940 160 65 67")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4872] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160252")
-	(key_class "java.lang.String")
-	(value "740 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4873] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30012")
-	(key_class "java.lang.String")
-	(value "300 320 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4874] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class220002")
-	(key_class "java.lang.String")
-	(value "900 20 66 70")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4875] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40045")
-	(key_class "java.lang.String")
-	(value "540 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4876] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210013")
-	(key_class "java.lang.String")
-	(value "420 320 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4877] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40046")
-	(key_class "java.lang.String")
-	(value "380 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4878] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class150000")
-	(key_class "java.lang.String")
-	(value "920 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4879] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30026")
-	(key_class "java.lang.String")
-	(value "840 300 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4880] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_170010")
-	(key_class "java.lang.String")
-	(value "1080 500 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4881] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class230432")
-	(key_class "java.lang.String")
-	(value "480 400 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4882] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40017")
-	(key_class "java.lang.String")
-	(value "1160 420 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4883] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40014")
-	(key_class "java.lang.String")
-	(value "940 480 84 79")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4884] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_Lipid_Class170000.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4855")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4885] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4886]
-		[ATHENA_Lipid_ProjectKB_Class4887]
-		[ATHENA_Lipid_ProjectKB_Class4888]
-		[ATHENA_Lipid_ProjectKB_Class4889]
-		[ATHENA_Lipid_ProjectKB_Class4890]
-		[ATHENA_Lipid_ProjectKB_Class4891]
-		[ATHENA_Lipid_ProjectKB_Class4892]
-		[ATHENA_Lipid_ProjectKB_Class4893]
-		[ATHENA_Lipid_ProjectKB_Class4894]
-		[ATHENA_Lipid_ProjectKB_Class4895]
-		[ATHENA_Lipid_ProjectKB_Class4896]
-		[ATHENA_Lipid_ProjectKB_Class4897]
-		[ATHENA_Lipid_ProjectKB_Class4898]
-		[ATHENA_Lipid_ProjectKB_Class4899]
-		[ATHENA_Lipid_ProjectKB_Class4900]
-		[ATHENA_Lipid_ProjectKB_Class4901]
-		[ATHENA_Lipid_ProjectKB_Class4902]
-		[ATHENA_Lipid_ProjectKB_Class4903]
-		[ATHENA_Lipid_ProjectKB_Class4904]
-		[ATHENA_Lipid_ProjectKB_Class4907]
-		[ATHENA_Lipid_ProjectKB_Class4908]
-		[ATHENA_Lipid_ProjectKB_Class4909]
-		[ATHENA_Lipid_ProjectKB_Class4910]
-		[ATHENA_Lipid_ProjectKB_Class4911]
-		[ATHENA_Lipid_ProjectKB_Class4912]
-		[ATHENA_Lipid_ProjectKB_Class4913]))
-
-([ATHENA_Lipid_ProjectKB_Class4886] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40034")
-	(key_class "java.lang.String")
-	(value "580 500 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4887] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40051")
-	(key_class "java.lang.String")
-	(value "360 480 57 64")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4888] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40053")
-	(key_class "java.lang.String")
-	(value "200 500 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4889] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40057")
-	(key_class "java.lang.String")
-	(value "180 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4890] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30019")
-	(key_class "java.lang.String")
-	(value "180 620 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4891] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40003")
-	(key_class "java.lang.String")
-	(value "340 580 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4892] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40005")
-	(key_class "java.lang.String")
-	(value "40 840 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4893] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_10001")
-	(key_class "java.lang.String")
-	(value "480 260 80 81")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4894] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40006")
-	(key_class "java.lang.String")
-	(value "220 820 75 74")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4895] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_10000")
-	(key_class "java.lang.String")
-	(value "40 220 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4896] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40007")
-	(key_class "java.lang.String")
-	(value "440 720 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4897] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40008")
-	(key_class "java.lang.String")
-	(value "520 620 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4898] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40009")
-	(key_class "java.lang.String")
-	(value "540 740 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4899] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40060")
-	(key_class "java.lang.String")
-	(value "440 380 85 74")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4900] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40020")
-	(key_class "java.lang.String")
-	(value "360 920 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4901] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30014")
-	(key_class "java.lang.String")
-	(value "20 620 93 76")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4902] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30012")
-	(key_class "java.lang.String")
-	(value "400 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4903] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40045")
-	(key_class "java.lang.String")
-	(value "40 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4904] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40046")
-	(key_class "java.lang.String")
-	(value "40 480 60 58")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4905] of  Map
-
-	(entries [ATHENA_Lipid_ProjectKB_Class4906]))
-
-([ATHENA_Lipid_ProjectKB_Class4906] of  Map_Entry
-
-	(key "1")
-	(key_class "java.lang.String")
-	(value "146,653")
-	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
-
-([ATHENA_Lipid_ProjectKB_Class4907] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30057")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4905")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4908] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30026")
-	(key_class "java.lang.String")
-	(value "280 660 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4909] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_170010")
-	(key_class "java.lang.String")
-	(value "740 800 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4910] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_70076")
-	(key_class "java.lang.String")
-	(value "500 120 60 61")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4911] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_20001")
-	(key_class "java.lang.String")
-	(value "160 220 61 67")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4912] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40017")
-	(key_class "java.lang.String")
-	(value "660 880 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4913] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40014")
-	(key_class "java.lang.String")
-	(value "640 660 91 83")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4914] of  Map_Entry
-
-	(key "InstanceGraphWidget.NCEPATPIII_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4885")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4915] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4916]
-		[ATHENA_Lipid_ProjectKB_Class4917]
-		[ATHENA_Lipid_ProjectKB_Class4918]))
-
-([ATHENA_Lipid_ProjectKB_Class4916] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160004")
-	(key_class "java.lang.String")
-	(value "240 180 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4917] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160567")
-	(key_class "java.lang.String")
-	(value "280 40 98 89")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4918] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160568")
-	(key_class "java.lang.String")
-	(value "120 140 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4919] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_Lipid_Class160009.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4915")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4920] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4921]
-		[ATHENA_Lipid_ProjectKB_Class4922]))
-
-([ATHENA_Lipid_ProjectKB_Class4921] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210053")
-	(key_class "java.lang.String")
-	(value "40 160 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4922] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class210049")
-	(key_class "java.lang.String")
-	(value "70 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4923] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_Lipid_Class210048.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4920")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4924] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4925]
-		[ATHENA_Lipid_ProjectKB_Class4926]
-		[ATHENA_Lipid_ProjectKB_Class4927]
-		[ATHENA_Lipid_ProjectKB_Class4928]
-		[ATHENA_Lipid_ProjectKB_Class4929]
-		[ATHENA_Lipid_ProjectKB_Class4930]
-		[ATHENA_Lipid_ProjectKB_Class4931]
-		[ATHENA_Lipid_ProjectKB_Class4932]
-		[ATHENA_Lipid_ProjectKB_Class4933]
-		[ATHENA_Lipid_ProjectKB_Class4934]
-		[ATHENA_Lipid_ProjectKB_Class4935]
-		[ATHENA_Lipid_ProjectKB_Class4938]
-		[ATHENA_Lipid_ProjectKB_Class4939]
-		[ATHENA_Lipid_ProjectKB_Class4940]
-		[ATHENA_Lipid_ProjectKB_Class4941]
-		[ATHENA_Lipid_ProjectKB_Class4942]
-		[ATHENA_Lipid_ProjectKB_Class4943]
-		[ATHENA_Lipid_ProjectKB_Class4944]
-		[ATHENA_Lipid_ProjectKB_Class4945]
-		[ATHENA_Lipid_ProjectKB_Class4946]
-		[ATHENA_Lipid_ProjectKB_Class4947]
-		[ATHENA_Lipid_ProjectKB_Class4948]
-		[ATHENA_Lipid_ProjectKB_Class4949]
-		[ATHENA_Lipid_ProjectKB_Class4950]
-		[ATHENA_Lipid_ProjectKB_Class4951]
-		[ATHENA_Lipid_ProjectKB_Class4952]
-		[ATHENA_Lipid_ProjectKB_Class4953]))
-
-([ATHENA_Lipid_ProjectKB_Class4925] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40034")
-	(key_class "java.lang.String")
-	(value "660 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4926] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40051")
-	(key_class "java.lang.String")
-	(value "1040 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4927] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40053")
-	(key_class "java.lang.String")
-	(value "860 200 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4928] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40057")
-	(key_class "java.lang.String")
-	(value "720 200 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4929] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30019")
-	(key_class "java.lang.String")
-	(value "260 200 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4930] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40005")
-	(key_class "java.lang.String")
-	(value "460 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4931] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40006")
-	(key_class "java.lang.String")
-	(value "460 200 60 54")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4932] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_10000")
-	(key_class "java.lang.String")
-	(value "60 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4933] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40007")
-	(key_class "java.lang.String")
-	(value "200 460 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4934] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40008")
-	(key_class "java.lang.String")
-	(value "80 540 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4935] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40009")
-	(key_class "java.lang.String")
-	(value "200 560 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4936] of  Map
-
-	(entries [ATHENA_Lipid_ProjectKB_Class4937]))
-
-([ATHENA_Lipid_ProjectKB_Class4937] of  Map_Entry
-
-	(key "1")
-	(key_class "java.lang.String")
-	(value "428,338")
-	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
-
-([ATHENA_Lipid_ProjectKB_Class4938] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_200014")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4936")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4939] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40060")
-	(key_class "java.lang.String")
-	(value "760 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4940] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30014")
-	(key_class "java.lang.String")
-	(value "260 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4941] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160252")
-	(key_class "java.lang.String")
-	(value "520 370 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4942] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30012")
-	(key_class "java.lang.String")
-	(value "860 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4943] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class130000")
-	(key_class "java.lang.String")
-	(value "60 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4944] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40045")
-	(key_class "java.lang.String")
-	(value "720 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4945] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40046")
-	(key_class "java.lang.String")
-	(value "840 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4946] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class150000")
-	(key_class "java.lang.String")
-	(value "260 340 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4947] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_30026")
-	(key_class "java.lang.String")
-	(value "140 340 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4948] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_170010")
-	(key_class "java.lang.String")
-	(value "460 560 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4949] of  Map_Entry
-
-	(key "ATHENA_Lipid_Class160253")
-	(key_class "java.lang.String")
-	(value "370 370 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4950] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_70076")
-	(key_class "java.lang.String")
-	(value "960 360 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4951] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_20001")
-	(key_class "java.lang.String")
-	(value "60 200 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4952] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40017")
-	(key_class "java.lang.String")
-	(value "440 460 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4953] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_40014")
-	(key_class "java.lang.String")
-	(value "340 560 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4954] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_Lipid_Class110000.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4924")
-	(value_class "java.util.Map"))
-
-([ATHENA_Lipid_ProjectKB_Class4955] of  Map
-
-	(entries
-		[ATHENA_Lipid_ProjectKB_Class4956]
-		[ATHENA_Lipid_ProjectKB_Class4957]))
-
-([ATHENA_Lipid_ProjectKB_Class4956] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_90011")
-	(key_class "java.lang.String")
-	(value "140 40 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4957] of  Map_Entry
-
-	(key "NCEPATPIII_Instance_90012")
-	(key_class "java.lang.String")
-	(value "0 120 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_Lipid_ProjectKB_Class4958] of  Map_Entry
-
-	(key "InstanceGraphWidget.NCEPATPIII_Instance_90009.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_Lipid_ProjectKB_Class4955")
-	(value_class "java.util.Map"))
 
 ([ATHENA_Lipid_ProjectKB_Class53676] of  Property_List
 )
@@ -3481,7 +3583,7 @@
 
 ([ATP3Demo_ProjectKB_Instance_3027] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(property_list [ATP3Demo_ProjectKB_Instance_3028])
 	(widget_class_name "script.ProtegeScriptTab"))
 
@@ -3490,7 +3592,7 @@
 
 ([ATP3Demo_ProjectKB_Instance_3029] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(property_list [ATP3Demo_ProjectKB_Instance_3030])
 	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
 
@@ -3544,7 +3646,7 @@
 
 ([ATP3Demo_ProjectKB_Instance_3047] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(property_list [ATP3Demo_ProjectKB_Instance_3048])
 	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
 
@@ -3662,9 +3764,10 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ATHENA_Lipid_ProjectKB_Class4850]
-		[ATHENA_Lipid_ProjectKB_Class4851]
-		[ATHENA_Lipid_ProjectKB_Class4852]))
+		[ATHENA_Lipid_ProjectKB_Class14974]
+		[ATHENA_Lipid_ProjectKB_Class14975]
+		[ATHENA_Lipid_ProjectKB_Class14976]
+		[ATHENA_Lipid_ProjectKB_Class14977]))
 
 ([CLSES_TAB] of  Widget
 
@@ -5633,7 +5736,6 @@
 		[KB_005731_Class1497]
 		[KB_005731_Class1500]
 		[ATHENA_Lipid_ProjectKB_Class4804]
-		[ATHENA_Lipid_ProjectKB_Class4806]
 		[ATHENA_Lipid_ProjectKB_Class4808]
 		[ATHENA_Lipid_ProjectKB_Class4810]
 		[ATHENA_Lipid_ProjectKB_Class4812]
@@ -5650,7 +5752,13 @@
 		[ATHENA_Lipid_ProjectKB_Class4840]
 		[ATHENA_Lipid_ProjectKB_Class4842]
 		[ATHENA_Lipid_ProjectKB_Class4844]
-		[ATHENA_Lipid_ProjectKB_Class4848]))
+		[ATHENA_Lipid_ProjectKB_Class4848]
+		[ATHENA_Lipid_ProjectKB_Class14960]
+		[ATHENA_Lipid_ProjectKB_Class14964]
+		[ATHENA_Lipid_ProjectKB_Class14966]
+		[ATHENA_Lipid_ProjectKB_Class14968]
+		[ATHENA_Lipid_ProjectKB_Class14970]
+		[ATHENA_Lipid_ProjectKB_Class14972]))
 
 ([KB_005731_Class1422] of  Widget
 
@@ -6865,8 +6973,7 @@
 		[KB_005731_Class1836]
 		[KB_005731_Class1841]
 		[KB_005731_Class1846]
-		[KB_005731_Class1848]
-		[ATHENA_Lipid_ProjectKB_Class3762]))
+		[KB_005731_Class1848]))
 
 ([KB_005731_Class1823] of  Property_List
 
@@ -8538,13 +8645,10 @@
 
 	(properties
 		[KB_005731_Class2565]
-		[KB_005731_Class2568]
 		[KB_005731_Class2570]
-		[KB_005731_Class2572]
 		[KB_005731_Class2574]
 		[KB_005731_Class2719]
-		[KB_005731_Class2721]
-		[ATHENA_Lipid_ProjectKB_Class3739]))
+		[KB_005731_Class2721]))
 
 ([KB_005731_Class2565] of  Property_List
 
@@ -14186,135 +14290,6 @@
 ([KB_239200_Instance_876] of  Property_List
 )
 
-([KB_383088_Class4783] of  Map
-
-	(entries
-		[KB_383088_Class4784]
-		[KB_383088_Class4785]
-		[KB_383088_Class4786]
-		[KB_383088_Class4787]
-		[KB_383088_Class4788]
-		[KB_383088_Class4790]
-		[KB_383088_Class4791]
-		[KB_383088_Class4792]
-		[KB_383088_Class4794]
-		[KB_383088_Class4796]
-		[KB_383088_Class4798]
-		[KB_383088_Class4800]
-		[KB_383088_Class4801])
-	(referenced_maps
-		[KB_383088_Class4797]
-		[KB_383088_Class4789]
-		[KB_383088_Class4799]
-		[KB_383088_Class4793]
-		[KB_383088_Class4795]))
-
-([KB_383088_Class4784] of  Map_Entry
-
-	(key "collab.hide.archived")
-	(key_class "java.lang.String")
-	(value "true")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4785] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4786] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4787] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4788] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4789] of  Map
-)
-
-([KB_383088_Class4790] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_383088_Class4789")
-	(value_class "java.util.Map"))
-
-([KB_383088_Class4791] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_383088_Class4792] of  Map_Entry
-
-	(key "show_collaboration_panel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.Boolean"))
-
-([KB_383088_Class4793] of  Map
-)
-
-([KB_383088_Class4794] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "KB_383088_Class4793")
-	(value_class "java.util.Map"))
-
-([KB_383088_Class4795] of  Map
-)
-
-([KB_383088_Class4796] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_383088_Class4795")
-	(value_class "java.util.Map"))
-
-([KB_383088_Class4797] of  Map
-)
-
-([KB_383088_Class4798] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_383088_Class4797")
-	(value_class "java.util.Map"))
-
-([KB_383088_Class4799] of  Map
-)
-
-([KB_383088_Class4800] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_383088_Class4799")
-	(value_class "java.util.Map"))
-
-([KB_383088_Class4801] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
 ([KB_436207_Instance_364] of  Widget
 
 	(height 300)
@@ -15166,6 +15141,135 @@
 ([KB_446378_Instance_9] of  Property_List
 )
 
+([KB_497967_Class4826] of  Map
+
+	(entries
+		[KB_497967_Class4828]
+		[KB_497967_Class4829]
+		[KB_497967_Class4830]
+		[KB_497967_Class4831]
+		[KB_497967_Class4833]
+		[KB_497967_Class4834]
+		[KB_497967_Class4836]
+		[KB_497967_Class4837]
+		[KB_497967_Class4839]
+		[KB_497967_Class4840]
+		[KB_497967_Class4841]
+		[KB_497967_Class4843]
+		[KB_497967_Class4844])
+	(referenced_maps
+		[KB_497967_Class4842]
+		[KB_497967_Class4832]
+		[KB_497967_Class4835]
+		[KB_497967_Class4827]
+		[KB_497967_Class4838]))
+
+([KB_497967_Class4827] of  Map
+)
+
+([KB_497967_Class4828] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_497967_Class4827")
+	(value_class "java.util.Map"))
+
+([KB_497967_Class4829] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4830] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4831] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4832] of  Map
+)
+
+([KB_497967_Class4833] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_497967_Class4832")
+	(value_class "java.util.Map"))
+
+([KB_497967_Class4834] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4835] of  Map
+)
+
+([KB_497967_Class4836] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_497967_Class4835")
+	(value_class "java.util.Map"))
+
+([KB_497967_Class4837] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4838] of  Map
+)
+
+([KB_497967_Class4839] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_497967_Class4838")
+	(value_class "java.util.Map"))
+
+([KB_497967_Class4840] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_497967_Class4841] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([KB_497967_Class4842] of  Map
+)
+
+([KB_497967_Class4843] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_497967_Class4842")
+	(value_class "java.util.Map"))
+
+([KB_497967_Class4844] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([KB_576555_Instance_0] of  Property_List
 
 	(name "class widget properties")
@@ -15737,7 +15841,6 @@
 		[ATP3Demo_ProjectKB_Instance_2131]
 		[ATHENA_Lipid_ProjectKB_Class3558]
 		[ATHENA_Lipid_ProjectKB_Class43577]
-		[ATHENA_Lipid_ProjectKB_Class3856]
 		[ATHENA_Lipid_ProjectKB_Class3912]
 		[ATHENA_Lipid_ProjectKB_Class3916]))
 
@@ -16451,23 +16554,23 @@
 ([NCEPATPIII_ProjectKB_Instance_11779] of  Map
 
 	(entries
-		[ATHENA_Lipid_ProjectKB_Class4853]
-		[ATHENA_Lipid_ProjectKB_Class4854]
-		[ATHENA_Lipid_ProjectKB_Class4884]
-		[ATHENA_Lipid_ProjectKB_Class4914]
-		[ATHENA_Lipid_ProjectKB_Class4919]
-		[ATHENA_Lipid_ProjectKB_Class4923]
-		[ATHENA_Lipid_ProjectKB_Class4954]
-		[ATHENA_Lipid_ProjectKB_Class4958])
+		[ATHENA_Lipid_ProjectKB_Class14978]
+		[ATHENA_Lipid_ProjectKB_Class14979]
+		[ATHENA_Lipid_ProjectKB_Class14983]
+		[ATHENA_Lipid_ProjectKB_Class14987]
+		[ATHENA_Lipid_ProjectKB_Class15017]
+		[ATHENA_Lipid_ProjectKB_Class15047]
+		[ATHENA_Lipid_ProjectKB_Class15078]
+		[ATHENA_Lipid_ProjectKB_Class15083])
 	(referenced_maps
-		[ATHENA_Lipid_ProjectKB_Class4885]
-		[ATHENA_Lipid_ProjectKB_Class4955]
-		[ATHENA_Lipid_ProjectKB_Class4936]
-		[ATHENA_Lipid_ProjectKB_Class4905]
-		[ATHENA_Lipid_ProjectKB_Class4924]
-		[ATHENA_Lipid_ProjectKB_Class4915]
-		[ATHENA_Lipid_ProjectKB_Class4920]
-		[ATHENA_Lipid_ProjectKB_Class4855]))
+		[ATHENA_Lipid_ProjectKB_Class15048]
+		[ATHENA_Lipid_ProjectKB_Class14984]
+		[ATHENA_Lipid_ProjectKB_Class15018]
+		[ATHENA_Lipid_ProjectKB_Class15033]
+		[ATHENA_Lipid_ProjectKB_Class14980]
+		[ATHENA_Lipid_ProjectKB_Class15068]
+		[ATHENA_Lipid_ProjectKB_Class15079]
+		[ATHENA_Lipid_ProjectKB_Class14988]))
 
 ([NCEPATPIII_ProjectKB_Instance_12337] of  Property_List
 )
@@ -16917,7 +17020,7 @@
 
 ([NCEPATPIII_ProjectKB_Instance_1602] of  Widget
 
-	(is_hidden FALSE)
+	(is_hidden TRUE)
 	(property_list [NCEPATPIII_ProjectKB_Instance_1603])
 	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
 
@@ -16992,7 +17095,8 @@
 		[NCEPATPIII_ProjectKB_Instance_2362]
 		[NCEPATPIII_ProjectKB_Instance_2364]
 		[NCEPATPIII_ProjectKB_Instance_2366]
-		[ATHENA_Lipid_ProjectKB_Class3623]))
+		[ATHENA_Lipid_ProjectKB_Class3623]
+		[ATHENA_Lipid_ProjectKB_Class14847]))
 
 ([NCEPATPIII_ProjectKB_Instance_2343] of  Property_List
 
@@ -17189,7 +17293,7 @@
 		[NCEPATPIII_ProjectKB_Instance_12393]
 		[NCEPATPIII_ProjectKB_Instance_12358]
 		[ATHENA_Lipid_ProjectKB_Class3657]
-		[ATHENA_Lipid_ProjectKB_Class13902]))
+		[ATHENA_Lipid_ProjectKB_Class14849]))
 
 ([NCEPATPIII_ProjectKB_Instance_2372] of  Property_List
 
@@ -17968,94 +18072,93 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[KB_005731_Class709]
-		[PAL_FORM_WIDGET]
-		[KB_005731_Class2894]
-		[KB_005731_Class762]
-		[KB_960325_Instance_1230]
-		[NCEPATPIII_ProjectKB_Instance_32452]
-		[KB_005731_Class2967]
-		[KB_005731_Class943]
-		[KB_005731_Class3064]
-		[KB_436207_Instance_785]
-		[KB_005731_Class1023]
-		[KB_005731_Class1040]
-		[STANDARD_FACET_FORM_WIDGET]
-		[KB_005731_Class1118]
-		[KB_005731_Class1152]
 		[STANDARD_CLASS_FORM_WIDGET]
-		[KB_239200_Instance_860]
-		[KB_239200_Instance_1249]
-		[KB_005731_Class1357]
-		[KB_005731_Class1382]
-		[KB_239200_Instance_1197]
-		[KB_005731_Class3417]
-		[KB_005731_Class2795]
-		[NCEPATPIII_ProjectKB_Instance_1537]
-		[KB_436207_Instance_407]
-		[KB_239200_Instance_2246]
-		[KB_005731_Class1821]
-		[KB_005731_Class1868]
 		[STANDARD_SLOT_FORM_WIDGET]
-		[NCEPATPIIInew_ProjectKB_Instance_32730]
-		[KB_005731_Class1963]
-		[KB_239200_Instance_2092]
-		[KB_446378_Instance_0]
-		[KB_005731_Class3129]
-		[KB_581380_Instance_1103]
-		[KB_005731_Class3231]
-		[KB_436207_Instance_722]
-		[KB_005731_Class2382]
-		[KB_005731_Class2417]
-		[KB_239200_Instance_1236]
-		[KB_005731_Class2466]
-		[KB_005731_Class2498]
-		[KB_005731_Class2563]
-		[KB_005731_Class3444]
-		[KB_005731_Class3478]
-		[KB_239200_Instance_1849]
-		[KB_005731_Class670]
-		[KB_005731_Class742]
-		[KB_005731_Class777]
-		[KB_005731_Class2928]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_005731_Class934]
-		[KB_005731_Class3051]
 		[KB_005731_Class334]
-		[KB_239200_Instance_1331]
-		[KB_005731_Class1198]
-		[KB_005731_Class1235]
-		[KB_005731_Class1293]
-		[KB_239200_Instance_1798]
-		[NCEPATPIII_ProjectKB_Instance_2339]
-		[KB_005731_Class3396]
-		[KB_005731_Class1420]
-		[KB_239200_Instance_2056]
-		[KB_005731_Class3412]
-		[KB_005731_Class3469]
+		[KB_239200_Instance_2246]
+		[KB_005731_Class3051]
 		[KB_239200_Instance_1268]
-		[KB_005731_Class1615]
-		[KB_005731_Class1668]
-		[KB_005731_Class1655]
-		[NCEPATPIII_ProjectKB_Instance_2368]
-		[KB_005731_Class2905]
-		[NCEPATPIII_ProjectKB_Instance_22404]
-		[KB_005731_Class2962]
-		[KB_005731_Class3014]
-		[KB_005731_Class3031]
-		[KB_005731_Class2060]
-		[KB_436207_Instance_364]
-		[NCEPATPIII_ProjectKB_Instance_11615]
-		[KB_005731_Class3177]
-		[NCEPATPIII_ProjectKB_Instance_11662]
+		[NCEPATPIIInew_ProjectKB_Instance_32730]
+		[NCEPATPIII_ProjectKB_Instance_1537]
+		[KB_005731_Class2382]
 		[KB_005731_Class2316]
 		[KB_005731_Class2402]
-		[KB_780457_Instance_1823]
-		[KB_005731_Class3334]
-		[KB_005731_Class3339]
-		[KB_005731_Class3405]
+		[KB_005731_Class2466]
+		[KB_005731_Class3231]
+		[KB_005731_Class1868]
+		[KB_446378_Instance_0]
+		[KB_005731_Class2060]
+		[KB_005731_Class3417]
+		[KB_005731_Class1235]
+		[KB_005731_Class934]
+		[KB_005731_Class2928]
+		[KB_005731_Class2498]
+		[STANDARD_FACET_FORM_WIDGET]
+		[KB_005731_Class3129]
+		[KB_005731_Class1293]
+		[KB_005731_Class2417]
+		[KB_005731_Class1821]
+		[NCEPATPIII_ProjectKB_Instance_2339]
+		[KB_005731_Class3064]
 		[NCEPATPIII_ProjectKB_Instance_1524]
-		[KB_115003_Instance_592])
+		[NCEPATPIII_ProjectKB_Instance_32452]
+		[KB_005731_Class3396]
+		[KB_005731_Class2905]
+		[KB_239200_Instance_1849]
+		[KB_581380_Instance_1103]
+		[KB_005731_Class777]
+		[KB_239200_Instance_1249]
+		[KB_005731_Class2795]
+		[KB_005731_Class3177]
+		[NCEPATPIII_ProjectKB_Instance_2368]
+		[KB_960325_Instance_1230]
+		[KB_005731_Class1382]
+		[NCEPATPIII_ProjectKB_Instance_11615]
+		[KB_239200_Instance_1798]
+		[KB_780457_Instance_1823]
+		[KB_005731_Class3405]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[KB_005731_Class1420]
+		[PAL_FORM_WIDGET]
+		[KB_005731_Class3031]
+		[KB_005731_Class3478]
+		[KB_239200_Instance_1331]
+		[KB_436207_Instance_407]
+		[KB_005731_Class1040]
+		[KB_005731_Class709]
+		[KB_436207_Instance_722]
+		[KB_436207_Instance_785]
+		[KB_436207_Instance_364]
+		[KB_005731_Class762]
+		[KB_239200_Instance_1197]
+		[KB_239200_Instance_860]
+		[KB_005731_Class1357]
+		[KB_239200_Instance_1236]
+		[KB_005731_Class1198]
+		[KB_005731_Class3469]
+		[KB_005731_Class1023]
+		[KB_005731_Class1615]
+		[KB_005731_Class3014]
+		[KB_005731_Class1668]
+		[KB_005731_Class2962]
+		[NCEPATPIII_ProjectKB_Instance_11662]
+		[KB_005731_Class1655]
+		[KB_005731_Class1152]
+		[KB_005731_Class2894]
+		[KB_005731_Class3334]
+		[KB_005731_Class2563]
+		[KB_005731_Class943]
+		[KB_115003_Instance_592]
+		[KB_005731_Class1963]
+		[KB_005731_Class670]
+		[KB_005731_Class3339]
+		[KB_239200_Instance_2056]
+		[KB_005731_Class2967]
+		[KB_239200_Instance_2092]
+		[NCEPATPIII_ProjectKB_Instance_22404]
+		[KB_005731_Class3444]
+		[KB_005731_Class742]
+		[KB_005731_Class3412])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -18075,6 +18178,7 @@
 	(property_map [NCEPATPIII_ProjectKB_Instance_11779])
 	(sources [SOURCES])
 	(tabs
+		[NCEPATPIII_ProjectKB_Instance_2378]
 		[NCEPATPIII_ProjectKB_Instance_1602]
 		[NCEPATPIII_ProjectKB_Instance_1590]
 		[CLSES_TAB]
@@ -18084,12 +18188,10 @@
 		[FORMS_TAB]
 		[ATP3Demo_ProjectKB_Instance_3043]
 		[ATP3Demo_ProjectKB_Instance_3029]
-		[NCEPATPIII_ProjectKB_Instance_2378]
 		[ATP3Demo_ProjectKB_Instance_3027]
-		[ATHENA_Lipid_ProjectKB_Class3595]
+		[QUERIES_TAB]
 		[ATHENA_Lipid_ProjectKB_Class3591]
 		[ATP3Demo_ProjectKB_Instance_3035]
-		[ATP3Demo_ProjectKB_Instance_3053]
 		[ATP3Demo_ProjectKB_Instance_3059]
 		[ATP3Demo_ProjectKB_Instance_3063]
 		[NCEPATPIII_ProjectKB_Instance_2384]
@@ -18104,22 +18206,20 @@
 		[NCEPATPIII_ProjectKB_Instance_2390]
 		[NCEPATPIII_ProjectKB_Instance_2382]
 		[ATP3Demo_ProjectKB_Instance_3051]
-		[QUERIES_TAB]
 		[ATHENA_Lipid_ProjectKB_Class3593]
-		[ATHENA_Lipid_ProjectKB_Class3589]
-		[ATP3Demo_ProjectKB_Instance_3073]
 		[ATHENA_Lipid_ProjectKB_Class3597]
 		[ATHENA_Lipid_ProjectKB_Class3910]
+		[ATP3Demo_ProjectKB_Instance_3053]
 		[ATP3Demo_ProjectKB_Instance_3069]
 		[ATHENA_Lipid_ProjectKB_Class3902]
-		[ATHENA_Lipid_ProjectKB_Class3583]
+		[ATHENA_Lipid_ProjectKB_Class14845]
 		[ATP3Demo_ProjectKB_Instance_3065]
 		[ATP3Demo_ProjectKB_Instance_3061]
 		[ATP3Demo_ProjectKB_Instance_3033]
 		[ATP3Demo_ProjectKB_Instance_3049]
 		[ATP3Demo_ProjectKB_Instance_3077]
 		[ATP3Demo_ProjectKB_Instance_3041]
-		[ATHENA_Lipid_ProjectKB_Class3906]))
+		[ATP3Demo_ProjectKB_Instance_3073]))
 
 ([QUERIES_TAB] of  Widget
 

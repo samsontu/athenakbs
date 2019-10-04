@@ -1,124 +1,122 @@
-; Thu Sep 19 13:58:49 PDT 2019
+; Tue Sep 24 09:48:36 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5248] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4991] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Shared_documentation")
+	(property_list [ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4992])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 0)
+	(y 360))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4992] of  Property_List
+)
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4993] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "recommendation_basis")
+	(property_list [ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4994])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 250)
+	(y 60))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4994] of  Property_List
+
+	(properties
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4995]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4996]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4995] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4996] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5254] of  String
 
 	(name "Supporting_Material")
 	(string_value "label"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5249] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5255] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5250] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5256] of  String
 
 	(name "Parameterized_String")
 	(string_value "label"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5251] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5257] of  String
 
 	(name "Drug_Usage")
 	(string_value "label"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5252] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5258] of  String
 
 	(name "Definite_Time_Point")
 	(string_value "month_name{%2F}day{%2F}year_CE"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5253] of  String
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5259] of  String
 
 	(name "Collateral_Action")
 	(string_value "mood{%3A+}actions"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5254] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5260] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5255]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5256]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5261]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5262]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5255] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5261] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_120108")
 	(key_class "java.lang.String")
 	(value "116 184 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5256] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5262] of  Map_Entry
 
 	(key "KB_707783_Class4")
 	(key_class "java.lang.String")
 	(value "70 68 109 62")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5257] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5263] of  Map_Entry
 
 	(key "InstanceGraphWidget.KB_707783_Class3.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5254")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5260")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5258] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5264] of  Map
 
-	(entries [ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5259]))
+	(entries [ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5265]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5259] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5265] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_20005")
 	(key_class "java.lang.String")
 	(value "70 70 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5260] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5266] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Instance_20004.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5258")
-	(value_class "java.util.Map"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5261] of  Map
-
-	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5262]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5263]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5264]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5265]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5262] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class150027")
-	(key_class "java.lang.String")
-	(value "80 240 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5263] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class80003")
-	(key_class "java.lang.String")
-	(value "100 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5264] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class80004")
-	(key_class "java.lang.String")
-	(value "280 60 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5265] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class150020")
-	(key_class "java.lang.String")
-	(value "220 180 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5266] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class80002.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5261")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5264")
 	(value_class "java.util.Map"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5267] of  Map
@@ -127,92 +125,129 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5268]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5269]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5270]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5271]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5272]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5273]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5274]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5275]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5276]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5271]))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5268] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class150027")
+	(key_class "java.lang.String")
+	(value "80 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5269] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80003")
+	(key_class "java.lang.String")
+	(value "100 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5270] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80004")
+	(key_class "java.lang.String")
+	(value "280 60 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5271] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class150020")
+	(key_class "java.lang.String")
+	(value "220 180 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5272] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class80002.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5267")
+	(value_class "java.util.Map"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5273] of  Map
+
+	(entries
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5274]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5275]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5276]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5277]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5278]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5279]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5280]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5281]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5282]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5274] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640000")
 	(key_class "java.lang.String")
 	(value "40 300 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5269] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5275] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630008")
 	(key_class "java.lang.String")
 	(value "120 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5270] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5276] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640232")
 	(key_class "java.lang.String")
 	(value "200 320 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5271] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5277] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640001")
 	(key_class "java.lang.String")
 	(value "40 200 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5272] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5278] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630009")
 	(key_class "java.lang.String")
 	(value "200 160 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5273] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5279] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630002")
 	(key_class "java.lang.String")
 	(value "40 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5274] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5280] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630003")
 	(key_class "java.lang.String")
 	(value "200 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5275] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5281] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640239")
 	(key_class "java.lang.String")
 	(value "200 240 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5276] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5282] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640347")
 	(key_class "java.lang.String")
 	(value "200 400 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5277] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5283] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class630000.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5267")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5273")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5278] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5284] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5279]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5280]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5281]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5282]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5283]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5284]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5285]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5286]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5287]
@@ -229,185 +264,185 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5298]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5299]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5300]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5301]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5301]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5302]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5303]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5304]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5305]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5306]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5307]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5279] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5285] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class2")
 	(key_class "java.lang.String")
 	(value "380 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5280] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5286] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1")
 	(key_class "java.lang.String")
 	(value "160 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5281] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5287] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_70010")
 	(key_class "java.lang.String")
 	(value "160 220 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5282] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5288] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class4")
 	(key_class "java.lang.String")
 	(value "500 20 101 73")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5283] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5289] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class3")
 	(key_class "java.lang.String")
 	(value "500 500 87 66")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5284] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5290] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_130309")
 	(key_class "java.lang.String")
 	(value "360 216 74 64")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5285] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5291] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class5")
 	(key_class "java.lang.String")
 	(value "80 200 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5286] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5292] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class90036")
 	(key_class "java.lang.String")
 	(value "0 300 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5287] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5293] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class8")
 	(key_class "java.lang.String")
 	(value "520 140 117 61")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5288] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5294] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class7")
 	(key_class "java.lang.String")
 	(value "240 20 90 71")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5289] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5295] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_130311")
 	(key_class "java.lang.String")
 	(value "340 100 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5290] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5296] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_130784")
 	(key_class "java.lang.String")
 	(value "500 380 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5291] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5297] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class0")
 	(key_class "java.lang.String")
 	(value "48 27 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5292] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5298] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class100006")
 	(key_class "java.lang.String")
 	(value "160 320 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5293] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5299] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class120002")
 	(key_class "java.lang.String")
 	(value "135 478 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5294] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5300] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class42")
 	(key_class "java.lang.String")
 	(value "0 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5295] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5301] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_10030")
 	(key_class "java.lang.String")
 	(value "140 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5296] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5302] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class9")
 	(key_class "java.lang.String")
 	(value "420 540 71 88")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5297] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5303] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_10018")
 	(key_class "java.lang.String")
 	(value "100 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5298] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5304] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class39")
 	(key_class "java.lang.String")
 	(value "0 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5299] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5305] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class21")
 	(key_class "java.lang.String")
 	(value "480 260 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5300] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5306] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_50008")
 	(key_class "java.lang.String")
 	(value "240 140 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5301] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5307] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class22")
 	(key_class "java.lang.String")
 	(value "120 100 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5302] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5308] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Instance_1.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5278")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5284")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5303] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5309] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5304]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5305]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5306]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5307]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5308]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5309]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5310]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5311]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5312]
@@ -426,199 +461,199 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5325]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5326]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5327]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5328]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5328]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5329]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5330]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5331]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5332]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5333]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5334]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5304] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5310] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class260041")
 	(key_class "java.lang.String")
 	(value "620 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5305] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5311] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class510001")
 	(key_class "java.lang.String")
 	(value "740 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5306] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5312] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640000")
 	(key_class "java.lang.String")
 	(value "200 720 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5307] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5313] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class390000")
 	(key_class "java.lang.String")
 	(value "680 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5308] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5314] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640001")
 	(key_class "java.lang.String")
 	(value "200 620 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5309] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5315] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class300000")
 	(key_class "java.lang.String")
 	(value "140 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5310] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5316] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class380018")
 	(key_class "java.lang.String")
 	(value "220 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5311] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5317] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640347")
 	(key_class "java.lang.String")
 	(value "560 720 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5312] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5318] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class350000")
 	(key_class "java.lang.String")
 	(value "780 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5313] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5319] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class260050")
 	(key_class "java.lang.String")
 	(value "640 140 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5314] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5320] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class290000")
 	(key_class "java.lang.String")
 	(value "60 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5315] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5321] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class920000")
 	(key_class "java.lang.String")
 	(value "370 264 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5316] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5322] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640232")
 	(key_class "java.lang.String")
 	(value "460 720 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5317] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5323] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class640239")
 	(key_class "java.lang.String")
 	(value "340 720 71 68")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5318] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5324] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class620005")
 	(key_class "java.lang.String")
 	(value "700 380 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5319] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5325] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class330020")
 	(key_class "java.lang.String")
 	(value "780 140 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5320] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5326] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class250002")
 	(key_class "java.lang.String")
 	(value "260 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5321] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5327] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150027")
 	(key_class "java.lang.String")
 	(value "60 40 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5322] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5328] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class260036")
 	(key_class "java.lang.String")
 	(value "680 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5323] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5329] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class330006")
 	(key_class "java.lang.String")
 	(value "600 360 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5324] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5330] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class80004")
 	(key_class "java.lang.String")
 	(value "40 220 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5325] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5331] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class350010")
 	(key_class "java.lang.String")
 	(value "760 60 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5326] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5332] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630009")
 	(key_class "java.lang.String")
 	(value "340 620 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5327] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5333] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630002")
 	(key_class "java.lang.String")
 	(value "200 520 84 74")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5328] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5334] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class630003")
 	(key_class "java.lang.String")
 	(value "340 520 74 72")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5329] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5335] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class250001.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5303")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5309")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5330] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5336] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5331]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5332]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5333]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5334]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5335]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5336]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5337]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5338]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5339]
@@ -661,401 +696,401 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5376]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5377]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5378]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5379]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5379]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5380]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5381]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5382]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5383]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5384]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5385]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5331] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5337] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class81111")
 	(key_class "java.lang.String")
 	(value "720 280 76 76")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5332] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5338] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class160000")
 	(key_class "java.lang.String")
 	(value "1220 920 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5333] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5339] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230035")
 	(key_class "java.lang.String")
 	(value "560 720 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5334] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5340] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1210012")
 	(key_class "java.lang.String")
 	(value "200 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5335] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5341] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class510006")
 	(key_class "java.lang.String")
 	(value "1080 880 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5336] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5342] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class450014")
 	(key_class "java.lang.String")
 	(value "780 600 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5337] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5343] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class450015")
 	(key_class "java.lang.String")
 	(value "940 620 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5338] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5344] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class450012")
 	(key_class "java.lang.String")
 	(value "800 500 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5339] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5345] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class170004")
 	(key_class "java.lang.String")
 	(value "620 40 78 77")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5340] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5346] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class190228")
 	(key_class "java.lang.String")
 	(value "1140 240 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5341] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5347] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540028")
 	(key_class "java.lang.String")
 	(value "140 160 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5342] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5348] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1210005")
 	(key_class "java.lang.String")
 	(value "60 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5343] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5349] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1210003")
 	(key_class "java.lang.String")
 	(value "120 380 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5344] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5350] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class250174")
 	(key_class "java.lang.String")
 	(value "1300 240 79 72")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5345] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5351] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class510003")
 	(key_class "java.lang.String")
 	(value "1020 740 58 79")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5346] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5352] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1210001")
 	(key_class "java.lang.String")
 	(value "140 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5347] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5353] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class250176")
 	(key_class "java.lang.String")
 	(value "1300 800 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5348] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5354] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1170843")
 	(key_class "java.lang.String")
 	(value "640 900 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5349] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5355] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1210009")
 	(key_class "java.lang.String")
 	(value "60 600 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5350] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5356] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class130014")
 	(key_class "java.lang.String")
 	(value "1220 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5351] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5357] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class130015")
 	(key_class "java.lang.String")
 	(value "1220 160 62 58")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5352] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5358] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210040")
 	(key_class "java.lang.String")
 	(value "1120 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5353] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5359] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540037")
 	(key_class "java.lang.String")
 	(value "140 760 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5354] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5360] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1080005")
 	(key_class "java.lang.String")
 	(value "520 820 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5355] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5361] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1080004")
 	(key_class "java.lang.String")
 	(value "640 800 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5356] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5362] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210000")
 	(key_class "java.lang.String")
 	(value "140 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5357] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5363] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class120000")
 	(key_class "java.lang.String")
 	(value "220 700 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5358] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5364] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240016")
 	(key_class "java.lang.String")
 	(value "800 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5359] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5365] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540001")
 	(key_class "java.lang.String")
 	(value "460 720 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5360] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5366] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class60002")
 	(key_class "java.lang.String")
 	(value "20 760 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5361] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5367] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540047")
 	(key_class "java.lang.String")
 	(value "480 620 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5362] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5368] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540003")
 	(key_class "java.lang.String")
 	(value "360 800 80 79")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5363] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5369] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210015")
 	(key_class "java.lang.String")
 	(value "1420 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5364] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5370] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class540040")
 	(key_class "java.lang.String")
 	(value "480 500 70 68")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5365] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5371] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230000")
 	(key_class "java.lang.String")
 	(value "1020 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5366] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5372] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1181956")
 	(key_class "java.lang.String")
 	(value "940 880 68 69")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5367] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5373] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230004")
 	(key_class "java.lang.String")
 	(value "1120 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5368] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5374] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1140002")
 	(key_class "java.lang.String")
 	(value "580 400 73 75")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5369] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5375] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class680000")
 	(key_class "java.lang.String")
 	(value "1400 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5370] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5376] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230008")
 	(key_class "java.lang.String")
 	(value "660 500 71 66")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5371] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5377] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class720169")
 	(key_class "java.lang.String")
 	(value "800 880 68 72")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5372] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5378] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class90342")
 	(key_class "java.lang.String")
 	(value "1340 920 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5373] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5379] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class170298")
 	(key_class "java.lang.String")
 	(value "560 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5374] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5380] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class370009")
 	(key_class "java.lang.String")
 	(value "1300 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5375] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5381] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class550006")
 	(key_class "java.lang.String")
 	(value "640 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5376] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5382] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class370007")
 	(key_class "java.lang.String")
 	(value "1280 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5377] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5383] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class680002")
 	(key_class "java.lang.String")
 	(value "1280 560 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5378] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5384] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class370003")
 	(key_class "java.lang.String")
 	(value "1280 680 60 63")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5379] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5385] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class720168")
 	(key_class "java.lang.String")
 	(value "820 760 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5380] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5386] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class530001.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5330")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5336")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5381] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5387] of  Map_Entry
 
 	(key "chaoProject")
 	(key_class "java.lang.String")
 	(value "annotation_ATHENA_DM.pprj")
 	(value_class "java.lang.String"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5382] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5388] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5383]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5384]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5389]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5390]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5383] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5389] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150027")
 	(key_class "java.lang.String")
 	(value "160 160 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5384] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5390] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class160001")
 	(key_class "java.lang.String")
 	(value "160 40 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5385] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5391] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class160000.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5382")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5388")
 	(value_class "java.util.Map"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5386] of  Map
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5392] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5387]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5388]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5389]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5390]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5391]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5392]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5393]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5394]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5395]
@@ -1093,379 +1128,379 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5427]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5428]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5429]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5430]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5430]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5431]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5432]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5433]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5434]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5435]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5436]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5387] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5393] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210040")
 	(key_class "java.lang.String")
 	(value "60 180 58 50")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5388] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5394] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240058")
 	(key_class "java.lang.String")
 	(value "1120 320 72 71")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5389] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5395] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210020")
 	(key_class "java.lang.String")
 	(value "340 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5390] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5396] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240057")
 	(key_class "java.lang.String")
 	(value "1120 240 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5391] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5397] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240033")
 	(key_class "java.lang.String")
 	(value "1080 460 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5392] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5398] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240031")
 	(key_class "java.lang.String")
 	(value "1000 460 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5393] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5399] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240053")
 	(key_class "java.lang.String")
 	(value "1100 140 76 73")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5394] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5400] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210026")
 	(key_class "java.lang.String")
 	(value "280 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5395] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5401] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class270003")
 	(key_class "java.lang.String")
 	(value "800 320 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5396] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5402] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class270002")
 	(key_class "java.lang.String")
 	(value "880 380 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5397] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5403] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240051")
 	(key_class "java.lang.String")
 	(value "1100 40 72 69")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5398] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5404] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210028")
 	(key_class "java.lang.String")
 	(value "360 200 60 52")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5399] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5405] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230011")
 	(key_class "java.lang.String")
 	(value "800 500 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5400] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5406] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210029")
 	(key_class "java.lang.String")
 	(value "340 360 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5401] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5407] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class470002")
 	(key_class "java.lang.String")
 	(value "440 0 64 63")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5402] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5408] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210044")
 	(key_class "java.lang.String")
 	(value "180 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5403] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5409] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210000")
 	(key_class "java.lang.String")
 	(value "360 60 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5404] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5410] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230035")
 	(key_class "java.lang.String")
 	(value "920 520 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5405] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5411] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class470003")
 	(key_class "java.lang.String")
 	(value "440 120 79 71")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5406] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5412] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210045")
 	(key_class "java.lang.String")
 	(value "180 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5407] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5413] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230036")
 	(key_class "java.lang.String")
 	(value "580 200 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5408] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5414] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210024")
 	(key_class "java.lang.String")
 	(value "400 500 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5409] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5415] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class470006")
 	(key_class "java.lang.String")
 	(value "580 100 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5410] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5416] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230039")
 	(key_class "java.lang.String")
 	(value "700 320 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5411] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5417] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230017")
 	(key_class "java.lang.String")
 	(value "720 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5412] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5418] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240018")
 	(key_class "java.lang.String")
 	(value "960 40 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5413] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5419] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240019")
 	(key_class "java.lang.String")
 	(value "960 140 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5414] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5420] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class220006")
 	(key_class "java.lang.String")
 	(value "700 120 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5415] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5421] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240016")
 	(key_class "java.lang.String")
 	(value "700 240 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5416] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5422] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class220004")
 	(key_class "java.lang.String")
 	(value "700 0 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5417] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5423] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240039")
 	(key_class "java.lang.String")
 	(value "260 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5418] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5424] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240048")
 	(key_class "java.lang.String")
 	(value "260 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5419] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5425] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240026")
 	(key_class "java.lang.String")
 	(value "980 220 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5420] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5426] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240043")
 	(key_class "java.lang.String")
 	(value "260 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5421] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5427] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210037")
 	(key_class "java.lang.String")
 	(value "60 80 70 71")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5422] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5428] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210015")
 	(key_class "java.lang.String")
 	(value "480 300 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5423] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5429] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240062")
 	(key_class "java.lang.String")
 	(value "1180 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5424] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5430] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class210038")
 	(key_class "java.lang.String")
 	(value "180 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5425] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5431] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230000")
 	(key_class "java.lang.String")
 	(value "80 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5426] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5432] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230022")
 	(key_class "java.lang.String")
 	(value "540 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5427] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5433] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230024")
 	(key_class "java.lang.String")
 	(value "640 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5428] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5434] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230004")
 	(key_class "java.lang.String")
 	(value "0 280 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5429] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5435] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class230008")
 	(key_class "java.lang.String")
 	(value "840 240 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5430] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5436] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class240028")
 	(key_class "java.lang.String")
 	(value "980 320 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5431] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5437] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class210019.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5386")
-	(value_class "java.util.Map"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5432] of  Map
-
-	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5433]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5434]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5435]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5436]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5433] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class150027")
-	(key_class "java.lang.String")
-	(value "220 240 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5434] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class80004")
-	(key_class "java.lang.String")
-	(value "180 20 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5435] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class150020")
-	(key_class "java.lang.String")
-	(value "320 120 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5436] of  Map_Entry
-
-	(key "KB_707783_Class4")
-	(key_class "java.lang.String")
-	(value "180 140 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5437] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class60011.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5432")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5392")
 	(value_class "java.util.Map"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5438] of  Map
 
 	(entries
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5439]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5443]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5444]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5440]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5441]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5442]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5439] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class150027")
+	(key_class "java.lang.String")
+	(value "220 240 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5440] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class80004")
+	(key_class "java.lang.String")
+	(value "180 20 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5441] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class150020")
+	(key_class "java.lang.String")
+	(value "320 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5442] of  Map_Entry
+
+	(key "KB_707783_Class4")
+	(key_class "java.lang.String")
+	(value "180 140 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5443] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class60011.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5438")
+	(value_class "java.util.Map"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5444] of  Map
+
+	(entries
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5445]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5449]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5450]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5451]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5452]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5453]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5454]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5455]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5456]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5457]
@@ -1479,54 +1514,19 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5465]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5466]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5467]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5468]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5468]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5469]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5470]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5471]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5472]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5473]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5474]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5439] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5445] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130010")
 	(key_class "java.lang.String")
 	(value "815 366 70 68")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5440] of  Map
-
-	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5441]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5442]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5441] of  Map_Entry
-
-	(key "1")
-	(key_class "java.lang.String")
-	(value "274,389")
-	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5442] of  Map_Entry
-
-	(key "2")
-	(key_class "java.lang.String")
-	(value "282,545")
-	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5443] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class130048")
-	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5440")
-	(value_class "java.util.Map"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5444] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class130003")
-	(key_class "java.lang.String")
-	(value "370 70 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5445] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class5")
-	(key_class "java.lang.String")
-	(value "970 520 60 60")
 	(value_class "java.awt.Rectangle"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5446] of  Map
@@ -1539,204 +1539,202 @@
 
 	(key "1")
 	(key_class "java.lang.String")
-	(value "1271,373")
+	(value "274,389")
 	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5448] of  Map_Entry
 
 	(key "2")
 	(key_class "java.lang.String")
-	(value "1273,531")
+	(value "282,545")
 	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5449] of  Map_Entry
 
-	(key "ATHENA_GlycemicControl_Class130025")
+	(key "ATHENA_GlycemicControl_Class130048")
 	(key_class "java.lang.String")
 	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5446")
 	(value_class "java.util.Map"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5450] of  Map_Entry
 
+	(key "ATHENA_GlycemicControl_Class130003")
+	(key_class "java.lang.String")
+	(value "370 70 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5451] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class5")
+	(key_class "java.lang.String")
+	(value "970 520 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5452] of  Map
+
+	(entries
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5453]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5454]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5453] of  Map_Entry
+
+	(key "1")
+	(key_class "java.lang.String")
+	(value "1271,373")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5454] of  Map_Entry
+
+	(key "2")
+	(key_class "java.lang.String")
+	(value "1273,531")
+	(value_class "edu.stanford.smi.protegex.widget.graph.GraphPoint"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5455] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class130025")
+	(key_class "java.lang.String")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5452")
+	(value_class "java.util.Map"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5456] of  Map_Entry
+
 	(key "ATHENA_GlycemicControl_Class8")
 	(key_class "java.lang.String")
 	(value "817 513 66 74")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5451] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5457] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130002")
 	(key_class "java.lang.String")
 	(value "70 520 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5452] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5458] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class7")
 	(key_class "java.lang.String")
 	(value "500 200 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5453] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5459] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130001")
 	(key_class "java.lang.String")
 	(value "70 370 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5454] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5460] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130012")
 	(key_class "java.lang.String")
 	(value "1120 370 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5455] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5461] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150002")
 	(key_class "java.lang.String")
 	(value "960 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5456] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5462] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_130784")
 	(key_class "java.lang.String")
 	(value "520 670 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5457] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5463] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class200000")
 	(key_class "java.lang.String")
 	(value "380 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5458] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5464] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class200292")
 	(key_class "java.lang.String")
 	(value "660 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5459] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5465] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150004")
 	(key_class "java.lang.String")
 	(value "1100 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5460] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5466] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150015")
 	(key_class "java.lang.String")
 	(value "800 660 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5461] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5467] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class150003")
 	(key_class "java.lang.String")
 	(value "660 380 66 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5462] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5468] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130008")
 	(key_class "java.lang.String")
 	(value "520 70 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5463] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5469] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class9")
 	(key_class "java.lang.String")
 	(value "1120 520 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5464] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5470] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class130006")
 	(key_class "java.lang.String")
 	(value "960 360 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5465] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5471] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_10018")
 	(key_class "java.lang.String")
 	(value "70 670 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5466] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5472] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Instance_50008")
 	(key_class "java.lang.String")
 	(value "1270 670 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5467] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5473] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class22")
 	(key_class "java.lang.String")
 	(value "220 670 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5468] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5474] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class200001")
 	(key_class "java.lang.String")
 	(value "660 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5469] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5475] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class120000.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5438")
-	(value_class "java.util.Map"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5470] of  Map
-
-	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5471]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5472]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5473]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5474]))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5471] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class1312626")
-	(key_class "java.lang.String")
-	(value "160 200 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5472] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class1000002")
-	(key_class "java.lang.String")
-	(value "40 180 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5473] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class930005")
-	(key_class "java.lang.String")
-	(value "40 40 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5474] of  Map_Entry
-
-	(key "ATHENA_GlycemicControl_Class930006")
-	(key_class "java.lang.String")
-	(value "160 120 60 60")
-	(value_class "java.awt.Rectangle"))
-
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5475] of  Map_Entry
-
-	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class930004.steps")
-	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5470")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5444")
 	(value_class "java.util.Map"))
 
 ([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5476] of  Map
@@ -1745,9 +1743,46 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5477]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5478]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5479]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5480]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5481]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5482]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5480]))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5477] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class1312626")
+	(key_class "java.lang.String")
+	(value "160 200 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5478] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class1000002")
+	(key_class "java.lang.String")
+	(value "40 180 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5479] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class930005")
+	(key_class "java.lang.String")
+	(value "40 40 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5480] of  Map_Entry
+
+	(key "ATHENA_GlycemicControl_Class930006")
+	(key_class "java.lang.String")
+	(value "160 120 60 60")
+	(value_class "java.awt.Rectangle"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5481] of  Map_Entry
+
+	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class930004.steps")
+	(key_class "java.lang.String")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5476")
+	(value_class "java.util.Map"))
+
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5482] of  Map
+
+	(entries
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5483]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5484]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5485]
@@ -1768,202 +1803,208 @@
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5500]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5501]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5502]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5503]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5503]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5504]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5505]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5506]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5507]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5508]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5509]))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5477] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5483] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class510001")
 	(key_class "java.lang.String")
 	(value "300 680 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5478] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5484] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class230182")
 	(key_class "java.lang.String")
 	(value "320 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5479] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5485] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1080002")
 	(key_class "java.lang.String")
 	(value "240 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5480] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5486] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class380018")
 	(key_class "java.lang.String")
 	(value "720 100 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5481] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5487] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1080000")
 	(key_class "java.lang.String")
 	(value "120 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5482] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5488] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class790002")
 	(key_class "java.lang.String")
 	(value "360 240 75 75")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5483] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5489] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class470000")
 	(key_class "java.lang.String")
 	(value "640 580 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5484] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5490] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class340003")
 	(key_class "java.lang.String")
 	(value "520 580 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5485] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5491] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1070181")
 	(key_class "java.lang.String")
 	(value "440 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5486] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5492] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class600028")
 	(key_class "java.lang.String")
 	(value "460 680 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5487] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5493] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class290004")
 	(key_class "java.lang.String")
 	(value "620 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5488] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5494] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class290000")
 	(key_class "java.lang.String")
 	(value "120 140 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5489] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5495] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class480000")
 	(key_class "java.lang.String")
 	(value "820 380 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5490] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5496] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class430000")
 	(key_class "java.lang.String")
 	(value "720 400 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5491] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5497] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class530967")
 	(key_class "java.lang.String")
 	(value "100 220 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5492] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5498] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class220005")
 	(key_class "java.lang.String")
 	(value "20 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5493] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5499] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class311115")
 	(key_class "java.lang.String")
 	(value "80 340 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5494] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5500] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class490000")
 	(key_class "java.lang.String")
 	(value "20 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5495] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5501] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class570009")
 	(key_class "java.lang.String")
 	(value "740 580 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5496] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5502] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class251166")
 	(key_class "java.lang.String")
 	(value "20 80 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5497] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5503] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class620005")
 	(key_class "java.lang.String")
 	(value "720 180 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5498] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5504] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class330020")
 	(key_class "java.lang.String")
 	(value "120 480 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5499] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5505] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class1312626")
 	(key_class "java.lang.String")
 	(value "620 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5500] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5506] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class230003")
 	(key_class "java.lang.String")
 	(value "200 440 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5501] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5507] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class930001")
 	(key_class "java.lang.String")
 	(value "700 20 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5502] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5508] of  Map_Entry
 
 	(key "ATHENA_GlycemicControl_Class330006")
 	(key_class "java.lang.String")
 	(value "240 600 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5503] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5509] of  Map_Entry
 
 	(key "ATHENA_DM_GlycemicControl_Dashboard_Class600018")
 	(key_class "java.lang.String")
 	(value "380 680 60 60")
 	(value_class "java.awt.Rectangle"))
 
-([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5504] of  Map_Entry
+([ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5510] of  Map_Entry
 
 	(key "InstanceGraphWidget.ATHENA_GlycemicControl_Class780000.steps")
 	(key_class "java.lang.String")
-	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5476")
+	(value "ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5482")
 	(value_class "java.util.Map"))
 
 ([ATHENA_GlycemicControl_ProjectKB_Class13611] of  Property_List
@@ -4054,12 +4095,12 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5248]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5249]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5250]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5251]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5252]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5253]))
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5254]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5255]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5256]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5257]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5258]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5259]))
 
 ([CLSES_TAB] of  Widget
 
@@ -6628,6 +6669,522 @@
 		[ATHENA_GlycemicControl_ProjectKB_Instance_3647]
 		[ATHENA_GlycemicControl_ProjectKB_Instance_3648]))
 
+([KB_701792_Class2012] of  Widget
+
+	(is_hidden FALSE)
+	(name "Evaluate_Substitution_Activity")
+	(property_list [KB_701792_Class2013])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([KB_701792_Class2013] of  Property_List
+
+	(properties
+		[KB_701792_Class2014]
+		[KB_701792_Class2016]
+		[KB_701792_Class2018]
+		[KB_701792_Class2019]
+		[KB_701792_Class2024]
+		[KB_701792_Class2026]
+		[KB_701792_Class2028]
+		[KB_701792_Class2030]
+		[KB_701792_Class2035]
+		[KB_701792_Class2040]
+		[KB_701792_Class2042]
+		[KB_701792_Class2047]
+		[KB_701792_Class2049]
+		[KB_701792_Class2051]
+		[KB_701792_Class2057]
+		[KB_701792_Class2059]
+		[KB_701792_Class2061]
+		[KB_701792_Class2065]
+		[KB_701792_Class2067]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4991]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class4993]))
+
+([KB_701792_Class2014] of  Widget
+
+	(height 60)
+	(name "label")
+	(property_list [KB_701792_Class2015])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 0))
+
+([KB_701792_Class2015] of  Property_List
+)
+
+([KB_701792_Class2016] of  Widget
+
+	(height 150)
+	(name "description")
+	(property_list [KB_701792_Class2017])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 200)
+	(x 400)
+	(y 520))
+
+([KB_701792_Class2017] of  Property_List
+)
+
+([KB_701792_Class2018] of  Property_List
+
+	(name "layout properties"))
+
+([KB_701792_Class2019] of  Widget
+
+	(height 130)
+	(is_hidden FALSE)
+	(name "references")
+	(property_list [KB_701792_Class2020])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 250)
+	(y 240))
+
+([KB_701792_Class2020] of  Property_List
+
+	(properties
+		[KB_701792_Class2021]
+		[KB_701792_Class2022]
+		[KB_701792_Class2023]))
+
+([KB_701792_Class2021] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_701792_Class2022] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2023] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2024] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name "responses")
+	(property_list [KB_701792_Class2025])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([KB_701792_Class2025] of  Property_List
+)
+
+([KB_701792_Class2026] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "activity_class")
+	(property_list [KB_701792_Class2027])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 250)
+	(x 0)
+	(y 180))
+
+([KB_701792_Class2027] of  Property_List
+)
+
+([KB_701792_Class2028] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "activity_spec")
+	(property_list [KB_701792_Class2029])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 250))
+
+([KB_701792_Class2029] of  Property_List
+)
+
+([KB_701792_Class2030] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "activity_spec_key")
+	(property_list [KB_701792_Class2031])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 250)
+	(y 180))
+
+([KB_701792_Class2031] of  Property_List
+
+	(properties
+		[KB_701792_Class2032]
+		[KB_701792_Class2033]
+		[KB_701792_Class2034]))
+
+([KB_701792_Class2032] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_701792_Class2033] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2034] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2035] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "alternatives")
+	(property_list [KB_701792_Class2036])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 250)
+	(x 0)
+	(y 60))
+
+([KB_701792_Class2036] of  Property_List
+
+	(properties
+		[KB_701792_Class2037]
+		[KB_701792_Class2038]
+		[KB_701792_Class2039]))
+
+([KB_701792_Class2037] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_701792_Class2038] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2039] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2040] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "domain_term")
+	(property_list [KB_701792_Class2041])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 250)
+	(x 0)
+	(y 310))
+
+([KB_701792_Class2041] of  Property_List
+)
+
+([KB_701792_Class2042] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "activity_to_stop")
+	(property_list [KB_701792_Class2043])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 250)
+	(y 0))
+
+([KB_701792_Class2043] of  Property_List
+
+	(properties
+		[KB_701792_Class2044]
+		[KB_701792_Class2045]
+		[KB_701792_Class2046]))
+
+([KB_701792_Class2044] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value  "))
+
+([KB_701792_Class2045] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2046] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2047] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "strength_of_recommendation")
+	(property_list [KB_701792_Class2048])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 430))
+
+([KB_701792_Class2048] of  Property_List
+)
+
+([KB_701792_Class2049] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "net_benefit")
+	(property_list [KB_701792_Class2050])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 550))
+
+([KB_701792_Class2050] of  Property_List
+)
+
+([KB_701792_Class2051] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "rule_in_condition")
+	(property_list [KB_701792_Class2052])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 200)
+	(y 490))
+
+([KB_701792_Class2052] of  Property_List
+
+	(properties
+		[KB_701792_Class2053]
+		[KB_701792_Class2054]))
+
+([KB_701792_Class2053] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2054] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2057] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "subsidiary_message")
+	(property_list [KB_701792_Class2058])
+	(widget_class_name "edu.stanford.smi.protege.widget.StringListWidget")
+	(width 200)
+	(x 200)
+	(y 550))
+
+([KB_701792_Class2058] of  Property_List
+)
+
+([KB_701792_Class2059] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "fine-grain_priority")
+	(property_list [KB_701792_Class2060])
+	(widget_class_name "edu.stanford.smi.protege.widget.IntegerFieldWidget")
+	(width 100)
+	(x 0)
+	(y 610))
+
+([KB_701792_Class2060] of  Property_List
+)
+
+([KB_701792_Class2061] of  Widget
+
+	(height 150)
+	(is_hidden FALSE)
+	(name "therapeutic_goal")
+	(property_list [KB_701792_Class2062])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 400)
+	(y 370))
+
+([KB_701792_Class2062] of  Property_List
+
+	(properties
+		[KB_701792_Class2063]
+		[KB_701792_Class2064]))
+
+([KB_701792_Class2063] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KB_701792_Class2064] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KB_701792_Class2065] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "overall_quality_of_evidence")
+	(property_list [KB_701792_Class2066])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 200)
+	(y 370))
+
+([KB_701792_Class2066] of  Property_List
+)
+
+([KB_701792_Class2067] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "level_of_evidence")
+	(property_list [KB_701792_Class2068])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 490))
+
+([KB_701792_Class2068] of  Property_List
+)
+
+([KB_701792_Class4972] of  Map
+
+	(entries
+		[KB_701792_Class4974]
+		[KB_701792_Class4975]
+		[KB_701792_Class4976]
+		[KB_701792_Class4977]
+		[KB_701792_Class4979]
+		[KB_701792_Class4980]
+		[KB_701792_Class4982]
+		[KB_701792_Class4983]
+		[KB_701792_Class4985]
+		[KB_701792_Class4986]
+		[KB_701792_Class4987]
+		[KB_701792_Class4989]
+		[KB_701792_Class4990])
+	(referenced_maps
+		[KB_701792_Class4978]
+		[KB_701792_Class4988]
+		[KB_701792_Class4973]
+		[KB_701792_Class4984]
+		[KB_701792_Class4981]))
+
+([KB_701792_Class4973] of  Map
+)
+
+([KB_701792_Class4974] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
+	(key_class "java.lang.String")
+	(value "KB_701792_Class4973")
+	(value_class "java.util.Map"))
+
+([KB_701792_Class4975] of  Map_Entry
+
+	(key "collab.hide.archived")
+	(key_class "java.lang.String")
+	(value "true")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4976] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4977] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4978] of  Map
+)
+
+([KB_701792_Class4979] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_1.steps")
+	(key_class "java.lang.String")
+	(value "KB_701792_Class4978")
+	(value_class "java.util.Map"))
+
+([KB_701792_Class4980] of  Map_Entry
+
+	(key "annotation_proj_exists")
+	(key_class "java.lang.String")
+	(value "yes")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4981] of  Map
+)
+
+([KB_701792_Class4982] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
+	(key_class "java.lang.String")
+	(value "KB_701792_Class4981")
+	(value_class "java.util.Map"))
+
+([KB_701792_Class4983] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4984] of  Map
+)
+
+([KB_701792_Class4985] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_2.steps")
+	(key_class "java.lang.String")
+	(value "KB_701792_Class4984")
+	(value_class "java.util.Map"))
+
+([KB_701792_Class4986] of  Map_Entry
+
+	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([KB_701792_Class4987] of  Map_Entry
+
+	(key "show_collaboration_panel")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.Boolean"))
+
+([KB_701792_Class4988] of  Map
+)
+
+([KB_701792_Class4989] of  Map_Entry
+
+	(key "InstanceGraphWidget.eon2_Instance_0.steps")
+	(key_class "java.lang.String")
+	(value "KB_701792_Class4988")
+	(value_class "java.util.Map"))
+
+([KB_701792_Class4990] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
 ([KB_713616_Class1197] of  Widget
 
 	(height 757)
@@ -7025,35 +7582,35 @@
 ([KB_715902_Instance_1] of  Map
 
 	(entries
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5257]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5260]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5263]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5266]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5277]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5302]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5329]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5380]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5381]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5385]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5431]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5272]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5283]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5308]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5335]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5386]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5387]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5391]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5437]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5469]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5443]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5475]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5504])
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5481]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5510])
 	(referenced_maps
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5258]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5303]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5444]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5336]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5446]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5438]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5261]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5382]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5470]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5330]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5440]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5254]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5386]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5309]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5260]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5392]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5273]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5284]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5482]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5264]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5452]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5267]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5278]
-		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5432]
+		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5388]
 		[ATHENA_DM_GlycemicControl_Dashboard_ProjectKB_Class5476]))
 
 ([KB_715902_Instance_3] of  Options
@@ -7080,135 +7637,6 @@
 
 	(name "instances_file_name")
 	(string_value "ATHENA_DM_GlycemicControl_Dashboard.pins"))
-
-([KB_738025_Class4972] of  Map
-
-	(entries
-		[KB_738025_Class4974]
-		[KB_738025_Class4975]
-		[KB_738025_Class4976]
-		[KB_738025_Class4977]
-		[KB_738025_Class4979]
-		[KB_738025_Class4980]
-		[KB_738025_Class4982]
-		[KB_738025_Class4983]
-		[KB_738025_Class4985]
-		[KB_738025_Class4986]
-		[KB_738025_Class4987]
-		[KB_738025_Class4989]
-		[KB_738025_Class4990])
-	(referenced_maps
-		[KB_738025_Class4988]
-		[KB_738025_Class4978]
-		[KB_738025_Class4973]
-		[KB_738025_Class4984]
-		[KB_738025_Class4981]))
-
-([KB_738025_Class4973] of  Map
-)
-
-([KB_738025_Class4974] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130001.steps")
-	(key_class "java.lang.String")
-	(value "KB_738025_Class4973")
-	(value_class "java.util.Map"))
-
-([KB_738025_Class4975] of  Map_Entry
-
-	(key "collab.hide.archived")
-	(key_class "java.lang.String")
-	(value "true")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4976] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.ChatPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4977] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4978] of  Map
-)
-
-([KB_738025_Class4979] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_1.steps")
-	(key_class "java.lang.String")
-	(value "KB_738025_Class4978")
-	(value_class "java.util.Map"))
-
-([KB_738025_Class4980] of  Map_Entry
-
-	(key "annotation_proj_exists")
-	(key_class "java.lang.String")
-	(value "yes")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4981] of  Map
-)
-
-([KB_738025_Class4982] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_130002.steps")
-	(key_class "java.lang.String")
-	(value "KB_738025_Class4981")
-	(value_class "java.util.Map"))
-
-([KB_738025_Class4983] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4984] of  Map
-)
-
-([KB_738025_Class4985] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_2.steps")
-	(key_class "java.lang.String")
-	(value "KB_738025_Class4984")
-	(value_class "java.util.Map"))
-
-([KB_738025_Class4986] of  Map_Entry
-
-	(key "edu.stanford.smi.protege.collab.annotation.gui.panel.AllAnnotationsPanel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([KB_738025_Class4987] of  Map_Entry
-
-	(key "show_collaboration_panel")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.Boolean"))
-
-([KB_738025_Class4988] of  Map
-)
-
-([KB_738025_Class4989] of  Map_Entry
-
-	(key "InstanceGraphWidget.eon2_Instance_0.steps")
-	(key_class "java.lang.String")
-	(value "KB_738025_Class4988")
-	(value_class "java.util.Map"))
-
-([KB_738025_Class4990] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([KB_916503_Class3738] of  Widget
 
@@ -8616,6 +9044,7 @@
 		[ATHENA_GlycemicControl_ProjectKB_Instance_23640]
 		[ATHENA_GlycemicControl_ProjectKB_Instance_3530]
 		[KB_358170_Class871]
+		[KB_701792_Class2012]
 		[KB_920666_Instance_2981]
 		[KB_920666_Instance_829]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]

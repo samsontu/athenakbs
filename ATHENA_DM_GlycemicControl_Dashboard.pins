@@ -1,4 +1,4 @@
-; Thu Sep 19 13:58:49 PDT 2019
+; Tue Sep 24 09:48:36 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -10519,7 +10519,8 @@
 		[ATHENA_GlycemicControl_Class140002]
 		[ATHENA_GlycemicControl_Class340013]
 		[ATHENA_GlycemicControl_Instance_50027])
-	(label "dEvaluate substitution w 2nd line therapy"))
+	(label "dEvaluate substitution w 2nd line therapy")
+	(recommendation_basis [is_second-line_drug_for]))
 
 ([ATHENA_GlycemicControl_Class270002] of  Action_Choice
 

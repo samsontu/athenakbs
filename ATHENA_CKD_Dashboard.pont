@@ -1,4 +1,4 @@
-; Fri Apr 19 09:32:02 PDT 2019
+; Thu Oct 03 16:06:29 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,6 +7,10 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract))
+
+(defclass Peritoneal+Dialysis
+	(is-a Dialysis)
+	(role concrete))
 
 (defclass Kidney_Transplant
 	(is-a Therapeutic_Procedure)
@@ -122,6 +126,18 @@
 
 (defclass Age%3E65%3F
 	(is-a Defined_Condition)
+	(role abstract))
+
+(defclass Ferritin "For iron-deficiency anemia section of CKD algorithm"
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass Transferrin+Situation "For iron-deficiency anemia section of CKD algorithm"
+	(is-a Blood_Chemistry)
+	(role concrete))
+
+(defclass Urine_Prot%2FCreat_Ratio_Spot
+	(is-a Urinalysis)
 	(role abstract))
 
 (defclass Microalbumin%2FCreatinine+Ratio

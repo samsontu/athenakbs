@@ -1,7 +1,7 @@
-; Tue Aug 15 13:57:48 PDT 2017
+; Tue Sep 24 12:21:16 PDT 2019
 ; 
-;+ (version "3.4.8")
-;+ (build "Build 629")
+;+ (version "3.5")
+;+ (build "Build 663")
 
 ([0-1_Risk_Factor] of  Diagnostic_Term_Metaclass
 
@@ -1267,7 +1267,7 @@
 ([ATHENA_Lipid_Class20000] of  General_Comparison_Criterion
 
 	(aggregation_operator most_recent)
-	(domain_term SGOT)
+	(domain_term AST)
 	(entry_type Numeric_Entry)
 	(label "AST > 3*UpperLimitofNormal")
 	(operator %3E)
@@ -1318,13 +1318,13 @@
 
 ([ATHENA_Lipid_Class20002] of  Get_Class_Slot_Value
 
-	(class_reference SGOT)
+	(class_reference AST)
 	(label "AST UpperLimitOfNormal")
 	(slot [UpperLimitOfNormal]))
 
 ([ATHENA_Lipid_Class20003] of  Get_Class_Slot_Value
 
-	(class_reference SGPT)
+	(class_reference AST)
 	(label "ALT UpperLimitOfNormal")
 	(slot [UpperLimitOfNormal]))
 
@@ -1357,7 +1357,7 @@
 ([ATHENA_Lipid_Class20009] of  General_Comparison_Criterion
 
 	(aggregation_operator most_recent)
-	(domain_term SGPT)
+	(domain_term AST)
 	(entry_type Numeric_Entry)
 	(label "ALT > 3*UpperlimitofNormal")
 	(operator %3E)
@@ -2428,7 +2428,7 @@
 	(aggregation_operator most_recent)
 	(entry_type Numeric_Entry)
 	(label "AST > 40")
-	(numeric_domain_term SGOT)
+	(numeric_domain_term AST)
 	(operator %3E)
 	(value 40.0))
 
@@ -2437,7 +2437,7 @@
 	(aggregation_operator most_recent)
 	(entry_type Numeric_Entry)
 	(label "ALT > 40")
-	(numeric_domain_term SGPT)
+	(numeric_domain_term AST)
 	(operator %3E)
 	(value 40.0))
 
@@ -4068,6 +4068,14 @@
 ([NCEPATPIII_Instance_3] of  Management_Guideline
 
 	(clinical_algorithm [ATHENA_Lipid_Class170000])
+	(drug_usages
+		[ATHENA_Lipid_mod1_Class10002]
+		[ATHENA_Lipid_Class10015]
+		[ATHENA_Lipid_mod1_Class10003]
+		[ATHENA_Lipid_mod1_Class10004]
+		[ATHENA_Lipid_Class10014]
+		[ATHENA_Lipid_mod1_Class10005]
+		[ATHENA_Lipid_mod1_Class20000])
 	(eligibility_criteria
 		[NCEPATPIII_Instance_80020]
 		[ATHENA_Lipid_Class0])
@@ -4075,6 +4083,16 @@
 		[NCEPATPIII_Instance_40031]
 		[NCEPATPIII_Instance_40032]
 		[NCEPATPIII_Instance_40033])
+	(guideline_drugs
+		[ATHENA_Lipid_Class110016]
+		[ATHENA_Lipid_Class110017]
+		[ATHENA_Lipid_Class110018]
+		[ATHENA_Lipid_Class110019]
+		[ATHENA_Lipid_Class110020]
+		[ATHENA_Lipid_Class110022]
+		[ATHENA_Lipid_Class160000]
+		[ATHENA_Lipid_mod1_Class30000]
+		[ATHENA_Lipid_mod1_Class30001])
 	(label "ATHENA Lipid Management Guideline")
 	(patient_characterization
 		[CHD_Or_CHDEquivalent]
@@ -4507,14 +4525,14 @@
 ([NCEPATPIII_Instance_40045] of  Scenario
 
 	(followed_by [ATHENA_Lipid_Class190017])
-	(label "No drug, 2+ risk factors")
+	(label "No CHD, No drug, 2+ risk factors")
 	(new_encounter TRUE)
 	(precondition [NCEPATPIII_Instance_50001]))
 
 ([NCEPATPIII_Instance_40046] of  Scenario
 
 	(followed_by [ATHENA_Lipid_Class190012])
-	(label "No drug, 0-1 risk factors")
+	(label "No CHD, No drug, 0-1 risk factors")
 	(new_encounter TRUE)
 	(precondition [NCEPATPIII_Instance_50004]))
 
