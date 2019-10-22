@@ -1,4 +1,4 @@
-; Fri Oct 04 05:49:58 PDT 2019
+; Mon Oct 21 23:45:30 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2939,8 +2939,8 @@
 ([ATHENA_CKD_Dashboard_Class130212] of  PAL-QUERY
 
 	(%3APAL-NAME "2nd most recent eGFR")
-	(%3APAL-RANGE "(defrange ?eGFR1 :FRAME Numeric_Entry)\n(defrange ?eGFR2 :FRAME Numeric_Entry)\n(defrange ?eGFR3 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(findall ?eGFR1  (and (= (domain_term ?eGFR1) \"eGFR\")\n                      (= (patient_id ?eGFR1) $patient_id)\n                      (exists ?eGFR2 \n                              (and (= (domain_term ?eGFR2) \"eGFR2\") \n                                   (= (patient_id ?eGFR2) $patient_id)\n                                   (< (system_time (valid_time ?eGFR1))\n                                      (system_time (valid_time ?eGFR2)))\n                                   (not (exists ?eGFR3 (and (= (domain_term ?eGFR3) \"eGFR\")\n                                                            (= (patient_id ?eGFR3) $patient_id)\n                                                            (< (system_time (valid_time ?eGFR1))\n                                                               (system_time (valid_time ?eGFR3)))\n                                                            (/= (system_time (valid_time ?eGFR3))\n                                                                (system_time (valid_time ?eGFR1)))\n                                                       )\n                                        )\n                                   )\n                              )\n                      )\n                 )\n)\n"))
+	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(findall ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
 
 ([ATHENA_CKD_Dashboard_Class130213] of  PAL_Query
 
@@ -3036,6 +3036,24 @@
 		[ATHENA_CKD_Dashboard_Class141])
 	(label "DM and treatment group")
 	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140245] of  Variable
+
+	(derivation_expression [ATHENA_CKD_Dashboard_Class140246])
+	(label "presence of 2nd most recent eGFR")
+	(string_name "?2nddGFR"))
+
+([ATHENA_CKD_Dashboard_Class140246] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "exists 2nd most recent eGFR")
+	(PAL_constraint [ATHENA_CKD_Dashboard_Class140247]))
+
+([ATHENA_CKD_Dashboard_Class140247] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "exists 2nd most recent eGFR")
+	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(exists  ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                                       (= (patient_id ?eGFR2ndLast) $patient_id)\n                                       (exists ?eGFRLast \n                                               (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                                    (= (patient_id ?eGFRLast) $patient_id)\n                                                    (< (system_time (valid_time ?eGFR2ndLast))\n                                                       (system_time (valid_time ?eGFRLast)))\n                                                    (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                              (= (patient_id ?eGFR01) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFRLast))\n                                                                                 (system_time (valid_time ?eGFR01))))))\n                                                    (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                              (= (patient_id ?eGFR02) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFR2ndLast))\n                                                                                 (system_time (valid_time ?eGFR02)))\n                                                                              (/= (system_time (valid_time ?eGFR02))\n                                                                                  (system_time (valid_time ?eGFRLast)))\n                                                                         )\n                                                         )\n                                                    )\n                                               )\n                                       )\n                                  )\n)\n"))
 
 ([ATHENA_CKD_Dashboard_Class140519] of  PAL-QUERY
 
@@ -3863,7 +3881,8 @@
 	(label "ATHENA CKD Guideline 2019")
 	(patient_characterization
 		[ATHENA_CKD_Class10134]
-		[ATHENA_CKD_Dashboard_Class130214])
+		[ATHENA_CKD_Dashboard_Class130214]
+		[ATHENA_CKD_Dashboard_Class140245])
 	(version "2019.01"))
 
 ([ATHENA_CKD_Dashboard_Class70] of  Action_Choice
