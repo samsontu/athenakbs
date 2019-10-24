@@ -1,4 +1,4 @@
-; Mon Oct 21 23:45:30 PDT 2019
+; Wed Oct 23 23:05:16 PDT 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -37,6 +37,7 @@
 
 ([Age%3E65%3F] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_80024]))
 
 ([ATHENA_CKD_Class0] of  PAL-QUERY
@@ -348,6 +349,7 @@
 
 ([ATHENA_CKD_Class10134] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_20003])
 	(PrettyName "2 abnormal eGFR more than 3 months apart."))
 
@@ -820,6 +822,7 @@
 ([ATHENA_CKD_Class190006] of  Numeric_Term_Criterion
 
 	(aggregation_operator most_recent)
+	(entry_type Numeric_Entry)
 	(label "K>5 in past month")
 	(numeric_domain_term Potassium)
 	(operator %3E)
@@ -3055,6 +3058,14 @@
 	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)")
 	(%3APAL-STATEMENT "(exists  ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                                       (= (patient_id ?eGFR2ndLast) $patient_id)\n                                       (exists ?eGFRLast \n                                               (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                                    (= (patient_id ?eGFRLast) $patient_id)\n                                                    (< (system_time (valid_time ?eGFR2ndLast))\n                                                       (system_time (valid_time ?eGFRLast)))\n                                                    (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                              (= (patient_id ?eGFR01) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFRLast))\n                                                                                 (system_time (valid_time ?eGFR01))))))\n                                                    (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                              (= (patient_id ?eGFR02) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFR2ndLast))\n                                                                                 (system_time (valid_time ?eGFR02)))\n                                                                              (/= (system_time (valid_time ?eGFR02))\n                                                                                  (system_time (valid_time ?eGFRLast)))\n                                                                         )\n                                                         )\n                                                    )\n                                               )\n                                       )\n                                  )\n)\n"))
 
+([ATHENA_CKD_Dashboard_Class140518] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class150519]
+		[ATHENA_CKD_Dashboard_Class150520])
+	(label "30 <= 2nd latest GFR within past 750 days <60")
+	(operator AND))
+
 ([ATHENA_CKD_Dashboard_Class140519] of  PAL-QUERY
 
 	(%3APAL-NAME "Find all eGFR")
@@ -3198,6 +3209,46 @@
 		[ATHENA_CKD_Dashboard_Class20000]
 		[ATHENA_CKD_Dashboard_Class110095]
 		[ATHENA_CKD_Dashboard_Class120048]))
+
+([ATHENA_CKD_Dashboard_Class150519] of  Expression_Comparison_Criterion
+
+	(expression [library_Class110008])
+	(label "2nd lated GFR >=30 past 750d")
+	(operator %3E%3D)
+	(variable [ATHENA_CKD_Dashboard_Class130213]))
+
+([ATHENA_CKD_Dashboard_Class150520] of  Expression_Comparison_Criterion
+
+	(expression [ATHENA_CKD_Instance_30002])
+	(label "2nd latest GFR <60")
+	(operator %3C)
+	(variable [ATHENA_CKD_Dashboard_Class130213]))
+
+([ATHENA_CKD_Dashboard_Class150692] of  Expression_Comparison_Criterion
+
+	(expression [ATHENA_CKD_Instance_30002])
+	(label "2nd latest GFR >=60 in past 750days")
+	(operator %3E%3D)
+	(variable [ATHENA_CKD_Dashboard_Class130213]))
+
+([ATHENA_CKD_Dashboard_Class150693] of  On_Screen_Message
+
+	(label "2nd latest GFR >= 60 in past 750 days message")
+	(message "2nd latest GFR >= 60 in past 750 days")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class150694] of  Expression_Comparison_Criterion
+
+	(expression [library_Class110008])
+	(label "2nd latest GFR in past 750 days <30")
+	(operator %3C)
+	(variable [ATHENA_CKD_Dashboard_Class130213]))
+
+([ATHENA_CKD_Dashboard_Class150695] of  On_Screen_Message
+
+	(label "2nd latest GFR < 30 in past 750 days")
+	(message "2nd latest GFR < 30 in past 750 days")
+	(message_type Recommendation))
 
 ([ATHENA_CKD_Dashboard_Class151] of  Followed_By
 
@@ -3879,10 +3930,7 @@
 		[ATHENA_CKD_Dashboard_Class120098])
 	(guideline_drugs [ATHENA_CKD_Dashboard_Class3])
 	(label "ATHENA CKD Guideline 2019")
-	(patient_characterization
-		[ATHENA_CKD_Class10134]
-		[ATHENA_CKD_Dashboard_Class130214]
-		[ATHENA_CKD_Dashboard_Class140245])
+	(patient_characterization [ATHENA_CKD_Class10134])
 	(version "2019.01"))
 
 ([ATHENA_CKD_Dashboard_Class70] of  Action_Choice
@@ -3930,7 +3978,7 @@
 		[ATHENA_CKD_Dashboard_Class70008]
 		[ATHENA_CKD_Dashboard_Class70010]
 		[ATHENA_CKD_Dashboard_Class70013])
-	(label "GFR <= 59 from 90+ days ago? (Choice_Step)"))
+	(label "2nd latest GFR value (Choice_Step)"))
 
 ([ATHENA_CKD_Dashboard_Class70007] of  Followed_By
 
@@ -3940,7 +3988,8 @@
 ([ATHENA_CKD_Dashboard_Class70008] of  Action_Choice
 
 	(followed_by [ATHENA_CKD_Dashboard_Class70015])
-	(label "GFR 30-59 from 90+ days prior (Action Choice)"))
+	(label "2nd latest GFR between 30 and 59 in past 750")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140518]))
 
 ([ATHENA_CKD_Dashboard_Class70009] of  Followed_By
 
@@ -3949,8 +3998,9 @@
 
 ([ATHENA_CKD_Dashboard_Class70010] of  Action_Choice
 
+	(actions [ATHENA_CKD_Dashboard_Class150693])
 	(label "Second latest GFR >= 60 in past 750d (Action Choice)")
-	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class70012]))
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class150692]))
 
 ([ATHENA_CKD_Dashboard_Class70011] of  Followed_By
 
@@ -3967,7 +4017,9 @@
 
 ([ATHENA_CKD_Dashboard_Class70013] of  Action_Choice
 
-	(label "Second latest GFR < 30 in past 750d (Action Choice)"))
+	(actions [ATHENA_CKD_Dashboard_Class150695])
+	(label "Second latest GFR < 30 in past 750d (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class150694]))
 
 ([ATHENA_CKD_Dashboard_Class70014] of  Followed_By
 
@@ -4185,9 +4237,6 @@
 
 	(label "Metabolic Acidosis")
 	(message_type Recommendation))
-
-([ATHENA_CKD_Dashboard_Class80009] of  Parameterized_String
-)
 
 ([ATHENA_CKD_Dashboard_Class80010] of  Conditional_On_Screen_Message
 
@@ -4472,9 +4521,6 @@
 	(label "Proteinuria, GFR >= 60 (Message)")
 	(message_type Recommendation)
 	(parameterized_message [ATHENA_CKD_Dashboard_Class0]))
-
-([ATHENA_CKD_Dashboard_Class90011] of  Parameterized_String
-)
 
 ([ATHENA_CKD_Dashboard_Class90012] of  Numeric_Term_Criterion
 
@@ -5743,10 +5789,12 @@
 
 ([Had+a+kidney+transplant] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_10001]))
 
 ([High+Risk+Group] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_30008]))
 
 ([id_000000] of  Diagnostic_Term_Metaclass
@@ -6253,6 +6301,7 @@
 
 ([ScreeningCandidate] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_30007]))
 
 ([Transferrin+Situation] of  Interval-Valued_AtomicTest_Metaclass
@@ -6260,6 +6309,7 @@
 
 ([Two+abnormal+Cr+or+Microalbumin%2FCreatinine+Ratio+3+months+apart] of  Diagnostic_Term_Metaclass
 
+	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Instance_120251]))
 
 ([Urine_Prot%2FCreat_Ratio_Spot] of  Interval-Valued_AtomicTest_Metaclass
