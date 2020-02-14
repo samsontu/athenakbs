@@ -1,4 +1,4 @@
-; Wed Oct 23 23:05:16 PDT 2019
+; Thu Feb 13 17:24:35 PST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -107,6 +107,10 @@
 (defclass 585.6
 	(is-a End-Stage_Renal_Disease)
 	(role abstract))
+
+(defclass Polycystic+Kidney+Disease
+	(is-a Renal_Disease)
+	(role concrete))
 
 (defclass Defined_Condition
 	(is-a Medical_Conditions_Class)

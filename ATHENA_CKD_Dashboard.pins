@@ -1,4 +1,4 @@
-; Wed Oct 23 23:05:16 PDT 2019
+; Thu Feb 13 17:24:35 PST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2473,6 +2473,18 @@
 	(label "losartan")
 	(starting_dose 5.0))
 
+([ATHENA_CKD_Dashboard_Class100000] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value no_assumption)
+	(entry_type Patient)
+	(label "Age < 80 yr")
+	(numeric_domain_term Age)
+	(operator %3C)
+	(unit "year")
+	(value 80.0)
+	(%3ADOCUMENTATION "Made for CKD Dashboard 2019"))
+
 ([ATHENA_CKD_Dashboard_Class100001] of  Numeric_Term_Criterion
 
 	(aggregation_operator most_recent)
@@ -2630,11 +2642,6 @@
 	(presence FALSE)
 	(status "active"))
 
-([ATHENA_CKD_Dashboard_Class100026] of  N_ary_Criterion
-
-	(label "Absence of ACE and ARB")
-	(operator AND))
-
 ([ATHENA_CKD_Dashboard_Class100028] of  Numeric_Term_Criterion
 
 	(aggregation_operator count)
@@ -2718,6 +2725,14 @@
 	(label "Abnormal mALB/Cr more than 3 months before most recent one")
 	(new_encounter TRUE)
 	(precondition [ATHENA_CKD_Dashboard_Class111]))
+
+([ATHENA_CKD_Dashboard_Class110001] of  Presence_Criterion
+
+	(domain_term Polycystic+Kidney+Disease)
+	(entry_type Note_Entry)
+	(label "Absence of Polycystic Kidney Disease (ICD)")
+	(presence FALSE)
+	(%3ADOCUMENTATION "For exclusion from CKD KB 2019"))
 
 ([ATHENA_CKD_Dashboard_Class110004] of  Numeric_Term_Criterion
 
@@ -2821,6 +2836,79 @@
 	(label "First Cr abnormal, order Cr")
 	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class56]))
 
+([ATHENA_CKD_Dashboard_Class120039] of  Scenario
+
+	(followed_by [ATHENA_CKD_Dashboard_Class130048])
+	(label "Women <= 50yo")
+	(new_encounter FALSE)
+	(precondition [ATHENA_CKD_Dashboard_Class120044]))
+
+([ATHENA_CKD_Dashboard_Class120040] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Patient)
+	(label "Age > 50")
+	(numeric_domain_term Age)
+	(operator %3E)
+	(unit "years")
+	(value 50.0))
+
+([ATHENA_CKD_Dashboard_Class120041] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_40003]
+		[ATHENA_CKD_Dashboard_Class120040])
+	(label "Female, age > 50")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class120042] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class120041]
+		[ATHENA_CKD_Instance_70005])
+	(label "Female, age > 50, or male")
+	(operator OR)
+	(%3ADOCUMENTATION "For determining who should have pregnancy warning messages displayed"))
+
+([ATHENA_CKD_Dashboard_Class120043] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Patient)
+	(label "Age <= 50")
+	(numeric_domain_term Age)
+	(operator %3C%3D)
+	(unit "years")
+	(value 50.0)
+	(%3ADOCUMENTATION "To be used as criterion for showing message regarding possibly pregnant patients"))
+
+([ATHENA_CKD_Dashboard_Class120044] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_40003]
+		[ATHENA_CKD_Dashboard_Class120043])
+	(label "Female, age <= 50")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class120045] of  Scenario
+
+	(followed_by [ATHENA_CKD_Dashboard_Class120046])
+	(label "Women > 50yo, all men")
+	(new_encounter FALSE)
+	(precondition [ATHENA_CKD_Dashboard_Class120042]))
+
+([ATHENA_CKD_Dashboard_Class120046] of  Action_Choice
+
+	(actions [ATHENA_CKD_Dashboard_Class130050])
+	(label "General warnings, non-pregnant (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class120042]))
+
+([ATHENA_CKD_Dashboard_Class120047] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class120045])
+	(%3ATO [ATHENA_CKD_Dashboard_Class120046]))
+
 ([ATHENA_CKD_Dashboard_Class120048] of  Followed_By
 
 	(%3AFROM [ATHENA_CKD_Dashboard_Class30015])
@@ -2861,11 +2949,9 @@
 ([ATHENA_CKD_Dashboard_Class120098] of  N_ary_Criterion
 
 	(criteria
-		[ATHENA_CKD_Dashboard_Class120094]
-		[ATHENA_CKD_Dashboard_Class120095]
 		[ATHENA_CKD_Dashboard_Class120096]
 		[ATHENA_CKD_Dashboard_Class120097])
-	(label "Absence of CKD 1,2,4,5")
+	(label "Absence of CKD 4,5")
 	(operator AND))
 
 ([ATHENA_CKD_Dashboard_Class120149] of  N_ary_Criterion
@@ -2939,10 +3025,53 @@
 	(label "Achieve/maintain Hb A1c goal")
 	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class131]))
 
+([ATHENA_CKD_Dashboard_Class130048] of  Action_Choice
+
+	(actions [ATHENA_CKD_Dashboard_Class130051])
+	(label "General warnings, possibly pregnant (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class120044]))
+
+([ATHENA_CKD_Dashboard_Class130049] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class120039])
+	(%3ATO [ATHENA_CKD_Dashboard_Class130048]))
+
+([ATHENA_CKD_Dashboard_Class130050] of  On_Screen_Message
+
+	(description "CKD KB general warnings for those who are not possibly pregnant")
+	(label "General warnings, non-pregnant")
+	(message "WARNING: This system cannot reliably process information regarding certain situations relevant to kidney disease care. The following recommendations should not be applied to patients with concerns for acute kidney injury or nephrotic/nephritic syndrome, patients who have undergone kidney transplantation, patients who are currently undergoing dialysis, or patients with congestive heart failure or cirrhosis/chronic liver disease.\n\n- Recommend checking creatinine as part of the basic metabolic panel yearly")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class130051] of  On_Screen_Message
+
+	(description "CKD KB general warnings for those who could possibly be pregnant")
+	(label "General warnings, possibly pregnant")
+	(message "WARNING: This system cannot reliably process information regarding certain situations relevant to kidney disease care. The following recommendations should not be applied to patients with concerns for acute kidney injury or nephrotic/nephritic syndrome, patients who have undergone kidney transplantation, patients who are currently undergoing dialysis, or patients with congestive heart failure or cirrhosis/chronic liver disease.\n\nWARNING: These recommendations do not apply to woman who are currently or planning to become pregnant.\n\n- Recommend checking creatinine as part of the basic metabolic panel yearly")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class130104] of  Numeric_Term_Criterion
+
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Numeric_Entry)
+	(label "Hemoglobin < 10")
+	(numeric_domain_term HGB)
+	(operator %3C)
+	(value 10.0))
+
+([ATHENA_CKD_Dashboard_Class130105] of  Numeric_Term_Criterion
+
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Numeric_Entry)
+	(label "Hemoglobin >= 10")
+	(numeric_domain_term HGB)
+	(operator %3E%3D)
+	(value 10.0))
+
 ([ATHENA_CKD_Dashboard_Class130212] of  PAL-QUERY
 
-	(%3APAL-NAME "2nd most recent eGFR")
-	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)")
+	(%3APAL-NAME "2nd most recent eGFR, with low eGFR 90 days prior to last")
+	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)\n")
 	(%3APAL-STATEMENT "(findall ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
 
 ([ATHENA_CKD_Dashboard_Class130213] of  PAL_Query
@@ -3039,6 +3168,172 @@
 		[ATHENA_CKD_Dashboard_Class141])
 	(label "DM and treatment group")
 	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140052] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class42]
+		[ATHENA_CKD_Dashboard_Class41])
+	(label "No DM, no CKD")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140053] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class42]
+		[ATHENA_CKD_Dashboard_Class91]
+		[ATHENA_CKD_Dashboard_Class92]
+		[ATHENA_CKD_Dashboard_Class90007]
+		[ATHENA_CKD_Instance_60000])
+	(label "No UACR/UPCR, DM, no CKD3")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140054] of  On_Screen_Message
+
+	(label "Order UACR (CKD3) message")
+	(message "Urine albumin-to-creatinine ratio has not been checked in the past year. Recommend screening for albuminuria periodically in CKD Stage 3.")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class140055] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class91]
+		[ATHENA_CKD_Dashboard_Class92]
+		[ATHENA_CKD_Dashboard_Class90007]
+		[ATHENA_CKD_Dashboard_Class62]
+		[ATHENA_CKD_Instance_60000])
+	(label "No UACR/UPCR, DM, CKD3")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140056] of  Action_Choice
+
+	(actions [ATHENA_CKD_Dashboard_Class140054])
+	(label "No UACR, no DM, CKD3, no ACE/ARB, Order UACR (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class90001]))
+
+([ATHENA_CKD_Dashboard_Class140057] of  Action_Choice
+
+	(actions [ATHENA_CKD_Instance_50015])
+	(label "No UACR, DM, CKD3, no ACE/ARB, Order UACR (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140055]))
+
+([ATHENA_CKD_Dashboard_Class140058] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class30012])
+	(%3ATO [ATHENA_CKD_Dashboard_Class140056]))
+
+([ATHENA_CKD_Dashboard_Class140059] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class30012])
+	(%3ATO [ATHENA_CKD_Dashboard_Class140057]))
+
+([ATHENA_CKD_Dashboard_Class140221] of  On_Screen_Message
+
+	(label "CKD Stage 3b Message")
+	(message "This patient has CKD Stage 3b (eGFR 30-44)")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class140222] of  Numeric_Term_Criterion
+
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Numeric_Entry)
+	(label "Hemoglobin <= 11.5")
+	(numeric_domain_term HGB)
+	(operator %3C%3D)
+	(value 11.5))
+
+([ATHENA_CKD_Dashboard_Class140223] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class140222]
+		[ATHENA_CKD_Dashboard_Class130105])
+	(label "Hemoglobin 10-11.5")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class140225] of  Action_Choice
+
+	(actions [ATHENA_CKD_Dashboard_Class150248])
+	(label "Ferritin or TSAT NOT checked in past year (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140229]))
+
+([ATHENA_CKD_Dashboard_Class140226] of  Action_Choice
+
+	(followed_by [ATHENA_CKD_Dashboard_Class140230])
+	(label "Ferritin and TSAT checked in past year (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140242]))
+
+([ATHENA_CKD_Dashboard_Class140227] of  Presence_Criterion
+
+	(domain_term Ferritin)
+	(entry_type Numeric_Entry)
+	(label "Absence of ferritin in past year")
+	(period [library_Class60017])
+	(presence FALSE))
+
+([ATHENA_CKD_Dashboard_Class140228] of  Presence_Criterion
+
+	(domain_term Transferrin+Situation)
+	(entry_type Numeric_Entry)
+	(label "Absence of TSAT in past year")
+	(period [library_Class60017])
+	(presence FALSE))
+
+([ATHENA_CKD_Dashboard_Class140229] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class140227]
+		[ATHENA_CKD_Dashboard_Class140228])
+	(label "Absence of ferritin OR TSAT in past year")
+	(operator OR))
+
+([ATHENA_CKD_Dashboard_Class140230] of  Choice_Step
+
+	(branches [ATHENA_CKD_Dashboard_Class80035])
+	(label "Ferritin or TSAT low? (Choice_Step)"))
+
+([ATHENA_CKD_Dashboard_Class140236] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class80033])
+	(%3ATO [ATHENA_CKD_Dashboard_Class140226]))
+
+([ATHENA_CKD_Dashboard_Class140239] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class80033])
+	(%3ATO [ATHENA_CKD_Dashboard_Class140225]))
+
+([ATHENA_CKD_Dashboard_Class140240] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class140226])
+	(%3ATO [ATHENA_CKD_Dashboard_Class140230]))
+
+([ATHENA_CKD_Dashboard_Class140241] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class140230])
+	(%3ATO [ATHENA_CKD_Dashboard_Class80035]))
+
+([ATHENA_CKD_Dashboard_Class140242] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class140243]
+		[ATHENA_CKD_Dashboard_Class140244])
+	(label "Presence of ferritin OR TSAT in past year")
+	(operator OR))
+
+([ATHENA_CKD_Dashboard_Class140243] of  Presence_Criterion
+
+	(domain_term Ferritin)
+	(entry_type Numeric_Entry)
+	(label "Presence of ferritin in past year")
+	(period [library_Class60017])
+	(presence TRUE))
+
+([ATHENA_CKD_Dashboard_Class140244] of  Presence_Criterion
+
+	(domain_term Transferrin+Situation)
+	(entry_type Numeric_Entry)
+	(label "Presence of TSAT in past year")
+	(period [library_Class60017])
+	(presence TRUE))
 
 ([ATHENA_CKD_Dashboard_Class140245] of  Variable
 
@@ -3166,7 +3461,17 @@
 		[ATHENA_CKD_Dashboard_Class80043]
 		[ATHENA_CKD_Dashboard_Class80000]
 		[ATHENA_CKD_Dashboard_Class110141]
-		[ATHENA_CKD_Dashboard_Class110093])
+		[ATHENA_CKD_Dashboard_Class110093]
+		[ATHENA_CKD_Dashboard_Class140226]
+		[ATHENA_CKD_Dashboard_Class140225]
+		[ATHENA_CKD_Dashboard_Class140230]
+		[ATHENA_CKD_Dashboard_Class160252]
+		[ATHENA_CKD_Dashboard_Class120039]
+		[ATHENA_CKD_Dashboard_Class120045]
+		[ATHENA_CKD_Dashboard_Class120046]
+		[ATHENA_CKD_Dashboard_Class130048]
+		[ATHENA_CKD_Dashboard_Class140057]
+		[ATHENA_CKD_Dashboard_Class140056])
 	(transitions
 		[ATHENA_CKD_Dashboard_Class30000]
 		[ATHENA_CKD_Dashboard_Class30004]
@@ -3198,7 +3503,6 @@
 		[ATHENA_CKD_Dashboard_Class80029]
 		[ATHENA_CKD_Dashboard_Class80031]
 		[ATHENA_CKD_Dashboard_Class80034]
-		[ATHENA_CKD_Dashboard_Class80038]
 		[ATHENA_CKD_Dashboard_Class80041]
 		[ATHENA_CKD_Dashboard_Class80042]
 		[ATHENA_CKD_Dashboard_Class80044]
@@ -3208,7 +3512,64 @@
 		[ATHENA_CKD_Dashboard_Class100007]
 		[ATHENA_CKD_Dashboard_Class20000]
 		[ATHENA_CKD_Dashboard_Class110095]
-		[ATHENA_CKD_Dashboard_Class120048]))
+		[ATHENA_CKD_Dashboard_Class120048]
+		[ATHENA_CKD_Dashboard_Class140236]
+		[ATHENA_CKD_Dashboard_Class140239]
+		[ATHENA_CKD_Dashboard_Class140240]
+		[ATHENA_CKD_Dashboard_Class140241]
+		[ATHENA_CKD_Dashboard_Class160256]
+		[ATHENA_CKD_Dashboard_Class120047]
+		[ATHENA_CKD_Dashboard_Class130049]
+		[ATHENA_CKD_Dashboard_Class140058]
+		[ATHENA_CKD_Dashboard_Class140059]))
+
+([ATHENA_CKD_Dashboard_Class150245] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Numeric_Entry)
+	(label "Ferritin < 500 past year")
+	(numeric_domain_term Ferritin)
+	(operator %3C)
+	(valid_window [ATHENA_CKD_Dashboard_Class50])
+	(value 500.0))
+
+([ATHENA_CKD_Dashboard_Class150246] of  Numeric_Term_Criterion
+
+	(aggregation_operator most_recent)
+	(assume_if_no_value assume_unsatisfied)
+	(entry_type Numeric_Entry)
+	(label "TSAT < 30% past year")
+	(numeric_domain_term Transferrin+Situation)
+	(operator %3C)
+	(valid_window [ATHENA_CKD_Dashboard_Class50])
+	(value 30.0))
+
+([ATHENA_CKD_Dashboard_Class150247] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class150245]
+		[ATHENA_CKD_Dashboard_Class150246])
+	(label "Low Ferritin OR TSAT")
+	(operator OR))
+
+([ATHENA_CKD_Dashboard_Class150248] of  On_Screen_Message
+
+	(label "Check Ferritin and TSAT")
+	(message "Anemia in the setting of chronic kidney disease is often related to depleted iron stores. Recommend checking an iron profile and repleting with PO iron if transferrin saturation is ≤ 30% and ferritin is ≤ 500 ng/mL.")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class150249] of  On_Screen_Message
+
+	(label "Low ferritin or TSAT")
+	(message "Anemia in the setting of chronic kidney disease is often related to depleted iron stores. This patient's iron Recommend checking an iron profile and repleting with PO iron if transferrin saturation is ≤ 30% and ferritin is ≤ 500 ng/mL.")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class150431] of  On_Screen_Message
+
+	(label "CKD Stage 3a Message")
+	(message "This patient has CKD Stage 3a (eGFR 45-59)")
+	(message_type Recommendation))
 
 ([ATHENA_CKD_Dashboard_Class150519] of  Expression_Comparison_Criterion
 
@@ -3234,7 +3595,7 @@
 ([ATHENA_CKD_Dashboard_Class150693] of  On_Screen_Message
 
 	(label "2nd latest GFR >= 60 in past 750 days message")
-	(message "2nd latest GFR >= 60 in past 750 days")
+	(message "This patient has a signle eGFR reading in the range of CKD Stage 3, but the previous measurements are higher. Recommend repeating creatinine/eGFR 90+ days after the last measurement to confirm the diagnosis. Repeat sooner if concerned for acute kidney injury. Assess patient for volume depletion.")
 	(message_type Recommendation))
 
 ([ATHENA_CKD_Dashboard_Class150694] of  Expression_Comparison_Criterion
@@ -3247,7 +3608,7 @@
 ([ATHENA_CKD_Dashboard_Class150695] of  On_Screen_Message
 
 	(label "2nd latest GFR < 30 in past 750 days")
-	(message "2nd latest GFR < 30 in past 750 days")
+	(message "This patient has a single eGFR reading in the range of CKD Stage 3, but a previous measurement suggests a more severe stage of CKD. Recommend assessing hisotrical eGFR trend. If within goals of care, refer patients with eGFR persistently below 30 mL/min to Nephrology.")
 	(message_type Recommendation))
 
 ([ATHENA_CKD_Dashboard_Class151] of  Followed_By
@@ -3269,8 +3630,104 @@
 ([ATHENA_CKD_Dashboard_Class16] of  Followed_By
 )
 
+([ATHENA_CKD_Dashboard_Class160247] of  On_Screen_Message
+
+	(label "CKD 3 missing UACR 1 year")
+	(message "Check urine albumin-to-creatinine ratio (UACR) periodically. This patient has not had UACR checked in the past 2 years and is not on an ACE inhibitor or angiotensin receptor blocker. These medications are indicated for the treatment of hypertension in patients with CKD Stage 3 and UACR >= 30 mg/g.")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class160248] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_60000]
+		[ATHENA_CKD_Dashboard_Class92])
+	(label "Absence of ACE/ARB/UACR past year")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class160249] of  Relative_Time_Interval_Definite
+
+	(how_many "180")
+	(label "180 days")
+	(polarity Before)
+	(time_unit day))
+
+([ATHENA_CKD_Dashboard_Class160250] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Instance_60000]
+		[ATHENA_CKD_Dashboard_Class92]
+		[ATHENA_CKD_Dashboard_Class160251])
+	(label "HTN and absence of ACE/ARB/UACR past year")
+	(operator AND))
+
+([ATHENA_CKD_Dashboard_Class160251] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class43]
+		[ATHENA_CKD_Class10022])
+	(label "HTN diagnosis or meets BP criteria")
+	(operator OR))
+
+([ATHENA_CKD_Dashboard_Class160252] of  Action_Choice
+
+	(actions [ATHENA_CKD_Dashboard_Class160257])
+	(label "CKD3, UACR >=30 or UPCR >=150, on ACEi/ARB (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class160248]))
+
+([ATHENA_CKD_Dashboard_Class160253] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class90013]
+		[ATHENA_CKD_Dashboard_Class160255])
+	(label "CKD3, UACR >=30 or UPCR >=150, on ACEi/ARB")
+	(operator AND)
+	(%3ADOCUMENTATION "NO EVALUATION OF CKD STAGE, this is meant to follow CKD Stage 3 determination."))
+
+([ATHENA_CKD_Dashboard_Class160254] of  Presence_Criterion
+
+	(domain_term ACE_Inhibitors)
+	(entry_type Medication)
+	(label "Presence of ACE inhibitor")
+	(presence TRUE))
+
+([ATHENA_CKD_Dashboard_Class160255] of  N_ary_Criterion
+
+	(criteria
+		[ATHENA_CKD_Dashboard_Class160254]
+		[ATHENA_CKD_Class50011])
+	(label "Presence of ACE or ARB")
+	(operator OR))
+
+([ATHENA_CKD_Dashboard_Class160256] of  Followed_By
+
+	(%3AFROM [ATHENA_CKD_Dashboard_Class80024])
+	(%3ATO [ATHENA_CKD_Dashboard_Class160252]))
+
+([ATHENA_CKD_Dashboard_Class160257] of  On_Screen_Message
+
+	(label "Maximize ACE/ARB")
+	(message "If blood pressure and serum potassium allow, recommend maximizing dose of either an ACE-inhibitor/ARB. The maximum dose of lisinopril is 40 mg daily, and the maximum dose of losartan is 100mg daily. Consider checking UACR yearly to assess for progression of CKD.")
+	(message_type Recommendation))
+
+([ATHENA_CKD_Dashboard_Class160258] of  On_Screen_Message
+
+	(label "HGB < 10")
+	(message "This patient's hemoglobin is less than 10 g/dL. Chronic kidney disease may cause anemia in the absence of other etiologies. Recommend referral to nephrology for evaluation.")
+	(message_type Recommendation))
+
 ([ATHENA_CKD_Dashboard_Class17] of  Followed_By
 )
+
+([ATHENA_CKD_Dashboard_Class170420] of  Variable
+
+	(derivation_expression [ATHENA_CKD_Dashboard_Class130213])
+	(label "2nd most recent eGFR, with low eGFR 90 days prior to last"))
+
+([ATHENA_CKD_Dashboard_Class170510] of  PAL-QUERY
+
+	(%3APAL-NAME "2nd most recent eGFR, with low eGFR 90 days prior to last")
+	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)\n(defrange ?eGFRLowBeforLast :FRAME Numeric_Entry)")
+	(%3APAL-STATEMENT "(findall ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (exists ?eGFRLowBeforLast \n                                                 (and (= (domain_term ?eGFRLowBeforLast) \"eGFR\") \n                                                      (= (patient_id ?eGFRLowBeforLast) $patient_id)\n                                                      (/=  ?eGFRLowBeforLast   ?eGFRLast)\n                                                      (> (+ (system_time (valid_time ?eGFRLowBeforLast)) 90)\n                                                         (system_time (valid_time ?eGFRLast)))\n                                                      (> (value ?eGFRLowBeforLast) 29)\n                                                      (< (value ?eGFRLowBeforLast) 60)))\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
 
 ([ATHENA_CKD_Dashboard_Class18] of  Followed_By
 )
@@ -3445,7 +3902,9 @@
 		[ATHENA_CKD_Instance_20006]
 		[ATHENA_CKD_Dashboard_Class40007]
 		[ATHENA_CKD_Dashboard_Class40008]
-		[ATHENA_CKD_Dashboard_Class50020])
+		[ATHENA_CKD_Dashboard_Class50020]
+		[ATHENA_CKD_Dashboard_Class140056]
+		[ATHENA_CKD_Dashboard_Class140057])
 	(label "GFR and ACR checked past 380d?"))
 
 ([ATHENA_CKD_Dashboard_Class30015] of  Choice_Step
@@ -3835,14 +4294,9 @@
 
 	(%3AFROM [ATHENA_CKD_Dashboard_Class60000]))
 
-([ATHENA_CKD_Dashboard_Class60007] of  Action_Choice
-
-	(label "No urine protein within a year, order UACR (Action Choice)"))
-
 ([ATHENA_CKD_Dashboard_Class60008] of  Followed_By
 
-	(%3AFROM [ATHENA_CKD_Dashboard_Class30012])
-	(%3ATO [ATHENA_CKD_Dashboard_Class60007]))
+	(%3AFROM [ATHENA_CKD_Dashboard_Class30012]))
 
 ([ATHENA_CKD_Dashboard_Class61] of  N_ary_Criterion
 
@@ -3927,10 +4381,14 @@
 		[ATHENA_CKD_Dashboard_Class20004]
 		[ATHENA_CKD_Class80008]
 		[ATHENA_CKD_Dashboard_Class130506]
-		[ATHENA_CKD_Dashboard_Class120098])
+		[ATHENA_CKD_Dashboard_Class120098]
+		[ATHENA_CKD_Dashboard_Class100000]
+		[ATHENA_CKD_Dashboard_Class110001])
 	(guideline_drugs [ATHENA_CKD_Dashboard_Class3])
 	(label "ATHENA CKD Guideline 2019")
-	(patient_characterization [ATHENA_CKD_Class10134])
+	(patient_characterization
+		[ATHENA_CKD_Class10134]
+		[ATHENA_CKD_Dashboard_Class170420])
 	(version "2019.01"))
 
 ([ATHENA_CKD_Dashboard_Class70] of  Action_Choice
@@ -3954,7 +4412,7 @@
 
 	(description "Tell PCP to repeat Cr to confirm CKD")
 	(label "Repeat GFR within 3 months for CKD confirmation")
-	(message "This patient’s eGFR is in the range of CKD Stage 3, but there are no other recent values available. Recommend repeating creatinine/eGFR measurement 90+ days after the last measurement to confirm the diagnosis or repeat sooner if concerned for acute kidney injury.")
+	(message "This patient’s eGFR is in the range of CKD Stage 3, but there are no other recent values available. Recommend repeating creatinine/eGFR measurement 90+ days after the last measurement to confirm the diagnosis. Repeat sooner if concerned for acute kidney injury.")
 	(message_type Recommendation))
 
 ([ATHENA_CKD_Dashboard_Class70003] of  Action_Choice
@@ -4040,12 +4498,14 @@
 
 ([ATHENA_CKD_Dashboard_Class70017] of  Action_Choice
 
+	(actions [ATHENA_CKD_Dashboard_Class140221])
 	(followed_by [ATHENA_CKD_Dashboard_Class80024])
 	(label "Latest GFR 30-44")
 	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class100009]))
 
 ([ATHENA_CKD_Dashboard_Class70018] of  Action_Choice
 
+	(actions [ATHENA_CKD_Dashboard_Class150431])
 	(followed_by [ATHENA_CKD_Dashboard_Class80024])
 	(label "Latest GFR 45-59")
 	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class100012]))
@@ -4241,9 +4701,10 @@
 ([ATHENA_CKD_Dashboard_Class80010] of  Conditional_On_Screen_Message
 
 	(description "Message to display when serum bicarbonate < 22 mEq/L")
-	(label "Metabolic acidosis")
-	(message "... (NEED TO WRITE THIS)")
-	(message_type Recommendation))
+	(label "Metabolic acidosis message")
+	(message "This patient has lab values consistent with metabolic acidosis. Among other causes, this may be due to CKD. If the metabolic acidosis persists without another cause, treatment with sodium bicarbonate can be considered. The typical starting dose is sodium bicarbonate 650mg PO twice a day. CAUTION: Avoid sodium bicarbonate in patients with signs of volume overload such as peripheral edema and crackles on lung exam. Consider referral to Nephrology if severe.")
+	(message_type Recommendation)
+	(rule_in_condition [ATHENA_CKD_Dashboard_Class80006]))
 
 ([ATHENA_CKD_Dashboard_Class80011] of  Followed_By
 
@@ -4303,7 +4764,8 @@
 		[ATHENA_CKD_Dashboard_Class80005]
 		[ATHENA_CKD_Dashboard_Class80030]
 		[ATHENA_CKD_Dashboard_Class80040]
-		[ATHENA_CKD_Dashboard_Class80043])
+		[ATHENA_CKD_Dashboard_Class80043]
+		[ATHENA_CKD_Dashboard_Class160252])
 	(label "CKD Stage 3"))
 
 ([ATHENA_CKD_Dashboard_Class80025] of  Followed_By
@@ -4333,7 +4795,8 @@
 ([ATHENA_CKD_Dashboard_Class80030] of  Action_Choice
 
 	(followed_by [ATHENA_CKD_Dashboard_Class80033])
-	(label "Anemia, Hgb >= 10 (Action Choice)"))
+	(label "Anemia, Hgb >= 10 (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140223]))
 
 ([ATHENA_CKD_Dashboard_Class80031] of  Followed_By
 
@@ -4342,8 +4805,10 @@
 
 ([ATHENA_CKD_Dashboard_Class80033] of  Choice_Step
 
-	(branches [ATHENA_CKD_Dashboard_Class80035])
-	(label "Low ferritin or TSAT? (Choice_Step)"))
+	(branches
+		[ATHENA_CKD_Dashboard_Class140226]
+		[ATHENA_CKD_Dashboard_Class140225])
+	(label "Ferritin or TSAT checked in past year? (Choice_Step)"))
 
 ([ATHENA_CKD_Dashboard_Class80034] of  Followed_By
 
@@ -4352,7 +4817,9 @@
 
 ([ATHENA_CKD_Dashboard_Class80035] of  Action_Choice
 
-	(label "Give PO iron"))
+	(actions [ATHENA_CKD_Dashboard_Class150249])
+	(label "Low ferritin or TSAT (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class150247]))
 
 ([ATHENA_CKD_Dashboard_Class80036] of  Followed_By
 
@@ -4362,15 +4829,12 @@
 
 	(%3AFROM [ATHENA_CKD_Dashboard_Class80035]))
 
-([ATHENA_CKD_Dashboard_Class80038] of  Followed_By
-
-	(%3AFROM [ATHENA_CKD_Dashboard_Class80033])
-	(%3ATO [ATHENA_CKD_Dashboard_Class80035]))
-
 ([ATHENA_CKD_Dashboard_Class80040] of  Action_Choice
 
+	(actions [ATHENA_CKD_Dashboard_Class160258])
 	(followed_by [ATHENA_CKD_Dashboard_Class80033])
-	(label "Anemia, Hgb < 10 (Action Choice)"))
+	(label "Anemia, Hgb < 10 (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class130104]))
 
 ([ATHENA_CKD_Dashboard_Class80041] of  Followed_By
 
@@ -4384,7 +4848,9 @@
 
 ([ATHENA_CKD_Dashboard_Class80043] of  Action_Choice
 
-	(label "No urine protein within 1yr CKD3, no ACEi/ARB (Action Choice)"))
+	(actions [ATHENA_CKD_Dashboard_Class160247])
+	(label "No urine protein within 1yr CKD3, no ACEi/ARB (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class160248]))
 
 ([ATHENA_CKD_Dashboard_Class80044] of  Followed_By
 
@@ -4429,11 +4895,7 @@
 
 	(case_variable "$patient_id")
 	(key_slot [drug_name])
-	(label "patient taking nephrotoxic drug")
-	(PAL_query [ATHENA_CKD_Dashboard_Class87]))
-
-([ATHENA_CKD_Dashboard_Class87] of  PAL-QUERY
-)
+	(label "patient taking nephrotoxic drug"))
 
 ([ATHENA_CKD_Dashboard_Class88] of  Presence_Criterion
 
@@ -4473,9 +4935,12 @@
 ([ATHENA_CKD_Dashboard_Class90001] of  N_ary_Criterion
 
 	(criteria
-		[ATHENA_CKD_Dashboard_Class42]
-		[ATHENA_CKD_Dashboard_Class41])
-	(label "No DM, no CKD")
+		[ATHENA_CKD_Dashboard_Class92]
+		[ATHENA_CKD_Dashboard_Class90007]
+		[ATHENA_CKD_Instance_30009]
+		[ATHENA_CKD_Dashboard_Class62]
+		[ATHENA_CKD_Instance_60000])
+	(label "No UACR/UPCR, CKD3, no DM")
 	(operator AND))
 
 ([ATHENA_CKD_Dashboard_Class90002] of  N_ary_Criterion
@@ -4629,7 +5094,7 @@
 
 	(actions [ATHENA_CKD_Instance_30013])
 	(label "No GFR within 380d, out of scope; Order GFR")
-	(strict_rule_in_condition [ATHENA_CKD_Class20009]))
+	(strict_rule_in_condition [ATHENA_CKD_Instance_30011]))
 
 ([ATHENA_CKD_Instance_10000] of  Followed_By
 )
@@ -5058,8 +5523,8 @@
 ([ATHENA_CKD_Instance_20006] of  Action_Choice
 
 	(actions [ATHENA_CKD_Instance_50015])
-	(label "No UACR, Order UACR")
-	(strict_rule_in_condition [ATHENA_CKD_Instance_50013]))
+	(label "No UACR, DM, no CKD3, no ACE/ARB, Order UACR (Action Choice)")
+	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class140053]))
 
 ([ATHENA_CKD_Instance_20009] of  Followed_By
 
@@ -5142,7 +5607,7 @@
 ([ATHENA_CKD_Instance_30013] of  On_Screen_Message
 
 	(label "Order creatinine")
-	(message "There is no record of serum creatinine/eGFR available to compute recommendations. Recommend ordering basic metabolic panel for evaluation.")
+	(message "The latest creatinine and eGFR measured are more than 380 days old, so the patient cannot be evaluated fully for recommendations. Recommend checking creatinine as part of the basic metabolic panel yearly.")
 	(message_type Primary_Recommendation))
 
 ([ATHENA_CKD_Instance_4] of  Management_Guideline
@@ -5340,8 +5805,8 @@
 
 ([ATHENA_CKD_Instance_50015] of  On_Screen_Message
 
-	(label "Order UACR message")
-	(message "Urine albumin-to-creatinine ratio has not been checked in the past year. Recommend checking yearly in patients with diabetes and/or CKD.")
+	(label "Order UACR (DM) message")
+	(message "Urine albumin-to-creatinine ratio has not been checked in the past year. Recommend screening yearly for albuminuria in patients with diabetes.")
 	(message_type Recommendation))
 
 ([ATHENA_CKD_Instance_50016] of  On_Screen_Message
