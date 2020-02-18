@@ -1,4 +1,4 @@
-; Tue Sep 24 09:48:36 PDT 2019
+; Tue Feb 18 13:54:08 PST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1149,7 +1149,7 @@
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class190000] of  Parameterized_String
 
-	(label "Sax missing GFR")
+	(label "GFR older than 1 month")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
 	(value "GFR: older than 1 month ?value (?date)."))
 
@@ -1252,7 +1252,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class200002] of  Parameterized_Message
 
 	(fine-grain_priority 5000)
-	(label "Param msg sax missing GFR past month")
+	(label "Param msg missing GFR past month (GFR older than a month)")
 	(message_type do_not_add_controllable_condition)
 	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class190000])
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class200003]))
@@ -2707,7 +2707,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class390022] of  On_Screen_Message
 
 	(fine-grain_priority 6000)
-	(label "relative contra sax CHF")
+	(label "relative contra  CHF")
 	(message "Relative contraindication:  Pt has CHF.")
 	(message_type relative_contraindication)
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class310001]))
@@ -4587,7 +4587,6 @@
 		[ATHENA_GlycemicControl_Instance_50026]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class471049]
 		[ATHENA_GlycemicControl_Class1110002]
-		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class504725])
 	(label "Presence of increase metformin dose; Evaluate 2nd-line drug")
 	(recommendation_basis [is_second-line_drug_for])
@@ -4723,7 +4722,6 @@
 		[ATHENA_GlycemicControl_Instance_50026]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class471049]
 		[ATHENA_GlycemicControl_Class1110002]
-		[ATHENA_GlycemicControl_Class1070005]
 		[ATHENA_DM_GlycemicControl_Dashboard_Class504725])
 	(label "Presence of add metformin; recommend 2nd-line meds")
 	(recommendation_basis [is_second-line_drug_for])
@@ -5673,7 +5671,7 @@
 ([ATHENA_GlycemicControl_Class1090003] of  Conditional_On_Screen_Message
 
 	(fine-grain_priority 5000)
-	(label "DPP4 saxagliptin missing eGFR past month")
+	(label "Missing GFR")
 	(message "GFR.missing.")
 	(message_type do_not_add_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
@@ -16548,7 +16546,7 @@
 ([ATHENA_GlycemicControl_Class980016] of  Variable_ValueSet
 
 	(derivation_expression [ATHENA_GlycemicControl_Class980018])
-	(label "Metformin GFR value/date")
+	(label "GFR value/date")
 	(property_values_to_get
 		[ATHENA_GlycemicControl_Class980017]
 		[ATHENA_GlycemicControl_Class980005]))
