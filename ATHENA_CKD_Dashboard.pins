@@ -1,4 +1,4 @@
-; Thu Feb 13 17:24:35 PST 2020
+; Mon Feb 17 16:25:05 PST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2670,11 +2670,7 @@
 ([ATHENA_CKD_Dashboard_Class102] of  PAL_Criterion
 
 	(case_variable "$patient_id")
-	(label "2 abnormal mALB/Cr  more than 3 months apart.")
-	(PAL_constraint [ATHENA_CKD_Dashboard_Class103]))
-
-([ATHENA_CKD_Dashboard_Class103] of  %3APAL-CONSTRAINT
-)
+	(label "2 abnormal mALB/Cr  more than 3 months apart."))
 
 ([ATHENA_CKD_Dashboard_Class104] of  N_ary_Criterion
 
@@ -2685,11 +2681,7 @@
 ([ATHENA_CKD_Dashboard_Class105] of  PAL_Criterion
 
 	(case_variable "$patient")
-	(label "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr")
-	(PAL_constraint [ATHENA_CKD_Dashboard_Class106]))
-
-([ATHENA_CKD_Dashboard_Class106] of  %3APAL-CONSTRAINT
-)
+	(label "There exists an abnormal mALB/Cr more than 3 months before the most recent mALB/Cr"))
 
 ([ATHENA_CKD_Dashboard_Class107] of  Choice_Step
 
@@ -2725,6 +2717,13 @@
 	(label "Abnormal mALB/Cr more than 3 months before most recent one")
 	(new_encounter TRUE)
 	(precondition [ATHENA_CKD_Dashboard_Class111]))
+
+([ATHENA_CKD_Dashboard_Class110000] of  %3APAL-CONSTRAINT
+
+	(%3APAL-DESCRIPTION "The latest GFR lab is in the rangeof 30-9 and there exists a GFR lab value, 90 days prior to the latest value, that is also within the range of 30-59")
+	(%3APAL-NAME "Exists a GFR lab value, 90 days prior to the latest value, that is also within the range of 30-59")
+	(%3APAL-RANGE "(defrange ?eGFRPriorToLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n\n")
+	(%3APAL-STATEMENT "(exists ?eGFRLast (and (= (domain_term ?eGFRLast) \"eGFR\")  \n                       (= (patient_id ?eGFRLast) $patient_id)\n                       (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                 (= (patient_id ?eGFR01) $patient_id)\n                                                 (< (system_time (valid_time ?eGFRLast))\n                                                    (system_time (valid_time ?eGFR01))))))\n                      (or  (>  (value ?eGFRLast) 30)\n                             (=  (value ?eGFRLast) 30))\n                       (< (value ?eGFRLast) 60)\n                       (exists ?eGFRPriorToLast (and (= (domain_term ?eGFRPriorToLast) \"eGFR\")  \n                                                    	(= (patient_id ?eGFRPriorToLast) $patient_id)\n                                                    (< (+ (system_time (valid_time ?eGFRPriorToLast)) 90)\n                                                       (system_time (valid_time ?eGFRLast)))\n                                                   (or (>  (value ?eGFRPriorToLast) 30) \n                                                          ( = (value ?eGFRPriorToLast) 30) )\n                                                    (< (value ?eGFRPriorToLast) 60)\n                                                    ))\n                  ))"))
 
 ([ATHENA_CKD_Dashboard_Class110001] of  Presence_Criterion
 
@@ -2821,11 +2820,7 @@
 ([ATHENA_CKD_Dashboard_Class117] of  PAL_Criterion
 
 	(case_variable "$patient_id")
-	(label "Confirmed not CKD (Ab N N pattern)")
-	(PAL_constraint [ATHENA_CKD_Dashboard_Class118]))
-
-([ATHENA_CKD_Dashboard_Class118] of  %3APAL-CONSTRAINT
-)
+	(label "Confirmed not CKD (Ab N N pattern)"))
 
 ([ATHENA_CKD_Dashboard_Class12] of  Followed_By
 )
@@ -2835,6 +2830,12 @@
 	(actions [ATHENA_CKD_Dashboard_Class121])
 	(label "First Cr abnormal, order Cr")
 	(strict_rule_in_condition [ATHENA_CKD_Dashboard_Class56]))
+
+([ATHENA_CKD_Dashboard_Class120001] of  PAL_Criterion
+
+	(case_variable "$patient_id")
+	(label "Exists a GFR lab value, 90 days prior to the latest value, that is also within the range of 30-59")
+	(PAL_constraint [ATHENA_CKD_Dashboard_Class110000]))
 
 ([ATHENA_CKD_Dashboard_Class120039] of  Scenario
 
@@ -3070,7 +3071,7 @@
 
 ([ATHENA_CKD_Dashboard_Class130212] of  PAL-QUERY
 
-	(%3APAL-NAME "2nd most recent eGFR, with low eGFR 90 days prior to last")
+	(%3APAL-NAME "2nd most recent eGFR")
 	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)\n")
 	(%3APAL-STATEMENT "(findall ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
 
@@ -3351,14 +3352,15 @@
 
 	(%3APAL-NAME "exists 2nd most recent eGFR")
 	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists  ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                                       (= (patient_id ?eGFR2ndLast) $patient_id)\n                                       (exists ?eGFRLast \n                                               (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                                    (= (patient_id ?eGFRLast) $patient_id)\n                                                    (< (system_time (valid_time ?eGFR2ndLast))\n                                                       (system_time (valid_time ?eGFRLast)))\n                                                    (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                              (= (patient_id ?eGFR01) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFRLast))\n                                                                                 (system_time (valid_time ?eGFR01))))))\n                                                    (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                              (= (patient_id ?eGFR02) $patient_id)\n                                                                              (< (system_time (valid_time ?eGFR2ndLast))\n                                                                                 (system_time (valid_time ?eGFR02)))\n                                                                              (/= (system_time (valid_time ?eGFR02))\n                                                                                  (system_time (valid_time ?eGFRLast)))\n                                                                         )\n                                                         )\n                                                    )\n                                               )\n                                       )\n                                  )\n)\n"))
+	(%3APAL-STATEMENT "(exists  ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
 
 ([ATHENA_CKD_Dashboard_Class140518] of  N_ary_Criterion
 
 	(criteria
 		[ATHENA_CKD_Dashboard_Class150519]
-		[ATHENA_CKD_Dashboard_Class150520])
-	(label "30 <= 2nd latest GFR within past 750 days <60")
+		[ATHENA_CKD_Dashboard_Class150520]
+		[ATHENA_CKD_Dashboard_Class120001])
+	(label "30 <= 2nd latest GFR within past 750 days <60, and there is also such GFR 90 days prior to last")
 	(operator AND))
 
 ([ATHENA_CKD_Dashboard_Class140519] of  PAL-QUERY
@@ -3720,14 +3722,9 @@
 
 ([ATHENA_CKD_Dashboard_Class170420] of  Variable
 
-	(derivation_expression [ATHENA_CKD_Dashboard_Class130213])
-	(label "2nd most recent eGFR, with low eGFR 90 days prior to last"))
-
-([ATHENA_CKD_Dashboard_Class170510] of  PAL-QUERY
-
-	(%3APAL-NAME "2nd most recent eGFR, with low eGFR 90 days prior to last")
-	(%3APAL-RANGE "(defrange ?eGFR2ndLast :FRAME Numeric_Entry)\n(defrange ?eGFRLast :FRAME Numeric_Entry)\n(defrange ?eGFR01 :FRAME Numeric_Entry)\n(defrange ?eGFR02 :FRAME Numeric_Entry)\n(defrange ?eGFRLowBeforLast :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(findall ?eGFR2ndLast  (and (= (domain_term ?eGFR2ndLast) \"eGFR\")\n                            (= (patient_id ?eGFR2ndLast) $patient_id)\n                            (exists ?eGFRLast \n                                    (and (= (domain_term ?eGFRLast) \"eGFR\") \n                                         (= (patient_id ?eGFRLast) $patient_id)\n                                         (exists ?eGFRLowBeforLast \n                                                 (and (= (domain_term ?eGFRLowBeforLast) \"eGFR\") \n                                                      (= (patient_id ?eGFRLowBeforLast) $patient_id)\n                                                      (/=  ?eGFRLowBeforLast   ?eGFRLast)\n                                                      (> (+ (system_time (valid_time ?eGFRLowBeforLast)) 90)\n                                                         (system_time (valid_time ?eGFRLast)))\n                                                      (> (value ?eGFRLowBeforLast) 29)\n                                                      (< (value ?eGFRLowBeforLast) 60)))\n                                         (< (system_time (valid_time ?eGFR2ndLast))\n                                            (system_time (valid_time ?eGFRLast)))\n                                         (not (exists ?eGFR01 (and (= (domain_term ?eGFR01) \"eGFR\")\n                                                                   (= (patient_id ?eGFR01) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFRLast))\n                                                                      (system_time (valid_time ?eGFR01))))))\n                                         (not (exists ?eGFR02 (and (= (domain_term ?eGFR02) \"eGFR\")\n                                                                   (= (patient_id ?eGFR02) $patient_id)\n                                                                   (< (system_time (valid_time ?eGFR2ndLast))\n                                                                      (system_time (valid_time ?eGFR02)))\n                                                                   (/= (system_time (valid_time ?eGFR02))\n                                                                       (system_time (valid_time ?eGFRLast)))\n                                                              )\n                                              )\n                                         )\n                                    )\n                            )\n                       )\n)\n"))
+	(derivation_expression [ATHENA_CKD_Dashboard_Class120001])
+	(label "Exists a GFR lab value, 90 days prior to the latest value, that is also within the range of 30-59")
+	(string_name "Low GFR > 90 days before last"))
 
 ([ATHENA_CKD_Dashboard_Class18] of  Followed_By
 )
@@ -4043,12 +4040,7 @@
 ([ATHENA_CKD_Dashboard_Class45] of  PAL_Criterion
 
 	(case_variable "$patient_id")
-	(label "2 abnormal eGFR more than 3 months apart.")
-	(PAL_constraint [ATHENA_CKD_Dashboard_Class46]))
-
-([ATHENA_CKD_Dashboard_Class46] of  %3APAL-CONSTRAINT
-
-	(%3APAL-STATEMENT "(Predicate)"))
+	(label "2 abnormal eGFR more than 3 months apart."))
 
 ([ATHENA_CKD_Dashboard_Class47] of  Choice_Step
 
@@ -6297,18 +6289,6 @@
 	(controllable FALSE)
 	(DiagnosticCriteria [ATHENA_CKD_Class50012]))
 
-([KB_007895_Class102] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_007895_Class107] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
 ([KB_007895_Class89] of  N_ary_Criterion
 
 	(criteria
@@ -6318,12 +6298,6 @@
 		[ATHENA_CKD_Instance_120221])
 	(label "Eligibility criteria")
 	(operator AND))
-
-([KB_011042_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
 
 ([KB_014942_Class229] of  N_ary_Criterion
 
@@ -6335,227 +6309,11 @@
 	(label "Eligibility criteria")
 	(operator AND))
 
-([KB_014942_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_018699_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_033506_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_034879_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_041338_Class102] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_041338_Class107] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_046780_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_079944_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_081794_Class163] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_085869_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_090679_Class69] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_090679_Class83] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_171430_Class240] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_191912_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_224150_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_227405_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_234930_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_240832_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
 ([KB_245874_Class96] of  Numeric_Term_Query
 
 	(aggregation_operator most_recent)
 	(entry_type Numeric_Entry)
 	(numeric_domain_term "Treatment_Diastolic_BP"))
-
-([KB_248413_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_268519_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_278432_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_340684_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_371128_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_372743_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_405229_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_415731_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_439020_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_440276_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_444788_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_474082_Class163] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_504116_Class102] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_504116_Class107] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_504890_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_577036_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_598324_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_602313_Class123] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
 
 ([KB_611711_Class0] of  Medication
 
@@ -6585,130 +6343,10 @@
 	(frequency 0)
 	(patient_id "1003482"))
 
-([KB_612333_Class102] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_612333_Class107] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_616111_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_659927_Class235] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_662150_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
 ([KB_674125_Class0] of  Followed_By
 
 	(%3AFROM [ATHENA_CKD_Instance_10016])
 	(%3ATO [ATHENA_CKD_Instance_10019]))
-
-([KB_718622_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_729489_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_745514_Class102] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_745514_Class107] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_788949_Class129] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_794452_Class9168] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_794452_Class9174] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal mALB/Cr more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"Microalbumin/Creatinine Ratio\") \n             (> (value ?lab1) 30)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"Microalbumin/Creatinine Ratio\") \n                          (> (value ?lab2) 30)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )))             \n)\n)"))
-
-([KB_798682_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_919374_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_933250_Class150] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_941116_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_964270_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_971083_Class237] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_976444_Class163] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
-
-([KB_998173_Class235] of  %3APAL-CONSTRAINT
-
-	(%3APAL-NAME "2 abnormal eGFR more than 3 months apart")
-	(%3APAL-RANGE "(defrange ?lab1 :FRAME Numeric_Entry)\n(defrange ?lab2 :FRAME Numeric_Entry)\n")
-	(%3APAL-STATEMENT "(exists ?lab1 \n        (and (= (domain_term ?lab1) \"eGFR\") \n             (< (value ?lab1) 60)\n             (exists ?lab2 \n                     (and (= (domain_term ?lab2) \"eGFR\") \n                          (< (value ?lab2) 60)\n                          (> (system_time (valid_time ?lab1))\n                             (+ 90 (system_time (valid_time ?lab2))))\n                     )            \n             )\n        )\n)"))
 
 ([KB_998173_Class241] of  Definite_Time_Interval
 
