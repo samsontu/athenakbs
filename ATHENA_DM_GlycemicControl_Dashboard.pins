@@ -1,4 +1,4 @@
-; Tue Feb 18 13:54:08 PST 2020
+; Tue Feb 18 20:16:30 PST 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1236,7 +1236,7 @@
 ([ATHENA_DM_GlycemicControl_Dashboard_Class200000] of  Parameterized_Message
 
 	(fine-grain_priority 5000)
-	(label "Param msg sax missing GFR past year")
+	(label "Param msg GFR older than 1 year")
 	(message_type do_not_intensify_controllable_condition)
 	(parameterized_message [ATHENA_DM_GlycemicControl_Dashboard_Class240001])
 	(rule_in_condition [ATHENA_DM_GlycemicControl_Dashboard_Class200001]))
@@ -1542,7 +1542,7 @@
 
 ([ATHENA_DM_GlycemicControl_Dashboard_Class240001] of  Parameterized_String
 
-	(label "Sax missing GFR past year")
+	(label "Missing GFR past year")
 	(multivalued_variables [ATHENA_GlycemicControl_Class980016])
 	(value "GFR (?value (?date). older than 1 year."))
 
@@ -3322,7 +3322,7 @@
 
 	(fine-grain_priority 200)
 	(label "drug vs drug class alo")
-	(message "VA recommends DPP4 inhibitors as second line therapy.  Not all DPP4 inhibitors  have the same indications and contraindications.  We have only evaluated alogliptin and saxagliptin in this class.")
+	(message "VA recommends DPP4 inhibitors as potential second line therapy.  Not all DPP4 inhibitors have the same indications and contraindications.  We have evaluated only alogliptin in this class.")
 	(message_type General_Info)
 	(rule_in_condition [criterion_INSTANCE_00001]))
 
@@ -5819,7 +5819,7 @@
 ([ATHENA_GlycemicControl_Class1100004] of  Conditional_On_Screen_Message
 
 	(fine-grain_priority 5000)
-	(label "DPP4 saxagliptin missing eGFR past year")
+	(label "Missing eGFR")
 	(message "GFR missing.")
 	(message_type do_not_intensify_controllable_condition)
 	(rule_in_condition [ATHENA_GlycemicControl_Class510000]))
