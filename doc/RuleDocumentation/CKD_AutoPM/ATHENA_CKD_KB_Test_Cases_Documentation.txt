@@ -1,0 +1,370 @@
+Documentation for test cases for ATHENA_CKD_DASHBOARD KB
+
+Cases in file: ckdTemplate_all_test_scenarios_2019_09_24.xml
+
+TABLE OF CONTENTS
+================================================
+ - TO DO
+ - Patients: test cases for each rule
+
+
+TO DO
+================================================
+ - Collect ICD/CPT codes
+ - Make a patient scenario for kidney transplant diagnosis
+ - Once PAL criteria for Second-to-Last eGFR complete, make test cases
+ - Fix any messages
+
+
+Patients
+================================================
+These are patient test cases. "Refers to" is not an exhaustive list, but is a list
+of fields where certain
+
+* allfields
+---------------------------
+Contains every field that is evaluted
+Used as the base for creating new test cases (delete components not desired)
+Not too useful testing on its own, since it includes all exclusion criteria
+
+
+* hd_procedure_exclude
+---------------------------
+Description:
+    Tests whether patient has procedure (CPT code) for hemodialysis
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Procedures
+    Name: Hemodialysis
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for hemodialysis
+
+
+* pd_procedure_exclude
+---------------------------
+Description:
+    Tests whether patient has procedure (CPT code) for peritoneal dialysis
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Procedures
+    Name: Peritoneal Dialysis
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for peritoneal dialysis
+
+
+* ckd1_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for CKD Stage 1
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: CKD_Stage_1
+    Name: CKD Stage 1
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for CKD Stage 1
+
+
+* ckd2_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for CKD Stage 2
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: CKD_Stage_2
+    Name: CKD Stage 2
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for CKD Stage 2
+
+
+* ckd4_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for CKD Stage 4
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: Chronic_kidney_disease_stage4
+    Name: CKD stage 4
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for CKD Stage 4
+
+
+* ckd5_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for CKD Stage 5
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: Chronic_kidney_disease_stage5
+    Name: CKD stage 5
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for CKD Stage 5
+
+
+* esrd_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for ESRD
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: End-Stage_Renal_Disease
+    Name: 
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for ESRD
+
+
+* dialysis_dx_exclude
+---------------------------
+Description:
+    Tests whether patient has diagnosis (ICD code) for dialysis of any sort
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Refers to:
+    Dx
+    Dx: Renal Dialysis
+    Name: 
+    Dx: Chronic_kidney_disease_stage3
+    Name: CKD stage 3
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for dialysis (ESRD)
+
+
+* uacr_veryhigh_exclude
+---------------------------
+Description:
+    Tests whether patient has lab value for urine albumin-to-creatinine ratio
+        greater than "Very High" urine albumin cutoff
+        - this cutoff is not evidence-based, but a practical decision to make
+            sure providers taking care of patients with high levels of albuminuria
+            (i.e., high risk of end-stage kidney disease) are not falsely lulled
+            into a false sense of security by the CDS 
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+    Leaves in:
+        NOT "Very High" urine protein-to-creatinine ratio
+        NOT "Very High" urine albumin (NOT ratio)
+        NOT "Very High" urine protein (NOT ratio)
+        to make sure all measures are evaluated independently
+
+Refers to:
+    Labs
+    Lab: Urine_ALB/CREAT_RATIO_spot
+    Value:  600 (threshold to exclude >= 600 or higher)
+    Lab: Urine_Prot/CREAT_RATIO_spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+    Lab: UrineAlbumin_SPOT
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: urineProtein_Spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for Not Very High Proteinuria
+
+
+* ualb_raw_veryhigh_exclude
+---------------------------
+Description:
+    Tests whether patient has lab value for urine albumin (NOT ratio)
+        greater than "Very High" urine albumin cutoff
+        - this cutoff is not evidence-based, but a practical decision to make
+            sure providers taking care of patients with high levels of albuminuria
+            (i.e., high risk of end-stage kidney disease) are not falsely lulled
+            into a false sense of security by the CDS 
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+    Leaves in:
+        NOT "Very High" urine albumin-to-creatinine ratio
+        NOT "Very High" urine protein-to-creatinine ratio
+        NOT "Very High" urine protein (NOT ratio)
+        to make sure all measures are evaluated independently
+
+Refers to:
+    Labs
+    Lab: Urine_ALB/CREAT_RATIO_spot
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: Urine_Prot/CREAT_RATIO_spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+    Lab: UrineAlbumin_SPOT
+    Value:  600 (threshold to exclude >= 600 or higher)
+    Lab: urineProtein_Spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for Not Very High Proteinuria
+
+
+* upcr_veryhigh_exclude
+---------------------------
+Description:
+    Tests whether patient has lab value for urine protein-to-creatinine ratio
+        greater than "Very High" urine protein cutoff
+        - this cutoff is not evidence-based, but a practical decision to make
+            sure providers taking care of patients with high levels of proteinuria
+            (i.e., high risk of end-stage kidney disease) are not falsely lulled
+            into a false sense of security by the CDS 
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+    Leaves in:
+        NOT "Very High" urine albumin-to-creatinine ratio
+        NOT "Very High" urine albumin (NOT ratio)
+        NOT "Very High" urine protein (NOT ratio)
+        to make sure all measures are evaluated independently
+
+Refers to:
+    Labs
+    Lab: Urine_ALB/CREAT_RATIO_spot
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: Urine_Prot/CREAT_RATIO_spot
+    Value: 1000 (threshold to exclude >= 1000 or higher)
+    Lab: UrineAlbumin_SPOT
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: urineProtein_Spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+
+
+* uprot_raw_veryhigh_exclude
+---------------------------
+Description:
+    Tests whether patient has lab value for urine protein (NOT ratio)
+        greater than "Very High" urine protein cutoff
+        - this cutoff is not evidence-based, but a practical decision to make
+            sure providers taking care of patients with high levels of proteinuria
+            (i.e., high risk of end-stage kidney disease) are not falsely lulled
+            into a false sense of security by the CDS 
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+    Leaves in:
+        NOT "Very High" urine albumin-to-creatinine ratio
+        NOT "Very High" urine protein-to-creatinine ratio
+        NOT "Very High" urine protein (NOT ratio)
+        to make sure all measures are evaluated independently
+
+Refers to:
+    Labs
+    Lab: Urine_ALB/CREAT_RATIO_spot
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: Urine_Prot/CREAT_RATIO_spot
+    Value:  999 (threshold to exclude >= 1000 or higher)
+    Lab: UrineAlbumin_SPOT
+    Value:  599 (threshold to exclude >= 600 or higher)
+    Lab: urineProtein_Spot
+    Value: 1000 (threshold to exclude >= 1000 or higher)
+
+Desired outcome:
+    Patient not evaluated, fails exclusion criteria for Not Very High Proteinuria
+
+
+* htn_dx_only_no_labs
+---------------------------
+Description:
+    Tests patient with only HTN diagnosis code, no other data 
+
+Refers to:
+    Dx
+    Hypertension_Inclusive
+
+Desired outcome:
+    Message: Order GFR
+
+
+* htn_dx_only_1_gfr_55
+---------------------------
+Description:
+    Tests patient with HTN diagnosis code,
+        1 GFR value in past year with value = 55 mL/min
+
+Refers to:
+    Dx
+    Hypertension_Inclusive
+    Labs
+    eGFR
+
+Desired outcome:
+    Message: Patient with CKD Stage 3-level GFR, recheck to confirm
+
+
+* htn_dx_only_1_gfr_29
+---------------------------
+Description:
+    Tests patient with HTN diagnosis code,
+        1 GFR value in past year with value = 29 mL/min
+
+Refers to:
+    Dx
+    Hypertension_Inclusive
+    Labs
+    eGFR
+
+Desired outcome:
+    Message: Patient with CKD Stage 4-level GFR, refer to Nephrology
+
+
+* htn_dx_only_1_gfr_61
+---------------------------
+Description:
+    Tests patient with HTN diagnosis code,
+        1 GFR value in past year with value = 61 mL/min
+
+Refers to:
+    Dx
+    Hypertension_Inclusive
+    Labs
+    eGFR
+
+Desired outcome:
+    Message: Patient with CKD Stage (1-2)-level GFR, out of scope
+
+
+* htn_dx_only_1_gt380d
+---------------------------
+Description:
+    Tests patient with HTN diagnosis code,
+        1 GFR value that is OLDER than 1 year old
+
+Refers to:
+    Dx
+    Hypertension_Inclusive
+    Labs
+    eGFR
+
+Desired outcome:
+    Message: No recent lab values to evaluate, recheck GFR
+
+
+
+
+* ~*~*~*~*~*~*~*~*~*~*~*~
+---------------------------
+Description:
+    Tests whether patient has procedure (CPT code) for peritoneal dialysis
+    Leaves in "CKD Stage 3" diagnosis to test whether any pathways triggered
+
+Desired outcome:
+    Not evaluated, fails exclusion criteria for peritoneal dialysis
+
+

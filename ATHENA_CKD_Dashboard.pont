@@ -1,4 +1,4 @@
-; Thu Feb 20 15:52:30 PST 2020
+; Fri Apr 24 15:47:47 PDT 2020
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,6 +7,10 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract))
+
+(defclass ferrous_sulfate "PO (per os, meaning oral) iron supplement"
+	(is-a Medications_Class)
+	(role concrete))
 
 (defclass Peritoneal+Dialysis
 	(is-a Dialysis)
