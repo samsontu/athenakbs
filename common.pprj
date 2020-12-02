@@ -1,7 +1,7 @@
-; Mon May 06 11:24:56 PDT 2019
+; Wed Dec 02 14:12:50 CST 2020
 ; 
 ;+ (version "3.5")
-;+ (build "Build 663")
+;+ (build "Build 660")
 
 ([CLSES_TAB] of  Widget
 
@@ -316,14 +316,15 @@
 ([common_ProjectKB_Class3] of  Property_List
 )
 
-([common_ProjectKB_Class30005] of  Widget
+([common_ProjectKB_Class30005] of  String
 
-	(is_hidden TRUE)
-	(property_list [common_ProjectKB_Class30006])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+	(name "Property_Value")
+	(string_value "string_name"))
 
-([common_ProjectKB_Class30006] of  Property_List
-)
+([common_ProjectKB_Class30006] of  String
+
+	(name ":STANDARD-CLASS")
+	(string_value "%3ANAME"))
 
 ([common_ProjectKB_Class30007] of  Widget
 
@@ -843,8 +844,8 @@
 
 ([common_ProjectKB_Class40007] of  String
 
-	(name "Condition")
-	(string_value "domain_term{+on+}valid_time"))
+	(name ":STANDARD-SLOT")
+	(string_value "%3ANAME"))
 
 ([common_ProjectKB_Class40008] of  Property_List
 )
@@ -989,23 +990,23 @@
 
 ([common_ProjectKB_Class50008] of  String
 
-	(name "Parameterized_String")
-	(string_value "value"))
+	(name "Adverse_Reaction")
+	(string_value "domain_term{%3A+}substance"))
 
 ([common_ProjectKB_Class50009] of  String
 
-	(name "Procedure")
-	(string_value "domain_term"))
+	(name "Note_Entry")
+	(string_value "domain_term{%3A+}value{+on+}valid_time"))
 
 ([common_ProjectKB_Class50010] of  String
 
-	(name "N_aryFilter")
+	(name "Time_Entity")
 	(string_value "label"))
 
 ([common_ProjectKB_Class50011] of  String
 
-	(name "Property_Value")
-	(string_value "string_name"))
+	(name "Medication")
+	(string_value "drug_name{%28}mood{%29+}"))
 
 ([common_ProjectKB_Class50012] of  String
 
@@ -1014,113 +1015,103 @@
 
 ([common_ProjectKB_Class50013] of  String
 
-	(name "Note_Entry")
-	(string_value "domain_term{%3A+}value{+on+}valid_time"))
-
-([common_ProjectKB_Class50014] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([common_ProjectKB_Class50015] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([common_ProjectKB_Class50016] of  String
-
-	(name "Comparison_Filter")
-	(string_value "label"))
-
-([common_ProjectKB_Class50017] of  String
-
-	(name "Adverse_Reaction")
-	(string_value "domain_term{%3A+}substance"))
-
-([common_ProjectKB_Class50018] of  String
-
-	(name ":STANDARD-CLASS")
-	(string_value "%3ANAME"))
-
-([common_ProjectKB_Class50019] of  String
-
 	(name "Filter")
 	(string_value "label"))
 
-([common_ProjectKB_Class50020] of  String
-
-	(name "Qualitative_Constant")
-	(string_value "value"))
-
-([common_ProjectKB_Class50021] of  String
+([common_ProjectKB_Class50014] of  String
 
 	(name "Presence_Criterion")
 	(string_value "label"))
 
-([common_ProjectKB_Class50022] of  String
-
-	(name "Interval")
-	(string_value "{%28}low{%2C}high{%29}"))
-
-([common_ProjectKB_Class50023] of  String
-
-	(name "Numeric_Entry")
-	(string_value "domain_term{%3A+}value{+on+}valid_time"))
-
-([common_ProjectKB_Class50024] of  String
-
-	(name ":STANDARD-SLOT")
-	(string_value "%3ANAME"))
-
-([common_ProjectKB_Class50025] of  String
+([common_ProjectKB_Class50015] of  String
 
 	(name "Numeric_Constant")
 	(string_value "value"))
 
-([common_ProjectKB_Class50026] of  String
-
-	(name "Time_Entity")
-	(string_value "label"))
-
-([common_ProjectKB_Class50027] of  String
+([common_ProjectKB_Class50016] of  String
 
 	(name "Absolute_Time_Point")
 	(string_value "month_name"))
 
-([common_ProjectKB_Class50028] of  String
+([common_ProjectKB_Class50017] of  String
 
-	(name "Medication")
-	(string_value "drug_name{%28}mood{%29+}"))
+	(name "Interval")
+	(string_value "{%28}low{%2C}high{%29}"))
 
-([common_ProjectKB_Class50029] of  String
+([common_ProjectKB_Class50018] of  String
+
+	(name "Qualitative_Constant")
+	(string_value "value"))
+
+([common_ProjectKB_Class50019] of  String
+
+	(name "Procedure")
+	(string_value "domain_term"))
+
+([common_ProjectKB_Class50020] of  String
 
 	(name "Physical_Quantity")
 	(string_value "value{+}unit"))
 
-([common_ProjectKB_Class50030] of  Map_Entry
+([common_ProjectKB_Class50021] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([common_ProjectKB_Class50022] of  String
+
+	(name "Comparison_Filter")
+	(string_value "label"))
+
+([common_ProjectKB_Class50023] of  String
+
+	(name "Parameterized_String")
+	(string_value "value"))
+
+([common_ProjectKB_Class50024] of  String
+
+	(name "N_aryFilter")
+	(string_value "label"))
+
+([common_ProjectKB_Class50025] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([common_ProjectKB_Class50026] of  String
+
+	(name "Numeric_Entry")
+	(string_value "domain_term{%3A+}value{+on+}valid_time"))
+
+([common_ProjectKB_Class50027] of  String
+
+	(name "Condition")
+	(string_value "domain_term{+on+}valid_time"))
+
+([common_ProjectKB_Class50028] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([common_ProjectKB_Class50029] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([common_ProjectKB_Class50031] of  Map_Entry
+([common_ProjectKB_Class50030] of  Map_Entry
 
 	(key "annotation_proj_exists")
 	(key_class "java.lang.String")
 	(value "yes")
 	(value_class "java.lang.String"))
 
-([common_ProjectKB_Class50032] of  Map_Entry
+([common_ProjectKB_Class50031] of  Map_Entry
 
 	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([common_ProjectKB_Class50033] of  Map_Entry
-
-	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
@@ -4308,10 +4299,10 @@
 ([expression_ProjectKB_Instance_10464] of  Map
 
 	(entries
+		[common_ProjectKB_Class50028]
+		[common_ProjectKB_Class50029]
 		[common_ProjectKB_Class50030]
-		[common_ProjectKB_Class50031]
-		[common_ProjectKB_Class50032]
-		[common_ProjectKB_Class50033]))
+		[common_ProjectKB_Class50031]))
 
 ([expression_ProjectKB_Instance_20388] of  Widget
 
@@ -4889,6 +4880,9 @@
 
 	(is_hidden FALSE)
 	(name ":DIRECT-TYPE"))
+
+([KB_570267_Class4] of  Map
+)
 
 ([KB_615563_Instance_0] of  Widget
 
@@ -6286,54 +6280,51 @@
 	(x 0)
 	(y 120))
 
-([KB_969274_Class4] of  Map
-)
-
 ([PROJECT] of  Project
 
 	(browser_slot_names [ProjectKB_INSTANCE_00001])
 	(customized_instance_widgets
-		[criterion_ProjectKB_00878]
-		[KB_615563_Instance_42]
-		[KB_661136_Instance_227]
-		[KB_351117_Instance_209]
-		[common_ProjectKB_Class30130]
-		[KB_661136_Instance_254]
-		[criterion_ProjectKB_00438]
-		[criterion_ProjectKB_00235]
-		[KB_615563_Instance_36]
-		[criterion_ProjectKB_00645]
-		[criterion_ProjectKB_00333]
-		[KB_615563_Instance_13]
-		[criterion_ProjectKB_00994]
-		[criterion_ProjectKB_00792]
-		[KB_661136_Instance_148]
-		[expression_ProjectKB_Instance_20388]
-		[criterion_ProjectKB_00280]
-		[criterion_ProjectKB_00236]
-		[criterion_ProjectKB_01076]
-		[common_ProjectKB_Instance_10293]
-		[KB_615563_Instance_31]
-		[KB_661136_Instance_171]
+		[KB_661136_Instance_43]
 		[expression_ProjectKB_Instance_10426]
+		[common_ProjectKB_Class30130]
+		[KB_615563_Instance_0]
+		[KB_615563_Instance_13]
+		[common_ProjectKB_Instance_10293]
+		[criterion_ProjectKB_00994]
+		[KB_661136_Instance_171]
+		[common_ProjectKB_Class30074]
+		[criterion_ProjectKB_00645]
+		[criterion_ProjectKB_00280]
+		[common_ProjectKB_Class10005]
+		[expression_ProjectKB_Instance_20388]
+		[common_ProjectKB_Class50034]
 		[KB_661136_Instance_63]
+		[criterion_ProjectKB_01032]
+		[KB_615563_Instance_36]
+		[KB_661136_Instance_116]
+		[KB_661136_Instance_254]
+		[criterion_ProjectKB_01054]
+		[KB_615563_Instance_42]
+		[criterion_ProjectKB_00792]
+		[KB_661136_Instance_227]
+		[criterion_ProjectKB_01722]
+		[KB_351117_Instance_209]
+		[criterion_ProjectKB_00438]
 		[criterion_ProjectKB_00718]
 		[criterion_ProjectKB_INSTANCE_00003]
-		[KB_615563_Instance_0]
-		[common_ProjectKB_Class40084]
-		[criterion_ProjectKB_01054]
-		[criterion_ProjectKB_00656]
-		[common_ProjectKB_Class30074]
-		[criterion_ProjectKB_01032]
-		[KB_661136_Instance_116]
-		[criterion_ProjectKB_72783]
-		[criterion_ProjectKB_00922]
+		[criterion_ProjectKB_00589]
+		[KB_661136_Instance_148]
+		[criterion_ProjectKB_00236]
 		[criterion_ProjectKB_00616]
-		[KB_661136_Instance_43]
-		[criterion_ProjectKB_01722]
-		[common_ProjectKB_Class10005]
-		[common_ProjectKB_Class50034]
-		[criterion_ProjectKB_00589])
+		[common_ProjectKB_Class40084]
+		[criterion_ProjectKB_00235]
+		[criterion_ProjectKB_00656]
+		[criterion_ProjectKB_00333]
+		[KB_615563_Instance_31]
+		[criterion_ProjectKB_00922]
+		[criterion_ProjectKB_01076]
+		[criterion_ProjectKB_00878]
+		[criterion_ProjectKB_72783])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -6393,6 +6384,8 @@
 ([ProjectKB_INSTANCE_00001] of  Property_List
 
 	(properties
+		[common_ProjectKB_Class30005]
+		[common_ProjectKB_Class30006]
 		[common_ProjectKB_Class40007]
 		[common_ProjectKB_Class50008]
 		[common_ProjectKB_Class50009]
@@ -6413,9 +6406,7 @@
 		[common_ProjectKB_Class50024]
 		[common_ProjectKB_Class50025]
 		[common_ProjectKB_Class50026]
-		[common_ProjectKB_Class50027]
-		[common_ProjectKB_Class50028]
-		[common_ProjectKB_Class50029]))
+		[common_ProjectKB_Class50027]))
 
 ([ProjectKB_INSTANCE_00002] of  String
 
