@@ -1,4 +1,4 @@
-; Tue Sep 24 09:44:01 PDT 2019
+; Thu Jan 14 13:19:56 PST 2021
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -639,6 +639,10 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot lab_list
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot consultation_template
 		(type INSTANCE)
 ;+		(allowed-classes Consultation_Guideline)
@@ -1093,6 +1097,10 @@
 	(multislot drug_usages
 		(type INSTANCE)
 ;+		(allowed-classes Drug_Usage)
+		(create-accessor read-write))
+	(single-slot lab_list
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot assume_if_no_goal_value
 		(type SYMBOL)
